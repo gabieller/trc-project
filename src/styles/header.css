@@ -14,3 +14,19 @@
   .btn-outline-light {
     border: none;
   }
+
+  #open-menu-button {
+    position: fixed;
+    top: 26px;
+    right: 39px;
+    z-index: 98;
+    cursor: pointer;
+  }
+  
+  .btn-outline-light {
+    border: none;
+  }
+  
+ 
+  
+ 

@@ -1,10 +1,13 @@
-import React from "react"
+import React, { useState } from "react"
 import { Helmet } from "react-helmet"
 
 import Header from "./Header"
 
+// import "../styles/layout.css"
+
 
 export default function Layout(props) {
+  const [isOpenSidebar, setOpenSidebar] = useState(false)
   return (
     <>
       <Helmet>
@@ -13,9 +16,17 @@ export default function Layout(props) {
         <link rel="canonical" href="https://theroutingcompany.com/" />
       </Helmet>
 
-      <Header />
+      <Header uri={props.uri} onOpen={isOpen => setOpenSidebar(isOpen)} />
 
-      <div className={`container-fluid `}>{props.children}</div>
+      <div className={`container-fluid main-container ${
+        isOpenSidebar ? "open" : ""
+        }`}
+        >
+        {props.children}
+      </div>
     </>
   )
 }
+
+
+

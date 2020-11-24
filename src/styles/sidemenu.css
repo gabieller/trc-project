@@ -1,4 +1,4 @@
-  .nav-item:after {
+  /* .nav-item:after {
     height: 2px;
     width: 300px;
     margin-left: 34vw;
@@ -12,7 +12,7 @@
   .nav-item:hover:after {
     visibility: visible !important;
     transform: scaleX(1) !important;
-  }
+  } */
 
   
   #close-sidebar-button {
@@ -40,7 +40,7 @@
   .sidebar {
     margin: 0;
     width: 0%;
-    background-color: #58968a;
+    background-color: #737b7d;
     position: fixed;
     height: 100%;
     overflow: auto;

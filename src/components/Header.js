@@ -1,65 +1,77 @@
-import React from "react"
-// import SideMenu from "./SideMenu"
-import { Link } from "gatsby"
+import React, { useState, useEffect } from "react"
+import SideMenu from "./SideMenu"
 
 import "../styles/header.css"
 
 import trclogo from "../images/trc-logo-black.png"
-// import menu from "../images/menu-btn.svg"
+import menu from "../images/menu-btn.svg"
 
-export default function Header({ uri }) {
+export default function Header({ uri, onOpen }) {
+  const [isOpenSidebar, setOpenSidebar] = useState(false)
+  const [visibilityClass, setVisibilityClass] = useState(
+    "navbar-transparent bg-transparent"
+  )
+
+  const handleScroll = e => {
+    if (window.pageYOffset > 86) {
+      setVisibilityClass("navbar-shrink")
+    } else {
+      setVisibilityClass("")
+    }
+  }
+
+  useEffect(() => {
+    window.addEventListener("scroll", handleScroll)
+    return () => {
+      window.removeEventListener("scroll", handleScroll)
+    }
+  }, [])
+
+  const onClickMenuButton = () => {
+    onOpen(!isOpenSidebar)
+    setOpenSidebar(!isOpenSidebar)
+  }
+
+  if (visibilityClass === "navbar-shrink") {
+    return (
+      <>
+        <SideMenu
+          visible={isOpenSidebar}
+          uri={uri}
+          onClick={onClickMenuButton}
+        />
+        <button 
+            id="open-menu-button" 
+            className={`btn btn-link`}
+            onClick={onClickMenuButton}
+            >
+          <img alt="" src={menu} width="30" height="30" />
+        </button>
+      </>
+    )
+  }
+
   return (
     <>
+      <SideMenu visible={isOpenSidebar} uri={uri} onClick={onClickMenuButton} />
+
       <nav
         id="mainNavbar"
-        className="navbar navbar-expand-lg fixed-top navbar-transparent bg-transparent"
+        className={`navbar navbar-expand-lg fixed-top navbar-transparent bg-transparent ${visibilityClass}`}
       >
-          <div className="container">
+        <div className="container">
           <a className="navbar-brand logo">
             <img alt="" src={trclogo} width="305" height="144" alt="" />
           </a>
-        <div className="menuLink">
-          <ul className="navbar-nav ml-auto">
-            <li className={`nav-item ${uri === "/" ? "active" : ""}`}>
-              <Link to="/" className="nav-link">
-                Home
-              </Link>
-            </li>
-            <li className={`nav-item ${uri === "/about" ? "active" : ""}`}>
-              <Link to="/about" className="nav-link">
-                About
-              </Link>
-            </li>
-            <li className={`nav-item ${uri === "/pingo" ? "active" : ""}`}>
-              <Link to="/pingo" className="nav-link">
-                Pingo
-              </Link>
-            </li>
-            <li className={`nav-item ${uri === "/product" ? "active" : ""}`}>
-              <Link to="/product" className="nav-link">
-                Product
-              </Link>
-            </li>
-            <li className={`nav-item ${uri === "/contact" ? "active" : ""}`}>
-              <Link to="/contact" className="nav-link">
-                Contact
-              </Link>
-            </li>
-          </ul>
-        </div>
+          <button 
+            id="open-menu-button" 
+            className={`btn btn-link`}
+            onClick={onClickMenuButton}
+            >
+            <img alt="" src={menu} width="30" height="30" />
+          </button>
         </div>
       </nav>
     </>
   )
 }
-
-
-
-   {/* <div id="navbarResponsive" className={`collapse navbar-collapse`}>
-          <button
-            id="open-menu-btn"
-            className="btn btn-link"
-          >
-            <img src={menu} width="36" height="24" alt="" />
-          </button>
-        </div> */}
