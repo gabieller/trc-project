@@ -1,4 +1,3 @@
-// import "normalize.css"
 import "bootstrap/dist/js/bootstrap.min.js"
 import "bootstrap/dist/css/bootstrap.css"
 import "jquery/dist/jquery.min.js"

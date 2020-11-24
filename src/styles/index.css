@@ -1,0 +1,25 @@
+#index {
+  position: relative;
+  text-align: center;
+  width: 100%;
+  height: auto;
+  min-height: 35rem;
+  background-color: #f4f5f4;
+}
+
+.row-title{
+    padding: 200px;
+
+}
+
+.title {
+  font-weight: lighter;
+  font-size: 60pt;
+  letter-spacing: 0.48;
+  line-height: 72px;
+}
+
+.container-fluid {
+  padding-right: 0px;
+  padding-left: 0px;
+}

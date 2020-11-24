@@ -1,0 +1,16 @@
+.logo {
+    right:165;
+    left:-6;
+}
+
+#open-menu-button {
+    position: fixed;
+    top: 26px;
+    right: 39px;
+    z-index: 98;
+    cursor: pointer;
+  }
+  
+  .btn-outline-light {
+    border: none;
+  }
