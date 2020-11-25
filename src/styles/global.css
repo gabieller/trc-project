@@ -1,0 +1,14 @@
+.btn-black {
+  background-color: #000000de !important;
+  color: #fff !important;
+  border-radius: 0 !important;
+}
+
+.btn-black:focus {
+  outline-color: #a7a7a7;
+}
+
+
+.form-control:focus {
+    
+}
