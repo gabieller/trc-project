@@ -45,7 +45,7 @@ export default function Header({ uri, onOpen }) {
             className={`btn btn-link`}
             onClick={onClickMenuButton}
             >
-          <img alt="" src={menu} width="30" height="30" />
+          <img alt="" src={menu} width="36" height="24" />
         </button>
       </>
     )
@@ -61,14 +61,14 @@ export default function Header({ uri, onOpen }) {
       >
         <div className="container">
           <a className="navbar-brand logo">
-            <img alt="" src={trclogo} width="305" height="144" alt="" />
+            <img alt="" src={trclogo}  alt="" width="470" height="100"/>
           </a>
           <button 
             id="open-menu-button" 
             className={`btn btn-link`}
             onClick={onClickMenuButton}
             >
-            <img alt="" src={menu} width="30" height="30" />
+            <img  src={menu} alt=""  width="36" height="24"/>
           </button>
         </div>
       </nav>

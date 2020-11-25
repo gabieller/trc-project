@@ -2,6 +2,7 @@ import React, { useState } from "react"
 import { Helmet } from "react-helmet"
 
 import Header from "./Header"
+import Footer from "./Footer"
 
 // import "../styles/layout.css"
 
@@ -23,6 +24,7 @@ export default function Layout(props) {
         }`}
         >
         {props.children}
+        <Footer />
       </div>
     </>
   )
