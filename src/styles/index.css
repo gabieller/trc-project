@@ -8,6 +8,11 @@
   background-color: #f4f5f4;
 }
 
+.row {
+  margin-left: 0px !important;
+  margin-right: 0px !important;
+}
+
 .title {
   color: #000000de;
   font-size: 96px;

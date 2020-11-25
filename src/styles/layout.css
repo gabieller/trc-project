@@ -1,4 +1,10 @@
-.container-fluid {
+/* .container-fluid {
   padding-top: 86px;
   font-family: "Poppins";
-}
+} */
+
+.row {
+    margin-left: 0px !important;
+    margin-right: 0px !important;
+  }
+
