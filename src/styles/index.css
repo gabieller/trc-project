@@ -8,11 +8,6 @@
   background-color: #f4f5f4;
 }
 
-.row {
-  margin-left: 0px !important;
-  margin-right: 0px !important;
-}
-
 .title {
   color: #000000de;
   font-size: 96px;
@@ -25,12 +20,6 @@
 .subtitle {
   font-size: 34px;
   line-height: 36px;
-}
-
-.btn-action {
-  background-color: #000000de !important;
-  color: #fff !important;
-  border-radius: 0 !important;
 }
 
 .items {
@@ -54,9 +43,4 @@
   color: #373f41;
   line-height: 20px;
   letter-spacing: 0.14px;
-}
-
-.container-fluid {
-  padding-right: 0px;
-  padding-left: 0px;
 }

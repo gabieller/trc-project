@@ -6,7 +6,6 @@ import Footer from "./Footer"
 
 import "../styles/layout.css"
 
-
 export default function Layout(props) {
   const [isOpenSidebar, setOpenSidebar] = useState(false)
   return (
@@ -18,17 +17,14 @@ export default function Layout(props) {
       </Helmet>
 
       <Header uri={props.uri} onOpen={isOpen => setOpenSidebar(isOpen)} />
-
-      <div className={`container-fluid main-container ${
-        isOpenSidebar ? "open" : ""
+      <div
+        className={`container-fluid main-container ${
+          isOpenSidebar ? "open" : ""
         }`}
-        >
+      >
         {props.children}
         <Footer />
       </div>
     </>
   )
 }
-
-
-

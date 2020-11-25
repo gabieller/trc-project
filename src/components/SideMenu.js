@@ -15,7 +15,7 @@ export default function SideMenu({ onClick, uri, visible }) {
             className={`btn btn-link`}
             onClick={onClick}
           >
-            <img alt="" src={close} alt="" width="30" height="30" />
+            <img src={close} alt="Close button" width="30" height="30" />
           </button>
 
           <div className="menuLink">

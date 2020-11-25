@@ -1,10 +1,13 @@
-/* .container-fluid {
-  padding-top: 86px;
-  font-family: "Poppins";
-} */
+.btn-black {
+  background-color: #000000de !important;
+  color: #fff !important;
+  border-radius: 0 !important;
+}
 
+.container-fluid {
+  padding-right: 0px;
+  padding-left: 0px;
+}
 .row {
-    margin-left: 0px !important;
-    margin-right: 0px !important;
-  }
-
+  margin: auto !important;
+}

@@ -10,20 +10,29 @@ export default function Footer() {
     <footer id="footer">
       <div className="row content">
         <div className="col-md-4 logo">
-          <img alt="" src={trclogo} alt="" width="234" height="40" />
+          <img src={trclogo} alt="Logo" width="234" height="40" />
         </div>
 
-        <div className="col-md-1 item">
-          <p>COMPANY About News Investors Blog Careers Contact</p>
+        <div className="col-md-4">
+          <div className="row links-row">
+            <div className="col-md-6 links">
+              <div>COMPANY</div>
+              <div>About</div>
+              <div>News</div>
+              <div>Investors</div>
+              <div>Blog</div>
+              <div>Careers</div>
+              <div>Contact</div>
+            </div>
+            <div className="col-md-6 links">
+              <div>SOLUTIONS</div>
+              <div>Pingo</div>
+            </div>
+          </div>
         </div>
-
-        <div className="col-md-1 item">
-          <p>SOLUTIONS Pingo</p>
-        </div>
-
-        <div className="col-md-6 newsletter">
+        <div className="col-md-4 newsletter">
           <p>TRC NEWSLETTER</p>
-          <div className="input-group mb-3 w-75">
+          <div className="input-group mb-3 w-100">
             <input
               type="text"
               className="form-control"
@@ -32,7 +41,7 @@ export default function Footer() {
               aria-describedby="basic-addon2"
             />
             <div className="input-group-append">
-              <Button className="btn-newsletter" variant="contained">
+              <Button className="btn-black" variant="contained">
                 Subscribe
               </Button>
             </div>
@@ -41,7 +50,9 @@ export default function Footer() {
       </div>
 
       <div className="row copyright">
-        <p>©2020 The Routing Company — All Rights Reserved</p>
+        <div className="col-md-12">
+          ©2020 The Routing Company — All Rights Reserved
+        </div>
       </div>
     </footer>
   )

@@ -40,12 +40,12 @@ export default function Header({ uri, onOpen }) {
           uri={uri}
           onClick={onClickMenuButton}
         />
-        <button 
-            id="open-menu-button" 
-            className={`btn btn-link`}
-            onClick={onClickMenuButton}
-            >
-          <img alt="" src={menu} width="36" height="24" />
+        <button
+          id="open-menu-button"
+          className={`btn btn-link`}
+          onClick={onClickMenuButton}
+        >
+          <img alt="close menu" src={menu} width="36" height="24" />
         </button>
       </>
     )
@@ -57,18 +57,18 @@ export default function Header({ uri, onOpen }) {
 
       <nav
         id="mainNavbar"
-        className={`navbar navbar-expand-lg fixed-top navbar-transparent bg-transparent ${visibilityClass}`}
+        className={`navbar fixed-top navbar-transparent bg-transparent ${visibilityClass}`}
       >
         <div className="container">
-          <a className="navbar-brand logo">
-            <img alt="" src={trclogo}  alt="" width="470" height="100"/>
+          <a href="/" className="navbar-brand logo">
+            <img src={trclogo} alt="Main logo" width="470" height="100" />
           </a>
-          <button 
-            id="open-menu-button" 
+          <button
+            id="open-menu-button"
             className={`btn btn-link`}
             onClick={onClickMenuButton}
-            >
-            <img  src={menu} alt=""  width="36" height="24"/>
+          >
+            <img src={menu} alt="hamburger menu" width="36" height="24" />
           </button>
         </div>
       </nav>
