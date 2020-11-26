@@ -8,22 +8,28 @@ export default function Home(props) {
   return (
     <Layout {...props}>
       <div id="index" className="container-fluid">
-        <div className="row justify-content-center title">
-          <h1>Transportation that moves with you</h1>
+        <div className="row justify-content-center">
+          <div className="col-md ">
+            <h1 className="title">Transportation that</h1>
+            <h1 className="title">moves with you</h1>
+          </div>
         </div>
 
         <div className="row justify-content-center subtitle">
-          <h2>Et has minim elitr intellegat at nam minimum ponderum.</h2>
+          <div className="col-md">
+            <h2 className="subtitle">Et has minim elitr intellegat at nam</h2>
+            <h2 lassName="subtitle"> minimum ponderum</h2>
+          </div>
         </div>
 
-        <div className="container">
-          <div className="row buttons">
-            <div className="col">
+        <div className="col-md">
+          <div className="row justify-content-center row-buttons">
+            <div className="col-md-6 buttons">
               <Button className="btn-black" variant="contained">
                 Primary Action
               </Button>
             </div>
-            <div className="col">
+            <div className="col-md-6 buttons">
               <Button className="btn-black" variant="contained">
                 Secondary Action
               </Button>
@@ -31,46 +37,47 @@ export default function Home(props) {
           </div>
         </div>
 
-        <div className="row items">
-          <div className="items-text col-12">
-            Grow your business with better Shipping
-          </div>
-          <div className="col-12">
-            {" "}
-            We help the world’s leading organizations follow their shipping
+        <div className="row row-items-content">
+          <div className="row row-items-title">
+            <div className="col-md-12 col-title">
+              Grow your business with better Shipping
+            </div>
+            <div className="col-md-12 col-subtitle">
+              We help the world’s leading organizations follow their shipping
+            </div>
           </div>
 
           <div className="row items-card">
-            <div className="col-4 item-1 ">
+            <div className="col-4 col-item">
               <div className="card-body">
-                {/* <h5 className="card-title">Shipping communication</h5> */}
-                <p className="card-text">
+                <h5 className="card-title">Shipping communication</h5>
+                <div className="card-text">
                   At eripuit signiferumque sea, vel ad mucius molestie, cu
                   labitur iuvaret vulputate sed.
-                </p>
-                <Button>Discover</Button>
+                </div>
+                <Button className="btn-text">Discover</Button>
               </div>
             </div>
 
-            <div className="col-4 item-2">
+            <div className="col-4 col-item">
               <div className="card-body">
-                {/* <h5 className="card-title">Marketing</h5> */}
-                <p className="card-text">
+                <h5 className="card-title">Marketing</h5>
+                <div className="card-text">
                   At eripuit signiferumque sea, vel ad mucius molestie, cu
                   labitur iuvaret vulputate sed.
-                </p>
-                <Button>Discover</Button>
+                </div>
+                <Button className="btn-text">Discover</Button>
               </div>
             </div>
 
-            <div className="col-4 item-3">
+            <div className="col-4 col-item">
               <div className="card-body">
-                {/* <h5 className="card-title">Logistic performance</h5> */}
-                <p className="card-text">
+                <h5 className="card-title">Logistic performance</h5>
+                <div className="card-text">
                   At eripuit signiferumque sea, vel ad mucius molestie, cu
                   labitur iuvaret vulputate sed.
-                </p>
-                <Button>Discover</Button>
+                </div>
+                <Button className="btn-text">Discover</Button>
               </div>
             </div>
           </div>

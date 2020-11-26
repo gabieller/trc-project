@@ -6,24 +6,63 @@
   height: auto;
   min-height: 35rem;
   background-color: #f4f5f4;
+  color: #000000de;
 }
 
-.title {
-  color: #000000de;
+/* TODO fix font */
+#index .title {
   font-size: 96px;
   font-weight: lighter;
   letter-spacing: -1.44px;
-  line-height: 112px;
-  padding-top: 247px;
 }
 
-.subtitle {
-  font-size: 34px;
+#index .title:first-child {
+  padding-top: 25vh;
+}
+
+#index .title:last-child {
+  padding-bottom: 60px;
+}
+
+#index .subtitle {
+  /* font-size: 34px; */
   line-height: 36px;
 }
 
-.items {
+#index .row-buttons {
+  padding-top: 8vh;
+  padding-bottom: 8vh;
+}
+
+#index .row-buttons:first-child {
+  padding-left: 460px;
+}
+#index .row-buttons:last-child {
+  padding-right: 460px;
+}
+
+#index .row-items-content {
   background-color: #ffffff;
+  padding-bottom: 8vh;
+}
+
+#index .row-items-title {
+  padding-top: 4vh;
+  padding-bottom: 10vh;
+}
+
+#index .col-title {
+  font-size: 34px;
+}
+
+#index .col-subtitle {
+  font-size: 20px;
+  padding-top: 15px;
+}
+
+#index .items-card {
+  padding-left: 5vw;
+  padding-right: 5vw;
 }
 
 .card {
@@ -31,9 +70,7 @@
 }
 
 .card-title {
-  font-size: 34px;
-  line-height: 36px;
-  color: #000000de;
+  font-size: 27px;
 }
 
 /* TODO fix font family */
@@ -43,4 +80,10 @@
   color: #373f41;
   line-height: 20px;
   letter-spacing: 0.14px;
+}
+
+#index .btn-text {
+  margin-top: 5vh;
+  color: #3C64B1;
+  text-transform: capitalize;
 }
