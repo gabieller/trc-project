@@ -7,9 +7,9 @@ import "../styles/index.css"
 export default function Home(props) {
   return (
     <Layout {...props}>
-      <div id="index" className="container-fluid">
+      <div id="index" className="container-fluid title">
         <div className="row justify-content-center">
-          <div className="col-md ">
+          <div className="col-12">
             <h1 className="title">Transportation that</h1>
             <h1 className="title">moves with you</h1>
           </div>
@@ -18,26 +18,32 @@ export default function Home(props) {
         <div className="row justify-content-center subtitle">
           <div className="col-md">
             <h2 className="subtitle">Et has minim elitr intellegat at nam</h2>
-            <h2 lassName="subtitle"> minimum ponderum</h2>
+            <h2 className="subtitle"> minimum ponderum</h2>
           </div>
         </div>
 
         <div className="col-md">
           <div className="row justify-content-center row-buttons">
-            <div className="col-md-6 buttons">
-              <Button className="btn-black" variant="contained">
+            <div className="col-6 col-xs-12 col-buttons  ">
+              <Button
+                className="btn-black btn-block buttons "
+                variant="contained"
+              >
                 Primary Action
               </Button>
             </div>
-            <div className="col-md-6 buttons">
-              <Button className="btn-black" variant="contained">
+            <div className="col-6 col-xs-12 buttons ">
+              <Button
+                className="btn-black btn-block buttons "
+                variant="contained"
+              >
                 Secondary Action
               </Button>
             </div>
           </div>
         </div>
 
-        <div className="row row-items-content">
+        <div className="row row-items-content inline">
           <div className="row row-items-title">
             <div className="col-md-12 col-title">
               Grow your business with better Shipping
@@ -48,7 +54,7 @@ export default function Home(props) {
           </div>
 
           <div className="row items-card">
-            <div className="col-4 col-item">
+            <div className="col-md-4 col-item">
               <div className="card-body">
                 <h5 className="card-title">Shipping communication</h5>
                 <div className="card-text">
@@ -59,7 +65,7 @@ export default function Home(props) {
               </div>
             </div>
 
-            <div className="col-4 col-item">
+            <div className="col-md-4 col-item">
               <div className="card-body">
                 <h5 className="card-title">Marketing</h5>
                 <div className="card-text">
@@ -70,7 +76,7 @@ export default function Home(props) {
               </div>
             </div>
 
-            <div className="col-4 col-item">
+            <div className="col-md-4 col-item">
               <div className="card-body">
                 <h5 className="card-title">Logistic performance</h5>
                 <div className="card-text">

@@ -8,7 +8,24 @@
   outline-color: #a7a7a7;
 }
 
+body {
+  font-family: "Poppins";
+}
 
-.form-control:focus {
-    
+@media (max-width: 576px) {
+  h1 {
+    font-size: 2rem;
+  }
+  h2 {
+    font-size: 1.5rem;
+  }
+}
+
+@media (min-width: 768px) {
+  h1 {
+    font-size: 4rem;
+  }
+  h2 {
+    font-size: 2rem;
+  }
 }

@@ -1,6 +1,6 @@
 #index {
-  font-family: "Poppins";
   position: relative;
+  overflow: hidden;
   text-align: center;
   width: 100%;
   height: auto;
@@ -11,7 +11,6 @@
 
 /* TODO fix font */
 #index .title {
-  font-size: 96px;
   font-weight: lighter;
   letter-spacing: -1.44px;
 }
@@ -30,15 +29,18 @@
 }
 
 #index .row-buttons {
-  padding-top: 8vh;
-  padding-bottom: 8vh;
+  padding: 8vh 1vw;
+}
+
+#index .buttons {
+  /* min-width: 180px; */
 }
 
 #index .row-buttons:first-child {
-  padding-left: 460px;
+  padding-left: 25vw;
 }
 #index .row-buttons:last-child {
-  padding-right: 460px;
+  padding-right: 25vw;
 }
 
 #index .row-items-content {
@@ -84,6 +86,6 @@
 
 #index .btn-text {
   margin-top: 5vh;
-  color: #3C64B1;
+  color: #3c64b1;
   text-transform: capitalize;
 }
