@@ -1,0 +1,83 @@
+#contact-page {
+  padding-top: 10rem;
+  background-color: #ffffff;
+}
+
+#contact-page-first {
+  margin-bottom: 5vh;
+}
+
+.row-form {
+  position: relative;
+}
+
+.form {
+  width: 100%;
+  position: absolute;
+  background-color: #ffffff;
+  margin-top: 6vh;
+  margin-bottom: 6vh;
+  padding: 4vh;
+  border: 1px;
+  border-radius: 0;
+  border-style: solid;
+  border-color: #707070;
+}
+
+.form-control {
+  border-radius: 0;
+}
+
+.form-group {
+  padding: 1vh;
+}
+
+.topics {
+  width: 100%;
+  padding-top: 10vh;
+  padding-left: 4vw;
+}
+.topics-body {
+  font-family: "Roboto";
+  font-size: 0.75rem;
+  padding-top: 2vw;
+
+  /* padding-top: 3vh; */
+  /* padding-bottom: 3vh; */
+}
+
+.contact-queries {
+  background-color: #c3cbcd;
+}
+
+#contact-page .contact-queries {
+  padding-left: 5vw;
+  padding-right: 5vw;
+  padding-top: 25vh;
+  padding-bottom: 15vh;
+  /* margin-top: 5vh; */
+}
+
+@media (max-width: 576px) {
+  h2 {
+    font-size: 1.5rem;
+  }
+  h3 {
+    font-size: 1.25rem;
+  }
+  h4 {
+    font-size: 1rem;
+  }
+}
+
+@media (min-width: 768px) {
+  h2 {
+    font-size: 1.5rem;
+  }
+  h3 {
+    font-size: 1.25rem;
+  }
+  h4 {
+    font-size: 1rem;
+  }
+}
