@@ -33,19 +33,17 @@ export default function Header({ uri, onOpen }) {
   return (
     <>
       <SideMenu visible={isOpenSidebar} uri={uri} onClick={onClickMenuButton} />
-      <div className="container">
-        <nav className={`navbar fixed-top ${visibilityClass}`}>
-          <a href="/" className="navbar-brand">
-            <img src={trclogo} alt="Main logo" className="img-fluid" />
-          </a>
-          <button
-            className="btn btn-link navbar-toggler"
-            onClick={onClickMenuButton}
-          >
-            <img src={menu} alt="hamburger menu" width="36" height="24" />
-          </button>
-        </nav>
-      </div>
+      <nav className={`navbar fixed-top ${visibilityClass}`}>
+        <a href="/" className="navbar-brand">
+          <img src={trclogo} alt="Main logo" className="img-fluid" />
+        </a>
+        <button
+          className="btn btn-link navbar-toggler"
+          onClick={onClickMenuButton}
+        >
+          <img src={menu} alt="hamburger menu" width="36" height="24" />
+        </button>
+      </nav>
     </>
   )
 }
