@@ -11,9 +11,7 @@ export default function Layout(props) {
   return (
     <>
       <Helmet>
-        <meta
-          charSet="utf-8"
-        />
+        <meta charSet="utf-8" />
         <title>The Routing Company</title>
         <link rel="canonical" href="https://theroutingcompany.com/" />
       </Helmet>

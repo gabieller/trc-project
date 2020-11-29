@@ -1,16 +1,14 @@
-#open-menu-button {
-  position: fixed;
-  z-index: 98;
-  cursor: pointer;
-  top: 48px;
-  left: 1240px;
+
+.navbar .navbar-brand {
+  max-width: 470px;
 }
 
-.btn-outline-light {
-  border: none;
+.navbar.navbar-scrolled .navbar-brand {
+  visibility: hidden;
 }
 
-
-.btn-outline-light {
-  border: none;
+@media (max-width: 600px) {
+  .navbar .navbar-brand {
+    max-width: 250px;
+  }
 }
