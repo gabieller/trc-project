@@ -9,7 +9,7 @@ module.exports = {
     {
       resolve: `gatsby-plugin-google-fonts`,
       options: {
-        fonts: [`Poppins`, `Mulish`],
+        fonts: [`Poppins`, `Mulish`, `Roboto`],
         display: "swap",
       },
     },
