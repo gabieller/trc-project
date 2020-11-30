@@ -15,7 +15,7 @@ export default function Home(props) {
             </div>
           </div>
           <div className="row container contact-form-subtitle">
-            <div className="col-7 col-xs-12 justify-content-left">
+            <div className="col-md-7 col-sm-12 justify-content-left">
               <h3>
                 Our team is happy to answer all your questions. Please, fill out
                 the form and we’ll be in touch as soon as possible.
@@ -25,10 +25,13 @@ export default function Home(props) {
 
           <div className="row container row-form">
             <div className="col-form col-md-8 col-xs-12">
-              <form className="form-horizontal form">
-                <div className="row form-group">
+              <form className="form-horizontal form p-4 my-5">
+                <div className="row form-group py-2">
                   <div className="col-md-4">
-                    <label className="control-label" for="name">
+                    <label
+                      className="control-label font-weight-bold"
+                      for="name"
+                    >
                       First Name
                     </label>
                   </div>
@@ -41,9 +44,12 @@ export default function Home(props) {
                     />
                   </div>
                 </div>
-                <div className="row form-group">
+                <div className="row form-group py-2">
                   <div className="col-md-4">
-                    <label className="control-label" for="name">
+                    <label
+                      className="control-label font-weight-bold"
+                      for="name"
+                    >
                       Last Name
                     </label>
                   </div>
@@ -57,9 +63,12 @@ export default function Home(props) {
                   </div>
                 </div>
 
-                <div className="row form-group">
+                <div className="row form-group py-2">
                   <div className="col-md-4">
-                    <label className="control-label" for="name">
+                    <label
+                      className="control-label font-weight-bold"
+                      for="name"
+                    >
                       Work Email
                     </label>
                   </div>
@@ -73,9 +82,12 @@ export default function Home(props) {
                   </div>
                 </div>
 
-                <div className="row form-group">
+                <div className="row form-group py-2">
                   <div className="col-md-4 ">
-                    <label className="control-label" for="name">
+                    <label
+                      className="control-label font-weight-bold"
+                      for="name"
+                    >
                       Company website
                     </label>
                   </div>
@@ -89,9 +101,12 @@ export default function Home(props) {
                   </div>
                 </div>
 
-                <div className="row form-group">
+                <div className="row form-group py-2">
                   <div className="col-md-4">
-                    <label className="control-label" for="name">
+                    <label
+                      className="control-label font-weight-bold"
+                      for="name"
+                    >
                       Leave us a message
                     </label>
                   </div>
@@ -101,27 +116,29 @@ export default function Home(props) {
                     </textarea>
                   </div>
                 </div>
-                <Button
-                  className="btn-black btn-block w-25 "
-                  variant="contained"
-                >
-                  Contact Sales
-                </Button>
+                <div className="d-flex flex-row-reverse pt-3 mr-4">
+                  <Button
+                    className="btn-black btn-block w-25 "
+                    variant="contained"
+                  >
+                    Contact Sales
+                  </Button>
+                </div>
               </form>
             </div>
-            <div className="col-md-4 col-xs-12 topics">
-              <h4 className="font-weight-bold topics-title">
+            <div className="col-md-4 col-sm-12-py-5 topics">
+              <h3 className="font-weight-bold topics-title">
                 With The Routing Company you can:
-              </h4>
-              <div className="topics-body">
+              </h3>
+              <div className="topics-body py-3">
                 ✔️ Et has minim elitr intellegat. Mea aeterno eleifend antiopam
                 ad, nam no suscipit quaerendum.
               </div>
-              <div className="topics-body">
+              <div className="topics-body py-3">
                 ✔️ Et has minim elitr intellegat. Mea aeterno eleifend antiopam
                 ad, nam no suscipit quaerendum.
               </div>
-              <div className="topics-body">
+              <div className="topics-body py-3">
                 ✔️ Et has minim elitr intellegat. Mea aeterno eleifend antiopam
                 ad, nam no suscipit quaerendum.
               </div>
@@ -129,10 +146,10 @@ export default function Home(props) {
           </div>
         </div>
 
-        <div className="row contact-queries">
+        <div className="row contact-queries px-5">
           <div className="col-md-4 col-item">
             <div className="card-body">
-              <h3 className="card-title">General queries</h3>
+              <h4 className="card-title font-weight-bold">General queries</h4>
               <div className="card-text">
                 Ad eos saepe lucilius, noster postulant philosophia ea usu, qui
                 dicta sadipscing te at info@theroutingcompany.com
@@ -142,7 +159,7 @@ export default function Home(props) {
 
           <div className="col-md-4 col-item">
             <div className="card-body">
-              <h3 className="card-title">Technical support</h3>
+              <h4 className="card-title font-weight-bold">Technical support</h4>
               <div className="card-text">
                 Ad eos saepe lucilius, noster postulant philosophia ea usu, qui
                 dicta sadipscing te at info@theroutingcompany.com
@@ -152,7 +169,7 @@ export default function Home(props) {
 
           <div className="col-md-4 col-item">
             <div className="card-body">
-              <h3 className="card-title">Careers</h3>
+              <h4 className="card-title font-weight-bold">Careers</h4>
               <div className="card-text">
                 Ad eos saepe lucilius, noster postulant philosophia ea usu, qui
                 dicta sadipscing te at info@theroutingcompany.com
@@ -164,3 +181,4 @@ export default function Home(props) {
     </Layout>
   )
 }
+
