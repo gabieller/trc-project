@@ -7,15 +7,15 @@ import trclogo from "../images/trc-logo-black.png"
 
 export default function Footer() {
   return (
-    <footer id="footer">
-      <div className="row content">
-        <div className="col-md-4 logo">
+    <footer id="footer" className="font-weight-bold px-5">
+      <div className="row container ">
+        <div className="col-md-4 logo pt-3">
           <img src={trclogo} alt="Logo" width="234" height="40" />
         </div>
 
         <div className="col-md-4">
-          <div className="row links-row">
-            <div className="col-md-6 links">
+          <div className="row links-row ">
+            <div className="col-md-6 links pt-3">
               <div>COMPANY</div>
               <div>About</div>
               <div>News</div>
@@ -24,13 +24,13 @@ export default function Footer() {
               <div>Careers</div>
               <div>Contact</div>
             </div>
-            <div className="col-md-6 links">
+            <div className="col-md-6 links pt-3">
               <div>SOLUTIONS</div>
               <div>Pingo</div>
             </div>
           </div>
         </div>
-        <div className="col-md-4 newsletter">
+        <div className="col-md-4 newsletter pt-3 pl-4">
           <p>TRC NEWSLETTER</p>
           <div className="input-group mb-3 w-100">
             <input
@@ -47,12 +47,12 @@ export default function Footer() {
             </div>
           </div>
         </div>
-      </div>
-
-      <div className="row copyright">
-        <div className="col-md-12">
-          ©2020 The Routing Company — All Rights Reserved
         </div>
+
+        <div className="row container copyright pt-3 ">
+          <div className="col-md-12 ">
+            ©2020 The Routing Company — All Rights Reserved
+          </div>
       </div>
     </footer>
   )
