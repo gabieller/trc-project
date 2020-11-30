@@ -5,7 +5,7 @@ import Header from "./Header"
 import Footer from "./Footer"
 
 import "../styles/layout.css"
-import loadingGif from "../images/loading-unscreen.gif"
+import loadingGif from "../images/loading.gif"
 
 export default function Layout(props) {
   const [isOpenSidebar, setOpenSidebar] = useState(false)
