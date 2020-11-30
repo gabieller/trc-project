@@ -1,0 +1,29 @@
+#about-page {
+  padding-top: 10rem;
+  background-color: #f4f5f4;
+}
+
+#about-page-first {
+  padding-bottom: 20vw;
+}
+
+#about-page-second {
+    background-color: #ffffff;
+
+  }
+
+.card{
+    width: 15rem;
+    border: none;
+}
+
+
+#about-page-third{
+    background-color: #737B7D;
+    color: #ffffff;
+}
+
+.about-quotes {
+    padding-right: 30vw;
+    padding-left: 30vw;
+}

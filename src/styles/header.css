@@ -1,4 +1,6 @@
-
+.navbar{
+  background-color: #ffffff;
+}
 .navbar .navbar-brand {
   max-width: 470px;
 }

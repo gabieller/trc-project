@@ -8,13 +8,13 @@ import menu from "../images/menu-btn.svg"
 
 export default function Header({ uri, onOpen }) {
   const [isOpenSidebar, setOpenSidebar] = useState(false)
-  const [visibilityClass, setVisibilityClass] = useState("bg-light")
+  const [visibilityClass, setVisibilityClass] = useState("")
 
   const handleScroll = () => {
     if (window.pageYOffset > 45) {
       setVisibilityClass("bg-transparent navbar-scrolled")
     } else {
-      setVisibilityClass("bg-light")
+      setVisibilityClass("")
     }
   }
 

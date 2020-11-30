@@ -32,13 +32,12 @@ export default function Footer() {
         </div>
         <div className="col-md-4 newsletter pt-3 pl-4">
           <p>TRC NEWSLETTER</p>
-          <div className="input-group mb-3 w-100">
+          <div className="input-group mb-3">
             <input
               type="text"
               className="form-control"
               placeholder="| Enter your email"
               aria-label="| Enter your email"
-              aria-describedby="basic-addon2"
             />
             <div className="input-group-append">
               <Button className="btn-black" variant="contained">

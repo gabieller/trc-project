@@ -1,6 +1,6 @@
 #contact-page {
   padding-top: 10rem;
-  background-color: #ffffff;
+  background-color: #F4F5F4;
 }
 
 #contact-page-first {
@@ -41,7 +41,8 @@
 }
 
 .contact-queries {
-  background-color: #c3cbcd;
+  background-color: #737B7D;
+  color: #ffffff;
 }
 
 #contact-page .contact-queries {
