@@ -6,3 +6,7 @@
 .row {
   margin: auto !important;
 }
+
+.loadingGif{
+  padding-top: 30vh;
+}
