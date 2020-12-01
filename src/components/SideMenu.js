@@ -36,8 +36,8 @@ export default function SideMenu({ onClick, uri, visible }) {
                 </Link>
               </li>
               <li className={`nav-item ${uri === "/product" ? "active" : ""}`}>
-                <Link to="/product" className="nav-link">
-                  Product
+                <Link to="/solutions" className="nav-link">
+                  Solutions
                 </Link>
               </li>
               <li className={`nav-item ${uri === "/contact" ? "active" : ""}`}>

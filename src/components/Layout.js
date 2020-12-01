@@ -25,12 +25,17 @@ export default function Layout(props) {
         <link rel="canonical" href="https://theroutingcompany.com/" />
       </Helmet>
 
-    {loading &&(
-      <div className="d-flex justify-content-center loadingGif">
-        <img className="align-middle" src={loadingGif} alt="Loading Gif" width="150" height="150"/>
-      </div>
-    )}
-    
+      {loading && (
+        <div className="d-flex justify-content-center loadingGif">
+          <img
+            className="align-middle"
+            src={loadingGif}
+            alt="Loading Gif"
+            width="150"
+            height="150"
+          />
+        </div>
+      )}
 
       {!loading && (
         <>

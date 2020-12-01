@@ -46,12 +46,12 @@ export default function Footer() {
             </div>
           </div>
         </div>
-        </div>
+      </div>
 
-        <div className="row container copyright pt-3 ">
-          <div className="col-md-12 ">
-            ©2020 The Routing Company — All Rights Reserved
-          </div>
+      <div className="row container copyright pt-3 ">
+        <div className="col-md-12 ">
+          ©2020 The Routing Company — All Rights Reserved
+        </div>
       </div>
     </footer>
   )

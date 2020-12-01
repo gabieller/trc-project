@@ -11,15 +11,15 @@ export default function Home(props) {
         <div id="contact-page-first">
           <div className="row container contact-form-title">
             <div className="col justify-content-left contact-title">
-              <h1>Contact our sales team</h1>
+              <h2>Contact our sales team</h2>
             </div>
           </div>
           <div className="row container contact-form-subtitle">
             <div className="col-md-7 col-sm-12 justify-content-left">
-              <h3>
+              <h4>
                 Our team is happy to answer all your questions. Please, fill out
                 the form and we’ll be in touch as soon as possible.
-              </h3>
+              </h4>
             </div>
           </div>
 
@@ -181,4 +181,3 @@ export default function Home(props) {
     </Layout>
   )
 }
-

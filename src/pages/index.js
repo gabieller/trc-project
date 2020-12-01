@@ -8,7 +8,7 @@ import arrowRight from "../images/keyboard_arrow_right-24px.svg"
 function Card({ title, description }) {
   // TODO: make discover link sticky to bottom
   return (
-    <div className="card col-11 col-md-4 col-lg-2 my-2 mx-2">
+    <div className="card bg-white col-11 col-md-4 col-lg-2 my-2 mx-2">
       <div className="card-body">
         <h5 className="card-title text-center font-weight-bold">{title}</h5>
         <div className="card-text text-center">
