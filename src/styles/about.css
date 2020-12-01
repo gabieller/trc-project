@@ -1,29 +1,80 @@
 #about-page {
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+  height: auto;
+  min-height: 35rem;
   padding-top: 10rem;
-  background-color: #f4f5f4;
 }
 
 #about-page-first {
-  padding-bottom: 20vw;
+  padding-bottom: 10vh;
+  background-color: #f4f5f4;
 }
 
 #about-page-second {
-    background-color: #ffffff;
+  padding-bottom: 10vh;
+}
 
+#about-page-second .card {
+  width: 15rem;
+  border: none;
+}
+
+#about-page-second .card > img {
+  border-radius: 0;
+}
+
+#about-page-third {
+  background-color: #737b7d;
+  color: #ffffff;
+}
+
+#about-page-third .card {
+  width: 30rem;
+  border: none;
+}
+
+#about-page-third img {
+  image-orientation: 90deg flip;
+}
+
+#about-page-third .carousel-indicators li {
+  width: 10px;
+  height: 10px;
+  border-radius: 100%;
+}
+
+#about-page-third img {
+  transform: rotate(180deg);
+}
+
+#about-page-fourth {
+  padding-bottom: 15vh;
+}
+
+.warning-text {
+  color: #737b7d;
+}
+
+@media (min-width: 768px) {
+  #about-page-second {
+    background: linear-gradient(
+      to bottom,
+      #f4f5f4 0%,
+      #f4f5f4 20%,
+      #ffffff 20%
+    );
   }
-
-.card{
-    width: 15rem;
-    border: none;
 }
 
-
-#about-page-third{
-    background-color: #737B7D;
-    color: #ffffff;
-}
-
-.about-quotes {
-    padding-right: 30vw;
-    padding-left: 30vw;
+@media (max-width: 576px) {
+  #about-page-second {
+    background: linear-gradient(
+      to bottom,
+      #ffffff 0%,
+      #ffffff 20%,
+      #ffffff 20%
+    );
+  }
 }
