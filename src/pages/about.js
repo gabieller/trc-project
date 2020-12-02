@@ -37,7 +37,7 @@ export default function About(props) {
               <img
                 className="card-img-top"
                 src={cardImage}
-                alt="Card image cap"
+                alt="Card  cap"
               />
               <div className="card-body pl-0">
                 <h4 className="card-title">Periculis Omittan</h4>
@@ -51,7 +51,7 @@ export default function About(props) {
               <img
                 className="card-img-top"
                 src={cardImage}
-                alt="Card image cap"
+                alt="Card  cap"
               />
               <div className="card-body pl-0">
                 <h4 className="card-title">Periculis Omittan</h4>
@@ -65,7 +65,7 @@ export default function About(props) {
               <img
                 className="card-img-top"
                 src={cardImage}
-                alt="Card image cap"
+                alt="Card  cap"
               />
               <div className="card-body pl-0">
                 <h4 className="card-title">Periculis Omittan</h4>
@@ -106,7 +106,7 @@ export default function About(props) {
                     <img
                       className="card-img-top"
                       src={quote}
-                      alt="Card image cap"
+                      alt="Card cap"
                       width="100"
                       height="100"
                     />
@@ -126,7 +126,7 @@ export default function About(props) {
                     <img
                       className="card-img-top"
                       src={quote}
-                      alt="Card image cap"
+                      alt="Card cap"
                       width="100"
                       height="100"
                     />
@@ -146,7 +146,7 @@ export default function About(props) {
                     <img
                       className="card-img-top"
                       src={quote}
-                      alt="Card image cap"
+                      alt="Card cap"
                       width="100"
                       height="100"
                     />

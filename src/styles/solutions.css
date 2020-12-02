@@ -2,6 +2,10 @@
   background-color: #f4f5f4;
 }
 
+#solutions-page .btn-action {
+  min-width: 172px;
+}
+
 #solutions-header {
   padding-top: 12rem;
   padding-bottom: 8rem;
@@ -23,4 +27,26 @@
   line-height: 20px;
   letter-spacing: 0.14px;
   margin: 0px 10px 0 10px;
+}
+
+#solutions-products {
+  padding-top: 6vw;
+  padding-bottom: 6vw;
+  background-color: #ffffff;
+}
+
+#solutions-products .products {
+  padding-top: 10vw;
+}
+
+@media (min-width: 768px) {
+  .action-buttons {
+    padding-top: 0;
+  }
+}
+
+@media (max-width: 576px) {
+  .action-buttons {
+    padding-top: 1rem;
+  }
 }
