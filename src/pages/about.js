@@ -34,11 +34,7 @@ export default function About(props) {
         <div id="about-page-second" className="about-card">
           <div className="row container justify-content-center">
             <div className="card  bg-transparent m-5">
-              <img
-                className="card-img-top"
-                src={cardImage}
-                alt="Card  cap"
-              />
+              <img className="card-img-top" src={cardImage} alt="Card  cap" />
               <div className="card-body pl-0">
                 <h4 className="card-title">Periculis Omittan</h4>
                 <p className="card-text">
@@ -48,11 +44,7 @@ export default function About(props) {
               </div>
             </div>
             <div className="card  bg-transparent m-5">
-              <img
-                className="card-img-top"
-                src={cardImage}
-                alt="Card  cap"
-              />
+              <img className="card-img-top" src={cardImage} alt="Card  cap" />
               <div className="card-body pl-0">
                 <h4 className="card-title">Periculis Omittan</h4>
                 <p className="card-text">
@@ -62,11 +54,7 @@ export default function About(props) {
               </div>
             </div>
             <div className="card bg-transparent m-5">
-              <img
-                className="card-img-top"
-                src={cardImage}
-                alt="Card  cap"
-              />
+              <img className="card-img-top" src={cardImage} alt="Card  cap" />
               <div className="card-body pl-0">
                 <h4 className="card-title">Periculis Omittan</h4>
                 <p className="card-text">
@@ -79,7 +67,7 @@ export default function About(props) {
         </div>
 
         <div id="about-page-third">
-          <div className="row container justify-content-center about-quotes p-5">
+          <div className="row container justify-content-center about-quotes p-5 col-md-5">
             <div
               id="carouselExampleIndicators"
               className="carousel slide"
