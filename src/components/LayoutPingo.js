@@ -1,13 +1,13 @@
 import React, { useState, useEffect } from "react"
 import { Helmet } from "react-helmet"
 
-import Header from "./Header"
 import Footer from "./Footer"
+import HeaderPingo from "./HeaderPingo"
 
+import loadingGif from "../images/loading.gif"
 import "../styles/layout.css"
-import loadingtrc from "../images/trc-loading.png"
 
-export default function Layout(props) {
+export default function LayoutPingo(props) {
   const [isOpenSidebar, setOpenSidebar] = useState(false)
   const [loading, setLoading] = useState(true)
 
@@ -26,20 +26,20 @@ export default function Layout(props) {
       </Helmet>
 
       {loading && (
-        <div className="row col-md-6 justify-content-centerloadingGif">
+        <div className="d-flex justify-content-center loadingGif">
           <img
             className="align-middle"
-            src={loadingtrc}
+            src={loadingGif}
             alt="Loading Gif"
-            width="500"
-            height="500"
+            width="150"
+            height="150"
           />
         </div>
       )}
 
       {!loading && (
         <>
-          <Header uri={props.uri} onOpen={isOpen => setOpenSidebar(isOpen)} />
+          <HeaderPingo uri={props.uri} onOpen={isOpen => setOpenSidebar(isOpen)} />
           <div
             className={`container-fluid main-container ${
               isOpenSidebar ? "open" : ""

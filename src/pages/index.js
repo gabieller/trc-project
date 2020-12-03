@@ -7,7 +7,6 @@ import "../styles/index.css"
 import arrowLeft from "../images/keyboard_arrow_left-24px.svg"
 import arrowRight from "../images/keyboard_arrow_right-24px.svg"
 
-
 function Reference({ title, description }) {
   return (
     <div className="quote col-12 col-md-5 my-2 mx-2">

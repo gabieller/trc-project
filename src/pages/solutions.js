@@ -11,8 +11,6 @@ import truck from "../images/truck.svg"
 
 import "../styles/solutions.css"
 
-
-
 export default function Solutions(props) {
   return (
     <Layout {...props}>
