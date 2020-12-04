@@ -17,7 +17,7 @@
 
 }
 
-li:after {
+#navbar-pingo li:after {
   height: 5px;
   color: #000000;
   display: block;
@@ -27,7 +27,7 @@ li:after {
   transition: .1s linear;
   visibility: hidden !important;
 }
-li:hover:after {
+#navbar-pingo li:hover:after {
   color: #000000;
   visibility: visible !important;
   transform: scaleX(1) !important;

@@ -18,8 +18,8 @@ export default function SideMenu({ onClick, uri, visible }) {
             <img src={close} alt="Close button" width="30" height="30" />
           </button>
 
-          <div className="menuLink">
-            <ul className="navbar-nav ml-auto">
+          <div id="side-menu" className="menuLink ">
+            <ul className="navbar-nav ml-auto font-weight-bold">
               <li className={`nav-item ${uri === "/" ? "active" : ""}`}>
                 <Link to="/" className="nav-link">
                   Home

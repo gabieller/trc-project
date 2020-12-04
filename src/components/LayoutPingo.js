@@ -39,7 +39,10 @@ export default function LayoutPingo(props) {
 
       {!loading && (
         <>
-          <HeaderPingo uri={props.uri} onOpen={isOpen => setOpenSidebar(isOpen)} />
+          <HeaderPingo
+            uri={props.uri}
+            onOpen={isOpen => setOpenSidebar(isOpen)}
+          />
           <div
             className={`container-fluid main-container ${
               isOpenSidebar ? "open" : ""

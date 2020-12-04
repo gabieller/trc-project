@@ -16,7 +16,7 @@ export default function Header({ uri, onOpen }) {
   return (
     <>
       <SideMenu visible={isOpenSidebar} uri={uri} onClick={onClickMenuButton} />
-     
+
       <nav
         id="navbar-hamburguer"
         className={`navbar fixed-top bg-transparent d-flex flex-row-reverse`}
@@ -28,7 +28,7 @@ export default function Header({ uri, onOpen }) {
           <img src={menu} alt="hamburger menu" width="36" height="24" />
         </button>
       </nav>
-      
+
       <nav
         id="navbar-pingo"
         className="navbar bg-transparent justify-content-center"
