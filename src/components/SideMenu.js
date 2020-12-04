@@ -61,30 +61,30 @@ export default function SideMenu({ onClick, uri, visible }) {
             </div>
 
             <div className="col-md-6 contact">
-            <div className="col-md-6 pt-3 email-link">
-              <a href="mailto:info@theroutingcompany.com?subject=Press%20%26%20interviews">
-              info@theroutingcompany.com
-              </a>
+              <div className="col-md-6 pt-3 email-link">
+                <a href="mailto:info@theroutingcompany.com?subject=Press%20%26%20interviews">
+                  info@theroutingcompany.com
+                </a>
               </div>
-            <div className="col-md-6 pt-3 pl-0 social-media">
-              <button className={`btn btn-link`}>
-                <img
-                  src={linkedin}
-                  alt="Linkedin button"
-                  width="20"
-                  height="20"
-                />
-              </button>
-              <button className={`btn btn-link`}>
-                <img
-                  src={twitter}
-                  alt="Twitter button"
-                  width="20"
-                  height="20"
-                />
-              </button>
+              <div className="col-md-6 pt-3 pl-0 social-media">
+                <button className={`btn btn-link`}>
+                  <img
+                    src={linkedin}
+                    alt="Linkedin button"
+                    width="20"
+                    height="20"
+                  />
+                </button>
+                <button className={`btn btn-link`}>
+                  <img
+                    src={twitter}
+                    alt="Twitter button"
+                    width="20"
+                    height="20"
+                  />
+                </button>
+              </div>
             </div>
-          </div>
           </div>
         </div>
       </div>
