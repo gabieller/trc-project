@@ -14,7 +14,7 @@
   border-radius: 0 !important;
 }
 
-.btn-white:focus {
+.btn-white:focus {  
   outline-color: #a7a7a7;
 }
 
