@@ -3,7 +3,6 @@ import { Link } from "gatsby"
 
 import "../styles/sidemenu.css"
 
-// import close from "../images/close-btn.svg"
 import linkedin from "../images/linkedin.svg"
 import twitter from "../images/twitter.svg"
 

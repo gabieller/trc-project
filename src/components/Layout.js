@@ -26,14 +26,8 @@ export default function Layout(props) {
       </Helmet>
 
       {loading && (
-        <div className="row col-md-6 justify-content-centerloadingGif">
-          <img
-            className="align-middle"
-            src={loadingtrc}
-            alt="Loading Gif"
-            width="500"
-            height="500"
-          />
+        <div className="loading">
+          <img src={loadingtrc} alt="Loading Gif" width="500" height="500" />
         </div>
       )}
 
@@ -42,7 +36,7 @@ export default function Layout(props) {
           <Header uri={props.uri} onOpen={isOpen => setOpenSidebar(isOpen)} />
           <div
             className={`container-fluid main-container ${
-              isOpenSidebar ? "open" : ""
+              isOpenSidebar && "open"
             }`}
           >
             {props.children}

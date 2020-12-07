@@ -1,28 +1,29 @@
 import React, { useState, useEffect, useCallback } from "react"
-import SideMenu from "./SideMenu"
+import { Link } from "gatsby"
 import { HamburgerCollapse } from "react-animated-burgers"
-
+import SideMenu from "./SideMenu"
 import "../styles/header.css"
-
 import trclogo from "../images/trc-logo-black.png"
-// import menu from "../images/menu-btn.svg"
 
 export default function Header({ uri, onOpen }) {
-  const [isOpenSidebar, setOpenSidebar] = useState(false)
-  const [visibilityClass, setVisibilityClass] = useState("")
-  const [isActive, setIsActive] = useState(false)
+  const [state, setState] = useState({
+    visibilityClass: "",
+    isSidebarOpen: false,
+  })
 
-  const toggleButton = useCallback(
-    () => setIsActive(prevState => !prevState),
-    []
-  )
+  const toggleButton = useCallback(() => {
+    setState(prevState => ({
+      ...prevState,
+      isSidebarOpen: !prevState.isSidebarOpen,
+    }))
+  }, [state.isSidebarOpen])
 
   const handleScroll = () => {
-    if (window.pageYOffset > 45) {
-      setVisibilityClass("bg-transparent navbar-scrolled")
-    } else {
-      setVisibilityClass("")
-    }
+    setState(prevState => ({
+      ...prevState,
+      visibilityClass:
+        window.pageYOffset > 45 ? "bg-transparent navbar-scrolled" : "",
+    }))
   }
 
   useEffect(() => {
@@ -32,32 +33,32 @@ export default function Header({ uri, onOpen }) {
     }
   }, [])
 
-  const onClickMenuButton = () => {
-    onOpen(!isOpenSidebar)
-    setOpenSidebar(!isOpenSidebar)
-  }
-
   return (
     <>
-      <SideMenu visible={isOpenSidebar} uri={uri} onClick={onClickMenuButton} />
-      <nav className={`navbar fixed-top ${visibilityClass}`}>
-        <a href="/" className="navbar-brand">
+      <nav className={`navbar fixed-top ${state.visibilityClass}`}>
+        <Link to="/" className="navbar-brand">
           <img src={trclogo} alt="Main logo" className="img-fluid" />
-        </a>
+        </Link>
         <HamburgerCollapse
-          className="btn btn-link navbar-toggler"
-          isActive={isActive}
-          toggleButton={toggleButton}
+          className="collapse-button"
+          isActive={state.isSidebarOpen}
           barColor="black"
-          onClick={onClickMenuButton}
+          onClick={toggleButton}
         />
-        {/* <button
-          className="btn btn-link navbar-toggler"
-          onClick={onClickMenuButton}
-        >
-          <img src={menu} alt="hamburger menu" width="36" height="24" />
-        </button> */}
       </nav>
+
+      <HamburgerCollapse
+        className="fixed-top collapse-button"
+        isActive={state.isSidebarOpen}
+        barColor={state.isSidebarOpen ? "white" : "transparent"}
+        onClick={toggleButton}
+      />
+
+      <SideMenu
+        visible={state.isSidebarOpen}
+        uri={uri}
+        onClick={toggleButton}
+      />
     </>
   )
 }
