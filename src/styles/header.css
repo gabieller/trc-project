@@ -14,3 +14,10 @@
     max-width: 250px;
   }
 }
+
+.collapse-button {
+  z-index: 1032;
+  right: 1rem;
+  left: unset;
+  top: 1.7rem;
+}

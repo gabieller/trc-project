@@ -3,7 +3,6 @@ import { Link } from "gatsby"
 
 import "../styles/sidemenu.css"
 
-// import close from "../images/close-btn.svg"
 import linkedin from "../images/linkedin.svg"
 import twitter from "../images/twitter.svg"
 
@@ -12,13 +11,6 @@ export default function SideMenu({ onClick, uri, visible }) {
     <>
       <div id="overlay" className={visible ? "open" : ""}>
         <div className={`sidebar ${visible ? "open" : ""}`}>
-          {/* <button
-            id="close-sidebar-button"
-            className={`btn btn-link`}
-            onClick={onClick}
-          >
-            <img src={close} alt="Close button" width="30" height="30" />
-          </button> */}
           <div className="row container">
             <div className="col-md-6 menuLink">
               <div id="side-menu" className="menuLink col-md-6">
@@ -43,7 +35,9 @@ export default function SideMenu({ onClick, uri, visible }) {
                     </Link>
                   </li>
                   <li
-                    className={`nav-item ${uri === "/product" ? "active" : ""}`}
+                    className={`nav-item ${
+                      uri === "/solutions" ? "active" : ""
+                    }`}
                   >
                     <Link to="/solutions" className="nav-link">
                       Solutions

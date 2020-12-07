@@ -218,8 +218,10 @@ export default function Pingo(props) {
           <div className="col-md-4">
             <img src={car} alt="Yellow Car" />
           </div>
-
-          <div className="col-md-5">
+          <div
+            id="pingo-quotes"
+            className="row container justify-content-center col-md-5"
+          >
             <div
               id="carouselExampleIndicators"
               className="carousel slide"
