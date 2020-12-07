@@ -8,6 +8,16 @@
   outline-color: #a7a7a7;
 }
 
+.btn-white {
+  background-color: #E2E5E6 !important;
+  color: #000000 !important;
+  border-radius: 0 !important;
+}
+
+.btn-white:focus {
+  outline-color: #a7a7a7;
+}
+
 body {
   font-family: "Poppins";
 }
