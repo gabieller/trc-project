@@ -9,6 +9,11 @@
   padding-bottom: 8vw;
 }
 
+#pingo-values {
+  background-color: #e2e5e6;
+  padding: 12vw;
+}
+
 #pingo-content .btn {
   background-color: transparent;
   border-radius: 0;
@@ -20,7 +25,27 @@
 #pingo-about {
   padding-top: 5vw;
   padding-bottom: 5vw;
-  background-color: #f4f5f4;
+  background-color: #ffffff;
 }
 
+#pingo-page-lines {
+  background-color: #F4F5F4;
+}
 
+#pingo-quotes {
+ background-color:#9BA6A8;
+}
+
+#pingo-quotes img {
+  image-orientation: 90deg flip;
+}
+
+#pingo-quotes .carousel-indicators li {
+  width: 10px;
+  height: 10px;
+  border-radius: 100%;
+}
+
+#pingo-quotes img {
+  transform: rotate(180deg);
+}

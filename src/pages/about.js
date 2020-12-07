@@ -88,7 +88,7 @@ export default function About(props) {
 
           <div className="col-md-2 border border-dark border-top-0 border-bottom-0">
             <div className="arrow-interaction text-center">
-            <img src={arrow} alt="Arrow Interaction" />
+              <img src={arrow} alt="Arrow Interaction" />
             </div>
           </div>
 
