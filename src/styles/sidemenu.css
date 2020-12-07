@@ -23,28 +23,19 @@
   -webkit-text-stroke: 0.5px #ffffff;
   -webkit-text-fill-color: transparent;
   overflow: hidden;
-}
-
-#side-menu a {
-  background: linear-gradient(
-    to right,
-    transparent,
-    transparent 50%,
-    white 50%
-  );
-}
-
-#side-menu a {
+  background: linear-gradient(to right,transparent,transparent 50%,white 50%);
   background-clip: text;
+  background-size: 200% 100%;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-  background-size: 200% 100%;
   background-position: 100%;
-}
-
-#side-menu a {
   transition: background-position 500ms ease-out;
 }
+
+#side-menu li.nav-item.active a {
+  background-position: 0 100%;
+}
+
 #side-menu a:hover {
   background-position: 0 100%;
 }

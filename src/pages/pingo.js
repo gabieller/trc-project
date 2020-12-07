@@ -196,7 +196,10 @@ export default function Pingo(props) {
           <div id="pingo-trc">We are part of The Routing Company</div>
           <div id="pingo-backed">Backed by the best</div>
 
-          <div id="pingo-quotes" className="row container justify-content-center col-md-5">
+          <div
+            id="pingo-quotes"
+            className="row container justify-content-center col-md-5"
+          >
             <div
               id="carouselExampleIndicators"
               className="carousel slide"
