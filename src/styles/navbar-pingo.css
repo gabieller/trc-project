@@ -1,0 +1,30 @@
+#navbar-pingo {
+  position: absolute;
+  padding-top: 49vw;
+  background: transparent;
+  color: #000000;
+}
+
+#navbar-pingo .nav-link {
+  color: #000000;
+}
+
+#navbar-pingo .nav-link:hover {
+  color: #000000;
+}
+
+#navbar-pingo li:after {
+  height: 5px;
+  color: #000000;
+  display: block;
+  background: #000000;
+  content: "";
+  transform: scaleX(0) !important;
+  transition: 0.1s linear;
+  visibility: hidden !important;
+}
+#navbar-pingo li:hover:after {
+  color: #000000;
+  visibility: visible !important;
+  transform: scaleX(1) !important;
+}

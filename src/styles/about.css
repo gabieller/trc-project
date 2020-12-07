@@ -12,17 +12,12 @@
   background-color: #f4f5f4;
 }
 
-#about-page-second .line-right {
-  border: 1px;
-}
 
 #about-page-second .card-body {
   background-color: none;
 }
 
-#about-page-second .arrow-interaction {
-  height: 10px;
-}
+
 
 #about-page-third {
   background-color: #737b7d;

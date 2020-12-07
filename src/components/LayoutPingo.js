@@ -2,7 +2,8 @@ import React, { useState, useEffect } from "react"
 import { Helmet } from "react-helmet"
 
 import Footer from "./Footer"
-import HeaderPingo from "./HeaderPingo"
+import NavBarPingo from "./NavBarPingo"
+// import HeaderPingo from "./HeaderPingo"
 
 import loadingGif from "../images/loading.gif"
 import "../styles/layout.css"
@@ -39,10 +40,11 @@ export default function LayoutPingo(props) {
 
       {!loading && (
         <>
-          <HeaderPingo
+          <NavBarPingo />
+          {/* <HeaderPingo
             uri={props.uri}
             onOpen={isOpen => setOpenSidebar(isOpen)}
-          />
+          /> */}
           <div
             className={`container-fluid main-container ${
               isOpenSidebar ? "open" : ""
