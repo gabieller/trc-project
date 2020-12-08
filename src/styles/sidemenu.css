@@ -75,6 +75,10 @@
   visibility: visible;
 }
 
+.menu-index {
+  padding-top: 3vw;
+}
+
 #overlay .menu {
   padding-left: 20vw;
 }
