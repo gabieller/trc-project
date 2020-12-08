@@ -316,9 +316,9 @@ export default function Pingo(props) {
               <h2>See where we’re currently operating</h2>
             </div>
             <div className="col-md-7 text-body px-0 pt-5">
-                Et has minim elitr intellegat. Mea aeterno eleifend antiopam ad,
-                nam no suscipit quaerendum. At nam minimum ponderum. Est audiam
-                animal molestiae te. Ex duo eripuit mentitum.
+              Et has minim elitr intellegat. Mea aeterno eleifend antiopam ad,
+              nam no suscipit quaerendum. At nam minimum ponderum. Est audiam
+              animal molestiae te. Ex duo eripuit mentitum.
             </div>
             <div className="col-md-6 find-pingo-illustration">
               <img src={womanillustration} alt="Woman Standing" />
@@ -347,20 +347,19 @@ export default function Pingo(props) {
         </div>
 
         <div id="download-pingo">
-
           <div className="col-md-6 justify-content-left text pt-5">
             <div className="title">
               <h2>
                 Download pingo, lucilius noster postulant philosophia ea usu,
                 qui dicta sadipscing te.
               </h2>
-              </div>
-              <div className="col-md-10 text-body px-0 pt-3">
-                  Et has minim elitr intellegat. Mea aeterno eleifend antiopam
-                  ad, nam no suscipit quaerendum. At nam minimum ponderum. Est
-                  audiam animal molestiae te. Ex duo eripuit mentitum.
-              </div>
             </div>
+            <div className="col-md-10 text-body px-0 pt-3">
+              Et has minim elitr intellegat. Mea aeterno eleifend antiopam ad,
+              nam no suscipit quaerendum. At nam minimum ponderum. Est audiam
+              animal molestiae te. Ex duo eripuit mentitum.
+            </div>
+          </div>
 
           <div className="download-badges">
             <div className="download-button pt-3">
@@ -382,8 +381,7 @@ export default function Pingo(props) {
               </button>
             </div>
           </div>
-
-      </div>
+        </div>
       </div>
     </LayoutPingo>
   )

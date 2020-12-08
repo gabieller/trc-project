@@ -21,8 +21,9 @@
   content: "";
   transform: scaleX(0) !important;
   transition: 0.1s linear;
-  visibility: hidden !important;
+  visibility: visible !important;
 }
+
 #navbar-pingo li:hover:after {
   color: #000000;
   visibility: visible !important;

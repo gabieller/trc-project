@@ -2,6 +2,7 @@ import React, { useState, useEffect } from "react"
 import { Helmet } from "react-helmet"
 
 import Footer from "./Footer"
+import ScrollTop from "./ScrollTop"
 import NavBarPingo from "./NavBarPingo"
 // import HeaderPingo from "./HeaderPingo"
 
@@ -53,6 +54,7 @@ export default function LayoutPingo(props) {
             {props.children}
           </div>
           <Footer />
+        <ScrollTop />
         </>
       )}
     </>
