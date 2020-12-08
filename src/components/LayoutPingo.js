@@ -6,7 +6,7 @@ import ScrollTop from "./ScrollTop"
 import NavBarPingo from "./NavBarPingo"
 // import HeaderPingo from "./HeaderPingo"
 
-import loadingGif from "../images/loading.gif"
+import loadingpingo from "../images/loading.gif"
 import "../styles/layout.css"
 
 export default function LayoutPingo(props) {
@@ -28,24 +28,14 @@ export default function LayoutPingo(props) {
       </Helmet>
 
       {loading && (
-        <div className="d-flex justify-content-center loadingGif">
-          <img
-            className="align-middle"
-            src={loadingGif}
-            alt="Loading Gif"
-            width="150"
-            height="150"
-          />
+        <div className="loading">
+          <img src={loadingpingo} alt="Loading Gif" width="150" height="150" />
         </div>
       )}
 
       {!loading && (
         <>
           <NavBarPingo />
-          {/* <HeaderPingo
-            uri={props.uri}
-            onOpen={isOpen => setOpenSidebar(isOpen)}
-          /> */}
           <div
             className={`container-fluid main-container ${
               isOpenSidebar ? "open" : ""
@@ -53,8 +43,9 @@ export default function LayoutPingo(props) {
           >
             {props.children}
           </div>
+          )}
           <Footer />
-        <ScrollTop />
+          <ScrollTop />
         </>
       )}
     </>

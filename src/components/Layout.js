@@ -14,7 +14,7 @@ export default function Layout(props) {
   useEffect(() => {
     setInterval(() => {
       setLoading(false)
-    }, 500)
+    }, 300)
   }, [])
 
   return (
