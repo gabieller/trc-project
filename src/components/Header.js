@@ -37,7 +37,7 @@ export default function Header({ uri, onOpen }) {
     <>
       <nav className={`navbar fixed-top ${state.visibilityClass}`}>
         <Link to="/" className="navbar-brand">
-          <img src={trclogo} alt="Main logo" className="img-fluid" />
+          <img src={trclogo} alt="Main logo" className="img-fluid" width="470" height="65" />
         </Link>
         <HamburgerCollapse
           className="collapse-button"
