@@ -44,56 +44,55 @@
   padding-bottom: 15vw;
 }
 
-#pingo-quotes-content {
+#pingo-quotes {
   background-color: #9ba6a8;
   padding-bottom: 5vw;
 }
 
-#pingo-quotes-content .card-body {
+#pingo-quotes .card-body {
   color: #ffffff;
 }
 
-#pingo-quotes-content img {
+#pingo-quotes img {
   image-orientation: 90deg flip;
 }
 
-#pingo-quotes-content .carousel-indicators li {
+#pingo-quotes .carousel-indicators li {
   width: 10px;
   height: 10px;
   border-radius: 100%;
 }
-#pingo-quotes-illustration  {
-  background-color: #ffffff;
-  /* padding-top: 14vw; */
-  /* padding-right: 9vw; */
+#pingo-quotes .quotes-illustration {
+  top: 12vw;
+  right: 16vw;
 }
 
 #pingo-somewhere {
   padding-top: 5vw;
   padding-bottom: 5vw;
+  padding-left: 10vw;
   background-color: #ffffff;
 }
 
-
-/* 
-@media (min-width: 768px) {
-  #pingo-quotes {
-    background: linear-gradient(
-      to bottom,
-      #9ba6a8 0%,
-      #9ba6a8 90%,
-      #ffffff 90%
-    );
-  }
+#pingo-somewhere .text {
+  padding-top: 5vw;
 }
 
-@media (max-width: 576px) {
-  #pingo-quotes {
-    background: linear-gradient(
-      to bottom,
-      #ffffff 0%,
-      #ffffff 20%,
-      #ffffff 20%
-    );
-  }
-} */
+#pingo-somewhere .warning-text {
+  color: #737b7d;
+}
+
+#pingo-somewhere .find-pingo-illustration {
+  position: absolute;
+  top: 0vw;
+  left: 42vw;
+}
+
+#download-pingo {
+  background-image: url( " ../images/pingo-shapes.png");
+  background-color: #C3CBCD69;
+  padding-top: 5vw;
+  padding-bottom: 10vw;
+  padding-left: 10vw;
+
+}

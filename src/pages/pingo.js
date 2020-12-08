@@ -7,6 +7,9 @@ import empty from "../images/img-empty.png"
 import arrow from "../images/arrow.svg"
 import quote from "../images/quote.svg"
 import car from "../images/car-illustration.png"
+import womanillustration from "../images/woman-illustration.png"
+import googleplaybadge from "../images/google-play-badge.png"
+import appstorebadge from "../images/app-store-badge.svg"
 
 import "../styles/pingo.css"
 
@@ -214,14 +217,12 @@ export default function Pingo(props) {
           <div className="row container">Backed by the best</div>
         </div>
 
-        <div id="pingo-quotes" className="row  quotes-content">
-          <div className="col-md-4">
+        <div id="pingo-quotes" className="row">
+          <div className="col-md-4 quotes-illustration">
             <img src={car} alt="Yellow Car" />
           </div>
-          <div
-            id="pingo-quotes"
-            className="row container justify-content-center col-md-5"
-          >
+
+          <div className="col-md-5 text-center quotes-content mx-0">
             <div
               id="carouselExampleIndicators"
               className="carousel slide"
@@ -308,117 +309,82 @@ export default function Pingo(props) {
           </div>
         </div>
 
-        {/* <div id="pingo-quotes-illustration" className="row">
-          <div className="col-md-4">
-          <img src={car} alt="Yellow Car" />
+        <div id="pingo-somewhere">
+          <div className="col-md-8 justify-content-left text pt-5">
+            <div className="title">
+              <h2 className="font-weight-bold">Pingo somewhere!</h2>
+              <h2>See where we’re currently operating</h2>
+            </div>
+            <div className="col-md-7 text-body px-0 pt-5">
+                Et has minim elitr intellegat. Mea aeterno eleifend antiopam ad,
+                nam no suscipit quaerendum. At nam minimum ponderum. Est audiam
+                animal molestiae te. Ex duo eripuit mentitum.
+            </div>
+            <div className="col-md-6 find-pingo-illustration">
+              <img src={womanillustration} alt="Woman Standing" />
+            </div>
           </div>
-        </div> */}
 
-        {/* <div id="pingo-quotes-illustration" className="row">
-            <img src={car} alt="Yellow Car" />
-          </div>
-        </div> */}
-
-        <div id="pingo-somewhere" className="row container">
-          <div className="row col-md-6 justify-content-left pl-5">
-            <h2 className="font-weight-bold">Pingo somewhere!</h2>
-            <h2>See where we’re currently operating</h2>
-            <h5>
-              Et has minim elitr intellegat. Mea aeterno eleifend antiopam ad,
-              nam no suscipit quaerendum. At nam minimum ponderum. Est audiam
-              animal molestiae te. Ex duo eripuit mentitum.
-            </h5>
+          <div className="col-md-4 find-pingo pt-5">
+            <div className="input-group mb-3">
+              <input
+                type="text"
+                className="form-control"
+                placeholder="| Enter City"
+                aria-label="| Enter City"
+              />
+              <div className="input-group-append">
+                <Button className="btn-black" variant="contained">
+                  SEARCH CITY
+                </Button>
+              </div>
+            </div>
+            <h6 className="warning-text">
+              By clicking “Primary action” you accepting ipsum dolor sit amet,
+              sit ea brute mediocritatem, eu sed aliquam scripserit dissentiunt.
+            </h6>
           </div>
         </div>
+
+        <div id="download-pingo">
+
+          <div className="col-md-6 justify-content-left text pt-5">
+            <div className="title">
+              <h2>
+                Download pingo, lucilius noster postulant philosophia ea usu,
+                qui dicta sadipscing te.
+              </h2>
+              </div>
+              <div className="col-md-10 text-body px-0 pt-3">
+                  Et has minim elitr intellegat. Mea aeterno eleifend antiopam
+                  ad, nam no suscipit quaerendum. At nam minimum ponderum. Est
+                  audiam animal molestiae te. Ex duo eripuit mentitum.
+              </div>
+            </div>
+
+          <div className="download-badges">
+            <div className="download-button pt-3">
+              <button className={`btn btn-link pl-2`}>
+                <img
+                  src={googleplaybadge}
+                  alt="Google Play Download"
+                  width="130"
+                  height="60"
+                />
+              </button>
+              <button className={`btn btn-link`}>
+                <img
+                  src={appstorebadge}
+                  alt="App Store Download"
+                  width="115"
+                  height="50"
+                />
+              </button>
+            </div>
+          </div>
+
+      </div>
       </div>
     </LayoutPingo>
   )
-}
-
-{
-  /* <div className="row container justify-content-center about-quotes p-5 col-md-5">
-            <div
-              id="carouselExampleIndicators"
-              className="carousel slide"
-              data-ride="carousel"
-            >
-              <ol className="carousel-indicators">
-                <li
-                  data-target="#carouselExampleIndicators"
-                  data-slide-to="0"
-                  className="active"
-                ></li>
-                <li
-                  data-target="#carouselExampleIndicators"
-                  data-slide-to="1"
-                ></li>
-                <li
-                  data-target="#carouselExampleIndicators"
-                  data-slide-to="2"
-                ></li>
-              </ol>
-              <div className="carousel-inner">
-                <div className="carousel-item active">
-                  <div className="card text-center bg-transparent m-5">
-                    <img
-                      className="card-img-top"
-                      src={quote}
-                      alt="Card cap"
-                      width="100"
-                      height="100"
-                    />
-                    <div className="card-body">
-                      <p className="card-text">
-                        Est tation latine aliquip id, mea ad tale illud
-                        definitiones. Periculis omittantur reformidans
-                        necessitatibus eum ad, pro eripuit minimum comprehensam
-                        ne, usu cu stet prompta.
-                      </p>
-                      <h4 className="card-title">Connie Robertson at Google</h4>
-                    </div>
-                  </div>
-                </div>
-                <div className="carousel-item">
-                  <div className="card text-center bg-transparent m-5">
-                    <img
-                      className="card-img-top"
-                      src={quote}
-                      alt="Card cap"
-                      width="100"
-                      height="100"
-                    />
-                    <div className="card-body">
-                      <p className="card-text">
-                        Est tation latine aliquip id, mea ad tale illud
-                        definitiones. Periculis omittantur reformidans
-                        necessitatibus eum ad, pro eripuit minimum comprehensam
-                        ne, usu cu stet prompta.
-                      </p>
-                      <h4 className="card-title">Connie Robertson at Google</h4>
-                    </div>
-                  </div>
-                </div>
-                <div className="carousel-item">
-                  <div className="card text-center bg-transparent m-5">
-                    <img
-                      className="card-img-top"
-                      src={quote}
-                      alt="Card cap"
-                      width="100"
-                      height="100"
-                    />
-                    <div className="card-body">
-                      <p className="card-text">
-                        Est tation latine aliquip id, mea ad tale illud
-                        definitiones. Periculis omittantur reformidans
-                        necessitatibus eum ad, pro eripuit minimum comprehensam
-                        ne, usu cu stet prompta.
-                      </p>
-                      <h4 className="card-title">Connie Robertson at Google</h4>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div> */
 }

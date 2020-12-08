@@ -34,7 +34,7 @@ export default function About(props) {
           <div className="col-md-5 border border-dark border-top border-bottom p-0 col-left ">
             <div className="d-inline-flex">
               <div className="col-md-6 team-picture py-5">
-                <img src={menno} alt="Menno Picture" width="250" height="250" />
+                <img src={menno} alt="Menno" width="250" height="250" />
               </div>
               <div className="card col-md-6 team-description bg-white ">
                 <div className="card-body">
@@ -52,7 +52,7 @@ export default function About(props) {
 
             <div className="d-inline-flex border border-dark border-right-0 border-left-0">
               <div className="col-md-6 team-picture py-5">
-                <img src={menno} alt="Menno Picture" width="250" height="250" />
+                <img src={menno} alt="Menno" width="250" height="250" />
               </div>
               <div className="card col-md-6 team-description bg-white ">
                 <div className="card-body">
@@ -69,7 +69,7 @@ export default function About(props) {
             </div>
             <div className="d-inline-flex">
               <div className="col-md-6 team-picture py-5">
-                <img src={menno} alt="Menno Picture" width="250" height="250" />
+                <img src={menno} alt="Menno" width="250" height="250" />
               </div>
               <div className="card col-md-6 team-description bg-white ">
                 <div className="card-body">
@@ -95,7 +95,7 @@ export default function About(props) {
           <div className="col-md-5 border-dark border-top border-bottom p-0 col-right">
             <div className="d-inline-flex">
               <div className="col-md-6 team-picture py-5">
-                <img src={menno} alt="Menno Picture" width="250" height="250" />
+                <img src={menno} alt="Menno" width="250" height="250" />
               </div>
               <div className="card col-md-6 team-description bg-white ">
                 <div className="card-body">
@@ -113,7 +113,7 @@ export default function About(props) {
 
             <div className="d-inline-flex d-inline-flex border border-dark border-right-0 border-left-0">
               <div className="col-md-6 team-picture py-5">
-                <img src={menno} alt="Menno Picture" width="250" height="250" />
+                <img src={menno} alt="Menno" width="250" height="250" />
               </div>
               <div className="card col-md-6 team-description bg-white ">
                 <div className="card-body">
@@ -130,7 +130,7 @@ export default function About(props) {
             </div>
             <div className="d-inline-flex">
               <div className="col-md-6 team-picture py-5">
-                <img src={menno} alt="Menno Picture" width="250" height="250" />
+                <img src={menno} alt="Menno" width="250" height="250" />
               </div>
               <div className="card col-md-6 team-description bg-white ">
                 <div className="card-body">
@@ -165,7 +165,7 @@ export default function About(props) {
               <img
                 className="empty pt-5"
                 src={empty}
-                alt="Newsletter Image"
+                alt="Newsletter"
                 width="100%"
                 height="100%"
               />
