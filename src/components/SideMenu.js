@@ -115,7 +115,7 @@ export default function SideMenu({ onClick, uri, visible }) {
               </button>
             </div>
             <div className=" d-flex flex-row-reverse col-md-6 pt-3 px-2 email-link">
-              <a href="mailto:info@theroutingcompany.com?subject=Press%20%26%20interviews">
+              <a href="mailto:info@theroutingcompany.com?subject=Infomations">
                 info@theroutingcompany.com
               </a>
             </div>

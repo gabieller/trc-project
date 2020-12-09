@@ -23,6 +23,7 @@ export default function Layout(props) {
         <meta charSet="utf-8" />
         <title>The Routing Company</title>
         <link rel="canonical" href="https://theroutingcompany.com/" />
+
       </Helmet>
 
       {loading && (
