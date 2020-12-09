@@ -48,7 +48,7 @@ export default function SideMenu({ onClick, uri, visible }) {
                     }`}
                   >
                     <Link to="/solutions" className="nav-link d-inline-flex">
-                    <h4 className="menu-index pr-2">03</h4>
+                      <h4 className="menu-index pr-2">03</h4>
                       <h1>Solutions</h1>
                     </Link>
                   </li>
@@ -56,7 +56,7 @@ export default function SideMenu({ onClick, uri, visible }) {
                     className={`nav-item ${uri === "/contact" ? "active" : ""}`}
                   >
                     <Link to="/contact" className="nav-link d-inline-flex">
-                    <h4 className="menu-index pr-2">04</h4>
+                      <h4 className="menu-index pr-2">04</h4>
                       <h1>Contact</h1>
                     </Link>
                   </li>
@@ -64,7 +64,7 @@ export default function SideMenu({ onClick, uri, visible }) {
                     className={`nav-item ${uri === "/contact" ? "active" : ""}`}
                   >
                     <Link to="/blog" className="nav-link d-inline-flex">
-                    <h4 className="menu-index pr-2">05</h4>
+                      <h4 className="menu-index pr-2">05</h4>
                       <h1>Blog</h1>
                     </Link>
                   </li>
