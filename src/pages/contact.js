@@ -4,7 +4,7 @@ import Button from "@material-ui/core/Button"
 
 import "../styles/contact.css"
 
-export default function Home(props) {
+export default function Contact(props) {
   return (
     <Layout {...props}>
       <div id="contact-page">
@@ -127,42 +127,40 @@ export default function Home(props) {
               </form>
             </div>
             <div className="col-md-4 col-sm-12-py-5 topics">
-              <h3 className="font-weight-bold topics-title">
+              <h5 className="font-weight-bold topics-title">
                 With The Routing Company you can:
-              </h3>
-              <div className="topics-body py-3">
+              </h5>
+              <h6 className="topics-body py-3">
                 ✔️ Et has minim elitr intellegat. Mea aeterno eleifend antiopam
                 ad, nam no suscipit quaerendum.
-              </div>
-              <div className="topics-body py-3">
+              </h6>
+              <h6 className="topics-body py-3">
                 ✔️ Et has minim elitr intellegat. Mea aeterno eleifend antiopam
                 ad, nam no suscipit quaerendum.
-              </div>
-              <div className="topics-body py-3">
+              </h6>
+              <h6 className="topics-body py-3">
                 ✔️ Et has minim elitr intellegat. Mea aeterno eleifend antiopam
                 ad, nam no suscipit quaerendum.
-              </div>
+              </h6>
             </div>
           </div>
         </div>
 
-        <div className="row contact-queries px-5">
+        <div className="row container contact-queries px-0">
           <div className="col-md-4 col-item">
             <div className="card-body">
               <h4 className="card-title font-weight-bold">General queries</h4>
               <div className="card-text">
-                Ad eos saepe lucilius, noster postulant philosophia ea usu, qui
-                dicta sadipscing te at info@theroutingcompany.com
+                Qui dicta sadipscing te at info@theroutingcompany.com
               </div>
             </div>
           </div>
 
           <div className="col-md-4 col-item">
             <div className="card-body">
-              <h4 className="card-title font-weight-bold">Technical support</h4>
+              <h4 className="card-title font-weight-bold">Medium</h4>
               <div className="card-text">
-                Ad eos saepe lucilius, noster postulant philosophia ea usu, qui
-                dicta sadipscing te at info@theroutingcompany.com
+                Qui dicta sadipscing te at dicta sadipscing te at.
               </div>
             </div>
           </div>
@@ -171,8 +169,20 @@ export default function Home(props) {
             <div className="card-body">
               <h4 className="card-title font-weight-bold">Careers</h4>
               <div className="card-text">
-                Ad eos saepe lucilius, noster postulant philosophia ea usu, qui
-                dicta sadipscing te at info@theroutingcompany.com
+                Qui dicta sadipscing te at dicta sadipscing te at.
+              </div>
+            </div>
+            {/* </div> */}
+          </div>
+          <div className="row container contact-queries px-0 pt-3">
+            <div className="col-md-4 col-item">
+              <div className="card-body">
+                <h4 className="card-title font-weight-bold">
+                  Technical support
+                </h4>
+                <div className="card-text">
+                  Qui dicta sadipscing te at info@theroutingcompany.com
+                </div>
               </div>
             </div>
           </div>

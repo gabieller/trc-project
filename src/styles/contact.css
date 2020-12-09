@@ -1,19 +1,14 @@
 #contact-page {
   padding-top: 10rem;
-  background-color: #F4F5F4;
 }
 
-#contact-page-first {
-  margin-bottom: 5vh;
-}
 
-.row-form {
+#contact-page-first .row-form {
   position: relative;
 }
 
-.form {
+#contact-page-first .form {
   width: 100%;
-  position: absolute;
   background-color: #ffffff;
   border: 1px;
   border-radius: 0;
@@ -21,7 +16,7 @@
   border-color: #707070 !important;
 }
 
-.form-control {
+#contact-page-first .form-control {
   border-radius: 0;
   color: #737b7d;
 }
@@ -35,23 +30,31 @@
   padding-top: 5vw;
   padding-left: 5vw;
 }
-.topics-body {
-  font-family: "Roboto";
-  font-size: 0.75rem;
-}
-
-.contact-queries {
-  background-color: #737B7D;
-  color: #ffffff;
-}
 
 #contact-page .contact-queries {
-  padding-top: 15vw;
-  padding-bottom: 5vw;
+  padding-bottom: 2vw;
+  background-color: #ffffff;
+
 }
 
-@media (max-width: 760px) {
-  .form {
-    position: relative;
+@media (min-width: 768px) {
+  #contact-page-first {
+    background: linear-gradient(
+      to bottom,
+      #E2E5E6 0%,
+      #E2E5E6 80%,
+      #ffffff 80%
+    );
+  }
+}
+
+@media (max-width: 576px) {
+  #contact-page-first {
+    background: linear-gradient(
+      to bottom,
+      #ffffff 0%,
+      #ffffff 70%,
+      #ffffff 70%
+    );
   }
 }
