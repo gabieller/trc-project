@@ -61,7 +61,7 @@ export default function SideMenu({ onClick, uri, visible }) {
                     </Link>
                   </li>
                   <li
-                    className={`nav-item ${uri === "/contact" ? "active" : ""}`}
+                    className={`nav-item ${uri === "/blog" ? "active" : ""}`}
                   >
                     <Link to="/blog" className="nav-link d-inline-flex">
                       <h4 className="menu-index pr-2">05</h4>

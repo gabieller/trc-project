@@ -1,5 +1,6 @@
 import React from "react"
 import Layout from "../components/Layout"
+import Demo from "../components/Demo"
 import Button from "@material-ui/core/Button"
 
 import empty from "../images/img-empty.png"
@@ -12,7 +13,7 @@ export default function About(props) {
   return (
     <Layout {...props}>
       <div id="about-page">
-        <div id="about-page-first">
+        <div id="about-header">
           <div className="row container about-title">
             <div className="col-md-8 justify-content-left about-title pt-5">
               <h2>
@@ -30,7 +31,7 @@ export default function About(props) {
           </div>
         </div>
 
-        <div id="about-page-second" className="row about-line">
+        <div id="about-team" className="row about-line">
           <div className="col-md-5 border border-dark border-top border-bottom p-0 col-left ">
             <div className="d-inline-flex">
               <div className="col-md-6 team-picture py-5">
@@ -148,19 +149,16 @@ export default function About(props) {
           </div>
         </div>
 
-        <div id="about-page-third">
-          <div className="row container ">
+        <div id="newsletter-section">
+          <div className="row container justify-content-center newsletter">
+          <div className="row container pt-5 ">
             <h2 className="col-md-12 text-center">
               We build smart, sustainable transit solutions that are more
               reliable and accessible than other mobility options. Our MIT-born
               routing technology has been hailed as a striking example of the
               potential around ridesharing.
             </h2>
-          </div>
         </div>
-
-        <div id="about-page-fourth">
-          <div className="row container justify-content-center newsletter">
             <div className="col-md-6">
               <img
                 className="empty pt-5"
@@ -201,38 +199,8 @@ export default function About(props) {
             </div>
           </div>
         </div>
-        <div id="contact-us" className="pl-5">
-          <div className="row container contact-us-title pl-0">
-            <div className="col-md-6 justify-content-left contact-us-title pb-3">
-              <h2>Ad eos saepe lucilius, noster postulant philosophia.</h2>
-            </div>
-          </div>
-          <div className="row container contact-us-subtitle pl-0">
-            <div className="col-md-6 col-sm-12 justify-content-left">
-              <h4>
-                Et has minim elitr intellegat. Mea aeterno eleifend antiopam ad,
-                nam no suscipit quaerendum. At nam minimum ponderum. Est audiam
-                animal molestiae te. Ex duo eripuit mentitum.
-              </h4>
-            </div>
-          </div>
-          <div className="row container contact-us-buttons pl-0">
-            <div className=" justify-content-left pt-3">
-              <div className="action-buttons row pl-3">
-                <div className="action-buttons pr-3">
-                  <Button className="btn-black btn-action" variant="contained">
-                    Primary Action
-                  </Button>
-                </div>
-                <div className="action-buttons">
-                  <Button className="btn-white btn-action" variant="contained">
-                    Secondary Action
-                  </Button>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
+
+        <Demo />
       </div>
     </Layout>
   )

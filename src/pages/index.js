@@ -1,6 +1,7 @@
 import React from "react"
 import Layout from "../components/Layout"
 import Card from "../components/Card"
+import Demo from "../components/Demo"
 import Button from "@material-ui/core/Button"
 
 import "../styles/index.css"
@@ -138,6 +139,7 @@ export default function Home(props) {
             </div>
           </div>
         </div>
+        <Demo />
       </div>
     </Layout>
   )
