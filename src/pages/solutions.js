@@ -2,6 +2,7 @@ import React from "react"
 import Layout from "../components/Layout"
 import Card from "../components/Card"
 import Demo from "../components/Demo"
+import DownloadButtons from "../components/DownloadButtons"
 import Button from "@material-ui/core/Button"
 
 import map from "../images/map.png"
@@ -11,8 +12,6 @@ import empty from "../images/img-empty.png"
 import key from "../images/key.svg"
 import cube from "../images/cube.svg"
 import truck from "../images/truck.svg"
-import googleplaybadge from "../images/google-play-badge.png"
-import appstorebadge from "../images/app-store-badge.svg"
 
 import "../styles/solutions.css"
 
@@ -175,26 +174,7 @@ export default function Solutions(props) {
                   </Button>
                 </div>
               </div>
-              <div className="download-badges">
-                <div className="download-button pt-3">
-                  <button className={`btn btn-link pl-2`}>
-                    <img
-                      src={googleplaybadge}
-                      alt="Google Play Download"
-                      width="130"
-                      height="60"
-                    />
-                  </button>
-                  <button className={`btn btn-link`}>
-                    <img
-                      src={appstorebadge}
-                      alt="App Store Download"
-                      width="115"
-                      height="50"
-                    />
-                  </button>
-                </div>
-              </div>
+              <DownloadButtons />
             </div>
           </div>
         </div>

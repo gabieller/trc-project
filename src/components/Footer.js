@@ -1,4 +1,5 @@
 import React from "react"
+import DownloadButtons from "../components/DownloadButtons"
 import Button from "@material-ui/core/Button"
 
 import "../styles/footer.css"
@@ -7,8 +8,6 @@ import trclogo from "../images/trc-logo-white.png"
 import pingologo from "../images/pingo-logo-white.png"
 import linkedin from "../images/linkedin.svg"
 import twitter from "../images/twitter.svg"
-import googleplaybadge from "../images/google-play-badge.png"
-import appstorebadge from "../images/app-store-badge.svg"
 
 export default function Footer() {
   return (
@@ -39,24 +38,8 @@ export default function Footer() {
 
           <div className="logo-pingo">
             <img src={pingologo} alt="Logo PINGO" width="120" height="55" />
-            <div className="download-button pb-3">
-              <button className={`btn btn-link pl-2`}>
-                <img
-                  src={googleplaybadge}
-                  alt="Google Play Download"
-                  width="130"
-                  height="60"
-                />
-              </button>
-              <button className={`btn btn-link`}>
-                <img
-                  src={appstorebadge}
-                  alt="App Store Download"
-                  width="115"
-                  height="50"
-                />
-              </button>
-            </div>
+            <DownloadButtons />
+         
           </div>
         </div>
 

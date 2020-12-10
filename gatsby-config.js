@@ -13,5 +13,12 @@ module.exports = {
         display: "swap",
       },
     },
+    {
+      resolve: "gatsby-plugin-mailchimp",
+      options: {
+        endpoint:
+          "https://gmail.us7.list-manage.com/subscribe/post?u=c53f03f20d87a33cadfdaab38&amp;id=e39f7c1976",
+      },
+    },
   ],
 }

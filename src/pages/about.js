@@ -1,7 +1,9 @@
 import React from "react"
 import Layout from "../components/Layout"
 import Demo from "../components/Demo"
+import Newsletter from "../components/Newsletter"
 import Button from "@material-ui/core/Button"
+// import AnimateHeight from "react-animate-height"
 
 import empty from "../images/img-empty.png"
 import menno from "../images/menno-pic.png"
@@ -151,14 +153,14 @@ export default function About(props) {
 
         <div id="newsletter-section">
           <div className="row container justify-content-center newsletter">
-          <div className="row container pt-5 ">
-            <h2 className="col-md-12 text-center">
-              We build smart, sustainable transit solutions that are more
-              reliable and accessible than other mobility options. Our MIT-born
-              routing technology has been hailed as a striking example of the
-              potential around ridesharing.
-            </h2>
-        </div>
+            <div className="row container pt-5 ">
+              <h2 className="col-md-12 text-center">
+                We build smart, sustainable transit solutions that are more
+                reliable and accessible than other mobility options. Our
+                MIT-born routing technology has been hailed as a striking
+                example of the potential around ridesharing.
+              </h2>
+            </div>
             <div className="col-md-6">
               <img
                 className="empty pt-5"
@@ -169,16 +171,18 @@ export default function About(props) {
               />
             </div>
             <div className="col-md-6 py-5">
-              <div className="newsletter-title font-weight-bold pt-5">
+              {/* <div className="newsletter-title font-weight-bold pt-5">
                 <h2>Follow our latest news</h2>
                 <h2>Sign up for our newsletter</h2>
-              </div>
+              </div> */}
+             
+              <Newsletter />
               <div className="newsletter-text py-4">
                 Et has minim elitr intellegat. Mea aeterno eleifend antiopam ad,
                 nam no suscipit quaerendum. At nam minimum ponderum. Est audiam
                 animal molestiae te. Ex duo eripuit mentitum.
               </div>
-              <div className="input-group mb-3">
+              {/* <div className="input-group mb-3">
                 <input
                   type="text"
                   className="form-control"
@@ -190,7 +194,7 @@ export default function About(props) {
                     Primary Action
                   </Button>
                 </div>
-              </div>
+              </div> */}
               <h5 className="warning-text">
                 By clicking “Primary action” you accepting ipsum dolor sit amet,
                 sit ea brute mediocritatem, eu sed aliquam scripserit

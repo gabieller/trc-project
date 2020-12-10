@@ -1,5 +1,6 @@
 import React from "react"
 import LayoutPingo from "../components/LayoutPingo"
+import DownloadButtons from "../components/DownloadButtons"
 
 import Button from "@material-ui/core/Button"
 
@@ -7,9 +8,9 @@ import empty from "../images/img-empty.png"
 import arrow from "../images/arrow.svg"
 import quote from "../images/quote.svg"
 import car from "../images/car-illustration.png"
+import buttonpingo1 from "../images/buttonpingo1.svg"
+import buttonpingo2 from "../images/buttonpingo2.svg"
 import womanillustration from "../images/woman-illustration.png"
-import googleplaybadge from "../images/google-play-badge.png"
-import appstorebadge from "../images/app-store-badge.svg"
 
 import "../styles/pingo.css"
 
@@ -31,31 +32,22 @@ export default function Pingo(props) {
           </div>
         </div>
 
-        <div id="pingo-content">
-          <div className="row container justify-content-left pl-0">
-            <div className="col-md-8 pb-3">
-              <h2>About Pingo</h2>
-              <h2>Second information, why Pingo matters</h2>
+        <div id="pingo-content" className="row container">
+          <div className="col-md-8">
+            <div className="pingo-title">
+              <h2>Get Pingo</h2>
+              <h2>Reason placeholder why Pingo matters</h2>
             </div>
-          </div>
-          <div className="row container justify-content-left pl-0">
-            <div className="col-md-6 pb-3">
-              Et has minim elitr intellegat. Mea aeterno eleifend antiopam ad,
-              nam no suscipit quaerendum. At nam minimum ponderum. Est audiam
-              animal molestiae te. Ex duo eripuit mentitum.
-            </div>
-          </div>
-          <div className="row container pingo-buttons pl-0">
-            <div className=" justify-content-left pt-3">
-              <div className="action-buttons row pl-3">
+            <div>
+              <div className="d-inline-flex action-button justify-content-left">
                 <div className="action-buttons pr-3">
-                  <Button className="btn btn-action" variant="contained">
-                    Primary Action
+                  <Button className="btn btn-action pl-0">
+                    <img src={buttonpingo1} />
                   </Button>
                 </div>
                 <div className="action-buttons">
-                  <Button className="btn btn-action" variant="contained">
-                    Secondary Action
+                  <Button className="btn btn-action">
+                    <img src={buttonpingo2} />
                   </Button>
                 </div>
               </div>
@@ -360,27 +352,7 @@ export default function Pingo(props) {
               animal molestiae te. Ex duo eripuit mentitum.
             </div>
           </div>
-
-          <div className="download-badges">
-            <div className="download-button pt-3">
-              <button className={`btn btn-link pl-2`}>
-                <img
-                  src={googleplaybadge}
-                  alt="Google Play Download"
-                  width="130"
-                  height="60"
-                />
-              </button>
-              <button className={`btn btn-link`}>
-                <img
-                  src={appstorebadge}
-                  alt="App Store Download"
-                  width="115"
-                  height="50"
-                />
-              </button>
-            </div>
-          </div>
+          <DownloadButtons />
         </div>
       </div>
     </LayoutPingo>

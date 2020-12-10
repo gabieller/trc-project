@@ -43,7 +43,6 @@ export default function LayoutPingo(props) {
           >
             {props.children}
           </div>
-          )}
           <Footer />
           <ScrollTop />
         </>
