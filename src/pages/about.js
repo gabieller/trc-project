@@ -18,7 +18,7 @@ export default function About(props) {
       document.documentElement.scrollHeight -
       document.documentElement.clientHeight
 
-    const scrolled = ((winScroll / height) * 100)
+    const scrolled = (winScroll / height) * 100
 
     setScrollTop(scrolled)
   }
@@ -110,9 +110,12 @@ export default function About(props) {
             <div className="arrow-interaction text-center">
               <div className="progressMainWrapper">
                 <div className="progressMainStyle">
-              <img src={arrow} alt="Arrow Interaction"   height={`${scrollTop}`} />
+                  <img
+                    src={arrow}
+                    alt="Arrow Interaction"
+                    height={`${scrollTop}`}
+                  />
                 </div>
-                
               </div>
             </div>
           </div>

@@ -4,6 +4,7 @@ import DownloadButtons from "../components/DownloadButtons"
 
 import Button from "@material-ui/core/Button"
 
+import pingologowhite from "../images/pingologowhite.png"
 import empty from "../images/img-empty.png"
 import arrow from "../images/arrow.svg"
 import quote from "../images/quote.svg"
@@ -14,20 +15,32 @@ import womanillustration from "../images/woman-illustration.png"
 
 import "../styles/pingo.css"
 
-import pingologo from "../images/pingo.png"
 
 export default function Pingo(props) {
   return (
     <LayoutPingo {...props}>
       <div id="pingo-page">
         <div id="pingo-header">
-          <div className="row container pingo-landing-page">
-            <div className="col justify-content-center pingo-logo">
+          <div className="row container  pingo-landing-page">
+            <div className="col-md-8 text-center pingo-logo">
               <img
                 className=" img-fluid"
-                src={pingologo}
+                src={pingologowhite}
                 alt="Pingo Main logo"
+                width="650"
+                height="400"
               />
+            </div>
+            <div className="col-md-4 pt-2 subtitle text-left" > 
+              <h3 className="font-weight-bold pt-3">
+                Transit
+              </h3>
+              <h3 className="font-weight-bold">
+                that moves
+              </h3>
+              <h3 className="font-weight-bold">
+                with you.
+              </h3>
             </div>
           </div>
         </div>

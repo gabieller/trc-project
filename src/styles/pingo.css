@@ -2,11 +2,18 @@
   overflow: hidden;
 }
 
-
 #pingo-header {
-  padding-top: 8vw;
-  padding-bottom: 8vw;
+  padding-top: 15vw;
+  padding-bottom: 20vw;
   background-color: #8ec999;
+}
+
+#pingo-header .pingo-logo {
+  padding-left: 10vw;
+}
+
+#pingo-header .subtitle {
+  color: #ffffff;
 }
 
 #pingo-content {
@@ -94,10 +101,9 @@
 }
 
 #download-pingo {
-  background-image: url( " ../images/pingo-shapes.png");
-  background-color: #C3CBCD69;
+  background-image: url(" ../images/pingo-shapes.png");
+  background-color: #c3cbcd69;
   padding-top: 5vw;
   padding-bottom: 10vw;
   padding-left: 10vw;
-
 }

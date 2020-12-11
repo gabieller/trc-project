@@ -147,13 +147,12 @@ export default function Contact(props) {
                   </div>
                   <div className="col-md-8">
                     <input
-                    name="message"
-                    type="textarea"
-                    rows="3"
-                    placeholder="Tell us more about your project, needs, timeline…"
-                    className="form-control text-area">
-                      
-                    </input>
+                      name="message"
+                      type="textarea"
+                      rows="3"
+                      placeholder="Tell us more about your project, needs, timeline…"
+                      className="form-control text-area"
+                    ></input>
                   </div>
                 </div>
                 <div className="d-flex flex-row-reverse pt-3 mr-4">
@@ -167,13 +166,13 @@ export default function Contact(props) {
                   </Button>
                 </div>
 
-                  <div className="col-md-6 justify-content-left">
+                <div className="col-md-6 justify-content-left">
                   {serverState.status && (
                     <p className={!serverState.status.ok ? "errorMsg" : ""}>
                       {serverState.status.msg}
                     </p>
                   )}
-                  </div>
+                </div>
               </form>
             </div>
             <div className="col-md-4 col-sm-12-py-5 topics">

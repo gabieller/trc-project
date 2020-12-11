@@ -47,12 +47,8 @@ function SubscribeForm() {
         </div>
       </div>
       <div className="d-flex flex-column pt-3">
-            <span
-              status={status}
-            >
-              {message}
-            </span>
-          </div>
+        <span status={status}>{message}</span>
+      </div>
     </form>
   )
 }
