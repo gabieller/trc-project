@@ -25,3 +25,15 @@
 #newsletter-section .warning-text {
   color: #737b7d;
 }
+
+.progressMainWrapper {
+  /* background-color: black; */
+  height: 30px;
+  position: sticky;
+  z-index: 1;
+}
+
+.progressMainStyle {
+  width: 15px;
+  /* background-color: green; */
+}

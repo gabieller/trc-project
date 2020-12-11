@@ -1,9 +1,7 @@
-import React from "react"
+import React, { useEffect, useState } from "react"
 import Layout from "../components/Layout"
 import Demo from "../components/Demo"
 import Newsletter from "../components/Newsletter"
-import Button from "@material-ui/core/Button"
-// import AnimateHeight from "react-animate-height"
 
 import empty from "../images/img-empty.png"
 import menno from "../images/menno-pic.png"
@@ -12,6 +10,25 @@ import arrow from "../images/arrow.svg"
 import "../styles/about.css"
 
 export default function About(props) {
+  const [scrollTop, setScrollTop] = useState(0)
+
+  const onScroll = () => {
+    const winScroll = document.documentElement.scrollTop
+    const height =
+      document.documentElement.scrollHeight -
+      document.documentElement.clientHeight
+
+    const scrolled = ((winScroll / height) * 100)
+
+    setScrollTop(scrolled)
+  }
+
+  useEffect(() => {
+    window.addEventListener("scroll", onScroll)
+
+    return () => window.removeEventListener("scroll", onScroll)
+  }, [])
+
   return (
     <Layout {...props}>
       <div id="about-page">
@@ -91,7 +108,12 @@ export default function About(props) {
 
           <div className="col-md-2 border border-dark border-top-0 border-bottom-0">
             <div className="arrow-interaction text-center">
-              <img src={arrow} alt="Arrow Interaction" />
+              <div className="progressMainWrapper">
+                <div className="progressMainStyle">
+              <img src={arrow} alt="Arrow Interaction"   height={`${scrollTop}`} />
+                </div>
+                
+              </div>
             </div>
           </div>
 
@@ -171,39 +193,16 @@ export default function About(props) {
               />
             </div>
             <div className="col-md-6 py-5">
-              {/* <div className="newsletter-title font-weight-bold pt-5">
-                <h2>Follow our latest news</h2>
-                <h2>Sign up for our newsletter</h2>
-              </div> */}
-             
               <Newsletter />
-              <div className="newsletter-text py-4">
-                Et has minim elitr intellegat. Mea aeterno eleifend antiopam ad,
-                nam no suscipit quaerendum. At nam minimum ponderum. Est audiam
-                animal molestiae te. Ex duo eripuit mentitum.
-              </div>
-              {/* <div className="input-group mb-3">
-                <input
-                  type="text"
-                  className="form-control"
-                  placeholder="| Enter your email"
-                  aria-label="| Enter your email"
-                />
-                <div className="input-group-append">
-                  <Button className="btn-black" variant="contained">
-                    Primary Action
-                  </Button>
-                </div>
-              </div> */}
-              <h5 className="warning-text">
+
+              <div className="warning-text pt-4">
                 By clicking “Primary action” you accepting ipsum dolor sit amet,
                 sit ea brute mediocritatem, eu sed aliquam scripserit
                 dissentiunt.
-              </h5>
+              </div>
             </div>
           </div>
         </div>
-
         <Demo />
       </div>
     </Layout>

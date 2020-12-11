@@ -1,4 +1,5 @@
 import React, { useState } from "react"
+import Button from "@material-ui/core/Button"
 import addToMailchimp from "gatsby-plugin-mailchimp"
 
 import "../styles/newsletter.css"
@@ -21,20 +22,37 @@ function SubscribeForm() {
   return (
     <form>
       <h2>Follow our latest news</h2>
-      <h2>Sign up for our newsletter</h2>
-      <div>
+      <h2 className="pb-3">Sign up for our newsletter</h2>
+      Et has minim elitr intellegat. Mea aeterno eleifend antiopam ad, nam no
+      suscipit quaerendum. At nam minimum ponderum. Est audiam animal molestiae
+      te. Ex duo eripuit mentitum.
+      <div className="d-inline-flex col-md-12 pt-3 px-0">
         <input
+          className="col-md-8"
           type="email"
           onChange={handleChange}
           value={email}
-          placeholder="example@domain.com"
+          placeholder="| Enter your email"
           required
         />
-        <span status={status}>{message}</span>
+
+        <div className="input-group-append col-md-12 p-0">
+          <Button
+            onClick={handleSubmit}
+            className="btn-black btn-block w-25"
+            variant="contained"
+          >
+            Subscribe
+          </Button>
+        </div>
       </div>
-      <button type="submit" onClick={handleSubmit}>
-        Subscribe
-      </button>
+      <div className="d-flex flex-column pt-3">
+            <span
+              status={status}
+            >
+              {message}
+            </span>
+          </div>
     </form>
   )
 }

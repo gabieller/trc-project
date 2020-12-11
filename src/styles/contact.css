@@ -2,7 +2,6 @@
   padding-top: 10rem;
 }
 
-
 #contact-page-first .row-form {
   position: relative;
 }
@@ -34,15 +33,18 @@
 #contact-page .contact-queries {
   padding-bottom: 2vw;
   background-color: #ffffff;
+}
 
+#contact-page .text-area {
+  height: 8vw;
 }
 
 @media (min-width: 768px) {
   #contact-page-first {
     background: linear-gradient(
       to bottom,
-      #E2E5E6 0%,
-      #E2E5E6 80%,
+      #e2e5e6 0%,
+      #e2e5e6 80%,
       #ffffff 80%
     );
   }

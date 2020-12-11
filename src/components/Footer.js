@@ -39,7 +39,6 @@ export default function Footer() {
           <div className="logo-pingo">
             <img src={pingologo} alt="Logo PINGO" width="120" height="55" />
             <DownloadButtons />
-         
           </div>
         </div>
 

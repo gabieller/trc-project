@@ -1,10 +1,42 @@
-import React from "react"
+import React, { useState } from "react"
+// import { useForm } from "@formspree/react"
+import axios from "axios"
 import Layout from "../components/Layout"
 import Button from "@material-ui/core/Button"
 
 import "../styles/contact.css"
 
 export default function Contact(props) {
+  const [serverState, setServerState] = useState({
+    submitting: false,
+    status: null,
+  })
+  const handleServerResponse = (ok, msg, form) => {
+    setServerState({
+      submitting: false,
+      status: { ok, msg },
+    })
+    if (ok) {
+      form.reset()
+    }
+  }
+  const handleOnSubmit = e => {
+    e.preventDefault()
+    const form = e.target
+    setServerState({ submitting: true })
+    axios({
+      method: "post",
+      url: "https://formspree.io/f/xoqpknav",
+      data: new FormData(form),
+    })
+      .then(r => {
+        handleServerResponse(true, "Thanks!", form)
+      })
+      .catch(r => {
+        handleServerResponse(false, r.response.data.error, form)
+      })
+  }
+
   return (
     <Layout {...props}>
       <div id="contact-page">
@@ -25,7 +57,10 @@ export default function Contact(props) {
 
           <div className="row container row-form">
             <div className="col-form col-md-8 col-xs-12">
-              <form className="form-horizontal form p-4 my-5">
+              <form
+                onSubmit={handleOnSubmit}
+                className="form-horizontal form p-4 my-5"
+              >
                 <div className="row form-group py-2">
                   <div className="col-md-4">
                     <label
@@ -37,7 +72,7 @@ export default function Contact(props) {
                   </div>
                   <div className="col-md-8">
                     <input
-                      name="name"
+                      name="firstname"
                       type="text"
                       placeholder="| Jane"
                       className="form-control"
@@ -55,7 +90,7 @@ export default function Contact(props) {
                   </div>
                   <div className="col-md-8">
                     <input
-                      name="name"
+                      name="lastname"
                       type="text"
                       placeholder="| Doe"
                       className="form-control"
@@ -74,7 +109,7 @@ export default function Contact(props) {
                   </div>
                   <div className="col-md-8">
                     <input
-                      name="name"
+                      name="work-email"
                       type="text"
                       placeholder="| janedoe@example.com"
                       className="form-control"
@@ -93,7 +128,7 @@ export default function Contact(props) {
                   </div>
                   <div className="col-md-8">
                     <input
-                      name="name"
+                      name="company-website"
                       type="text"
                       placeholder="| janedoe@example.com"
                       className="form-control"
@@ -111,19 +146,34 @@ export default function Contact(props) {
                     </label>
                   </div>
                   <div className="col-md-8">
-                    <textarea className="form-control" rows="3">
-                      Tell us more about your project, needs, timeline…
-                    </textarea>
+                    <input
+                    name="message"
+                    type="textarea"
+                    rows="3"
+                    placeholder="Tell us more about your project, needs, timeline…"
+                    className="form-control text-area">
+                      
+                    </input>
                   </div>
                 </div>
                 <div className="d-flex flex-row-reverse pt-3 mr-4">
                   <Button
+                    type="submit"
                     className="btn-black btn-block w-25 "
+                    disabled={serverState.submitting}
                     variant="contained"
                   >
                     Contact Sales
                   </Button>
                 </div>
+
+                  <div className="col-md-6 justify-content-left">
+                  {serverState.status && (
+                    <p className={!serverState.status.ok ? "errorMsg" : ""}>
+                      {serverState.status.msg}
+                    </p>
+                  )}
+                  </div>
               </form>
             </div>
             <div className="col-md-4 col-sm-12-py-5 topics">
