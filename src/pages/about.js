@@ -3,7 +3,7 @@ import Layout from "../components/Layout"
 import Demo from "../components/Demo"
 import Newsletter from "../components/Newsletter"
 
-import empty from "../images/img-empty.png"
+import newsletterimage from "../images/newsletterimage.png"
 import menno from "../images/menno-pic.png"
 import arrow from "../images/arrow.svg"
 
@@ -179,29 +179,32 @@ export default function About(props) {
         <div id="newsletter-section">
           <div className="row container justify-content-center newsletter">
             <div className="row container pt-5 ">
-              <h2 className="col-md-12 text-center">
+              <h2 className="col-md-12 text-center pb-5">
                 We build smart, sustainable transit solutions that are more
                 reliable and accessible than other mobility options. Our
                 MIT-born routing technology has been hailed as a striking
                 example of the potential around ridesharing.
               </h2>
             </div>
-            <div className="col-md-6">
-              <img
-                className="empty pt-5"
-                src={empty}
-                alt="Newsletter"
-                width="100%"
-                height="100%"
-              />
-            </div>
-            <div className="col-md-6 py-5">
-              <Newsletter />
+            <div className="row  border border-dark bg-white ">
+              <div className="col-md-5 px-0">
+                <img
+                  src={newsletterimage}
+                  alt="Newsletter"
+                  width="450"
+                  height="550"
+                />
+              </div>
+              <div className="col-md-7 px-5 newsletter-box">
+                <Newsletter />
 
-              <div className="warning-text pt-4">
-                By clicking “Primary action” you accepting ipsum dolor sit amet,
-                sit ea brute mediocritatem, eu sed aliquam scripserit
-                dissentiunt.
+                <div className="warning-text">
+                  <h6>
+                    By clicking “Primary action” you accepting ipsum dolor sit
+                    amet, sit ea brute mediocritatem, eu sed aliquam scripserit
+                    dissentiunt.
+                  </h6>
+                </div>
               </div>
             </div>
           </div>

@@ -64,30 +64,26 @@ export default function Home(props) {
             </div>
           </div>
           <div className="d-flex inline row container justify-content-center">
-              <Card
-                className="justify-content-left"
-                title="Problem that customers face 1"
-                description="At eripuit signiferumque sea, vel ad mucius molestie, cu labitur
+            <Card
+              className="justify-content-left"
+              title="Problem that customers face 1"
+              description="At eripuit signiferumque sea, vel ad mucius molestie, cu labitur
             iuvaret vulputate sed."
-              />
-              <Card
-                title="Problem that customers face 2"
-                description="At eripuit signiferumque sea, vel ad mucius molestie, cu labitur
+            />
+            <Card
+              title="Problem that customers face 2"
+              description="At eripuit signiferumque sea, vel ad mucius molestie, cu labitur
             iuvaret vulputate sed."
-              />
-              <Card
-                title="Problem that customers face 3"
-                description="At eripuit signiferumque sea, vel ad mucius molestie, cu labitur
+            />
+            <Card
+              title="Problem that customers face 3"
+              description="At eripuit signiferumque sea, vel ad mucius molestie, cu labitur
             iuvaret vulputate sed."
-              />
-            </div>
+            />
+          </div>
         </div>
         <div className="section backed">
-          <div className="row">
-            Backed by the Best
-
-          </div>
-
+          <div className="row">Backed by the Best</div>
         </div>
         <Demo />
       </div>

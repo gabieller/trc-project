@@ -22,8 +22,17 @@
   background-color: #f5f4f5;
 }
 
+#newsletter-section .newsletter-box {
+  padding-top: 5vw;
+}
+
 #newsletter-section .warning-text {
   color: #737b7d;
+}
+
+#newsletter-section img {
+  -webkit-filter: grayscale(100%);
+  filter: grayscale(100%);
 }
 
 .progressMainWrapper {

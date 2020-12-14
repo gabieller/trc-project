@@ -21,8 +21,8 @@ function SubscribeForm() {
 
   return (
     <form>
-      <h2>Follow our latest news</h2>
-      <h2 className="pb-3">Sign up for our newsletter</h2>
+      <h3 className="pt-5">Follow our latest news</h3>
+      <h3 className="pb-3">Sign up for our newsletter</h3>
       Et has minim elitr intellegat. Mea aeterno eleifend antiopam ad, nam no
       suscipit quaerendum. At nam minimum ponderum. Est audiam animal molestiae
       te. Ex duo eripuit mentitum.
