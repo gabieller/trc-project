@@ -8,7 +8,7 @@ import Button from "@material-ui/core/Button"
 import map from "../images/map.png"
 import solutionslines from "../images/solutions-img-lines.png"
 import arrow from "../images/arrow.svg"
-import empty from "../images/img-empty.png"
+import pingosolutions from "../images/pingosolutions.png"
 import key from "../images/key.svg"
 import cube from "../images/cube.svg"
 import truck from "../images/truck.svg"
@@ -148,27 +148,28 @@ export default function Solutions(props) {
           </div>
         </div>
 
-        <div id="pingo-solutions">
-          <div className="row container border border-dark">
-            <div className="col-md-7 pb-5 border-right border-dark text-center">
+        <div className="row container py-5">
+          <div id="pingo-solutions" className="row border border-dark bg-white">
+            <div className="col-md-5 px-0">
               <img
-                className="empty pt-5"
-                src={empty}
-                alt="Empty"
-                width="450"
-                height="450"
+                src={pingosolutions}
+                alt="Pingo Solutions"
+                width="445"
+                height="550"
               />
             </div>
-            <div className="col-md-5 py-5">
-              <div className="row container">
-                <h2 className="pt-5 font-weight-bold">Pingo</h2>
+            <div className="col-md-7 py-5">
+              <div className="row container justify-content-left">
+                <h2 className="font-weight-bold pt-5">Pingo</h2>
+              </div>
+              <div className="row container justify-content-left">
                 <h3>Transit that moves with you</h3>
               </div>
               <div className="row container pr-3 pt-3">
                 Et has minim elitr intellegat. Mea aeterno eleifend antiopam ad,
                 nam no suscipit quaerendum. At nam minimum ponderum. Est audiam
                 animal molestiae te. Ex duo eripuit mentitum.
-                <div className="action-buttons pr-3 pt-3">
+                <div className="action-buttons pr-3 py-3">
                   <Button className="btn-black" variant="contained">
                     Primary Action
                   </Button>

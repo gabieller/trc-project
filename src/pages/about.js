@@ -186,7 +186,7 @@ export default function About(props) {
                 example of the potential around ridesharing.
               </h2>
             </div>
-            <div className="row  border border-dark bg-white ">
+            <div className="row border border-dark bg-white">
               <div className="col-md-5 px-0">
                 <img
                   src={newsletterimage}
