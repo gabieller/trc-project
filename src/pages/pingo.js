@@ -15,7 +15,6 @@ import womanillustration from "../images/woman-illustration.png"
 
 import "../styles/pingo.css"
 
-
 export default function Pingo(props) {
   return (
     <LayoutPingo {...props}>
@@ -31,16 +30,10 @@ export default function Pingo(props) {
                 height="400"
               />
             </div>
-            <div className="col-md-4 pt-2 subtitle text-left" > 
-              <h3 className="font-weight-bold pt-3">
-                Transit
-              </h3>
-              <h3 className="font-weight-bold">
-                that moves
-              </h3>
-              <h3 className="font-weight-bold">
-                with you.
-              </h3>
+            <div className="col-md-4 pt-2 subtitle text-left">
+              <h3 className="font-weight-bold pt-3">Transit</h3>
+              <h3 className="font-weight-bold">that moves</h3>
+              <h3 className="font-weight-bold">with you.</h3>
             </div>
           </div>
         </div>

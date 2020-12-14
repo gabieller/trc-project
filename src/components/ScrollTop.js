@@ -31,7 +31,13 @@ export default function ScrollTop() {
       onClick={scrollToTop}
       className={`btn btn-link ${showScroll ? "visible" : ""}`}
     >
-      <img className="button" alt="Scroll Top Icon" src={arrowUp} width="50" height="50"></img>
+      <img
+        className="button"
+        alt="Scroll Top Icon"
+        src={arrowUp}
+        width="50"
+        height="50"
+      ></img>
     </button>
   )
 }

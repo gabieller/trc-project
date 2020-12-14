@@ -15,16 +15,16 @@
   background-color: #f4f5f4;
   color: #000000de;
   padding-top: 30vh;
-  padding-bottom: 16vh;
+  padding-bottom: 5vw;
 }
 #index > .features {
-  background-color: #000000de;
-  color: #f4f5f4;
-}
-#index > .quotes {
   background-color: #f4f5f4;
   color: #000000de;
-  min-height: 65vh;
+}
+
+#index > .backed {
+  background-color: #000000;
+  color: #ffffff;
 }
 
 #index > .title > .action-buttons {

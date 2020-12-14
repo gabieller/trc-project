@@ -54,90 +54,40 @@ export default function Home(props) {
             </div>
           </div>
         </div>
+
         <div className="section features">
-          <div className="row justify-content-center">
+          <div className="row justify-content-center pl-3">
             <div className="col-lg-8 col-12 my-2">
-              <h3 className="text-center">
+              <h3 className="justify-content-left">
                 Grow your business with better shipping
               </h3>
             </div>
           </div>
-          <div className="row justify-content-center">
-            <div className="col-lg-8 col-12 my-2 mb-3">
-              <div className="text-center">
-                We help the world's leading organizations follow their shipping
-              </div>
+          <div className="d-flex inline row container justify-content-center">
+              <Card
+                className="justify-content-left"
+                title="Problem that customers face 1"
+                description="At eripuit signiferumque sea, vel ad mucius molestie, cu labitur
+            iuvaret vulputate sed."
+              />
+              <Card
+                title="Problem that customers face 2"
+                description="At eripuit signiferumque sea, vel ad mucius molestie, cu labitur
+            iuvaret vulputate sed."
+              />
+              <Card
+                title="Problem that customers face 3"
+                description="At eripuit signiferumque sea, vel ad mucius molestie, cu labitur
+            iuvaret vulputate sed."
+              />
             </div>
-          </div>
-          <div className="row justify-content-center">
-            <Card
-              title="Shipping communication"
-              description="At eripuit signiferumque sea, vel ad mucius molestie, cu labitur
-            iuvaret vulputate sed."
-            />
-            <Card
-              title="Marketing resources"
-              description="At eripuit signiferumque sea, vel ad mucius molestie, cu labitur
-            iuvaret vulputate sed."
-            />
-            <Card
-              title="Logistic Performances"
-              description="At eripuit signiferumque sea, vel ad mucius molestie, cu labitur
-            iuvaret vulputate sed."
-            />
-          </div>
         </div>
-        <div className="section quotes">
-          <div className="row justify-content-center">
-            <div
-              id="carouselQuotes"
-              className="carousel slide col-12"
-              // data-ride="carousel"
-              data-interval="false"
-            >
-              <div className="carousel-inner container">
-                <div className="carousel-item active">
-                  <div className="row justify-content-center">
-                    <Reference
-                      title="Marketing resources"
-                      description="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec eget leo mi. Suspendisse vel elementum erat, ac lacinia massa. Pellentesque neque sem, viverra sit amet euismod sed, fringilla quis metus. Integer justo nibh, aliquam sed enim a, varius elementum ligula. Quisque pellentesque porttitor venenatis."
-                    />
-                    <Reference
-                      title="Marketing resources"
-                      description="At eripuit signiferumque sea, vel ad mucius molestie, cu labitur
-            iuvaret vulputate sed. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec eget leo mi. Suspendisse vel elementum erat, ac lacinia massa. Pellentesque neque sem, viverra sit amet euismod sed, fringilla quis metus. Integer justo nibh, aliquam sed enim a, varius elementum ligula. Quisque pellentesque porttitor venenatis."
-                    />
-                  </div>
-                </div>
-                <div className="carousel-item">
-                  <div className="row justify-content-center">
-                    <Reference
-                      title="Marketing resources"
-                      description="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec eget leo mi. Suspendisse vel elementum erat, ac lacinia massa. Pellentesque neque sem, viverra sit amet euismod sed, fringilla quis metus. Integer justo nibh, aliquam sed enim a, varius elementum ligula. Quisque pellentesque porttitor venenatis."
-                    />
-                  </div>
-                </div>
-              </div>
-              <a
-                className="carousel-control-prev"
-                href="#carouselQuotes"
-                role="button"
-                data-slide="prev"
-              >
-                <img src={arrowLeft} alt="hamburger menu" aria-hidden="true" />
-                <span className="sr-only">Previous</span>
-              </a>
-              <a
-                className="carousel-control-next"
-                href="#carouselQuotes"
-                role="button"
-                data-slide="next"
-              >
-                <img src={arrowRight} alt="hamburger menu" aria-hidden="true" />
-                <span className="sr-only">Next</span>
-              </a>
-            </div>
+        <div className="section backed">
+          <div className="row">
+            Backed by the Best
+
           </div>
+
         </div>
         <Demo />
       </div>
