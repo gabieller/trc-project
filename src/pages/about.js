@@ -1,31 +1,44 @@
-import React, { useEffect, useState } from "react"
+import React, { useEffect, useState, useRef } from "react"
 import Layout from "../components/Layout"
 import Demo from "../components/Demo"
 import Newsletter from "../components/Newsletter"
 
 import newsletterimage from "../images/newsletterimage.png"
 import menno from "../images/menno-pic.png"
-import arrow from "../images/arrow.svg"
 
 import "../styles/about.css"
 
 export default function About(props) {
-  const [scrollTop, setScrollTop] = useState(0)
+  const [percentage, setPercentage] = useState(0)
+  const selectedDiv = useRef(null)
+
+  const printValues = (
+    name,
+    { scrollTop, scrollHeight, clientHeight, offsetTop }
+  ) => console.log(name, { scrollTop, scrollHeight, clientHeight, offsetTop })
 
   const onScroll = () => {
-    const winScroll = document.documentElement.scrollTop
-    const height =
-      document.documentElement.scrollHeight -
-      document.documentElement.clientHeight
+    console.log("------------------")
+    printValues("div", selectedDiv.current)
+    printValues("window", document.documentElement)
 
-    const scrolled = (winScroll / height) * 100
+    const { scrollTop } = document.documentElement
+    const bottomGoal =
+      selectedDiv.current.scrollHeight / 2 + selectedDiv.current.offsetTop
+    const topGoal = selectedDiv.current.offsetTop / 2
 
-    setScrollTop(scrolled)
+    setPercentage((scrollTop / bottomGoal) * 100)
+  }
+
+  const onScroll2 = () => {
+    setPercentage(old => {
+      const newValue = old + 10
+      return newValue <= 100 ? newValue : old
+    })
   }
 
   useEffect(() => {
     window.addEventListener("scroll", onScroll)
-
     return () => window.removeEventListener("scroll", onScroll)
   }, [])
 
@@ -106,17 +119,16 @@ export default function About(props) {
             </div>
           </div>
 
-          <div className="col-md-2 border border-dark border-top-0 border-bottom-0">
-            <div className="arrow-interaction text-center">
-              <div className="progressMainWrapper">
-                <div className="progressMainStyle">
-                  <img
-                    src={arrow}
-                    alt="Arrow Interaction"
-                    height={`${scrollTop}`}
-                  />
-                </div>
-              </div>
+          <div
+            className="col-md-2 border border-dark border-top-0 border-bottom-0 justify-content-center d-flex"
+            ref={selectedDiv}
+          >
+            <div
+              className="arrow2"
+              style={{ height: `calc(0px + ${percentage}%)` }}
+            >
+              <span className="line1" />
+              <span className="line2" />
             </div>
           </div>
 

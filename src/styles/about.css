@@ -35,14 +35,8 @@
   filter: grayscale(100%);
 }
 
-.progressMainWrapper {
-  /* background-color: black; */
-  height: 30px;
-  position: sticky;
-  z-index: 1;
-}
-
-.progressMainStyle {
-  width: 15px;
-  /* background-color: green; */
+.arrow2 {
+  background-color: #000;
+  width: 1px;
+  opacity: 1;
 }

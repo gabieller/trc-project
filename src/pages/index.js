@@ -5,22 +5,6 @@ import Demo from "../components/Demo"
 import Button from "@material-ui/core/Button"
 
 import "../styles/index.css"
-import arrowLeft from "../images/keyboard_arrow_left-24px.svg"
-import arrowRight from "../images/keyboard_arrow_right-24px.svg"
-
-function Reference({ title, description }) {
-  return (
-    <div className="quote col-12 col-md-5 my-2 mx-2">
-      <div className="card-body">
-        <h5 className="card-title text-center">{title}</h5>
-        <div className="card-text text-center">
-          <div>{description}</div>
-          <div className="font-weight-bolder mt-2">Connie Robertson</div>
-        </div>
-      </div>
-    </div>
-  )
-}
 
 export default function Home(props) {
   return (
