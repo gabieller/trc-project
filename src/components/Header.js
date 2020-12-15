@@ -5,7 +5,7 @@ import SideMenu from "./SideMenu"
 import "../styles/header.css"
 import trclogo from "../images/trc-logo-black.png"
 
-export default function Header({ uri, onOpen }) {
+export default function Header({ uri }) {
   const [state, setState] = useState({
     visibilityClass: "",
     isSidebarOpen: false,

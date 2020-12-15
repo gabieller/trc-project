@@ -12,30 +12,13 @@ export default function About(props) {
   const [percentage, setPercentage] = useState(0)
   const selectedDiv = useRef(null)
 
-  const printValues = (
-    name,
-    { scrollTop, scrollHeight, clientHeight, offsetTop }
-  ) => console.log(name, { scrollTop, scrollHeight, clientHeight, offsetTop })
-
   const onScroll = () => {
-    console.log("------------------")
-    printValues("div", selectedDiv.current)
-    printValues("window", document.documentElement)
-
     const { scrollTop } = document.documentElement
-    const bottomGoal =
-      selectedDiv.current.scrollHeight / 2 + selectedDiv.current.offsetTop
-    const topGoal = selectedDiv.current.offsetTop / 2
-
-    setPercentage((scrollTop / bottomGoal) * 100)
+    const { scrollHeight, offsetTop } = selectedDiv.current
+    const bottomGoal = scrollHeight / 2 + offsetTop
+    const newValue = (scrollTop / bottomGoal) * 100
+    setPercentage(newValue >= 100 ? 100 : newValue)
   }
-
-  // const onScroll2 = () => {
-  //   setPercentage(old => {
-  //     const newValue = old + 10
-  //     return newValue <= 100 ? newValue : old
-  //   })
-  // }
 
   useEffect(() => {
     window.addEventListener("scroll", onScroll)
@@ -127,14 +110,8 @@ export default function About(props) {
               className="arrow2"
               style={{ height: `calc(0px + ${percentage}%)` }}
             >
-              <div
-                className="line1"
-                style={{ top: `calc(10px + ${percentage}%)` }}
-              ></div>
-              <div
-                className="line2"
-                style={{ top: `calc(0px + ${percentage}%)` }}
-              ></div>
+              <div className="line1"/>
+              <div className="line2"/>
             </div>
           </div>
 
