@@ -28,7 +28,7 @@ export default function LayoutPingo(props) {
       </Helmet>
 
       {loading && (
-        <div className="loading">
+        <div className="loading-pingo">
           <img src={loadingpingo} alt="Loading Gif" width="150" height="150" />
         </div>
       )}

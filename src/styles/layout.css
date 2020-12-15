@@ -15,3 +15,14 @@
   align-items: center;
   justify-content: center;
 }
+
+.loading-pingo {
+  background-color: #8EC999;
+  position: fixed;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+}

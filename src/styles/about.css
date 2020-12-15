@@ -17,6 +17,9 @@
 }
 
 #about-team .arrow2 {
+  background-color: #000;
+  width: 1px;
+  opacity: 1;
   position: relative;
   transition: height 0.1s;
   transition-timing-function: linear;
@@ -56,10 +59,4 @@
 #newsletter-section img {
   -webkit-filter: grayscale(100%);
   filter: grayscale(100%);
-}
-
-.arrow2 {
-  background-color: #000;
-  width: 1px;
-  opacity: 1;
 }
