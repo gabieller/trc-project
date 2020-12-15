@@ -30,12 +30,12 @@ export default function About(props) {
     setPercentage((scrollTop / bottomGoal) * 100)
   }
 
-  const onScroll2 = () => {
-    setPercentage(old => {
-      const newValue = old + 10
-      return newValue <= 100 ? newValue : old
-    })
-  }
+  // const onScroll2 = () => {
+  //   setPercentage(old => {
+  //     const newValue = old + 10
+  //     return newValue <= 100 ? newValue : old
+  //   })
+  // }
 
   useEffect(() => {
     window.addEventListener("scroll", onScroll)
@@ -127,8 +127,9 @@ export default function About(props) {
               className="arrow2"
               style={{ height: `calc(0px + ${percentage}%)` }}
             >
-              <span className="line1" />
-              <span className="line2" />
+              <div 
+              className="line1"></div>
+              <div className="line2 "></div>
             </div>
           </div>
 

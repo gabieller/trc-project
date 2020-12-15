@@ -72,7 +72,12 @@ export default function Solutions(props) {
           <div className="row">
             <div className="col-md-5 p-0 border-bottom border-dark">
               <div>
-                <img src={solutionslines} alt="Solutions" width="574" height="800" />
+                <img
+                  src={solutionslines}
+                  alt="Solutions"
+                  width="574"
+                  height="800"
+                />
               </div>
             </div>
 

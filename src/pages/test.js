@@ -4,8 +4,6 @@ import anime from "animejs"
 import "../styles/test.css"
 
 export default function Anime() {
-  
-
   const animateText = () => {
     anime({
       targets: ".anime__label",
@@ -20,9 +18,11 @@ export default function Anime() {
   return (
     <div id="test-page">
       <div className="anime">
-          <button className="anime__button" onClick={animateText}>animate text</button>
-          <p className="anime__label">action</p>
-        </div>
+        <button className="anime__button" onClick={animateText}>
+          animate text
+        </button>
+        <p className="anime__label">action</p>
+      </div>
     </div>
   )
 }
