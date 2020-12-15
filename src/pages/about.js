@@ -127,8 +127,7 @@ export default function About(props) {
               className="arrow2"
               style={{ height: `calc(0px + ${percentage}%)` }}
             >
-              <div 
-              className="line1"></div>
+              <div className="line1"></div>
               <div className="line2 "></div>
             </div>
           </div>

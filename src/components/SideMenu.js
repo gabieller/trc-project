@@ -30,16 +30,18 @@ export default function SideMenu({ onClick, uri, visible }) {
                 <ul className="navbar-nav ml-auto font-weight-bold">
                   <li className={`nav-item ${uri === "/" ? "active" : ""}`}>
                     <Link to="/" className="nav-link d-inline-flex">
-                      <h4 className="menu-index pr-2">01</h4>
-                      <h1>Home</h1>
+                      <h1>
+                        <span className="pr-2">01</span>Home
+                      </h1>
                     </Link>
                   </li>
                   <li
                     className={`nav-item ${uri === "/about" ? "active" : ""}`}
                   >
                     <Link to="/about" className="nav-link d-inline-flex">
-                      <h4 className="menu-index pr-2">02</h4>
-                      <h1>About</h1>
+                      <h1>
+                        <span className="pr-2">02</span>About
+                      </h1>
                     </Link>
                   </li>
                   <li
@@ -48,22 +50,25 @@ export default function SideMenu({ onClick, uri, visible }) {
                     }`}
                   >
                     <Link to="/solutions" className="nav-link d-inline-flex">
-                      <h4 className="menu-index pr-2">03</h4>
-                      <h1>Solutions</h1>
+                      <h1>
+                        <span className="pr-2">03</span>Solutions
+                      </h1>
                     </Link>
                   </li>
                   <li
                     className={`nav-item ${uri === "/contact" ? "active" : ""}`}
                   >
                     <Link to="/contact" className="nav-link d-inline-flex">
-                      <h4 className="menu-index pr-2">04</h4>
-                      <h1>Contact</h1>
+                      <h1>
+                        <span className="pr-2">04</span>Contact
+                      </h1>
                     </Link>
                   </li>
                   <li className={`nav-item ${uri === "/blog" ? "active" : ""}`}>
                     <Link to="/blog" className="nav-link d-inline-flex">
-                      <h4 className="menu-index pr-2">05</h4>
-                      <h1>Blog</h1>
+                      <h1>
+                        <span className="pr-2">05</span>Blog
+                      </h1>
                     </Link>
                   </li>
                   <li
