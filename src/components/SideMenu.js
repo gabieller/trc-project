@@ -80,6 +80,7 @@ export default function SideMenu({ onClick, uri, visible }) {
                       <img
                         className="pt-2 arrow-pingo"
                         src={arrowright}
+                        alt="Go to Pingo"
                         width="50"
                         height="50"
                       />

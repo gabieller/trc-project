@@ -48,12 +48,12 @@ export default function Pingo(props) {
               <div className="d-inline-flex action-button justify-content-left">
                 <div className="action-buttons pr-3">
                   <Button className="btn btn-action pl-0">
-                    <img src={buttonpingo1} />
+                    <img src={buttonpingo1} alt="Pingo Button" />
                   </Button>
                 </div>
                 <div className="action-buttons">
                   <Button className="btn btn-action">
-                    <img src={buttonpingo2} />
+                    <img src={buttonpingo2} alt="Pingo Button" />
                   </Button>
                 </div>
               </div>

@@ -20,6 +20,10 @@
   color: #737b7d;
 }
 
+#contact-page-first .input-box {
+  padding-left: 5vw;
+}
+
 #contact-page .btn-black {
   min-width: 190px;
 }

@@ -56,103 +56,91 @@ export default function Contact(props) {
 
           <div className="row container row-form">
             <div className="col-form col-md-8 col-xs-12">
-              <form
-                onSubmit={handleOnSubmit}
-                className="form-horizontal form p-4 my-5"
-              >
-                <div className="row form-group py-2">
-                  <div className="col-md-4">
-                    <label
-                      className="control-label font-weight-bold"
-                      for="name"
-                    >
-                      First Name
-                    </label>
-                  </div>
-                  <div className="col-md-8">
-                    <input
-                      name="firstname"
-                      type="text"
-                      placeholder="| Jane"
-                      className="form-control"
-                    />
-                  </div>
+              <form onSubmit={handleOnSubmit} className="form p-4 my-5">
+                <div className="form-horizontal form-group row py-2">
+                  <label
+                    className="d-inline-flex col-md-8 col-form-label font-weight-bold text-nowrap"
+                    for="name"
+                  >
+                    First Name
+                    <div className="col-md-12 input-box">
+                      <input
+                        name="firstname"
+                        type="text"
+                        placeholder="| Jane"
+                        className="form-control"
+                      />
+                    </div>
+                  </label>
                 </div>
-                <div className="row form-group py-2">
-                  <div className="col-md-4">
-                    <label
-                      className="control-label font-weight-bold"
-                      for="name"
-                    >
-                      Last Name
-                    </label>
-                  </div>
-                  <div className="col-md-8">
-                    <input
-                      name="lastname"
-                      type="text"
-                      placeholder="| Doe"
-                      className="form-control"
-                    />
-                  </div>
+
+                <div className="form-group row py-2">
+                  <label
+                    className="d-inline-flex col-md-8 col-form-label font-weight-bold text-nowrap"
+                    for="name"
+                  >
+                    Last Name
+                    <div className="col-md-12 input-box">
+                      <input
+                        name="lastname"
+                        type="text"
+                        placeholder="| Doe"
+                        className="form-control"
+                      />
+                    </div>
+                  </label>
                 </div>
 
                 <div className="row form-group py-2">
-                  <div className="col-md-4">
-                    <label
-                      className="control-label font-weight-bold"
-                      for="name"
-                    >
-                      Work Email
-                    </label>
-                  </div>
-                  <div className="col-md-8">
-                    <input
-                      name="work-email"
-                      type="text"
-                      placeholder="| janedoe@example.com"
-                      className="form-control"
-                    />
-                  </div>
+                  <label
+                    className="d-inline-flex col-md-12 col-form-label font-weight-bold text-nowrap"
+                    for="name"
+                  >
+                    Work Email
+                    <div className="col-md-8  input-box">
+                      <input
+                        name="work-email"
+                        type="text"
+                        placeholder="| janedoe@example.com"
+                        className="form-control"
+                      />
+                    </div>
+                  </label>
                 </div>
 
                 <div className="row form-group py-2">
-                  <div className="col-md-4 ">
-                    <label
-                      className="control-label font-weight-bold"
-                      for="name"
-                    >
-                      Company website
-                    </label>
-                  </div>
-                  <div className="col-md-8">
-                    <input
-                      name="company-website"
-                      type="text"
-                      placeholder="| janedoe@example.com"
-                      className="form-control"
-                    />
-                  </div>
+                  <label
+                    className="d-inline-flex col-md-12 col-form-label font-weight-bold text-nowrap"
+                    for="name"
+                  >
+                    Company website
+                    <div className="col-md-8 input-box">
+                      <input
+                        name="company-website"
+                        type="text"
+                        placeholder="| janedoe@example.com"
+                        className="form-control"
+                      />
+                    </div>
+                  </label>
                 </div>
 
                 <div className="row form-group py-2">
-                  <div className="col-md-4">
-                    <label
-                      className="control-label font-weight-bold"
-                      for="name"
-                    >
-                      Leave us a message
-                    </label>
-                  </div>
-                  <div className="col-md-8">
-                    <input
-                      name="message"
-                      type="textarea"
-                      rows="3"
-                      placeholder="Tell us more about your project, needs, timeline…"
-                      className="form-control text-area"
-                    ></input>
-                  </div>
+                  <label
+                    className="d-inline-flex col-md-12 col-form-label font-weight-bold text-nowrap"
+                    for="name"
+                  >
+                    Leave us a message
+                    <div className="col-md-8 input-box">
+                      <input
+                        name="message"
+                        type="textarea"
+                        rows="3"
+                        placeholder="Tell us more about your project, needs, timeline…"
+                        className="form-control text-area"
+                      />
+                    </div>
+                  </label>
                 </div>
                 <div className="d-flex flex-row-reverse pt-3 mr-4">
                   <Button
@@ -179,16 +167,25 @@ export default function Contact(props) {
                 With The Routing Company you can:
               </h5>
               <h6 className="topics-body py-3">
-                ✔️ Et has minim elitr intellegat. Mea aeterno eleifend antiopam
-                ad, nam no suscipit quaerendum.
+                <span role="img" aria-label="check">
+                  ✔️
+                </span>
+                Et has minim elitr intellegat. Mea aeterno eleifend antiopam ad,
+                nam no suscipit quaerendum.
               </h6>
               <h6 className="topics-body py-3">
-                ✔️ Et has minim elitr intellegat. Mea aeterno eleifend antiopam
-                ad, nam no suscipit quaerendum.
+                <span role="img" aria-label="check">
+                  ✔️
+                </span>
+                Et has minim elitr intellegat. Mea aeterno eleifend antiopam ad,
+                nam no suscipit quaerendum.
               </h6>
               <h6 className="topics-body py-3">
-                ✔️ Et has minim elitr intellegat. Mea aeterno eleifend antiopam
-                ad, nam no suscipit quaerendum.
+                <span role="img" aria-label="check">
+                  ✔️
+                </span>
+                Et has minim elitr intellegat. Mea aeterno eleifend antiopam ad,
+                nam no suscipit quaerendum.
               </h6>
             </div>
           </div>
