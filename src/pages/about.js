@@ -10,6 +10,7 @@ import "../styles/about.css"
 
 export default function About(props) {
   const [percentage, setPercentage] = useState(0)
+  const [showArrow, setShowArrow] = useState(false)
   const selectedDiv = useRef(null)
 
   const onScroll = () => {
@@ -23,6 +24,21 @@ export default function About(props) {
   useEffect(() => {
     window.addEventListener("scroll", onScroll)
     return () => window.removeEventListener("scroll", onScroll)
+  }, [])
+
+  const checkArrow = () => {
+    if (!showArrow && window.pageYOffset > 0) {
+      setShowArrow(true)
+    } else {
+      setShowArrow(false)
+    }
+  }
+
+  useEffect(() => {
+    window.addEventListener("scroll", checkArrow)
+    return () => {
+      window.removeEventListener("scroll", checkArrow)
+    }
   }, [])
 
   return (
@@ -107,11 +123,17 @@ export default function About(props) {
             ref={selectedDiv}
           >
             <div
-              className="arrow2"
+             className="arrow2"
               style={{ height: `calc(0px + ${percentage}%)` }}
             >
-              <div className="line1"/>
-              <div className="line2"/>
+              <div
+                className={`line1 ${showArrow ? "visible" : "invisible"}`}
+                style={{ top: `calc(0px + ${percentage}%)` }}
+              />
+              <div
+               className={`line2 ${showArrow ? "visible" : "invisible"}`}
+                style={{ top: `calc(0px + ${percentage}%)` }}
+              />
             </div>
           </div>
 

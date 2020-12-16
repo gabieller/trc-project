@@ -30,8 +30,8 @@
   width: 1px;
   height: 20px;
   position: absolute;
-  left: 7px;
-  transform: rotate(45deg);
+  left: 9px;
+  transform: rotate(65deg);
 }
 
 #about-team .line2 {
@@ -39,9 +39,10 @@
   width: 1px;
   height: 20px;
   position: absolute;
-  left: -7px;
-  transform: rotate(-45deg);
+  left: -9px;
+  transform: rotate(-65deg);
 }
+
 #newsletter-section {
   padding-top: 5vw;
   padding-bottom: 15vh;
