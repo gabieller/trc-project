@@ -1,17 +1,17 @@
 import React from "react"
 import Layout from "../components/Layout"
-import Card from "../components/Card"
+// import Card from "../components/Card"
 import Demo from "../components/Demo"
 import DownloadButtons from "../components/DownloadButtons"
 import Button from "@material-ui/core/Button"
 
 import map from "../images/map.png"
-import solutionslines from "../images/solutions-img-lines.png"
+import solutionslinesimage from "../images/solutions-img-lines.png"
 import arrow from "../images/arrow.svg"
 import pingosolutions from "../images/pingosolutions.png"
-import key from "../images/key.svg"
-import cube from "../images/cube.svg"
-import truck from "../images/truck.svg"
+import add_circle from "../images/add_circle.svg"
+import equal_circle from "../images/equal_circle.svg"
+import mockup from "../images/mockup.png"
 
 import "../styles/solutions.css"
 
@@ -20,34 +20,43 @@ export default function Solutions(props) {
     <Layout {...props}>
       <div id="solutions-page">
         <div id="solutions-header">
-          <div className="row container solutions-header-title">
-            <div className="col justify-content-left solutions-title">
-              <h2>How we can help</h2>
-            </div>
+          <div className="row container solutions-header-title pl-5 mx-3">
+            <h2 className="col-md-4 pl-2 text-left">How we can help</h2>
           </div>
-          <div className="row justify-content-center solutions-header-card py-4">
-            <Card
-              title="Demand-responsive Transit"
-              description="Many transit authorities worldwide 
-              experimenting with on demand buses 
-              and shuttles. The Routing Company will 
-              make these efforts possible in real time. "
-            />
-            <Card
-              title="Ridesharing
-              Companies"
-              description="It’s not easy to build an efficient pooling 
-              product. Use The Routing Company to solve 
-              the problem, reduce engineering costs 
-              and get to market faster."
-            />
-            <Card
-              title="Transit & Para-transit (WAV) Authorities"
-              description="Wait times are typically far higher for those
-              who needs WAVs. The Routing Company 
-              can help your operators improve the
-              experience of those in most need."
-            />
+          <div className="d-flex inline row container pl-5">
+            <div className="card bg-white col-11 col-md-4 col-lg-3 my-2 mx-2 border border-dark">
+              <div className="card-body">
+                <h5 className="card-title font-weight-bold pt-2">
+                  Demand-responsive transit
+                </h5>
+                <div className="card-text pt-2">
+                  Many transit authorities worldwide experimenting with on
+                  demand buses
+                </div>
+              </div>
+            </div>
+            <div className="card bg-white border border-dark col-11 col-md-4 col-lg-3 my-2 mx-2 border border-dark">
+              <div className="card-body">
+                <h5 className="card-title font-weight-bold pt-2 my-0">
+                  Ridesharing
+                </h5>
+                <h5 className="card-title font-weight-bold">companies</h5>
+                <div className="card-text pt-2">
+                  It’s not easy to build an efficient pooling product. Reduce
+                  engineering costs.
+                </div>
+              </div>
+            </div>
+            <div className="card bg-white border border-dark col-11 col-md-4 col-lg-3 my-2 mx-2 border border-dark">
+              <div className="card-body">
+                <h5 className="card-title font-weight-bold pt-2">
+                  Transit & para-transit (WAV) authorities
+                </h5>
+                <div className="card-text pt-2">
+                  Wait times are typically far higher for those who needs WAVs.
+                </div>
+              </div>
+            </div>
           </div>
         </div>
 
@@ -70,10 +79,10 @@ export default function Solutions(props) {
 
         <div id="solutions-lines">
           <div className="row">
-            <div className="col-md-5 p-0 border-bottom border-dark">
+            <div className="col-md-5 p-0 border-bottom border-dark col-right">
               <div>
                 <img
-                  src={solutionslines}
+                  src={solutionslinesimage}
                   alt="Solutions"
                   width="574"
                   height="800"
@@ -81,13 +90,13 @@ export default function Solutions(props) {
               </div>
             </div>
 
-            <div className="col-md-2 border-dark border-left border-bottom">
-              <div className="arrow-interaction text-center">
+            <div className="col-md-2 border-dark border-left arrow-interaction ">
+              <div className="text-center">
                 <img src={arrow} alt="Arrow Interaction" />
               </div>
             </div>
 
-            <div className="col-md-5 border-left border-bottom border-dark pt-5">
+            <div className="col-md-5 border-left border-bottom border-dark pt-5 col-left">
               <div className="row container py-5 col-md-8">
                 <h3 className="pb-3">1. We partner with you</h3>
                 We work with you to build solutions that are tailor-made to your
@@ -113,74 +122,65 @@ export default function Solutions(props) {
         </div>
 
         <div id="solutions-products">
-          <div className="row container products-title">
-            <h2>Our Products</h2>
+          <div className="d-flex flex-row container pt-5">
+            <div className="col-md-2 text-center">
+              Exponentially richer possibility set
+            </div>
+            <div className="col-md-3 text-center">
+              <img src={add_circle} alt="Add Icon" />
+            </div>
+            <div className="col-md-2 text-center">Global optimization</div>
+            <div className="col-md-3 text-center">
+              <img src={add_circle} alt="Add Icon" />
+            </div>
+            <div className="col-md-2 text-center">
+              Rebalancing for future performance
+            </div>
           </div>
-          <div className="d-flex flex-row container products pt-5">
-            <div className="col-md-4">
-              <img
-                className="products-img pb-3"
-                src={key}
-                alt="Products Icon"
-              />
-              <div className="row">
-                Rider & Driver Apps Mea aeterno eleifend antiopam ad, nam no
-                suscipit quaerendum.
-              </div>
-            </div>
-            <div className="col-md-4">
-              <img
-                className="products-img pb-3"
-                src={cube}
-                alt="Products Icon"
-              />
-              <div className="row">
-                Fleet Management & Analytics Dashboard Mea aeterno eleifend
-                antiopam ad, nam no suscipit quaerendum.
-              </div>
-            </div>
-            <div className="col-md-4">
-              <img
-                className="products-img pb-3"
-                src={truck}
-                alt="Products Icon"
-              />
-              <div className="row">
-                On-demand Routing API Mea aeterno eleifend antiopam ad, nam no
-                suscipit quaerendum.
-              </div>
-            </div>
+          <hr className="line"></hr>
+          <div className="row container justify-content-center pt-4">
+            <img src={equal_circle} alt="Add Icon" />
+          </div>
+          <div>
+            <h2 className="text-center pt-5">
+              A revolution in demand-response transportation
+            </h2>
+          </div>
+          <div className="row container  pt-5 justify-content-center mockup">
+            <img src={mockup} alt="Mockup" />
           </div>
         </div>
 
-        <div className="row container py-5">
-          <div id="pingo-solutions" className="row border border-dark bg-white">
-            <div className="col-md-5 px-0">
-              <img
-                src={pingosolutions}
-                alt="Pingo Solutions"
-                width="445"
-                height="550"
-              />
-            </div>
-            <div className="col-md-7 py-5">
-              <div className="row container justify-content-left">
-                <h2 className="font-weight-bold pt-5">Pingo</h2>
+        <div id="pingo-solutions">
+          <div className="row container py-5">
+            <div className="row border border-dark bg-white">
+              <div className="col-md-5 px-0">
+                <img
+                  src={pingosolutions}
+                  alt="Pingo Solutions"
+                  width="445"
+                  height="550"
+                />
               </div>
-              <div className="row container justify-content-left">
-                <h3>Transit that moves with you</h3>
-              </div>
-              <div className="row container pr-3 pt-3">
-                Et has minim elitr intellegat. Mea aeterno eleifend antiopam ad,
-                nam no suscipit quaerendum. At nam minimum ponderum. Est audiam
-                animal molestiae te. Ex duo eripuit mentitum.
-                <div className="action-buttons pr-3 py-3">
-                  <Button className="btn-black" variant="contained">
-                    Primary Action
-                  </Button>
+              <div className="col-md-7 py-5">
+                <div className="row container justify-content-left">
+                  <h2 className="font-weight-bold pt-5">Pingo</h2>
                 </div>
+                <div className="row container justify-content-left">
+                  <h3>Transit that moves with you</h3>
+                </div>
+                <div className="row container pr-3 pt-3">
+                  Et has minim elitr intellegat. Mea aeterno eleifend antiopam
+                  ad, nam no suscipit quaerendum. At nam minimum ponderum. Est
+                  audiam animal molestiae te. Ex duo eripuit mentitum.
+                  <div className="action-buttons pr-3 py-3">
+                    <Button className="btn-black" variant="contained">
+                      Primary Action
+                    </Button>
+                  </div>
+                </div>
+                <DownloadButtons />
               </div>
-              <DownloadButtons />
             </div>
           </div>
         </div>

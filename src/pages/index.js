@@ -29,7 +29,7 @@ export default function Home(props) {
               {/* </h3> */}
             </div>
           </div>
-          <div className="row container demo-buttons pl-5">
+          <div className="row container buttons pl-5">
             <div className=" justify-content-left pt-3">
               <div className="action-buttons row pl-3">
                 <div className="action-buttons pr-3">

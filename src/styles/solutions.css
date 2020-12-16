@@ -1,6 +1,5 @@
 #solutions-page {
   overflow: hidden;
-  background-color: #f4f5f4;
 }
 
 #solutions-page .btn-action {
@@ -8,50 +7,39 @@
 }
 
 #solutions-header {
-  background-color: #E2E5E6;
+  background-color: #F5F4F5;
   padding-top: 12vw;
   padding-bottom: 8vw;
 }
 
-#solutions-page .card {
-  border: 1px;
-  border-radius: 0;
-  background-color: #f4f5f4;
-  font-family: "Mulish";
-  font-size: 14px;
-  color: #373f41;
-  line-height: 20px;
-  letter-spacing: 0.14px;
-  margin: 0px 10px 0 10px;
-}
 
 #solutions-how-it-works {
-  /* padding-top: 6vw; */
-  /* padding-bottom: 6vw; */
-  background-color: #F4F5F4;
+  background-color: #ffffff;
 }
 
 #solutions-how-it-works .title {
   padding-top: 10vw;
   padding-left: 12vw;
+}
+
+#solutions-lines .arrow-interaction {
+  background-color: #F5F4F5;
 
 }
 
 #solutions-products {
   padding-top: 6vw;
   padding-bottom: 6vw;
-  background-color: #e2e5e6;
+  background-color: #F5F4F5;
 }
 
-/* #pingo-solutions {
-  padding-top: 6vw;
-  padding-bottom: 6vw;
-} */
+#solutions-products .line {
+  background-color: #505050;
+  width: 80vw;
+}
 
-#contact-us-products {
-  background-color: #ffffff;
-  padding-top: 8vw;
-  padding-bottom: 8vw;
+#pingo-solutions {
+  background-color: #F5F4F5;
 }
 
 @media (min-width: 768px) {

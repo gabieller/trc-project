@@ -18,15 +18,10 @@ export default function Footer() {
           <div className="d-flex flex-column logo-trc ">
             <img src={trclogo} alt="Logo TRC" width="70" height="63" />
             <div className="social-media pb-3 px-1">
-            <button className={`btn btn-link px-1`}>
-                <img
-                  src={medium}
-                  alt="Medium button"
-                  width="40"
-                  height="30"
-                />
+              <button className={`btn btn-link px-1`}>
+                <img src={medium} alt="Medium button" width="40" height="30" />
               </button>
-              <button className={`btn btn-link px-2`} >
+              <button className={`btn btn-link px-2`}>
                 <img
                   src={twitter}
                   alt="Twitter button"
