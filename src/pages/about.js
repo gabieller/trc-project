@@ -123,7 +123,7 @@ export default function About(props) {
             ref={selectedDiv}
           >
             <div
-             className="arrow2"
+              className="arrow2"
               style={{ height: `calc(0px + ${percentage}%)` }}
             >
               <div
@@ -131,7 +131,7 @@ export default function About(props) {
                 style={{ top: `calc(0px + ${percentage}%)` }}
               />
               <div
-               className={`line2 ${showArrow ? "visible" : "invisible"}`}
+                className={`line2 ${showArrow ? "visible" : "invisible"}`}
                 style={{ top: `calc(0px + ${percentage}%)` }}
               />
             </div>

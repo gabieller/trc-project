@@ -12,20 +12,26 @@
 }
 
 #index > .title {
-  background-color: #f4f5f4;
+  background-color: #c3cbcd;
   color: #000000de;
   padding-top: 30vh;
   padding-bottom: 5vw;
+  line-height: 2rem;
 }
 #index > .features {
-  background-color: #f4f5f4;
+  background-color: #c3cbcd;
   color: #000000de;
 }
 
 #index > .backed {
-  background-color: #000000;
-  color: #ffffff;
+  background-color: #F5F4F5;
 }
+
+#index > .backed img {
+  -webkit-filter: grayscale(100%);
+  filter: grayscale(100%);
+}
+
 
 #index > .title > .action-buttons {
   margin-top: 2rem !important;

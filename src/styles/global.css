@@ -9,21 +9,21 @@
 }
 
 .btn-white {
-  background-color: #E2E5E6 !important;
+  background-color: #e2e5e6 !important;
   color: #000000 !important;
   border-radius: 0 !important;
 }
 
-.btn-white:focus {  
+.btn-white:focus {
   outline-color: #a7a7a7;
 }
 
 body {
-  font-family: "Poppins";
+  font-family: "Roboto";
 }
 
 textarea {
-  resize: none
+  resize: none;
 }
 
 @media (min-width: 768px) {
@@ -39,18 +39,14 @@ textarea {
   }
   h4 {
     font-size: 1.25rem;
-
   }
   h5 {
     font-size: 1rem;
-
   }
   h6 {
     font-size: 0.75rem;
-
   }
 }
-
 
 @media (max-width: 576px) {
   h1 {
@@ -64,11 +60,8 @@ textarea {
   }
   h4 {
     font-size: 0.75rem;
-
   }
   h5 {
     font-size: 0.5rem;
-
   }
 }
-

@@ -16,7 +16,11 @@
 }
 
 #footer .form-control {
-  background-color: #ffffff;
-  border: 1px solid #E2E5E6;
+  background-color: #000000;
+  border: 1px solid #ffffff;
   border-radius: 0;
+}
+
+.form-control::-webkit-input-placeholder {
+  color: #ffffff;
 }

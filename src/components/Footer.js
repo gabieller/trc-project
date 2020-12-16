@@ -6,6 +6,7 @@ import "../styles/footer.css"
 
 import trclogo from "../images/trc-logo-white.png"
 import pingologo from "../images/pingo-logo-white.png"
+import medium from "../images/medium.png"
 import linkedin from "../images/linkedin.svg"
 import twitter from "../images/twitter.svg"
 
@@ -16,8 +17,16 @@ export default function Footer() {
         <div className="d-flex flex-column col-md-4 logo-trc pt-3">
           <div className="d-flex flex-column logo-trc ">
             <img src={trclogo} alt="Logo TRC" width="70" height="63" />
-            <div className="social-media pb-3">
-              <button className={`btn btn-link`}>
+            <div className="social-media pb-3 px-1">
+            <button className={`btn btn-link px-1`}>
+                <img
+                  src={medium}
+                  alt="Medium button"
+                  width="40"
+                  height="30"
+                />
+              </button>
+              <button className={`btn btn-link px-2`} >
                 <img
                   src={twitter}
                   alt="Twitter button"
@@ -25,7 +34,7 @@ export default function Footer() {
                   height="20"
                 />
               </button>
-              <button className={`btn btn-link`}>
+              <button className={`btn btn-link px-2`}>
                 <img
                   src={linkedin}
                   alt="Linkedin button"

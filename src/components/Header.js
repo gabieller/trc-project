@@ -41,8 +41,8 @@ export default function Header({ uri }) {
             src={trclogo}
             alt="Main logo"
             className="img-fluid"
-            width="470"
-            height="65"
+            width="380"
+            height="55"
           />
         </Link>
         <HamburgerCollapse
