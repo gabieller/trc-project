@@ -33,10 +33,20 @@
   background-color: #F5F4F5;
 }
 
-#solutions-products .line {
+.equal-icon::before {
+  content: '';
+  margin: auto;
+  width: 80vw;
+  height: 3px;
+  background-color: #505050;
+  margin-bottom: 1rem;
+
+}
+
+/* #solutions-products .line {
   background-color: #505050;
   width: 80vw;
-}
+} */
 
 #pingo-solutions {
   background-color: #F5F4F5;

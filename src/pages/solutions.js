@@ -136,9 +136,9 @@ export default function Solutions(props) {
               Rebalancing for future performance
             </div>
           </div>
-          <hr className="line"></hr>
-          <div className="row container justify-content-center pt-4">
-            <img src={equal_circle} alt="Add Icon" />
+          {/* <hr className="line"/> */}
+          <div className="row container justify-content-center pt-4 equal-icon">
+            <img src={equal_circle} alt="Equal Icon" />
           </div>
           <div>
             <h2 className="text-center pt-5">
