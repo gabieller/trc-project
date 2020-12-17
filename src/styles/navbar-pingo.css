@@ -5,15 +5,15 @@
   color: #000000;
 }
 
-#navbar-pingo .nav-link {
+#navbar-pingo .item {
   color: #000000;
 }
 
-#navbar-pingo .nav-link:hover {
+#navbar-pingo .item:hover {
   color: #000000;
 }
 
-#navbar-pingo li:after {
+/* #navbar-pingo li:after {
   height: 5px;
   color: #000000;
   display: block;
@@ -22,10 +22,53 @@
   transform: scaleX(0) !important;
   transition: 0.1s linear;
   visibility: visible !important;
-}
+} */
 
-#navbar-pingo li:hover:after {
+/* #navbar-pingo li:hover:after {
   color: #000000;
   visibility: visible !important;
   transform: scaleX(1) !important;
+} */
+
+/* .about:hover ~ hr {
+  margin-left: 25%;
+} */
+
+#navbar-pingo ul li {
+  /* color: #000000; */
+  display: inline;
+  text-align: center;
 }
+#navbar-pingo a {
+  width: 25%;
+  padding: 0.75rem 0;
+  margin: 0;
+  text-decoration: none;
+  color: #000000;
+}
+
+.two:hover ~ hr {
+  margin-left: 12vw;
+}
+
+.three:hover ~ hr {
+  margin-left: 26vw;
+  width: 10rem;
+}
+
+.four:hover ~ hr {
+  margin-left: 41vw;
+  width: 9rem;
+
+}
+
+hr {
+  height: 0.3rem;
+  width: 9rem;
+  margin: 0;
+  background: black;
+  border: none;
+  transition: 0.4s linear;
+}
+
+/* 10,23,35 */

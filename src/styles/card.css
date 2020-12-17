@@ -14,4 +14,9 @@
   .card a {
 color: #000000;
   }
+
+  .card hr {
+    background-color: #000000;
+    width: 16vw;
+  }
   

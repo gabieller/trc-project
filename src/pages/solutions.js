@@ -1,6 +1,5 @@
 import React from "react"
 import Layout from "../components/Layout"
-// import Card from "../components/Card"
 import Demo from "../components/Demo"
 import DownloadButtons from "../components/DownloadButtons"
 import Button from "@material-ui/core/Button"

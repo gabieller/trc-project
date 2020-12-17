@@ -36,7 +36,7 @@ export default function Header({ uri, onOpen }) {
         <ul className="nav nav-pills">
           <li className="nav-item  px-4">
             <a className="nav-link" href="#pingo-content">
-              ABOUT
+              ABOUTTTT
             </a>
           </li>
           <li className="nav-item px-4">

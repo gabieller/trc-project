@@ -8,9 +8,8 @@ export default function Card({ title, description }) {
     <div className="card bg-white border border-dark col-11 col-md-4 col-lg-3 my-2 mx-2">
       <div className="card-body">
         <h5 className="card-title text-left font-weight-bold">{title}</h5>
-        <div className="card-text text-left ">
+        <div className="card-text text-left">
           <div className="my-3">{description}</div>
-          <div className="border-dark border-bottom"></div>
           <div className="text-center text-uppercase pt-2">
             <a href="/">Discover</a>
           </div>
