@@ -20,4 +20,6 @@
   right: 1rem;
   left: unset;
   top: 1.7rem;
+  outline: none !important;
+
 }

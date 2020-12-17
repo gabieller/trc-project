@@ -88,7 +88,7 @@
 }
 
 .btn:focus {
-  outline: none;
+  outline: none !important;
 }
 
 .container-fluid.main-container {
