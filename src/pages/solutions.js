@@ -1,10 +1,12 @@
 import React from "react"
 import Layout from "../components/Layout"
+import { useMediaQuery } from "react-responsive"
 import Demo from "../components/Demo"
 import DownloadButtons from "../components/DownloadButtons"
 import Button from "@material-ui/core/Button"
 
 import map from "../images/map.png"
+import map_opacity from "../images/map_opacity.png"
 import solutionslinesimage from "../images/solutions-img-lines.png"
 import arrow from "../images/arrow.svg"
 import pingosolutions from "../images/pingosolutions.png"
@@ -15,12 +17,21 @@ import mockup from "../images/mockup.png"
 import "../styles/solutions.css"
 
 export default function Solutions(props) {
+  const isDesktopOrLaptop = useMediaQuery({
+    query: "(min-device-width: 1224px)",
+  })
+  const isTabletOrMobileDevice = useMediaQuery({
+    query: "(max-device-width: 700px)",
+  })
+
   return (
     <Layout {...props}>
-      <div id="solutions-page">
-        <div id="solutions-header">
+      <div id="solutions-page" className="container-fluid">
+        <div className="section title justify-content-left pl-md-5 pl-xs-0">
           <div className="row container solutions-header-title pl-5 mx-3">
-            <h2 className="col-md-4 pl-2 text-left">How we can help</h2>
+            <div className="col-md-6 col-xs-8">
+              <h2>How we can help</h2>
+            </div>
           </div>
           <div className="d-flex inline row container pl-5">
             <div className="card bg-white col-11 col-md-4 col-lg-3 my-2 mx-2 border border-dark">
@@ -59,66 +70,139 @@ export default function Solutions(props) {
           </div>
         </div>
 
-        <div id="solutions-how-it-works">
-          <div className="row p-0">
-            <div className="col-md-7 border border-dark border-right-0 title">
-              <h2 className="justify-content-left">How it works</h2>
-              <div className="col-md-8 p-0">
-                We dynamically routes shared rides in real time through a fleet
-                management dashboard, a rider app and a driver app, all powered
-                by MIT-born technology. It’s easy to use and built for speed at
-                city-wide scale.
-              </div>
-            </div>
-            <div className="col-md-5 p-0">
-              <img src={map} alt="Map" className="fill border border-dark" />
-            </div>
-          </div>
-        </div>
-
-        <div id="solutions-lines">
-          <div className="row">
-            <div className="col-md-5 p-0 border-bottom border-dark col-right">
-              <div>
-                <img
-                  src={solutionslinesimage}
-                  alt="Solutions"
-                  width="574"
-                  height="800"
-                />
-              </div>
-            </div>
-
-            <div className="col-md-2 border-dark border-left arrow-interaction ">
-              <div className="text-center">
-                <img src={arrow} alt="Arrow Interaction" />
-              </div>
-            </div>
-
-            <div className="col-md-5 border-left border-bottom border-dark pt-5 col-left">
-              <div className="row container py-5 col-md-8">
-                <h3 className="pb-3">1. We partner with you</h3>
-                We work with you to build solutions that are tailor-made to your
-                transit needs.
-              </div>
-              <div className="row container ">
-                <div className="row container py-5 col-md-8">
-                  <h3 className="pb-3">2. Our routing engine gets to work</h3>
-                  You get access to tools and technology that calculate the most
-                  optimal routes for your vehiclís and rides in real time.
+        <div>
+          {isDesktopOrLaptop && (
+            <>
+              <div id="solutions-how-it-works">
+                <div className="row p-0">
+                  <div className="col-md-7 border border-dark border-right-0 title">
+                    <h2 className="justify-content-left">How it works</h2>
+                    <div className="col-md-8 p-0 p-sm-2">
+                      We dynamically routes shared rides in real time through a
+                      fleet management dashboard, a rider app and a driver app,
+                      all powered by MIT-born technology. It’s easy to use and
+                      built for speed at city-wide scale.
+                    </div>
+                  </div>
+                  <div className="col-md-5 p-0">
+                    <img
+                      src={map}
+                      alt="Map"
+                      className="fill border border-dark"
+                      width="100%"
+                      height="100%"
+                    />
+                  </div>
                 </div>
               </div>
-              <div className="row container">
-                <div className="row container py-5 col-md-8">
-                  <h3 className="pb-3">
-                    3. Less stress, more time and money saved
-                  </h3>
-                  Riders enjoy lower wait times and more reliable service.
+            </>
+          )}
+          {isTabletOrMobileDevice && (
+            <>
+              <div id="solutions-how-it-works">
+                <div className="row container border border-dark border-right-0 border-left-0 subject">
+                  <div className="col-xs-3">
+                    <h2 className="justify-content-left pb-3">How it works</h2>
+                  </div>
+                  <div className="col-xs-3 pb-5">
+                    We dynamically routes shared rides in real time through a
+                    fleet management dashboard, a rider app and a driver app,
+                    all powered by MIT-born technology. It’s easy to use and
+                    built for speed at city-wide scale.
+                  </div>
                 </div>
               </div>
-            </div>
-          </div>
+            </>
+          )}
         </div>
+
+        <div>
+          {isDesktopOrLaptop && (
+            <>
+              <div id="solutions-lines">
+                <div className="row">
+                  <div className="col-md-5 p-0 border-bottom border-dark col-right">
+                    <div>
+                      <img
+                        src={solutionslinesimage}
+                        alt="Solutions"
+                        width="100%"
+                        height="100%"
+                      />
+                    </div>
+                  </div>
+
+                  <div className="col-md-2 border-dark border-left arrow-interaction ">
+                    <div className="text-center">
+                      <img src={arrow} alt="Arrow Interaction" />
+                    </div>
+                  </div>
+
+                  <div className="col-md-5 border-left border-bottom border-dark pt-5 col-left">
+                    <div className="row container py-5 col-md-8">
+                      <h3 className="pb-3">1. We partner with you</h3>
+                      We work with you to build solutions that are tailor-made
+                      to your transit needs.
+                    </div>
+                    <div className="row container ">
+                      <div className="row container py-5 col-md-8">
+                        <h3 className="pb-3">
+                          2. Our routing engine gets to work
+                        </h3>
+                        You get access to tools and technology that calculate
+                        the most optimal routes for your vehiclís and rides in
+                        real time.
+                      </div>
+                    </div>
+                    <div className="row container">
+                      <div className="row container py-5 col-md-8">
+                        <h3 className="pb-3">
+                          3. Less stress, more time and money saved
+                        </h3>
+                        Riders enjoy lower wait times and more reliable service.
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </>
+          )}
+          {isTabletOrMobileDevice && (
+            <>
+              <div id="solutions-lines">
+                <div className="row container border-bottom border-dark pt-5">
+                  <div className="row container">
+                    <div className="row container py-3 px-4">
+                      <h4 className="pb-2">1. We partner with you</h4>
+                      We work with you to build solutions that are tailor-made
+                      to your transit needs.
+                    </div>
+                  </div>
+                  <div className="row container">
+                    <div className="row container py-3 px-4">
+                      <h4 className="pb-2">
+                        2. Our routing engine gets to work
+                      </h4>
+                      You get access to tools and technology that calculate the
+                      most optimal routes for your vehiclís and rides in real
+                      time.
+                    </div>
+                  </div>
+                  <div className="row container">
+                    <div className="row container py-3 px-4">
+                      <h4 className="pb-2">
+                        3. Less stress, more time and money saved
+                      </h4>
+                      Riders enjoy lower wait times and more reliable service.
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </>
+          )}
+        </div>
+
+      
 
         <div id="solutions-products">
           <div className="d-flex flex-row container pt-5">

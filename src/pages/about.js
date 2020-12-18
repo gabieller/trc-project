@@ -53,7 +53,7 @@ export default function About(props) {
 
   return (
     <div>
-        <Layout {...props}>
+      <Layout {...props}>
         {isDesktopOrLaptop && (
           <>
             <div id="about-page" className="container-fluid">
@@ -326,7 +326,7 @@ export default function About(props) {
             </div>
           </>
         )}
-    </Layout>
-      </div>
+      </Layout>
+    </div>
   )
 }

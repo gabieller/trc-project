@@ -14,7 +14,7 @@ import twitter from "../images/twitter.svg"
 
 export default function Footer() {
   const isDesktopOrLaptop = useMediaQuery({
-    query: "(min-device-width: 1224px)",
+    query: "(min-device-width: 651px)",
   })
   const isTabletOrMobileDevice = useMediaQuery({
     query: "(max-device-width: 650px)",

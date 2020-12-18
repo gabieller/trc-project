@@ -1,17 +1,23 @@
 #solutions-page {
+  position: relative;
   overflow: hidden;
+  width: 100%;
+  height: auto;
+  min-height: 35rem;
 }
 
-#solutions-page .btn-action {
-  min-width: 172px;
+#solutions-page > .section {
+  padding-top: 3vh;
+  padding-bottom: 12vw;
 }
 
-#solutions-header {
+#solutions-page > .title {
   background-color: #F5F4F5;
-  padding-top: 12vw;
-  padding-bottom: 8vw;
+  color: #000000de;
+  padding-top: 15vh;
+  padding-bottom: 5vw;
+  line-height: 2rem;
 }
-
 
 #solutions-how-it-works {
   background-color: #ffffff;
@@ -20,6 +26,13 @@
 #solutions-how-it-works .title {
   padding-top: 10vw;
   padding-left: 12vw;
+}
+
+#solutions-how-it-works .subject {
+  padding-top: 10vw;
+  padding-left: 12vw;
+  background-image: url(" ../images/map_opacity.png");
+  /* opacity: 0.5; */
 }
 
 #solutions-lines .arrow-interaction {
