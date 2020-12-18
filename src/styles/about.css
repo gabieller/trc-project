@@ -4,14 +4,20 @@
   width: 100%;
   height: auto;
   min-height: 35rem;
-  padding-top: 10rem;
 }
 
-#about-header {
-  padding-bottom: 10vh;
-  background-color: #f4f5f4;
+#about-page > .section {
+  padding-top: 5vw;
+  padding-bottom: 12vw;
 }
 
+#about-page > .title {
+  background-color: #F5F4F5;
+  color: #000000de;
+  padding-top: 9vw;
+  padding-bottom: 5vw;
+  line-height: 2rem;
+}
 #about-team .card-body {
   background-color: none;
 }

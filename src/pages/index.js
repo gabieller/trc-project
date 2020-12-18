@@ -77,7 +77,7 @@ export default function Home(props) {
             <h3>Backed by the Best</h3>
           </div>
           <div className="row container justify-content-center">
-            <img src={logos} alt="Company Logos" className="img-fluid"/>
+            <img src={logos} alt="Company Logos" className="img-fluid" />
           </div>
         </div>
         <Demo />
