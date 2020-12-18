@@ -27,8 +27,8 @@ export default function Demo() {
                 Primary Action
               </Button>
             </div>
-            <div className="action-buttons">
-              <Button className="btn-white btn-action" variant="contained">
+            <div className="action-buttons pl-3">
+              <Button className="btn btn-raised btn-secondary">
                 Secondary Action
               </Button>
             </div>

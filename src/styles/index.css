@@ -24,14 +24,13 @@
 }
 
 #index > .backed {
-  background-color: #F5F4F5;
+  background-color: #f5f4f5;
 }
 
 #index > .backed img {
   -webkit-filter: grayscale(100%);
   filter: grayscale(100%);
 }
-
 
 #index > .title > .action-buttons {
   margin-top: 2rem !important;
@@ -64,3 +63,4 @@
 #index .btn-action {
   min-width: 183px;
 }
+

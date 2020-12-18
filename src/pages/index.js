@@ -12,9 +12,9 @@ export default function Home(props) {
   return (
     <Layout {...props}>
       <div id="index" className="container-fluid">
-        <div className="section title justify-content-left pl-5 ">
+        <div className="section title justify-content-left pl-md-5 pl-xs-0">
           <div className="row container justify-content-left pl-5 pt-5">
-            <div className="col-md-11 col-sm-8">
+            <div className="col-md-11 col-xs-8">
               <h1>
                 We partner with cities to power the future of public transit
               </h1>
@@ -22,22 +22,20 @@ export default function Home(props) {
           </div>
           <div className="row container justify-content-left pl-5 pt-2">
             <div className="col-lg-5 col-12">
-              {/* <h3> */}
               Millions of businesses of all sizes—from startups to large
               enterprises—use TRC software and APIs to [action], [action] and
               [action].
-              {/* </h3> */}
             </div>
           </div>
           <div className="row container buttons pl-5">
-            <div className=" justify-content-left pt-3">
+            <div className=" justify-content-left pt-md-3 pt-xs-2">
               <div className="action-buttons row pl-3">
                 <div className="action-buttons pr-3">
                   <Button className="btn-black btn-action" variant="contained">
                     Primary Action
                   </Button>
                 </div>
-                <div className="action-buttons">
+                <div className="action-buttons pl-3">
                   <Button className="btn btn-raised btn-secondary">
                     Secondary Action
                   </Button>
@@ -47,7 +45,7 @@ export default function Home(props) {
           </div>
         </div>
 
-        <div className="section features justify-content-left pl-5">
+        <div className="section features justify-content-left pl-md-5 pl-xs-0">
           <div className="row container justify-content-left pl-5">
             <div className="col-lg-8 col-12 my-2">
               <h3 className="justify-content-left">
@@ -79,7 +77,7 @@ export default function Home(props) {
             <h3>Backed by the Best</h3>
           </div>
           <div className="row container justify-content-center">
-            <img src={logos} alt="Company Logos" />
+            <img src={logos} alt="Company Logos" className="img-fluid"/>
           </div>
         </div>
         <Demo />
