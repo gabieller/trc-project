@@ -1,4 +1,4 @@
-#footer {
+#footer, #footer-mobile {
   background-color: #000000;
   color: #ffffff;
   font-family: "Roboto";
@@ -23,4 +23,11 @@
 
 .form-control::-webkit-input-placeholder {
   color: #ffffff;
+}
+
+#footer-mobile hr {
+  width: 85vw;
+  height: 1px;
+  margin: auto;
+  background-color: #ffffff40;
 }

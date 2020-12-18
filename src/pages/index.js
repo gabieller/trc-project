@@ -12,9 +12,9 @@ export default function Home(props) {
   return (
     <Layout {...props}>
       <div id="index" className="container-fluid">
-        <div className="section title justify-content-left pl-5">
+        <div className="section title justify-content-left pl-5 ">
           <div className="row container justify-content-left pl-5 pt-5">
-            <div className="col-md-12 col-12">
+            <div className="col-md-11 col-sm-8">
               <h1>
                 We partner with cities to power the future of public transit
               </h1>

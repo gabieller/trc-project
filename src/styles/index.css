@@ -7,14 +7,14 @@
 }
 
 #index > .section {
-  padding-top: 12vh;
-  padding-bottom: 12vh;
+  padding-top: 8vw;
+  padding-bottom: 12vw;
 }
 
 #index > .title {
   background-color: #c3cbcd;
   color: #000000de;
-  padding-top: 30vh;
+  padding-top: 18vw;
   padding-bottom: 5vw;
   line-height: 2rem;
 }
