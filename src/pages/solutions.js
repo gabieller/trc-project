@@ -6,7 +6,6 @@ import DownloadButtons from "../components/DownloadButtons"
 import Button from "@material-ui/core/Button"
 
 import map from "../images/map.png"
-import map_opacity from "../images/map_opacity.png"
 import solutionslinesimage from "../images/solutions-img-lines.png"
 import arrow from "../images/arrow.svg"
 import pingosolutions from "../images/pingosolutions.png"
@@ -18,7 +17,7 @@ import "../styles/solutions.css"
 
 export default function Solutions(props) {
   const isDesktopOrLaptop = useMediaQuery({
-    query: "(min-device-width: 1224px)",
+    query: "(min-device-width: 701px)",
   })
   const isTabletOrMobileDevice = useMediaQuery({
     query: "(max-device-width: 700px)",
@@ -95,30 +94,6 @@ export default function Solutions(props) {
                   </div>
                 </div>
               </div>
-            </>
-          )}
-          {isTabletOrMobileDevice && (
-            <>
-              <div id="solutions-how-it-works">
-                <div className="row container border border-dark border-right-0 border-left-0 subject">
-                  <div className="col-xs-3">
-                    <h2 className="justify-content-left pb-3">How it works</h2>
-                  </div>
-                  <div className="col-xs-3 pb-5">
-                    We dynamically routes shared rides in real time through a
-                    fleet management dashboard, a rider app and a driver app,
-                    all powered by MIT-born technology. It’s easy to use and
-                    built for speed at city-wide scale.
-                  </div>
-                </div>
-              </div>
-            </>
-          )}
-        </div>
-
-        <div>
-          {isDesktopOrLaptop && (
-            <>
               <div id="solutions-lines">
                 <div className="row">
                   <div className="col-md-5 p-0 border-bottom border-dark col-right">
@@ -165,12 +140,56 @@ export default function Solutions(props) {
                   </div>
                 </div>
               </div>
+              <div id="solutions-products">
+                <div className="d-flex flex-row container pt-5">
+                  <div className="col-md-2 text-center">
+                    Exponentially richer possibility set
+                  </div>
+                  <div className="col-md-3 text-center">
+                    <img src={add_circle} alt="Add Icon" />
+                  </div>
+                  <div className="col-md-2 text-center">
+                    Global optimization
+                  </div>
+                  <div className="col-md-3 text-center">
+                    <img src={add_circle} alt="Add Icon" />
+                  </div>
+                  <div className="col-md-2 text-center">
+                    Rebalancing for future performance
+                  </div>
+                </div>
+                {/* <hr className="line"/> */}
+                <div className="row container justify-content-center pt-4 equal-icon">
+                  <img src={equal_circle} alt="Equal Icon" />
+                </div>
+                <div>
+                  <h2 className="text-center pt-5">
+                    A revolution in demand-response transportation
+                  </h2>
+                </div>
+                <div className="row container pt-5 justify-content-center mockup">
+                  <img src={mockup} alt="Mockup" width="100%" height="100%" />
+                </div>
+              </div>
             </>
           )}
           {isTabletOrMobileDevice && (
             <>
-              <div id="solutions-lines">
-                <div className="row container border-bottom border-dark pt-5">
+              <div id="solutions-how-it-works">
+                <div className="row border border-dark border-right-0 border-left-0 subject">
+                  <div className="col-xs-3">
+                    <h2 className="justify-content-left pb-3">How it works</h2>
+                  </div>
+                  <div className="col-xs-3 pb-5">
+                    We dynamically routes shared rides in real time through a
+                    fleet management dashboard, a rider app and a driver app,
+                    all powered by MIT-born technology. It’s easy to use and
+                    built for speed at city-wide scale.
+                  </div>
+                </div>
+              </div>
+              <div id="solutions-topics">
+                <div className="row border-bottom border-dark pt-5">
                   <div className="row container">
                     <div className="row container py-3 px-4">
                       <h4 className="pb-2">1. We partner with you</h4>
@@ -189,7 +208,7 @@ export default function Solutions(props) {
                     </div>
                   </div>
                   <div className="row container">
-                    <div className="row container py-3 px-4">
+                    <div className="row container pt-3 pb-5 px-4">
                       <h4 className="pb-2">
                         3. Less stress, more time and money saved
                       </h4>
@@ -198,54 +217,50 @@ export default function Solutions(props) {
                   </div>
                 </div>
               </div>
+              <div id="solutions-products">
+                <div className="d-flex flex-column container text-center pt-5">
+                  <div className="col-md-2">
+                    Exponentially richer possibility set
+                  </div>
+                  <div className="col-md-3 py-3">
+                    <img src={add_circle} alt="Add Icon" />
+                  </div>
+                  <div className="col-md-2">Global optimization</div>
+                  <div className="col-md-3 py-3">
+                    <img src={add_circle} alt="Add Icon" />
+                  </div>
+                  <div className="col-md-2">
+                    Rebalancing for future performance
+                  </div>
+                </div>
+                <div className="row container justify-content-center equal-icon-mobile py-3">
+                  <img src={equal_circle} alt="Equal Icon" />
+                </div>
+                <div className="row container px-5">
+                  <h3 className="text-center">
+                    A revolution in demand-response transportation
+                  </h3>
+                </div>
+                <div className="row pt-5 justify-content-center mockup px-0">
+                  <img src={mockup} alt="Mockup" width="100%" height="100%" />
+                </div>
+              </div>
             </>
           )}
         </div>
 
-      
-
-        <div id="solutions-products">
-          <div className="d-flex flex-row container pt-5">
-            <div className="col-md-2 text-center">
-              Exponentially richer possibility set
-            </div>
-            <div className="col-md-3 text-center">
-              <img src={add_circle} alt="Add Icon" />
-            </div>
-            <div className="col-md-2 text-center">Global optimization</div>
-            <div className="col-md-3 text-center">
-              <img src={add_circle} alt="Add Icon" />
-            </div>
-            <div className="col-md-2 text-center">
-              Rebalancing for future performance
-            </div>
-          </div>
-          {/* <hr className="line"/> */}
-          <div className="row container justify-content-center pt-4 equal-icon">
-            <img src={equal_circle} alt="Equal Icon" />
-          </div>
-          <div>
-            <h2 className="text-center pt-5">
-              A revolution in demand-response transportation
-            </h2>
-          </div>
-          <div className="row container  pt-5 justify-content-center mockup">
-            <img src={mockup} alt="Mockup" />
-          </div>
-        </div>
-
         <div id="pingo-solutions">
-          <div className="row container py-5">
+          <div className="row container py-5  px-5">
             <div className="row border border-dark bg-white">
               <div className="col-md-5 px-0">
                 <img
                   src={pingosolutions}
                   alt="Pingo Solutions"
-                  width="445"
-                  height="550"
+                  width="100%"
+                  height="100%"
                 />
               </div>
-              <div className="col-md-7 py-5">
+              <div className="col-md-7 py-md-5 py-xs-0">
                 <div className="row container justify-content-left">
                   <h2 className="font-weight-bold pt-5">Pingo</h2>
                 </div>
@@ -256,7 +271,7 @@ export default function Solutions(props) {
                   Et has minim elitr intellegat. Mea aeterno eleifend antiopam
                   ad, nam no suscipit quaerendum. At nam minimum ponderum. Est
                   audiam animal molestiae te. Ex duo eripuit mentitum.
-                  <div className="action-buttons pr-3 py-3">
+                  <div className="action-buttons px-0 py-3 col-md-4 col-sm-12">
                     <Button className="btn-black" variant="contained">
                       Primary Action
                     </Button>
