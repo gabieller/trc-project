@@ -1,6 +1,6 @@
 import React from "react"
 import Layout from "../components/Layout"
-import Card from "../components/Card"
+// import Card from "../components/Card"
 import Demo from "../components/Demo"
 import Button from "@material-ui/core/Button"
 
@@ -53,23 +53,55 @@ export default function Home(props) {
               </h3>
             </div>
           </div>
-          <div className="d-flex inline row container pl-5">
-            <Card
-              className="justify-content-left"
-              title="Problem that customers face 1"
-              description="At eripuit signiferumque sea, vel ad mucius molestie, cu labitur
-            iuvaret vulputate sed."
-            />
-            <Card
-              title="Problem that customers face 2"
-              description="At eripuit signiferumque sea, vel ad mucius molestie, cu labitur
-            iuvaret vulputate sed."
-            />
-            <Card
-              title="Problem that customers face 3"
-              description="At eripuit signiferumque sea, vel ad mucius molestie, cu labitur
-            iuvaret vulputate sed."
-            />
+          <div className="row container py-3 pl-5">
+            <div className="card col-lg-3 flex-md-column border border-dark py-3 mb-3">
+              <div className="card-body">
+                <h4 className="card-title col-md-10 px-0 text-left font-weight-bold">
+                  Problem that customers face 1
+                </h4>
+                <p className="card-text my-4">
+                  Many transit authorities worldwide experimenting with on
+                  demand buses.
+                </p>
+                <div className="text-center">
+                  <a className="text-uppercase pt-3 px-0" href="/">
+                    Discover
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div className="card col-lg-3 flex-md-column border border-dark py-3 mb-3">
+              <div className="card-body">
+                <h4 className="card-title col-md-10 px-0 text-left font-weight-bold">
+                  Problem that customers face 2
+                </h4>
+                <p className="card-text my-4">
+                  Many transit authorities worldwide experimenting with on
+                  demand buses.
+                </p>
+                <div className="text-center">
+                  <a className="text-uppercase pt-3 px-0" href="/">
+                    Discover
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div className="card col-lg-3 flex-md-column border border-dark py-3 mb-3">
+              <div className="card-body">
+                <h4 className="card-title col-md-10 px-0 text-left font-weight-bold">
+                  Problem that customers face 3
+                </h4>
+                <p className="card-text my-4">
+                  Many transit authorities worldwide experimenting with on
+                  demand buses.
+                </p>
+                <div className="text-center">
+                  <a className="text-uppercase pt-3 px-0" href="/">
+                    Discover
+                  </a>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
         <div className="section backed">
