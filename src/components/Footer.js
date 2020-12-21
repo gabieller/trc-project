@@ -14,17 +14,17 @@ import twitter from "../images/twitter.svg"
 
 export default function Footer() {
   const isDesktopOrLaptop = useMediaQuery({
-    query: "(min-device-width: 651px)",
+    query: "(min-device-width: 701px)",
   })
   const isTabletOrMobileDevice = useMediaQuery({
-    query: "(max-device-width: 650px)",
+    query: "(max-device-width: 700px)",
   })
 
   return (
     <div>
       {isDesktopOrLaptop && (
         <>
-          <footer id="footer" className="font-weight-bold px-5">
+          <footer id="footer" className="font-weight-bold">
             <div className="row container">
               <div className="d-flex flex-column col-md-4 logo-trc pt-3">
                 <div className="d-flex flex-column logo-trc ">
@@ -69,8 +69,8 @@ export default function Footer() {
               </div>
 
               <div className="col-md-4">
-                <div className="row links-row ">
-                  <div className="col-md-6 links pt-3">
+                <div className="row links-row px-0">
+                  <div className="col-md-6 links pt-3 pl-0">
                     <div>COMPANY</div>
                     <div>About</div>
                     <div>News</div>
@@ -79,18 +79,18 @@ export default function Footer() {
                     <div>Careers</div>
                     <div>Contact</div>
                   </div>
-                  <div className="col-md-6 links pt-3">
+                  <div className="col-md-5 links pt-3 pl-0">
                     <div>SOLUTIONS</div>
                     <div>Pingo</div>
                   </div>
                 </div>
               </div>
-              <div className="col-md-4 newsletter pt-3 pl-4">
+              <div className="col-md-4 newsletter pt-3 pl-3">
                 <p>TRC NEWSLETTER</p>
                 <div className="input-group mb-3">
                   <input
                     type="text"
-                    className="form-control"
+                    className="form-control pl-2"
                     placeholder="| Enter your email"
                     aria-label="| Enter your email"
                   />
@@ -103,8 +103,8 @@ export default function Footer() {
               </div>
             </div>
 
-            <div className="row container copyright pt-3 pl-4">
-              <div className="d-flex flex-column col-md-3 pl-4">
+            <div className="row container copyright pt-3 px-4">
+              <div className="d-flex flex-column col-md-5 px-4">
                 <div>©2020 The Routing Company</div>
                 <div>All Rights Reserved</div>
               </div>
