@@ -14,9 +14,13 @@
 #solutions-page > .title {
   background-color: #F5F4F5;
   color: #000000de;
-  padding-top: 15vh;
+  padding-top: 20vh;
   padding-bottom: 5vw;
   line-height: 2rem;
+}
+
+#solutions-page > .section .card {
+border-radius: 0;
 }
 
 #solutions-how-it-works {
@@ -49,7 +53,7 @@
 .equal-icon::before {
   content: '';
   margin: auto;
-  width: 80vw;
+  width: 90vw;
   height: 3px;
   background-color: #505050;
   margin-bottom: 1rem;

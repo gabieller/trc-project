@@ -20,6 +20,7 @@
 
 body {
   font-family: "Roboto";
+  font-size: 1.5vw;
 }
 
 textarea {
@@ -28,40 +29,47 @@ textarea {
 
 @media (min-width: 768px) {
   h1 {
-    font-size: 4rem;
+    font-size: 4vw;
+    line-height: 1.5;
   }
   h2 {
-    font-size: 2rem;
+    font-size: 3vw;
     line-height: 1.5;
   }
   h3 {
-    font-size: 1.5rem;
+    font-size: 2.5vw;
+    line-height: 1.5;
   }
   h4 {
-    font-size: 1.25rem;
+    font-size: 2vw;
+    line-height: 1.5;
   }
   h5 {
-    font-size: 1rem;
+    font-size: 1vw;
+    line-height: 1.5;
   }
   h6 {
-    font-size: 0.75rem;
+    font-size: 0.75vw;
+  }
+  p{
+    font-size: 1.5vw;
   }
 }
 
-@media (max-width: 650px) {
+/* @media (max-width: 650px) {
   h1 {
-    font-size: 2.25rem;
+    font-size: 3.25vw;
   }
   h2 {
-    font-size: 2rem;
+    font-size: 2vw;
   }
   h3 {
-    font-size: 1.75rem;
+    font-size: 1.75vw;
   }
   h4 {
-    font-size: 1.5rem;
+    font-size: 1.5vw;
   }
   h5 {
-    font-size: 1rem;
+    font-size: 1vw;
   }
-}
+} */
