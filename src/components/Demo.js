@@ -8,8 +8,8 @@ export default function Demo() {
     <div id="demo-component" className="pl-5">
       <div className="row container contact-us-title pl-0">
         <div className="col-md-6 justify-content-left demo-title">
-          <h2>Are you curious to know more?</h2>
-          <h2>Let’s schedule a demo!</h2>
+          <h3>Are you curious to know more?</h3>
+          <h3>Let’s schedule a demo!</h3>
         </div>
       </div>
       <div className="row container contact-us-subtitle pl-0 py-3">
@@ -27,7 +27,7 @@ export default function Demo() {
                 Primary Action
               </Button>
             </div>
-            <div className="action-buttons pl-3">
+            <div className="action-buttons">
               <Button className="btn btn-raised btn-secondary">
                 Secondary Action
               </Button>

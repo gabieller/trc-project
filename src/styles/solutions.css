@@ -7,14 +7,14 @@
 }
 
 #solutions-page > .section {
-  padding-top: 3vh;
+  padding-top: 3vw;
   padding-bottom: 12vw;
 }
 
 #solutions-page > .title {
   background-color: #F5F4F5;
   color: #000000de;
-  padding-top: 20vh;
+  padding-top: 13vw;
   padding-bottom: 5vw;
   line-height: 2rem;
 }
