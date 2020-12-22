@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from "react"
 import { Helmet } from "react-helmet"
+import { useMediaQuery } from "react-responsive"
 
 import Footer from "./Footer"
 import ScrollTop from "./ScrollTop"
@@ -12,6 +13,12 @@ import "../styles/layout.css"
 export default function LayoutPingo(props) {
   const [isOpenSidebar, setOpenSidebar] = useState(false)
   const [loading, setLoading] = useState(true)
+  const isDesktopOrLaptop = useMediaQuery({
+    query: "(min-device-width: 701px)",
+  })
+  const isTabletOrMobileDevice = useMediaQuery({
+    query: "(max-device-width: 700px)",
+  })
 
   useEffect(() => {
     setInterval(() => {
@@ -32,21 +39,44 @@ export default function LayoutPingo(props) {
           <img src={loadingpingo} alt="Loading Gif" width="150" height="150" />
         </div>
       )}
-
-      {!loading && (
-        <>
-          <NavBarPingo />
-          <div
-            className={`container-fluid main-container ${
-              isOpenSidebar ? "open" : ""
-            }`}
-          >
-            {props.children}
-          </div>
-          <Footer />
-          <ScrollTop />
-        </>
-      )}
+      <div>
+        {isDesktopOrLaptop && (
+          <>
+            {!loading && (
+              <>
+                <NavBarPingo />
+                <div
+                  className={`container-fluid main-container ${
+                    isOpenSidebar ? "open" : ""
+                  }`}
+                >
+                  {props.children}
+                </div>
+                <Footer />
+                <ScrollTop />
+              </>
+            )}
+          </>
+        )}
+        {isTabletOrMobileDevice && (
+          <>
+            {!loading && (
+              <>
+                {/* <NavBarPingo /> */}
+                <div
+                  className={`container-fluid main-container ${
+                    isOpenSidebar ? "open" : ""
+                  }`}
+                >
+                  {props.children}
+                </div>
+                <Footer />
+                <ScrollTop />
+              </>
+            )}
+          </>
+        )}
+      </div>
     </>
   )
 }

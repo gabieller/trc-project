@@ -1,41 +1,22 @@
 #navbar-pingo {
   position: absolute;
-  padding-top: 43vw;
+  min-width: 1000px;
+  padding-top: 25rem;
   background: transparent;
   color: #000000;
 }
 
 #navbar-pingo .item {
   color: #000000;
+  /* position: absolute; */
+
 }
 
 #navbar-pingo .item:hover {
   color: #000000;
 }
 
-/* #navbar-pingo li:after {
-  height: 5px;
-  color: #000000;
-  display: block;
-  background: #000000;
-  content: "";
-  transform: scaleX(0) !important;
-  transition: 0.1s linear;
-  visibility: visible !important;
-} */
-
-/* #navbar-pingo li:hover:after {
-  color: #000000;
-  visibility: visible !important;
-  transform: scaleX(1) !important;
-} */
-
-/* .about:hover ~ hr {
-  margin-left: 25%;
-} */
-
 #navbar-pingo ul li {
-  /* color: #000000; */
   display: inline;
   text-align: center;
 }
@@ -61,8 +42,6 @@
   );
 }
 
-
-
 .three:hover ~ hr {
   margin-left: 26.5vw;
   width: 10rem;
@@ -79,9 +58,5 @@ hr {
   margin: 0;
   background: #000000;
   border: none;
-  transition: 0.5s linear,  background-color;
+  transition: 0.5s linear, background-color;
 }
-
-/* background: linear-gradient(red, yellow, blue); */
-
-/* 10,23,35 */

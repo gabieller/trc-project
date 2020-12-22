@@ -181,7 +181,7 @@ export default function Solutions(props) {
                   <div className="col-9 pl-0">
                     <h2 className="justify-content-left pb-3">How it works</h2>
                   </div>
-                  <div className="col-10 pb-5 pl-0 font-weight-normal" >
+                  <div className="col-10 pb-5 pl-0 font-weight-normal">
                     We dynamically routes shared rides in real time through a
                     fleet management dashboard, a rider app and a driver app,
                     all powered by MIT-born technology. It’s easy to use and
@@ -270,7 +270,7 @@ export default function Solutions(props) {
                 </div>
                 <div className="row container pr-3 pt-3">
                   Et has minim elitr intellegat. Mea aeterno eleifend antiopam
-                  ad, nam no suscipit quaerendum. 
+                  ad, nam no suscipit quaerendum.
                   <div className="action-buttons px-0 py-3 col-sm-4 col-sm-12">
                     <Button className="btn-black" variant="contained">
                       Primary Action

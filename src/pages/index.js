@@ -55,7 +55,7 @@ export default function Home(props) {
           <div className="row container py-3 pl-5">
             <div className="card col-lg-3 flex-md-column border border-dark py-3 mb-3">
               <div className="card-body">
-                <h4 className="card-title col-md-10 px-0 text-left font-weight-bold">
+                <h4 className="card-title col-sm-12 px-0 text-left font-weight-bold">
                   Problem that customers face 1
                 </h4>
                 <p className="card-text my-4">
@@ -71,7 +71,7 @@ export default function Home(props) {
             </div>
             <div className="card col-lg-3 flex-md-column border border-dark py-3 mb-3">
               <div className="card-body">
-                <h4 className="card-title col-md-10 px-0 text-left font-weight-bold">
+                <h4 className="card-title col-sm-12 px-0 text-left font-weight-bold">
                   Problem that customers face 2
                 </h4>
                 <p className="card-text my-4">
@@ -87,7 +87,7 @@ export default function Home(props) {
             </div>
             <div className="card col-lg-3 flex-md-column border border-dark py-3 mb-3">
               <div className="card-body">
-                <h4 className="card-title col-md-10 px-0 text-left font-weight-bold">
+                <h4 className="card-title col-sm-12 px-0 text-left font-weight-bold">
                   Problem that customers face 3
                 </h4>
                 <p className="card-text my-4">
@@ -105,7 +105,7 @@ export default function Home(props) {
         </div>
         <div className="section backed">
           <div className="row container pb-5">
-            <h3>Backed by the Best</h3>
+            <h4>Backed by the Best</h4>
           </div>
           <div className="row container justify-content-center">
             <img src={logos} alt="Company Logos" className="img-fluid" />

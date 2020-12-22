@@ -16,7 +16,7 @@
 
 .button {
   background-color: #ccccff;
-  border-radius: 4px;
+  border-radius: 50%
 }
 
 .button:hover {

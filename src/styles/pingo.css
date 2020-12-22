@@ -1,5 +1,8 @@
 #pingo-page {
   overflow: hidden;
+  width: 100%;
+  height: auto;
+  background-color: #f5f4f5;
 }
 
 #pingo-header {
@@ -11,37 +14,24 @@
 #pingo-header .pingo-logo {
   padding-left: 10vw;
 }
-
-#pingo-header .subtitle {
+#pingo-header .mobile-subtitle {
   color: #ffffff;
 }
 
 #pingo-content {
   padding-top: 8vw;
-  padding-bottom: 8vw;
-}
-
-#pingo-values {
-  background-color: #e2e5e6;
-  padding: 12vw;
-}
-
-#pingo-content .btn {
-  background-color: transparent;
-  border-radius: 0;
-  border: 1px;
-  border: #000000;
-  color: black;
+  padding-bottom: 2vw;
 }
 
 #pingo-about {
-  background-color: #ffffff;
   padding-top: 3vw;
   padding-bottom: 3vw;
 }
 
-#pingo-arrow {
-  background-color: #f4f5f4;
+#pingo-arrow .card {
+  padding-left: 8vw;
+  padding-bottom: 8vw;
+  background-color: #f5f4f5;
 }
 
 #pingo-trc {
@@ -50,19 +40,13 @@
   padding-bottom: 5vw;
 }
 
-#pingo-backed {
-  background-color: #ffffff;
-  padding-top: 15vw;
-  padding-bottom: 15vw;
-}
-
 #pingo-quotes {
-  background-color: #9ba6a8;
+  background-color: #ffffff;
   padding-bottom: 5vw;
 }
 
-#pingo-quotes .card-body {
-  color: #ffffff;
+#pingo-quotes .card {
+  border: none;
 }
 
 #pingo-quotes img {
@@ -70,6 +54,7 @@
 }
 
 #pingo-quotes .carousel-indicators li {
+  background-color: #c3cbcd;
   width: 10px;
   height: 10px;
   border-radius: 100%;
@@ -83,7 +68,7 @@
   padding-top: 5vw;
   padding-bottom: 5vw;
   padding-left: 10vw;
-  background-color: #ffffff;
+  background-color: #f5f4f5;
 }
 
 #pingo-somewhere .text {
@@ -100,9 +85,15 @@
   left: 42vw;
 }
 
+#pingo-header .mockup-mobile {
+  position: absolute;
+  top: 0vw;
+  right: 20vw;
+}
+
 #download-pingo {
   background-image: url(" ../images/pingo-shapes.png");
-  background-color: #c3cbcd69;
+  background-color: #8ec99970;
   padding-top: 5vw;
   padding-bottom: 10vw;
   padding-left: 10vw;
