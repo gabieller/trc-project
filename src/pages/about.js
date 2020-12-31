@@ -1,10 +1,10 @@
-import React, { useEffect, useState, useRef } from "react"
+import React, { useState, useRef } from "react"
 import Layout from "../components/Layout"
 import Button from "@material-ui/core/Button"
 import Demo from "../components/Demo"
+import Arrow from "../components/Arrow"
 import Newsletter from "../components/Newsletter"
 import Responsive from "../components/Responsive"
-import { useEffectOnlyOnce } from "../utils/hooks"
 
 import newsletterimage from "../images/newsletterimage.png"
 import menno from "../images/menno-pic.png"
@@ -13,39 +13,6 @@ import uber from "../images/uber.svg"
 import "../styles/about.css"
 
 export default function About(props) {
-  const [percentage, setPercentage] = useState(0)
-  const [showArrow, setShowArrow] = useState(false)
-  const selectedDiv = useRef(null)
-
-  useEffect(() => {
-    const onScroll = () => {
-      if (selectedDiv.current) {
-        const { scrollTop } = document.documentElement
-        const { scrollHeight, offsetTop } = selectedDiv.current
-        const bottomGoal = scrollHeight / 2 + offsetTop
-        const newValue = (scrollTop / bottomGoal) * 100
-        setPercentage(newValue >= 100 ? 100 : newValue)
-      }
-    }
-    window.addEventListener("scroll", onScroll)
-    return () => window.removeEventListener("scroll", onScroll)
-  }, [])
-
-  useEffectOnlyOnce(() => {
-    const checkArrow = () => {
-      if (!showArrow && window.pageYOffset > 0) {
-        setShowArrow(true)
-      } else {
-        setShowArrow(false)
-      }
-    }
-    window.addEventListener("scroll", checkArrow)
-    return () => {
-      window.removeEventListener("scroll", checkArrow)
-    }
-  })
-
-  const arrowTip = `line ${showArrow ? "visible" : "invisible"}`
   return (
     <div>
       <Layout {...props}>
@@ -125,18 +92,7 @@ export default function About(props) {
                 </div>
               </div>
 
-              <div
-                className="col-md-2 border border-dark border-top-0 border-bottom-0 justify-content-center d-flex"
-                ref={selectedDiv}
-              >
-                <div
-                  className="arrow2"
-                  style={{ height: `calc(0px + ${percentage}%)` }}
-                >
-                  <span className={`line-1 ${arrowTip}`} />
-                  <span className={`line-2 ${arrowTip}`} />
-                </div>
-              </div>
+              <Arrow />
 
               <div className="col-md-5 border-dark border-top border-bottom p-0 col-right">
                 <div className="d-inline-flex">

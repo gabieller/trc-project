@@ -1,7 +1,8 @@
-import React, { useState, useEffect, useCallback } from "react"
+import React, { useState, useCallback } from "react"
 import { Link } from "gatsby"
 import { HamburgerCollapse } from "react-animated-burgers"
 import SideMenu from "./SideMenu"
+import { useEffectOnlyOnce } from "../utils/hooks"
 import "../styles/header.css"
 import trclogo from "../images/trc-logo-black.png"
 
@@ -16,22 +17,21 @@ export default function Header({ uri }) {
       ...prevState,
       isSidebarOpen: !prevState.isSidebarOpen,
     }))
-  }, [state.isSidebarOpen])
+  }, [])
 
-  const handleScroll = () => {
-    setState(prevState => ({
-      ...prevState,
-      visibilityClass:
-        window.pageYOffset > 45 ? "bg-transparent navbar-scrolled" : "",
-    }))
-  }
-
-  useEffect(() => {
+  useEffectOnlyOnce(() => {
+    const handleScroll = () => {
+      setState(prevState => ({
+        ...prevState,
+        visibilityClass:
+          window.pageYOffset > 45 ? "bg-transparent navbar-scrolled" : "",
+      }))
+    }
     window.addEventListener("scroll", handleScroll)
     return () => {
       window.removeEventListener("scroll", handleScroll)
     }
-  }, [])
+  })
 
   return (
     <>

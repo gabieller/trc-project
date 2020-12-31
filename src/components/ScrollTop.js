@@ -1,4 +1,6 @@
-import React, { useState, useEffect } from "react"
+import React, { useState } from "react"
+import { useEffectOnlyOnce } from "../utils/hooks"
+
 import "../styles/scrollTop.css"
 
 import arrowUp from "../images/arrowUp.svg"
@@ -6,20 +8,19 @@ import arrowUp from "../images/arrowUp.svg"
 export default function ScrollTop() {
   const [showScroll, setShowScroll] = useState(false)
 
-  const checkScrollTop = () => {
-    if (!showScroll && window.pageYOffset > 50) {
-      setShowScroll(true)
-    } else {
-      setShowScroll(false)
+  useEffectOnlyOnce(() => {
+    const checkScrollTop = () => {
+      if (!showScroll && window.pageYOffset > 50) {
+        setShowScroll(true)
+      } else {
+        setShowScroll(false)
+      }
     }
-  }
-
-  useEffect(() => {
     window.addEventListener("scroll", checkScrollTop)
     return () => {
       window.removeEventListener("scroll", checkScrollTop)
     }
-  }, [])
+  })
 
   const scrollToTop = () => {
     window.scrollTo({ top: 0, behavior: "smooth" })
