@@ -4,6 +4,7 @@ import Layout from "../components/Layout"
 import Button from "@material-ui/core/Button"
 import Demo from "../components/Demo"
 import Newsletter from "../components/Newsletter"
+import Responsive from "../components/Responsive"
 
 import newsletterimage from "../images/newsletterimage.png"
 import menno from "../images/menno-pic.png"
@@ -24,11 +25,13 @@ export default function About(props) {
   const selectedDiv = useRef(null)
 
   const onScroll = () => {
-    const { scrollTop } = document.documentElement
-    const { scrollHeight, offsetTop } = selectedDiv.current
-    const bottomGoal = scrollHeight / 2 + offsetTop
-    const newValue = (scrollTop / bottomGoal) * 100
-    setPercentage(newValue >= 100 ? 100 : newValue)
+    if (selectedDiv.current) {
+      const { scrollTop } = document.documentElement
+      const { scrollHeight, offsetTop } = selectedDiv.current
+      const bottomGoal = scrollHeight / 2 + offsetTop
+      const newValue = (scrollTop / bottomGoal) * 100
+      setPercentage(newValue >= 100 ? 100 : newValue)
+    }
   }
 
   useEffect(() => {
@@ -51,6 +54,7 @@ export default function About(props) {
     }
   }, [])
 
+  const arrowTip = `line ${showArrow ? "visible" : "invisible"}`
   return (
     <div>
       <Layout {...props}>
@@ -139,14 +143,8 @@ export default function About(props) {
                     className="arrow2"
                     style={{ height: `calc(0px + ${percentage}%)` }}
                   >
-                    <div
-                      className={`line1 ${showArrow ? "visible" : "invisible"}`}
-                      style={{ top: `calc(0px + ${percentage}%)` }}
-                    />
-                    <div
-                      className={`line2 ${showArrow ? "visible" : "invisible"}`}
-                      style={{ top: `calc(0px + ${percentage}%)` }}
-                    />
+                    <span className={`line-1 ${arrowTip}`} />
+                    <span className={`line-2 ${arrowTip}`} />
                   </div>
                 </div>
 

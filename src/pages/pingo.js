@@ -430,14 +430,10 @@ export default function Pingo(props) {
                   audiam animal molestiae te.
                 </div>
               </div>
-              <div id="advantages-mobile" >
+              <div id="advantages-mobile">
                 <div className="row container flex-column">
-
-                Advantages
-                Advantages
-                Advantages
+                  Advantages Advantages Advantages
                 </div>
-
               </div>
               <div id="features-mobile"></div>
             </>
