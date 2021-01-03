@@ -8,16 +8,22 @@
 
 #index > .section {
   padding-top: 6vw;
-  padding-bottom: 12vw;
+  padding-bottom: 6vw;
 }
 
 #index > .title {
-  background-color: #c3cbcd;
-  color: #000000de;
-  padding-top: 18vw;
-  padding-bottom: 5vw;
-  line-height: 2rem;
+  position: relative;
+  padding-left: 0 !important;
+  padding-top: 0;
+  padding-bottom: 0;
+  margin-top: 100px;
 }
+
+#index > .title > .title-content {
+  padding-top: 6vw;
+  padding-bottom: 6vw;
+}
+
 #index > .features {
   background-color: #c3cbcd;
   color: #000000de;
@@ -25,7 +31,7 @@
 
 #index .card a {
   color: #000000;
-    }
+}
 
 #index > .backed {
   background-color: #f5f4f5;
@@ -67,4 +73,3 @@
 #index .btn-action {
   min-width: 183px;
 }
-

@@ -28,6 +28,7 @@
     "jquery": "^3.5.1",
     "material-components-web": "^8.0.0",
     "popper.js": "^1.16.1",
+    "pts": "^0.9.6",
     "react": "^16.12.0",
     "react-animate-height": "^2.0.23",
     "react-animated-burgers": "^1.2.8",
