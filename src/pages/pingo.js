@@ -316,8 +316,6 @@ export default function Pingo(props) {
                 </div>
               </div>
             </div>
-
-           
           </Responsive.Desktop>
 
           <Responsive.Mobile>
@@ -428,7 +426,7 @@ export default function Pingo(props) {
                   </Button>
                 </div>
                 <div className="col-md-4 car-illustration">
-                  <img src={car} alt="Yellow Car" width="130%" height="100%"/>
+                  <img src={car} alt="Yellow Car" width="130%" height="100%" />
                 </div>
               </div>
             </div>
@@ -529,63 +527,67 @@ export default function Pingo(props) {
           </Responsive.Mobile>
 
           <div id="pingo-somewhere">
-              <div className="col-md-8 justify-content-left text pt-5">
-                <div className="title">
-                  <h3 className="font-weight-bold">Pingo somewhere!</h3>
-                  <h3>See where we’re currently operating</h3>
-                </div>
-                <div className="col-md-7 text-body px-0 pt-5">
-                  Et has minim elitr intellegat. Mea aeterno eleifend antiopam
-                  ad, nam no suscipit quaerendum. At nam minimum ponderum. Est
-                  audiam animal molestiae te. Ex duo eripuit mentitum.
-                </div>
-                <div className="col-md-6 find-pingo-illustration">
-                  <img src={womanillustration} alt="Woman Standing" width="100%" height="100%" />
-                </div>
+            <div className="col-md-8 justify-content-left text pt-5">
+              <div className="title">
+                <h3 className="font-weight-bold">Pingo somewhere!</h3>
+                <h3>See where we’re currently operating</h3>
               </div>
-
-              <div className="col-md-4 find-pingo pt-5">
-                <div className="input-group mb-3">
-                  <input
-                    type="text"
-                    className="form-control"
-                    placeholder="| Enter City"
-                    aria-label="| Enter City"
-                  />
-                  <div className="input-group-append">
-                    <Button className="btn-black" variant="contained">
-                      SEARCH CITY
-                    </Button>
-                  </div>
-                </div>
-                <h6 className="warning-text">
-                  By clicking “Primary action” you accepting ipsum dolor sit
-                  amet, sit ea brute mediocritatem, eu sed aliquam scripserit
-                  dissentiunt.
-                </h6>
+              <div className="col-md-7 text-body px-0 pt-5">
+                Et has minim elitr intellegat. Mea aeterno eleifend antiopam ad,
+                nam no suscipit quaerendum. At nam minimum ponderum. Est audiam
+                animal molestiae te. Ex duo eripuit mentitum.
+              </div>
+              <div className="col-md-6 find-pingo-illustration">
+                <img
+                  src={womanillustration}
+                  alt="Woman Standing"
+                  width="100%"
+                  height="100%"
+                />
               </div>
             </div>
 
-            <div id="download-pingo">
-              <div className="col-md-6 justify-content-left text pt-5">
-                <div className="title">
-                  <h2>Are you curious to know more? Get Pingo sentence</h2>
+            <div className="col-md-4 find-pingo pt-5">
+              <div className="input-group mb-3">
+                <input
+                  type="text"
+                  className="form-control"
+                  placeholder="| Enter City"
+                  aria-label="| Enter City"
+                />
+                <div className="input-group-append">
+                  <Button className="btn-black" variant="contained">
+                    SEARCH CITY
+                  </Button>
                 </div>
               </div>
-              <div className="d-inline-flex action-button justify-content-left pt-4">
-                <div className="action-buttons pr-3">
-                  <Button className="btn btn-action pl-0">
-                    <img src={pingo_register2} alt="Pingo Button" />
-                  </Button>
-                </div>
-                <div className="action-buttons">
-                  <Button className="btn btn-action">
-                    <img src={pingo_ride2} alt="Pingo Button" />
-                  </Button>
-                </div>
+              <h6 className="warning-text">
+                By clicking “Primary action” you accepting ipsum dolor sit amet,
+                sit ea brute mediocritatem, eu sed aliquam scripserit
+                dissentiunt.
+              </h6>
+            </div>
+          </div>
+
+          <div id="download-pingo">
+            <div className="col-md-6 justify-content-left text pt-5">
+              <div className="title">
+                <h2>Are you curious to know more? Get Pingo sentence</h2>
               </div>
             </div>
-
+            <div className="d-inline-flex action-button justify-content-left pt-4">
+              <div className="action-buttons pr-3">
+                <Button className="btn btn-action pl-0">
+                  <img src={pingo_register2} alt="Pingo Button" />
+                </Button>
+              </div>
+              <div className="action-buttons">
+                <Button className="btn btn-action">
+                  <img src={pingo_ride2} alt="Pingo Button" />
+                </Button>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </LayoutPingo>
