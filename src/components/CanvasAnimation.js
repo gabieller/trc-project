@@ -1,35 +1,37 @@
 import React, { useState, useCallback } from "react"
-
 import { QuickStartCanvas } from "react-pts-canvas"
 import { Create, Group, Const, Circle } from "pts"
+
+const createLines = space => {
+  var ps = Create.distributeRandom(space, 100)
+  return ps.map(item => {
+    return new Group(
+      item,
+      item
+        .clone()
+        .toAngle(
+          Math.random() * Const.pi,
+          (Math.random() * space.size.y) / 1 + 10,
+          true
+        )
+    )
+  })
+}
 
 export default function Canvas() {
   const [lines, setLines] = useState([])
 
-  const onStart = useCallback(space => {
-    var ps = Create.distributeRandom(space, 100)
-    const randomLines = ps.map(item => {
-      return new Group(
-        item,
-        item
-          .clone()
-          .toAngle(
-            Math.random() * Const.pi,
-            (Math.random() * space.size.y) / 1 + 10,
-            true
-          )
-      )
-    })
-    setLines(randomLines)
-  }, [])
+  const onResize = useCallback(space => setLines(createLines(space.bound)), [])
+  
+  const onStart = useCallback(bound => setLines(createLines(bound)), [])
 
   const onAnimate = useCallback(
     (space, form) => {
-      let range = Circle.fromCenter(space.pointer, 20)
+      const range = Circle.fromCenter(space.pointer, 20)
       form.stroke("#fff").lines(lines)
       lines.forEach(line => {
-        let inPath = Circle.intersectRay2D(range, line)
-        let inLine = Circle.intersectLine2D(range, line)
+        const inPath = Circle.intersectRay2D(range, line)
+        const inLine = Circle.intersectLine2D(range, line)
 
         if (inPath.length > 1) {
           form
@@ -50,10 +52,9 @@ export default function Canvas() {
 
   return (
     <QuickStartCanvas
-      className="test"
       background="#E4E1E5"
       onStart={onStart}
-      onResize={onStart}
+      onResize={onResize}
       onAnimate={onAnimate}
       style={{
         width: "100%",
