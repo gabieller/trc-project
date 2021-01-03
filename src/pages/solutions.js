@@ -1,6 +1,5 @@
 import React from "react"
 import Layout from "../components/Layout"
-import { useMediaQuery } from "react-responsive"
 import Demo from "../components/Demo"
 import Arrow from "../components/Arrow"
 import DownloadButtons from "../components/DownloadButtons"

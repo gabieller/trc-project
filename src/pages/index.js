@@ -1,12 +1,12 @@
-import React from "react"
+import React, { Suspense } from "react"
 import Layout from "../components/Layout"
 import Demo from "../components/Demo"
 import Button from "@material-ui/core/Button"
-import CanvasAnimation from "../components/CanvasAnimation"
-
 import logos from "../images/backedlogos.png"
-
 import "../styles/index.css"
+const CanvasAnimation = React.lazy(() =>
+  import("../components/CanvasAnimation")
+)
 
 export default function Home(props) {
   return (
@@ -21,7 +21,9 @@ export default function Home(props) {
               display: "flex",
             }}
           >
-            <CanvasAnimation />
+            <Suspense fallback={<div>Loading...</div>}>
+              <CanvasAnimation />
+            </Suspense>
           </div>
           <div className="title-content">
             <div className="text row container justify-content-left pl-5 pt-5">
