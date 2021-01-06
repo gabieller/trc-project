@@ -22,7 +22,7 @@ export default function Canvas() {
   const [lines, setLines] = useState([])
 
   const onResize = useCallback(space => setLines(createLines(space.bound)), [])
-  
+
   const onStart = useCallback(bound => setLines(createLines(bound)), [])
 
   const onAnimate = useCallback(

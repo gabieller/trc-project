@@ -1,10 +1,8 @@
 import React from "react"
 import LayoutPingo from "../components/LayoutPingo"
 import Responsive from "../components/Responsive"
-
+import NavBarPingo from "../components/NavBarPingo"
 import Button from "@material-ui/core/Button"
-// import NavBarPingo from "./NavBarPingo"
-
 import pingologowhite from "../images/pingologowhite.png"
 import pingo_mockup from "../images/pingo_mockup.png"
 import arrow from "../images/arrow.svg"
@@ -25,16 +23,18 @@ export default function Pingo(props) {
       <div id="pingo-page" className="container-fluid">
         <div>
           <Responsive.Desktop>
-            {/* <NavBarPingo /> */}
             <div id="pingo-header">
-              <div className="row container justify-content-center pingo-landing-page">
-                <img
-                  className=" img-fluid"
-                  src={pingologowhite}
-                  alt="Pingo Main logo"
-                  width="650"
-                  height="400"
-                />
+              <div className="container">
+                <div className="row justify-content-center pingo-landing-page">
+                  <img
+                    className="img-fluid"
+                    src={pingologowhite}
+                    alt="Pingo Main logo"
+                    width="650"
+                    height="400"
+                  />
+                </div>
+                <NavBarPingo />
               </div>
             </div>
 
