@@ -1,62 +1,44 @@
-#navbar-pingo {
-  position: absolute;
-  min-width: 1000px;
-  padding-top: 25rem;
-  background: transparent;
-  color: #000000;
+.navbar-pingo {
+  padding-top: 15vw;
+  padding-bottom: 0.5em;
+  position: relative;
+  flex-flow: row;
+  --underline-height: 0.4em;
+  --transition-duration: 0.5s;
 }
 
-#navbar-pingo .item {
-  color: #000000;
-  /* position: absolute; */
-
-}
-
-#navbar-pingo .item:hover {
-  color: #000000;
-}
-
-#navbar-pingo ul li {
-  display: inline;
+.navbar-pingo > .nav-item {
+  flex-basis: 100%;
   text-align: center;
-}
-#navbar-pingo a {
-  width: 25%;
-  padding: 0.75rem 0;
-  margin: 0;
-  text-decoration: none;
-  color: #000000;
+  color: black;
 }
 
-.two:hover ~ hr {
-  margin-left: 12vw;
-  background: linear-gradient(
-    to left,
-    red,
-    yellow,
-    blue,
-    black,
-    red,
-    yellow,
-    blue
-  );
+.navbar-pingo > .underline {
+  display: block;
+  position: absolute;
+  z-index: 0;
+  bottom: 0;
+  left: 0;
+  height: var(--underline-height);
+  background: black;
+  pointer-events: none;
+  mix-blend-mode: multiply;
+  -webkit-transition: -webkit-transform var(--transition-duration) ease-in-out;
+  transition: -webkit-transform var(--transition-duration) ease-in-out;
+  transition: transform var(--transition-duration) ease-in-out;
+  transition: transform var(--transition-duration) ease-in-out, -webkit-transform var(--transition-duration) ease-in-out;
 }
 
-.three:hover ~ hr {
-  margin-left: 26.5vw;
-  width: 10rem;
+.underline:nth-child(1) {
+  background: #004488;
+  -webkit-transition: calc(var(--transition-duration) * .8);
+  transition: calc(var(--transition-duration) * .8);
 }
-
-.four:hover ~ hr {
-  margin-left: 41.5vw;
-  width: 9rem;
+.underline:nth-child(2) {
+  background: #332288;
+  -webkit-transition: calc(var(--transition-duration) * 1.2);
+  transition: calc(var(--transition-duration) * 1.2);
 }
-
-hr {
-  height: 0.3rem;
-  width: 9rem;
-  margin: 0;
-  background: #000000;
-  border: none;
-  transition: 0.5s linear, background-color;
+.underline:nth-child(3) {
+  background: #25799f;
 }

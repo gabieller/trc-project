@@ -7,8 +7,8 @@
 
 #pingo-header {
   padding-top: 15vw;
-  padding-bottom: 15vw;
   background-color: #8ec999;
+  position: relative;
 }
 
 #pingo-header .pingo-logo {
