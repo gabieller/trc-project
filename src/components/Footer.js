@@ -17,8 +17,8 @@ export default function Footer() {
     <div>
       <Responsive.Desktop>
         <footer id="footer" className="font-weight-bold">
-          <div className="row container">
-            <div className="d-flex flex-column col-md-4 logo-trc pt-3">
+          <div className="row container col-xl-8 px-0">
+            <div className="d-flex flex-column col-xl-4 logo-trc pt-3">
               <div className="d-flex flex-column logo-trc ">
                 <img src={trclogo} alt="Logo TRC" width="70" height="63" />
                 <div className="social-media pb-3 px-1">
@@ -55,9 +55,9 @@ export default function Footer() {
               </div>
             </div>
 
-            <div className="col-md-4">
+            <div className="col-xl-4">
               <div className="row links-row px-0">
-                <div className="col-md-6 links pt-3 pl-0">
+                <div className="col-xl-5 links pt-3 pl-0">
                   <div>COMPANY</div>
                   <div>About</div>
                   <div>News</div>
@@ -66,13 +66,13 @@ export default function Footer() {
                   <div>Careers</div>
                   <div>Contact</div>
                 </div>
-                <div className="col-md-5 links pt-3 pl-0">
+                <div className="col-xl-5 links pt-3 pl-0">
                   <div>SOLUTIONS</div>
                   <div>Pingo</div>
                 </div>
               </div>
             </div>
-            <div className="col-md-4 newsletter pt-3 pl-3">
+            <div className="col-xl-4 newsletter pt-3 pl-3">
               <p>TRC NEWSLETTER</p>
               <div className="input-group mb-3">
                 <input
@@ -86,15 +86,15 @@ export default function Footer() {
                     Subscribe
                   </Button>
                 </div>
-              </div>
             </div>
           </div>
 
-          <div className="row container copyright pt-3 px-4">
-            <div className="d-flex flex-column col-md-5 px-4">
+          <div className="row container copyright pt-3 col-xl-12">
+            <div className="d-flex flex-column col-md-5">
               <div>©2020 The Routing Company</div>
               <div>All Rights Reserved</div>
             </div>
+          </div>
           </div>
         </footer>
       </Responsive.Desktop>

@@ -18,17 +18,17 @@ export default function About(props) {
       <Layout {...props}>
         <Responsive.Desktop>
           <div id="about-page" className="container-fluid">
-            <div className="section title justify-content-left pl-md-5 pl-xs-0">
-              <div className="row container justify-content-left pl-5 pt-5">
-                <div className="col-md-6 col-xs-8">
-                  <h2>
+            <div className="section title justify-content-left pl-xs-0">
+              <div className="row container justify-content-left pt-5">
+                <div className="col-xl-8 col-xs-8">
+                  <h1>
                     A world-class team focused on solving transportation
                     problems
-                  </h2>
+                  </h1>
                 </div>
               </div>
-              <div className="row container justify-content-left pl-5 pt-2">
-                <div className="col-md-5">
+              <div className="row container justify-content-left pt-2">
+                <div className="col-xl-7">
                   We are a team of builders from technology, transportation,
                   academia and public policy with a passion for helping cities
                   unlock transit’s full potential.
@@ -37,7 +37,7 @@ export default function About(props) {
             </div>
 
             <div id="about-team" className="row about-line">
-              <div className="col-md-5 border border-dark border-top border-bottom p-0 col-left ">
+              <div className="col-md-5 border-dark border-top border-bottom p-0 col-left ">
                 <div className="d-inline-flex">
                   <div className="col-md-6 team-picture py-5">
                     <img src={menno} alt="Menno" width="250" height="250" />
@@ -153,12 +153,12 @@ export default function About(props) {
             <div id="newsletter-section">
               <div className="row container justify-content-center newsletter">
                 <div className="row container pt-5 ">
-                  <h2 className="col-md-12 text-center pb-5">
+                  <h3 className="col-md-12 text-center pb-5">
                     We build smart, sustainable transit solutions that are more
                     reliable and accessible than other mobility options. Our
                     MIT-born routing technology has been hailed as a striking
                     example of the potential around ridesharing.
-                  </h2>
+                  </h3>
                 </div>
                 <div className="row border border-dark bg-white">
                   <div className="col-md-5 px-0">

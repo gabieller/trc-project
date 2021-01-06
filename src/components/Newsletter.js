@@ -20,15 +20,17 @@ function SubscribeForm() {
   const handleChange = event => setEmail(event.target.value)
 
   return (
+      <div className="row container col-xl-10">
     <form>
+
       <h3 className="pt-5">Follow our latest news</h3>
       <h3 className="pb-3">Sign up for our newsletter</h3>
       Et has minim elitr intellegat. Mea aeterno eleifend antiopam ad, nam no
       suscipit quaerendum. At nam minimum ponderum. Est audiam animal molestiae
       te. Ex duo eripuit mentitum.
-      <div className="d-inline-flex col-md-12 pt-3 px-0">
+      <div className="d-inline-flex col-xl-12 pt-3 px-0">
         <input
-          className="col-md-8"
+          className="col-xl-8"
           type="email"
           onChange={handleChange}
           value={email}
@@ -36,7 +38,7 @@ function SubscribeForm() {
           required
         />
 
-        <div className="input-group-append col-md-12 p-0">
+        <div className="input-group-append col-xl-12 p-0">
           <Button
             onClick={handleSubmit}
             className="btn-black btn-block w-25"
@@ -50,6 +52,7 @@ function SubscribeForm() {
         <span status={status}>{message}</span>
       </div>
     </form>
+      </div>
   )
 }
 

@@ -23,50 +23,55 @@ export default function Home(props) {
           >
             <CanvasAnimation />
           </div>
-          <div className="title-content">
-            <div className="text row container justify-content-left pl-5 pt-5">
-              <div className="col-md-11 col-xs-8">
-                <h1>
+          <div className="title-content text-left">
+            <div className="text row container justify-content-center">
+              <div className="col-xl-8">
+                <h1 className="col-xl-12">
                   We partner with cities to power the future of public transit
                 </h1>
               </div>
             </div>
-            <div className="row container justify-content-left pl-5 pt-2">
-              <div className="col-lg-5 col-12">
-                Millions of businesses of all sizes—from startups to large
-                enterprises—use TRC software and APIs to [action], [action] and
-                [action].
+            <div className="row container justify-content-center">
+              <div className="col-xl-8">
+                <div className="col-xl-8">
+                  Millions of businesses of all sizes—from startups to large
+                  enterprises—use TRC software and APIs to [action], [action]
+                  and [action].
+                </div>
               </div>
             </div>
-            <div className="row container buttons pl-5">
-              <div className=" justify-content-left pt-md-3 pt-xs-2">
-                <div className="action-buttons row pl-3">
-                  <div className="action-buttons pr-3">
-                    <Button
-                      className="btn-black btn-action"
-                      variant="contained"
-                    >
-                      Primary Action
-                    </Button>
-                  </div>
-                  <div className="action-buttons pl-3">
-                    <Button className="btn btn-raised btn-secondary">
-                      Secondary Action
-                    </Button>
+            <div className="row container justify-content-center buttons pb-5">
+              <div className="col-xl-8">
+                <div className=" justify-content-center pt-md-3 pt-xs-2">
+                  <div className="action-buttons row pl-3">
+                    <div className="action-buttons pr-3">
+                      <Button
+                        className="btn-black btn-action"
+                        variant="contained"
+                      >
+                        Primary Action
+                      </Button>
+                    </div>
+                    <div className="action-buttons pl-3">
+                      <Button className="btn btn-raised btn-secondary">
+                        Secondary Action
+                      </Button>
+                    </div>
                   </div>
                 </div>
               </div>
             </div>
-            <div className="justify-content-left pl-md-5 pl-xs-0 pt-md-5">
-              <div className="row container justify-content-left pl-5">
-                <div className="col-lg-8 col-12 my-2">
-                  <h3 className="justify-content-left">
-                    Grow your business with better shipping
-                  </h3>
-                </div>
+
+            <div className="row container justify-content-center pt-5 pb-2 px-0">
+              <div className="col-xl-9 px-xl-0">
+                <h2 className="col-xl-12 pl-md-5 px-xl-0 my-2">
+                  Grow your business with better shipping
+                </h2>
               </div>
-              <div className="row container d-flex justify-content-between py-3 pl-5">
-                <div className="card col-lg-3 flex-md-column border border-dark py-3 mb-3">
+            </div>
+            <div className="row container">
+              <div className="row container col-lg-12 d-flex justify-content-center">
+                <div className="card col-lg-3  col-md-6  flex-md-column border border-dark py-3 mb-3">
                   <div className="card-body">
                     <h4 className="card-title col-sm-12 px-0 text-left font-weight-bold">
                       Problem that customers face 1
@@ -82,7 +87,7 @@ export default function Home(props) {
                     </div>
                   </div>
                 </div>
-                <div className="card col-lg-3 flex-md-column border border-dark py-3 mb-3">
+                <div className="card col-lg-3 col-md-6 flex-md-column border border-dark py-3 mb-3">
                   <div className="card-body">
                     <h4 className="card-title col-sm-12 px-0 text-left font-weight-bold">
                       Problem that customers face 2
@@ -98,7 +103,7 @@ export default function Home(props) {
                     </div>
                   </div>
                 </div>
-                <div className="card col-lg-3 flex-md-column border border-dark py-3 mb-3">
+                <div className="card col-lg-3 col-md-6 flex-md-column border border-dark py-3 mb-3">
                   <div className="card-body">
                     <h4 className="card-title col-sm-12 px-0 text-left font-weight-bold">
                       Problem that customers face 3
@@ -119,8 +124,10 @@ export default function Home(props) {
           </div>
         </div>
         <div className="section backed">
-          <div className="row container pb-5">
-            <h4>Backed by the Best</h4>
+          <div className="row container justify-content-center pb-5 px-0">
+            <div className="col-xl-9 px-xl-0">
+            <h2 className="col-xl-12 pl-md-5 px-xl-0">Backed by the Best</h2>
+            </div>
           </div>
           <div className="row container justify-content-center">
             <img src={logos} alt="Company Logos" className="img-fluid" />
