@@ -86,15 +86,15 @@ export default function Footer() {
                     Subscribe
                   </Button>
                 </div>
+              </div>
             </div>
-          </div>
 
-          <div className="row container copyright pt-3 col-xl-12">
-            <div className="d-flex flex-column col-md-5">
-              <div>©2020 The Routing Company</div>
-              <div>All Rights Reserved</div>
+            <div className="row container copyright pt-3 col-xl-12">
+              <div className="d-flex flex-column col-md-5">
+                <div>©2020 The Routing Company</div>
+                <div>All Rights Reserved</div>
+              </div>
             </div>
-          </div>
           </div>
         </footer>
       </Responsive.Desktop>

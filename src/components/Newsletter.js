@@ -20,39 +20,38 @@ function SubscribeForm() {
   const handleChange = event => setEmail(event.target.value)
 
   return (
-      <div className="row container col-xl-10">
-    <form>
+    <div className="row container col-xl-10">
+      <form>
+        <h3 className="pt-5">Follow our latest news</h3>
+        <h3 className="pb-3">Sign up for our newsletter</h3>
+        Et has minim elitr intellegat. Mea aeterno eleifend antiopam ad, nam no
+        suscipit quaerendum. At nam minimum ponderum. Est audiam animal
+        molestiae te. Ex duo eripuit mentitum.
+        <div className="d-inline-flex col-xl-12 pt-3 px-0">
+          <input
+            className="col-xl-8"
+            type="email"
+            onChange={handleChange}
+            value={email}
+            placeholder="| Enter your email"
+            required
+          />
 
-      <h3 className="pt-5">Follow our latest news</h3>
-      <h3 className="pb-3">Sign up for our newsletter</h3>
-      Et has minim elitr intellegat. Mea aeterno eleifend antiopam ad, nam no
-      suscipit quaerendum. At nam minimum ponderum. Est audiam animal molestiae
-      te. Ex duo eripuit mentitum.
-      <div className="d-inline-flex col-xl-12 pt-3 px-0">
-        <input
-          className="col-xl-8"
-          type="email"
-          onChange={handleChange}
-          value={email}
-          placeholder="| Enter your email"
-          required
-        />
-
-        <div className="input-group-append col-xl-12 p-0">
-          <Button
-            onClick={handleSubmit}
-            className="btn-black btn-block w-25"
-            variant="contained"
-          >
-            Subscribe
-          </Button>
+          <div className="input-group-append col-xl-12 p-0">
+            <Button
+              onClick={handleSubmit}
+              className="btn-black btn-block w-25"
+              variant="contained"
+            >
+              Subscribe
+            </Button>
+          </div>
         </div>
-      </div>
-      <div className="d-flex flex-column pt-3">
-        <span status={status}>{message}</span>
-      </div>
-    </form>
-      </div>
+        <div className="d-flex flex-column pt-3">
+          <span status={status}>{message}</span>
+        </div>
+      </form>
+    </div>
   )
 }
 

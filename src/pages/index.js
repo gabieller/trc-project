@@ -126,7 +126,7 @@ export default function Home(props) {
         <div className="section backed">
           <div className="row container justify-content-center pb-5 px-0">
             <div className="col-xl-9 px-xl-0">
-            <h2 className="col-xl-12 pl-md-5 px-xl-0">Backed by the Best</h2>
+              <h2 className="col-xl-12 pl-md-5 px-xl-0">Backed by the Best</h2>
             </div>
           </div>
           <div className="row container justify-content-center">
