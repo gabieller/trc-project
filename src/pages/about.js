@@ -1,12 +1,14 @@
 import React from "react"
 import Layout from "../components/Layout"
-import Button from "@material-ui/core/Button"
+// import Button from "@material-ui/core/Button"
 import Demo from "../components/Demo"
 import Arrow from "../components/Arrow"
 import Newsletter from "../components/Newsletter"
 import Responsive from "../components/Responsive"
+import CardTeam from "../components/CardTeam"
 
 import newsletterimage from "../images/newsletterimage.png"
+// import linkedinblack from "../images/linkedin_black.svg"
 import menno from "../images/menno-pic.png"
 import uber from "../images/uber.svg"
 
@@ -14,260 +16,299 @@ import "../styles/about.css"
 
 export default function About(props) {
   return (
-    <div>
-      <Layout {...props}>
+    <Layout {...props}>
+      <div id="about-page" className="container-fluid">
+        <div className="section title pl-xs-0">
+          <div className="row container pt-5">
+            <div className="col-xl-8 col-xs-8">
+              <h1>
+                A world-class team focused on solving transportation problems
+              </h1>
+            </div>
+          </div>
+          <div className="row container justify-content-left pt-2">
+            <div className="col-xl-7">
+              We are a team of builders from technology, transportation,
+              academia and public policy with a passion for helping cities
+              unlock transit’s full potential.
+            </div>
+          </div>
+        </div>
+
         <Responsive.Desktop>
-          <div id="about-page" className="container-fluid">
-            <div className="section title justify-content-left pl-xs-0">
-              <div className="row container justify-content-left pt-5">
-                <div className="col-xl-8 col-xs-8">
-                  <h1>
-                    A world-class team focused on solving transportation
-                    problems
-                  </h1>
-                </div>
-              </div>
-              <div className="row container justify-content-left pt-2">
-                <div className="col-xl-7">
-                  We are a team of builders from technology, transportation,
-                  academia and public policy with a passion for helping cities
-                  unlock transit’s full potential.
-                </div>
-              </div>
+          <div
+            id="about-team"
+            className="row about-line border-dark border-top"
+          >
+            <div className="col-md-5 border-dark  border-bottom p-0 col-left ">
+              <CardTeam
+                imgsize="50"
+                memberpicture={menno}
+                linkedinurl={"https://www.linkedin.com/in/mennovanderzee/"}
+                name={"Menno van der Zee"}
+                position={"Co-Funder"}
+                description={
+                  "Specialized in mobility-on-demand systems for high capacity vehicles."
+                }
+                companylogo={uber}
+              />
+              <hr />
+
+              <CardTeam
+                imgsize="50"
+                memberpicture={menno}
+                linkedinurl={"https://www.linkedin.com/in/mennovanderzee/"}
+                name={"Menno van der Zee"}
+                position={"Co-Funder"}
+                description={
+                  "Specialized in mobility-on-demand systems for high capacity vehicles."
+                }
+                companylogo={uber}
+              />
+              <hr />
+
+              <CardTeam
+                imgsize="50"
+                memberpicture={menno}
+                linkedinurl={"https://www.linkedin.com/in/mennovanderzee/"}
+                name={"Menno van der Zee"}
+                position={"Co-Funder"}
+                description={
+                  "Specialized in mobility-on-demand systems for high capacity vehicles."
+                }
+                companylogo={uber}
+              />
             </div>
 
-            <div id="about-team" className="row about-line">
-              <div className="col-md-5 border-dark border-top border-bottom p-0 col-left ">
-                <div className="d-inline-flex">
-                  <div className="col-md-6 team-picture py-5">
-                    <img src={menno} alt="Menno" width="250" height="250" />
-                  </div>
-                  <div className="card col-md-6 team-description bg-white ">
-                    <div className="card-body">
-                      <h4 className="card-title font-weight-bold pt-5">
-                        Menno van der Zee
-                      </h4>
-                      <h5 className="card-subtitle mb-2 pb-3">Co-Founder</h5>
-                      <p className="card-text">
-                        Specialized in mobility-on-demand systems for high
-                        capacity vehicles.
-                      </p>
-                    </div>
-                  </div>
-                </div>
+            <Arrow />
 
-                <div className="d-inline-flex border border-dark border-right-0 border-left-0">
-                  <div className="col-md-6 team-picture py-5">
-                    <img src={menno} alt="Menno" width="250" height="250" />
-                  </div>
-                  <div className="card col-md-6 team-description bg-white ">
-                    <div className="card-body">
-                      <h4 className="card-title font-weight-bold pt-5">
-                        Menno van der Zee
-                      </h4>
-                      <h5 className="card-subtitle mb-2 pb-3">Co-Founder</h5>
-                      <p className="card-text">
-                        Specialized in mobility-on-demand systems for high
-                        capacity vehicles.
-                      </p>
-                    </div>
-                  </div>
-                </div>
-                <div className="d-inline-flex">
-                  <div className="col-md-6 team-picture py-5">
-                    <img src={menno} alt="Menno" width="250" height="250" />
-                  </div>
-                  <div className="card col-md-6 team-description bg-white ">
-                    <div className="card-body">
-                      <h4 className="card-title font-weight-bold pt-5">
-                        Menno van der Zee
-                      </h4>
-                      <h5 className="card-subtitle mb-2 pb-3">Co-Founder</h5>
-                      <p className="card-text">
-                        Specialized in mobility-on-demand systems for high
-                        capacity vehicles.
-                      </p>
-                    </div>
-                  </div>
-                </div>
-              </div>
-
-              <Arrow />
-
-              <div className="col-md-5 border-dark border-top border-bottom p-0 col-right">
-                <div className="d-inline-flex">
-                  <div className="col-md-6 team-picture py-5">
-                    <img src={menno} alt="Menno" width="250" height="250" />
-                  </div>
-                  <div className="card col-md-6 team-description bg-white ">
-                    <div className="card-body">
-                      <h4 className="card-title font-weight-bold pt-5">
-                        Menno van der Zee
-                      </h4>
-                      <h5 className="card-subtitle mb-2 pb-3">Co-Founder</h5>
-                      <p className="card-text">
-                        Specialized in mobility-on-demand systems for high
-                        capacity vehicles.
-                      </p>
-                    </div>
-                  </div>
-                </div>
-
-                <div className="d-inline-flex d-inline-flex border border-dark border-right-0 border-left-0">
-                  <div className="col-md-6 team-picture py-5">
-                    <img src={menno} alt="Menno" width="250" height="250" />
-                  </div>
-                  <div className="card col-md-6 team-description bg-white ">
-                    <div className="card-body">
-                      <h4 className="card-title font-weight-bold pt-5">
-                        Menno van der Zee
-                      </h4>
-                      <h5 className="card-subtitle mb-2 pb-3">Co-Founder</h5>
-                      <p className="card-text">
-                        Specialized in mobility-on-demand systems for high
-                        capacity vehicles.
-                      </p>
-                    </div>
-                  </div>
-                </div>
-                <div className="d-inline-flex">
-                  <div className="col-md-6 team-picture py-5">
-                    <img src={menno} alt="Menno" width="250" height="250" />
-                  </div>
-                  <div className="card col-md-6 team-description bg-white ">
-                    <div className="card-body">
-                      <h4 className="card-title font-weight-bold pt-5">
-                        Menno van der Zee
-                      </h4>
-                      <h5 className="card-subtitle mb-2 pb-3">Co-Founder</h5>
-                      <p className="card-text">
-                        Specialized in mobility-on-demand systems for high
-                        capacity vehicles.
-                      </p>
-                    </div>
-                  </div>
-                </div>
-              </div>
+            <div className="col-md-5 border-dark border-bottom p-0 col-right">
+              <CardTeam
+                imgsize="50"
+                memberpicture={menno}
+                linkedinurl={"https://www.linkedin.com/in/mennovanderzee/"}
+                name={"Menno van der Zee"}
+                position={"Co-Funder"}
+                description={
+                  "Specialized in mobility-on-demand systems for high capacity vehicles."
+                }
+                companylogo={uber}
+              />
+              <hr />
+              <CardTeam
+                imgsize="50"
+                memberpicture={menno}
+                linkedinurl={"https://www.linkedin.com/in/mennovanderzee/"}
+                name={"Menno van der Zee"}
+                position={"Co-Funder"}
+                description={
+                  "Specialized in mobility-on-demand systems for high capacity vehicles."
+                }
+                companylogo={uber}
+              />
+              <hr />
+              <CardTeam
+                imgsize="50"
+                memberpicture={menno}
+                linkedinurl={"https://www.linkedin.com/in/mennovanderzee/"}
+                name={"Menno van der Zee"}
+                position={"Co-Funder"}
+                description={
+                  "Specialized in mobility-on-demand systems for high capacity vehicles."
+                }
+                companylogo={uber}
+              />
             </div>
+          </div>
 
-            <div id="newsletter-section">
-              <div className="row container justify-content-center newsletter">
-                <div className="row container pt-5 ">
-                  <h3 className="col-md-12 text-center pb-5">
-                    We build smart, sustainable transit solutions that are more
-                    reliable and accessible than other mobility options. Our
-                    MIT-born routing technology has been hailed as a striking
-                    example of the potential around ridesharing.
-                  </h3>
+          {/* <div id="newsletter-section">
+            <div className="row container justify-content-center newsletter">
+              <div className="row container pt-5 ">
+                <h3 className="col-md-12 text-center pb-5">
+                  We build smart, sustainable transit solutions that are more
+                  reliable and accessible than other mobility options. Our
+                  MIT-born routing technology has been hailed as a striking
+                  example of the potential around ridesharing.
+                </h3>
+              </div>
+              <div className="row border border-dark bg-white">
+                <div className="col-md-5 px-0">
+                  <img
+                    src={newsletterimage}
+                    alt="Newsletter"
+                    className="img-fluid"
+                  />
                 </div>
-                <div className="row border border-dark bg-white">
-                  <div className="col-md-5 px-0">
-                    <img
-                      src={newsletterimage}
-                      alt="Newsletter"
-                      width="450"
-                      height="550"
-                    />
-                  </div>
-                  <div className="col-md-7 px-5 newsletter-box">
-                    <Newsletter />
+                <div className="col-md-7 px-5 newsletter-box">
+                  <Newsletter />
 
-                    <div className="warning-text">
-                      <h6>
+                  <div className="row container col-xl-11 warning-text">
+                    <h6>
+                      <small>
                         By clicking “Primary action” you accepting ipsum dolor
                         sit amet, sit ea brute mediocritatem, eu sed aliquam
                         scripserit dissentiunt.
-                      </h6>
-                    </div>
+                      </small>
+                    </h6>
                   </div>
                 </div>
               </div>
             </div>
-            <Demo />
-          </div>
+          </div> */}
         </Responsive.Desktop>
 
         <Responsive.Mobile>
-          <div id="about-page">
-            <div className="section title justify-content-left pl-md-5 pl-xs-0">
-              <div className="row container justify-content-left pl-5 pt-5">
-                <div className="col-md-6 col-xs-8">
-                  <h2>
-                    A world-class team focused on solving transportation
-                    problems
-                  </h2>
-                </div>
-              </div>
-              <div className="row container justify-content-left pl-5 pt-2">
-                <div className="col-md-5">
-                  We are a team of builders from technology, transportation,
-                  academia and public policy with a passion for helping cities
-                  unlock transit’s full potential.
-                </div>
-              </div>
-            </div>
+          <div
+            id="about-team-mobile"
+            className="row container border-top border-bottom border-dark"
+          >
+            <CardTeam
+              imgsize="75"
+              memberpicture={menno}
+              linkedinurl={"https://www.linkedin.com/in/mennovanderzee/"}
+              name={"Menno van der Zee"}
+              position={"Co-Funder"}
+              description={
+                "Specialized in mobility-on-demand systems for high capacity vehicles."
+              }
+              companylogo={uber}
+            />
+            <hr />
 
-            <div id="about-team" className="pl-4">
-              <div className="col-md-6 team-picture pt-5">
-                <img src={menno} alt="Menno" width="200" height="190" />
-                <div className="linkedin-link pt-4">
-                  linkedin.com/in/mennovanderzee/
-                </div>
-              </div>
-              <div className="card col-md-6 team-description bg-white px-0">
-                <div className="card-body px-1">
-                  <h4 className="card-title font-weight-bold">
-                    Menno van der Zee
-                  </h4>
-                  <h5 className="card-subtitle mb-2 pb-3">Co-Founder</h5>
-                  <div className="card-text col-xs-4">
-                    Specialized in mobility-on-demand systems for high capacity
-                    vehicles.
-                  </div>
-                  <Button className="btn btn-action pt-3">
-                    <img src={uber} alt="Uber Button" />
-                  </Button>
-                </div>
-              </div>
-            </div>
+            <CardTeam
+              imgsize="75"
+              memberpicture={menno}
+              linkedinurl={"https://www.linkedin.com/in/mennovanderzee/"}
+              name={"Menno van der Zee"}
+              position={"Co-Funder"}
+              description={
+                "Specialized in mobility-on-demand systems for high capacity vehicles."
+              }
+              companylogo={uber}
+            />
+            <hr />
 
-            <div id="newsletter-section">
-              <div className="row container justify-content-center newsletter">
-                <div className="row container pt-5 ">
-                  <h2 className="col-md-12 text-center pb-5">
-                    We build smart, sustainable transit solutions that are more
-                    reliable and accessible than other mobility options. Our
-                    MIT-born routing technology has been hailed as a striking
-                    example of the potential around ridesharing.
-                  </h2>
-                </div>
-                <div className="row border border-dark bg-white">
-                  <div className="col-md-5 px-0">
-                    <img
-                      src={newsletterimage}
-                      alt="Newsletter"
-                      width="450"
-                      height="550"
-                    />
-                  </div>
-                  <div className="col-md-7 px-5 newsletter-box">
-                    <Newsletter />
+            <CardTeam
+              imgsize="75"
+              memberpicture={menno}
+              linkedinurl={"https://www.linkedin.com/in/mennovanderzee/"}
+              name={"Menno van der Zee"}
+              position={"Co-Funder"}
+              description={
+                "Specialized in mobility-on-demand systems for high capacity vehicles."
+              }
+              companylogo={uber}
+            />
+            <hr />
+            <CardTeam
+              imgsize="75"
+              memberpicture={menno}
+              linkedinurl={"https://www.linkedin.com/in/mennovanderzee/"}
+              name={"Menno van der Zee"}
+              position={"Co-Funder"}
+              description={
+                "Specialized in mobility-on-demand systems for high capacity vehicles."
+              }
+              companylogo={uber}
+            />
+            <hr />
+            <CardTeam
+              imgsize="75"
+              memberpicture={menno}
+              linkedinurl={"https://www.linkedin.com/in/mennovanderzee/"}
+              name={"Menno van der Zee"}
+              position={"Co-Funder"}
+              description={
+                "Specialized in mobility-on-demand systems for high capacity vehicles."
+              }
+              companylogo={uber}
+            />
+            <hr />
 
-                    <div className="warning-text">
-                      <h6>
-                        By clicking “Primary action” you accepting ipsum dolor
-                        sit amet, sit ea brute mediocritatem, eu sed aliquam
-                        scripserit dissentiunt.
-                      </h6>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <Demo />
+            <CardTeam
+              imgsize="75"
+              memberpicture={menno}
+              linkedinurl={"https://www.linkedin.com/in/mennovanderzee/"}
+              name={"Menno van der Zee"}
+              position={"Co-Funder"}
+              description={
+                "Specialized in mobility-on-demand systems for high capacity vehicles."
+              }
+              companylogo={uber}
+            />
           </div>
+          {/* 
+          <div id="newsletter-section">
+            <div className="row container justify-content-center newsletter">
+              <div className="row container pt-5 ">
+                <h2 className="col-md-12 text-center pb-5">
+                  We build smart, sustainable transit solutions that are more
+                  reliable and accessible than other mobility options. Our
+                  MIT-born routing technology has been hailed as a striking
+                  example of the potential around ridesharing.
+                </h2>
+              </div>
+              <div className="row border border-dark bg-white">
+                <div className="col-md-5 px-0">
+                  <img
+                    src={newsletterimage}
+                    alt="Newsletter"
+                    width="450"
+                    height="550"
+                  />
+                </div>
+                <div className="col-md-7 px-5 newsletter-box">
+                  <Newsletter />
+
+                  <div className="warning-text">
+                    <h6>
+                      By clicking “Primary action” you accepting ipsum dolor sit
+                      amet, sit ea brute mediocritatem, eu sed aliquam
+                      scripserit dissentiunt.
+                    </h6>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div> */}
         </Responsive.Mobile>
-      </Layout>
-    </div>
+        <div id="newsletter-section">
+          <div className="row container justify-content-center newsletter px-4">
+            <div className="row pt-5 ">
+              <div className="col-md-12 text-center pb-5 newsletter-text">
+                We build smart, sustainable transit solutions that are more
+                reliable and accessible than other mobility options. Our
+                MIT-born routing technology has been hailed as a striking
+                example of the potential around ridesharing.
+              </div>
+            </div>
+            <div className="row border border-dark bg-white">
+              <div className="col-md-5 px-0">
+                <img
+                  src={newsletterimage}
+                  alt="Newsletter"
+                  className="img-fluid"
+                />
+              </div>
+              <div className="col-md-7 px-5 newsletter-box">
+                <Newsletter />
+
+                <div className="row container col-xl-11 warning-text">
+                  <h6>
+                    <small>
+                      By clicking “Primary action” you accepting ipsum dolor sit
+                      amet, sit ea brute mediocritatem, eu sed aliquam
+                      scripserit dissentiunt.
+                    </small>
+                  </h6>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <Demo />
+      </div>
+    </Layout>
   )
 }

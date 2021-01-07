@@ -1,6 +1,7 @@
 #about-page {
   position: relative;
   overflow: hidden;
+  background-color: #f5f4f5;
   width: 100%;
   height: auto;
   min-height: 35rem;
@@ -12,20 +13,30 @@
 }
 
 #about-page > .title {
-  background-color: #F5F4F5;
+  background-color: #f5f4f5;
   color: #000000de;
   padding-top: 9vw;
   padding-bottom: 5vw;
   line-height: 2rem;
 }
-#about-team .card-body {
-  background-color: none;
+
+#about-page hr {
+  border-top: 1px solid;
+}
+
+#about-team-mobile {
+  background-color: #ffffff;
+
 }
 
 #newsletter-section {
   padding-top: 5vw;
   padding-bottom: 15vh;
   background-color: #f5f4f5;
+}
+
+#newsletter-section > newsletter-text  {
+  font-size: 1.5rem;
 }
 
 #newsletter-section .newsletter-box {

@@ -20,9 +20,9 @@ function SubscribeForm() {
   const handleChange = event => setEmail(event.target.value)
 
   return (
-    <div className="row container col-xl-10">
+    <div className="row container col-xl-11">
       <form>
-        <h3 className="pt-5">Follow our latest news</h3>
+        <h3>Follow our latest news</h3>
         <h3 className="pb-3">Sign up for our newsletter</h3>
         Et has minim elitr intellegat. Mea aeterno eleifend antiopam ad, nam no
         suscipit quaerendum. At nam minimum ponderum. Est audiam animal

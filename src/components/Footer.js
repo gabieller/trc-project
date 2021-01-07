@@ -17,7 +17,7 @@ export default function Footer() {
     <div>
       <Responsive.Desktop>
         <footer id="footer" className="font-weight-bold">
-          <div className="row container col-xl-8 px-0">
+          <div className="row col-xl-10 px-0">
             <div className="d-flex flex-column col-xl-4 logo-trc pt-3">
               <div className="d-flex flex-column logo-trc ">
                 <img src={trclogo} alt="Logo TRC" width="70" height="63" />

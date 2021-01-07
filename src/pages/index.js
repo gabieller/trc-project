@@ -65,9 +65,9 @@ export default function Home(props) {
             </div>
 
             <div className="row container pt-5 pb-2 px-xl-0">
-                <h2 className="col-xl-12 my-2 px-xl-0">
-                  <small>Grow your business with better shipping</small>
-                </h2>
+              <h2 className="col-xl-12 my-2 px-xl-0">
+                <small>Grow your business with better shipping</small>
+              </h2>
             </div>
             <div className="row container">
               <div className="justify-content-center d-flex">
@@ -125,9 +125,9 @@ export default function Home(props) {
         </div>
         <div className="section backed">
           <div className="row container pb-5">
-              <h2 className="col-xl-12 px-xl-0">
-                <small>Backed by the Best</small>
-                </h2>
+            <h2 className="col-xl-12 px-xl-0">
+              <small>Backed by the Best</small>
+            </h2>
           </div>
           <div className="row container justify-content-center">
             <img src={logos} alt="Company Logos" className="img-fluid" />
