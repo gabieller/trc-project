@@ -64,16 +64,14 @@ export default function Home(props) {
               </div>
             </div>
 
-            <div className="row container justify-content-center pt-5 pb-2 px-0">
-              <div className="col-xl-9 px-xl-0">
-                <h2 className="col-xl-12 pl-md-5 px-xl-0 my-2">
-                  Grow your business with better shipping
+            <div className="row container pt-5 pb-2 px-xl-0">
+                <h2 className="col-xl-12 my-2 px-xl-0">
+                  <small>Grow your business with better shipping</small>
                 </h2>
-              </div>
             </div>
             <div className="row container">
-              <div className="row container col-lg-12 d-flex justify-content-center">
-                <div className="card col-lg-3  col-md-6  flex-md-column border border-dark py-3 mb-3">
+              <div className="justify-content-center d-flex">
+                <div className="card col-lg-4  col-md-6  flex-md-column border border-dark py-3 mb-3">
                   <div className="card-body">
                     <h4 className="card-title col-sm-12 px-0 text-left font-weight-bold">
                       Problem that customers face 1
@@ -89,7 +87,7 @@ export default function Home(props) {
                     </div>
                   </div>
                 </div>
-                <div className="card col-lg-3 col-md-6 flex-md-column border border-dark py-3 mb-3">
+                <div className="card col-lg-4 col-md-6 flex-md-column border border-dark py-3 mb-3">
                   <div className="card-body">
                     <h4 className="card-title col-sm-12 px-0 text-left font-weight-bold">
                       Problem that customers face 2
@@ -105,7 +103,7 @@ export default function Home(props) {
                     </div>
                   </div>
                 </div>
-                <div className="card col-lg-3 col-md-6 flex-md-column border border-dark py-3 mb-3">
+                <div className="card col-lg-4 col-md-6 flex-md-column border border-dark py-3 mb-3">
                   <div className="card-body">
                     <h4 className="card-title col-sm-12 px-0 text-left font-weight-bold">
                       Problem that customers face 3
@@ -126,10 +124,10 @@ export default function Home(props) {
           </div>
         </div>
         <div className="section backed">
-          <div className="row container justify-content-center pb-5 px-0">
-            <div className="col-xl-9 px-xl-0">
-              <h2 className="col-xl-12 pl-md-5 px-xl-0">Backed by the Best</h2>
-            </div>
+          <div className="row container pb-5">
+              <h2 className="col-xl-12 px-xl-0">
+                <small>Backed by the Best</small>
+                </h2>
           </div>
           <div className="row container justify-content-center">
             <img src={logos} alt="Company Logos" className="img-fluid" />

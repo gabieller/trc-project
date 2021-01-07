@@ -6,8 +6,8 @@ import "../styles/demo.css"
 export default function Demo() {
   return (
     <div id="demo-component" className="pl-5">
-      <div className="row container justify-content-center px-0 contact-us-title">
-        <div className="col-xl-10 px-xl-0">
+      <div className="row container  px-0 contact-us-title">
+        <div className="col-xl-12 px-xl-0">
           <div className="col-md-6 justify-content-left demo-title">
             <h2 className="col-xl-12 pl-md-5 px-xl-0">
               Are you curious to know more?
@@ -18,8 +18,8 @@ export default function Demo() {
           </div>
         </div>
       </div>
-      <div className="row container justify-content-center px-0 contact-us-subtitle py-3">
-        <div className="col-xl-10 px-xl-0 col-md-6 col-sm-12 justify-content-left">
+      <div className="row container  px-0 contact-us-subtitle py-3">
+        <div className="col-xl-10 px-xl-0 col-md-6 col-sm-12">
           <div className="col-xl-6 pl-md-5 px-xl-3">
             Et has minim elitr intellegat. Mea aeterno eleifend antiopam ad, nam
             no suscipit quaerendum. At nam minimum ponderum. Est audiam animal
@@ -28,7 +28,7 @@ export default function Demo() {
         </div>
       </div>
 
-      <div className="row container justify-content-center demo-buttons pt-4">
+      <div className="row container  demo-buttons pt-4">
         <div className="col-xl-10 px-xl-0">
           <div className="action-buttons row">
             <div className="action-buttons pr-3">
