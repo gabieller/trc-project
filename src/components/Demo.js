@@ -45,7 +45,8 @@ export default function Demo() {
   )
 }
 
-{/* <div className="row container justify-content-center buttons pb-5">
+{
+  /* <div className="row container justify-content-center buttons pb-5">
 <div className="col-xl-8">
   <div className=" justify-content-center pt-md-3 pt-xs-2">
     <div className="action-buttons row pl-3">
@@ -65,4 +66,5 @@ export default function Demo() {
     </div>
   </div>
 </div>
-</div>  */}
+</div>  */
+}

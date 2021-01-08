@@ -173,7 +173,6 @@ export default function About(props) {
               }
               companylogo={uber}
             />
-            <hr />
 
             <CardTeam
               imgsize="75"
@@ -186,7 +185,6 @@ export default function About(props) {
               }
               companylogo={uber}
             />
-            <hr />
 
             <CardTeam
               imgsize="75"
@@ -199,7 +197,6 @@ export default function About(props) {
               }
               companylogo={uber}
             />
-            <hr />
             <CardTeam
               imgsize="75"
               memberpicture={menno}
@@ -211,7 +208,6 @@ export default function About(props) {
               }
               companylogo={uber}
             />
-            <hr />
             <CardTeam
               imgsize="75"
               memberpicture={menno}
@@ -223,7 +219,6 @@ export default function About(props) {
               }
               companylogo={uber}
             />
-            <hr />
 
             <CardTeam
               imgsize="75"
@@ -272,9 +267,11 @@ export default function About(props) {
             </div>
           </div> */}
         </Responsive.Mobile>
+
         <div id="newsletter-section">
           <div className="row container justify-content-center newsletter px-4">
-            <div className="row pt-5 ">
+            
+            <div className="row pt-5">
               <div className="col-md-12 text-center pb-5 newsletter-text">
                 We build smart, sustainable transit solutions that are more
                 reliable and accessible than other mobility options. Our
@@ -282,15 +279,17 @@ export default function About(props) {
                 example of the potential around ridesharing.
               </div>
             </div>
+
             <div className="row border border-dark bg-white">
-              <div className="col-md-5 px-0">
+              <div className="col-xl-5 col-md-3 px-0">
                 <img
                   src={newsletterimage}
                   alt="Newsletter"
                   className="img-fluid"
+                  width="100%"
                 />
               </div>
-              <div className="col-md-7 px-5 newsletter-box">
+              <div className="col-md-7 px-3 newsletter-box">
                 <Newsletter />
 
                 <div className="row container col-xl-11 warning-text">

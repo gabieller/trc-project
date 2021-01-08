@@ -11,7 +11,7 @@ export default function CardTeam({
   companylogo,
 }) {
   return (
-    <div className="container card  w-75 border-0 pt-5 bg-transparent">
+    <div className="container card w-75 border-0 pt-5 bg-transparent">
       <img
         className={`card-img-top w-${imgsize} rounded-0`}
         src={memberpicture}

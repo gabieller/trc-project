@@ -22,12 +22,15 @@ function SubscribeForm() {
   return (
     <div className="row container col-xl-11">
       <form>
-        <h3>Follow our latest news</h3>
-        <h3 className="pb-3">Sign up for our newsletter</h3>
+        <div className="newsletter-title">
+        <h4>Follow our latest news</h4>
+        <h4 className="pb-4">Sign up for our newsletter</h4>
         Et has minim elitr intellegat. Mea aeterno eleifend antiopam ad, nam no
         suscipit quaerendum. At nam minimum ponderum. Est audiam animal
         molestiae te. Ex duo eripuit mentitum.
-        <div className="d-inline-flex col-xl-12 pt-3 px-0">
+        </div>
+
+        <div className="d-column-flex d-md-inline-flex col-xl-12 pt-3 px-0">
           <input
             className="col-xl-8"
             type="email"
@@ -40,7 +43,7 @@ function SubscribeForm() {
           <div className="input-group-append col-xl-12 p-0">
             <Button
               onClick={handleSubmit}
-              className="btn-black btn-block w-25"
+              className="btn-black btn-block w-25" 
               variant="contained"
             >
               Subscribe
