@@ -92,10 +92,10 @@ export default function Home(props) {
                     <h4 className="card-title col-sm-12 px-0 text-left font-weight-bold">
                       Problem that customers face 2
                     </h4>
-                    <p className="card-text my-4">
+                    <div className="card-text my-4">
                       Many transit authorities worldwide experimenting with on
                       demand buses.
-                    </p>
+                    </div>
                     <div className="text-center">
                       <a className="text-uppercase pt-3 px-0" href="/">
                         Discover
@@ -108,10 +108,10 @@ export default function Home(props) {
                     <h4 className="card-title col-sm-12 px-0 text-left font-weight-bold">
                       Problem that customers face 3
                     </h4>
-                    <p className="card-text my-4">
+                    <div className="card-text my-4">
                       Many transit authorities worldwide experimenting with on
                       demand buses.
-                    </p>
+                    </div>
                     <div className="text-center">
                       <a className="text-uppercase pt-3 px-0" href="/">
                         Discover

@@ -5,7 +5,7 @@ import "../styles/demo.css"
 
 export default function Demo() {
   return (
-    <div id="demo-component">
+    <div id="demo-component" className="row">
       <div className="row container px-0 contact-us-title">
         <div className="col-xl-12 px-xl-0">
           <h2 className="col-xl-12 px-xl-0">
@@ -27,14 +27,14 @@ export default function Demo() {
       </div>
       <div className="row container  demo-buttons pt-4 px-0">
         <div className="col-xl-8 px-xl-0">
-          <div className="action-buttons row">
+          <div className="action-buttons row d-inline-flex">
             <div className="action-buttons pr-3">
               <Button className="btn-black btn-action" variant="contained">
                 Primary Action
               </Button>
             </div>
-            <div className="action-buttons">
-              <Button className="btn btn-raised btn-secondary">
+            <div className="action-buttons pr-3">
+              <Button className="btn bg-transparent btn-action rounded-0" variant="contained">
                 Secondary Action
               </Button>
             </div>
@@ -43,28 +43,4 @@ export default function Demo() {
       </div>
     </div>
   )
-}
-
-{
-  /* <div className="row container justify-content-center buttons pb-5">
-<div className="col-xl-8">
-  <div className=" justify-content-center pt-md-3 pt-xs-2">
-    <div className="action-buttons row pl-3">
-      <div className="action-buttons pr-3">
-        <Button
-          className="btn-black btn-action"
-          variant="contained"
-        >
-          Primary Action
-        </Button>
-      </div>
-      <div className="action-buttons pl-3">
-        <Button className="btn btn-raised btn-secondary">
-          Secondary Action
-        </Button>
-      </div>
-    </div>
-  </div>
-</div>
-</div>  */
 }

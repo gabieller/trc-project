@@ -1,6 +1,5 @@
 import React from "react"
 import Layout from "../components/Layout"
-// import Button from "@material-ui/core/Button"
 import Demo from "../components/Demo"
 import Arrow from "../components/Arrow"
 import Newsletter from "../components/Newsletter"
@@ -8,7 +7,6 @@ import Responsive from "../components/Responsive"
 import CardTeam from "../components/CardTeam"
 
 import newsletterimage from "../images/newsletterimage.png"
-// import linkedinblack from "../images/linkedin_black.svg"
 import menno from "../images/menno-pic.png"
 import uber from "../images/uber.svg"
 
@@ -121,40 +119,6 @@ export default function About(props) {
             </div>
           </div>
 
-          {/* <div id="newsletter-section">
-            <div className="row container justify-content-center newsletter">
-              <div className="row container pt-5 ">
-                <h3 className="col-md-12 text-center pb-5">
-                  We build smart, sustainable transit solutions that are more
-                  reliable and accessible than other mobility options. Our
-                  MIT-born routing technology has been hailed as a striking
-                  example of the potential around ridesharing.
-                </h3>
-              </div>
-              <div className="row border border-dark bg-white">
-                <div className="col-md-5 px-0">
-                  <img
-                    src={newsletterimage}
-                    alt="Newsletter"
-                    className="img-fluid"
-                  />
-                </div>
-                <div className="col-md-7 px-5 newsletter-box">
-                  <Newsletter />
-
-                  <div className="row container col-xl-11 warning-text">
-                    <h6>
-                      <small>
-                        By clicking “Primary action” you accepting ipsum dolor
-                        sit amet, sit ea brute mediocritatem, eu sed aliquam
-                        scripserit dissentiunt.
-                      </small>
-                    </h6>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div> */}
         </Responsive.Desktop>
 
         <Responsive.Mobile>
@@ -232,80 +196,42 @@ export default function About(props) {
               companylogo={uber}
             />
           </div>
-          {/* 
-          <div id="newsletter-section">
-            <div className="row container justify-content-center newsletter">
-              <div className="row container pt-5 ">
-                <h2 className="col-md-12 text-center pb-5">
-                  We build smart, sustainable transit solutions that are more
-                  reliable and accessible than other mobility options. Our
-                  MIT-born routing technology has been hailed as a striking
-                  example of the potential around ridesharing.
-                </h2>
-              </div>
-              <div className="row border border-dark bg-white">
-                <div className="col-md-5 px-0">
-                  <img
-                    src={newsletterimage}
-                    alt="Newsletter"
-                    width="450"
-                    height="550"
-                  />
-                </div>
-                <div className="col-md-7 px-5 newsletter-box">
-                  <Newsletter />
-
-                  <div className="warning-text">
-                    <h6>
-                      By clicking “Primary action” you accepting ipsum dolor sit
-                      amet, sit ea brute mediocritatem, eu sed aliquam
-                      scripserit dissentiunt.
-                    </h6>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div> */}
         </Responsive.Mobile>
 
-        <div id="newsletter-section">
-          <div className="row container justify-content-center newsletter px-4">
-            
-            <div className="row pt-5">
-              <div className="col-md-12 text-center pb-5 newsletter-text">
-                We build smart, sustainable transit solutions that are more
-                reliable and accessible than other mobility options. Our
-                MIT-born routing technology has been hailed as a striking
-                example of the potential around ridesharing.
-              </div>
+          <div className="row container justify-content-center pt-5">
+            <div className="col-10 col-md-6 text-center pb-5">
+              We build smart, sustainable transit solutions that are more
+              reliable and accessible than other mobility options. Our MIT-born
+              routing technology has been hailed as a striking example of the
+              potential around ridesharing.
             </div>
+          </div>
 
-            <div className="row border border-dark bg-white">
-              <div className="col-xl-5 col-md-3 px-0">
-                <img
-                  src={newsletterimage}
-                  alt="Newsletter"
-                  className="img-fluid"
-                  width="100%"
-                />
-              </div>
-              <div className="col-md-7 px-3 newsletter-box">
-                <Newsletter />
+        <div id="newsletter-section" className="row px-5">
+          <div className="row container bg-white border border-dark px-0">
+            <div className="col-md-5 px-0">
+            <img
+              src={newsletterimage}
+              alt="Newsletter"
+              className="img-fluid"
+              width="100%"
+            />
+            </div>
+            <div className="col-md-7 border border-dark  newsletter-box">
+              <Newsletter />
 
-                <div className="row container col-xl-11 warning-text">
-                  <h6>
-                    <small>
-                      By clicking “Primary action” you accepting ipsum dolor sit
-                      amet, sit ea brute mediocritatem, eu sed aliquam
-                      scripserit dissentiunt.
-                    </small>
-                  </h6>
-                </div>
+              <div className="row container col-md-9 warning-text">
+                <h6>
+                  <small>
+                    By clicking “Primary action” you accepting ipsum dolor sit
+                    amet, sit ea brute mediocritatem, eu sed aliquam scripserit
+                    dissentiunt.
+                  </small>
+                </h6>
               </div>
             </div>
           </div>
         </div>
-
         <Demo />
       </div>
     </Layout>
