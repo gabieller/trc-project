@@ -4,6 +4,10 @@
     background-color: #f5f4f5;
   }
   
+ .warning-text {
+  color: #737b7d;
+ } 
+
 .messageSuccess {
   color: blue;
 

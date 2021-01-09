@@ -1,4 +1,4 @@
-#about-page {
+#about {
   position: relative;
   overflow: hidden;
   background-color: #f5f4f5;
@@ -7,41 +7,15 @@
   min-height: 35rem;
 }
 
-#about-page > .title {
+#about > .title {
   background-color: #f5f4f5;
-  color: #000000de;
-  padding-top: 9vw;
-  padding-bottom: 5vw;
-  line-height: 2rem;
 }
 
-#about-page hr {
+#about hr {
   border-top: 1px solid;
 }
 
-#about-team-mobile {
-  background-color: #ffffff;
-}
-
-#newsletter-section {
-  padding-top: 5vw;
-  padding-bottom: 15vh;
-  background-color: #f5f4f5;
-}
-
-/* #newsletter-section > newsletter-text  {
-  font-size: 1.5rem;
-} */
-
-#newsletter-section .newsletter-box {
-  padding-top: 5vw;
-}
-
-#newsletter-section .warning-text {
-  color: #737b7d;
-}
-
-#newsletter-section img {
+.newsletter img {
   -webkit-filter: grayscale(100%);
   filter: grayscale(100%);
 }
