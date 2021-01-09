@@ -15,7 +15,6 @@ function Desktop({ children }) {
   return isDesktopOrLaptop && children
 }
 
-
 const Responsive = { Mobile, Desktop }
 
 export default Responsive

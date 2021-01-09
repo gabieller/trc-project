@@ -118,7 +118,6 @@ export default function About(props) {
               />
             </div>
           </div>
-
         </Responsive.Desktop>
 
         <Responsive.Mobile>
@@ -198,24 +197,24 @@ export default function About(props) {
           </div>
         </Responsive.Mobile>
 
-          <div className="row container justify-content-center pt-5">
-            <div className="col-10 col-md-6 text-center pb-5">
-              We build smart, sustainable transit solutions that are more
-              reliable and accessible than other mobility options. Our MIT-born
-              routing technology has been hailed as a striking example of the
-              potential around ridesharing.
-            </div>
+        <div className="row container justify-content-center pt-5">
+          <div className="col-10 col-md-6 text-center pb-5">
+            We build smart, sustainable transit solutions that are more reliable
+            and accessible than other mobility options. Our MIT-born routing
+            technology has been hailed as a striking example of the potential
+            around ridesharing.
           </div>
+        </div>
 
         <div id="newsletter-section" className="row px-5">
           <div className="row container bg-white border border-dark px-0">
             <div className="col-md-5 px-0">
-            <img
-              src={newsletterimage}
-              alt="Newsletter"
-              className="img-fluid"
-              width="100%"
-            />
+              <img
+                src={newsletterimage}
+                alt="Newsletter"
+                className="img-fluid"
+                width="100%"
+              />
             </div>
             <div className="col-md-7 border border-dark  newsletter-box">
               <Newsletter />
