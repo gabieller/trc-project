@@ -6,11 +6,6 @@
   min-height: 35rem;
 }
 
-#index > .section {
-  padding-top: 6vw;
-  padding-bottom: 6vw;
-}
-
 #index > .title {
   position: relative;
   padding-left: 0 !important;

@@ -35,7 +35,7 @@ export default function Layout(props) {
         <>
           <Header uri={props.uri} onOpen={isOpen => setOpenSidebar(isOpen)} />
           <div
-            className={`container-fluid main-container ${
+            className={`main-container ${
               isOpenSidebar && "open"
             }`}
           >

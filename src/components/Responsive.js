@@ -1,18 +1,20 @@
 import { useMediaQuery } from "react-responsive"
 
+// TODO: add event listener for the resize
 function Mobile({ children }) {
   const isTabletOrMobileDevice = useMediaQuery({
-    query: "(max-device-width: 700px)",
+    query: "(max-device-width: 767px)",
   })
   return isTabletOrMobileDevice && children
 }
 
 function Desktop({ children }) {
   const isDesktopOrLaptop = useMediaQuery({
-    query: "(min-device-width: 1224px)",
+    query: "(min-device-width: 768px)",
   })
   return isDesktopOrLaptop && children
 }
+
 
 const Responsive = { Mobile, Desktop }
 

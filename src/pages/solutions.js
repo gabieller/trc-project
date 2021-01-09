@@ -104,35 +104,35 @@ export default function Solutions(props) {
 
               <div className="col-md-5 border-bottom border-dark bg-white col-left">
                 <div className="row container">
-                  <div class="card">
-                    <div class="card-body">
-                      <h4 class="card-title font-weight-bold">
+                  <div className="card">
+                    <div className="card-body">
+                      <h4 className="card-title font-weight-bold">
                         1. We partner with you
                       </h4>
-                      <p class="card-text">
+                      <p className="card-text">
                         We work with you to build solutions that are tailor-made
                         to your transit needs.
                       </p>
                     </div>
                   </div>
-                  <div class="card">
-                    <div class="card-body">
-                      <h4 class="card-title font-weight-bold">
+                  <div className="card">
+                    <div className="card-body">
+                      <h4 className="card-title font-weight-bold">
                         2. Our routing engine gets to work
                       </h4>
-                      <p class="card-text">
+                      <p className="card-text">
                         You get access to tools and technology that calculate
                         the most optimal routes for your vehiclís and rides in
                         real time.
                       </p>
                     </div>
                   </div>
-                  <div class="card">
-                    <div class="card-body">
-                      <h4 class="card-title font-weight-bold">
+                  <div className="card">
+                    <div className="card-body">
+                      <h4 className="card-title font-weight-bold">
                         3. Less stress, more time and money saved
                       </h4>
-                      <p class="card-text w-75">
+                      <p className="card-text w-75">
                         Riders enjoy lower wait times and more reliable service.
                       </p>
                     </div>

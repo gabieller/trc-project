@@ -7,11 +7,6 @@
   min-height: 35rem;
 }
 
-#about-page > .section {
-  padding-top: 5vw;
-  padding-bottom: 12vw;
-}
-
 #about-page > .title {
   background-color: #f5f4f5;
   color: #000000de;

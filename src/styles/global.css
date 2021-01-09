@@ -18,6 +18,11 @@
   outline-color: #a7a7a7;
 }
 
+.section {
+  padding: min(6vh, 80px) 0;
+}
+
+
 body {
   font-family: "Roboto";
   --line-height: 1.5;

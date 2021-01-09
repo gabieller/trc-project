@@ -25,15 +25,15 @@ export default function Home(props) {
               <CanvasAnimation />
             </Suspense>
           </div>
-          <div className="title-content text-left">
-            <div className="text row container justify-content-center">
+          <div className="container title-content text-left ">
+            <div className="row no-gutters text justify-content-center">
               <div className="col-xl-8">
                 <h1 className="col-xl-12">
                   We partner with cities to power the future of public transit
                 </h1>
               </div>
             </div>
-            <div className="row container justify-content-center">
+            <div className="row no-gutters justify-content-center">
               <div className="col-xl-8">
                 <div className="col-xl-8">
                   Millions of businesses of all sizes—from startups to large
@@ -42,10 +42,10 @@ export default function Home(props) {
                 </div>
               </div>
             </div>
-            <div className="row container justify-content-center buttons pb-5">
+            <div className="row no-gutters justify-content-center buttons pb-5">
               <div className="col-xl-8">
                 <div className=" justify-content-center pt-md-3 pt-xs-2">
-                  <div className="action-buttons row pl-3">
+                  <div className="action-buttons row no-gutters pl-3">
                     <div className="action-buttons pr-3">
                       <Button
                         className="btn-black btn-action"
@@ -64,12 +64,12 @@ export default function Home(props) {
               </div>
             </div>
 
-            <div className="row container pt-5 pb-2 px-xl-0">
+            <div className="row no-gutters pt-5 pb-2 px-xl-0">
               <h2 className="col-xl-12 my-2 px-xl-0">
                 <small>Grow your business with better shipping</small>
               </h2>
             </div>
-            <div className="row container">
+            <div className="row no-gutters">
               <div className="justify-content-center d-flex">
                 <div className="card col-lg-4  col-md-6  flex-md-column border border-dark py-3 mb-3">
                   <div className="card-body">
@@ -124,12 +124,12 @@ export default function Home(props) {
           </div>
         </div>
         <div className="section backed">
-          <div className="row container pb-5">
+          <div className="row no-gutters container pb-5">
             <h2 className="col-xl-12 px-xl-0">
               <small>Backed by the Best</small>
             </h2>
           </div>
-          <div className="row container justify-content-center">
+          <div className="row no-gutters container justify-content-center">
             <img src={logos} alt="Company Logos" className="img-fluid" />
           </div>
         </div>

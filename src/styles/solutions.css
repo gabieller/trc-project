@@ -7,11 +7,6 @@
   min-height: 35rem;
 }
 
-#solutions-page > .section {
-  padding-top: 12vh;
-  padding-bottom: 4vh;
-}
-
 #solutions-page .card {
     border: 1px;
     border-radius: 0;

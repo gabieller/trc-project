@@ -3,6 +3,7 @@ import React from "react"
 import googleplaybadge from "../images/google-play-badge.png"
 import appstorebadge from "../images/app-store-badge.svg"
 
+// TODO: delete
 export default function DownloadButtons() {
   return (
     <div className="d-flex flex-column download-badges ">
