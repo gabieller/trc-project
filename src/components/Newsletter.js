@@ -54,15 +54,15 @@ function SubscribeForm() {
             </div>
           </form>
           <div className="row no-gutters">
-          <div className="col-md-10 warning-text">
-            <h6>
-              <small>
-                By clicking “Primary action” you accepting ipsum dolor sit amet,
-                sit ea brute mediocritatem, eu sed aliquam scripserit
-                dissentiunt.
-              </small>
-            </h6>
-          </div>
+            <div className="col-md-10 warning-text">
+              <h6>
+                <small>
+                  By clicking “Primary action” you accepting ipsum dolor sit
+                  amet, sit ea brute mediocritatem, eu sed aliquam scripserit
+                  dissentiunt.
+                </small>
+              </h6>
+            </div>
           </div>
         </div>
       </div>

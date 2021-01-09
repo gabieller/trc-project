@@ -39,7 +39,10 @@ export default function Arrow({ className }) {
       className="rolling-arrow col-md-2 border border-dark border-top-0 border-bottom-0 justify-content-center d-flex"
       ref={selectedDiv}
     >
-      <div className="arrow2 d-none d-md-block" style={{ height: `calc(0px + ${percentage}%)` }}>
+      <div
+        className="arrow2 d-none d-md-block"
+        style={{ height: `calc(0px + ${percentage}%)` }}
+      >
         <span className={`line-1 ${arrowTip}`} />
         <span className={`line-2 ${arrowTip}`} />
       </div>

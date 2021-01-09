@@ -26,46 +26,43 @@ export default function Home(props) {
             </Suspense>
           </div>
           <div className="container title-content text-left ">
-            <div className="row no-gutters text justify-content-center">
-              <div className="col-xl-8">
-                <h1 className="col-xl-12">
-                  We partner with cities to power the future of public transit
-                </h1>
-              </div>
-            </div>
             <div className="row no-gutters justify-content-center">
-              <div className="col-xl-8">
-                <div className="col-xl-8">
+              <div className="col-md-8 no-gutters">
+                <div className="col-12">
+                  <h1>
+                    We partner with cities to power the future of public transit
+                  </h1>
+                </div>
+                <div className="col-md-7">
                   Millions of businesses of all sizes—from startups to large
                   enterprises—use TRC software and APIs to [action], [action]
                   and [action].
                 </div>
-              </div>
-            </div>
-            <div className="row no-gutters justify-content-center buttons pb-5">
-              <div className="col-xl-8">
-                <div className=" justify-content-center pt-md-3 pt-xs-2">
-                  <div className="action-buttons row no-gutters pl-3">
-                    <div className="action-buttons pr-3">
-                      <Button
-                        className="btn-black btn-action"
-                        variant="contained"
-                      >
-                        Primary Action
-                      </Button>
-                    </div>
-                    <div className="action-buttons pl-3">
-                      <Button className="btn btn-raised btn-secondary">
-                        Secondary Action
-                      </Button>
+                <div className="col-12 col-md-8">
+                  <div className=" justify-content-center pt-md-3 ">
+                    <div className="action-buttons row no-gutters pl-3">
+                      <div className="action-buttons pr-3">
+                        <Button
+                          className="btn-black btn-action"
+                          variant="contained"
+                        >
+                          Primary Action
+                        </Button>
+                      </div>
+                      <div className="action-buttons">
+                        <Button className="btn btn-raised btn-secondary">
+                          Secondary Action
+                        </Button>
+                      </div>
                     </div>
                   </div>
                 </div>
               </div>
             </div>
 
-            <div className="row no-gutters pt-5 pb-2 px-xl-0">
-              <h2 className="col-xl-12 my-2 px-xl-0">
+
+            <div className="row no-gutters pt-5 pb-2">
+              <h2 className="col-10 col-md-12">
                 <small>Grow your business with better shipping</small>
               </h2>
             </div>
