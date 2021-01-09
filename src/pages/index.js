@@ -60,55 +60,64 @@ export default function Home(props) {
               </div>
             </div>
 
-
             <div className="row no-gutters pt-5 pb-2">
               <h2 className="col-10 col-md-12">
                 <small>Grow your business with better shipping</small>
               </h2>
             </div>
             <div className="row no-gutters">
-              <div className="justify-content-center d-flex">
-                <div className="card col-lg-4  col-md-6  flex-md-column border border-dark py-3 mb-3">
+              <div className="col-md-4 pb-3 pb-md-0 pr-md-3">
+                <div className="card border border-dark mx-0">
                   <div className="card-body">
-                    <h4 className="card-title col-sm-12 px-0 text-left font-weight-bold">
+                    <h4 className="card-title text-left font-weight-bold">
                       Problem that customers face 1
                     </h4>
-                    <p className="card-text my-4">
+                    <p className="card-text ">
                       Many transit authorities worldwide experimenting with on
                       demand buses.
                     </p>
+                    <hr />
                     <div className="text-center">
-                      <a className="text-uppercase pt-3 px-0" href="/">
+                      <a className="text-uppercase pt-3" href="/">
                         Discover
                       </a>
                     </div>
                   </div>
                 </div>
-                <div className="card col-lg-4 col-md-6 flex-md-column border border-dark py-3 mb-3">
+              </div>
+
+              <div className="col-md-4 pb-3 pb-md-0 pr-md-3">
+                <div className="card border border-dark  mx-0">
                   <div className="card-body">
-                    <h4 className="card-title col-sm-12 px-0 text-left font-weight-bold">
+                    <h4 className="card-title text-left font-weight-bold">
                       Problem that customers face 2
                     </h4>
-                    <div className="card-text my-4">
+                    <div className="card-text ">
                       Many transit authorities worldwide experimenting with on
                       demand buses.
                     </div>
+                    <hr />
+
                     <div className="text-center">
-                      <a className="text-uppercase pt-3 px-0" href="/">
+                      <a className="text-uppercase pt-3" href="/">
                         Discover
                       </a>
                     </div>
                   </div>
                 </div>
-                <div className="card col-lg-4 col-md-6 flex-md-column border border-dark py-3 mb-3">
+              </div>
+
+              <div className="col-md-4 pb-3 pb-md-0 pr-md-3">
+                <div className="card border border-dark  mx-0">
                   <div className="card-body">
-                    <h4 className="card-title col-sm-12 px-0 text-left font-weight-bold">
+                    <h4 className="card-title  px-0 text-left font-weight-bold">
                       Problem that customers face 3
                     </h4>
-                    <div className="card-text my-4">
+                    <div className="card-text">
                       Many transit authorities worldwide experimenting with on
                       demand buses.
                     </div>
+                    <hr />
                     <div className="text-center">
                       <a className="text-uppercase pt-3 px-0" href="/">
                         Discover
@@ -121,13 +130,15 @@ export default function Home(props) {
           </div>
         </div>
         <div className="section backed">
-          <div className="row no-gutters container pb-5">
-            <h2 className="col-xl-12 px-xl-0">
-              <small>Backed by the Best</small>
-            </h2>
-          </div>
-          <div className="row no-gutters container justify-content-center">
-            <img src={logos} alt="Company Logos" className="img-fluid" />
+          <div className="container">
+            <div className="row no-gutters pb-5">
+              <h2 className="col-xl-12 px-xl-0">
+                <small>Backed by the Best</small>
+              </h2>
+            </div>
+            <div className="row no-gutters container justify-content-center">
+              <img src={logos} alt="Company Logos" className="img-fluid" />
+            </div>
           </div>
         </div>
         <Demo />

@@ -19,48 +19,93 @@ export default function Solutions(props) {
   return (
     <Layout {...props}>
       <div id="solutions-page" className="container-fluid">
-        <div className="row container section title px-0">
-          <div className="row container title px-xl-0">
-            <h1>How we can help</h1>
-          </div>
+        <div className="section">
+          <div className="container">
+            <div className="row no-gutters">
+              <h1>How we can help</h1>
+            </div>
 
-          <div className="row container py-3">
-            <div className="justify-content-center d-flex">
-              <div className="card col-lg-4 col-md-6 flex-md-column border border-dark py-3 px-5">
-                <div className="card-body p-0">
-                  <h4 className="card-title col-md-12 px-0 text-left">
-                    Demand-responsive transit
-                  </h4>
-                  <div className="card-text my-4">
-                    Many transit authorities worldwide experimenting with on
-                    demand buses.
+            <div className="row no-gutters">
+              <div className="col-md-4 pb-3 pb-md-0 pr-md-3">
+                <div className="card border border-dark mx-0">
+                  <div className="card-body">
+                    <h4 className="card-title text-left font-weight-bold w-75">
+                      Demand-responsive transit
+                    </h4>
+                    <p className="card-text ">
+                      Many transit authorities worldwide experimenting with on
+                      demand buses.
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div className="col-md-4 pb-3 pb-md-0 pr-md-3">
+                <div className="card border border-dark mx-0">
+                  <div className="card-body">
+                    <h4 className="card-title text-left font-weight-bold w-75">
+                      Ridesharing companies
+                    </h4>
+                    <p className="card-text ">
+                      Many transit authorities worldwide experimenting with on
+                      demand buses.
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div className="col-md-4 pb-3 pb-md-0 pr-md-3">
+                <div className="card border border-dark mx-0">
+                  <div className="card-body">
+                    <h4 className="card-title text-left font-weight-bold">
+                      Transit & para-transit (WAV) authorities
+                    </h4>
+                    <p className="card-text ">
+                      Many transit authorities worldwide experimenting with on
+                      demand buses.
+                    </p>
+                  </div>
+                </div>
+              </div>
+              {/* <div className="col-md-4 pb-3 pb-md-0 pr-md-3">
+                <div className="card border border-dark mx-0">
+                  <div className="card-body">
+                    <h4 className="card-title w-75 text-left">
+                      Demand-responsive transit
+                    </h4>
+                    <div className="card-text">
+                      Many transit authorities worldwide experimenting with on
+                      demand buses.
+                    </div>
                   </div>
                 </div>
               </div>
 
-              <div className="card col-lg-4 col-md-6 flex-md-column border border-dark py-3 pl-5 pr-4">
-                <div className="card-body p-0">
-                  <h4 className="card-title col-md-10 px-0 text-left">
-                    Ridesharing companies
-                  </h4>
-                  <div className="card-text my-4">
-                    It’s not easy to build an efficient pooling product. Reduce
-                    engineering costs.
+              <div className="col-md-4 pb-3 pb-md-0 pr-md-3">
+                <div className="card border border-dark mx-0">
+                  <div className="card-body">
+                    <h4 className="card-titl w-75 text-left">
+                      Ridesharing companies
+                    </h4>
+                    <div className="card-text ">
+                      It’s not easy to build an efficient pooling product.
+                      Reduce engineering costs.
+                    </div>
                   </div>
                 </div>
               </div>
 
-              <div className="card col-lg-4 col-md-6 flex-md-column border border-dark py-3 px-5">
-                <div className="card-body p-0">
-                  <h4 className="card-title col-md-11 px-0 text-left">
-                    Transit & para-transit (WAV) authorities
-                  </h4>
-                  <div className="card-text my-4">
-                    Wait times are typically far higher for those who needs
-                    WAVs.
+              <div className="col-md-4 pb-3 pb-md-0 pr-md-3">
+                <div className="card border border-dark mx-0">
+                  <div className="card-body">
+                    <h4 className="card-title text-left">
+                      Transit & para-transit (WAV) authorities
+                    </h4>
+                    <div className="card-text">
+                      Wait times are typically far higher for those who needs
+                      WAVs.
+                    </div>
                   </div>
                 </div>
-              </div>
+              </div> */}
             </div>
           </div>
         </div>
@@ -192,7 +237,7 @@ export default function Solutions(props) {
           </div>
         </Responsive.Desktop>
 
-        <Responsive.Mobile>
+        {/* <Responsive.Mobile>
           <div id="solutions-how-it-works">
             <div className="row border border-dark border-right-0 border-left-0 subject">
               <div className="col-9 pl-0">
@@ -256,7 +301,7 @@ export default function Solutions(props) {
               <img src={mockup} alt="Mockup" width="100%" height="100%" />
             </div>
           </div>
-        </Responsive.Mobile>
+        </Responsive.Mobile> */}
 
         <div id="pingo-solutions">
           <div className="row container py-5 px-5">
@@ -290,6 +335,7 @@ export default function Solutions(props) {
             </div>
           </div>
         </div>
+        {/* </div> */}
         <Demo />
       </div>
     </Layout>
