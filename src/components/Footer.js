@@ -1,6 +1,6 @@
 import React from "react"
 import Button from "@material-ui/core/Button"
-import Responsive, { useResponsive } from "../components/Responsive"
+import Responsive from "../components/Responsive"
 import "../styles/footer.css"
 
 import trclogo from "../images/trc-logo-white.png"

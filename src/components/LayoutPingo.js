@@ -7,7 +7,6 @@ import loadingpingo from "../images/loading.gif"
 import "../styles/layout.css"
 
 export default function LayoutPingo(props) {
-  const isOpenSidebar = false
   const [loading, setLoading] = useState(true)
   useEffect(() => {
     setInterval(() => {
@@ -30,13 +29,7 @@ export default function LayoutPingo(props) {
       )}
       {!loading && (
         <>
-          <div
-            className={`container-fluid main-container ${
-              isOpenSidebar ? "open" : ""
-            }`}
-          >
-            {props.children}
-          </div>
+          <div className="main-container">{props.children}</div>
           <Footer />
           <ScrollTop />
         </>

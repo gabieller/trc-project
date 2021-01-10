@@ -6,14 +6,16 @@
 }
 
 #pingo-header {
-  padding-top: 15vw;
+  /* padding-top: 15vw;
   background-color: #8ec999;
-  position: relative;
+  */
+  position: relative; 
 }
 
 #pingo-header .pingo-logo {
-  padding-left: 10vw;
+  z-index: 1;
 }
+
 #pingo-header .mobile-subtitle {
   color: #ffffff;
 }
