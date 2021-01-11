@@ -100,7 +100,6 @@ export default function Solutions(props) {
           </div>
         </div>
 
-
         <div className="row">
           <div className="col-md-5 p-0  col-left d-none d-md-block">
             <img
@@ -185,33 +184,35 @@ export default function Solutions(props) {
 
         <div className="section">
           <div className="container justify-content-center">
-          <div className="row">
-            <div className="col-md-3 text-center pb-2">
-              Exponentially richer possibility set
+            <div className="row">
+              <div className="col-md-3 text-center pb-2">
+                Exponentially richer possibility set
+              </div>
+              <div className="col-md-1 text-center pb-2">
+                <img src={add_circle} alt="Add Icon" />
+              </div>
+              <div className="col-md-3 text-center pb-2">
+                Global optimization
+              </div>
+              <div className="col-md-1 text-center pb-2">
+                <img src={add_circle} alt="Add Icon" />
+              </div>
+              <div className="col-md-3 text-center pb-2">
+                Rebalancing for future performance
+              </div>
             </div>
-            <div className="col-md-1 text-center pb-2">
-              <img src={add_circle} alt="Add Icon" />
+            <div className="row justify-content-center pt-2 equal-icon">
+              <img src={equal_circle} alt="Equal Icon" />
             </div>
-            <div className="col-md-3 text-center pb-2">Global optimization</div>
-            <div className="col-md-1 text-center pb-2">
-              <img src={add_circle} alt="Add Icon" />
+            <div>
+              <h2 className="text-center pt-5">
+                A revolution in demand-response transportation
+              </h2>
             </div>
-            <div className="col-md-3 text-center pb-2">
-              Rebalancing for future performance
+            <div className="row pt-5 justify-content-center mockup">
+              <img src={mockup} alt="Mockup" width="100%" height="100%" />
             </div>
           </div>
-          <div className="row justify-content-center pt-2 equal-icon">
-            <img src={equal_circle} alt="Equal Icon" />
-          </div>
-          <div>
-            <h2 className="text-center pt-5">
-              A revolution in demand-response transportation
-            </h2>
-          </div>
-          <div className="row pt-5 justify-content-center mockup">
-            <img src={mockup} alt="Mockup" width="100%" height="100%" />
-          </div>
-        </div>
         </div>
         {/* </Responsive.Desktop> */}
 
@@ -262,11 +263,7 @@ export default function Solutions(props) {
           <div className="container">
             <div className="row border border-dark bg-white no-gutters">
               <div className="col-md-5">
-                <img
-                  src={pingosolutions}
-                  alt="Pingo Solutions"
-                  width="100%"
-                />
+                <img src={pingosolutions} alt="Pingo Solutions" width="100%" />
               </div>
               <div className="col-md-7 justify-content-left p-5">
                 <div className="container">
@@ -302,7 +299,7 @@ export default function Solutions(props) {
                       height="50"
                     />
                   </button>
-              </div>
+                </div>
               </div>
             </div>
           </div>

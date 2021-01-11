@@ -13,7 +13,6 @@ import appstorebadge from "../images/app-store-badge.svg"
 
 // TODO: fix image size on mobile, align app buttons and social media links to the right
 
-
 export default function Footer() {
   return (
     <footer id="footer" className="section font-weight-bold">

@@ -20,26 +20,9 @@
   color: #ffffff;
 }
 
-#pingo-content {
-  padding-top: 8vw;
-  padding-bottom: 2vw;
-}
-
-#pingo-about {
-  padding-top: 3vw;
-  padding-bottom: 3vw;
-}
-
-#pingo-arrow .card {
-  padding-left: 8vw;
-  padding-bottom: 8vw;
-  background-color: #f5f4f5;
-}
-
-#pingo-trc {
-  background-color: #f4f5f4;
-  padding-top: 5vw;
-  padding-bottom: 5vw;
+.pingo-cards {
+  background-color: transparent;
+  border: none;
 }
 
 #pingo-quotes {
@@ -62,8 +45,9 @@
   border-radius: 100%;
 }
 #pingo-quotes .quotes-illustration {
-  top: 12vw;
-  right: 16vw;
+  position: static;
+  /* top: 12vw; */
+  /* right: 16vw; */
 }
 
 #pingo-somewhere {

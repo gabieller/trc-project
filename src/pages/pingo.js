@@ -2,11 +2,12 @@ import React from "react"
 import Button from "@material-ui/core/Button"
 import LayoutPingo from "../components/LayoutPingo"
 import Responsive from "../components/Responsive"
+import Arrow from "../components/Arrow"
 import NavBarPingo from "../components/NavBarPingo"
 import CanvasPingo from "../components/CanvasPingo"
 import pingologowhite from "../images/pingologowhite.png"
 import pingo_mockup from "../images/pingo_mockup.png"
-import arrow from "../images/arrow.svg"
+// import arrow from "../images/arrow.svg"
 import mockup from "../images/mockup.png"
 import quote from "../images/quote.svg"
 import car from "../images/car-illustration.png"
@@ -18,113 +19,127 @@ import womanillustration from "../images/woman-illustration.png"
 
 import "../styles/pingo.css"
 
+//TODO: fix header to mobile and desktop
+
 export default function Pingo(props) {
   return (
     <LayoutPingo {...props}>
       <div id="pingo-page" className="container-fluid">
-        <Responsive.Desktop>
-          <div id="pingo-header">
-            <div
-              style={{
-                position: "absolute",
-                width: "100%",
-                height: "100%",
-                display: "flex",
-              }}
-            >
-              <CanvasPingo />
-            </div>
-            <div className="container">
-              <div className="row justify-content-center pingo-landing-page">
-                <img
-                  className="img-fluid pingo-logo"
-                  src={pingologowhite}
-                  alt="Pingo Main logo"
-                  width="650"
-                  height="400"
-                />
-              </div>
-              <NavBarPingo />
-            </div>
-          </div>
-
-          <div id="pingo-content" className="row container">
-            <div className="col-sm-10">
-              <div className="pingo-title">
-                <h2>The whole cityin the palm of your hand.</h2>
-                <h2> Get Pingo</h2>
-              </div>
-              <div>
-                <div className="d-inline-flex action-button justify-content-left pt-4">
-                  <div className="action-buttons pr-3">
-                    <Button className="btn btn-action pl-0">
-                      <img src={pingo_register} alt="Pingo Button" />
-                    </Button>
-                  </div>
-                  <div className="action-buttons">
-                    <Button className="btn btn-action">
-                      <img src={pingo_ride} alt="Pingo Button" />
-                    </Button>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-
+        {/* <Responsive.Desktop> */}
+        <div id="pingo-header">
           <div
-            id="pingo-about"
-            className="row container justify-content-left pingo-about-product"
+            style={{
+              position: "absolute",
+              width: "100%",
+              height: "100%",
+              display: "flex",
+            }}
           >
-            <div className="row container justify-content-center">
-              <div className="col-md-6">
-                <img
-                  className="pt-5"
-                  src={pingo_mockup}
-                  alt="Pingo Mockup"
-                  width="100%"
-                  height="100%"
-                />
-              </div>
-              <div className="col-md-6 py-5">
-                <div className="about-pingo-title font-weight-bold pt-5">
-                  <h3>
-                    About the product offered, visualization areaea usu, qui
-                    dicta sadipscing te.
-                  </h3>
+            <CanvasPingo />
+          </div>
+          <div className="container">
+            <div className="row justify-content-center pingo-landing-page">
+              <img
+                className="img-fluid pingo-logo"
+                src={pingologowhite}
+                alt="Pingo Main logo"
+                width="650"
+                height="400"
+              />
+            </div>
+            <NavBarPingo />
+          </div>
+        </div>
+
+        <div id="pingo-content" className="row container">
+          <div className="col-sm-10">
+            <div className="pingo-title">
+              <h2>The whole cityin the palm of your hand.</h2>
+              <h2> Get Pingo</h2>
+            </div>
+            <div>
+              <div className="d-inline-flex action-button justify-content-left pt-4">
+                <div className="action-buttons pr-3">
+                  <Button className="btn btn-action pl-0">
+                    <img src={pingo_register} alt="Pingo Button" />
+                  </Button>
                 </div>
-                <div className="about-text py-4">
-                  Et has minim elitr intellegat. Mea aeterno eleifend antiopam
-                  ad, nam no suscipit quaerendum. At nam minimum ponderum. Est
-                  audiam animal molestiae te. Ex duo eripuit mentitum.
+                <div className="action-buttons">
+                  <Button className="btn btn-action">
+                    <img src={pingo_ride} alt="Pingo Button" />
+                  </Button>
                 </div>
               </div>
             </div>
           </div>
+        </div>
 
-          <div id="pingo-arrow" className="row pingo-arrow">
-            <div className="col-md-5 border-dark border-top border-bottom p-0 col-left">
-              <div className="card team-description">
-                <div className="card-body py-5">
-                  <h4 className="card-title font-weight-bold pt-5">
-                    Advantages
-                  </h4>
-                  <p className="card-text">
-                    Specialized in mobility-on-demand systems for high capacity
-                    vehicles. Et has minim elitr intellegat. Mea aeterno
-                    eleifend antiopam ad, nam no suscipit quaerendum. At nam
-                    minimum ponderum. Est audiam animal molestiae te. Ex duo
-                    eripuit mentitum.
-                  </p>
-                </div>
+        <div
+          id="pingo-about"
+          className="row container justify-content-left pingo-about-product"
+        >
+          <div className="row container justify-content-center">
+            <div className="col-md-6">
+              <img
+                className="pt-5"
+                src={pingo_mockup}
+                alt="Pingo Mockup"
+                width="100%"
+                height="100%"
+              />
+            </div>
+            <div className="col-md-6 py-5">
+              <div className="about-pingo-title font-weight-bold pt-5">
+                <h3>
+                  About the product offered, visualization areaea usu, qui dicta
+                  sadipscing te.
+                </h3>
               </div>
+              <div className="about-text py-4">
+                Et has minim elitr intellegat. Mea aeterno eleifend antiopam ad,
+                nam no suscipit quaerendum. At nam minimum ponderum. Est audiam
+                animal molestiae te. Ex duo eripuit mentitum.
+              </div>
+            </div>
+          </div>
+        </div>
 
-              <div className="border border-dark border-right-0 border-left-0">
-                <div className="card team-description">
+        <Responsive.Desktop>
+          <div className="section pingo-lines">
+            <div className="row no-gutters">
+              <div className="col-md-5 border-top border-bottom border-dark col-left">
+                <div className="container card pingo-cards px-5">
                   <div className="card-body py-5">
-                    <h4 className="card-title font-weight-bold pt-5">
-                      Advantages
-                    </h4>
-                    <p className="card-text">
+                    <h4 className="card-title font-weight-bold">Advantages</h4>
+                    <p className="card-text w-75">
+                      Specialized in mobility-on-demand systems for high
+                      capacity vehicles. Et has minim elitr intellegat. Mea
+                      aeterno eleifend antiopam ad, nam no suscipit quaerendum.
+                      At nam minimum ponderum. Est audiam animal molestiae te.
+                      Ex duo eripuit mentitum.
+                    </p>
+                  </div>
+                </div>
+                <hr />
+
+                <div className="container card pingo-cards px-5">
+                  <div className="card-body py-5">
+                    <h4 className="card-title font-weight-bold">Advantages</h4>
+                    <p className="card-text w-75">
+                      Specialized in mobility-on-demand systems for high
+                      capacity vehicles. Et has minim elitr intellegat. Mea
+                      aeterno eleifend antiopam ad, nam no suscipit quaerendum.
+                      At nam minimum ponderum. Est audiam animal molestiae te.
+                      Ex duo eripuit mentitum.
+                    </p>
+                  </div>
+                </div>
+                <hr />
+
+                <div className="container card pingo-cards px-5">
+                  <div className="card-body py-5">
+                    <h4 className="card-title font-weight-bold">Advantages</h4>
+                    <p className="card-text w-75">
                       Specialized in mobility-on-demand systems for high
                       capacity vehicles. Et has minim elitr intellegat. Mea
                       aeterno eleifend antiopam ad, nam no suscipit quaerendum.
@@ -134,49 +149,42 @@ export default function Pingo(props) {
                   </div>
                 </div>
               </div>
-              <div className="card team-description ">
-                <div className="card-body py-5">
-                  <h4 className="card-title font-weight-bold pt-5">
-                    Advantages
-                  </h4>
-                  <p className="card-text">
-                    Specialized in mobility-on-demand systems for high capacity
-                    vehicles. Et has minim elitr intellegat. Mea aeterno
-                    eleifend antiopam ad, nam no suscipit quaerendum. At nam
-                    minimum ponderum. Est audiam animal molestiae te. Ex duo
-                    eripuit mentitum.
-                  </p>
-                </div>
-              </div>
-            </div>
 
-            <div className="col-md-2 border border-dark border-top-0 border-bottom-0">
-              <div className="arrow-interaction text-center">
-                <img src={arrow} alt="Arrow Interaction" />
-              </div>
-            </div>
+              <Arrow />
 
-            <div className="col-md-5 border-dark border-top border-bottom p-0 col-right">
-              <div className="card  team-description ">
-                <div className="card-body py-5">
-                  <h4 className="card-title font-weight-bold pt-5">Features</h4>
-                  <p className="card-text">
-                    Specialized in mobility-on-demand systems for high capacity
-                    vehicles. Et has minim elitr intellegat. Mea aeterno
-                    eleifend antiopam ad, nam no suscipit quaerendum. At nam
-                    minimum ponderum. Est audiam animal molestiae te. Ex duo
-                    eripuit mentitum.
-                  </p>
-                </div>
-              </div>
-
-              <div className="border border-dark border-right-0 border-left-0">
-                <div className="card team-description">
+              <div className="col-md-5 border-top border-bottom border-dark col-right">
+                <div className="container card pingo-cards px-5">
                   <div className="card-body py-5">
-                    <h4 className="card-title font-weight-bold pt-5">
-                      Features
-                    </h4>
-                    <p className="card-text">
+                    <h4 className="card-title font-weight-bold">Features</h4>
+                    <p className="card-text w-75">
+                      Specialized in mobility-on-demand systems for high
+                      capacity vehicles. Et has minim elitr intellegat. Mea
+                      aeterno eleifend antiopam ad, nam no suscipit quaerendum.
+                      At nam minimum ponderum. Est audiam animal molestiae te.
+                      Ex duo eripuit mentitum.
+                    </p>
+                  </div>
+                </div>
+                <hr />
+
+                <div className="container card pingo-cards px-5">
+                  <div className="card-body py-5">
+                    <h4 className="card-title font-weight-bold">Features</h4>
+                    <p className="card-text w-75">
+                      Specialized in mobility-on-demand systems for high
+                      capacity vehicles. Et has minim elitr intellegat. Mea
+                      aeterno eleifend antiopam ad, nam no suscipit quaerendum.
+                      At nam minimum ponderum. Est audiam animal molestiae te.
+                      Ex duo eripuit mentitum.
+                    </p>
+                  </div>
+                </div>
+                <hr />
+
+                <div className="container card pingo-cards px-5 pb-5">
+                  <div className="card-body py-5">
+                    <h4 className="card-title font-weight-bold">Features</h4>
+                    <p className="card-text w-75">
                       Specialized in mobility-on-demand systems for high
                       capacity vehicles. Et has minim elitr intellegat. Mea
                       aeterno eleifend antiopam ad, nam no suscipit quaerendum.
@@ -186,145 +194,224 @@ export default function Pingo(props) {
                   </div>
                 </div>
               </div>
-              <div className="card team-description">
-                <div className="card-body py-5">
-                  <h4 className="card-title font-weight-bold pt-5">Features</h4>
-                  <p className="card-text">
-                    Specialized in mobility-on-demand systems for high capacity
-                    vehicles. Et has minim elitr intellegat. Mea aeterno
-                    eleifend antiopam ad, nam no suscipit quaerendum. At nam
-                    minimum ponderum. Est audiam animal molestiae te. Ex duo
-                    eripuit mentitum.
-                  </p>
-                </div>
-              </div>
             </div>
           </div>
 
-          <div id="pingo-trc">
-            <div className="row container border border-dark py-5">
-              <div className="col-sm-6 text-center">
-                <img src={mockup} alt="Mockup" width="100%" height="100%" />
-              </div>
-              <div className="col-sm-6 py-5">
-                <div className="row container col-sm-9">
-                  <h3 className="pt-5">We are part of</h3>
-                  <h3 className="font-weight-bold">The Routing Company</h3>
-                </div>
-                <div className="row container col-sm-9">
-                  Et has minim elitr intellegat. Mea aeterno eleifend antiopam
-                  ad, nam no suscipit quaerendum. At nam minimum ponderum. Est
-                  audiam animal molestiae te. Ex duo eripuit mentitum.
-                  <div className="action-buttons pr-3 pt-3">
-                    <Button className="btn-black" variant="contained">
-                      See our technologies
-                    </Button>
-                  </div>
-                </div>
-              </div>
+          <div className="section pingo-trc">
+        <div className="container">
+          <div className="row border border-dark bg-white"> 
+            <div className="col-md-6 text-center border-right border-dark">
+              <img src={mockup} alt="Mockup" width="100%" height="100%" />
             </div>
-          </div>
-
-          <div id="pingo-quotes" className="row">
-            <div className="col-md-4 quotes-illustration">
-              <img src={car} alt="Yellow Car" />
-            </div>
-
-            <div className="col-md-5 text-center quotes-content mx-0">
-              <div
-                id="carouselExampleIndicators"
-                className="carousel slide"
-                data-ride="carousel"
-              >
-                <ol className="carousel-indicators">
-                  <li
-                    data-target="#carouselExampleIndicators"
-                    data-slide-to="0"
-                    className="active"
-                  ></li>
-                  <li
-                    data-target="#carouselExampleIndicators"
-                    data-slide-to="1"
-                  ></li>
-                  <li
-                    data-target="#carouselExampleIndicators"
-                    data-slide-to="2"
-                  ></li>
-                </ol>
-                <div className="carousel-inner">
-                  <div className="carousel-item active">
-                    <div className="card text-center bg-transparent m-5">
-                      <img
-                        className="card-img-top"
-                        src={quote}
-                        alt="Card cap"
-                        width="100"
-                        height="100"
-                      />
-                      <div className="card-body">
-                        <p className="card-text">
-                          Est tation latine aliquip id, mea ad tale illud
-                          definitiones. Periculis omittantur reformidans
-                          necessitatibus eum ad, pro eripuit minimum
-                          comprehensam ne, usu cu stet prompta.
-                        </p>
-                        <h4 className="card-title">
-                          Connie Robertson at Google
-                        </h4>
-                      </div>
-                    </div>
-                  </div>
-                  <div className="carousel-item">
-                    <div className="card text-center bg-transparent m-5">
-                      <img
-                        className="card-img-top"
-                        src={quote}
-                        alt="Card cap"
-                        width="100"
-                        height="100"
-                      />
-                      <div className="card-body">
-                        <p className="card-text">
-                          Est tation latine aliquip id, mea ad tale illud
-                          definitiones. Periculis omittantur reformidans
-                          necessitatibus eum ad, pro eripuit minimum
-                          comprehensam ne, usu cu stet prompta.
-                        </p>
-                        <h4 className="card-title">
-                          Connie Robertson at Google
-                        </h4>
-                      </div>
-                    </div>
-                  </div>
-                  <div className="carousel-item">
-                    <div className="card text-center bg-transparent m-5">
-                      <img
-                        className="card-img-top"
-                        src={quote}
-                        alt="Card cap"
-                        width="100"
-                        height="100"
-                      />
-                      <div className="card-body">
-                        <p className="card-text">
-                          Est tation latine aliquip id, mea ad tale illud
-                          definitiones. Periculis omittantur reformidans
-                          necessitatibus eum ad, pro eripuit minimum
-                          comprehensam ne, usu cu stet prompta.
-                        </p>
-                        <h4 className="card-title">
-                          Connie Robertson at Google
-                        </h4>
-                      </div>
-                    </div>
-                  </div>
+            <div className="col-md-6 py-5 no-gutters">
+              <div className="row col-md-9">
+                <h3 className="pt-5">We are part of</h3>
+                <h3 className="font-weight-bold">The Routing Company</h3>
+              </div>
+              <div className="row  col-md-9">
+                Et has minim elitr intellegat. Mea aeterno eleifend antiopam ad,
+                nam no suscipit quaerendum. At nam minimum ponderum. Est audiam
+                animal molestiae te. Ex duo eripuit mentitum.
+                <div className="action-buttons pr-3 py-3">
+                  <Button className="btn-black" variant="contained">
+                    See our technologies
+                  </Button>
                 </div>
+              </div>
               </div>
             </div>
           </div>
+        </div>
         </Responsive.Desktop>
 
         <Responsive.Mobile>
+          <div className="section pingo-lines">
+            <div className="row no-gutters justify-content-center">
+              <div className="col-10 border-top border border-dark col-left mb-5 mx-4">
+                <div className="container card pingo-cards">
+                  <div className="card-body py-5">
+                    <h4 className="card-title font-weight-bold">Advantages</h4>
+                    <p className="card-text ">
+                      It’s not easy to build an efficient pooling product.
+                      Reduce engineering costs. Reduce engineering costs.
+                    </p>
+                  </div>
+                </div>
+
+                <div className="container card pingo-cards">
+                  <div className="card-body py-5">
+                    <h4 className="card-title font-weight-bold">Advantages</h4>
+                    <p className="card-text ">
+                      It’s not easy to build an efficient pooling product.
+                      Reduce engineering costs. Reduce engineering costs.
+                    </p>
+                  </div>
+                </div>
+
+                <div className="container card pingo-cards">
+                  <div className="card-body py-5">
+                    <h4 className="card-title font-weight-bold">Advantages</h4>
+                    <p className="card-text ">
+                      It’s not easy to build an efficient pooling product.
+                      Reduce engineering costs. Reduce engineering costs.
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+              <div className="col-10 border-top border border-dark col-left mb-5 mx-4">
+                <div className="container card pingo-cards">
+                  <div className="card-body py-5">
+                    <h4 className="card-title font-weight-bold">Features</h4>
+                    <p className="card-text">
+                      It’s not easy to build an efficient pooling product.
+                      Reduce engineering costs.
+                    </p>
+                  </div>
+                </div>
+
+                <div className="container card pingo-cards">
+                  <div className="card-body py-5">
+                    <h4 className="card-title font-weight-bold">Features</h4>
+                    <p className="card-text">
+                      It’s not easy to build an efficient pooling product.
+                      Reduce engineering costs.
+                    </p>
+                  </div>
+                </div>
+
+                <div className="container card pingo-cards pb-5">
+                  <div className="card-body py-5">
+                    <h4 className="card-title font-weight-bold">Features</h4>
+                    <p className="card-text">
+                      It’s not easy to build an efficient pooling product.
+                      Reduce engineering costs.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div className="pingo-trc">
+          <div className="row  bg-white"> 
+            <div className="col-md-6 text-center">
+              <img src={mockup} alt="Mockup" width="100%" height="100%" />
+            </div>
+            <div className="col-md-6 py-5 no-gutters">
+              <div className="row col-md-9">
+                <h3 className="pt-5">We are part of</h3>
+                <h3 className="font-weight-bold">The Routing Company</h3>
+              </div>
+              <div className="row  col-md-9">
+                Et has minim elitr intellegat. Mea aeterno eleifend antiopam ad,
+                nam no suscipit quaerendum. At nam minimum ponderum. Est audiam
+                animal molestiae te. Ex duo eripuit mentitum.
+                <div className="action-buttons pr-3 py-3">
+                  <Button className="btn-black" variant="contained">
+                    See our technologies
+                  </Button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        </Responsive.Mobile>
+
+        <div id="pingo-quotes" className="row">
+          <div className="col-md-4 quotes-illustration">
+            <img src={car} alt="Yellow Car" />
+          </div>
+
+          <div className="col-md-5 text-center quotes-content mx-0">
+            <div
+              id="carouselExampleIndicators"
+              className="carousel slide"
+              data-ride="carousel"
+            >
+              <ol className="carousel-indicators">
+                <li
+                  data-target="#carouselExampleIndicators"
+                  data-slide-to="0"
+                  className="active"
+                ></li>
+                <li
+                  data-target="#carouselExampleIndicators"
+                  data-slide-to="1"
+                ></li>
+                <li
+                  data-target="#carouselExampleIndicators"
+                  data-slide-to="2"
+                ></li>
+              </ol>
+              <div className="carousel-inner">
+                <div className="carousel-item active">
+                  <div className="card text-center bg-transparent m-5">
+                    <img
+                      className="card-img-top"
+                      src={quote}
+                      alt="Card cap"
+                      width="100"
+                      height="100"
+                    />
+                    <div className="card-body">
+                      <p className="card-text">
+                        Est tation latine aliquip id, mea ad tale illud
+                        definitiones. Periculis omittantur reformidans
+                        necessitatibus eum ad, pro eripuit minimum comprehensam
+                        ne, usu cu stet prompta.
+                      </p>
+                      <h4 className="card-title">Connie Robertson at Google</h4>
+                    </div>
+                  </div>
+                </div>
+                <div className="carousel-item">
+                  <div className="card text-center bg-transparent m-5">
+                    <img
+                      className="card-img-top"
+                      src={quote}
+                      alt="Card cap"
+                      width="100"
+                      height="100"
+                    />
+                    <div className="card-body">
+                      <p className="card-text">
+                        Est tation latine aliquip id, mea ad tale illud
+                        definitiones. Periculis omittantur reformidans
+                        necessitatibus eum ad, pro eripuit minimum comprehensam
+                        ne, usu cu stet prompta.
+                      </p>
+                      <h4 className="card-title">Connie Robertson at Google</h4>
+                    </div>
+                  </div>
+                </div>
+                <div className="carousel-item">
+                  <div className="card text-center bg-transparent m-5">
+                    <img
+                      className="card-img-top"
+                      src={quote}
+                      alt="Card cap"
+                      width="100"
+                      height="100"
+                    />
+                    <div className="card-body">
+                      <p className="card-text">
+                        Est tation latine aliquip id, mea ad tale illud
+                        definitiones. Periculis omittantur reformidans
+                        necessitatibus eum ad, pro eripuit minimum comprehensam
+                        ne, usu cu stet prompta.
+                      </p>
+                      <h4 className="card-title">Connie Robertson at Google</h4>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        {/* </Responsive.Desktop> */}
+
+        {/* <Responsive.Mobile>
           <div id="header-mobile">
             <div className="row container justify-content-center pingo-landing-page">
               <img
@@ -525,7 +612,7 @@ export default function Pingo(props) {
               </div>
             </div>
           </div>
-        </Responsive.Mobile>
+        </Responsive.Mobile> */}
 
         <div id="pingo-somewhere">
           <div className="col-md-8 justify-content-left text pt-5">
