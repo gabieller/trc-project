@@ -2,8 +2,7 @@ import React from "react"
 import Layout from "../components/Layout"
 import Demo from "../components/Demo"
 import Arrow from "../components/Arrow"
-import DownloadButtons from "../components/DownloadButtons"
-import Responsive from "../components/Responsive"
+// import Responsive from "../components/Responsive"
 import Button from "@material-ui/core/Button"
 
 import map from "../images/map.png"
@@ -12,9 +11,13 @@ import pingosolutions from "../images/pingosolutions.png"
 import add_circle from "../images/add_circle.svg"
 import equal_circle from "../images/equal_circle.svg"
 import mockup from "../images/mockup.png"
+import googleplaybadge from "../images/google-play-badge.png"
+import appstorebadge from "../images/app-store-badge.svg"
 
 import "../styles/solutions.css"
 
+// TODO: fix image resize on large screens at how it works card
+// TODO: fix text size at lines cards
 export default function Solutions(props) {
   return (
     <Layout {...props}>
@@ -65,91 +68,86 @@ export default function Solutions(props) {
                   </div>
                 </div>
               </div>
-              {/* <div className="col-md-4 pb-3 pb-md-0 pr-md-3">
-                <div className="card border border-dark mx-0">
-                  <div className="card-body">
-                    <h4 className="card-title w-75 text-left">
-                      Demand-responsive transit
-                    </h4>
-                    <div className="card-text">
-                      Many transit authorities worldwide experimenting with on
-                      demand buses.
-                    </div>
-                  </div>
-                </div>
-              </div>
-
-              <div className="col-md-4 pb-3 pb-md-0 pr-md-3">
-                <div className="card border border-dark mx-0">
-                  <div className="card-body">
-                    <h4 className="card-titl w-75 text-left">
-                      Ridesharing companies
-                    </h4>
-                    <div className="card-text ">
-                      It’s not easy to build an efficient pooling product.
-                      Reduce engineering costs.
-                    </div>
-                  </div>
-                </div>
-              </div>
-
-              <div className="col-md-4 pb-3 pb-md-0 pr-md-3">
-                <div className="card border border-dark mx-0">
-                  <div className="card-body">
-                    <h4 className="card-title text-left">
-                      Transit & para-transit (WAV) authorities
-                    </h4>
-                    <div className="card-text">
-                      Wait times are typically far higher for those who needs
-                      WAVs.
-                    </div>
-                  </div>
-                </div>
-              </div> */}
             </div>
           </div>
         </div>
 
-        <Responsive.Desktop>
-          <div id="solutions-how-it-works" className="border border-dark">
-            <div className="row ">
-              <div className="row col-md-7 flex-column">
-                {/* <div className="container col-md-4"> */}
-                <h2 className="col-md-10">How it works</h2>
-                {/* </div> */}
-                {/* <div className="container col-md-9 "> */}
-                <div className="col-md-8">
+        {/* <Responsive.Desktop> */}
+
+        <div className="row border-top border-bottom border-dark bg-white">
+          <div className="row no-gutters">
+            <div className="col-md-7 no-gutters pt-5">
+              <div className="row col-8">
+                <h2>How it works</h2>
+                <div>
                   We dynamically routes shared rides in real time through a
                   fleet management dashboard, a rider app and a driver app, all
                   powered by MIT-born technology. It’s easy to use and built for
                   speed at city-wide scale.
-                  {/* </div> */}
                 </div>
               </div>
+            </div>
 
-              <div className="col-md-5 p-0">
-                <img src={map} alt="Map" className="img-fluid w-100" />
+            <div className="col-md-5">
+              <img
+                src={map}
+                className="map-image"
+                alt="Map"
+                className="img-fluid"
+                width="100%"
+              />
+            </div>
+          </div>
+        </div>
+
+
+        <div className="row">
+          <div className="col-md-5 p-0  col-left d-none d-md-block">
+            <img
+              src={solutionslinesimage}
+              className="border-bottom border-dark"
+              alt="Solutions"
+              width="100%"
+              height="100%"
+            />
+          </div>
+
+          <Arrow />
+
+          <div className="col-md-5 border-bottom border-dark bg-white col-right">
+            <div className="row solutions">
+              <div className="col-10">
+                <div className="col-4">
+                  <h4 className="pb-3 font-weight-bold">
+                    1. We partner with you
+                  </h4>
+                </div>
+                <div className="col-5 pb-5">
+                  We work with you to build solutions that are tailor-made to
+                  your transit needs.
+                </div>
+                <div className="col-4">
+                  <h4 className="pb-3 font-weight-bold">
+                    2. Our routing engine gets to work
+                  </h4>
+                </div>
+                <div className="col-5 pb-5">
+                  You get access to tools and technology that calculate the most
+                  optimal routes for your vehiclís and rides in real time.
+                </div>
+                <div className="col-4">
+                  <h4 className="pb-3 font-weight-bold">
+                    3. Less stress, more time and money saved
+                  </h4>
+                </div>
+                <div className="col-5 pb-5">
+                  Riders enjoy lower wait times and more reliable service.
+                </div>
               </div>
             </div>
           </div>
 
-          <div id="solutions-lines">
-            <div className="row">
-              <div className="col-md-5 p-0  col-right">
-                <img
-                  src={solutionslinesimage}
-                  className="border-bottom border-dark"
-                  alt="Solutions"
-                  width="100%"
-                  height="100%"
-                />
-              </div>
-
-              <Arrow />
-
-              <div className="col-md-5 border-bottom border-dark bg-white col-left">
-                <div className="row container">
-                  <div className="card">
+          {/* <div className="card">
                     <div className="card-body">
                       <h4 className="card-title font-weight-bold">
                         1. We partner with you
@@ -159,8 +157,8 @@ export default function Solutions(props) {
                         to your transit needs.
                       </p>
                     </div>
-                  </div>
-                  <div className="card">
+                  </div> */}
+          {/* <div className="card">
                     <div className="card-body">
                       <h4 className="card-title font-weight-bold">
                         2. Our routing engine gets to work
@@ -171,8 +169,8 @@ export default function Solutions(props) {
                         real time.
                       </p>
                     </div>
-                  </div>
-                  <div className="card">
+                  </div> */}
+          {/* <div className="card">
                     <div className="card-body">
                       <h4 className="card-title font-weight-bold">
                         3. Less stress, more time and money saved
@@ -181,61 +179,41 @@ export default function Solutions(props) {
                         Riders enjoy lower wait times and more reliable service.
                       </p>
                     </div>
-                  </div>
-                </div>
-              </div>
-
-              {/* <div className="row container">
-                    <h4 className="pb-3 font-weight-bold">
-                      1. We partner with you
-                    </h4>
-                    <div>
-                      We work with you to build solutions that are tailor-made
-                      to your transit needs.
-                    </div>
-                    <h4 className="pb-3 font-weight-bold">
-                      2. Our routing engine gets to work
-                    </h4>
-                    You get access to tools and technology that calculate the
-                    most optimal routes for your vehiclís and rides in real
-                    time.
-                    <h4 className="pb-3 font-weight-bold">
-                      3. Less stress, more time and money saved
-                    </h4>
-                    Riders enjoy lower wait times and more reliable service.
                   </div> */}
-            </div>
-          </div>
+        </div>
+        {/* </div> */}
 
-          <div id="solutions-products">
-            <div className="d-flex flex-row container pt-5 justify-content-center">
-              <div className="col-sm-3 text-center">
-                Exponentially richer possibility set
-              </div>
-              <div className="col-sm-1 text-center">
-                <img src={add_circle} alt="Add Icon" />
-              </div>
-              <div className="col-sm-3 text-center">Global optimization</div>
-              <div className="col-sm-1 text-center">
-                <img src={add_circle} alt="Add Icon" />
-              </div>
-              <div className="col-sm-3 text-center">
-                Rebalancing for future performance
-              </div>
+        <div className="section">
+          <div className="container justify-content-center">
+          <div className="row">
+            <div className="col-md-3 text-center pb-2">
+              Exponentially richer possibility set
             </div>
-            <div className="row container justify-content-center pt-4 equal-icon">
-              <img src={equal_circle} alt="Equal Icon" />
+            <div className="col-md-1 text-center pb-2">
+              <img src={add_circle} alt="Add Icon" />
             </div>
-            <div>
-              <h2 className="text-center pt-5">
-                A revolution in demand-response transportation
-              </h2>
+            <div className="col-md-3 text-center pb-2">Global optimization</div>
+            <div className="col-md-1 text-center pb-2">
+              <img src={add_circle} alt="Add Icon" />
             </div>
-            <div className="row container pt-5 justify-content-center mockup">
-              <img src={mockup} alt="Mockup" width="100%" height="100%" />
+            <div className="col-md-3 text-center pb-2">
+              Rebalancing for future performance
             </div>
           </div>
-        </Responsive.Desktop>
+          <div className="row justify-content-center pt-2 equal-icon">
+            <img src={equal_circle} alt="Equal Icon" />
+          </div>
+          <div>
+            <h2 className="text-center pt-5">
+              A revolution in demand-response transportation
+            </h2>
+          </div>
+          <div className="row pt-5 justify-content-center mockup">
+            <img src={mockup} alt="Mockup" width="100%" height="100%" />
+          </div>
+        </div>
+        </div>
+        {/* </Responsive.Desktop> */}
 
         {/* <Responsive.Mobile>
           <div id="solutions-how-it-works">
@@ -277,65 +255,58 @@ export default function Solutions(props) {
               </div>
             </div>
           </div>
-          <div id="solutions-products">
-            <div className="d-flex flex-column container text-center pt-5">
-              <h4 className="col-md-2">Exponentially richer possibility set</h4>
-              <div className="col-md-3 py-3">
-                <img src={add_circle} alt="Add Icon" />
-              </div>
-              <h4 className="col-md-2">Global optimization</h4>
-              <div className="col-md-3 py-3">
-                <img src={add_circle} alt="Add Icon" />
-              </div>
-              <h4 className="col-md-2">Rebalancing for future performance</h4>
             </div>
-            <div className="row container justify-content-center equal-icon-mobile py-3">
-              <img src={equal_circle} alt="Equal Icon" />
-            </div>
-            <div className="row container px-5">
-              <h3 className="text-center">
-                A revolution in demand-response transportation
-              </h3>
-            </div>
-            <div className="row pt-5 justify-content-center mockup px-0">
-              <img src={mockup} alt="Mockup" width="100%" height="100%" />
-            </div>
-          </div>
         </Responsive.Mobile> */}
 
-        <div id="pingo-solutions">
-          <div className="row container py-5 px-5">
-            <div className="row border border-dark bg-white">
-              <div className="col-sm-5 px-0">
+        <div className="section">
+          <div className="container">
+            <div className="row border border-dark bg-white no-gutters">
+              <div className="col-md-5">
                 <img
                   src={pingosolutions}
                   alt="Pingo Solutions"
                   width="100%"
-                  height="100%"
                 />
               </div>
-              <div className="col-sm-7 md-py-5 py-0">
-                <div className="row container justify-content-left">
-                  <h3 className="font-weight-bold pt-5">Pingo</h3>
+              <div className="col-md-7 justify-content-left p-5">
+                <div className="container">
+                  <h3 className="font-weight-bold pt-md-5">Pingo</h3>
                 </div>
-                <div className="row container justify-content-left">
+                <div className="container">
                   <h3>Transit that moves with you</h3>
                 </div>
-                <div className="row container pr-3 pt-3">
+                <div className="container pt-3">
                   Et has minim elitr intellegat. Mea aeterno eleifend antiopam
                   ad, nam no suscipit quaerendum.
-                  <div className="action-buttons px-0 py-3 col-sm-4 col-sm-12">
+                  <div className="action-buttons py-4">
                     <Button className="btn-black" variant="contained">
                       Primary Action
                     </Button>
                   </div>
                 </div>
-                <DownloadButtons />
+
+                <div className="container px-1">
+                  <button className="btn btn-link px-0">
+                    <img
+                      src={googleplaybadge}
+                      alt="Google Play Download"
+                      width="135"
+                      height="60"
+                    />
+                  </button>
+                  <button className="btn btn-link pl-2">
+                    <img
+                      src={appstorebadge}
+                      alt="App Store Download"
+                      width="120"
+                      height="50"
+                    />
+                  </button>
+              </div>
               </div>
             </div>
           </div>
         </div>
-        {/* </div> */}
         <Demo />
       </div>
     </Layout>
