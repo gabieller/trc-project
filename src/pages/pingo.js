@@ -28,7 +28,7 @@ const navbarItems = [
 //TODO: fix header to mobile and desktop
 export default function Pingo(props) {
   const selected = navbarItems.findIndex(
-    ({ url }) => url === props.location?.hash.replaceAll("#", "")
+    ({ url }) => url === props.location?.hash?.replace("#", "")
   )
 
   const canvasRef = useRef()
