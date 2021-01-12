@@ -7,17 +7,15 @@
   min-height: 35rem;
 }
 
-/* #solutions-page .card {
-    border: 1px;
+#solutions-page .card {
     border-radius: 0;
-    background-color: #ffffff;
     font-family: "Mulish";
     font-size: 14px;
     color: #373f41;
     line-height: 20px;
     letter-spacing: 0.14px;
     margin: 0px 10px 0 10px;
-  } */
+  }
 
 #solutions-how-it-works .subject {
   padding-top: 10vw;
@@ -33,4 +31,8 @@
   height: 3px;
   background-color: #505050;
   margin-bottom: 1rem;
+}
+
+.btn-action {
+  min-width: 183px;
 }

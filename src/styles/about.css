@@ -11,6 +11,10 @@
   background-color: #f5f4f5;
 }
 
+#about > .text-build  {
+  font-size: 1.5rem;
+}
+
 .newsletter img {
   -webkit-filter: grayscale(100%);
   filter: grayscale(100%);

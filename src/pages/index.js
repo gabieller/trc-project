@@ -25,9 +25,9 @@ export default function Home(props) {
               <CanvasAnimation />
             </Suspense>
           </div>
-          <div className="container title-content text-left ">
-            <div className="row no-gutters justify-content-center">
-              <div className="col-md-8 no-gutters">
+          <div className="container title-content text-left g-0">
+            <div className="row justify-content-center g-0">
+              <div className="col-md-8">
                 <div className="col-12">
                   <h1>
                     We partner with cities to power the future of public transit
@@ -40,7 +40,7 @@ export default function Home(props) {
                 </div>
                 <div className="col-12 col-md-8">
                   <div className=" justify-content-center pt-md-3 ">
-                    <div className="action-buttons row no-gutters pl-3">
+                    <div className="action-buttons row g-0 ">
                       <div className="action-buttons pr-3">
                         <Button
                           className="btn-black btn-action"
@@ -68,17 +68,20 @@ export default function Home(props) {
             <div className="row no-gutters">
               <div className="col-md-4 pb-3 pb-md-0 pr-md-3">
                 <div className="card border border-dark mx-0">
-                  <div className="card-body">
-                    <h4 className="card-title text-left font-weight-bold">
+                  <div className="card-body px-0">
+                    <h4 className="card-title text-left font-weight-bold px-3">
                       Problem that customers face 1
                     </h4>
-                    <p className="card-text ">
+                    <p className="card-text px-3 ">
                       Many transit authorities worldwide experimenting with on
                       demand buses.
                     </p>
                     <hr />
                     <div className="text-center">
-                      <a className="text-uppercase pt-3" href="/">
+                      <a
+                        className="text-uppercase pt-3 text-decoration-none"
+                        href="/"
+                      >
                         Discover
                       </a>
                     </div>
@@ -88,18 +91,21 @@ export default function Home(props) {
 
               <div className="col-md-4 pb-3 pb-md-0 pr-md-3">
                 <div className="card border border-dark  mx-0">
-                  <div className="card-body">
-                    <h4 className="card-title text-left font-weight-bold">
+                  <div className="card-body px-0">
+                    <h4 className="card-title text-left font-weight-bold px-3">
                       Problem that customers face 2
                     </h4>
-                    <div className="card-text ">
+                    <div className="card-text px-3 ">
                       Many transit authorities worldwide experimenting with on
                       demand buses.
                     </div>
                     <hr />
 
                     <div className="text-center">
-                      <a className="text-uppercase pt-3" href="/">
+                      <a
+                        className="text-uppercase pt-3  text-decoration-none"
+                        href="/"
+                      >
                         Discover
                       </a>
                     </div>
@@ -109,17 +115,20 @@ export default function Home(props) {
 
               <div className="col-md-4 pb-3 pb-md-0 pr-md-3">
                 <div className="card border border-dark  mx-0">
-                  <div className="card-body">
-                    <h4 className="card-title  px-0 text-left font-weight-bold">
+                  <div className="card-body px-0">
+                    <h4 className="card-title text-left font-weight-bold px-3">
                       Problem that customers face 3
                     </h4>
-                    <div className="card-text">
+                    <div className="card-text px-3">
                       Many transit authorities worldwide experimenting with on
                       demand buses.
                     </div>
                     <hr />
                     <div className="text-center">
-                      <a className="text-uppercase pt-3 px-0" href="/">
+                      <a
+                        className="text-uppercase pt-3 px-0 text-decoration-none"
+                        href="/"
+                      >
                         Discover
                       </a>
                     </div>

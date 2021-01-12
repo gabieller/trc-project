@@ -5,7 +5,7 @@ export default function Demo() {
   return (
     <div id="demo-component" className="section bg-white">
       <div className="container">
-        <div className="row no-gutters">
+        <div className="row g-0">
           <div className="col-md-12">
             <h2>
               <small>Are you curious to know more?</small>
@@ -15,7 +15,7 @@ export default function Demo() {
             </h2>
           </div>
         </div>
-        <div className="row no-gutters">
+        <div className="row g-0">
           <div className="col-11 col-md-6">
             Et has minim elitr intellegat. Mea aeterno eleifend antiopam ad, nam
             no suscipit quaerendum. At nam minimum ponderum. Est audiam animal
@@ -23,21 +23,29 @@ export default function Demo() {
           </div>
         </div>
 
-        <div className="row no-gutters">
-          <div className="col-md-8 pt-4">
-            <div className="action-buttons row d-inline-flex">
-              <div className="action-buttons pr-3">
-                <Button className="btn-black btn-action" variant="contained">
-                  Primary Action
-                </Button>
+        <div className="row g-0">
+          <div className="col-12 col-md-4 pt-4">
+            <div
+              className="row action-buttons g-0 d-md-inline-flex
+ justify-content-between"
+            >
+              <div className="col-12 col-md-6 pb-4 pb-md-0">
+                <div className="action-buttons">
+                  <Button className="btn-black btn-action" variant="contained">
+                    Contact Sales
+                  </Button>
+                </div>
               </div>
-              <div className="action-buttons pr-3">
-                <Button
-                  className="btn bg-transparent btn-action rounded-0"
-                  variant="contained"
-                >
-                  Secondary Action
-                </Button>
+
+              <div className="col-12 col-md-6">
+                <div className="action-buttons">
+                  <Button
+                    className="btn bg-white rounded-0 btn-action"
+                    variant="contained"
+                  >
+                    Secondary Action
+                  </Button>
+                </div>
               </div>
             </div>
           </div>

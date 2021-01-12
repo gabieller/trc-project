@@ -17,14 +17,14 @@ export default function About(props) {
       <div id="about" className="container-fluid">
         <div className="section title">
           <div className="container title-content">
-            <div className="row no-gutters">
+            <div className="row">
               <div className="col-12 col-md-8">
                 <h1>
                   A world-class team focused on solving transportation problems
                 </h1>
               </div>
             </div>
-            <div className="row no-gutters justify-content-left">
+            <div className="row justify-content-left">
               <div className="col-12 col-md-6">
                 We are a team of builders from technology, transportation,
                 academia and public policy with a passion for helping cities
@@ -33,108 +33,102 @@ export default function About(props) {
             </div>
           </div>
         </div>
-        <div className="section team-card">
-        {/* <div className="container"> */}
-          <div className="row border-top border-dark no-gutters">
-            <div className="col-12 col-md-5 border border-top-0 border-dark col-left ">
-              <CardTeam
-                imgsize="50"
-                memberpicture={menno}
-                linkedinurl={"https://www.linkedin.com/in/mennovanderzee/"}
-                name={"Menno van der Zee"}
-                position={"Co-Funder"}
-                description={
-                  "Specialized in mobility-on-demand systems for high capacity vehicles."
-                }
-                companylogo={uber}
-              />
-              <hr />
+        <div className="team-card">
+          <div className="container-fluid container-xxl">
+            <div className="row border-top border-dark">
+              <div className="col-12 col-md-5 border border-top-0 border-dark col-left g-0">
+                <CardTeam
+                  imgsize="50"
+                  memberpicture={menno}
+                  linkedinurl={"https://www.linkedin.com/in/mennovanderzee/"}
+                  name={"Menno van der Zee"}
+                  position={"Co-Funder"}
+                  description={
+                    "Specialized in mobility-on-demand systems for high capacity vehicles."
+                  }
+                  companylogo={uber}
+                />
+                <hr />
 
-              <CardTeam
-                imgsize="50"
-                memberpicture={menno}
-                linkedinurl={"https://www.linkedin.com/in/mennovanderzee/"}
-                name={"Menno van der Zee"}
-                position={"Co-Funder"}
-                description={
-                  "Specialized in mobility-on-demand systems for high capacity vehicles."
-                }
-                companylogo={uber}
-              />
-              <hr />
+                <CardTeam
+                  imgsize="50"
+                  memberpicture={menno}
+                  linkedinurl={"https://www.linkedin.com/in/mennovanderzee/"}
+                  name={"Menno van der Zee"}
+                  position={"Co-Funder"}
+                  description={
+                    "Specialized in mobility-on-demand systems for high capacity vehicles."
+                  }
+                  companylogo={uber}
+                />
+                <hr />
 
-              <CardTeam
-                imgsize="50"
-                memberpicture={menno}
-                linkedinurl={"https://www.linkedin.com/in/mennovanderzee/"}
-                name={"Menno van der Zee"}
-                position={"Co-Funder"}
-                description={
-                  "Specialized in mobility-on-demand systems for high capacity vehicles."
-                }
-                companylogo={uber}
-              />
-            </div>
+                <CardTeam
+                  imgsize="50"
+                  memberpicture={menno}
+                  linkedinurl={"https://www.linkedin.com/in/mennovanderzee/"}
+                  name={"Menno van der Zee"}
+                  position={"Co-Funder"}
+                  description={
+                    "Specialized in mobility-on-demand systems for high capacity vehicles."
+                  }
+                  companylogo={uber}
+                />
+              </div>
 
-            <Arrow />
+              <Arrow />
 
-            <div className="col-12 col-md-5 border border-top-0 border-dark col-right">
-              <CardTeam
-                imgsize="50"
-                memberpicture={menno}
-                linkedinurl={"https://www.linkedin.com/in/mennovanderzee/"}
-                name={"Menno van der Zee"}
-                position={"Co-Funder"}
-                description={
-                  "Specialized in mobility-on-demand systems for high capacity vehicles."
-                }
-                companylogo={uber}
-              />
-              <hr />
+              <div className="col-12 col-md-5 border border-top-0 border-dark col-right g-0">
+                <CardTeam
+                  imgsize="50"
+                  memberpicture={menno}
+                  linkedinurl={"https://www.linkedin.com/in/mennovanderzee/"}
+                  name={"Menno van der Zee"}
+                  position={"Co-Funder"}
+                  description={
+                    "Specialized in mobility-on-demand systems for high capacity vehicles."
+                  }
+                  companylogo={uber}
+                />
+                <hr />
 
-              <CardTeam
-                imgsize="50"
-                memberpicture={menno}
-                linkedinurl={"https://www.linkedin.com/in/mennovanderzee/"}
-                name={"Menno van der Zee"}
-                position={"Co-Funder"}
-                description={
-                  "Specialized in mobility-on-demand systems for high capacity vehicles."
-                }
-                companylogo={uber}
-              />
-              <hr />
+                <CardTeam
+                  imgsize="50"
+                  memberpicture={menno}
+                  linkedinurl={"https://www.linkedin.com/in/mennovanderzee/"}
+                  name={"Menno van der Zee"}
+                  position={"Co-Funder"}
+                  description={
+                    "Specialized in mobility-on-demand systems for high capacity vehicles."
+                  }
+                  companylogo={uber}
+                />
+                <hr />
 
-              <CardTeam
-                imgsize="50"
-                memberpicture={menno}
-                linkedinurl={"https://www.linkedin.com/in/mennovanderzee/"}
-                name={"Menno van der Zee"}
-                position={"Co-Funder"}
-                description={
-                  "Specialized in mobility-on-demand systems for high capacity vehicles."
-                }
-                companylogo={uber}
-              />
-            </div>
-          </div>
-          {/* </div> */}
-        </div>
-        <div className="section">
-          <div className="container ">
-            <div className="row justify-content-center no-gutters">
-              <div className="col-10 col-md-6 text-center">
-                We build smart, sustainable transit solutions that are more
-                reliable and accessible than other mobility options. Our
-                MIT-born routing technology has been hailed as a striking
-                example of the potential around ridesharing.
+                <CardTeam
+                  imgsize="50"
+                  memberpicture={menno}
+                  linkedinurl={"https://www.linkedin.com/in/mennovanderzee/"}
+                  name={"Menno van der Zee"}
+                  position={"Co-Funder"}
+                  description={
+                    "Specialized in mobility-on-demand systems for high capacity vehicles."
+                  }
+                  companylogo={uber}
+                />
               </div>
             </div>
           </div>
         </div>
+        <div className="row col-10 col-md-6 text-center g-0 pt-5 text-build">
+          We build smart, sustainable transit solutions that are more reliable
+          and accessible than other mobility options. Our MIT-born routing
+          technology has been hailed as a striking example of the potential
+          around ridesharing.
+        </div>
         <div className="section newsletter">
-          <div className="container">
-            <div className="row  border border-dark no-gutters bg-white">
+          <div className="container px-4">
+            <div className="row  border border-dark bg-white g-0">
               <div className="col-12 col-md-5">
                 <img
                   src={newsletterimage}
@@ -143,7 +137,7 @@ export default function About(props) {
                   width="100%"
                 />
               </div>
-              <div className="col-12 col-md-7">
+              <div className="col-12 col-md-7 d-flex align-items-center pt-5 pt-md-0">
                 <Newsletter />
               </div>
             </div>
@@ -154,4 +148,3 @@ export default function About(props) {
     </Layout>
   )
 }
-

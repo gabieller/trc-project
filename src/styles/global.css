@@ -18,13 +18,18 @@
   outline-color: #a7a7a7;
 }
 
+#demo-component .btn-action {
+  min-width: 183px;
+}
+
 .section {
-  padding: min(6vh, 80px) 0;
+  padding: min(15vh, 110px) 0;
 }
 
 .main-container {
   padding-top: 100px;
 }
+
 
 body {
   font-family: "Roboto";
@@ -32,7 +37,7 @@ body {
 }
 
 hr {
-  border-top: 1px solid;
+ opacity: 1;
 }
 
 h1 {

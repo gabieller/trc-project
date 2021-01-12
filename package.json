@@ -17,8 +17,9 @@
   "dependencies": {
     "@formspree/react": "^2.2.3",
     "@material-ui/core": "^4.11.1",
+    "@popperjs/core": "^2.6.0",
     "animejs": "^3.2.1",
-    "bootstrap": "^4.5.3",
+    "bootstrap": "^5.0.0-beta1",
     "gatsby": "^2.25.2",
     "gatsby-plugin-google-fonts": "^1.0.1",
     "gatsby-plugin-mailchimp": "^5.2.2",

@@ -327,12 +327,12 @@ export default function Pingo(props) {
         </Responsive.Mobile>
 
         <div className="section quotes bg-white ">
-            <div className="row no-gutters">
-              <div className="col-md-3 wrap-illustration ">
-                <img src={car} alt="Yellow Car" className="quotes-illustration" />
-              </div>
+          <div className="row no-gutters">
+            <div className="col-md-3 wrap-illustration ">
+              <img src={car} alt="Yellow Car" className="quotes-illustration" />
+            </div>
 
-              <div className="col-md-7 text-center">
+            <div className="col-md-7 text-center">
               <div className="row col-md-6 justify-content-center">
                 <div
                   id="carouselExampleIndicators"
@@ -423,8 +423,8 @@ export default function Pingo(props) {
                     </div>
                   </div>
                 </div>
-                </div>
               </div>
+            </div>
           </div>
         </div>
         {/* </Responsive.Desktop> */}
