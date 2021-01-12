@@ -16,11 +16,21 @@ import pingo_register2 from "../images/pingo_register2.svg"
 import pingo_ride from "../images/pingo_ride.svg"
 import pingo_ride2 from "../images/pingo_ride2.svg"
 import womanillustration from "../images/woman-illustration.png"
-
 import "../styles/pingo.css"
+
+const navbarItems = [
+  { name: "ABOUT", url: "pingo-content" },
+  { name: "WHO BUILD", url: "pingo-about" },
+  { name: "WHERE YOU FIND", url: "pingo-somewhere" },
+  { name: "GET PINGO", url: "download-pingo" },
+]
 
 //TODO: fix header to mobile and desktop
 export default function Pingo(props) {
+  const selected = navbarItems.findIndex(
+    ({ url }) => url === props.location?.hash.replaceAll("#", "")
+  )
+
   const canvasRef = useRef()
   return (
     <LayoutPingo {...props}>
@@ -39,6 +49,7 @@ export default function Pingo(props) {
           </div>
           <div
             className="container"
+            role="application"
             onMouseDown={e => {
               e.stopPropagation()
               canvasRef.current.triggerAnimation(e)
@@ -53,13 +64,13 @@ export default function Pingo(props) {
                 height="400"
               />
             </div>
-            <div onMouseDown={() => {}}>
-              <NavBarPingo />
+            <div>
+              <NavBarPingo tabs={navbarItems} selected={selected} />
             </div>
           </div>
         </div>
 
-        <div id="pingo-content" className="row container">
+        <div id={navbarItems[0].url} className="row container">
           <div className="col-sm-10">
             <div className="pingo-title">
               <h2>The whole cityin the palm of your hand.</h2>
@@ -83,7 +94,7 @@ export default function Pingo(props) {
         </div>
 
         <div
-          id="pingo-about"
+          id={navbarItems[1].url}
           className="row container justify-content-left pingo-about-product"
         >
           <div className="row container justify-content-center">
@@ -640,7 +651,7 @@ export default function Pingo(props) {
           </div>
         </Responsive.Mobile> */}
 
-        <div id="pingo-somewhere">
+        <div id={navbarItems[2].url}>
           <div className="col-md-8 justify-content-left text pt-5">
             <div className="title">
               <h3 className="font-weight-bold">Pingo somewhere!</h3>
@@ -682,7 +693,7 @@ export default function Pingo(props) {
           </div>
         </div>
 
-        <div id="download-pingo">
+        <div id={navbarItems[3].url}>
           <div className="col-md-6 justify-content-left text pt-5">
             <div className="title">
               <h2>Are you curious to know more? Get Pingo sentence</h2>
