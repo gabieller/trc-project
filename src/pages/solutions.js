@@ -180,9 +180,9 @@ export default function Solutions(props) {
             </div>
 
             <div className="row justify-content-center pt-4 equal-icon">
-            <div className="col-md-1 text-center pb-2">
-              <img src={equal_circle} alt="Equal Icon" />
-            </div>
+              <div className="col-md-1 text-center pb-2">
+                <img src={equal_circle} alt="Equal Icon" />
+              </div>
             </div>
 
             <div>
