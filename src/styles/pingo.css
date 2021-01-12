@@ -33,10 +33,6 @@
   padding-bottom: 5vw;
 }
 
-img {
-  image-orientation: 90deg flip;
-}
-
 #pingo-quotes .carousel-indicators li {
   background-color: #c3cbcd;
   width: 10px;

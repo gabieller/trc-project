@@ -662,14 +662,6 @@ export default function Pingo(props) {
               nam no suscipit quaerendum. At nam minimum ponderum. Est audiam
               animal molestiae te. Ex duo eripuit mentitum.
             </div>
-            <div className="col-md-6 find-pingo-illustration">
-              <img
-                src={womanillustration}
-                alt="Woman Standing"
-                width="100%"
-                height="100%"
-              />
-            </div>
           </div>
 
           <div className="col-md-4 find-pingo pt-5">

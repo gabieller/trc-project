@@ -12,7 +12,7 @@ export default function NavBar({ tabs, selected }) {
     transform: `translate3d(${inHover * 100}%, 0, 0)`,
   }
   return (
-    <ul className="row navbar-pingo nav d-flex ">
+    <ul className="navbar-pingo nav d-flex ">
       {[1, 2, 3].map(i => (
         <div key={i} className="underline" style={underlineStyle} />
       ))}
