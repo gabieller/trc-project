@@ -30,11 +30,8 @@
   padding-bottom: 5vw;
 }
 
-#pingo-quotes .card {
-  border: none;
-}
 
-#pingo-quotes  img {
+ img {
   image-orientation: 90deg flip;
 }
 
@@ -44,10 +41,16 @@
   height: 10px;
   border-radius: 100%;
 }
-#pingo-quotes .quotes-illustration {
-  position: static;
-  /* top: 12vw; */
-  /* right: 16vw; */
+
+.wrap-illustration {
+  position: relative;
+}
+
+.quotes-illustration {
+  position: absolute;
+  /* top:30%; */
+  bottom: -110px;
+  left: -250px;
 }
 
 #pingo-somewhere {

@@ -34,8 +34,9 @@ export default function About(props) {
           </div>
         </div>
         <div className="section team-card">
+        {/* <div className="container"> */}
           <div className="row border-top border-dark no-gutters">
-            <div className="col-12 col-md-5 border-bottom border-dark col-left ">
+            <div className="col-12 col-md-5 border border-top-0 border-dark col-left ">
               <CardTeam
                 imgsize="50"
                 memberpicture={menno}
@@ -77,7 +78,7 @@ export default function About(props) {
 
             <Arrow />
 
-            <div className="col-12 col-md-5 border-bottom border-dark col-right">
+            <div className="col-12 col-md-5 border border-top-0 border-dark col-right">
               <CardTeam
                 imgsize="50"
                 memberpicture={menno}
@@ -117,6 +118,7 @@ export default function About(props) {
               />
             </div>
           </div>
+          {/* </div> */}
         </div>
         <div className="section">
           <div className="container ">
@@ -152,3 +154,4 @@ export default function About(props) {
     </Layout>
   )
 }
+

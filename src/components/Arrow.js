@@ -36,7 +36,7 @@ export default function Arrow({ className }) {
   const arrowTip = `line ${showArrow ? "visible" : "invisible"}`
   return (
     <div
-      className="rolling-arrow col-md-2 border border-dark border-top-0 border-bottom-0 justify-content-center d-flex"
+      className="rolling-arrow col-md-2  justify-content-center d-flex"
       ref={selectedDiv}
     >
       <div
