@@ -4,7 +4,9 @@ import { Link } from "gatsby"
 import "../styles/navbar-pingo.css"
 
 export default function NavBar({ tabs, selected }) {
-  const [inHover, setHover] = useState(selected)
+  const [inHover, setHover] = useState(
+    selected >= 0 && selected < tabs.length ? selected : 0
+  )
   const underlineStyle = {
     width: `${100 / tabs.length}%`,
     transform: `translate3d(${inHover * 100}%, 0, 0)`,
