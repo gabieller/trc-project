@@ -10,8 +10,7 @@
 }
 
 #pingo-header .pingo-landing-page {
-  padding-top: 15vw;
-  padding-bottom: 15vw;
+  padding: min(15vw, 250px) 0;
   position: relative;
 }
 
