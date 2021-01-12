@@ -1,4 +1,4 @@
-import React, { useRef } from "react"
+import React, { useRef, useImperativeHandle, forwardRef } from "react"
 import anime from "animejs"
 
 const colorPicker = (function () {
@@ -17,10 +17,8 @@ const colorPicker = (function () {
   }
 })()
 const resizeCanvas = function (canvas, cW, cH) {
-  const ctx = canvas.getContext("2d")
-  canvas.width = cW * devicePixelRatio
-  canvas.height = cH * devicePixelRatio
-  ctx.scale(devicePixelRatio, devicePixelRatio)
+  canvas.width = cW
+  canvas.height = cH
 }
 function calcPageFillRadius(x, y, cW, cH) {
   var l = Math.max(x - 0, cW - x)
@@ -65,12 +63,13 @@ function removeAnimation(animation) {
 let bgColor = "#8ec999"
 const animations = []
 
-export default function CanvasPingo() {
+const CanvasPingo = forwardRef((props, selfRef) => {
   const ref = useRef()
   React.useEffect(() => {
     const ctx = ref.current.getContext("2d")
     const cW = ref.current.clientWidth
     const cH = ref.current.clientHeight
+
     anime({
       duration: Infinity,
       update: () => {
@@ -83,7 +82,14 @@ export default function CanvasPingo() {
     })
 
     resizeCanvas(ref.current, cW, cH)
-    window.addEventListener("resize", () => resizeCanvas(ref.current, cW, cH))
+
+    var ro = new ResizeObserver(entries => {
+      entries.forEach(({ contentRect }) =>
+        resizeCanvas(ref.current, contentRect.width, contentRect.height)
+      )
+    })
+
+    ro.observe(ref.current)
 
     setTimeout(() => {
       handleEvent({
@@ -92,6 +98,12 @@ export default function CanvasPingo() {
       })
     }, anime.random(200, 900))
   }, [])
+
+  useImperativeHandle(selfRef, () => ({
+    triggerAnimation: e => {
+      handleEvent(e)
+    },
+  }))
 
   const handleEvent = e => {
     if (e.touches) {
@@ -172,11 +184,12 @@ export default function CanvasPingo() {
       style={{
         display: "block",
         width: "100%",
-        height: "100%",
       }}
       ref={ref}
       onMouseDown={handleEvent}
       onTouchStart={handleEvent}
     />
   )
-}
+})
+
+export default CanvasPingo

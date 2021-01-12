@@ -13,15 +13,9 @@ export default function Home(props) {
     <Layout {...props}>
       <div id="index" className="container-fluid">
         <div className="section title justify-content-left">
-          <div
-            style={{
-              position: "absolute",
-              width: "100%",
-              height: "100%",
-              display: "flex",
-            }}
-          >
-            <Suspense fallback={<div>Loading...</div>}>
+          <div className="animation-container">
+            <div className="animation-container" />
+            <Suspense fallback={<div className="animation-container" />}>
               <CanvasAnimation />
             </Suspense>
           </div>
