@@ -6,10 +6,13 @@
 }
 
 #pingo-header {
-  /* padding-top: 15vw;
-  background-color: #8ec999;
-  */
-  position: relative; 
+  position: relative;
+}
+
+#pingo-header .pingo-landing-page {
+  padding-top: 15vw;
+  padding-bottom: 15vw;
+  position: relative;
 }
 
 #pingo-header .pingo-logo {
@@ -30,8 +33,7 @@
   padding-bottom: 5vw;
 }
 
-
- img {
+img {
   image-orientation: 90deg flip;
 }
 
@@ -89,15 +91,15 @@
 }
 
 #about-mobile {
-  background-color: #F5F4F5;
+  background-color: #f5f4f5;
   padding-top: 5vw;
 }
 
 #pingo-trc-mobile {
-background-color: #ffffff;
+  background-color: #ffffff;
 }
 
-#pingo-trc-mobile .car-illustration{
+#pingo-trc-mobile .car-illustration {
   right: 12vw;
 }
 

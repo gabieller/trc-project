@@ -29,7 +29,7 @@ export default function LayoutPingo(props) {
       )}
       {!loading && (
         <>
-          <div className="main-container">{props.children}</div>
+          <div className="main-container-pingo">{props.children}</div>
           <Footer />
           <ScrollTop />
         </>

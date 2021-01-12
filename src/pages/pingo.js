@@ -1,4 +1,4 @@
-import React from "react"
+import React, { useRef } from "react"
 import Button from "@material-ui/core/Button"
 import LayoutPingo from "../components/LayoutPingo"
 import Responsive from "../components/Responsive"
@@ -20,8 +20,8 @@ import womanillustration from "../images/woman-illustration.png"
 import "../styles/pingo.css"
 
 //TODO: fix header to mobile and desktop
-
 export default function Pingo(props) {
+  const canvasRef = useRef()
   return (
     <LayoutPingo {...props}>
       <div id="pingo-page" className="container-fluid">
@@ -35,10 +35,16 @@ export default function Pingo(props) {
               display: "flex",
             }}
           >
-            <CanvasPingo />
+            <CanvasPingo ref={canvasRef} />
           </div>
-          <div className="container">
-            <div className="row justify-content-center pingo-landing-page">
+          <div
+            className="container"
+            onMouseDown={e => {
+              e.stopPropagation()
+              canvasRef.current.triggerAnimation(e)
+            }}
+          >
+            <div className="row justify-content-center pingo-landing-page user-select-none">
               <img
                 className="img-fluid pingo-logo"
                 src={pingologowhite}
@@ -47,7 +53,9 @@ export default function Pingo(props) {
                 height="400"
               />
             </div>
-            <NavBarPingo />
+            <div onMouseDown={() => {}}>
+              <NavBarPingo />
+            </div>
           </div>
         </div>
 
