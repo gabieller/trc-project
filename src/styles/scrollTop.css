@@ -1,7 +1,7 @@
   #toTopBtn {
     position: fixed;
     bottom: 26px;
-    right: 39px;
+    right: 0px;
     z-index: 98;
     cursor: pointer;
     visibility: hidden;

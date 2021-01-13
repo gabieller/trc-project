@@ -20,7 +20,7 @@ export default function NavBar({ tabs, selected }) {
         <Link
           key={name}
           to={`#${url}`}
-          className="nav-item"
+          className="nav-item text-decoration-none"
           onMouseEnter={() => setHover(index)}
           onMouseLeave={() => setHover(selected)}
         >

@@ -46,32 +46,20 @@
 
 .quotes-illustration {
   position: absolute;
-  /* top:30%; */
   bottom: -110px;
   left: -250px;
 }
 
-#pingo-somewhere {
-  padding-top: 5vw;
-  padding-bottom: 5vw;
-  padding-left: 10vw;
-  background-color: #f5f4f5;
-}
-
-#pingo-somewhere .text {
-  padding-top: 5vw;
+.somewhere-illustration {
+  position: absolute;
+  top: -90px;
+  right: -100px;
 }
 
 #pingo-somewhere .warning-text {
   color: #737b7d;
 }
-
-#pingo-somewhere .find-pingo-illustration {
-  position: absolute;
-  top: 0vw;
-  left: 42vw;
-}
-
+/* 
 #header-mobile {
   background-color: #8ec999;
 }
@@ -84,9 +72,9 @@
   position: relative;
   top: 15vw;
   right: 20vw;
-}
+} */
 
-#about-mobile {
+/* #about-mobile {
   background-color: #f5f4f5;
   padding-top: 5vw;
 }
@@ -97,7 +85,7 @@
 
 #pingo-trc-mobile .car-illustration {
   right: 12vw;
-}
+} */
 
 #download-pingo {
   background-image: url(" ../images/pingo-shapes.png");

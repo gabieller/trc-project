@@ -7,7 +7,6 @@ import NavBarPingo from "../components/NavBarPingo"
 import CanvasPingo from "../components/CanvasPingo"
 import pingologowhite from "../images/pingologowhite.png"
 import pingo_mockup from "../images/pingo_mockup.png"
-// import arrow from "../images/arrow.svg"
 import mockup from "../images/mockup.png"
 import quote from "../images/quote.svg"
 import car from "../images/car-illustration.png"
@@ -19,10 +18,10 @@ import womanillustration from "../images/woman-illustration.png"
 import "../styles/pingo.css"
 
 const navbarItems = [
-  { name: "ABOUT", url: "pingo-content" },
-  { name: "WHO BUILD", url: "pingo-about" },
-  { name: "WHERE YOU FIND", url: "pingo-somewhere" },
-  { name: "GET PINGO", url: "download-pingo" },
+  { name: "GET PINGO", url: "pingo-content" },
+  { name: "WHY IT'S GOOD", url: "pingo-about" },
+  { name: "WHERE", url: "pingo-somewhere" },
+  { name: "DOWNLOAD", url: "download-pingo" },
 ]
 
 //TODO: fix header to mobile and desktop
@@ -70,7 +69,7 @@ export default function Pingo(props) {
           </div>
         </div>
 
-        <div id={navbarItems[0].url} className="row container">
+        <div id={navbarItems[0].url} className="row container ">
           <div className="col-sm-10">
             <div className="pingo-title">
               <h2>The whole cityin the palm of your hand.</h2>
@@ -125,7 +124,7 @@ export default function Pingo(props) {
 
         <Responsive.Desktop>
           <div className="section pingo-lines">
-            <div className="container">
+            <div className="container-fluid container-xxl">
               <div className="row no-gutters">
                 <div className="col-md-5 border border-dark col-left">
                   <div className="container card pingo-cards px-5">
@@ -494,45 +493,6 @@ export default function Pingo(props) {
                 animal molestiae te.
               </div>
             </div>
-            <div className="row container flex-column px-4 pb-5 advantages-column">
-              <div className="border border-dark px-5 pt-5">
-                <div className="pb-5">
-                  <h4 className="pb-3">Advantages 1</h4>
-                  It’s not easy to build an efficient pooling product. Reduce
-                  engineering costs.
-                </div>
-                <div className="pb-5">
-                  <h4 className="pb-3">Advantages 2</h4>
-                  It’s not easy to build an efficient pooling product. Reduce
-                  engineering costs.
-                </div>
-                <div className="pb-5">
-                  <h4 className="pb-3">Advantages 3</h4>
-                  It’s not easy to build an efficient pooling product. Reduce
-                  engineering costs.
-                </div>
-              </div>
-            </div>
-
-            <div className="row container flex-column px-4 pb-5 features-column">
-              <div className="border border-dark px-5 pt-5">
-                <div className="pb-5">
-                  <h4 className="pb-3">Feature 1</h4>
-                  It’s not easy to build an efficient pooling product. Reduce
-                  engineering costs.
-                </div>
-                <div className="pb-5">
-                  <h4 className="pb-3">Feature 2</h4>
-                  It’s not easy to build an efficient pooling product. Reduce
-                  engineering costs.
-                </div>
-                <div className="pb-5">
-                  <h4 className="pb-3">Feature 3</h4>
-                  It’s not easy to build an efficient pooling product. Reduce
-                  engineering costs.
-                </div>
-              </div>
-            </div>
           </div>
 
           <div id="pingo-trc-mobile">
@@ -651,56 +611,72 @@ export default function Pingo(props) {
           </div>
         </Responsive.Mobile> */}
 
-        <div id={navbarItems[2].url}>
-          <div className="col-md-8 justify-content-left text pt-5">
-            <div className="title">
-              <h3 className="font-weight-bold">Pingo somewhere!</h3>
-              <h3>See where we’re currently operating</h3>
-            </div>
-            <div className="col-md-7 text-body px-0 pt-5">
-              Et has minim elitr intellegat. Mea aeterno eleifend antiopam ad,
-              nam no suscipit quaerendum. At nam minimum ponderum. Est audiam
-              animal molestiae te. Ex duo eripuit mentitum.
-            </div>
-          </div>
+        <div id={navbarItems[2].url} className="section somewhere g-0">
+          <div className="container pt-5">
+            <div className="row g-0">
+              <div className="col-md-8 ">
+                <div className="row g-0">
+                  <h3 className="fw-bolder">Pingo somewhere!</h3>
+                  <h3>See where we’re currently operating</h3>
+                  <div className="col-md-7 pt-5">
+                    Et has minim elitr intellegat. Mea aeterno eleifend antiopam
+                    ad, nam no suscipit quaerendum. At nam minimum ponderum. Est
+                    audiam animal molestiae te. Ex duo eripuit mentitum.
+                  </div>
+                  <div className="col-md-7 pt-4">
+                    <div className="input-group mb-3">
+                      <input
+                        type="text"
+                        className="form-control"
+                        placeholder="| Enter City"
+                        aria-label="| Enter City"
+                        aria-describedby="button-addon2"
+                      />
+                      <Button className="btn-black" variant="contained">
+                        SEARCH CITY
+                      </Button>
+                    </div>
+                    <h6 className="warning-text">
+                      <small>
+                        By clicking “Primary action” you accepting ipsum dolor
+                        sit amet, sit ea brute mediocritatem, eu sed aliquam
+                        scripserit dissentiunt.
+                      </small>
+                    </h6>
+                  </div>
+                </div>
+              </div>
 
-          <div className="col-md-4 find-pingo pt-5">
-            <div className="input-group mb-3">
-              <input
-                type="text"
-                className="form-control"
-                placeholder="| Enter City"
-                aria-label="| Enter City"
-              />
-              <div className="input-group-append">
-                <Button className="btn-black" variant="contained">
-                  SEARCH CITY
-                </Button>
+              <div className="col-md-4 wrap-illustration">
+                <img
+                  src={womanillustration}
+                  alt="Woman Standing"
+                  className="somewhere-illustration"
+                />
               </div>
             </div>
-            <h6 className="warning-text">
-              By clicking “Primary action” you accepting ipsum dolor sit amet,
-              sit ea brute mediocritatem, eu sed aliquam scripserit dissentiunt.
-            </h6>
           </div>
         </div>
 
-        <div id={navbarItems[3].url}>
-          <div className="col-md-6 justify-content-left text pt-5">
-            <div className="title">
-              <h2>Are you curious to know more? Get Pingo sentence</h2>
-            </div>
-          </div>
-          <div className="d-inline-flex action-button justify-content-left pt-4">
-            <div className="action-buttons pr-3">
-              <Button className="btn btn-action pl-0">
-                <img src={pingo_register2} alt="Pingo Button" />
-              </Button>
-            </div>
-            <div className="action-buttons">
-              <Button className="btn btn-action">
-                <img src={pingo_ride2} alt="Pingo Button" />
-              </Button>
+        <div id={navbarItems[3].url} className="section download">
+          <div className="container g-0">
+            <div className="row g-0">
+              <div className="col-md-6">
+                  <h2>Are you curious to know more? </h2>
+                  <h2>Get Pingo sentence</h2>
+              </div>
+              <div className="d-inline-flex action-button pt-5">
+                <div className="action-buttons">
+                  <Button className="btn btn-action">
+                    <img src={pingo_register2} alt="Pingo Button" />
+                  </Button>
+                </div>
+                <div className="action-buttons">
+                  <Button className="btn btn-action">
+                    <img src={pingo_ride2} alt="Pingo Button" />
+                  </Button>
+                </div>
+              </div>
             </div>
           </div>
         </div>

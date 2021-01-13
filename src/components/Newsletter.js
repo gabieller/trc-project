@@ -45,24 +45,6 @@ function SubscribeForm() {
             </Button>
           </div>
 
-          {/* <input
-                className="col-12 col-md-8"
-                type="email"
-                onChange={handleChange}
-                value={email}
-                placeholder="| Enter your email"
-                required
-              />
-
-              <div className="input-group-append col-12 col-md-4">
-                <Button
-                  onClick={handleSubmit}
-                  className="btn-black "
-                  variant="contained"
-                >
-                  Subscribe
-                </Button>
-              </div> */}
         </div>
         <div className="d-flex flex-column pt-3">
           <span status={status}>{message}</span>

@@ -10,7 +10,7 @@ export default function ScrollTop() {
 
   useEffectOnlyOnce(() => {
     const checkScrollTop = () => {
-      if (!showScroll && window.pageYOffset > 50) {
+      if (!showScroll && window.pageYOffset > 100) {
         setShowScroll(true)
       } else {
         setShowScroll(false)
