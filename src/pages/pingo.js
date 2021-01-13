@@ -662,8 +662,8 @@ export default function Pingo(props) {
           <div className="container g-0">
             <div className="row g-0">
               <div className="col-md-6">
-                  <h2>Are you curious to know more? </h2>
-                  <h2>Get Pingo sentence</h2>
+                <h2>Are you curious to know more? </h2>
+                <h2>Get Pingo sentence</h2>
               </div>
               <div className="d-inline-flex action-button pt-5">
                 <div className="action-buttons">

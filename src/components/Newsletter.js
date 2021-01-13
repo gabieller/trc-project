@@ -44,7 +44,6 @@ function SubscribeForm() {
               Subscribe
             </Button>
           </div>
-
         </div>
         <div className="d-flex flex-column pt-3">
           <span status={status}>{message}</span>
