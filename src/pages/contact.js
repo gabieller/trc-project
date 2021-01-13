@@ -38,195 +38,223 @@ export default function Contact(props) {
 
   return (
     <Layout {...props}>
-      <div id="contact-page">
-        <div id="contact-page-first">
-          <div className="row container contact-form-title">
-            <div className="col justify-content-left contact-title">
-              <h2>Contact our sales team</h2>
-            </div>
-          </div>
-          <div className="row container contact-form-subtitle">
-            <div className="col-md-7 col-sm-12 justify-content-left">
-              <h4>
-                Our team is happy to answer all your questions. Please, fill out
-                the form and we’ll be in touch as soon as possible.
-              </h4>
-            </div>
-          </div>
+      <div id="contact" className="container-fluid">
+        <div className="section row-form">
+          <div className="container">
+            <h2>Contact our sales team</h2>
 
-          <div className="row container row-form">
-            <div className="col-form col-md-8 col-xs-12">
-              <form onSubmit={handleOnSubmit} className="form p-4 my-5">
-                <div className="form-horizontal form-group row py-2">
-                  <label
-                    className="d-inline-flex col-md-8 col-form-label font-weight-bold text-nowrap"
-                    for="name"
-                  >
-                    First Name
-                    <div className="col-md-12 input-box">
+            <div className="row">
+              <div className="col-md-8 border border-dark bg-white p-5">
+                <form onSubmit={handleOnSubmit} className="form g-0">
+                  <div className="row g-3 align-items-center">
+                    <div className="col-3 fw-bold">
+                      <label for="inputFirsttName" className="col-form-label">
+                        First Name
+                      </label>
+                    </div>
+                    <div className="col-9 g-0">
                       <input
                         name="firstname"
                         type="text"
-                        placeholder="| Jane"
-                        className="form-control"
+                        id="inputFirsttName"
+                        className="form-control rounded-0"
+                        aria-describedby="firstName"
                       />
                     </div>
-                  </label>
-                </div>
+                  </div>
 
-                <div className="form-group row py-2">
-                  <label
-                    className="d-inline-flex col-md-8 col-form-label font-weight-bold text-nowrap"
-                    for="name"
-                  >
-                    Last Name
-                    <div className="col-md-12 input-box">
+                  <div className="row g-3 align-items-center">
+                    <div className="col-3 fw-bold">
+                      <label for="inputLastName" className="col-form-label">
+                        Last Name
+                      </label>
+                    </div>
+                    <div className="col-9 g-0">
                       <input
                         name="lastname"
                         type="text"
-                        placeholder="| Doe"
-                        className="form-control"
+                        id="inputLastName"
+                        className="form-control rounded-0"
+                        aria-describedby="lastName"
                       />
                     </div>
-                  </label>
-                </div>
+                  </div>
 
-                <div className="row form-group py-2">
-                  <label
-                    className="d-inline-flex col-md-12 col-form-label font-weight-bold text-nowrap"
-                    for="name"
-                  >
-                    Work Email
-                    <div className="col-md-8  input-box">
+                  <div className="row g-3 align-items-center">
+                    <div className="col-3 fw-bold">
+                      <label for="inputWorkEmail" className="col-form-label">
+                        Work mail
+                      </label>
+                    </div>
+                    <div className="col-9 g-0">
                       <input
-                        name="work-email"
+                        name="workemail"
                         type="text"
-                        placeholder="| janedoe@example.com"
-                        className="form-control"
+                        id="inputWorkEmail"
+                        className="form-control rounded-0"
+                        aria-describedby="workemail"
                       />
                     </div>
-                  </label>
-                </div>
+                  </div>
 
-                <div className="row form-group py-2">
-                  <label
-                    className="d-inline-flex col-md-12 col-form-label font-weight-bold text-nowrap"
-                    for="name"
-                  >
-                    Company website
-                    <div className="col-md-8 input-box">
+                  <div className="row g-3 align-items-center">
+                    <div className="col-3 fw-bold">
+                      <label
+                        for="inputCompanyWebsite"
+                        className="col-form-label"
+                      >
+                        Company website
+                      </label>
+                    </div>
+                    <div className="col-9 g-0">
                       <input
-                        name="company-website"
+                        name="companywebsite"
                         type="text"
-                        placeholder="| janedoe@example.com"
-                        className="form-control"
+                        id="inputCompanyWebsite"
+                        className="form-control rounded-0"
+                        aria-describedby="companywebiste"
                       />
                     </div>
-                  </label>
-                </div>
+                  </div>
 
-                <div className="row form-group py-2">
-                  <label
-                    className="d-inline-flex col-md-12 col-form-label font-weight-bold text-nowrap"
-                    for="name"
-                  >
-                    Leave us a message
-                    <div className="col-md-8 input-box">
-                      <input
+                  <div className="row g-3 align-items-center">
+                    <div className="col-3 fw-bold">
+                      <label for="inputMessage" className="col-form-label">
+                        Leave us a message
+                      </label>
+                    </div>
+                    <div className="col-9 g-0">
+                      <textarea
                         name="message"
                         type="textarea"
-                        rows="3"
-                        placeholder="Tell us more about your project, needs, timeline…"
-                        className="form-control text-area"
+                        rows="5"
+                        id="inputMessage"
+                        className="form-control rounded-0"
+                        aria-describedby="message"
                       />
                     </div>
-                  </label>
-                </div>
-                <div className="d-flex flex-row-reverse pt-3 mr-4">
-                  <Button
-                    type="submit"
-                    className="btn-black btn-block w-25 "
-                    disabled={serverState.submitting}
-                    variant="contained"
-                  >
-                    Contact Sales
-                  </Button>
-                </div>
+                  </div>
 
-                <div className="col-md-6 justify-content-left">
-                  {serverState.status && (
-                    <p className={!serverState.status.ok ? "errorMsg" : ""}>
-                      {serverState.status.msg}
-                    </p>
-                  )}
+                  <div className="d-flex flex-row-reverse pt-3">
+                    <Button
+                      type="submit"
+                      className="btn btn-black btn-block"
+                      disabled={serverState.submitting}
+                      variant="contained"
+                    >
+                      Contact Sales
+                    </Button>
+                  </div>
+
+                  <div className="col-md-6 justify-content-left">
+                    {serverState.status && (
+                      <p className={!serverState.status.ok ? "errorMsg" : ""}>
+                        {serverState.status.msg}
+                      </p>
+                    )}
+                  </div>
+                </form>
+              </div>
+
+              <div className="col-md-4 pt-5 ps-5 pe-0">
+                <div className="section">
+                  <h5 className="fw-bold">With TRC you can:</h5>
+                  <div className="py-3">
+                    <span role="img" aria-label="check">
+                      ✔️
+                    </span>
+                    <small>
+                      Et has minim elitr intellegat. Mea aeterno eleifend
+                      antiopam ad, nam no suscipit quaerendum.
+                    </small>
+                  </div>
+                  <div className="py-3">
+                    <span role="img" aria-label="check">
+                      ✔️
+                    </span>
+                    <small>
+                      Et has minim elitr intellegat. Mea aeterno eleifend
+                      antiopam ad, nam no suscipit quaerendum.
+                    </small>
+                  </div>
+                  <div className="py-3">
+                    <span role="img" aria-label="check">
+                      ✔️
+                    </span>
+                    <small>
+                      Et has minim elitr intellegat. Mea aeterno eleifend
+                      antiopam ad, nam no suscipit quaerendum.
+                    </small>
+                  </div>
                 </div>
-              </form>
-            </div>
-            <div className="col-md-4 col-sm-12-py-5 topics">
-              <h5 className="font-weight-bold topics-title">
-                With The Routing Company you can:
-              </h5>
-              <h6 className="topics-body py-3">
-                <span role="img" aria-label="check">
-                  ✔️
-                </span>
-                Et has minim elitr intellegat. Mea aeterno eleifend antiopam ad,
-                nam no suscipit quaerendum.
-              </h6>
-              <h6 className="topics-body py-3">
-                <span role="img" aria-label="check">
-                  ✔️
-                </span>
-                Et has minim elitr intellegat. Mea aeterno eleifend antiopam ad,
-                nam no suscipit quaerendum.
-              </h6>
-              <h6 className="topics-body py-3">
-                <span role="img" aria-label="check">
-                  ✔️
-                </span>
-                Et has minim elitr intellegat. Mea aeterno eleifend antiopam ad,
-                nam no suscipit quaerendum.
-              </h6>
+              </div>
             </div>
           </div>
         </div>
 
-        <div className="row container contact-queries px-0">
-          <div className="col-md-4 col-item">
-            <div className="card-body">
-              <h4 className="card-title font-weight-bold">General queries</h4>
-              <div className="card-text">
-                Qui dicta sadipscing te at info@theroutingcompany.com
+        <div className="section bg-white pt-0">
+          <div className=" container">
+            <div className=" row g-0">
+              <div className="col-md-4">
+                <div className="card-body">
+                  <h4 className="card-title fw-bold">General queries</h4>
+                  <div className="card-text w-75">
+                    Qui dicta sadipscing te at
+                  </div>
+                  <a
+                    className="text-dark"
+                    c
+                    href="mailto:info@theroutingcompany.com?subject=Infomations"
+                  >
+                    info@theroutingcompany.com
+                  </a>
+                </div>
               </div>
-            </div>
-          </div>
 
-          <div className="col-md-4 col-item">
-            <div className="card-body">
-              <h4 className="card-title font-weight-bold">Medium</h4>
-              <div className="card-text">
-                Qui dicta sadipscing te at dicta sadipscing te at.
+              <div className="col-md-4">
+                <div className="card-body">
+                  <h4 className="card-title fw-bold">Medium</h4>
+                  <div className="card-text w-75 pb-3">
+                    Qui dicta sadipscing te at dicta sadipscing te at.
+                  </div>
+                  <Button
+                    className="btn bg-white rounded-0 btn-action "
+                    variant="contained"
+                  >
+                    VISIT MEDIUM
+                  </Button>
+                </div>
               </div>
-            </div>
-          </div>
 
-          <div className="col-md-4 col-item">
-            <div className="card-body">
-              <h4 className="card-title font-weight-bold">Careers</h4>
-              <div className="card-text">
-                Qui dicta sadipscing te at dicta sadipscing te at.
+              <div className="col-md-4 ">
+                <div className="card-body">
+                  <h4 className="card-title fw-bold">Careers</h4>
+                  <div className="card-text w-75 pb-3">
+                    Qui dicta sadipscing te at dicta sadipscing te at.
+                  </div>
+                  <Button
+                    className="btn bg-white rounded-0 btn-action"
+                    variant="contained"
+                  >
+                    CONTACT CAREERS
+                  </Button>
+                </div>
               </div>
             </div>
-            {/* </div> */}
-          </div>
-          <div className="row container contact-queries px-0 pt-3">
-            <div className="col-md-4 col-item">
-              <div className="card-body">
-                <h4 className="card-title font-weight-bold">
-                  Technical support
-                </h4>
-                <div className="card-text">
-                  Qui dicta sadipscing te at info@theroutingcompany.com
+
+            <div className="row g-0">
+              <div className="col-md-4 ">
+                <div className="card-body">
+                  <h4 className="card-title fw-bold">Technical support</h4>
+                  <div className="card-text w-75">
+                    Qui dicta sadipscing te at
+                  </div>
+                  <a
+                    className="text-dark"
+                    href="mailto:info@theroutingcompany.com?subject=Infomations"
+                  >
+                    info@theroutingcompany.com
+                  </a>
                 </div>
               </div>
             </div>
