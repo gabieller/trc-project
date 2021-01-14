@@ -8,6 +8,7 @@
 
 #pingo-header {
   position: relative;
+  color: #ffffff;
 }
 
 #pingo-header .pingo-landing-page {
@@ -20,8 +21,28 @@
   width: 70%;
 }
 
+#pingo-header .pingo-logo-mobile {
+  z-index: 1;
+}
+
 #pingo-header .mobile-subtitle {
   color: #ffffff;
+}
+
+#about-mobile {
+  position: relative;
+}
+
+#about-mobile img {
+  position: absolute;
+  top: -50px;
+  right: 0px;
+}
+
+#about-mobile .text {
+  position: absolute;
+  top: 0px;
+  right: 0px;
 }
 
 .pingo-cards {

@@ -35,88 +35,88 @@ export default function Pingo(props) {
   return (
     <LayoutPingo {...props}>
       <div id="pingo-page" className="container-fluid">
-        {/* <Responsive.Desktop> */}
-        <div id="pingo-header">
-          <div
-            style={{
-              position: "absolute",
-              width: "100%",
-              height: "100%",
-              display: "flex",
-            }}
-          >
-            <CanvasPingo ref={canvasRef} />
-          </div>
-          <div
-            className="container"
-            role="application"
-            onMouseDown={e => {
-              e.stopPropagation()
-              canvasRef.current.triggerAnimation(e)
-            }}
-          >
-            <div className="row justify-content-center pingo-landing-page user-select-none">
-              <img
-                className="img-fluid pingo-logo"
-                src={pingologowhite}
-                alt="Pingo Main logo"
-                width="650"
-                height="400"
-              />
-            </div>
-            <div>
-              <NavBarPingo tabs={navbarItems} selected={selected} />
-            </div>
-          </div>
-        </div>
-
-        <div id={navbarItems[0].url} className="section title ">
-          <div className="container">
-            <div className="row g-0">
-              <div className="row g-0">
-                <h1>The whole cityin the palm of your hand.</h1>
-                <h1> Get Pingo</h1>
-              </div>
-              <div className="row g-0">
-                <div className="d-md-inline-flex action-button  pt-4">
-                  <div className="action-buttons">
-                    <Button className="btn btn-action">
-                      <img src={pingo_register} alt="Pingo Button" />
-                    </Button>
-                  </div>
-                  <div className="action-buttons">
-                    <Button className="btn btn-action">
-                      <img src={pingo_ride} alt="Pingo Button" />
-                    </Button>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <div id={navbarItems[1].url} className="section-mini about">
-          <div className="container">
-            <div className="row g-0">
-              <div className="col-md-6 me-5">
-                <img src={pingo_mockup} alt="Pingo Mockup" width="100%" />
-              </div>
-              <div className="col-md-4 mx-md-5 px-4 px-md-0 pt-5 pt-md-0">
-                <h3>
-                  About the product offered, visualization areaea usu, qui dicta
-                  sadipscing te.
-                </h3>
-                <div>
-                  Et has minim elitr intellegat. Mea aeterno eleifend antiopam
-                  ad, nam no suscipit quaerendum. At nam minimum ponderum. Est
-                  audiam animal molestiae te. Ex duo eripuit mentitum.
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-
         <Responsive.Desktop>
+          <div id="pingo-header">
+            <div
+              style={{
+                position: "absolute",
+                width: "100%",
+                height: "100%",
+                display: "flex",
+              }}
+            >
+              <CanvasPingo ref={canvasRef} />
+            </div>
+
+            <div
+              className="container"
+              role="application"
+              onMouseDown={e => {
+                e.stopPropagation()
+                canvasRef.current.triggerAnimation(e)
+              }}
+            >
+              <div className="row justify-content-center pingo-landing-page user-select-none">
+                <img
+                  className="img-fluid pingo-logo"
+                  src={pingologowhite}
+                  alt="Pingo Main logo"
+                  width="650"
+                  height="400"
+                />
+              </div>
+              <div>
+                <NavBarPingo tabs={navbarItems} selected={selected} />
+              </div>
+            </div>
+          </div>
+
+          <div id={navbarItems[0].url} className="section title ">
+            <div className="container">
+              <div className="row g-0">
+                <div className="row g-0">
+                  <h1>The whole cityin the palm of your hand.</h1>
+                  <h1> Get Pingo</h1>
+                </div>
+                <div className="row g-0">
+                  <div className="d-md-inline-flex action-button  pt-4">
+                    <div className="action-buttons">
+                      <Button className="btn btn-action">
+                        <img src={pingo_register} alt="Pingo Button" />
+                      </Button>
+                    </div>
+                    <div className="action-buttons">
+                      <Button className="btn btn-action">
+                        <img src={pingo_ride} alt="Pingo Button" />
+                      </Button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div id={navbarItems[1].url} className="section-mini about">
+            <div className="container">
+              <div className="row g-0">
+                <div className="col-md-6 me-5">
+                  <img src={pingo_mockup} alt="Pingo Mockup" width="100%" />
+                </div>
+                <div className="col-md-4 mx-md-5 px-4 px-md-0 pt-5 pt-md-0">
+                  <h3>
+                    About the product offered, visualization areaea usu, qui
+                    dicta sadipscing te.
+                  </h3>
+                  <div>
+                    Et has minim elitr intellegat. Mea aeterno eleifend antiopam
+                    ad, nam no suscipit quaerendum. At nam minimum ponderum. Est
+                    audiam animal molestiae te. Ex duo eripuit mentitum.
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
           <div className="section-mini pingo-lines">
             <div className="container-fluid container-xxl">
               <div className="row g-0">
@@ -245,6 +245,72 @@ export default function Pingo(props) {
         </Responsive.Desktop>
 
         <Responsive.Mobile>
+          <div id="pingo-header">
+            <div
+              style={{
+                position: "absolute",
+                width: "100%",
+                height: "100%",
+                display: "flex",
+              }}
+            >
+              <CanvasPingo ref={canvasRef} />
+            </div>
+
+            <div
+              className="container"
+              role="application"
+              onMouseDown={e => {
+                e.stopPropagation()
+                canvasRef.current.triggerAnimation(e)
+              }}
+            >
+              <div className="row justify-content-center pingo-landing-page user-select-none g-0">
+                <div className="row">
+                  <img
+                    className="img-fluid pingo-logo-mobile g-0"
+                    src={pingologowhite}
+                    alt="Pingo Main logo"
+                    width="650"
+                    height="400"
+                  />
+                </div>
+
+                <div className="row">
+                  <h1>The whole cityin the palm of your hand.</h1>
+                </div>
+                <div className="row pt-3 pb-5">
+                  <Button className="btn btn-action">
+                    <img src={pingo_register} alt="Pingo Button" />
+                  </Button>
+                  <Button className="btn btn-action">
+                    <img src={pingo_ride} alt="Pingo Button" />
+                  </Button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div id="about-mobile" className="section-mini">
+            <div className="container">
+              <div className="row g-0">
+                <div className="row">
+                  <img src={pingo_mockup} alt="Pingo Mockup" width="100%" />
+                </div>
+                <div className="row mx-4 pt-5">
+                  <h3>
+                    About the product offered, visualization areaea usu, qui
+                    dicta sadipscing te.
+                  </h3>
+                  <div>
+                    Et has minim elitr intellegat. Mea aeterno eleifend antiopam
+                    ad, nam no suscipit quaerendum. At nam minimum ponderum. Est
+                    audiam animal molestiae te. Ex duo eripuit mentitum.
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
           <div className="pingo-lines">
             <div className="row g-0 justify-content-center">
               <div className="col-10 border-top border border-dark col-left mb-5 mx-4">
@@ -441,7 +507,6 @@ export default function Pingo(props) {
             </div>
           </div>
         </div>
-        {/* </Responsive.Desktop> */}
 
         {/* <Responsive.Mobile>
           <div id="header-mobile">
