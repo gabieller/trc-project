@@ -26,6 +26,9 @@
   padding: min(15vh, 110px) 0;
 }
 
+.section-mini {
+  padding: min(10vh, 70px) 0;
+}
 .main-container {
   padding-top: 100px;
 }

@@ -28,16 +28,16 @@
   border: none;
 }
 
-#pingo-quotes {
-  background-color: #ffffff;
-  padding-bottom: 5vw;
-}
 
-#pingo-quotes .carousel-indicators li {
+.quotes .carousel-indicators li {
   background-color: #c3cbcd;
   width: 10px;
   height: 10px;
   border-radius: 100%;
+}
+
+.quotes .carousel-indicators  {
+bottom: -40px;
 }
 
 .wrap-illustration {
@@ -46,14 +46,21 @@
 
 .quotes-illustration {
   position: absolute;
-  bottom: -110px;
-  left: -250px;
+  bottom: -150px;
+  left: -270px;
 }
 
 .somewhere-illustration {
   position: absolute;
   top: -90px;
   right: -100px;
+}
+
+.somewhere-illustration-mobile {
+  position: absolute;
+  top: -20px;
+  right: 0px;
+  
 }
 
 #pingo-somewhere .warning-text {
@@ -83,14 +90,10 @@
   background-color: #ffffff;
 }
 
-#pingo-trc-mobile .car-illustration {
-  right: 12vw;
-} */
+
+ */
 
 #download-pingo {
   background-image: url(" ../images/pingo-shapes.png");
   background-color: #8ec99970;
-  padding-top: 5vw;
-  padding-bottom: 10vw;
-  padding-left: 10vw;
 }
