@@ -17,6 +17,7 @@
 
 #pingo-header .pingo-logo {
   z-index: 1;
+  width: 70%;
 }
 
 #pingo-header .mobile-subtitle {

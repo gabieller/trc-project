@@ -8,7 +8,7 @@ import pingosidemenu from "../images/pingo-sidemenu.png"
 import linkedin from "../images/linkedin.svg"
 import medium from "../images/medium.png"
 import twitter from "../images/twitter.svg"
-import arrowright from "../images/arrow-right.svg"
+import arrowright from "../images/arrow-right-white.svg"
 
 export default function SideMenu({ onClick, uri, visible }) {
   return (

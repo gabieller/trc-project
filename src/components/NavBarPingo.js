@@ -3,10 +3,11 @@ import { Link } from "gatsby"
 
 import "../styles/navbar-pingo.css"
 
+const getSelected = (i, length) => (i >= 0 && i < length ? i : 0)
+
 export default function NavBar({ tabs, selected }) {
-  const [inHover, setHover] = useState(
-    selected >= 0 && selected < tabs.length ? selected : 0
-  )
+  const [inHover, setHover] = useState(getSelected(selected, tabs.length))
+
   const underlineStyle = {
     width: `${100 / tabs.length}%`,
     transform: `translate3d(${inHover * 100}%, 0, 0)`,
@@ -21,8 +22,8 @@ export default function NavBar({ tabs, selected }) {
           key={name}
           to={`#${url}`}
           className="nav-item text-decoration-none"
-          onMouseEnter={() => setHover(index)}
-          onMouseLeave={() => setHover(selected)}
+          onMouseEnter={() => setHover(getSelected(index, tabs.length))}
+          onMouseLeave={() => setHover(getSelected(selected, tabs.length))}
         >
           {name}
         </Link>

@@ -101,7 +101,7 @@ export default function Pingo(props) {
               <div className="col-md-6 me-5">
                 <img src={pingo_mockup} alt="Pingo Mockup" width="100%" />
               </div>
-              <div className="col-md-4 mx-5">
+              <div className="col-md-4 mx-md-5 px-4 px-md-0 pt-5 pt-md-0">
                 <h3>
                   About the product offered, visualization areaea usu, qui dicta
                   sadipscing te.
@@ -245,7 +245,7 @@ export default function Pingo(props) {
         </Responsive.Desktop>
 
         <Responsive.Mobile>
-          <div className="section pingo-lines">
+          <div className="pingo-lines">
             <div className="row g-0 justify-content-center">
               <div className="col-10 border-top border border-dark col-left mb-5 mx-4">
                 <div className="container card pingo-cards">
@@ -370,7 +370,7 @@ export default function Pingo(props) {
                   </ol>
                   <div className="carousel-inner">
                     <div className="carousel-item active">
-                      <div className="card text-center bg-transparent border-0">
+                      <div className="card text-center bg-transparent border-0 pt-5 pt-md-0">
                         <img
                           className="card-img-top"
                           src={quote}
