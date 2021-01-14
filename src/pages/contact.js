@@ -44,15 +44,15 @@ export default function Contact(props) {
             <h2>Contact our sales team</h2>
 
             <div className="row">
-              <div className="col-md-8 border border-dark bg-white p-5">
+              <div className="col-md-8 border border-dark bg-white p-md-5">
                 <form onSubmit={handleOnSubmit} className="form g-0">
                   <div className="row g-3 align-items-center">
-                    <div className="col-3 fw-bold">
+                    <div className="col-md-3 fw-bold">
                       <label for="inputFirsttName" className="col-form-label">
                         First Name
                       </label>
                     </div>
-                    <div className="col-9 g-0">
+                    <div className="col-md-9 g-0">
                       <input
                         name="firstname"
                         type="text"
@@ -64,12 +64,12 @@ export default function Contact(props) {
                   </div>
 
                   <div className="row g-3 align-items-center">
-                    <div className="col-3 fw-bold">
+                    <div className="col-md-3 fw-bold">
                       <label for="inputLastName" className="col-form-label">
                         Last Name
                       </label>
                     </div>
-                    <div className="col-9 g-0">
+                    <div className="col-md-9 g-0">
                       <input
                         name="lastname"
                         type="text"
@@ -81,12 +81,12 @@ export default function Contact(props) {
                   </div>
 
                   <div className="row g-3 align-items-center">
-                    <div className="col-3 fw-bold">
+                    <div className="col-md-3 fw-bold">
                       <label for="inputWorkEmail" className="col-form-label">
                         Work mail
                       </label>
                     </div>
-                    <div className="col-9 g-0">
+                    <div className="col-md-9 g-0">
                       <input
                         name="workemail"
                         type="text"
@@ -98,7 +98,7 @@ export default function Contact(props) {
                   </div>
 
                   <div className="row g-3 align-items-center">
-                    <div className="col-3 fw-bold">
+                    <div className="col-md-3 fw-bold">
                       <label
                         for="inputCompanyWebsite"
                         className="col-form-label"
@@ -106,7 +106,7 @@ export default function Contact(props) {
                         Company website
                       </label>
                     </div>
-                    <div className="col-9 g-0">
+                    <div className="col-md-9 g-0">
                       <input
                         name="companywebsite"
                         type="text"
@@ -118,12 +118,12 @@ export default function Contact(props) {
                   </div>
 
                   <div className="row g-3 align-items-center">
-                    <div className="col-3 fw-bold">
+                    <div className="col-md-3 fw-bold">
                       <label for="inputMessage" className="col-form-label">
                         Leave us a message
                       </label>
                     </div>
-                    <div className="col-9 g-0">
+                    <div className="col-md-9 g-0">
                       <textarea
                         name="message"
                         type="textarea"
@@ -135,7 +135,7 @@ export default function Contact(props) {
                     </div>
                   </div>
 
-                  <div className="d-flex flex-row-reverse pt-3">
+                  <div className="d-flex flex-row-reverse pt-md-3 py-4 ">
                     <Button
                       type="submit"
                       className="btn btn-black btn-block"
@@ -156,43 +156,43 @@ export default function Contact(props) {
                 </form>
               </div>
 
-              <div className="col-md-4 pt-5 ps-5 pe-0">
-                <div className="section">
-                  <h5 className="fw-bold">With TRC you can:</h5>
-                  <div className="py-3">
-                    <span role="img" aria-label="check">
-                      ✔️
-                    </span>
-                    <small>
-                      Et has minim elitr intellegat. Mea aeterno eleifend
-                      antiopam ad, nam no suscipit quaerendum.
-                    </small>
-                  </div>
-                  <div className="py-3">
-                    <span role="img" aria-label="check">
-                      ✔️
-                    </span>
-                    <small>
-                      Et has minim elitr intellegat. Mea aeterno eleifend
-                      antiopam ad, nam no suscipit quaerendum.
-                    </small>
-                  </div>
-                  <div className="py-3">
-                    <span role="img" aria-label="check">
-                      ✔️
-                    </span>
-                    <small>
-                      Et has minim elitr intellegat. Mea aeterno eleifend
-                      antiopam ad, nam no suscipit quaerendum.
-                    </small>
-                  </div>
+              <div className="col-md-4 pt-5 ps-md-5 pe-md-0">
+                {/* <div className="section"> */}
+                <h5 className="fw-bold">With TRC you can:</h5>
+                <div className="py-3">
+                  <span role="img" aria-label="check">
+                    ✔️
+                  </span>
+                  <small>
+                    Et has minim elitr intellegat. Mea aeterno eleifend antiopam
+                    ad, nam no suscipit quaerendum.
+                  </small>
                 </div>
+                <div className="py-3">
+                  <span role="img" aria-label="check">
+                    ✔️
+                  </span>
+                  <small>
+                    Et has minim elitr intellegat. Mea aeterno eleifend antiopam
+                    ad, nam no suscipit quaerendum.
+                  </small>
+                </div>
+                <div className="py-3">
+                  <span role="img" aria-label="check">
+                    ✔️
+                  </span>
+                  <small>
+                    Et has minim elitr intellegat. Mea aeterno eleifend antiopam
+                    ad, nam no suscipit quaerendum.
+                  </small>
+                </div>
+                {/* </div> */}
               </div>
             </div>
           </div>
         </div>
 
-        <div className="section bg-white pt-0">
+        <div className="section bg-white pt-5">
           <div className=" container">
             <div className=" row g-0">
               <div className="col-md-4">

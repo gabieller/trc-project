@@ -6,19 +6,6 @@
   position: relative;
 }
 
-/* #contact .row-form {
-  position: relative;
-}
-
-#contact .col-form {
-  position: absolute;
-  bottom: -70px;
-}
-
-.queries {
-  padding-top: 90px;
-} */
-
 #contact .card {
   border-radius: 0;
   font-family: "Mulish";
@@ -33,11 +20,6 @@
 #contact .btn{
   min-width: 183px;
 }
-
-/* #contact .email-link a {
-  color: #000000;
-  text-decoration: underline;
-} */
 
 @media (min-width: 768px) {
   .row-form {
@@ -54,9 +36,9 @@
   .row-form {
     background: linear-gradient(
       to bottom,
-      #ffffff 0%,
-      #ffffff 70%,
-      #ffffff 70%
+      #F5F4F5 0%,
+      #F5F4F5 70%,
+      #F5F4F5 70%
     );
   }
 }
