@@ -24,11 +24,8 @@ export default function Demo() {
         </div>
 
         <div className="row g-0">
-          <div className="col-12 col-md-4 pt-4">
-            <div
-              className="row action-buttons g-0 d-md-inline-flex
- justify-content-between"
-            >
+          <div className="col-12 col-md-5 pt-4">
+            <div className="row action-buttons g-0">
               <div className="col-12 col-md-6 pb-4 pb-md-0">
                 <div className="action-buttons">
                   <Button className="btn-black btn-action" variant="contained">

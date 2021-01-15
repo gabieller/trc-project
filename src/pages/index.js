@@ -54,12 +54,12 @@ export default function Home(props) {
               </div>
             </div>
 
-            <div className="row no-gutters pt-5 pb-2">
+            <div className="row g-0 pt-5 pb-2">
               <h2 className="col-10 col-md-12">
                 <small>Grow your business with better shipping</small>
               </h2>
             </div>
-            <div className="row no-gutters">
+            <div className="row g-0">
               <div className="col-md-4 pb-3 pb-md-0 pe-md-3">
                 <div className="card border border-dark mx-0">
                   <div className="card-body px-0">
@@ -134,12 +134,12 @@ export default function Home(props) {
         </div>
         <div className="section backed">
           <div className="container">
-            <div className="row no-gutters pb-5">
+            <div className="row g-0 pb-5">
               <h2 className="col-xl-12 px-xl-0">
                 <small>Backed by the Best</small>
               </h2>
             </div>
-            <div className="row no-gutters container justify-content-center">
+            <div className="row g-0 container justify-content-center">
               <img src={logos} alt="Company Logos" className="img-fluid" />
             </div>
           </div>

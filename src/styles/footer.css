@@ -12,9 +12,23 @@
   background-color: #000000;
   border: 1px solid #ffffff;
   border-radius: 0;
+  /* placeholder-color: "white" */
 }
 
 #footer hr {
   height: 1px;
   background-color: #ffffff40;
+}
+
+
+@media (min-width: 768px) {
+   .trclogo, .pingologo {
+    width: 40%;
+  }
+}
+
+@media (max-width: 767px) {
+  .trclogo, .pingologo {
+    width: 70%;
+  }
 }
