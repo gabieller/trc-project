@@ -65,10 +65,6 @@ bottom: -40px;
   
 }
 
-#pingo-somewhere .warning-text {
-  color: #737b7d;
-}
-
 #download-pingo {
   background-image: url(" ../images/pingo-shapes.png");
   background-color: #8ec99970;

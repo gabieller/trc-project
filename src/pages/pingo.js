@@ -400,7 +400,7 @@ export default function Pingo(props) {
           </div>
         </Responsive.Mobile>
 
-        <div className="section quotes bg-white ">
+        <div className="section quotes bg-white shadow ">
           <div className="row g-0 pt-5 pt-md-0">
             <div className="col-md-2 wrap-illustration pt-5 pt-md-0">
               <img src={car} alt="Yellow Car" className="quotes-illustration" />
@@ -517,13 +517,6 @@ export default function Pingo(props) {
 
                   <div className="col-md-7 pt-4">
                     <Autocomplete />
-                    <h6 className="warning-text pt-4">
-                      <small>
-                        By clicking “Primary action” you accepting ipsum dolor
-                        sit amet, sit ea brute mediocritatem, eu sed aliquam
-                        scripserit dissentiunt.
-                      </small>
-                    </h6>
                   </div>
                 </div>
               </div>
