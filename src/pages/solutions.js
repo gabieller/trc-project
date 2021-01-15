@@ -28,7 +28,7 @@ export default function Solutions(props) {
               <h1>How we can help</h1>
             </div>
             <div className="row">
-              <div className="col-md-4 pb-3 pb-md-0 pr-md-3">
+              <div className="col-md-4 pb-3 pb-md-0 pe-md-3">
                 <div className="card border border-dark mx-0">
                   <div className="card-body">
                     <h4 className="card-title text-left fw-bold w-75">
@@ -41,7 +41,7 @@ export default function Solutions(props) {
                   </div>
                 </div>
               </div>
-              <div className="col-md-4 pb-3 pb-md-0 pr-md-3">
+              <div className="col-md-4 pb-3 pb-md-0 pe-md-3">
                 <div className="card border border-dark mx-0">
                   <div className="card-body">
                     <h4 className="card-title text-left fw-bold w-75">
@@ -54,7 +54,7 @@ export default function Solutions(props) {
                   </div>
                 </div>
               </div>
-              <div className="col-md-4 pb-3 pb-md-0 pr-md-3">
+              <div className="col-md-4 pb-3 pb-md-0 pe-md-3">
                 <div className="card border border-dark mx-0">
                   <div className="card-body">
                     <h4 className="card-title text-left fw-bold">
@@ -270,7 +270,7 @@ export default function Solutions(props) {
                       height="60"
                     />
                   </button>
-                  <button className="btn btn-link pl-2">
+                  <button className="btn btn-link ps-2">
                     <img
                       src={appstorebadge}
                       alt="App Store Download"

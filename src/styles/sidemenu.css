@@ -14,10 +14,13 @@
   opacity: 1;
 }
 
+#overlay h1 {
+  font-family: "Roboto";
+}
+
 #side-menu a {
   position: relative;
   display: inline-block;
-  font-family: "Roboto";
   text-transform: uppercase;
   line-height: 1.5;
   -webkit-text-stroke: 0.5px #ffffff;
@@ -45,14 +48,9 @@
   background-position: 0 100%;
 }
 
-#side-menu span {
+/* #side-menu span {
   font-size: 1.25rem;
-}
-
-.contact {
-  padding-top: 45vw;
-  padding-left: 35vw;
-}
+} */
 
 .email-link a {
   color: #ffffff;
@@ -79,14 +77,6 @@
   visibility: visible;
 }
 
-.menu-index {
-  padding-top: 3vw;
-}
-
-#overlay .menu {
-  padding-left: 20vw;
-}
-
 .btn:focus {
   outline: none !important;
 }
@@ -99,4 +89,22 @@
 .container-fluid.main-container.open {
   padding-right: 80px !important;
   transition: padding 300ms linear;
+}
+
+@media (min-width: 768px) {
+  #overlay .menu-logo {
+    width: 40%;
+  }
+}
+
+@media (max-width: 767px) {
+  #overlay .menu-logo {
+    width: 70%;
+  }
+}
+
+@media (min-width: 768px) {
+  #side-menu {
+    padding-left: 120px;
+  }
 }

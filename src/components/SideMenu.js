@@ -15,23 +15,22 @@ export default function SideMenu({ onClick, uri, visible }) {
     <>
       <div id="overlay" className={visible ? "open" : ""}>
         <div className={`sidebar ${visible ? "open" : ""}`}>
-          <div className="d-flex flex-column">
-            <div>
+          <div className="container flex-column">
+            <div className="row pt-5">
               <img
                 src={trclogowhite}
                 alt="Main logo"
-                className="img-fluid pl-2 pt-3"
-                width="470"
-                height="65"
+                className=" img-responsive menu-logo"
+                width="50%"
               />
             </div>
-            <div className="col-md-6 menu">
-              <div id="side-menu" className="col-md-6 menuLink pt-5">
+            <div className="row d-flex section-mini">
+              <div id="side-menu" className="col-md-8 menu">
                 <ul className="navbar-nav ml-auto fw-bold">
                   <li className={`nav-item ${uri === "/" ? "active" : ""}`}>
                     <Link to="/" className="nav-link d-inline-flex">
                       <h1>
-                        <span className="pr-2">01</span>Home
+                        <span className="pe-2">01</span>Home
                       </h1>
                     </Link>
                   </li>
@@ -40,7 +39,7 @@ export default function SideMenu({ onClick, uri, visible }) {
                   >
                     <Link to="/about" className="nav-link d-inline-flex">
                       <h1>
-                        <span className="pr-2">02</span>About
+                        <span className="pe-2">02</span>About
                       </h1>
                     </Link>
                   </li>
@@ -51,7 +50,7 @@ export default function SideMenu({ onClick, uri, visible }) {
                   >
                     <Link to="/solutions" className="nav-link d-inline-flex">
                       <h1>
-                        <span className="pr-2">03</span>Solutions
+                        <span className="pe-2">03</span>Solutions
                       </h1>
                     </Link>
                   </li>
@@ -60,14 +59,14 @@ export default function SideMenu({ onClick, uri, visible }) {
                   >
                     <Link to="/contact" className="nav-link d-inline-flex">
                       <h1>
-                        <span className="pr-2">04</span>Contact
+                        <span className="pe-2">04</span>Contact
                       </h1>
                     </Link>
                   </li>
                   <li className={`nav-item ${uri === "/blog" ? "active" : ""}`}>
                     <Link to="/blog" className="nav-link d-inline-flex">
                       <h1>
-                        <span className="pr-2">05</span>Blog
+                        <span className="pe-2">05</span>Blog
                       </h1>
                     </Link>
                   </li>
@@ -93,39 +92,42 @@ export default function SideMenu({ onClick, uri, visible }) {
                   </li>
                 </ul>
               </div>
-            </div>
-          </div>
-
-          <div className="col-mdh5 contact">
-            <div className="d-flex flex-row-reverse col-md-6 pt-3 pl-0 social-media">
-              <button className={`btn btn-link p-2`}>
-                <img
-                  src={linkedin}
-                  alt="Linkedin button"
-                  width="24"
-                  height="24"
-                />
-              </button>
-              <button className={`btn btn-link p-2`}>
-                <img
-                  src={twitter}
-                  alt="Twitter button"
-                  width="30"
-                  height="24"
-                />
-              </button>
-              <button className={`btn btn-link p-0`}>
-                <img src={medium} alt="Medium button" width="50" height="30" />
-              </button>
-            </div>
-            <div className=" d-flex flex-row-reverse col-md-6 pt-3 px-2 email-link">
-              <a href="mailto:info@theroutingcompany.com?subject=Infomations">
-                info@theroutingcompany.com
-              </a>
+              <div className="col-md-4 contact flex-column d-flex align-items-end justify-content-end pt-5 pt-md-0">
+                <div className="d-flex">
+                  <button className={`btn btn-link p-0`}>
+                    <img
+                      src={medium}
+                      alt="Medium button"
+                      width="50"
+                      height="30"
+                    />
+                  </button>
+                  <button className={`btn btn-link p-2`}>
+                    <img
+                      src={linkedin}
+                      alt="Linkedin button"
+                      width="24"
+                      height="24"
+                    />
+                  </button>
+                  <button className={`btn btn-link p-2`}>
+                    <img
+                      src={twitter}
+                      alt="Twitter button"
+                      width="30"
+                      height="24"
+                    />
+                  </button>
+                </div>
+                <div className="d-flex email-link">
+                  <a href="mailto:info@theroutingcompany.com?subject=Infomations">
+                    info@theroutingcompany.com
+                  </a>
+                </div>
+              </div>
             </div>
           </div>
         </div>
-        {/* </div> */}
       </div>
     </>
   )

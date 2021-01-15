@@ -113,7 +113,7 @@ export default function Footer() {
                       height="60"
                     />
                   </button>
-                  <button className="btn btn-link pl-2">
+                  <button className="btn btn-link ps-2">
                     <img
                       src={appstorebadge}
                       alt="App Store Download"
@@ -147,7 +147,7 @@ export default function Footer() {
             <div className="input-group mb-3">
               <input
                 type="text"
-                className="form-control pl-2"
+                className="form-control ps-2"
                 placeholder="| Enter your email"
                 aria-label="| Enter your email"
               />

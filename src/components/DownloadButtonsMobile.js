@@ -7,8 +7,8 @@ import appstorebadge from "../images/app-store-badge.svg"
 export default function DownloadButtons() {
   return (
     <div className="d-flex flex-column download-badges ">
-      <div className="d-flex flex-column download-button col-xs-4 pl-5">
-        <button className={`btn btn-link pl-2`}>
+      <div className="d-flex flex-column download-button col-xs-4 ps-5">
+        <button className={`btn btn-link ps-2`}>
           <img
             src={googleplaybadge}
             alt="Google Play Download"

@@ -35,7 +35,7 @@ export default function Home(props) {
                 <div className="col-12 col-md-8">
                   <div className=" justify-content-center pt-md-3 ">
                     <div className="action-buttons row g-0 ">
-                      <div className="action-buttons pr-3">
+                      <div className="action-buttons pe-3">
                         <Button
                           className="btn-black btn-action"
                           variant="contained"
@@ -60,7 +60,7 @@ export default function Home(props) {
               </h2>
             </div>
             <div className="row no-gutters">
-              <div className="col-md-4 pb-3 pb-md-0 pr-md-3">
+              <div className="col-md-4 pb-3 pb-md-0 pe-md-3">
                 <div className="card border border-dark mx-0">
                   <div className="card-body px-0">
                     <h4 className="card-title text-left fw-bold px-3">
@@ -83,7 +83,7 @@ export default function Home(props) {
                 </div>
               </div>
 
-              <div className="col-md-4 pb-3 pb-md-0 pr-md-3">
+              <div className="col-md-4 pb-3 pb-md-0 pe-md-3">
                 <div className="card border border-dark  mx-0">
                   <div className="card-body px-0">
                     <h4 className="card-title text-left fw-bold px-3">
@@ -107,7 +107,7 @@ export default function Home(props) {
                 </div>
               </div>
 
-              <div className="col-md-4 pb-3 pb-md-0 pr-md-3">
+              <div className="col-md-4 pb-3 pb-md-0 pe-md-3">
                 <div className="card border border-dark  mx-0">
                   <div className="card-body px-0">
                     <h4 className="card-title text-left fw-bold px-3">

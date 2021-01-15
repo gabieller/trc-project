@@ -8,7 +8,7 @@ export default function DownloadButtons() {
   return (
     <div className="download-badges">
       <div className="download-button">
-        <button className={`btn btn-link pl-2`}>
+        <button className={`btn btn-link ps-2`}>
           <img
             src={googleplaybadge}
             alt="Google Play Download"
