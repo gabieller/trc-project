@@ -25,26 +25,6 @@
   z-index: 1;
 }
 
-#pingo-header .mobile-subtitle {
-  color: #ffffff;
-}
-
-#about-mobile {
-  position: relative;
-}
-
-#about-mobile img {
-  position: absolute;
-  top: -50px;
-  right: 0px;
-}
-
-#about-mobile .text {
-  position: absolute;
-  top: 0px;
-  right: 0px;
-}
-
 .pingo-cards {
   background-color: transparent;
   border: none;
@@ -88,32 +68,6 @@ bottom: -40px;
 #pingo-somewhere .warning-text {
   color: #737b7d;
 }
-/* 
-#header-mobile {
-  background-color: #8ec999;
-}
-
-#header-mobile .pingo-landing-page {
-  padding-top: 25vw;
-}
-
-#header-mobile .mockup-mobile {
-  position: relative;
-  top: 15vw;
-  right: 20vw;
-} */
-
-/* #about-mobile {
-  background-color: #f5f4f5;
-  padding-top: 5vw;
-}
-
-#pingo-trc-mobile {
-  background-color: #ffffff;
-}
-
-
- */
 
 #download-pingo {
   background-image: url(" ../images/pingo-shapes.png");

@@ -63,7 +63,7 @@ export default function Home(props) {
               <div className="col-md-4 pb-3 pb-md-0 pr-md-3">
                 <div className="card border border-dark mx-0">
                   <div className="card-body px-0">
-                    <h4 className="card-title text-left font-weight-bold px-3">
+                    <h4 className="card-title text-left fw-bold px-3">
                       Problem that customers face 1
                     </h4>
                     <p className="card-text px-3 ">
@@ -86,7 +86,7 @@ export default function Home(props) {
               <div className="col-md-4 pb-3 pb-md-0 pr-md-3">
                 <div className="card border border-dark  mx-0">
                   <div className="card-body px-0">
-                    <h4 className="card-title text-left font-weight-bold px-3">
+                    <h4 className="card-title text-left fw-bold px-3">
                       Problem that customers face 2
                     </h4>
                     <div className="card-text px-3 ">
@@ -110,7 +110,7 @@ export default function Home(props) {
               <div className="col-md-4 pb-3 pb-md-0 pr-md-3">
                 <div className="card border border-dark  mx-0">
                   <div className="card-body px-0">
-                    <h4 className="card-title text-left font-weight-bold px-3">
+                    <h4 className="card-title text-left fw-bold px-3">
                       Problem that customers face 3
                     </h4>
                     <div className="card-text px-3">

@@ -123,9 +123,7 @@ export default function Pingo(props) {
                 <div className="col-md-5 border border-dark col-left">
                   <div className="container card pingo-cards px-5">
                     <div className="card-body py-5">
-                      <h4 className="card-title font-weight-bold">
-                        Advantages
-                      </h4>
+                      <h4 className="card-title fw-bold">Advantages</h4>
                       <p className="card-text w-75">
                         Specialized in mobility-on-demand systems for high
                         capacity vehicles. Et has minim elitr intellegat. Mea
@@ -139,9 +137,7 @@ export default function Pingo(props) {
 
                   <div className="container card pingo-cards px-5">
                     <div className="card-body py-5">
-                      <h4 className="card-title font-weight-bold">
-                        Advantages
-                      </h4>
+                      <h4 className="card-title fw-bold">Advantages</h4>
                       <p className="card-text w-75">
                         Specialized in mobility-on-demand systems for high
                         capacity vehicles. Et has minim elitr intellegat. Mea
@@ -155,9 +151,7 @@ export default function Pingo(props) {
 
                   <div className="container card pingo-cards px-5">
                     <div className="card-body py-5">
-                      <h4 className="card-title font-weight-bold">
-                        Advantages
-                      </h4>
+                      <h4 className="card-title fw-bold">Advantages</h4>
                       <p className="card-text w-75">
                         Specialized in mobility-on-demand systems for high
                         capacity vehicles. Et has minim elitr intellegat. Mea
@@ -174,7 +168,7 @@ export default function Pingo(props) {
                 <div className="col-md-5 border border-dark col-right">
                   <div className="container card pingo-cards px-5">
                     <div className="card-body py-5">
-                      <h4 className="card-title font-weight-bold">Features</h4>
+                      <h4 className="card-title fw-bold">Features</h4>
                       <p className="card-text w-75">
                         Specialized in mobility-on-demand systems for high
                         capacity vehicles. Et has minim elitr intellegat. Mea
@@ -188,7 +182,7 @@ export default function Pingo(props) {
 
                   <div className="container card pingo-cards px-5">
                     <div className="card-body py-5">
-                      <h4 className="card-title font-weight-bold">Features</h4>
+                      <h4 className="card-title fw-bold">Features</h4>
                       <p className="card-text w-75">
                         Specialized in mobility-on-demand systems for high
                         capacity vehicles. Et has minim elitr intellegat. Mea
@@ -202,7 +196,7 @@ export default function Pingo(props) {
 
                   <div className="container card pingo-cards px-5 pb-5">
                     <div className="card-body py-5">
-                      <h4 className="card-title font-weight-bold">Features</h4>
+                      <h4 className="card-title fw-bold">Features</h4>
                       <p className="card-text w-75">
                         Specialized in mobility-on-demand systems for high
                         capacity vehicles. Et has minim elitr intellegat. Mea
@@ -226,7 +220,7 @@ export default function Pingo(props) {
                 <div className="col-md-6 py-5 g-0">
                   <div className="row col-md-9">
                     <h3 className="pt-5">We are part of</h3>
-                    <h3 className="font-weight-bold">The Routing Company</h3>
+                    <h3 className="fw-bold">The Routing Company</h3>
                   </div>
                   <div className="row  col-md-9">
                     Et has minim elitr intellegat. Mea aeterno eleifend antiopam
@@ -276,8 +270,10 @@ export default function Pingo(props) {
                   />
                 </div>
 
-                <div className="row">
-                  <h1>The whole cityin the palm of your hand.</h1>
+                <div className="row pt-3">
+                  <h1 className="fw-bold">
+                    The whole cityin the palm of your hand.
+                  </h1>
                 </div>
                 <div className="row pt-3 pb-5">
                   <Button className="btn btn-action">
@@ -287,27 +283,25 @@ export default function Pingo(props) {
                     <img src={pingo_ride} alt="Pingo Button" />
                   </Button>
                 </div>
+                <div className="row">
+                  <img src={pingo_mockup} alt="Pingo Mockup" width="100%" />
+                </div>
               </div>
             </div>
           </div>
 
-          <div id="about-mobile" className="section-mini">
+          <div id="about-mobile" className="section-mini px-4">
             <div className="container">
               <div className="row g-0">
-                <div className="row">
-                  <img src={pingo_mockup} alt="Pingo Mockup" width="100%" />
-                </div>
-                <div className="row mx-4 pt-5">
-                  <h3>
-                    About the product offered, visualization areaea usu, qui
-                    dicta sadipscing te.
-                  </h3>
-                  <div>
-                    Et has minim elitr intellegat. Mea aeterno eleifend antiopam
-                    ad, nam no suscipit quaerendum. At nam minimum ponderum. Est
-                    audiam animal molestiae te. Ex duo eripuit mentitum.
-                  </div>
-                </div>
+                <h3>
+                  About the product offered, visualization areaea usu, qui dicta
+                  sadipscing te.
+                </h3>
+              </div>
+              <div className="row g-0">
+                Et has minim elitr intellegat. Mea aeterno eleifend antiopam ad,
+                nam no suscipit quaerendum. At nam minimum ponderum. Est audiam
+                animal molestiae te. Ex duo eripuit mentitum.
               </div>
             </div>
           </div>
@@ -316,7 +310,7 @@ export default function Pingo(props) {
               <div className="col-10 border-top border border-dark col-left mb-5 mx-4">
                 <div className="container card pingo-cards">
                   <div className="card-body py-5">
-                    <h4 className="card-title font-weight-bold">Advantages</h4>
+                    <h4 className="card-title fw-bold">Advantages</h4>
                     <p className="card-text ">
                       It’s not easy to build an efficient pooling product.
                       Reduce engineering costs. Reduce engineering costs.
@@ -326,7 +320,7 @@ export default function Pingo(props) {
 
                 <div className="container card pingo-cards">
                   <div className="card-body py-5">
-                    <h4 className="card-title font-weight-bold">Advantages</h4>
+                    <h4 className="card-title fw-bold">Advantages</h4>
                     <p className="card-text ">
                       It’s not easy to build an efficient pooling product.
                       Reduce engineering costs. Reduce engineering costs.
@@ -336,7 +330,7 @@ export default function Pingo(props) {
 
                 <div className="container card pingo-cards">
                   <div className="card-body py-5">
-                    <h4 className="card-title font-weight-bold">Advantages</h4>
+                    <h4 className="card-title fw-bold">Advantages</h4>
                     <p className="card-text ">
                       It’s not easy to build an efficient pooling product.
                       Reduce engineering costs. Reduce engineering costs.
@@ -348,7 +342,7 @@ export default function Pingo(props) {
               <div className="col-10 border-top border border-dark col-left mb-5 mx-4">
                 <div className="container card pingo-cards">
                   <div className="card-body py-5">
-                    <h4 className="card-title font-weight-bold">Features</h4>
+                    <h4 className="card-title fw-bold">Features</h4>
                     <p className="card-text">
                       It’s not easy to build an efficient pooling product.
                       Reduce engineering costs.
@@ -358,7 +352,7 @@ export default function Pingo(props) {
 
                 <div className="container card pingo-cards">
                   <div className="card-body py-5">
-                    <h4 className="card-title font-weight-bold">Features</h4>
+                    <h4 className="card-title fw-bold">Features</h4>
                     <p className="card-text">
                       It’s not easy to build an efficient pooling product.
                       Reduce engineering costs.
@@ -368,7 +362,7 @@ export default function Pingo(props) {
 
                 <div className="container card pingo-cards pb-5">
                   <div className="card-body py-5">
-                    <h4 className="card-title font-weight-bold">Features</h4>
+                    <h4 className="card-title fw-bold">Features</h4>
                     <p className="card-text">
                       It’s not easy to build an efficient pooling product.
                       Reduce engineering costs.
@@ -388,7 +382,7 @@ export default function Pingo(props) {
                 <div className="py-5 g-0">
                   <div>
                     <h3>We are part of</h3>
-                    <h3 className="font-weight-bold">The Routing Company</h3>
+                    <h3 className="fw-bold">The Routing Company</h3>
                   </div>
                   <div>
                     Et has minim elitr intellegat. Mea aeterno eleifend antiopam
@@ -507,55 +501,6 @@ export default function Pingo(props) {
             </div>
           </div>
         </div>
-
-        {/* <Responsive.Mobile>
-          <div id="header-mobile">
-            <div className="row container justify-content-center pingo-landing-page">
-              <img
-                className="img-fluid"
-                src={pingologowhite}
-                alt="Pingo Main logo"
-                width="100%"
-                height="100%"
-              />
-              <h3 className="mobile-subtitle font-weight-bold pt-5 ps-3">
-                The whole city in the palm of your hand.
-              </h3>
-              <div className="action-button justify-content-left pt-4">
-                <div className="action-buttons pe-3">
-                  <Button className="btn btn-action ps-4">
-                    <img src={pingo_register} alt="Pingo Button" />
-                  </Button>
-                </div>
-                <div className="action-buttons">
-                  <Button className="btn btn-action">
-                    <img src={pingo_ride} alt="Pingo Button" />
-                  </Button>
-                </div>
-              </div>
-            </div>
-            <div className="text-center pt-3 mockup-mobile pb-4">
-              <img
-                src={pingo_mockup}
-                alt="Mockup Mobile"
-                width="130%"
-                height="145%"
-              />
-            </div>
-          </div>
-          <div id="about-mobile">
-            <div className="row-container">
-              <div className="col-10 justify-content-left py-5 ps-5">
-                <h4 className="pb-2">
-                  About the product offered, areaea usu, quipscing te.
-                </h4>
-                Et has minim elitr intellegat. Mea aeterno eleifend antiopam ad,
-                nam no suscipit quaerendum. At nam minimum ponderum. Est audiam
-                animal molestiae te.
-              </div>
-            </div>
-          </div>
-        </Responsive.Mobile> */}
 
         <div id={navbarItems[2].url} className="section somewhere">
           <div className="container pt-md-5">

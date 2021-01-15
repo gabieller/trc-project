@@ -15,7 +15,7 @@ import appstorebadge from "../images/app-store-badge.svg"
 
 export default function Footer() {
   return (
-    <footer id="footer" className="section font-weight-bold">
+    <footer id="footer" className="section fw-bold">
       <div className="container">
         <div className="row no-gutters">
           <div className="col-12 col-md-4">

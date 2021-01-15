@@ -27,7 +27,7 @@ export default function SideMenu({ onClick, uri, visible }) {
             </div>
             <div className="col-md-6 menu">
               <div id="side-menu" className="col-md-6 menuLink pt-5">
-                <ul className="navbar-nav ml-auto font-weight-bold">
+                <ul className="navbar-nav ml-auto fw-bold">
                   <li className={`nav-item ${uri === "/" ? "active" : ""}`}>
                     <Link to="/" className="nav-link d-inline-flex">
                       <h1>

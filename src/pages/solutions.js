@@ -31,7 +31,7 @@ export default function Solutions(props) {
               <div className="col-md-4 pb-3 pb-md-0 pr-md-3">
                 <div className="card border border-dark mx-0">
                   <div className="card-body">
-                    <h4 className="card-title text-left font-weight-bold w-75">
+                    <h4 className="card-title text-left fw-bold w-75">
                       Demand-responsive transit
                     </h4>
                     <p className="card-text ">
@@ -44,7 +44,7 @@ export default function Solutions(props) {
               <div className="col-md-4 pb-3 pb-md-0 pr-md-3">
                 <div className="card border border-dark mx-0">
                   <div className="card-body">
-                    <h4 className="card-title text-left font-weight-bold w-75">
+                    <h4 className="card-title text-left fw-bold w-75">
                       Ridesharing companies
                     </h4>
                     <p className="card-text ">
@@ -57,7 +57,7 @@ export default function Solutions(props) {
               <div className="col-md-4 pb-3 pb-md-0 pr-md-3">
                 <div className="card border border-dark mx-0">
                   <div className="card-body">
-                    <h4 className="card-title text-left font-weight-bold">
+                    <h4 className="card-title text-left fw-bold">
                       Transit & para-transit (WAV) authorities
                     </h4>
                     <p className="card-text ">
@@ -113,16 +113,14 @@ export default function Solutions(props) {
             <div className="col-md-5 border border-top-0 border-dark bg-white col-right pt-5 px-md-5">
               <div className="row solutions flex-column">
                 <div className="col-9">
-                  <h4 className="pb-3 font-weight-bold">
-                    1. We partner with you
-                  </h4>
+                  <h4 className="pb-3 fw-bold">1. We partner with you</h4>
                   <div className="pb-5">
                     We work with you to build solutions that are tailor-made to
                     your transit needs.
                   </div>
                 </div>
                 <div className="col-9">
-                  <h4 className="pb-3 font-weight-bold">
+                  <h4 className="pb-3 fw-bold">
                     2. Our routing engine gets to work
                   </h4>
                   <div className="pb-5">
@@ -132,7 +130,7 @@ export default function Solutions(props) {
                   </div>
                 </div>
                 <div className="col-9">
-                  <h4 className="pb-3 font-weight-bold">
+                  <h4 className="pb-3 fw-bold">
                     3. Less stress, more time and money saved
                   </h4>
                   <div className="pb-5">
@@ -140,7 +138,7 @@ export default function Solutions(props) {
                   </div>
                 </div>
 
-                {/* <h4 className="pb-3 font-weight-bold">
+                {/* <h4 className="pb-3 fw-bold">
                         2. Our routing engine gets to work
                       </h4>
                     <div className="col-5 pb-5">
@@ -148,7 +146,7 @@ export default function Solutions(props) {
                       most optimal routes for your vehiclís and rides in real
                       time.
                     </div>
-                      <h4 className="pb-3 font-weight-bold">
+                      <h4 className="pb-3 fw-bold">
                         3. Less stress, more time and money saved
                       </h4>
                     <div className="col-5 pb-5">
@@ -248,7 +246,7 @@ export default function Solutions(props) {
               </div>
               <div className="col-md-7 justify-content-left p-5">
                 <div className="container">
-                  <h3 className="font-weight-bold pt-md-5">Pingo</h3>
+                  <h3 className="fw-bold pt-md-5">Pingo</h3>
                 </div>
                 <div className="container">
                   <h3>Transit that moves with you</h3>
