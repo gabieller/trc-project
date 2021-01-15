@@ -30,7 +30,8 @@ function SubscribeForm() {
         <div className="d-md-inline-flex col-12 pt-3">
           <div className="input-group mb-3">
             <input
-              type="text"
+              type="email"
+              onChange={handleChange}
               className="form-control"
               placeholder="| Enter your email"
               aria-label="| Enter your email"
@@ -45,7 +46,7 @@ function SubscribeForm() {
             </Button>
           </div>
         </div>
-        <div className="d-flex flex-column pt-3">
+        <div className="d-flex flex-column fw-bold py-3">
           <span status={status}>{message}</span>
         </div>
       </form>
