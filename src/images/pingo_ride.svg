@@ -1,5 +1,46 @@
-<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="210" height="89.299" viewBox="0 0 210 89.299">
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="190.176" height="89.299" viewBox="0 0 190.176 89.299">
   <defs>
+    <style>
+      .cls-1 {
+        fill: #333;
+      }
+
+      .cls-2 {
+        mix-blend-mode: multiply;
+        isolation: isolate;
+      }
+
+      .cls-3, .cls-6 {
+        fill: none;
+      }
+
+      .cls-4 {
+        clip-path: url(#clip-path);
+      }
+
+      .cls-5 {
+        font-size: 14px;
+        font-family: Roboto-Medium, Roboto;
+        font-weight: 500;
+        letter-spacing: 0.089em;
+      }
+
+      .cls-6 {
+        stroke-miterlimit: 10;
+      }
+
+      .cls-7, .cls-8 {
+        stroke: none;
+      }
+
+      .cls-8 {
+        fill: #333;
+      }
+
+      .cls-9 {
+        filter: url(#Rectangle);
+      }
+    </style>
     <filter id="Rectangle" x="0" y="16" width="12" height="16.909" filterUnits="userSpaceOnUse">
       <feOffset dy="2" input="SourceAlpha"/>
       <feGaussianBlur stdDeviation="2" result="blur"/>
@@ -8,27 +49,29 @@
       <feComposite in="SourceGraphic"/>
     </filter>
     <clipPath id="clip-path">
-      <rect id="FAB_Mask" data-name="FAB Mask" width="188" height="40" rx="20" fill="#333"/>
+      <rect id="FAB_Mask" data-name="FAB Mask" class="cls-1" width="168" height="40" rx="20"/>
     </clipPath>
   </defs>
-  <g id="Group_1140" data-name="Group 1140" transform="translate(-385 -1283)">
-    <g id="Group_1049" data-name="Group 1049" transform="translate(391 1283)">
-      <g id="Container">
-        <g id="Light_Elevation_00dp" data-name="Light 🌕/Elevation/00dp" transform="translate(0)">
-          <g id="Shadow" style="mix-blend-mode: multiply;isolation: isolate">
-            <g transform="matrix(1, 0, 0, 1, -6, 0)" filter="url(#Rectangle)">
-              <path id="Rectangle-2" data-name="Rectangle" d="M0,20Z" transform="translate(6)" fill="#333"/>
+  <g id="Group_1150" data-name="Group 1150" transform="translate(-398.824 -1283)">
+    <g id="Group_1140" data-name="Group 1140">
+      <g id="Group_1049" data-name="Group 1049" transform="translate(404.824 1283)">
+        <g id="Container" transform="translate(0)">
+          <g id="Light_Elevation_00dp" data-name="Light 🌕/Elevation/00dp" transform="translate(0 20)">
+            <g id="Shadow" class="cls-2">
+              <g class="cls-9" transform="matrix(1, 0, 0, 1, -6, -20)">
+                <path id="Rectangle-2" data-name="Rectangle" class="cls-1" d="M0,20Z" transform="translate(6)"/>
+              </g>
             </g>
           </g>
+          <rect id="_FAB_Color" data-name="🎨 FAB Color" class="cls-3" width="184" height="40" transform="translate(0.176)"/>
         </g>
-        <rect id="_FAB_Color" data-name="🎨 FAB Color" width="204" height="40" fill="none"/>
+        <text id="_Label" data-name="↳ ✏️ Label" class="cls-5" transform="translate(29.176 25)"><tspan x="0" y="0">RIDE PINGO NOW</tspan></text>
       </g>
-      <text id="_Label" data-name="↳ ✏️ Label" transform="translate(39 25)" font-size="14" font-family="Roboto-Medium, Roboto" font-weight="500" letter-spacing="0.089em"><tspan x="0" y="0">RIDE PINGO NOW</tspan></text>
-    </g>
-    <g id="Group_1052" data-name="Group 1052" transform="translate(37 251)">
-      <g id="Path_1841" data-name="Path 1841" transform="translate(-214.873 489.41)" fill="none" stroke-miterlimit="10">
-        <path d="M582.7,542.867v89.022h47.478a44.511,44.511,0,0,1,44.51-44.511h0A44.511,44.511,0,0,1,719.2,631.889h47.478V542.867Z" stroke="none"/>
-        <path d="M 583.697021484375 543.8670043945312 L 583.697021484375 630.8889770507812 L 629.1856689453125 630.8889770507812 C 629.3092041015625 625.0984497070312 630.50732421875 619.4803466796875 632.7518310546875 614.1736450195312 C 635.0440673828125 608.7540893554688 638.3253784179688 603.8870849609375 642.504638671875 599.707763671875 C 646.6838989257812 595.5284423828125 651.5508422851562 592.2471313476562 656.97021484375 589.9548950195312 C 662.58154296875 587.5814208984375 668.5416870117188 586.3779907226562 674.6849975585938 586.3779907226562 C 680.8285522460938 586.3779907226562 686.7888793945312 587.5814208984375 692.4003295898438 589.954833984375 C 697.8198852539062 592.2471313476562 702.6868896484375 595.5284423828125 706.8662109375 599.707763671875 C 711.0455322265625 603.8870849609375 714.3268432617188 608.7540893554688 716.619140625 614.1736450195312 C 718.8636474609375 619.4802856445312 720.061767578125 625.0984497070312 720.185302734375 630.8889770507812 L 765.6740112304688 630.8889770507812 L 765.6740112304688 543.8670043945312 L 583.697021484375 543.8670043945312 M 582.697021484375 542.8670043945312 L 766.6740112304688 542.8670043945312 L 766.6740112304688 631.8889770507812 L 719.1959838867188 631.8889770507812 C 719.1959838867188 607.3060302734375 699.2680053710938 587.3779907226562 674.6849975585938 587.3779907226562 C 650.10302734375 587.3779907226562 630.1749877929688 607.3060302734375 630.1749877929688 631.8889770507812 L 582.697021484375 631.8889770507812 L 582.697021484375 542.8670043945312 Z" stroke="none" fill="#333"/>
+      <g id="Group_1052" data-name="Group 1052" transform="translate(37 251)">
+        <g id="Path_1841" data-name="Path 1841" class="cls-6" transform="translate(-214.873 489.41)">
+          <path class="cls-7" d="M582.7,542.867v89.022h47.478a44.511,44.511,0,0,1,44.51-44.511h0A44.511,44.511,0,0,1,719.2,631.889h47.478V542.867Z"/>
+          <path class="cls-8" d="M 583.697021484375 543.8670043945312 L 583.697021484375 630.8889770507812 L 629.1856689453125 630.8889770507812 C 629.3092041015625 625.0984497070312 630.50732421875 619.4803466796875 632.7518310546875 614.1736450195312 C 635.0440673828125 608.7540893554688 638.3253784179688 603.8870849609375 642.504638671875 599.707763671875 C 646.6838989257812 595.5284423828125 651.5508422851562 592.2471313476562 656.97021484375 589.9548950195312 C 662.58154296875 587.5814208984375 668.5416870117188 586.3779907226562 674.6849975585938 586.3779907226562 C 680.8285522460938 586.3779907226562 686.7888793945312 587.5814208984375 692.4003295898438 589.954833984375 C 697.8198852539062 592.2471313476562 702.6868896484375 595.5284423828125 706.8662109375 599.707763671875 C 711.0455322265625 603.8870849609375 714.3268432617188 608.7540893554688 716.619140625 614.1736450195312 C 718.8636474609375 619.4802856445312 720.061767578125 625.0984497070312 720.185302734375 630.8889770507812 L 765.6740112304688 630.8889770507812 L 765.6740112304688 543.8670043945312 L 583.697021484375 543.8670043945312 M 582.697021484375 542.8670043945312 L 766.6740112304688 542.8670043945312 L 766.6740112304688 631.8889770507812 L 719.1959838867188 631.8889770507812 C 719.1959838867188 607.3060302734375 699.2680053710938 587.3779907226562 674.6849975585938 587.3779907226562 C 650.10302734375 587.3779907226562 630.1749877929688 607.3060302734375 630.1749877929688 631.8889770507812 L 582.697021484375 631.8889770507812 L 582.697021484375 542.8670043945312 Z"/>
+        </g>
       </g>
     </g>
   </g>

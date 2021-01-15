@@ -1,21 +1,51 @@
-<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="207" height="89.021" viewBox="0 0 207 89.021">
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="184.272" height="89.021" viewBox="0 0 184.272 89.021">
   <defs>
+    <style>
+      .cls-1, .cls-2 {
+        fill: #fff;
+      }
+
+      .cls-2 {
+        stroke: #fff;
+        stroke-miterlimit: 10;
+      }
+
+      .cls-3 {
+        clip-path: url(#clip-path);
+      }
+
+      .cls-4 {
+        fill: #333;
+        font-size: 14px;
+        font-family: Roboto-Medium, Roboto;
+        font-weight: 500;
+        letter-spacing: 0.089em;
+      }
+
+      .cls-5 {
+        stroke: none;
+      }
+
+      .cls-6 {
+        fill: none;
+      }
+    </style>
     <clipPath id="clip-path">
-      <rect id="FAB_Mask" data-name="FAB Mask" width="207" height="40" rx="20" fill="#fff"/>
+      <rect id="FAB_Mask" data-name="FAB Mask" class="cls-1" width="184" height="40" rx="20"/>
     </clipPath>
   </defs>
-  <g id="Group_1147" data-name="Group 1147" transform="translate(-422 -5537.371)">
+  <g id="Group_1147" data-name="Group 1147" transform="translate(-433.728 -5537.371)">
     <g id="Group_1145" data-name="Group 1145">
       <g id="Group_1144" data-name="Group 1144">
-        <g id="Rectangle_733" data-name="Rectangle 733" transform="translate(433.728 5537.371)" fill="#fff" stroke="#fff" stroke-miterlimit="10" stroke-width="1">
-          <rect width="183.977" height="89.021" stroke="none"/>
-          <rect x="0.5" y="0.5" width="182.977" height="88.021" fill="none"/>
+        <g id="Rectangle_733" data-name="Rectangle 733" class="cls-2" transform="translate(433.728 5537.371)">
+          <rect class="cls-5" width="183.977" height="89.021"/>
+          <rect class="cls-6" x="0.5" y="0.5" width="182.977" height="88.021"/>
         </g>
       </g>
     </g>
-    <g id="Light_FAB_2._Extended_Hover" data-name="Light 🌕/ FAB / 2. Extended/Hover" transform="translate(422 5567)">
-      <g id="Group_891" data-name="Group 891" transform="translate(0)">
-        <text id="_Label" data-name="↳ ✏️ Label" transform="translate(40 25)" fill="#333" font-size="14" font-family="Roboto-Medium, Roboto" font-weight="500" letter-spacing="0.089em"><tspan x="0" y="0">RIDE PINGO NOW</tspan></text>
+    <g id="Light_FAB_2._Extended_Hover" data-name="Light 🌕/ FAB / 2. Extended/Hover" transform="translate(434 5567)">
+      <g id="Group_891" data-name="Group 891">
+        <text id="_Label" data-name="↳ ✏️ Label" class="cls-4" transform="translate(29 25)"><tspan x="0" y="0">RIDE PINGO NOW</tspan></text>
       </g>
     </g>
   </g>
