@@ -22,7 +22,7 @@ export default function Footer() {
               <div className="col-6 col-md-12">
                 <img src={trclogo} alt="Logo TRC" className="trclogo" />
               </div>
-              <div className="col-6 col-md-12 pb-3 d-flex align-middle">
+              <div className="col-6 col-md-12 py-3 d-flex align-middle">
                 <button className="btn btn-link px-0">
                   <img
                     src={medium}

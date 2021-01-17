@@ -80,15 +80,15 @@ export default function Pingo(props) {
                 </div>
                 <div className="row g-0">
                   <div className="d-md-inline-flex action-button  pt-4">
-                    <div className="action-buttons">
-                      <Button className="btn btn-action">
+                    <div>
+                      <button className="btn btn-action">
                         <img src={pingo_register} alt="Pingo Button" />
-                      </Button>
+                      </button>
                     </div>
-                    <div className="action-buttons">
-                      <Button className="btn btn-action">
+                    <div>
+                      <button className="btn btn-action">
                         <img src={pingo_ride} alt="Pingo Button" />
-                      </Button>
+                      </button>
                     </div>
                   </div>
                 </div>
@@ -411,21 +411,21 @@ export default function Pingo(props) {
                 <div
                   id="carouselExampleIndicators"
                   className="carousel slide"
-                  data-ride="carousel"
+                  data-bs-ride="carousel"
                 >
                   <ol className="carousel-indicators">
                     <li
-                      data-target="#carouselExampleIndicators"
-                      data-slide-to="0"
+                      data-bs-target="#carouselExampleIndicators"
+                      data-bs-slide-to="0"
                       className="active"
                     ></li>
                     <li
-                      data-target="#carouselExampleIndicators"
-                      data-slide-to="1"
+                      data-bs-target="#carouselExampleIndicators"
+                      data-bs-slide-to="1"
                     ></li>
                     <li
-                      data-target="#carouselExampleIndicators"
-                      data-slide-to="2"
+                      data-bs-target="#carouselExampleIndicators"
+                      data-bs-slide-to="2"
                     ></li>
                   </ol>
                   <div className="carousel-inner">
@@ -452,7 +452,7 @@ export default function Pingo(props) {
                       </div>
                     </div>
                     <div className="carousel-item">
-                      <div className="card text-center bg-transparent border-0 w-50">
+                      <div className="card text-center bg-transparent border-0 pt-5 pt-md-0">
                         <img
                           className="card-img-top"
                           src={quote}
@@ -554,14 +554,14 @@ export default function Pingo(props) {
               </div>
               <div className="d-md-inline-flex action-button pt-5 g-0">
                 <div className="action-buttons">
-                  <Button className="btn btn-action">
+                  <button className="btn btn-action">
                     <img src={pingo_register2} alt="Pingo Button" />
-                  </Button>
+                  </button>
                 </div>
                 <div className="action-buttons">
-                  <Button className="btn btn-action">
+                  <button className="btn btn-action">
                     <img src={pingo_ride2} alt="Pingo Button" />
-                  </Button>
+                  </button>
                 </div>
               </div>
             </div>
