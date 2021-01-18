@@ -1,4 +1,6 @@
 import React, { useRef } from "react"
+import { Link } from "gatsby"
+
 import Button from "@material-ui/core/Button"
 import LayoutPingo from "../components/LayoutPingo"
 import Responsive from "../components/Responsive"
@@ -6,6 +8,11 @@ import Autocomplete from "../components/AutoComplete"
 import Arrow from "../components/Arrow"
 import NavBarPingo from "../components/NavBarPingo"
 import CanvasPingo from "../components/CanvasPingo"
+
+import trclogo from "../images/trc-logo-black.png"
+import arrowright from "../images/arrow-right-black.svg"
+import arrowrightmobile from "../images/arrow-right-black-mobile.svg"
+
 import pingologowhite from "../images/pingologowhite.png"
 import pingo_mockup from "../images/pingo_mockup.png"
 import mockup from "../images/mockup.png"
@@ -56,6 +63,19 @@ export default function Pingo(props) {
                 canvasRef.current.triggerAnimation(e)
               }}
             >
+              <Link to="/">
+                <div className="d-flex flex-row-reverse row-trc-logo user-select-none">
+                  <img
+                    className="img-fluid trc-logo"
+                    src={trclogo}
+                    alt="Pingo Main logo"
+                    width="650"
+                    height="400"
+                  />
+                  <img src={arrowright} alt="Go to TRC" />
+                </div>
+              </Link>
+
               <div className="row justify-content-center pingo-landing-page user-select-none">
                 <img
                   className="img-fluid pingo-logo"
@@ -259,6 +279,23 @@ export default function Pingo(props) {
                 canvasRef.current.triggerAnimation(e)
               }}
             >
+              <Link to="/">
+                <div className="d-flex flex-row-reverse row-trc-logo-mobile user-select-none">
+                  <img
+                    className="img-fluid trc-logo-mobile g-0"
+                    src={trclogo}
+                    alt="TRC Main logo"
+                    width="650"
+                    height="400"
+                  />
+                  <img
+                    src={arrowrightmobile}
+                    alt="Go to TRC"
+                    className="arrow"
+                  />
+                </div>
+              </Link>
+
               <div className="row justify-content-center pingo-landing-page user-select-none g-0">
                 <div className="row">
                   <img
