@@ -1,5 +1,8 @@
 import React, { useEffect } from "react"
 import Layout from "../components/Layout"
+import Demo from "../components/Demo"
+import Responsive from "../components/Responsive"
+import "../styles/blog.css"
 
 function widgetDownload(src) {
   return new Promise(function (resolve, reject) {
@@ -16,6 +19,9 @@ function widgetDownload(src) {
 }
 
 var my_script = widgetDownload("https://medium-widget.pixelpoint.io/widget.js")
+// var my_script_mobile = widgetDownload(
+//   "https://medium-widget.pixelpoint.io/widget.js"
+// )
 
 export default function (props) {
   useEffect(() => {
@@ -29,7 +35,7 @@ export default function (props) {
             limit: 4,
             picture: "big",
             fields: ["description", "author", "claps", "publishAt"],
-            ratio: "landscape",
+            ratio: "square",
           },
         })
       }, 300)
@@ -38,7 +44,15 @@ export default function (props) {
 
   return (
     <Layout {...props}>
-      <div id="medium-widget" />
+      <div id="medium" className="container-fluid">
+        <div className="section-mini">
+          <div className="container">
+            <h1 className="col-8 col-md-12">What we have been up to</h1>
+            <div id="medium-widget" className="" />
+          </div>
+        </div>
+      </div>
+      <Demo />
     </Layout>
   )
 }
