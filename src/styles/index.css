@@ -26,17 +26,8 @@
   background-color: #E4E1E5;
 }
 
-#index > .features {
-  background-color: #c3cbcd;
-  color: #000000de;
-}
-
 #index .card a {
   color: #000000;
-}
-
-#index > .backed {
-  background-color: #f5f4f5;
 }
 
 #index > .backed img {
@@ -51,7 +42,6 @@
 #index .card {
   border: 1px;
   border-radius: 0;
-  background-color: #f4f5f4;
   font-family: "Mulish";
   font-size: 14px;
   color: #373f41;

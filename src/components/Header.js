@@ -36,7 +36,7 @@ export default function Header({ uri }) {
   return (
     <>
       <nav className={`navbar fixed-top ${state.visibilityClass}`}>
-        <Link to="/" className="navbar-brand">
+        <Link to="/" className="navbar-brand p-3 p-xxl-5">
           <img
             src={trclogo}
             alt="Main logo"
