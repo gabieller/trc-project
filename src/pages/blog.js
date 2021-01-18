@@ -2,7 +2,6 @@ import React, { useEffect } from "react"
 import Layout from "../components/Layout"
 import Demo from "../components/Demo"
 import Responsive from "../components/Responsive"
-import "../styles/blog.css"
 
 function widgetDownload(src) {
   return new Promise(function (resolve, reject) {
@@ -19,9 +18,6 @@ function widgetDownload(src) {
 }
 
 var my_script = widgetDownload("https://medium-widget.pixelpoint.io/widget.js")
-// var my_script_mobile = widgetDownload(
-//   "https://medium-widget.pixelpoint.io/widget.js"
-// )
 
 export default function (props) {
   useEffect(() => {
