@@ -1,7 +1,6 @@
 import React, { useEffect } from "react"
 import Layout from "../components/Layout"
 import Demo from "../components/Demo"
-import Responsive from "../components/Responsive"
 import "../styles/blog.css"
 
 function widgetDownload(src) {

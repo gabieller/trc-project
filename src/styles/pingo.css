@@ -11,8 +11,18 @@
   color: #ffffff;
 }
 
+#pingo-header .row-trc-logo {
+  padding: min(5vw, 50px) 0;
+  position: relative;
+}
+
+#pingo-header .trc-logo {
+  z-index: 1;
+  width: 20%;
+}
+
 #pingo-header .pingo-landing-page {
-  padding: min(15vw, 250px) 0;
+  padding: min(12vw, 230px) 0;
   position: relative;
 }
 
