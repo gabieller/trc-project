@@ -1,5 +1,7 @@
 import React from "react"
 import Button from "@material-ui/core/Button"
+import { Link } from "gatsby"
+
 import "../styles/footer.css"
 
 import trclogo from "../images/trc-logo-white.png"
@@ -20,7 +22,9 @@ export default function Footer() {
           <div className="col-12 col-md-4">
             <div className="row g-0">
               <div className="col-6 col-md-12">
-                <img src={trclogo} alt="Logo TRC" className="trclogo" />
+                <Link to="/">
+                  <img src={trclogo} alt="Logo TRC" className="trclogo" />
+                </Link>
               </div>
               <div className="col-6 col-md-12 py-3 d-flex align-middle">
                 <button className="btn btn-link px-0">
@@ -50,7 +54,9 @@ export default function Footer() {
             <hr className="d-md-none" />
             <div className="row g-0">
               <div className="col-6 col-md-12 py-3">
-                <img src={pingologo} alt="Logo PINGO" className="pingologo" />
+                <Link to="/pingo">
+                  <img src={pingologo} alt="Logo PINGO" className="pingologo" />
+                </Link>
               </div>
               <div className="col-6 col-md-7 d-md-flex">
                 <button className="btn btn-link px-0">
