@@ -26,6 +26,20 @@
   position: relative;
 }
 
+#pingo-header .row-trc-logo-mobile {
+  padding: min(3vw, 30px) 0;
+
+}
+
+#pingo-header .trc-logo-mobile {
+  z-index: 1;
+  width: 40%;
+}
+
+#pingo-header .arrow {
+  z-index: 1;
+}
+
 #pingo-header .pingo-logo {
   z-index: 1;
   width: 70%;
@@ -35,12 +49,10 @@
   z-index: 1;
 }
 
-
 .pingo-cards {
   background-color: transparent;
   border: none;
 }
-
 
 .quotes .carousel-indicators li {
   background-color: #c3cbcd;
@@ -49,8 +61,8 @@
   border-radius: 100%;
 }
 
-.quotes .carousel-indicators  {
-bottom: -40px;
+.quotes .carousel-indicators {
+  bottom: -40px;
 }
 
 .wrap-illustration {
@@ -73,7 +85,6 @@ bottom: -40px;
   position: absolute;
   top: -20px;
   right: 0px;
-  
 }
 
 #download-pingo {

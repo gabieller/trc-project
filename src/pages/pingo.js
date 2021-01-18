@@ -11,6 +11,7 @@ import CanvasPingo from "../components/CanvasPingo"
 
 import trclogo from "../images/trc-logo-black.png"
 import arrowright from "../images/arrow-right-black.svg"
+import arrowrightmobile from "../images/arrow-right-black-mobile.svg"
 
 import pingologowhite from "../images/pingologowhite.png"
 import pingo_mockup from "../images/pingo_mockup.png"
@@ -278,6 +279,23 @@ export default function Pingo(props) {
                 canvasRef.current.triggerAnimation(e)
               }}
             >
+              <Link to="/">
+                <div className="d-flex flex-row-reverse row-trc-logo-mobile user-select-none">
+                  <img
+                    className="img-fluid trc-logo-mobile g-0"
+                    src={trclogo}
+                    alt="TRC Main logo"
+                    width="650"
+                    height="400"
+                  />
+                  <img
+                    src={arrowrightmobile}
+                    alt="Go to TRC"
+                    className="arrow"
+                  />
+                </div>
+              </Link>
+
               <div className="row justify-content-center pingo-landing-page user-select-none g-0">
                 <div className="row">
                   <img
