@@ -1,7 +1,6 @@
 import React, { useEffect } from "react"
 import Layout from "../components/Layout"
 import Demo from "../components/Demo"
-import Responsive from "../components/Responsive"
 
 function widgetDownload(src) {
   return new Promise(function (resolve, reject) {
