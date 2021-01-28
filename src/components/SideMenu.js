@@ -1,5 +1,6 @@
 import React from "react"
 import { Link } from "gatsby"
+import Button from "@material-ui/core/Button"
 
 import "../styles/sidemenu.css"
 
@@ -94,33 +95,45 @@ export default function SideMenu({ onClick, uri, visible }) {
               </div>
               <div className="col-md-4 contact flex-column d-flex align-items-end justify-content-end pt-5 pt-md-0">
                 <div className="d-flex">
-                  <button className={`btn btn-link p-0`}>
+                  <Button
+                    className={`btn btn-link p-0`}
+                    href="https://medium.com/routable-ai"
+                    target="_blank"
+                  >
                     <img
                       src={medium}
                       alt="Medium button"
                       width="50"
                       height="30"
                     />
-                  </button>
-                  <button className={`btn btn-link p-2`}>
+                  </Button>
+                  <Button
+                    className={`btn btn-link p-2`}
+                    href="https://www.linkedin.com/company/theroutingcompany/"
+                    target="_blank"
+                  >
                     <img
                       src={linkedin}
                       alt="Linkedin button"
                       width="24"
                       height="24"
                     />
-                  </button>
-                  <button className={`btn btn-link p-2`}>
+                  </Button>
+                  <Button
+                    className={`btn btn-link p-2`}
+                    href="https://twitter.com/routing_company"
+                    target="_blank"
+                  >
                     <img
                       src={twitter}
                       alt="Twitter button"
                       width="30"
                       height="24"
                     />
-                  </button>
+                  </Button>
                 </div>
                 <div className="d-flex email-link">
-                  <a href="mailto:info@theroutingcompany.com?subject=Infomations">
+                  <a href="mailto:info@theroutingcompany.com?subject=Informations">
                     info@theroutingcompany.com
                   </a>
                 </div>

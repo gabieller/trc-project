@@ -29,7 +29,7 @@ export default function Solutions(props) {
             </div>
             <div className="row">
               <div className="col-md-4 pb-3 pb-md-0 pe-md-3">
-                <div className="card border border-dark mx-0">
+                <div className="card h-100 border border-dark mx-0">
                   <div className="card-body">
                     <h4 className="card-title text-left fw-bold">
                       Demand-responsive
@@ -43,21 +43,21 @@ export default function Solutions(props) {
                 </div>
               </div>
               <div className="col-md-4 pb-3 pb-md-0 pe-md-3">
-                <div className="card border border-dark mx-0">
+                <div className="card h-100 border border-dark mx-0">
                   <div className="card-body">
                     <h4 className="card-title text-left fw-bold">
-                      Ridesharing
+                      Ridesharing companies
                     </h4>
-                    <h4 className="card-title text-left fw-bold">companies</h4>
+                    <h4 className="card-title text-left fw-bold">transit</h4>
                     <p className="card-text w-75 ">
-                      Many transit authorities worldwide experimenting with on
-                      demand buses.
+                      It’s not easy to build an efficient pooling product.
+                      Reduce engineering costs.
                     </p>
                   </div>
                 </div>
               </div>
               <div className="col-md-4 pb-3 pb-md-0 pe-md-3">
-                <div className="card border border-dark mx-0">
+                <div className="card h-100 border border-dark mx-0">
                   <div className="card-body">
                     <h4 className="card-title text-left fw-bold">
                       Transit & para-transit
@@ -66,8 +66,8 @@ export default function Solutions(props) {
                       (WAV) authorities
                     </h4>
                     <p className="card-text w-75 ">
-                      Many transit authorities worldwide experimenting with on
-                      demand buses.
+                      Wait times are typically far higher for those who needs
+                      WAVs.
                     </p>
                   </div>
                 </div>

@@ -1,5 +1,6 @@
 import React, { useState } from "react"
 import { useEffectOnlyOnce } from "../utils/hooks"
+import Button from "@material-ui/core/Button"
 
 import "../styles/scrollTop.css"
 
@@ -27,7 +28,7 @@ export default function ScrollTop() {
   }
 
   return (
-    <button
+    <Button
       id="toTopBtn"
       onClick={scrollToTop}
       className={`btn btn-link ${showScroll ? "visible" : ""}`}
@@ -39,6 +40,6 @@ export default function ScrollTop() {
         width="50"
         height="50"
       ></img>
-    </button>
+    </Button>
   )
 }

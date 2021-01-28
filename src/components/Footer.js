@@ -27,28 +27,40 @@ export default function Footer() {
                 </Link>
               </div>
               <div className="col-6 col-md-12 py-3 d-flex align-middle">
-                <button className="btn btn-link px-0">
+                <Button
+                  className="btn btn-link px-0"
+                  href="https://medium.com/routable-ai"
+                  target="_blank"
+                >
                   <img
                     src={medium}
                     alt="Medium button"
                     width="40"
                     height="30"
                   />
-                </button>
-                <button className="btn btn-link">
+                </Button>
+                <Button
+                  className="btn btn-link"
+                  href="https://twitter.com/routing_company"
+                  target="_blank"
+                >
                   <img
                     src={twitter}
                     alt="Twitter button"
                     className="img-fluid"
                   />
-                </button>
-                <button className="btn btn-link">
+                </Button>
+                <Button
+                  className="btn btn-link"
+                  href="https://www.linkedin.com/company/theroutingcompany/"
+                  target="_blank"
+                >
                   <img
                     src={linkedin}
                     alt="Linkedin button"
                     className="img-fluid"
                   />
-                </button>
+                </Button>
               </div>
             </div>
             <hr className="d-md-none" />
@@ -59,20 +71,20 @@ export default function Footer() {
                 </Link>
               </div>
               <div className="col-6 col-md-7 d-md-flex">
-                <button className="btn btn-link px-0">
+                <Button className="btn btn-link px-0">
                   <img
                     src={googleplaybadge}
                     alt="Google Play Download"
                     className="img-fluid"
                   />
-                </button>
-                <button className="btn btn-link px-0">
+                </Button>
+                <Button className="btn btn-link px-0">
                   <img
                     src={appstorebadge}
                     alt="App Store Download"
                     className="img-fluid"
                   />
-                </button>
+                </Button>
               </div>
             </div>
           </div>
