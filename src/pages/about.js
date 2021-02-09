@@ -6,7 +6,12 @@ import Newsletter from "../components/Newsletter"
 import CardTeam from "../components/CardTeam"
 
 import newsletterimage from "../images/newsletterimage.png"
-import menno from "../images/menno-pic.png"
+import james from "../images/james.jpg"
+import menno from "../images/menno.jpg"
+import thuan from "../images/thuan.jpg"
+import alex from "../images/alex.jpg"
+import bradford from "../images/bradford.jpg"
+import daniela from "../images/daniela.jpg"
 import uber from "../images/uber.svg"
 
 import "../styles/about.css"
@@ -39,12 +44,12 @@ export default function About(props) {
               <div className="col-12 col-md-5 border border-top-0 border-dark col-left g-0">
                 <CardTeam
                   imgsize="50"
-                  memberpicture={menno}
+                  memberpicture={james}
                   linkedinurl={"https://www.linkedin.com/in/mennovanderzee/"}
-                  name={"Menno van der Zee"}
-                  position={"Co-Funder"}
+                  name={"James Cox"}
+                  position={"CEO"}
                   description={
-                    "Specialized in mobility-on-demand systems for high capacity vehicles."
+                    "Ridesharing industry leader who launched uberPOOL globally from inception. Chief Product officer of Canoo."
                   }
                   companylogo={uber}
                 />
@@ -55,7 +60,7 @@ export default function About(props) {
                   memberpicture={menno}
                   linkedinurl={"https://www.linkedin.com/in/mennovanderzee/"}
                   name={"Menno van der Zee"}
-                  position={"Co-Funder"}
+                  position={"Head of Global Business Development"}
                   description={
                     "Specialized in mobility-on-demand systems for high capacity vehicles."
                   }
@@ -65,12 +70,12 @@ export default function About(props) {
 
                 <CardTeam
                   imgsize="50"
-                  memberpicture={menno}
+                  memberpicture={thuan}
                   linkedinurl={"https://www.linkedin.com/in/mennovanderzee/"}
-                  name={"Menno van der Zee"}
-                  position={"Co-Funder"}
+                  name={"Thuan Pham"}
+                  position={"Technology Advisor"}
                   description={
-                    "Specialized in mobility-on-demand systems for high capacity vehicles."
+                    "Previously the CTO of Uber and now the CTO of Coupang."
                   }
                   companylogo={uber}
                 />
@@ -81,12 +86,12 @@ export default function About(props) {
               <div className="col-12 col-md-5 border border-top-0 border-dark col-right g-0">
                 <CardTeam
                   imgsize="50"
-                  memberpicture={menno}
+                  memberpicture={alex}
                   linkedinurl={"https://www.linkedin.com/in/mennovanderzee/"}
-                  name={"Menno van der Zee"}
-                  position={"Co-Funder"}
+                  name={"Alex Wallar"}
+                  position={"CTO"}
                   description={
-                    "Specialized in mobility-on-demand systems for high capacity vehicles."
+                    "Specialized in mathematical optimization for high-capacity shared rides. Author of the seminal research on high-capacity ride-sharing."
                   }
                   companylogo={uber}
                 />
@@ -94,12 +99,12 @@ export default function About(props) {
 
                 <CardTeam
                   imgsize="50"
-                  memberpicture={menno}
+                  memberpicture={bradford}
                   linkedinurl={"https://www.linkedin.com/in/mennovanderzee/"}
-                  name={"Menno van der Zee"}
-                  position={"Co-Funder"}
+                  name={"Bradford Church"}
+                  position={"Director of Product"}
                   description={
-                    "Specialized in mobility-on-demand systems for high capacity vehicles."
+                    "Ridesharing veteran and product expert who launched uberBUS globally."
                   }
                   companylogo={uber}
                 />
@@ -107,12 +112,12 @@ export default function About(props) {
 
                 <CardTeam
                   imgsize="50"
-                  memberpicture={menno}
+                  memberpicture={daniela}
                   linkedinurl={"https://www.linkedin.com/in/mennovanderzee/"}
-                  name={"Menno van der Zee"}
-                  position={"Co-Funder"}
+                  name={"Daniela Rus"}
+                  position={"Technology Advisor"}
                   description={
-                    "Specialized in mobility-on-demand systems for high capacity vehicles."
+                    "Deputy Dean of Research, Schwarzman College of Computing at MIT."
                   }
                   companylogo={uber}
                 />

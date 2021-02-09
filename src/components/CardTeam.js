@@ -26,7 +26,9 @@ export default function CardTeam({
             height="20"
           />
         </a>
-        <h5 className="card-title pt-3">{name}</h5>
+        <h5 className="card-title pt-3">
+          <u>{name}</u>
+        </h5>
         <h6 class="card-subtitle mb-2 text-muted">{position}</h6>
         <div className="card-text">{description}</div>
         <img src={companylogo} alt="Uber Logo" className="img-logo-card py-4" />
