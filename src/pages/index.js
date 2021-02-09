@@ -1,7 +1,10 @@
 import React, { Suspense } from "react"
+// import { Link } from "gatsby"
+
 import Layout from "../components/Layout"
 import Demo from "../components/Demo"
 import Button from "@material-ui/core/Button"
+import CookieConsent from "../components/CookieConsent"
 import logos from "../images/backedlogos.png"
 import "../styles/index.css"
 const CanvasAnimation = React.lazy(() =>
@@ -11,6 +14,7 @@ const CanvasAnimation = React.lazy(() =>
 export default function Home(props) {
   return (
     <Layout {...props}>
+      <CookieConsent />
       <div id="index" className="container-fluid">
         <div className="section title justify-content-left">
           <div className="animation-container">
