@@ -31,10 +31,6 @@
   color: #000000;
 }
 
-#index > .backed img {
-  -webkit-filter: grayscale(100%);
-  filter: grayscale(100%);
-}
 
 #index > .title > .action-buttons {
   margin-top: 2rem !important;

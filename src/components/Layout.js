@@ -5,7 +5,8 @@ import Header from "./Header"
 import Footer from "./Footer"
 
 import "../styles/layout.css"
-import loadingtrc from "../images/trc-loading.png"
+// import loadingtrc from "../images/trc-loading.png"
+import loadingtrc from "../images/TRC_logo_motion.gif"
 
 export default function Layout(props) {
   const [isOpenSidebar, setOpenSidebar] = useState(false)
@@ -14,7 +15,7 @@ export default function Layout(props) {
   useEffect(() => {
     setInterval(() => {
       setLoading(false)
-    }, 300)
+    }, 1300)
   }, [])
 
   return (

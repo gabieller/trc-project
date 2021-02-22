@@ -19,7 +19,7 @@ export default function Footer() {
     <footer id="footer" className="section fw-bold">
       <div className="container">
         <div className="row g-0">
-          <div className="col-12 col-md-4">
+          <div className="col-12 col-md-5">
             <div className="row g-0">
               <div className="col-6 col-md-12">
                 <Link to="/">
@@ -88,19 +88,16 @@ export default function Footer() {
               </div>
             </div>
           </div>
-          <div className="col-4 d-none d-md-block">
+          <div className="col-3 d-none d-md-block">
             <div className="row g-0 links-row px-0">
               <div className="col-xl-5 col-lg-4 pb-md-3 links">
                 <div>COMPANY</div>
-                <div>About</div>
-                <div>News</div>
-                <div>Investors</div>
+                <div>Home</div>
+                <div>Team</div>
+                <div>Why TRC</div>
+                <div>Contact</div>
                 <div>Blog</div>
                 <div>Careers</div>
-                <div>Contact</div>
-              </div>
-              <div className="col-xl-5 col-lg-4 links">
-                <div>SOLUTIONS</div>
                 <div>Pingo</div>
               </div>
             </div>
@@ -124,9 +121,10 @@ export default function Footer() {
           </div>
         </div>
         <hr className="d-md-none" />
-        <div className="row col-12 g-0 pt-3">
+        <div className="d-flex flex-column col-12 g-0 pt-5 text-center fs-3">
           <div>©2020 The Routing Company</div>
           <div>All Rights Reserved</div>
+          <div>Terms and Conditions | Privacy Policy</div>
         </div>
       </div>
     </footer>
