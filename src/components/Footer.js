@@ -121,7 +121,7 @@ export default function Footer() {
           </div>
         </div>
         <hr className="d-md-none" />
-        <div className="d-flex flex-column col-12 g-0 pt-5 text-center fs-3">
+        <div className="d-flex flex-column col-12 g-0 pt-5 text-center">
           <div>©2020 The Routing Company</div>
           <div>All Rights Reserved</div>
           <div>Terms and Conditions | Privacy Policy</div>

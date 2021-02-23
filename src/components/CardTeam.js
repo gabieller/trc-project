@@ -17,7 +17,7 @@ export default function CardTeam() {
       <div className="container-fluid container-xxl">
         <div className="row">
           <div className="col-12 col-md-5 border border-dark col-left g-0">
-            <div className="container flex-row card border-0">
+            <div className="container flex-row card  border-0">
               <div className="col-6">
                 <img
                   className="card-img-top  rounded-0"

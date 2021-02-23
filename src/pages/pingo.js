@@ -15,7 +15,7 @@ import arrowrightmobile from "../images/arrow-right-black-mobile.svg"
 
 import pingologowhite from "../images/pingologowhite.png"
 import pingo_mockup from "../images/pingo_mockup.png"
-import mockup from "../images/mockup.png"
+import mockup from "../images/mockup.jpg"
 import quote from "../images/quote.svg"
 import car from "../images/car-illustration.png"
 import pingo_register from "../images/pingo_register.svg"

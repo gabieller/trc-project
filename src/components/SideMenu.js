@@ -35,23 +35,19 @@ export default function SideMenu({ onClick, uri, visible }) {
                       </h1>
                     </Link>
                   </li>
-                  <li
-                    className={`nav-item ${uri === "/about" ? "active" : ""}`}
-                  >
-                    <Link to="/about" className="nav-link d-inline-flex">
+                  <li className={`nav-item ${uri === "/team" ? "active" : ""}`}>
+                    <Link to="/team" className="nav-link d-inline-flex">
                       <h1>
-                        <span className="pe-2">02</span>About
+                        <span className="pe-2">02</span>Team
                       </h1>
                     </Link>
                   </li>
                   <li
-                    className={`nav-item ${
-                      uri === "/solutions" ? "active" : ""
-                    }`}
+                    className={`nav-item ${uri === "/whytrc" ? "active" : ""}`}
                   >
-                    <Link to="/solutions" className="nav-link d-inline-flex">
+                    <Link to="/whytrc" className="nav-link d-inline-flex">
                       <h1>
-                        <span className="pe-2">03</span>Solutions
+                        <span className="pe-2">03</span>Why TRC
                       </h1>
                     </Link>
                   </li>

@@ -8,12 +8,28 @@
 
 #solutions-page .card {
   border-radius: 0;
-  font-family: "Mulish";
   font-size: 14px;
-  color: #373f41;
   line-height: 20px;
   letter-spacing: 0.14px;
   margin: 0px 10px 0 10px;
+}
+
+.why-trc {
+  background-color: #F5F4F5;
+}
+
+.box-shadow {
+  background-color: #f5f4f5;
+}
+
+.wrap-illustration {
+  position: relative;
+}
+
+.somewhere-illustration {
+  position: absolute;
+  top: -110px;
+  left: 800px;
 }
 
 .how-it-works {
