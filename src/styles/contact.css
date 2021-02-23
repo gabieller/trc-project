@@ -1,3 +1,7 @@
+#contact {
+background-color: #F5F4F5;
+}
+
 #contact .form {
   position: relative;
 }
@@ -16,7 +20,7 @@
   min-width: 183px;
 }
 
-@media (min-width: 768px) {
+/* @media (min-width: 768px) {
   .row-form {
     background: linear-gradient(
       to bottom,
@@ -36,4 +40,4 @@
       #F5F4F5 70%
     );
   }
-}
+} */

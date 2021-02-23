@@ -41,78 +41,24 @@ export default function Contact(props) {
       <div id="contact" className="container-fluid">
         <div className="section row-form">
           <div className="container">
-            <h2>Contact our sales team</h2>
-
-            <div className="row">
-              <div className="col-md-8 border border-dark bg-white p-md-5">
+            <div className="row ">
+              <div className="col-md-8 shadow bg-white p-md-5">
+                <h1>Lower costs. More coverage.</h1>
+                <h1>Contact our team. </h1>
                 <form onSubmit={handleOnSubmit} className="form g-0">
                   <div className="row g-3 align-items-center">
                     <div className="col-md-3 fw-bold">
-                      <label for="inputFirsttName" className="col-form-label">
-                        First Name
+                      <label for="inputEmail" className="col-form-label">
+                        Email
                       </label>
                     </div>
                     <div className="col-md-9 g-0">
                       <input
-                        name="firstname"
+                        name="Email"
                         type="text"
-                        id="inputFirsttName"
+                        id="inputEmail"
                         className="form-control rounded-0"
-                        aria-describedby="firstName"
-                      />
-                    </div>
-                  </div>
-
-                  <div className="row g-3 align-items-center">
-                    <div className="col-md-3 fw-bold">
-                      <label for="inputLastName" className="col-form-label">
-                        Last Name
-                      </label>
-                    </div>
-                    <div className="col-md-9 g-0">
-                      <input
-                        name="lastname"
-                        type="text"
-                        id="inputLastName"
-                        className="form-control rounded-0"
-                        aria-describedby="lastName"
-                      />
-                    </div>
-                  </div>
-
-                  <div className="row g-3 align-items-center">
-                    <div className="col-md-3 fw-bold">
-                      <label for="inputWorkEmail" className="col-form-label">
-                        Work mail
-                      </label>
-                    </div>
-                    <div className="col-md-9 g-0">
-                      <input
-                        name="workemail"
-                        type="text"
-                        id="inputWorkEmail"
-                        className="form-control rounded-0"
-                        aria-describedby="workemail"
-                      />
-                    </div>
-                  </div>
-
-                  <div className="row g-3 align-items-center">
-                    <div className="col-md-3 fw-bold">
-                      <label
-                        for="inputCompanyWebsite"
-                        className="col-form-label"
-                      >
-                        Company website
-                      </label>
-                    </div>
-                    <div className="col-md-9 g-0">
-                      <input
-                        name="companywebsite"
-                        type="text"
-                        id="inputCompanyWebsite"
-                        className="form-control rounded-0"
-                        aria-describedby="companywebiste"
+                        aria-describedby="email"
                       />
                     </div>
                   </div>
@@ -120,7 +66,7 @@ export default function Contact(props) {
                   <div className="row g-3 align-items-center">
                     <div className="col-md-3 fw-bold">
                       <label for="inputMessage" className="col-form-label">
-                        Leave us a message
+                        Problem to solve
                       </label>
                     </div>
                     <div className="col-md-9 g-0">
@@ -142,7 +88,7 @@ export default function Contact(props) {
                       disabled={serverState.submitting}
                       variant="contained"
                     >
-                      Contact Sales
+                      Get in touch
                     </Button>
                   </div>
 
@@ -157,104 +103,24 @@ export default function Contact(props) {
               </div>
 
               <div className="col-md-4 pt-5 ps-md-5 pe-md-0">
-                {/* <div className="section"> */}
-                <h5 className="fw-bold">With TRC you can:</h5>
                 <div className="py-3">
-                  <span role="img" aria-label="check">
-                    ✔️
-                  </span>
+                  <h5 className="fw-bold">General queries</h5>
                   <small>
-                    Et has minim elitr intellegat. Mea aeterno eleifend antiopam
-                    ad, nam no suscipit quaerendum.
+                    For general queries, please email info@theroutingcompany.com
                   </small>
                 </div>
                 <div className="py-3">
-                  <span role="img" aria-label="check">
-                    ✔️
-                  </span>
+                  <h5 className="fw-bold">Technical support</h5>
+
                   <small>
-                    Et has minim elitr intellegat. Mea aeterno eleifend antiopam
-                    ad, nam no suscipit quaerendum.
+                    For general queries, please email info@theroutingcompany.com
                   </small>
                 </div>
                 <div className="py-3">
-                  <span role="img" aria-label="check">
-                    ✔️
-                  </span>
+                  <h5 className="fw-bold">Careers</h5>
                   <small>
-                    Et has minim elitr intellegat. Mea aeterno eleifend antiopam
-                    ad, nam no suscipit quaerendum.
+                    For general queries, please email info@theroutingcompany.com
                   </small>
-                </div>
-                {/* </div> */}
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <div className="section bg-white pt-5">
-          <div className=" container">
-            <div className=" row g-0">
-              <div className="col-md-4">
-                <div className="card-body">
-                  <h4 className="card-title fw-bold">General queries</h4>
-                  <div className="card-text w-75">
-                    Qui dicta sadipscing te at
-                  </div>
-                  <a
-                    className="text-dark"
-                    c
-                    href="mailto:info@theroutingcompany.com?subject=Infomations"
-                  >
-                    info@theroutingcompany.com
-                  </a>
-                </div>
-              </div>
-
-              <div className="col-md-4">
-                <div className="card-body">
-                  <h4 className="card-title fw-bold">Medium</h4>
-                  <div className="card-text w-75 pb-3">
-                    Qui dicta sadipscing te at dicta sadipscing te at.
-                  </div>
-                  <Button
-                    className="btn bg-white rounded-0 btn-action "
-                    variant="contained"
-                  >
-                    VISIT MEDIUM
-                  </Button>
-                </div>
-              </div>
-
-              <div className="col-md-4 ">
-                <div className="card-body">
-                  <h4 className="card-title fw-bold">Careers</h4>
-                  <div className="card-text w-75 pb-3">
-                    Qui dicta sadipscing te at dicta sadipscing te at.
-                  </div>
-                  <Button
-                    className="btn bg-white rounded-0 btn-action"
-                    variant="contained"
-                  >
-                    CONTACT CAREERS
-                  </Button>
-                </div>
-              </div>
-            </div>
-
-            <div className="row g-0">
-              <div className="col-md-4 ">
-                <div className="card-body">
-                  <h4 className="card-title fw-bold">Technical support</h4>
-                  <div className="card-text w-75">
-                    Qui dicta sadipscing te at
-                  </div>
-                  <a
-                    className="text-dark"
-                    href="mailto:info@theroutingcompany.com?subject=Infomations"
-                  >
-                    info@theroutingcompany.com
-                  </a>
                 </div>
               </div>
             </div>
