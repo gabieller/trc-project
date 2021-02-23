@@ -1,43 +1,25 @@
 import React, { useRef } from "react"
 import { Link } from "gatsby"
 
-import Button from "@material-ui/core/Button"
 import LayoutPingo from "../components/LayoutPingo"
 import Responsive from "../components/Responsive"
-import Autocomplete from "../components/AutoComplete"
-import Arrow from "../components/Arrow"
-import NavBarPingo from "../components/NavBarPingo"
 import CanvasPingo from "../components/CanvasPingo"
 
 import trclogo from "../images/trc-logo-black.png"
 import arrowright from "../images/arrow-right-black.svg"
 import arrowrightmobile from "../images/arrow-right-black-mobile.svg"
-
 import pingologowhite from "../images/pingologowhite.png"
-import pingo_mockup from "../images/pingo_mockup.png"
-import mockup from "../images/mockup.jpg"
+import googleplaybadge from "../images/google-play-badge.png"
+import appstorebadge from "../images/app-store-badge.png"
+import ridepingo from "../images/ridepingo.jpg"
 import quote from "../images/quote.svg"
 import car from "../images/car-illustration.png"
-import pingo_register from "../images/pingo_register.svg"
-import pingo_register2 from "../images/pingo_register2.svg"
-import pingo_ride from "../images/pingo_ride.svg"
-import pingo_ride2 from "../images/pingo_ride2.svg"
+
 import womanillustration from "../images/woman-illustration.png"
 import "../styles/pingo.css"
 
-const navbarItems = [
-  { name: "GET PINGO", url: "pingo-content" },
-  { name: "WHY IT'S GOOD", url: "pingo-about" },
-  { name: "WHERE", url: "pingo-somewhere" },
-  { name: "DOWNLOAD", url: "download-pingo" },
-]
-
 //TODO: fix header to mobile and desktop
 export default function Pingo(props) {
-  const selected = navbarItems.findIndex(
-    ({ url }) => url === props.location?.hash?.replace("#", "")
-  )
-
   const canvasRef = useRef()
   return (
     <LayoutPingo {...props}>
@@ -85,174 +67,70 @@ export default function Pingo(props) {
                   height="400"
                 />
               </div>
-              <div>
-                <NavBarPingo tabs={navbarItems} selected={selected} />
-              </div>
+              <div></div>
             </div>
           </div>
 
-          <div id={navbarItems[0].url} className="section title ">
+          <div className="section text-center">
             <div className="container">
-              <div className="row g-0">
-                <div className="row g-0">
-                  <h1>The whole cityin the palm of your hand.</h1>
-                  <h1> Get Pingo</h1>
-                </div>
-                <div className="row g-0">
-                  <div className="d-md-inline-flex action-button  pt-4">
-                    <div>
-                      <button className="btn btn-action">
-                        <img src={pingo_register} alt="Pingo Button" />
-                      </button>
-                    </div>
-                    <div>
-                      <button className="btn btn-action">
-                        <img src={pingo_ride} alt="Pingo Button" />
-                      </button>
-                    </div>
-                  </div>
-                </div>
+              <div className="row g-0 ">
+                <h2 className="fs-1 ">
+                  The <u className="fw-bold">whole city</u> in
+                </h2>
+                <h2 className="fs-1 "> the palm of your hand.</h2>
               </div>
             </div>
           </div>
 
-          <div id={navbarItems[1].url} className="section-mini about">
+          <div id="download-pingo" className="section">
             <div className="container">
-              <div className="row g-0">
-                <div className="col-md-6 me-5">
-                  <img src={pingo_mockup} alt="Pingo Mockup" width="100%" />
-                </div>
-                <div className="col-md-4 mx-md-5 px-4 px-md-0 pt-5 pt-md-0">
-                  <h3>
-                    About the product offered, visualization areaea usu, qui
-                    dicta sadipscing te.
-                  </h3>
-                  <div>
-                    Et has minim elitr intellegat. Mea aeterno eleifend antiopam
-                    ad, nam no suscipit quaerendum. At nam minimum ponderum. Est
-                    audiam animal molestiae te. Ex duo eripuit mentitum.
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div className="section-mini pingo-lines">
-            <div className="container-fluid container-xxl">
-              <div className="row g-0">
-                <div className="col-md-5 border border-dark col-left">
-                  <div className="container card pingo-cards px-5">
-                    <div className="card-body py-5">
-                      <h4 className="card-title fw-bold">Advantages</h4>
-                      <p className="card-text w-75">
-                        Specialized in mobility-on-demand systems for high
-                        capacity vehicles. Et has minim elitr intellegat. Mea
-                        aeterno eleifend antiopam ad, nam no suscipit
-                        quaerendum. At nam minimum ponderum. Est audiam animal
-                        molestiae te. Ex duo eripuit mentitum.
-                      </p>
-                    </div>
-                  </div>
-                  <hr />
-
-                  <div className="container card pingo-cards px-5">
-                    <div className="card-body py-5">
-                      <h4 className="card-title fw-bold">Advantages</h4>
-                      <p className="card-text w-75">
-                        Specialized in mobility-on-demand systems for high
-                        capacity vehicles. Et has minim elitr intellegat. Mea
-                        aeterno eleifend antiopam ad, nam no suscipit
-                        quaerendum. At nam minimum ponderum. Est audiam animal
-                        molestiae te. Ex duo eripuit mentitum.
-                      </p>
-                    </div>
-                  </div>
-                  <hr />
-
-                  <div className="container card pingo-cards px-5">
-                    <div className="card-body py-5">
-                      <h4 className="card-title fw-bold">Advantages</h4>
-                      <p className="card-text w-75">
-                        Specialized in mobility-on-demand systems for high
-                        capacity vehicles. Et has minim elitr intellegat. Mea
-                        aeterno eleifend antiopam ad, nam no suscipit
-                        quaerendum. At nam minimum ponderum. Est audiam animal
-                        molestiae te. Ex duo eripuit mentitum.
-                      </p>
-                    </div>
-                  </div>
-                </div>
-
-                <Arrow />
-
-                <div className="col-md-5 border border-dark col-right">
-                  <div className="container card pingo-cards px-5">
-                    <div className="card-body py-5">
-                      <h4 className="card-title fw-bold">Features</h4>
-                      <p className="card-text w-75">
-                        Specialized in mobility-on-demand systems for high
-                        capacity vehicles. Et has minim elitr intellegat. Mea
-                        aeterno eleifend antiopam ad, nam no suscipit
-                        quaerendum. At nam minimum ponderum. Est audiam animal
-                        molestiae te. Ex duo eripuit mentitum.
-                      </p>
-                    </div>
-                  </div>
-                  <hr />
-
-                  <div className="container card pingo-cards px-5">
-                    <div className="card-body py-5">
-                      <h4 className="card-title fw-bold">Features</h4>
-                      <p className="card-text w-75">
-                        Specialized in mobility-on-demand systems for high
-                        capacity vehicles. Et has minim elitr intellegat. Mea
-                        aeterno eleifend antiopam ad, nam no suscipit
-                        quaerendum. At nam minimum ponderum. Est audiam animal
-                        molestiae te. Ex duo eripuit mentitum.
-                      </p>
-                    </div>
-                  </div>
-                  <hr />
-
-                  <div className="container card pingo-cards px-5 pb-5">
-                    <div className="card-body py-5">
-                      <h4 className="card-title fw-bold">Features</h4>
-                      <p className="card-text w-75">
-                        Specialized in mobility-on-demand systems for high
-                        capacity vehicles. Et has minim elitr intellegat. Mea
-                        aeterno eleifend antiopam ad, nam no suscipit
-                        quaerendum. At nam minimum ponderum. Est audiam animal
-                        molestiae te. Ex duo eripuit mentitum.
-                      </p>
-                    </div>
-                  </div>
+              <div className="row col-md-8">
+                <h3 className="fs-1">Download</h3>
+                <h3 className="fw-bold fs-1">Pingo Rider</h3>
+                <div className="col-6 col-md-4 d-md-flex">
+                  <button className="btn btn-link px-0">
+                    <img
+                      src={googleplaybadge}
+                      alt="Google Play Download"
+                      className="img-fluid"
+                    />
+                  </button>
+                  <button className="btn btn-link px-0">
+                    <img
+                      src={appstorebadge}
+                      alt="App Store Download"
+                      className="img-fluid"
+                    />
+                  </button>
                 </div>
               </div>
-            </div>
-          </div>
-
-          <div className="section pingo-trc">
-            <div className="container">
-              <div className="row border border-dark bg-white">
-                <div className="col-md-6 text-center border-right border-dark">
-                  <img src={mockup} alt="Mockup" width="100%" height="100%" />
+              <hr />
+              <div className="row col-md-8">
+                <h3 className="fs-1">Download</h3>
+                <h3 className="fw-bold fs-1">Pingo Driver</h3>
+                <div className="col-6 col-md-4 d-md-flex">
+                  <button className="btn btn-link px-0">
+                    <img
+                      src={googleplaybadge}
+                      alt="Google Play Download"
+                      className="img-fluid"
+                    />
+                  </button>
+                  <button className="btn btn-link px-0">
+                    <img
+                      src={appstorebadge}
+                      alt="App Store Download"
+                      className="img-fluid"
+                    />
+                  </button>
                 </div>
-                <div className="col-md-6 py-5 g-0">
-                  <div className="row col-md-9">
-                    <h3 className="pt-5">We are part of</h3>
-                    <h3 className="fw-bold">The Routing Company</h3>
-                  </div>
-                  <div className="row  col-md-9">
-                    Et has minim elitr intellegat. Mea aeterno eleifend antiopam
-                    ad, nam no suscipit quaerendum. At nam minimum ponderum. Est
-                    audiam animal molestiae te. Ex duo eripuit mentitum.
-                    <div className="action-buttons pe-3 py-3">
-                      <Button className="btn-black" variant="contained">
-                        See our technologies
-                      </Button>
-                    </div>
-                  </div>
-                </div>
+              </div>
+              <div className="col-md-3 wrap-mockup">
+                <img
+                  src={ridepingo}
+                  alt="Mockup Pingo"
+                  className="mockup-image img-fluid"
+                />
               </div>
             </div>
           </div>
@@ -312,131 +190,10 @@ export default function Pingo(props) {
                     The whole cityin the palm of your hand.
                   </h1>
                 </div>
-                <div className="row pt-3 pb-5">
-                  <Button className="btn btn-action">
-                    <img src={pingo_register} alt="Pingo Button" />
-                  </Button>
-                  <Button className="btn btn-action">
-                    <img src={pingo_ride} alt="Pingo Button" />
-                  </Button>
-                </div>
-                <div className="row">
-                  <img src={pingo_mockup} alt="Pingo Mockup" width="100%" />
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div id="about-mobile" className="section-mini px-4">
-            <div className="container">
-              <div className="row g-0">
-                <h3>
-                  About the product offered, visualization areaea usu, qui dicta
-                  sadipscing te.
-                </h3>
-              </div>
-              <div className="row g-0">
-                Et has minim elitr intellegat. Mea aeterno eleifend antiopam ad,
-                nam no suscipit quaerendum. At nam minimum ponderum. Est audiam
-                animal molestiae te. Ex duo eripuit mentitum.
-              </div>
-            </div>
-          </div>
-          <div className="pingo-lines">
-            <div className="row g-0 justify-content-center">
-              <div className="col-10 border-top border border-dark col-left mb-5 mx-4">
-                <div className="container card pingo-cards">
-                  <div className="card-body py-5">
-                    <h4 className="card-title fw-bold">Advantages</h4>
-                    <p className="card-text ">
-                      It’s not easy to build an efficient pooling product.
-                      Reduce engineering costs. Reduce engineering costs.
-                    </p>
-                  </div>
-                </div>
-
-                <div className="container card pingo-cards">
-                  <div className="card-body py-5">
-                    <h4 className="card-title fw-bold">Advantages</h4>
-                    <p className="card-text ">
-                      It’s not easy to build an efficient pooling product.
-                      Reduce engineering costs. Reduce engineering costs.
-                    </p>
-                  </div>
-                </div>
-
-                <div className="container card pingo-cards">
-                  <div className="card-body py-5">
-                    <h4 className="card-title fw-bold">Advantages</h4>
-                    <p className="card-text ">
-                      It’s not easy to build an efficient pooling product.
-                      Reduce engineering costs. Reduce engineering costs.
-                    </p>
-                  </div>
-                </div>
-              </div>
-
-              <div className="col-10 border-top border border-dark col-left mb-5 mx-4">
-                <div className="container card pingo-cards">
-                  <div className="card-body py-5">
-                    <h4 className="card-title fw-bold">Features</h4>
-                    <p className="card-text">
-                      It’s not easy to build an efficient pooling product.
-                      Reduce engineering costs.
-                    </p>
-                  </div>
-                </div>
-
-                <div className="container card pingo-cards">
-                  <div className="card-body py-5">
-                    <h4 className="card-title fw-bold">Features</h4>
-                    <p className="card-text">
-                      It’s not easy to build an efficient pooling product.
-                      Reduce engineering costs.
-                    </p>
-                  </div>
-                </div>
-
-                <div className="container card pingo-cards pb-5">
-                  <div className="card-body py-5">
-                    <h4 className="card-title fw-bold">Features</h4>
-                    <p className="card-text">
-                      It’s not easy to build an efficient pooling product.
-                      Reduce engineering costs.
-                    </p>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div className="pingo-trc bg-white px-4">
-            <div className="container">
-              <div className="row">
-                <div>
-                  <img src={mockup} alt="Mockup" width="100%" />
-                </div>
-                <div className="py-5 g-0">
-                  <div>
-                    <h3>We are part of</h3>
-                    <h3 className="fw-bold">The Routing Company</h3>
-                  </div>
-                  <div>
-                    Et has minim elitr intellegat. Mea aeterno eleifend antiopam
-                    ad, nam no suscipit quaerendum. At nam minimum ponderum. Est
-                    audiam animal molestiae te. Ex duo eripuit mentitum.
-                  </div>
-                  <div className="action-buttons pe-3 py-3">
-                    <Button className="btn-black" variant="contained">
-                      See our technologies
-                    </Button>
-                  </div>
-                </div>
               </div>
             </div>
           </div>
         </Responsive.Mobile>
-
         <div className="section quotes bg-white shadow ">
           <div className="row g-0 pt-5 pt-md-0">
             <div className="col-md-2 wrap-illustration pt-5 pt-md-0">
@@ -538,70 +295,28 @@ export default function Pingo(props) {
             </div>
           </div>
         </div>
-
-        <div id={navbarItems[2].url} className="section somewhere">
-          <div className="container pt-md-5">
-            <div className="row">
-              <div className="col-md-8 g-0">
-                <div className="row">
-                  <h3 className="fw-bolder">Pingo somewhere!</h3>
-                  <h3>See where we’re currently operating</h3>
-                  <div className="col-md-7 pt-md-5 pt-3">
-                    Et has minim elitr intellegat. Mea aeterno eleifend antiopam
-                    ad, nam no suscipit quaerendum. At nam minimum ponderum. Est
-                    audiam animal molestiae te. Ex duo eripuit mentitum.
-                  </div>
-
-                  <div className="col-md-7 pt-4">
-                    <Autocomplete />
-                  </div>
-                </div>
+        <div className="container pt-md-5">
+          <div className="row">
+            <Responsive.Desktop>
+              <div className="col-md-4 wrap-illustration">
+                <img
+                  src={womanillustration}
+                  alt="Woman Standing"
+                  className="somewhere-illustration"
+                />
               </div>
+            </Responsive.Desktop>
 
-              <Responsive.Desktop>
-                <div className="col-md-4 wrap-illustration">
-                  <img
-                    src={womanillustration}
-                    alt="Woman Standing"
-                    className="somewhere-illustration"
-                  />
-                </div>
-              </Responsive.Desktop>
-
-              <Responsive.Mobile>
-                <div className="col-md-4 wrap-illustration">
-                  <img
-                    src={womanillustration}
-                    alt="Woman Standing"
-                    className="somewhere-illustration-mobile"
-                    width="50%"
-                  />
-                </div>
-              </Responsive.Mobile>
-            </div>
-          </div>
-        </div>
-
-        <div id={navbarItems[3].url} className="section download">
-          <div className="container">
-            <div className="row">
-              <div className="col-md-6">
-                <h2>Are you curious to know more? </h2>
-                <h2>Get Pingo sentence</h2>
+            <Responsive.Mobile>
+              <div className="col-md-4 wrap-illustration">
+                <img
+                  src={womanillustration}
+                  alt="Woman Standing"
+                  className="somewhere-illustration-mobile"
+                  width="50%"
+                />
               </div>
-              <div className="d-md-inline-flex action-button pt-5 g-0">
-                <div className="action-buttons">
-                  <button className="btn btn-action">
-                    <img src={pingo_register2} alt="Pingo Button" />
-                  </button>
-                </div>
-                <div className="action-buttons">
-                  <button className="btn btn-action">
-                    <img src={pingo_ride2} alt="Pingo Button" />
-                  </button>
-                </div>
-              </div>
-            </div>
+            </Responsive.Mobile>
           </div>
         </div>
       </div>

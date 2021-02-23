@@ -27,7 +27,6 @@
 
 #pingo-header .row-trc-logo-mobile {
   padding: min(3vw, 30px) 0;
-
 }
 
 #pingo-header .trc-logo-mobile {
@@ -64,6 +63,16 @@
   bottom: -40px;
 }
 
+.wrap-mockup {
+  position: relative;
+}
+
+.mockup-image {
+  position: absolute;
+  bottom: -70px;
+  left: 600px;
+}
+
 .wrap-illustration {
   position: relative;
 }
@@ -87,6 +96,5 @@
 }
 
 #download-pingo {
-  background-image: url(" ../images/pingo-shapes.png");
-  background-color: #8ec99970;
+  background-color: #f5f4f5;
 }
