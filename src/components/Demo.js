@@ -3,7 +3,7 @@ import Button from "@material-ui/core/Button"
 
 export default function Demo() {
   return (
-    <div id="demo-component" className="section d-flex flex-column">
+    <div id="demo-component" className="section d-flex flex-column bg-white">
       <div className="row g-0">
         <h2 className="fs-1 pb-4">
           Are you <u>curious</u> to know more?

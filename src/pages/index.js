@@ -4,6 +4,8 @@ import Layout from "../components/Layout"
 import CardTeam from "../components/CardTeam"
 import Demo from "../components/Demo"
 import CookieConsent from "../components/CookieConsent"
+import MediumIntegration from "../components/MediumIntegration"
+
 import "../styles/index.css"
 const CanvasAnimation = React.lazy(() =>
   import("../components/CanvasAnimation")
@@ -46,7 +48,17 @@ export default function Home(props) {
           </div>
           <CardTeam />
         </div>
+
         <Demo />
+
+        <div className="section-mini" style={{ background: "#F5F4F5" }}>
+          <div className="container g-0">
+            <h3 className="col-8 col-md-12">
+              Read about what TRC has been up to
+            </h3>
+            <MediumIntegration />
+          </div>
+        </div>
       </div>
     </Layout>
   )
