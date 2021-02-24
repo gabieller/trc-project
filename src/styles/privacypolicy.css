@@ -1,0 +1,11 @@
+#privacy {
+    background-color: #F5F4F5;
+    font-family: "Poppins";
+    font-size: 14px;
+}
+
+#privacy .accordion-button  {
+    font-size: 36px  !important;
+    font-family: "Poppins";
+
+}
