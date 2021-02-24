@@ -43,8 +43,10 @@ export default function Contact(props) {
           <div className="container">
             <div className="row ">
               <div className="col-md-8 shadow bg-white p-md-5">
-                <h1>Lower costs. More coverage.</h1>
-                <h1>Contact our team. </h1>
+                <h1>
+                  Lower costs. More coverage.{" "}
+                  <n className="text-green">Contact our team.</n>
+                </h1>
                 <form onSubmit={handleOnSubmit} className="form g-0">
                   <div className="row g-3 align-items-center">
                     <div className="col-md-3 fw-bold">

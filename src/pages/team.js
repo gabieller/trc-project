@@ -15,8 +15,10 @@ export default function Team(props) {
               <div className="row">
                 <div className="col-12 col-md-8">
                   <h1>
-                    A world-class team focused on solving transportation
-                    problems
+                    A world-class team focused on{" "}
+                    <n className="text-green">
+                      solving transportation problems{" "}
+                    </n>
                   </h1>
                 </div>
               </div>

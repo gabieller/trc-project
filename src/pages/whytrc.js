@@ -23,6 +23,7 @@ import "../styles/whytrc.css"
 // TODO: fix image resize on large screens at how it works card
 // TODO: fix text size at lines cards
 // TODO: correct picture how it works card
+// TODO: break lines with <n> didn't working
 export default function WhyTRC(props) {
   return (
     <Layout {...props}>
@@ -31,8 +32,10 @@ export default function WhyTRC(props) {
           <div className="container g-0">
             <div className="row pb-5">
               <h1>It’s time</h1>
-              <h1>to launch the most efficient</h1>
-              <h1>on-demand transportation system in the world</h1>
+              <h1 className="text-green">to launch the most efficient</h1>
+              <h1 className="text-green">
+                on-demand transportation system in the world
+              </h1>
             </div>
             <div className="row">
               <div className="col-md-3 pb-3 pb-md-0 pe-md-3">

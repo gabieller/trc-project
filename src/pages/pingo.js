@@ -14,8 +14,8 @@ import appstorebadge from "../images/app-store-badge.png"
 import ridepingo from "../images/ridepingo.jpg"
 import quote from "../images/quote.svg"
 import car from "../images/car-illustration.png"
-
 import womanillustration from "../images/woman-illustration.png"
+
 import "../styles/pingo.css"
 
 //TODO: fix header to mobile and desktop

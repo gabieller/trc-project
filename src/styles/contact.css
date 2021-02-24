@@ -1,5 +1,5 @@
 #contact {
-background-color: #F5F4F5;
+  background-color: #f5f4f5;
 }
 
 #contact .form {
@@ -15,29 +15,10 @@ background-color: #F5F4F5;
   margin: 0px 0px 0 00px;
 }
 
-
-#contact .btn{
+#contact .btn {
   min-width: 183px;
 }
 
-/* @media (min-width: 768px) {
-  .row-form {
-    background: linear-gradient(
-      to bottom,
-      #F5F4F5 0%,
-      #F5F4F5 80%,
-      #ffffff 80%
-    );
-  }
+#contact  n:hover {
+  color: #000000;
 }
-
-@media (max-width: 767px) {
-  .row-form {
-    background: linear-gradient(
-      to bottom,
-      #F5F4F5 0%,
-      #F5F4F5 70%,
-      #F5F4F5 70%
-    );
-  }
-} */

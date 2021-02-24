@@ -17,10 +17,10 @@ export default function CardTeam() {
       <div className="container-fluid container-xxl">
         <div className="row">
           <div className="col-12 col-md-5 border border-dark col-left g-0">
-            <div className="container flex-row card  border-0">
+            <div className="container flex-row card border-0">
               <div className="col-6">
                 <img
-                  className="card-img-top  rounded-0"
+                  className="card-img-top rounded-0"
                   src={james}
                   alt="James Cox"
                 />
@@ -28,7 +28,7 @@ export default function CardTeam() {
               <div className="card-body px-5">
                 <h5 className="card-title pt-3">
                   <a
-                    href="https://www.linkedin.com/in/mennovanderzee/"
+                    href="https://www.linkedin.com/in/jamescox00/"
                     target="_blank"
                     className="text-dark fw-bold"
                   >
@@ -98,7 +98,7 @@ export default function CardTeam() {
               <div className="card-body px-5">
                 <h5 className="card-title pt-3">
                   <a
-                    href="https://www.linkedin.com/in/mennovanderzee/"
+                    href="https://www.linkedin.com/in/thuanqpham/"
                     target="_blank"
                     className="text-dark fw-bold"
                   >
@@ -135,7 +135,7 @@ export default function CardTeam() {
               <div className="card-body px-5">
                 <h5 className="card-title pt-3">
                   <a
-                    href="https://www.linkedin.com/in/mennovanderzee/"
+                    href="https://www.linkedin.com/in/wallarelvo/"
                     target="_blank"
                     className="text-dark fw-bold"
                   >
@@ -172,7 +172,7 @@ export default function CardTeam() {
               <div className="card-body px-5">
                 <h5 className="card-title pt-3">
                   <a
-                    href="https://www.linkedin.com/in/mennovanderzee/"
+                    href="https://www.linkedin.com/in/bradford-church/"
                     target="_blank"
                     className="text-dark fw-bold"
                   >
@@ -208,7 +208,7 @@ export default function CardTeam() {
               <div className="card-body px-5">
                 <h5 className="card-title pt-3">
                   <a
-                    href="https://www.linkedin.com/in/mennovanderzee/"
+                    href="https://www.linkedin.com/in/daniela-rus-220b3/"
                     target="_blank"
                     className="text-dark fw-bold"
                   >
