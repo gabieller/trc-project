@@ -21,7 +21,7 @@
 }
 
 #pingo-header .pingo-landing-page {
-  padding: min(12vw, 230px) 0;
+  padding: min(6vw, 150px) 0;
   position: relative;
 }
 
@@ -40,30 +40,86 @@
 
 #pingo-header .pingo-logo {
   z-index: 1;
-  width: 70%;
+  width: 50%;
 }
 
 #pingo-header .pingo-logo-mobile {
   z-index: 1;
 }
 
-.pingo-cards {
-  background-color: transparent;
-  border: none;
+#download-pingo {
+  position: relative;
+  color: black;
 }
 
-.quotes .carousel-indicators li {
-  background-color: #c3cbcd;
-  width: 10px;
-  height: 10px;
-  border-radius: 100%;
+#announcements-card {
+  background-color: #f5f4f5;
+  position: relative;
+  font-family: "Poppins";
+  /* width: 1000px; */
+  height: 600px;
 }
 
-.quotes .carousel-indicators {
-  bottom: -40px;
+.announcements-1 {
+  position: absolute;
+  width: 355px;
+  height: 250px;
+  background-color:#F4B96B;
+  transform: translate3d(0px, 0px, 0px) rotate(17deg);
+  left: -20px;
+  top: 170px;
 }
 
-.wrap-mockup {
+.announcements-2 {
+  position: absolute;
+  width: 355px;
+  height: 250px;
+  background-color: #EBE8E6;
+  transform: translate3d(0px, 0px, 0px) rotate(-15deg);
+  left: 180px;
+  bottom: 0px;
+}
+
+.announcements-3 {
+  position: absolute;
+  width: 355px;
+  height: 250px;
+  background-color: #ffffff;
+  left: 470px;
+  top: 130px;
+}
+
+.announcements-4 {
+  position: absolute;
+  width: 355px;
+  height: 250px;
+  transform: translate3d(0px, 0px, 0px) rotate(-15deg);
+  background-color: #EBE8E6;
+  right: 150px;
+  top: 20px;
+}
+
+.announcements-5 {
+  position: absolute;
+  width: 355px;
+  height: 250px;
+  transform: translate3d(0px, 0px, 0px) rotate(22deg);
+  background-color: #F4B96B;
+  right: -20px;
+  bottom: 50px;
+}
+
+.announcements-6 {
+  position: absolute;
+  width: 355px;
+  height: 250px;
+  transform: translate3d(0px, 0px, 0px) rotate(-8deg);
+  background-color: #CCCCFF;
+  left: 650px;
+  bottom: -20px;
+}
+
+/* .wrap-mockup {
   position: relative;
 }
 
@@ -77,12 +133,6 @@
   position: relative;
 }
 
-.quotes-illustration {
-  position: absolute;
-  bottom: -150px;
-  left: -270px;
-}
-
 .somewhere-illustration {
   position: absolute;
   top: -90px;
@@ -93,8 +143,4 @@
   position: absolute;
   top: -20px;
   right: 0px;
-}
-
-#download-pingo {
-  background-color: #f5f4f5;
-}
+} */

@@ -12,8 +12,6 @@ import pingologowhite from "../images/pingologowhite.png"
 import googleplaybadge from "../images/google-play-badge.png"
 import appstorebadge from "../images/app-store-badge.png"
 import ridepingo from "../images/ridepingo.jpg"
-import quote from "../images/quote.svg"
-import car from "../images/car-illustration.png"
 import womanillustration from "../images/woman-illustration.png"
 
 import "../styles/pingo.css"
@@ -58,79 +56,107 @@ export default function Pingo(props) {
                 </div>
               </Link>
 
-              <div className="row justify-content-center pingo-landing-page user-select-none">
+              <div className=" d-flex flex-row pingo-landing-page user-select-none justify-content-center">
                 <img
                   className="img-fluid pingo-logo"
                   src={pingologowhite}
                   alt="Pingo Main logo"
-                  width="650"
-                  height="400"
                 />
+                <h1 className="d-flex align-items-center fs-3 ps-3">
+                  Transit <br />
+                  that moves <br />
+                  with you
+                </h1>
               </div>
-              <div></div>
-            </div>
-          </div>
+              <div
+                id="download-pingo"
+                className="d-flex flex-row section-mini container box-shadow bg-white"
+              >
+                <div className="row col-md-8">
+                  <h2 className="fs-6">
+                    The whole city in <br />
+                    the palm of your hand.
+                  </h2>
+                  <h2 className="fs-1">Download</h2>
+                  <h2 className="fw-bold fs-1">Pingo Rider</h2>
+                  <div className="col-6 col-md-4 d-md-flex">
+                    <button className="btn btn-link px-0">
+                      <img
+                        src={googleplaybadge}
+                        alt="Google Play Download"
+                        className="img-fluid"
+                      />
+                    </button>
+                    <button className="btn btn-link px-0">
+                      <img
+                        src={appstorebadge}
+                        alt="App Store Download"
+                        className="img-fluid"
+                      />
+                    </button>
+                  </div>
+                </div>
 
-          <div className="section text-center">
-            <div className="container">
-              <div className="row g-0 ">
-                <h2 className="fs-1 ">
-                  The <u className="fw-bold">whole city</u> in
-                </h2>
-                <h2 className="fs-1 "> the palm of your hand.</h2>
-              </div>
-            </div>
-          </div>
-
-          <div id="download-pingo" className="section">
-            <div className="container">
-              <div className="row col-md-8">
-                <h3 className="fs-1">Download</h3>
-                <h3 className="fw-bold fs-1">Pingo Rider</h3>
-                <div className="col-6 col-md-4 d-md-flex">
-                  <button className="btn btn-link px-0">
-                    <img
-                      src={googleplaybadge}
-                      alt="Google Play Download"
-                      className="img-fluid"
-                    />
-                  </button>
-                  <button className="btn btn-link px-0">
-                    <img
-                      src={appstorebadge}
-                      alt="App Store Download"
-                      className="img-fluid"
-                    />
-                  </button>
+                <div className="col-md-3 wrap-mockup">
+                  <img
+                    src={ridepingo}
+                    alt="Mockup Pingo"
+                    className="mockup-image img-fluid"
+                  />
                 </div>
               </div>
-              <hr />
-              <div className="row col-md-8">
-                <h3 className="fs-1">Download</h3>
-                <h3 className="fw-bold fs-1">Pingo Driver</h3>
-                <div className="col-6 col-md-4 d-md-flex">
-                  <button className="btn btn-link px-0">
-                    <img
-                      src={googleplaybadge}
-                      alt="Google Play Download"
-                      className="img-fluid"
-                    />
-                  </button>
-                  <button className="btn btn-link px-0">
-                    <img
-                      src={appstorebadge}
-                      alt="App Store Download"
-                      className="img-fluid"
-                    />
-                  </button>
-                </div>
+            </div>
+          </div>
+          <div id="announcements-card" className="section">
+            <div className="container">
+              <div className="announcements-title">
+                <h3 className="container text-green fs-2">
+                  The talk of the town
+                </h3>
               </div>
-              <div className="col-md-3 wrap-mockup">
-                <img
-                  src={ridepingo}
-                  alt="Mockup Pingo"
-                  className="mockup-image img-fluid"
-                />
+              <div className="announcements-list">
+                <div className="announcements-1 p-5">
+                  <div className="announcements-text fs-5">
+                    “The most fun <br /> app to use!”
+                  </div>
+                  <div className="pt-5 fs-6">George M., Pingo rider</div>
+                </div>
+
+                <div className="announcements-2 p-5">
+                  <div className="announcements-text fs-5">
+                    <div>“Pingo helps me save 20 minutes every day!</div>
+                    <div className="pt-5 fs-6">Savannah W., Pingo rider </div>
+                  </div>
+                </div>
+                <div className="announcements-3 p-5">
+                  <div className="announcements-text fs-5">
+                    <div>“It’s a huge improvement on my commute. Love it!”</div>
+                    <div className="pt-5 fs-6">Jason O., Pingo rider </div>
+                  </div>
+                </div>
+                <div className="announcements-4 p-5">
+                  <div className="announcements-text fs-5">
+                    <div>
+                      “I wish I had discovered Pingo before. It’s incredible!”
+                    </div>
+                    <div className="pt-5 fs-6">Maria B., Pingo rider </div>
+                  </div>
+                </div>
+                <div className="announcements-5 p-5">
+                  <div className="announcements-text fs-5">
+                    <div>
+                      I love Pingo, and I love the impact it has on my city - I
+                      definitely recommend it!”
+                    </div>
+                    <div className="pt-5 fs-6">Sharon S., Pingo rider </div>
+                  </div>
+                </div>
+                <div className="announcements-6 p-5">
+                  <div className="announcements-text fs-5">
+                    <div>“It is very easy to use, and super reliable.”</div>
+                    <div className="pt-5 fs-6">Onika P., Pingo rider </div>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
@@ -194,131 +220,6 @@ export default function Pingo(props) {
             </div>
           </div>
         </Responsive.Mobile>
-        <div className="section quotes bg-white shadow ">
-          <div className="row g-0 pt-5 pt-md-0">
-            <div className="col-md-2 wrap-illustration pt-5 pt-md-0">
-              <img src={car} alt="Yellow Car" className="quotes-illustration" />
-            </div>
-
-            <div className="col-md-8 text-center pt-5 pt-md-0">
-              <div className="row col-md-6 col-xxl-4 pt-5 pt-md-0">
-                <div
-                  id="carouselExampleIndicators"
-                  className="carousel slide"
-                  data-bs-ride="carousel"
-                >
-                  <ol className="carousel-indicators">
-                    <li
-                      data-bs-target="#carouselExampleIndicators"
-                      data-bs-slide-to="0"
-                      className="active"
-                    ></li>
-                    <li
-                      data-bs-target="#carouselExampleIndicators"
-                      data-bs-slide-to="1"
-                    ></li>
-                    <li
-                      data-bs-target="#carouselExampleIndicators"
-                      data-bs-slide-to="2"
-                    ></li>
-                  </ol>
-                  <div className="carousel-inner">
-                    <div className="carousel-item active">
-                      <div className="card text-center bg-transparent border-0 pt-5 pt-md-0">
-                        <img
-                          className="card-img-top"
-                          src={quote}
-                          alt="Card cap"
-                          width="100"
-                          height="100"
-                        />
-                        <div className="card-body">
-                          <p className="card-text">
-                            Est tation latine aliquip id, mea ad tale illud
-                            definitiones. Periculis omittantur reformidans
-                            necessitatibus eum ad, pro eripuit minimum
-                            comprehensam ne, usu cu stet prompta.
-                          </p>
-                          <h4 className="card-title">
-                            Connie Robertson at Google
-                          </h4>
-                        </div>
-                      </div>
-                    </div>
-                    <div className="carousel-item">
-                      <div className="card text-center bg-transparent border-0 pt-5 pt-md-0">
-                        <img
-                          className="card-img-top"
-                          src={quote}
-                          alt="Card cap"
-                          width="100"
-                          height="100"
-                        />
-                        <div className="card-body">
-                          <p className="card-text">
-                            Est tation latine aliquip id, mea ad tale illud
-                            definitiones. Periculis omittantur reformidans
-                            necessitatibus eum ad, pro eripuit minimum
-                            comprehensam ne, usu cu stet prompta.
-                          </p>
-                          <h4 className="card-title">
-                            Connie Robertson at Google
-                          </h4>
-                        </div>
-                      </div>
-                    </div>
-                    <div className="carousel-item">
-                      <div className="card text-center bg-transparent border-0 pt-5 pt-md-0">
-                        <img
-                          className="card-img-top"
-                          src={quote}
-                          alt="Card cap"
-                          width="100"
-                          height="100"
-                        />
-                        <div className="card-body">
-                          <p className="card-text">
-                            Est tation latine aliquip id, mea ad tale illud
-                            definitiones. Periculis omittantur reformidans
-                            necessitatibus eum ad, pro eripuit minimum
-                            comprehensam ne, usu cu stet prompta.
-                          </p>
-                          <h4 className="card-title">
-                            Connie Robertson at Google
-                          </h4>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div className="container pt-md-5">
-          <div className="row">
-            <Responsive.Desktop>
-              <div className="col-md-4 wrap-illustration">
-                <img
-                  src={womanillustration}
-                  alt="Woman Standing"
-                  className="somewhere-illustration"
-                />
-              </div>
-            </Responsive.Desktop>
-
-            <Responsive.Mobile>
-              <div className="col-md-4 wrap-illustration">
-                <img
-                  src={womanillustration}
-                  alt="Woman Standing"
-                  className="somewhere-illustration-mobile"
-                  width="50%"
-                />
-              </div>
-            </Responsive.Mobile>
-          </div>
-        </div>
       </div>
     </LayoutPingo>
   )
