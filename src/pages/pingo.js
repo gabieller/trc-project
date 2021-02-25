@@ -17,6 +17,7 @@ import womanillustration from "../images/woman-illustration.png"
 import "../styles/pingo.css"
 
 //TODO: fix header to mobile and desktop
+//TODO: fix card size large screen
 export default function Pingo(props) {
   const canvasRef = useRef()
   return (
@@ -109,52 +110,65 @@ export default function Pingo(props) {
           </div>
           <div id="announcements-card" className="section">
             <div className="container">
-              <div className="announcements-title">
-                <h3 className="container text-green fs-2">
-                  The talk of the town
-                </h3>
+              <div className=" announcements-title">
+                <h3 className="text-green fs-2">The talk of the town</h3>
               </div>
+
               <div className="announcements-list">
-                <div className="announcements-1 p-5">
+                <div className="announcements-1 p-5 d-flex flex-column ">
                   <div className="announcements-text fs-5">
-                    “The most fun <br /> app to use!”
+                    <div>
+                      “The most fun <br /> app to use!”
+                    </div>
+                    <div className="pt-5 announcements-name">
+                      George M., <br /> Pingo rider
+                    </div>
                   </div>
-                  <div className="pt-5 fs-6">George M., Pingo rider</div>
                 </div>
 
-                <div className="announcements-2 p-5">
+                <div className="announcements-2 p-5 d-flex flex-column ">
                   <div className="announcements-text fs-5">
                     <div>“Pingo helps me save 20 minutes every day!</div>
-                    <div className="pt-5 fs-6">Savannah W., Pingo rider </div>
+                    <div className="pt-5 announcements-name">
+                      Savannah W., <br /> Pingo rider{" "}
+                    </div>
                   </div>
                 </div>
-                <div className="announcements-3 p-5">
+                <div className="announcements-3 p-5 d-flex flex-column">
                   <div className="announcements-text fs-5">
                     <div>“It’s a huge improvement on my commute. Love it!”</div>
-                    <div className="pt-5 fs-6">Jason O., Pingo rider </div>
+                    <div className="pt-5 announcements-name">
+                      Jason O., <br /> Pingo rider{" "}
+                    </div>
                   </div>
                 </div>
-                <div className="announcements-4 p-5">
+                <div className="announcements-4 p-5 d-flex flex-column">
                   <div className="announcements-text fs-5">
                     <div>
                       “I wish I had discovered Pingo before. It’s incredible!”
                     </div>
-                    <div className="pt-5 fs-6">Maria B., Pingo rider </div>
+                    <div className="pt-5 announcements-name ">
+                      Maria B., <br /> Pingo rider{" "}
+                    </div>
                   </div>
                 </div>
-                <div className="announcements-5 p-5">
+                <div className="announcements-5 p-5 d-flex flex-column">
                   <div className="announcements-text fs-5">
                     <div>
                       I love Pingo, and I love the impact it has on my city - I
                       definitely recommend it!”
                     </div>
-                    <div className="pt-5 fs-6">Sharon S., Pingo rider </div>
+                    <div className="pt-5 announcements-name">
+                      Sharon S., <br /> Pingo rider{" "}
+                    </div>
                   </div>
                 </div>
-                <div className="announcements-6 p-5">
+                <div className="announcements-6 p-5 d-flex flex-column">
                   <div className="announcements-text fs-5">
                     <div>“It is very easy to use, and super reliable.”</div>
-                    <div className="pt-5 fs-6">Onika P., Pingo rider </div>
+                    <div className="pt-5 announcements-name">
+                      Onika P., <br /> Pingo rider{" "}
+                    </div>
                   </div>
                 </div>
               </div>

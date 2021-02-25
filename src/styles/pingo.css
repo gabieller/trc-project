@@ -64,20 +64,28 @@
   position: absolute;
   width: 355px;
   height: 250px;
-  background-color:#F4B96B;
+  background-color: #f4b96b;
   transform: translate3d(0px, 0px, 0px) rotate(17deg);
   left: -20px;
   top: 170px;
+}
+
+#announcements-card .announcements-1:hover {
+  transform: translate3d(0px, 30px, 0px) rotate(-5deg);
 }
 
 .announcements-2 {
   position: absolute;
   width: 355px;
   height: 250px;
-  background-color: #EBE8E6;
+  background-color: #ebe8e6;
   transform: translate3d(0px, 0px, 0px) rotate(-15deg);
   left: 180px;
   bottom: 0px;
+}
+
+#announcements-card .announcements-2:hover {
+  transform: translate3d(50px, 20px, 0px) rotate(-30deg);
 }
 
 .announcements-3 {
@@ -89,24 +97,36 @@
   top: 130px;
 }
 
+#announcements-card .announcements-3:hover {
+  transform: translate3d(0px, -50px, 0px) rotate(35deg);
+}
+
 .announcements-4 {
   position: absolute;
   width: 355px;
   height: 250px;
   transform: translate3d(0px, 0px, 0px) rotate(-15deg);
-  background-color: #EBE8E6;
+  background-color: #ebe8e6;
   right: 150px;
   top: 20px;
+}
+
+#announcements-card .announcements-4:hover {
+  transform: translate3d(0px, 100px, 0px) rotate(20deg);
 }
 
 .announcements-5 {
   position: absolute;
   width: 355px;
   height: 250px;
-  transform: translate3d(0px, 0px, 0px) rotate(22deg);
-  background-color: #F4B96B;
+  transform: translate3d(0px, 0px, 0px) rotate(10deg);
+  background-color: #f4b96b;
   right: -20px;
   bottom: 50px;
+}
+
+#announcements-card .announcements-5:hover {
+  transform: translate3d(0px, 0px, 0px) rotate(-15deg);
 }
 
 .announcements-6 {
@@ -114,9 +134,17 @@
   width: 355px;
   height: 250px;
   transform: translate3d(0px, 0px, 0px) rotate(-8deg);
-  background-color: #CCCCFF;
+  background-color: #ccccff;
   left: 650px;
   bottom: -20px;
+}
+
+#announcements-card .announcements-6:hover {
+  transform: translate3d(-40px, 0px, 0px) rotate(-30deg);
+}
+
+.announcements-name {
+  font-size: 12px;
 }
 
 /* .wrap-mockup {
