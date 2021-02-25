@@ -3,6 +3,7 @@
   background-color: #000000;
   color: #ffffff;
   font-family: "Roboto";
+  text-decoration: none;
 }
 
 #footer .links > div {
@@ -20,7 +21,7 @@
   background-color: #ffffff40;
 }
 
-#footer .text-center a{
+#footer a{
   color: #ffffff;
   text-decoration: none;
 }

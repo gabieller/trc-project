@@ -92,13 +92,27 @@ export default function Footer() {
             <div className="row g-0 links-row px-0">
               <div className="col-xl-5 col-lg-4 pb-md-3 links">
                 <div>COMPANY</div>
-                <div>Home</div>
-                <div>Team</div>
-                <div>Why TRC</div>
-                <div>Contact</div>
-                <div>Blog</div>
-                <div>Careers</div>
-                <div>Pingo</div>
+                <Link to="/">
+                  <div>Home</div>
+                </Link>
+                <Link to="/team">
+                  <div>Team</div>
+                </Link>
+                <Link to="/whytrc">
+                  <div>Why TRC</div>
+                </Link>
+                <Link to="/contact">
+                  <div>Contact</div>
+                </Link>
+                <Link to="/blog">
+                  <div>Blog</div>
+                </Link>
+                <Link to="/">
+                  <div>Careers</div>
+                </Link>
+                <Link to="/pingo">
+                  <div>Pingo</div>
+                </Link>
               </div>
             </div>
           </div>
@@ -125,7 +139,7 @@ export default function Footer() {
           <a>©2020 The Routing Company</a>
           <a>All Rights Reserved</a>
           <Link to="/privacypolicy">
-            <a className="black">Terms and Conditions | Privacy Policy</a>
+            <a>Terms and Conditions | Privacy Policy</a>
           </Link>
         </div>
       </div>
