@@ -10,7 +10,7 @@ import equity from "../images/equity-icon.svg"
 import convenience from "../images/convenience-icon.svg"
 import howitworks from "../images/whytrc-howitworks.jpg"
 import whytrclines from "../images/whytrc-lines.jpg"
-import ridepingo from "../images/mockup-ridepingo.png"
+import mockup_ridepingo from "../images/mockup-ridepingo.png"
 import womanillustration from "../images/woman-illustration.png"
 import add_circle from "../images/add_circle.svg"
 import equal_circle from "../images/equal_circle.svg"
@@ -218,7 +218,7 @@ export default function WhyTRC(props) {
           <div className=" container box-shadow shadow ">
             <div className="d-flex flex-row align-items-center justify-content-center">
               <div className="col-4">
-                <img src={ridepingo} alt="Ride Pingo"></img>
+                <img src={mockup_ridepingo} alt="Ride Pingo"></img>
               </div>
               <div className="col-7 px-5">
                 <h2 className="fw-bold text-uppercase">Ride Pingo!</h2>

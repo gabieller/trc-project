@@ -11,6 +11,7 @@ import arrowrightmobile from "../images/arrow-right-black-mobile.svg"
 import pingologowhite from "../images/pingologowhite.png"
 import googleplaybadge from "../images/google-play-badge.png"
 import appstorebadge from "../images/app-store-badge.png"
+import mockup_ridepingo from "../images/mockup-ridepingo.png"
 import ridepingo from "../images/ridepingo.jpg"
 import womanillustration from "../images/woman-illustration.png"
 
@@ -170,6 +171,51 @@ export default function Pingo(props) {
                       Onika P., <br /> Pingo rider{" "}
                     </div>
                   </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div className="container section">
+            <h3 className="text-center fs-1">
+              Are you <u className="text-green">ready</u> to have the whole{" "}
+              <br /> city in the palm of your hand?
+            </h3>
+
+            <div id="box-pingo" className="section">
+              <div className="container box-shadow shadow ">
+                <div className="d-flex flex-row align-items-center justify-content-center">
+                  <div className="col-4">
+                    <img src={mockup_ridepingo} alt="Ride Pingo"></img>
+                  </div>
+                  <div className="col-7 px-5">
+                    <h2>
+                      Download <br /> <b>Pingo Driver</b>
+                    </h2>
+                    <div className="col-6 col-md-6 d-md-flex">
+                      <button className="btn btn-link px-0">
+                        <img
+                          src={googleplaybadge}
+                          alt="Google Play Download"
+                          className="img-fluid"
+                        />
+                      </button>
+                      <button className="btn btn-link px-0">
+                        <img
+                          src={appstorebadge}
+                          alt="App Store Download"
+                          className="img-fluid"
+                        />
+                      </button>
+                    </div>
+                  </div>
+                </div>
+                <div className="col-md-1 wrap-illustration-pingo">
+                  <img
+                    src={womanillustration}
+                    alt="Woman Standing"
+                    className="somewhere-illustration-pingo"
+                    width="450px"
+                  />
                 </div>
               </div>
             </div>

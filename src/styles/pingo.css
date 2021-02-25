@@ -56,7 +56,6 @@
   background-color: #f5f4f5;
   position: relative;
   font-family: "Poppins";
-  /* width: 1000px; */
   height: 600px;
 }
 
@@ -147,7 +146,14 @@
   font-size: 12px;
 }
 
+/* #box-pingo {
+  background-color: #F5F4F5;
+} */
+
 /* .wrap-mockup {
+  position: relative;
+}
+.wrap-illustration {
   position: relative;
 }
 
@@ -172,3 +178,25 @@
   top: -20px;
   right: 0px;
 } */
+
+/* .wrap-illustration {
+  position: relative;
+}
+
+.somewhere-illustration {
+  position: absolute;
+  top: -310px;
+  left: 800px;
+} */
+
+
+.wrap-illustration-pingo {
+  position: relative;
+}
+
+.somewhere-illustration-pingo {
+  position: absolute;
+  bottom: -230px;
+  left: 830px;
+
+}

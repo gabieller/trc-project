@@ -28,17 +28,17 @@
 
 .somewhere-illustration {
   position: absolute;
-  top: -110px;
-  left: 800px;
+  top: -200px;
+  left: 830px;
 }
 
 .how-it-works {
   padding: 120px;
 }
 
-.subject {
+/* .subject {
   background-image: url(" ../images/map_opacity.png");
-}
+} */
 
 .equal-icon::before {
   content: "";
