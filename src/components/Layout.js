@@ -35,7 +35,7 @@ export default function Layout(props) {
       {!loading && (
         <>
           <Header uri={props.uri} onOpen={isOpen => setOpenSidebar(isOpen)} />
-          <div className={`main-container ${isOpenSidebar && "open"}`}>
+          <div className={`main-container ${isOpenSidebar && "open"} pt-0`}>
             {props.children}
           </div>
           <Footer />

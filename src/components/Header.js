@@ -24,7 +24,7 @@ export default function Header({ uri }) {
       setState(prevState => ({
         ...prevState,
         visibilityClass:
-          window.pageYOffset > 45 ? "bg-transparent navbar-scrolled" : "",
+          window.pageYOffset > 50 ? "bg-white navbar-scrolled" : "",
       }))
     }
     window.addEventListener("scroll", handleScroll)
@@ -35,13 +35,13 @@ export default function Header({ uri }) {
 
   return (
     <>
-      <nav className={`navbar fixed-top ${state.visibilityClass}`}>
-        <Link to="/" className="navbar-brand p-3 p-xxl-5">
+      <nav className={`navbar fixed-top  ${state.visibilityClass}`}>
+        <Link to="/" className="navbar-brand py-3 px-5 p-xxl-5">
           <img
             src={trclogo}
             alt="Main logo"
             className="img-fluid"
-            width="380"
+            width="250"
             height="55"
           />
         </Link>
