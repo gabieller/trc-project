@@ -7,3 +7,18 @@
 .card-content:hover {
   background-color: #e4e1e5;
 }
+
+.go-back {
+  color: #c3cbcd;
+}
+
+.wrap-mockup {
+  position: relative;
+}
+
+.mockup {
+  position: absolute;
+  width: 70%;
+  bottom: -50px;
+  right: -300px;
+}

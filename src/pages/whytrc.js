@@ -14,7 +14,7 @@ import mockup_ridepingo from "../images/mockup-ridepingo.png"
 import womanillustration from "../images/woman-illustration.png"
 import add_circle from "../images/add_circle.svg"
 import equal_circle from "../images/equal_circle.svg"
-import mockup from "../images/mockup.jpg"
+import mockup from "../images/mockup.png"
 import googleplaybadge from "../images/google-play-badge.png"
 import appstorebadge from "../images/app-store-badge.png"
 

@@ -40,8 +40,8 @@ export class UserForm extends Component {
 
   render() {
     const { step } = this.state
-    const { firstName, lastName, email, occupation, city, bio } = this.state
-    const values = { firstName, lastName, email, occupation, city, bio }
+    const { coverage, efficiency, equity, convenience } = this.state
+    const values = { coverage, efficiency, equity, convenience }
 
     switch (step) {
       case 1:
@@ -49,7 +49,7 @@ export class UserForm extends Component {
           <Survey1
             nextStep={this.nextStep}
             handleChange={this.handleChange}
-            values={values}
+            // values={values}
           />
         )
       case 2:
@@ -58,7 +58,7 @@ export class UserForm extends Component {
             nextStep={this.nextStep}
             prevStep={this.prevStep}
             handleChange={this.handleChange}
-            values={values}
+            // values={values}
           />
         )
       case 3:
@@ -67,7 +67,7 @@ export class UserForm extends Component {
             nextStep={this.nextStep}
             prevStep={this.prevStep}
             handleChange={this.handleChange}
-            values={values}
+            // values={values}
           />
         )
       case 4:
@@ -76,7 +76,7 @@ export class UserForm extends Component {
             nextStep={this.nextStep}
             prevStep={this.prevStep}
             handleChange={this.handleChange}
-            values={values}
+            // values={values}
           />
         )
       case 5:
@@ -90,8 +90,8 @@ export class UserForm extends Component {
 
       case 6:
         return <Success />
-      default:
-        console.log("This is a multi-step form built with React.")
+      // default:
+      //   console.log("This is a multi-step form built with React.")
     }
   }
 }

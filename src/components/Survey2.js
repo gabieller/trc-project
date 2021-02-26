@@ -78,7 +78,7 @@ export class Survey2 extends Component {
           </Button>
         </div>
 
-        <Button className="mt-5" color="primary" onClick={this.back}>
+        <Button className="mt-5 go-back" color="primary" onClick={this.back}>
           GO BACK
         </Button>
       </>

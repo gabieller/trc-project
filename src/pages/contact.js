@@ -44,7 +44,7 @@ export default function Contact(props) {
             <div className="row ">
               <div className="col-md-8 shadow bg-white p-md-5">
                 <h1>
-                  Lower costs. More coverage.{" "}
+                  Lower costs. More coverage.
                   <n className="text-green">Contact our team.</n>
                 </h1>
                 <form onSubmit={handleOnSubmit} className="form g-0">
