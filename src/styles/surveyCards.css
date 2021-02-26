@@ -1,0 +1,9 @@
+.card-content {
+  text-transform: none;
+  height: 240px;
+  width: 240px;
+}
+
+.card-content:hover {
+  background-color: #e4e1e5;
+}

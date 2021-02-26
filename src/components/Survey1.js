@@ -1,0 +1,63 @@
+import React, { Component } from "react"
+// import { ThemeProvider as MuiThemeProvider } from "@material-ui/core/styles"
+import Card from "@material-ui/core/Card"
+import CardContent from "@material-ui/core/CardContent"
+import Button from "@material-ui/core/Button"
+
+import icon1 from "../images/form1_1.svg"
+import icon2 from "../images/form1_2.svg"
+
+import "../styles/surveyCards.css"
+
+export class Survey1 extends Component {
+  continue = e => {
+    e.preventDefault()
+    this.props.nextStep()
+  }
+
+  render() {
+    return (
+      <>
+        <h2 className="fs-bold fs-1 text-center">You are...</h2>
+        <br />
+        <div className="d-flex flex-row justify-content-center">
+          <Button className="btn-survey">
+            <Card
+              className="rounded-0 border-dark btn-survey"
+              variant="outlined"
+              onClick={this.continue}
+            >
+              <CardContent className="d-flex flex-column card-content">
+                <img src={icon1} height="64" />
+                <p className="fs-6 pt-3">
+                  A transit agency or <br /> operator
+                </p>
+              </CardContent>
+            </Card>
+          </Button>
+
+          <Button>
+            <Card
+              className="rounded-0 border-dark"
+              variant="outlined"
+              onClick={this.continue}
+            >
+              <CardContent className="d-flex flex-column card-content">
+                <img src={icon2} height="64" />
+                <p className="fs-6 pt-3">
+                  Some other type of <br /> transportation manager
+                </p>
+              </CardContent>
+            </Card>
+          </Button>
+        </div>
+
+        {/* <Button color="primary" variant="contained" onClick={this.continue}>
+          GO BACK
+        </Button> */}
+      </>
+    )
+  }
+}
+
+export default Survey1

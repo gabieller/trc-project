@@ -182,7 +182,7 @@ export default function Pingo(props) {
             </h3>
 
             <div id="box-pingo" className="section">
-              <div className="container box-shadow shadow ">
+              <div className="container box-shadow shadow-lg ">
                 <div className="d-flex flex-row align-items-center justify-content-center">
                   <div className="col-4">
                     <img src={mockup_ridepingo} alt="Ride Pingo"></img>
