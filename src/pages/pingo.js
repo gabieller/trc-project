@@ -12,7 +12,7 @@ import pingologowhite from "../images/pingologowhite.png"
 import googleplaybadge from "../images/google-play-badge.png"
 import appstorebadge from "../images/app-store-badge.png"
 import mockup_ridepingo from "../images/mockup-ridepingo.png"
-import ridepingo from "../images/ridepingo.jpg"
+import ridepingo from "../images/ridepingo.png"
 import womanillustration from "../images/woman-illustration.png"
 
 import "../styles/pingo.css"
@@ -72,16 +72,16 @@ export default function Pingo(props) {
               </div>
               <div
                 id="download-pingo"
-                className="d-flex flex-row section-mini container box-shadow bg-white"
+                className="col-10 d-flex flex-row section-mini container shadow-lg bg-white container"
               >
-                <div className="row col-md-8">
-                  <h2 className="fs-6">
+                <div className="row col-md-6">
+                  <h2 className="fs-5">
                     The whole city in <br />
                     the palm of your hand.
                   </h2>
                   <h2 className="fs-1">Download</h2>
                   <h2 className="fw-bold fs-1">Pingo Rider</h2>
-                  <div className="col-6 col-md-4 d-md-flex">
+                  <div className="col-6 col-md-6 d-md-flex">
                     <button className="btn btn-link px-0">
                       <img
                         src={googleplaybadge}
@@ -177,7 +177,7 @@ export default function Pingo(props) {
           </div>
           <div className="container section">
             <h3 className="text-center fs-1">
-              Are you <u className="text-green">ready</u> to have the whole{" "}
+              Are you <u className="text-green">ready</u> to have the whole
               <br /> city in the palm of your hand?
             </h3>
 
