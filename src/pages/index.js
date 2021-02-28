@@ -18,8 +18,7 @@ export default function Home(props) {
       <div id="index" className="container-fluid">
         <div className="section title justify-content-left">
           <div className="animation-container">
-            <div className="animation-container" />
-            <Suspense fallback={<div className="animation-container" />}>
+            <Suspense fallback={<div />}>
               <CanvasAnimation />
             </Suspense>
           </div>
@@ -27,6 +26,12 @@ export default function Home(props) {
             <div className="row justify-content-center g-0">
               <div className="col-md-8">
                 <div className="col-12">
+                  <h2>
+                    Our breakthrough routing technology has been featured in:
+                  </h2>
+                  <h2>
+                    Our breakthrough routing technology has been featured in:
+                  </h2>
                   <h2>
                     Our breakthrough routing technology has been featured in:
                   </h2>

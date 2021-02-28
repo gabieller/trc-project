@@ -136,11 +136,9 @@ export default function Footer() {
         </div>
         <hr className="d-md-none" />
         <div className="d-flex flex-column col-12 g-0 pt-5 text-center">
-          <a>©2020 The Routing Company</a>
-          <a>All Rights Reserved</a>
-          <Link to="/privacypolicy">
-            <a>Terms and Conditions | Privacy Policy</a>
-          </Link>
+          <Link to="/">©2020 The Routing Company</Link>
+          <Link to="/">All Rights Reserved</Link>
+          <Link to="/privacypolicy">Terms and Conditions | Privacy Policy</Link>
         </div>
       </div>
     </footer>
