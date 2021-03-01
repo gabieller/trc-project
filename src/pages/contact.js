@@ -1,9 +1,13 @@
-import React, { useState } from "react"
+import React, { useState, Suspense } from "react"
 import axios from "axios"
 import Layout from "../components/Layout"
 import Button from "@material-ui/core/Button"
 
 import "../styles/contact.css"
+
+const CanvasAnimation = React.lazy(() =>
+  import("../components/CanvasAnimation")
+)
 
 export default function Contact(props) {
   const [serverState, setServerState] = useState({
@@ -39,13 +43,18 @@ export default function Contact(props) {
   return (
     <Layout {...props}>
       <div id="contact" className="container-fluid">
-        <div className="section row-form">
+        <div className="animation-container">
+          <Suspense fallback={<div />}>
+            <CanvasAnimation />
+          </Suspense>
+        </div>
+        {/* <div className="section row-form"> */}
           <div className="container">
             <div className="row ">
               <div className="col-md-8 shadow bg-white p-md-5">
                 <h1>
-                  Lower costs. More coverage.
-                  <n className="text-green">Contact our team.</n>
+                  Lower costs. More coverage. <br />
+                  <p className="green">Contact our team.</p>
                 </h1>
                 <form onSubmit={handleOnSubmit} className="form g-0">
                   <div className="row g-3 align-items-center">
@@ -57,6 +66,7 @@ export default function Contact(props) {
                     <div className="col-md-9 g-0">
                       <input
                         name="Email"
+                        placeholder="| janedoe@example.com"
                         type="text"
                         id="inputEmail"
                         className="form-control rounded-0"
@@ -75,6 +85,7 @@ export default function Contact(props) {
                       <textarea
                         name="message"
                         type="textarea"
+                        placeholder="| Insert your message here"
                         rows="5"
                         id="inputMessage"
                         className="form-control rounded-0"
@@ -128,7 +139,7 @@ export default function Contact(props) {
             </div>
           </div>
         </div>
-      </div>
+      {/* </div> */}
     </Layout>
   )
 }

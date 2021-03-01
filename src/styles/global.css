@@ -9,7 +9,7 @@
 }
 
 .btn-white {
-  background-color: #FFFFFF !important;
+  background-color: #ffffff !important;
   color: #000000 !important;
   border-radius: 0 !important;
 }
@@ -22,7 +22,33 @@
   min-width: 183px;
 }
 
-.text-green {
+.text-green:hover {
+  transition: all 0.5s ease-in-out;
+  color: #58968a;
+}
+
+.underline-right {
+  position: relative;
+}
+
+.underline-right:before {
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 4px;
+  bottom: 0;
+  left: 0;
+  background-color: #58968a;
+  visibility: hidden;
+  transition: all 0.5s ease-in-out;
+}
+
+.underline-right:hover:before {
+  visibility: visible;
+  width: 100%;
+}
+
+.green {
   color: #58968a;
 }
 

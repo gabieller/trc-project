@@ -5,8 +5,8 @@ export default function Demo() {
   return (
     <div id="demo-component" className=" row section d-flex flex-column">
       <div className="row g-0 text-center">
-        <h2 className="fs-1 pb-4">
-          Are you <u className="text-green">curious</u> to know more?
+        <h2 className="fs-1 pb-4 text-hover">
+          Are you <span className="underline-right text-green">curious</span> to know more?
         </h2>
       </div>
 

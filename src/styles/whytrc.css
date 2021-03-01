@@ -15,7 +15,11 @@
 }
 
 .why-trc {
-  background-color: #F5F4F5;
+  background-color: #f5f4f5;
+}
+
+.icons:hover {
+  background-color: #e4e1e5;
 }
 
 .box-shadow {
