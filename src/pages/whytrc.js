@@ -33,7 +33,7 @@ export default function WhyTRC(props) {
             <div className="row pb-5">
               <h1>
                 It’s <br />
-                <p className="green"> 
+                <p className="green">
                   time to launch the most efficient <br /> on-demand
                   transportation system in the world
                 </p>

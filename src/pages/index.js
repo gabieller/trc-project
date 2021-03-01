@@ -51,14 +51,15 @@ export default function Home(props) {
               </div>
             </div>
           </div>
+
           <CardTeam />
         </div>
 
         <Demo />
 
-        <div className="section-mini" style={{ background: "#F5F4F5" }}>
-          <div className="container g-0">
-            <h3 className="col-8 col-md-12">
+          <div className="section-mini" style={{ background: "#F5F4F5" }}>
+        <div className="container">
+            <h3 className="col-8 col-md-12 pb-3">
               Read about what TRC has been up to
             </h3>
             <MediumIntegration />

@@ -3,10 +3,11 @@ import Button from "@material-ui/core/Button"
 
 export default function Demo() {
   return (
-    <div id="demo-component" className=" row section d-flex flex-column">
+    <div id="demo-component" className=" row section-mini d-flex flex-column">
       <div className="row g-0 text-center">
         <h2 className="fs-1 pb-4 text-hover">
-          Are you <span className="underline-right text-green">curious</span> to know more?
+          Are you <span className="underline-right text-green">curious</span> to
+          know more?
         </h2>
       </div>
 

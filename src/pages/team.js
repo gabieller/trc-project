@@ -16,9 +16,7 @@ export default function Team(props) {
                 <div className="col-12 col-md-8">
                   <h1>
                     A world-class team focused on
-                    <p className="green">
-                      solving transportation problems
-                    </p>
+                    <p className="green">solving transportation problems</p>
                   </h1>
                 </div>
               </div>
