@@ -57,8 +57,8 @@ export default function Home(props) {
 
         <Demo />
 
-          <div className="section-mini" style={{ background: "#F5F4F5" }}>
-        <div className="container">
+        <div className="section-mini" style={{ background: "#F5F4F5" }}>
+          <div className="container">
             <h3 className="col-8 col-md-12 pb-3">
               Read about what TRC has been up to
             </h3>
