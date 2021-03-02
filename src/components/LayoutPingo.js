@@ -22,18 +22,14 @@ export default function LayoutPingo(props) {
         <link rel="canonical" href="https://theroutingcompany.com/" />
       </Helmet>
 
-      {loading && (
-        <div className="loading-pingo">
-          <img src={loadingpingo} alt="Loading Gif" width="150" height="150" />
-        </div>
-      )}
-      {!loading && (
-        <>
-          <div className="main-container-pingo">{props.children}</div>
-          <Footer />
-          <ScrollTop />
-        </>
-      )}
+      <div className={`loading-pingo ${loading ? "open" : ""}`}>
+        <img src={loadingpingo} alt="Loading Gif" width="150" height="150" />
+      </div>
+      <>
+        <div className="main-container-pingo">{props.children}</div>
+        <Footer />
+        <ScrollTop />
+      </>
     </>
   )
 }

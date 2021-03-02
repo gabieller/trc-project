@@ -98,7 +98,7 @@ const CanvasPingo = forwardRef((props, selfRef) => {
         pageX: anime.random(cW * 0.2, cW * 0.8),
         pageY: anime.random(cH * 0.2, cH * 0.8),
       })
-    }, anime.random(200, 900))
+    }, anime.random(2000, 2500))
   }, [])
 
   useImperativeHandle(selfRef, () => ({

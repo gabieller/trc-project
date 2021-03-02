@@ -16,9 +16,10 @@
 #index > .title > .title-content {
   padding-top: 6vw;
   padding-bottom: 6vw;
+  position: relative;
 }
 
-#index > .title > .animation-container {
+#index > .title > .animation-container, #index > .title > .animation-container > .fallback {
   position: absolute;
   width: 100%;
   height: 100%;

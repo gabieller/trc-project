@@ -26,21 +26,17 @@ export default function Layout(props) {
         <link rel="canonical" href="https://theroutingcompany.com/" />
       </Helmet>
 
-      {loading && (
-        <div className="loading">
-          <img src={loadingtrc} alt="Loading Gif" width="500" height="500" />
-        </div>
-      )}
+      <div className={`loading ${loading ? "open" : ""}`}>
+        <img src={loadingtrc} alt="Loading Gif" width="500" height="500" />
+      </div>
 
-      {!loading && (
-        <>
-          <Header uri={props.uri} onOpen={isOpen => setOpenSidebar(isOpen)} />
-          <div className={`main-container ${isOpenSidebar && "open"} pt-0`}>
-            {props.children}
-          </div>
-          <Footer />
-        </>
-      )}
+      <>
+        <Header uri={props.uri} onOpen={isOpen => setOpenSidebar(isOpen)} />
+        <div className={`main-container ${isOpenSidebar && "open"} pt-0`}>
+          {props.children}
+        </div>
+        <Footer />
+      </>
     </>
   )
 }
