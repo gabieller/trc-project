@@ -1,5 +1,6 @@
 import React, { useRef } from "react"
 import { Link } from "gatsby"
+import Button from "@material-ui/core/Button"
 
 import LayoutPingo from "../components/LayoutPingo"
 import Responsive from "../components/Responsive"
@@ -9,6 +10,9 @@ import trclogo from "../images/trc-logo-black.png"
 import arrowright from "../images/arrow-right-black.svg"
 import arrowrightmobile from "../images/arrow-right-black-mobile.svg"
 import pingologowhite from "../images/pingologowhite.png"
+import medium from "../images/medium.png"
+import linkedin from "../images/linkedin.svg"
+import twitter from "../images/twitter_black.svg"
 import googleplaybadge from "../images/google-play-badge.png"
 import appstorebadge from "../images/app-store-badge.png"
 import mockup_ridepingo from "../images/mockup-ridepingo.png"
@@ -19,6 +23,7 @@ import "../styles/pingo.css"
 
 //TODO: fix header to mobile and desktop
 //TODO: fix card size large screen
+//TODO: logo TRC BARRA
 export default function Pingo(props) {
   const canvasRef = useRef()
   return (
@@ -45,18 +50,59 @@ export default function Pingo(props) {
                 canvasRef.current.triggerAnimation(e)
               }}
             >
-              <Link to="/">
-                <div className="d-flex flex-row-reverse row-trc-logo user-select-none">
-                  <img
-                    className="img-fluid trc-logo"
-                    src={trclogo}
-                    alt="Pingo Main logo"
-                    width="650"
-                    height="400"
-                  />
-                  <img src={arrowright} alt="Go to TRC" />
+              <div className="d-flex flex-row">
+                <div className="col-5  py-3 d-flex align-middle">
+                  <Button
+                    className="btn btn-link px-0"
+                    href="https://medium.com/routable-ai"
+                    target="_blank"
+                  >
+                    <img
+                      src={medium}
+                      alt="Medium button"
+                      width="40"
+                      height="30"
+                    />
+                  </Button>
+                  <Button
+                    className="btn btn-link"
+                    href="https://twitter.com/routing_company"
+                    target="_blank"
+                  >
+                    <img
+                      src={twitter}
+                      alt="Twitter button"
+                      className="img-fluid"
+                    />
+                  </Button>
+                  <Button
+                    className="btn btn-link"
+                    href="https://www.linkedin.com/company/theroutingcompany/"
+                    target="_blank"
+                  >
+                    <img
+                      src={linkedin}
+                      alt="Linkedin button"
+                      className="img-fluid"
+                    />
+                  </Button>
                 </div>
-              </Link>
+
+                <div className="col-7">
+                  <Link to="/">
+                    <div className="d-flex flex-row-reverse row-trc-logo user-select-none">
+                      <img
+                        className="img-fluid trc-logo"
+                        src={trclogo}
+                        alt="Pingo Main logo"
+                        width="650"
+                        height="400"
+                      />
+                      <img src={arrowright} alt="Go to TRC" />
+                    </div>
+                  </Link>
+                </div>
+              </div>
 
               <div className=" d-flex flex-row pingo-landing-page user-select-none justify-content-center">
                 <img

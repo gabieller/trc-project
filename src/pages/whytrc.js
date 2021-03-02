@@ -153,7 +153,6 @@ export default function WhyTRC(props) {
           </div>
         </div>
 
-
         <div className="container-fluid container-xxl">
           <div className="row g-0">
             <div className="col-md-5 p-0 col-left d-none d-md-block">
