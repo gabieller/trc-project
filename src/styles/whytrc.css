@@ -36,13 +36,15 @@
   left: 830px;
 }
 
-.how-it-works {
-  padding: 120px;
+.wrap-illustration-mobile {
+  position: relative;
 }
 
-/* .subject {
-  background-image: url(" ../images/map_opacity.png");
-} */
+.somewhere-illustration-mobile {
+  position: absolute;
+  bottom: -280px;
+  left: 190px;
+}
 
 .equal-icon::before {
   content: "";
