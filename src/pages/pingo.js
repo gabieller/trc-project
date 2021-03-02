@@ -10,7 +10,7 @@ import trclogo from "../images/trc-logo-black.png"
 import arrowright from "../images/arrow-right-black.svg"
 import arrowrightmobile from "../images/arrow-right-black-mobile.svg"
 import pingologowhite from "../images/pingologowhite.png"
-import medium from "../images/medium_black.png"
+import medium from "../images/medium_black.svg"
 import linkedin from "../images/linkedin_black.svg"
 import twitter from "../images/twitter_black.svg"
 import googleplaybadge from "../images/google-play-badge.png"
@@ -51,7 +51,7 @@ export default function Pingo(props) {
               }}
             >
               <div className="d-flex flex-row">
-                <div className="col-5  py-3 d-flex align-middle">
+                <div id="social-icons" className="col-3 py-3 d-flex align-middle">
                   <Button
                     className="btn btn-link px-0"
                     href="https://medium.com/routable-ai"
@@ -60,8 +60,8 @@ export default function Pingo(props) {
                     <img
                       src={medium}
                       alt="Medium button"
-                      width="40"
-                      height="30"
+                      width="24"
+                      height="24"
                     />
                   </Button>
                   <Button
@@ -88,7 +88,7 @@ export default function Pingo(props) {
                   </Button>
                 </div>
 
-                <div className="col-7">
+                <div className="col-9">
                   <Link to="/">
                     <div className="d-flex flex-row-reverse row-trc-logo user-select-none">
                       <img
@@ -118,7 +118,7 @@ export default function Pingo(props) {
               </div>
               <div
                 id="download-pingo"
-                className="col-10 d-flex flex-row section-mini container shadow-lg bg-white container"
+                className="col-10 d-flex flex-row section container shadow-lg bg-white container"
               >
                 <div className="row col-md-6">
                   <h2 className="fs-5">

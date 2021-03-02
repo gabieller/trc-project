@@ -48,10 +48,25 @@
   z-index: 1;
 }
 
+#social-icons .btn-link:hover {
+ background-color: transparent;
+}
+
+.wrap-mockup {
+  position: relative;
+}
+
+.mockup-image {
+  position: absolute;
+  bottom: 0px;
+  right: 160px;
+}
+
 #download-pingo {
   position: relative;
-  z-index: 3;
+  z-index: 1;
   color: black;
+  top: 50px;
   
 }
 
@@ -60,6 +75,7 @@
   position: relative;
   font-family: "Poppins";
   height: 600px;
+
 }
 
 .announcements-1 {
@@ -159,15 +175,7 @@
   left: 830px;
 }
 
-.wrap-mockup {
-  position: relative;
-}
 
-.mockup-image {
-  position: absolute;
-  bottom: -50px;
-  right: 160px;
-}
 
 /* #box-pingo {
   background-color: #F5F4F5;
