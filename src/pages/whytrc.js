@@ -20,10 +20,8 @@ import appstorebadge from "../images/app-store-badge.png"
 
 import "../styles/whytrc.css"
 
-// TODO: fix image resize on large screens at how it works card
-// TODO: fix text size at lines cards
-// TODO: correct picture how it works card
-// TODO: break lines with <n> didn't working
+// TODO: fix ipad mobile
+// TODO: fix responsive border
 export default function WhyTRC(props) {
   return (
     <Layout {...props}>
@@ -126,8 +124,7 @@ export default function WhyTRC(props) {
           </div>
         </div>
 
-        {/* <Responsive.Desktop> */}
-        <div className="container-fluid container-xxl border-md border-top border-bottom border-dark bg-white">
+        <div className="container-fluid container-xxl border border-dark bg-white">
           <div className="row">
             <div className="col-12 col-md-7 how-it-works d-flex flex-column justify-content-center align-items-center p-5">
               <h2 className="col-12 col-md-9 pb-3">How it works</h2>
@@ -155,22 +152,7 @@ export default function WhyTRC(props) {
             </div>
           </div>
         </div>
-        {/* </Responsive.Desktop> */}
 
-        {/* <Responsive.Mobile>
-          <div className="section-mini border-top border-bottom border-dark subject ">
-            <div className="container">
-              <h2 className="fw-bold">How it works</h2>
-              <div className="col-10">
-                You’ll get a full product suite to dynamically route shared
-                rides in real-time through a fleet management dashboard, a rider
-                app, and a driver app, all powered by MIT-inspired technology.
-                It’s the first set of tools in microtransit to allow you to
-                match 14+ riders in a vehicle safely at once.
-              </div>
-            </div>
-          </div>
-        </Responsive.Mobile> */}
 
         <div className="container-fluid container-xxl">
           <div className="row g-0">
@@ -280,7 +262,11 @@ export default function WhyTRC(props) {
             <div className="container box-shadow shadow col-9">
               <div className="d-flex flex-column pt-3 pb-5">
                 <div>
-                  <img src={mockup_ridepingo} alt="Ride Pingo" className="img-fluid"/>
+                  <img
+                    src={mockup_ridepingo}
+                    alt="Ride Pingo"
+                    className="img-fluid"
+                  />
                 </div>
                 <div>
                   <h3 className="fw-bold text-uppercase pt-5">
