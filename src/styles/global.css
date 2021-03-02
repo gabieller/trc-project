@@ -22,7 +22,7 @@
   min-width: 183px;
 }
 
-.text-green:hover {
+.text-hover:hover > span {
   transition: all 0.5s ease-in-out;
   color: #58968a;
 }
@@ -43,7 +43,7 @@
   transition: all 0.5s ease-in-out;
 }
 
-.underline-right:hover:before {
+.text-hover:hover > .underline-right:before {
   visibility: visible;
   width: 100%;
 }

@@ -17,8 +17,10 @@ const colorPicker = (function () {
   }
 })()
 const resizeCanvas = function (canvas, cW, cH) {
-  canvas.width = cW
-  canvas.height = cH
+  if (canvas) {
+    canvas.width = cW
+    canvas.height = cH
+  }
 }
 function calcPageFillRadius(x, y, cW, cH) {
   var l = Math.max(x - 0, cW - x)

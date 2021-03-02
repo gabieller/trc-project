@@ -42,16 +42,12 @@ export default function Pingo(props) {
               <CanvasPingo ref={canvasRef} />
             </div>
 
-            <div
-              className="container"
-              role="application"
-              onMouseDown={e => {
-                e.stopPropagation()
-                canvasRef.current.triggerAnimation(e)
-              }}
-            >
+            <div className="container" role="application">
               <div className="d-flex flex-row">
-                <div id="social-icons" className="col-3 py-3 d-flex align-middle">
+                <div
+                  id="social-icons"
+                  className="col-3 py-3 d-flex align-middle"
+                >
                   <Button
                     className="btn btn-link px-0"
                     href="https://medium.com/routable-ai"
@@ -104,7 +100,13 @@ export default function Pingo(props) {
                 </div>
               </div>
 
-              <div className=" d-flex flex-row pingo-landing-page user-select-none justify-content-center">
+              <div
+                className=" d-flex flex-row pingo-landing-page user-select-none justify-content-center"
+                onMouseDown={e => {
+                  e.stopPropagation()
+                  canvasRef.current.triggerAnimation(e)
+                }}
+              >
                 <img
                   className="img-fluid pingo-logo"
                   src={pingologowhite}
@@ -158,7 +160,7 @@ export default function Pingo(props) {
           <div id="announcements-card" className="section">
             <div className="container">
               <div className=" announcements-title">
-                <h3 className="text-green fs-2">The talk of the town</h3>
+                <h3 className="green fs-2">The talk of the town</h3>
               </div>
 
               <div className="announcements-list">
@@ -222,8 +224,9 @@ export default function Pingo(props) {
             </div>
           </div>
           <div className="container section">
-            <h3 className="text-center fs-1">
-              Are you <u className="text-green">ready</u> to have the whole
+            <h3 className="text-center text-hover fs-1">
+              Are you <span className="underline-right text-green">ready</span>{" "}
+              to have the whole
               <br /> city in the palm of your hand?
             </h3>
 

@@ -20,7 +20,6 @@
   width: 20%;
 }
 
-
 #pingo-header .pingo-landing-page {
   padding: min(6vw, 150px) 0;
   position: relative;
@@ -49,7 +48,7 @@
 }
 
 #social-icons .btn-link:hover {
- background-color: transparent;
+  background-color: transparent;
 }
 
 .wrap-mockup {
@@ -62,12 +61,22 @@
   right: 160px;
 }
 
+
+
 #download-pingo {
   position: relative;
   z-index: 1;
   color: black;
   top: 50px;
-  
+}
+
+.green {
+  color: #58968a;
+}
+
+.green:hover {
+  transition: all 0.5s ease-in-out;
+  color: #58968a80;
 }
 
 #announcements-card {
@@ -75,7 +84,6 @@
   position: relative;
   font-family: "Poppins";
   height: 600px;
-
 }
 
 .announcements-1 {
@@ -175,47 +183,7 @@
   left: 830px;
 }
 
-
-
-/* #box-pingo {
-  background-color: #F5F4F5;
+/* h3:hover > u {
+  color: #58968a;
 } */
 
-/* .wrap-mockup {
-  position: relative;
-}
-.wrap-illustration {
-  position: relative;
-}
-
-.mockup-image {
-  position: absolute;
-  bottom: -70px;
-  left: 600px;
-}
-
-.wrap-illustration {
-  position: relative;
-}
-
-.somewhere-illustration {
-  position: absolute;
-  top: -90px;
-  right: -100px;
-}
-
-.somewhere-illustration-mobile {
-  position: absolute;
-  top: -20px;
-  right: 0px;
-} */
-
-/* .wrap-illustration {
-  position: relative;
-}
-
-.somewhere-illustration {
-  position: absolute;
-  top: -310px;
-  left: 800px;
-} */
