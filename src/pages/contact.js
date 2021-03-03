@@ -59,7 +59,7 @@ export default function Contact(props) {
               <form onSubmit={handleOnSubmit} className="form g-0">
                 <div className="row g-3 align-items-center">
                   <div className="col-md-3 fw-bold">
-                    <label for="inputEmail" className="col-form-label">
+                    <label htmlFor="inputEmail" className="col-form-label">
                       Email
                     </label>
                   </div>
@@ -77,7 +77,7 @@ export default function Contact(props) {
 
                 <div className="row g-3 align-items-center">
                   <div className="col-md-3 fw-bold">
-                    <label for="inputMessage" className="col-form-label">
+                    <label htmlFor="inputMessage" className="col-form-label">
                       Problem to solve
                     </label>
                   </div>

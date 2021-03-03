@@ -143,12 +143,7 @@ export default function WhyTRC(props) {
             </div>
 
             <div className="col-md-5 g-0">
-              <img
-                src={howitworks}
-                className="map-image"
-                alt="Map"
-                className="img-fluid"
-              />
+              <img src={howitworks} className="map-image img-fluid" alt="Map" />
             </div>
           </div>
         </div>
