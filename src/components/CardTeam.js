@@ -277,7 +277,6 @@ export default function CardTeam() {
                       src={canoo}
                       alt="Canoo Logo"
                       className="img-logo-card py-4"
-
                     />
                   </div>
                 </div>
@@ -345,20 +344,18 @@ export default function CardTeam() {
                   vehicles.
                 </div>
                 <hr className="my-4" />
-                <div>
-                  
-                </div>
+                <div></div>
                 <div className="d-flex flex-row">
-                <img
-                  src={smart}
-                  alt="Smart Logo"
-                  className="img-logo-card py-4"
-                />
-                <img
-                  src={tudelft}
-                  alt="TU Delft Logo"
-                  className="img-logo-card py-4"
-                />
+                  <img
+                    src={smart}
+                    alt="Smart Logo"
+                    className="img-logo-card py-4"
+                  />
+                  <img
+                    src={tudelft}
+                    alt="TU Delft Logo"
+                    className="img-logo-card py-4"
+                  />
                 </div>
               </div>
             </div>
