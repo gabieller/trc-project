@@ -3,7 +3,16 @@ import React, { Suspense } from "react"
 import Layout from "../components/Layout"
 import CardTeam from "../components/CardTeam"
 import Demo from "../components/Demo"
+import UserForm from "../components/UserForm"
+import Button from "@material-ui/core/Button"
+
 import CookieConsent from "../components/CookieConsent"
+
+import cnn from "../images/cnn_logo.svg"
+import tech from "../images/tech_logo.svg"
+import theverge from "../images/theverge_logo.svg"
+import bbc from "../images/bbc_logo.svg"
+
 import "../styles/index.css"
 
 const CanvasAnimation = React.lazy(() =>
@@ -24,13 +33,23 @@ export default function Home(props) {
               <CanvasAnimation />
             </Suspense>
           </div>
-          <div className="container title-content text-left g-0">
+
+          <div className="container title-content g-0">
+            <div className="bg-white d-flex flex-column section-mini">
+              <UserForm />
+            </div>
             <div className="row justify-content-center g-0">
-              <div className="col-md-8">
+              <div className="col-md-9">
                 <div className="col-12">
-                  <h2>
-                    Our breakthrough routing technology has been featuredddd in:
-                  </h2>
+                  <h3>
+                    Our breakthrough routing technology has been featured in:
+                  </h3>
+                  <div className="d-flex justify-content-around pt-3">
+                    <img src={cnn} alt="CNN Logo" />
+                    <img src={tech} alt="Tech Crunch Logo" />
+                    <img src={theverge} alt="The Vergr Logo" />
+                    <img src={bbc} alt="BBC Logo" />
+                  </div>
                 </div>
               </div>
             </div>

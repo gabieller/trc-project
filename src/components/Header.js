@@ -1,5 +1,7 @@
 import React, { useState, useCallback } from "react"
 import { Link } from "gatsby"
+import Button from "@material-ui/core/Button"
+
 import { HamburgerCollapse } from "react-animated-burgers"
 import SideMenu from "./SideMenu"
 import { useEffectOnlyOnce } from "../utils/hooks"
@@ -45,6 +47,12 @@ export default function Header({ uri }) {
             height="55"
           />
         </Link>
+        <div className="d-flex flex-row-reverse col-md-7">
+          <Button className="btn-black btn-action" variant="contained">
+            GET STARTED
+          </Button>
+        </div>
+
         <HamburgerCollapse
           className="collapse-button"
           isActive={state.isSidebarOpen}

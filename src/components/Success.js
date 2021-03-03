@@ -22,29 +22,31 @@ export class Success extends Component {
   render() {
     return (
       <>
-        <div className="container">
-          <div className="d-flex flex-column col-6">
-            <h3>
-              See how our product can improve <br /> [earlier answer] in your
-              coverage area.
-            </h3>
+        <div className="bg-white">
+          <div className="container">
+            <div className="d-flex flex-column col-6">
+              <h3>
+                See how our product can improve <br /> [earlier answer] in your
+                coverage area.
+              </h3>
 
-            <div className="input-group mb-3 col-8">
-              <input
-                type="text"
-                className="form-control ps-2"
-                placeholder="| Enter your email"
-                aria-label="| Enter your email"
-              />
-              <div className="input-group-append">
-                <Button className="btn-black" variant="contained">
-                  SEND
-                </Button>
+              <div className="input-group mb-3 col-8">
+                <input
+                  type="text"
+                  className="form-control ps-2"
+                  placeholder="| Enter your email"
+                  aria-label="| Enter your email"
+                />
+                <div className="input-group-append">
+                  <Button className="btn-black" variant="contained">
+                    SEND
+                  </Button>
+                </div>
               </div>
             </div>
-          </div>
-          <div className="wrap-mockup">
-            <img src={mockup} className="mockup" />
+            <div className="wrap-mockup">
+              <img src={mockup} className="mockup" />
+            </div>
           </div>
         </div>
       </>

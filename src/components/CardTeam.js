@@ -8,7 +8,10 @@ import thuan from "../images/thuan.jpg"
 import alex from "../images/alex.jpg"
 import bradford from "../images/bradford.jpg"
 import daniela from "../images/daniela.jpg"
-import uber from "../images/uber.svg"
+import uber from "../images/uber_logo.svg"
+import canoo from "../images/canoo_logo.svg"
+import smart from "../images/smart_logo.svg"
+import tudelft from "../images/tudelft_logo.svg"
 
 import "../styles/cardteam.css"
 
@@ -50,6 +53,11 @@ export default function CardTeam() {
                     alt="Uber Logo"
                     className="img-logo-card py-4"
                   />
+                  <img
+                    src={canoo}
+                    alt="Canoo Logo"
+                    className="img-logo-card py-4"
+                  />
                 </div>
               </div>
               <hr className="my-0" />
@@ -81,8 +89,13 @@ export default function CardTeam() {
                   </div>
                   <hr className="my-4" />
                   <img
-                    src={uber}
-                    alt="Uber Logo"
+                    src={smart}
+                    alt="Smart Logo"
+                    className="img-logo-card py-4"
+                  />
+                  <img
+                    src={tudelft}
+                    alt="TU Delft Logo"
                     className="img-logo-card py-4"
                   />
                 </div>
@@ -153,11 +166,7 @@ export default function CardTeam() {
                     high-capacity ride-sharing
                   </div>
                   <hr className="my-4" />
-                  <img
-                    src={uber}
-                    alt="Uber Logo"
-                    className="img-logo-card py-4"
-                  />
+                  <span className="fs-bold fs-4">MIT</span>
                 </div>
               </div>
 
@@ -225,11 +234,7 @@ export default function CardTeam() {
                     MIT.
                   </div>
                   <hr className="my-4" />
-                  <img
-                    src={uber}
-                    alt="Uber Logo"
-                    className="img-logo-card py-4"
-                  />
+                  <span className="fs-bold fs-4">MIT CSAIL</span>
                 </div>
               </div>
             </div>
@@ -275,6 +280,11 @@ export default function CardTeam() {
                         alt="Uber Logo"
                         className="img-logo-card py-4"
                       />
+                      <img
+                        src={canoo}
+                        alt="Canoo Logo"
+                        className="img-logo-card py-4"
+                      />
                     </div>
                   </div>
                 </div>
@@ -292,7 +302,7 @@ export default function CardTeam() {
                   <div className="card-body col-8">
                     <h5 className="card-title pt-3">
                       <a
-                        href="https://www.linkedin.com/in/jamescox00/"
+                        href="https://www.linkedin.com/in/wallarelvo/"
                         target="_blank"
                         className="text-dark fw-bold"
                       >
@@ -308,7 +318,7 @@ export default function CardTeam() {
                       high-capacity ride-sharing.
                     </div>
                     <hr className="my-4" />
-                    <h3 className="fs-bold">MIT</h3>
+                    <span className="fs-bold fs-5">MIT</span>
                   </div>
                 </div>
               </div>
@@ -325,7 +335,7 @@ export default function CardTeam() {
                   <div className="card-body col-8">
                     <h5 className="card-title pt-3">
                       <a
-                        href="https://www.linkedin.com/in/jamescox00/"
+                        href="https://www.linkedin.com/in/mennovanderzee/"
                         target="_blank"
                         className="text-dark fw-bold"
                       >
@@ -341,8 +351,13 @@ export default function CardTeam() {
                     </div>
                     <hr className="my-4" />
                     <img
-                      src={uber}
-                      alt="Uber Logo"
+                      src={smart}
+                      alt="Smart Logo"
+                      className="img-logo-card py-4"
+                    />
+                    <img
+                      src={tudelft}
+                      alt="TU Delft Logo"
                       className="img-logo-card py-4"
                     />
                   </div>
@@ -361,7 +376,7 @@ export default function CardTeam() {
                   <div className="card-body col-8">
                     <h5 className="card-title pt-3">
                       <a
-                        href="https://www.linkedin.com/in/jamescox00/"
+                        href="https://www.linkedin.com/in/bradford-church/"
                         target="_blank"
                         className="text-dark fw-bold"
                       >
@@ -398,7 +413,7 @@ export default function CardTeam() {
                   <div className="card-body col-8">
                     <h5 className="card-title pt-3">
                       <a
-                        href="https://www.linkedin.com/in/jamescox00/"
+                        href="https://www.linkedin.com/in/thuanqpham/"
                         target="_blank"
                         className="text-dark fw-bold"
                       >
@@ -433,7 +448,7 @@ export default function CardTeam() {
                   <div className="card-body col-8">
                     <h5 className="card-title pt-3">
                       <a
-                        href="https://www.linkedin.com/in/jamescox00/"
+                        href="https://www.linkedin.com/in/daniela-rus-220b3/"
                         target="_blank"
                         className="text-dark fw-bold"
                       >
@@ -448,11 +463,13 @@ export default function CardTeam() {
                       at MIT.
                     </div>
                     <hr className="my-4" />
-                    <img
+                    <span className="fs-bold fs-5">MIT CSAIL</span>
+
+                    {/* <img
                       src={uber}
                       alt="Uber Logo"
                       className="img-logo-card py-4"
-                    />
+                    /> */}
                   </div>
                 </div>
               </div>

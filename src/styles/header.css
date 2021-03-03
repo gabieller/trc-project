@@ -1,15 +1,6 @@
-/* .navbar{
-  background-color: #ffffff;
-} */
-
 .navbar .navbar-brand {
   max-width: 470px;
 }
-
-
-/* .navbar.navbar-scrolled .navbar-brand {
-  visibility: hidden;
-} */
 
 @media (max-width: 600px) {
   .navbar .navbar-brand {

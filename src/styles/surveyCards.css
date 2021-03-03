@@ -1,7 +1,7 @@
 .card-content {
   text-transform: none;
-  height: 240px;
-  width: 240px;
+  height: 220px;
+  width: 220px;
 }
 
 .card-content:hover {
@@ -21,4 +21,12 @@
   width: 70%;
   bottom: -50px;
   right: -300px;
+}
+
+.btn {
+  color:#C3CBCD
+}
+
+.box-confirm {
+  background-color: #E4E1E5;
 }

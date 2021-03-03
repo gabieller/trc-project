@@ -25,62 +25,78 @@ export class Survey3 extends Component {
     const { values, handleChange } = this.props
     return (
       <>
-        <h2 className="fs-bold fs-1 text-center">Your highest priority is…</h2>
-        <br />
-        <div className="d-flex flex-row justify-content-center">
-          <Button>
-            <Card
-              className="rounded-0 border-dark"
-              variant="outlined"
-              onClick={this.continue}
-            >
-              <CardContent className="d-flex flex-column card-content">
-                <img src={icon1} height="64" />
-                <p className="fs-6 pt-3">Coverage</p>
-              </CardContent>
-            </Card>
-          </Button>
-          <Button>
-            <Card
-              className="rounded-0 border-dark"
-              variant="outlined"
-              onClick={this.continue}
-            >
-              <CardContent className="d-flex flex-column card-content">
-                <img src={icon2} height="64" />
-                <p className="fs-6 pt-3"> Efficiency</p>
-              </CardContent>
-            </Card>
-          </Button>
-          <Button>
-            <Card
-              className="rounded-0 border-dark"
-              variant="outlined"
-              onClick={this.continue}
-            >
-              <CardContent className="d-flex flex-column card-content">
-                <img src={icon3} height="64" />
-                <p className="fs-6 pt-3"> Equity</p>
-              </CardContent>
-            </Card>
-          </Button>
-          <Button>
-            <Card
-              className="rounded-0 border-dark"
-              variant="outlined"
-              onClick={this.continue}
-            >
-              <CardContent className="d-flex flex-column card-content">
-                <img src={icon4} height="64" />
-                <p className="fs-6 pt-3"> Convenience</p>
-              </CardContent>
-            </Card>
-          </Button>
-        </div>
+        <div className="bg-white">
+          <h2 className="fs-bold fs-1 text-center">
+            Your highest priority is…
+          </h2>
+          <br />
+          <div className="d-flex justify-content-center pb-5">
+            <div className="progress col-md-4" style={{ height: "4px" }}>
+              <div
+                className="progress-bar bg-dark"
+                role="progressbar"
+                style={{ width: "60%" }}
+                aria-valuenow="60"
+                aria-valuemin="0"
+                aria-valuemax="100"
+              ></div>
+            </div>
+          </div>
+          <div className="d-flex flex-row justify-content-center">
+            <Button>
+              <Card
+                className="rounded-0 border-dark"
+                variant="outlined"
+                onClick={this.continue}
+              >
+                <CardContent className="d-flex flex-column card-content justify-content-center">
+                  <img src={icon1} height="64" />
+                  <p className="fs-6 pt-3">Coverage</p>
+                </CardContent>
+              </Card>
+            </Button>
+            <Button>
+              <Card
+                className="rounded-0 border-dark"
+                variant="outlined"
+                onClick={this.continue}
+              >
+                <CardContent className="d-flex flex-column card-content justify-content-center">
+                  <img src={icon2} height="64" />
+                  <p className="fs-6 pt-3"> Efficiency</p>
+                </CardContent>
+              </Card>
+            </Button>
+            <Button>
+              <Card
+                className="rounded-0 border-dark"
+                variant="outlined"
+                onClick={this.continue}
+              >
+                <CardContent className="d-flex flex-column card-content justify-content-center">
+                  <img src={icon3} height="64" />
+                  <p className="fs-6 pt-3"> Equity</p>
+                </CardContent>
+              </Card>
+            </Button>
+            <Button>
+              <Card
+                className="rounded-0 border-dark"
+                variant="outlined"
+                onClick={this.continue}
+              >
+                <CardContent className="d-flex flex-column card-content justify-content-center">
+                  <img src={icon4} height="64" />
+                  <p className="fs-6 pt-3"> Convenience</p>
+                </CardContent>
+              </Card>
+            </Button>
+          </div>
 
-        <Button className="mt-5" color="primary" onClick={this.back}>
-          GO BACK
-        </Button>
+          <button type="button" className="btn" onClick={this.back}>
+            GO BACK
+          </button>
+        </div>
       </>
     )
   }

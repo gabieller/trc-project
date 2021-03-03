@@ -90,9 +90,10 @@ export class UserForm extends Component {
 
       case 6:
         return <Success />
-      // default:
-      //   console.log("This is a multi-step form built with React.")
+      default:
+        console.log("This is a multi-step form built with React.")
     }
+    // <button type="button" class="btn">GO BACK</button>
   }
 }
 
