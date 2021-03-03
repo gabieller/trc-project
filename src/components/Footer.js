@@ -1,4 +1,5 @@
 import React from "react"
+import Newsletter from "../components/Newsletter"
 import Button from "@material-ui/core/Button"
 import { Link } from "gatsby"
 
@@ -118,7 +119,8 @@ export default function Footer() {
           </div>
           <div className="col-4 d-none d-md-block">
             <p>TRC NEWSLETTER</p>
-            <div className="input-group mb-3">
+            <Newsletter />
+            {/* <div className="input-group mb-3">
               <input
                 type="text"
                 className="form-control ps-2"
@@ -131,7 +133,7 @@ export default function Footer() {
                   Subscribe
                 </Button>
               </div>
-            </div>
+            </div> */}
           </div>
         </div>
         <hr className="d-md-none" />

@@ -22,21 +22,17 @@ function SubscribeForm() {
   return (
     <div className="row col-10 g-0">
       <form>
-        <h4>Follow our latest news</h4>
-        <h4 className="pb-3 pb-md-5">Sign up for our newsletter</h4>
-        Et has minim elitr intellegat. Mea aeterno eleifend antiopam ad, nam no
-        suscipit quaerendum. At nam minimum ponderum. Est audiam animal
-        molestiae te. Ex duo eripuit mentitum.
-        <div className="d-md-inline-flex col-12 pt-3">
+        <div className="input-group mb-3">
+          {/* <div className="d-md-inline-flex col-12 pt-3"> */}
+          <input
+            type="email"
+            onChange={handleChange}
+            className="form-control ps-2"
+            placeholder="| Enter your email"
+            aria-label="| Enter your email"
+            style={{ color: "white" }}
+          />
           <div className="input-group mb-3">
-            <input
-              type="email"
-              onChange={handleChange}
-              className="form-control"
-              placeholder="| Enter your email"
-              aria-label="| Enter your email"
-              aria-describedby="button-addon2"
-            />
             <Button
               onClick={handleSubmit}
               className="btn-black "
@@ -45,21 +41,12 @@ function SubscribeForm() {
               Subscribe
             </Button>
           </div>
+          {/* </div> */}
         </div>
         <div className="d-flex flex-column fw-bold py-3">
           <span status={status}>{message}</span>
         </div>
       </form>
-      <div className="row g-0">
-        <div className="col-md-10 warning-text">
-          <h6>
-            <small>
-              By clicking “Primary action” you accepting ipsum dolor sit amet,
-              sit ea brute mediocritatem, eu sed aliquam scripserit dissentiunt.
-            </small>
-          </h6>
-        </div>
-      </div>
     </div>
   )
 }
