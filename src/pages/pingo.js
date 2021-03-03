@@ -52,6 +52,7 @@ export default function Pingo(props) {
                     className="btn btn-link px-0"
                     href="https://medium.com/routable-ai"
                     target="_blank"
+                    rel="noopener noreferrer"
                   >
                     <img
                       src={medium}
@@ -64,6 +65,7 @@ export default function Pingo(props) {
                     className="btn btn-link"
                     href="https://twitter.com/routing_company"
                     target="_blank"
+                    rel="noopener noreferrer"
                   >
                     <img
                       src={twitter}
@@ -75,6 +77,7 @@ export default function Pingo(props) {
                     className="btn btn-link"
                     href="https://www.linkedin.com/company/theroutingcompany/"
                     target="_blank"
+                    rel="noopener noreferrer"
                   >
                     <img
                       src={linkedin}
@@ -179,7 +182,7 @@ export default function Pingo(props) {
                   <div className="announcements-text fs-5">
                     <div>“Pingo helps me save 20 minutes every day!</div>
                     <div className="pt-5 announcements-name">
-                      Savannah W., <br /> Pingo rider{" "}
+                      Savannah W., <br /> Pingo rider
                     </div>
                   </div>
                 </div>
@@ -187,7 +190,7 @@ export default function Pingo(props) {
                   <div className="announcements-text fs-5">
                     <div>“It’s a huge improvement on my commute. Love it!”</div>
                     <div className="pt-5 announcements-name">
-                      Jason O., <br /> Pingo rider{" "}
+                      Jason O., <br /> Pingo rider
                     </div>
                   </div>
                 </div>
@@ -197,7 +200,7 @@ export default function Pingo(props) {
                       “I wish I had discovered Pingo before. It’s incredible!”
                     </div>
                     <div className="pt-5 announcements-name ">
-                      Maria B., <br /> Pingo rider{" "}
+                      Maria B., <br /> Pingo rider
                     </div>
                   </div>
                 </div>
@@ -207,8 +210,8 @@ export default function Pingo(props) {
                       I love Pingo, and I love the impact it has on my city - I
                       definitely recommend it!”
                     </div>
-                    <div className="pt-5 announcements-name">
-                      Sharon S., <br /> Pingo rider{" "}
+                    <div className="pt-3 announcements-name">
+                      Sharon S., <br /> Pingo rider
                     </div>
                   </div>
                 </div>
@@ -216,7 +219,7 @@ export default function Pingo(props) {
                   <div className="announcements-text fs-5">
                     <div>“It is very easy to use, and super reliable.”</div>
                     <div className="pt-5 announcements-name">
-                      Onika P., <br /> Pingo rider{" "}
+                      Onika P., <br /> Pingo rider
                     </div>
                   </div>
                 </div>
@@ -308,7 +311,6 @@ export default function Pingo(props) {
                   />
                 </div>
               </Link>
-
               <div className="row justify-content-center pingo-landing-page user-select-none g-0">
                 <div className="row">
                   <img
@@ -320,12 +322,18 @@ export default function Pingo(props) {
                   />
                 </div>
 
-                <div className="row pt-3">
-                  <h1 className="fw-bold">
-                    The whole cityin the palm of your hand.
+                <div className="row pt-2">
+                  <h1 className="fw-bold fs-4 text-center">
+                    Transit that moves with you
                   </h1>
                 </div>
               </div>
+            </div>
+          </div>
+          <div className="d-flex flex-column bg-white">
+            <div className="container">
+              <h2 className="">The whole city in the palm of your hand. </h2>
+              Download Pingo Rider
             </div>
           </div>
         </Responsive.Mobile>

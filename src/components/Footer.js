@@ -32,6 +32,7 @@ export default function Footer() {
                   className="btn btn-link px-0"
                   href="https://medium.com/routable-ai"
                   target="_blank"
+                  rel="noopener noreferrer"
                 >
                   <img
                     src={medium}
@@ -44,6 +45,7 @@ export default function Footer() {
                   className="btn btn-link"
                   href="https://twitter.com/routing_company"
                   target="_blank"
+                  rel="noopener noreferrer"
                 >
                   <img
                     src={twitter}
@@ -55,6 +57,7 @@ export default function Footer() {
                   className="btn btn-link"
                   href="https://www.linkedin.com/company/theroutingcompany/"
                   target="_blank"
+                  rel="noopener noreferrer"
                 >
                   <img
                     src={linkedin}

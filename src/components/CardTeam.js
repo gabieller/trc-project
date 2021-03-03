@@ -35,6 +35,7 @@ export default function CardTeam() {
                     <a
                       href="https://www.linkedin.com/in/jamescox00/"
                       target="_blank"
+                      rel="noopener noreferrer"
                       className="text-dark fw-bold"
                     >
                       James Cox
@@ -71,6 +72,7 @@ export default function CardTeam() {
                     <a
                       href="https://www.linkedin.com/in/mennovanderzee/"
                       target="_blank"
+                      rel="noopener noreferrer"
                       className="text-dark fw-bold"
                     >
                       Menno van der Zee
@@ -107,6 +109,7 @@ export default function CardTeam() {
                     <a
                       href="https://www.linkedin.com/in/thuanqpham/"
                       target="_blank"
+                      rel="noopener noreferrer"
                       className="text-dark fw-bold"
                     >
                       Thuan Pham
@@ -144,6 +147,7 @@ export default function CardTeam() {
                     <a
                       href="https://www.linkedin.com/in/wallarelvo/"
                       target="_blank"
+                      rel="noopener noreferrer"
                       className="text-dark fw-bold"
                     >
                       Alex Wallar
@@ -177,6 +181,7 @@ export default function CardTeam() {
                     <a
                       href="https://www.linkedin.com/in/bradford-church/"
                       target="_blank"
+                      rel="noopener noreferrer"
                       className="text-dark fw-bold"
                     >
                       Bradford Church
@@ -213,6 +218,7 @@ export default function CardTeam() {
                     <a
                       href="https://www.linkedin.com/in/daniela-rus-220b3/"
                       target="_blank"
+                      rel="noopener noreferrer"
                       className="text-dark fw-bold"
                     >
                       Daniela Rus
@@ -254,6 +260,7 @@ export default function CardTeam() {
                     <a
                       href="https://www.linkedin.com/in/jamescox00/"
                       target="_blank"
+                      rel="noopener noreferrer"
                       className="text-dark fw-bold"
                     >
                       James Cox
@@ -298,6 +305,7 @@ export default function CardTeam() {
                   <a
                     href="https://www.linkedin.com/in/wallarelvo/"
                     target="_blank"
+                    rel="noopener noreferrer"
                     className="text-dark fw-bold"
                   >
                     Alex Wallar
@@ -331,6 +339,7 @@ export default function CardTeam() {
                   <a
                     href="https://www.linkedin.com/in/mennovanderzee/"
                     target="_blank"
+                    rel="noopener noreferrer"
                     className="text-dark fw-bold"
                   >
                     Menno van der Zee
@@ -375,6 +384,7 @@ export default function CardTeam() {
                   <a
                     href="https://www.linkedin.com/in/bradford-church/"
                     target="_blank"
+                    rel="noopener noreferrer"
                     className="text-dark fw-bold"
                   >
                     Bradford Church
@@ -411,6 +421,7 @@ export default function CardTeam() {
                   <a
                     href="https://www.linkedin.com/in/thuanqpham/"
                     target="_blank"
+                    rel="noopener noreferrer"
                     className="text-dark fw-bold"
                   >
                     Thuan Pham
@@ -446,6 +457,7 @@ export default function CardTeam() {
                   <a
                     href="https://www.linkedin.com/in/daniela-rus-220b3/"
                     target="_blank"
+                    rel="noopener noreferrer"
                     className="text-dark fw-bold"
                   >
                     Daniela Rus

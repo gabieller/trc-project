@@ -4,9 +4,8 @@ import Layout from "../components/Layout"
 import CardTeam from "../components/CardTeam"
 import Demo from "../components/Demo"
 import UserForm from "../components/UserForm"
-import Button from "@material-ui/core/Button"
 
-import CookieConsent from "../components/CookieConsent"
+// import CookieConsent from "../components/CookieConsent"
 
 import cnn from "../images/cnn_logo.svg"
 import tech from "../images/tech_logo.svg"
@@ -25,7 +24,7 @@ const MediumIntegration = React.lazy(() =>
 export default function Home(props) {
   return (
     <Layout {...props}>
-      <CookieConsent />
+      {/* <CookieConsent /> */}
       <div id="index" className="container-fluid">
         <div className="section title justify-content-left">
           <div className="animation-container">
