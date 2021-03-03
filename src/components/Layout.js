@@ -11,6 +11,7 @@ import loadingtrc from "../images/TRC_logo_motion.gif"
 export default function Layout(props) {
   const [isOpenSidebar, setOpenSidebar] = useState(false)
   const [loading, setLoading] = useState(true)
+  const isSSR = typeof window === "undefined"
 
   useEffect(() => {
     setInterval(() => {
@@ -30,13 +31,15 @@ export default function Layout(props) {
         <img src={loadingtrc} alt="Loading Gif" width="500" height="500" />
       </div>
 
-      <>
-        <Header uri={props.uri} onOpen={isOpen => setOpenSidebar(isOpen)} />
-        <div className={`main-container ${isOpenSidebar && "open"} pt-0`}>
-          {props.children}
-        </div>
-        <Footer />
-      </>
+      {!isSSR && (
+        <>
+          <Header uri={props.uri} onOpen={isOpen => setOpenSidebar(isOpen)} />
+          <div className={`main-container ${isOpenSidebar && "open"} pt-0`}>
+            {props.children}
+          </div>
+          <Footer />
+        </>
+      )}
     </>
   )
 }

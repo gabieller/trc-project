@@ -4,11 +4,13 @@ import Layout from "../components/Layout"
 import CardTeam from "../components/CardTeam"
 import Demo from "../components/Demo"
 import CookieConsent from "../components/CookieConsent"
-import MediumIntegration from "../components/MediumIntegration"
-
 import "../styles/index.css"
+
 const CanvasAnimation = React.lazy(() =>
   import("../components/CanvasAnimation")
+)
+const MediumIntegration = React.lazy(() =>
+  import("../components/MediumIntegration")
 )
 
 export default function Home(props) {
@@ -56,7 +58,9 @@ export default function Home(props) {
             <h3 className="col-8 col-md-12 pb-3">
               Read about what TRC has been up to
             </h3>
-            <MediumIntegration />
+            <Suspense fallback={<div />}>
+              <MediumIntegration />
+            </Suspense>
           </div>
         </div>
       </div>
