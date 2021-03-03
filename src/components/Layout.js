@@ -25,6 +25,7 @@ export default function Layout(props) {
         <meta charSet="utf-8" />
         <title>The Routing Company</title>
         <link rel="canonical" href="https://theroutingcompany.com/" />
+        <script src="https://medium-widget.pixelpoint.io/widget.js" />
       </Helmet>
 
       <div className={`loading ${loading ? "open" : ""}`}>
