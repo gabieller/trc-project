@@ -27,7 +27,7 @@ export default function Home(props) {
               <div className="col-md-8">
                 <div className="col-12">
                   <h2>
-                    Our breakthrough routing technology has been featured in:
+                    Our breakthrough routing technology has been featuredddd in:
                   </h2>
                 </div>
               </div>
