@@ -1,6 +1,12 @@
 import React, { useEffect } from "react"
 
 export default function () {
+  const hasInit = typeof window.MediumWidget.Init === "function"
+  const hasUnmout = typeof window.MediumWidget.unmount === "function"
+  if (!hasInit || !hasUnmout) {
+    return null
+  }
+
   useEffect(() => {
     window.MediumWidget.Init({
       renderTo: "#medium-widget",

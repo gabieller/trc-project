@@ -108,6 +108,9 @@ const CanvasPingo = forwardRef((props, selfRef) => {
   }))
 
   const handleEvent = e => {
+    if (!ref || !ref.current) {
+      return
+    }
     if (e.touches) {
       e.preventDefault()
       e = e.touches[0]
