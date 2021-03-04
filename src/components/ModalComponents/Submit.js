@@ -1,7 +1,7 @@
 import React, { Component } from "react"
 import Button from "@material-ui/core/Button"
 
-import mockup from "../images/mockup.png"
+import mockup from "../../images/mockup.png"
 
 // import Dialog from "@material-ui/core/Dialog"
 // import AppBar from "@material-ui/core/AppBar"

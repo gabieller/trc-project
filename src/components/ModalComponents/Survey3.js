@@ -3,14 +3,14 @@ import Card from "@material-ui/core/Card"
 import CardContent from "@material-ui/core/CardContent"
 import Button from "@material-ui/core/Button"
 
-import icon1 from "../images/form2_1.svg"
-import icon2 from "../images/form2_2.svg"
-import icon3 from "../images/form2_3.svg"
-import icon4 from "../images/form2_4.svg"
+import icon1 from "../../images/coverage-icon.svg"
+import icon2 from "../../images/efficiency-icon.svg"
+import icon3 from "../../images/equity-icon.svg"
+import icon4 from "../../images/convenience-icon.svg"
 
-import "../styles/surveyCards.css"
+import "../../styles/surveyCards.css"
 
-export class Survey2 extends Component {
+export class Survey3 extends Component {
   continue = e => {
     e.preventDefault()
     this.props.nextStep()
@@ -26,15 +26,17 @@ export class Survey2 extends Component {
     return (
       <>
         <div className="bg-white">
-          <h2 className="fs-bold fs-1 text-center">You want to improve…</h2>
+          <h2 className="fs-bold fs-1 text-center">
+            Your highest priority is…
+          </h2>
           <br />
           <div className="d-flex justify-content-center pb-5">
             <div className="progress col-md-4" style={{ height: "4px" }}>
               <div
                 className="progress-bar bg-dark"
                 role="progressbar"
-                style={{ width: "40%" }}
-                aria-valuenow="40"
+                style={{ width: "60%" }}
+                aria-valuenow="60"
                 aria-valuemin="0"
                 aria-valuemax="100"
               ></div>
@@ -49,7 +51,7 @@ export class Survey2 extends Component {
               >
                 <CardContent className="d-flex flex-column card-content justify-content-center">
                   <img src={icon1} height="64" />
-                  <p className="fs-6 pt-3">On-demand transit</p>
+                  <p className="fs-6 pt-3">Coverage</p>
                 </CardContent>
               </Card>
             </Button>
@@ -61,7 +63,7 @@ export class Survey2 extends Component {
               >
                 <CardContent className="d-flex flex-column card-content justify-content-center">
                   <img src={icon2} height="64" />
-                  <p className="fs-6 pt-3">Paratransit</p>
+                  <p className="fs-6 pt-3"> Efficiency</p>
                 </CardContent>
               </Card>
             </Button>
@@ -73,7 +75,7 @@ export class Survey2 extends Component {
               >
                 <CardContent className="d-flex flex-column card-content justify-content-center">
                   <img src={icon3} height="64" />
-                  <p className="fs-6 pt-3">Reporting and tracking</p>
+                  <p className="fs-6 pt-3"> Equity</p>
                 </CardContent>
               </Card>
             </Button>
@@ -85,7 +87,7 @@ export class Survey2 extends Component {
               >
                 <CardContent className="d-flex flex-column card-content justify-content-center">
                   <img src={icon4} height="64" />
-                  <p className="fs-6 pt-3">Fixed route</p>
+                  <p className="fs-6 pt-3"> Convenience</p>
                 </CardContent>
               </Card>
             </Button>
@@ -100,4 +102,4 @@ export class Survey2 extends Component {
   }
 }
 
-export default Survey2
+export default Survey3

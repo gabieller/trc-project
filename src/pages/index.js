@@ -1,9 +1,10 @@
-import React, { Suspense } from "react"
+import React, { useState, useRef, Suspense } from "react"
+import Button from "@material-ui/core/Button"
 
 import Layout from "../components/Layout"
+import Modal from "../components/ModalComponents/Modal"
 import CardTeam from "../components/CardTeam"
 import Demo from "../components/Demo"
-import UserForm from "../components/UserForm"
 
 // import CookieConsent from "../components/CookieConsent"
 
@@ -17,14 +18,35 @@ import "../styles/index.css"
 const CanvasAnimation = React.lazy(() =>
   import("../components/CanvasAnimation")
 )
+
 const MediumIntegration = React.lazy(() =>
   import("../components/MediumIntegration")
 )
 
 export default function Home(props) {
+  const [dropDown, setDropDown] = useState([])
+  const modalRef = useRef(null)
+
+  const toggleDropdown = () => {
+    console.log("show")
+    //se clicar no botão, modal aparece
+    setDropDown("show")
+    document.body.addEventListener("click", closeDropdown)
+  }
+
+  const closeDropdown = event => {
+    event.stopPropagation() //impede de executar listeners dos filhos
+    const contain = modalRef.current.contains(event.target)
+    if (!contain) {
+      //se clicar fora do modal, ele DESaparece
+      console.log("hidden")
+      setDropDown("")
+      document.body.removeEventListener("click", closeDropdown)
+    }
+  }
+
   return (
     <Layout {...props}>
-      {/* <CookieConsent /> */}
       <div id="index" className="container-fluid">
         <div className="section title justify-content-left">
           <div className="animation-container">
@@ -35,7 +57,20 @@ export default function Home(props) {
 
           <div className="container title-content g-0">
             <div className="bg-white d-flex flex-column section-mini">
-              <UserForm />
+              <h1>
+                It’s time <br /> for simple on-demand <br /> transportation
+                <br /> at the right price.
+              </h1>
+              <div className="action-buttons">
+                <Button
+                  className="btn-black btn-action"
+                  variant="contained"
+                  onClick={toggleDropdown}
+                >
+                  GET STARTED
+                </Button>
+              </div>
+              <Modal className={dropDown} modalRef={modalRef} />
             </div>
             <div className="row justify-content-center g-0">
               <div className="col-md-9">

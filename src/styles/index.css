@@ -35,3 +35,7 @@
 #index .card {
   background-color: #ffffff;
 }
+
+.show{
+  display: block !important;
+}
