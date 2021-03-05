@@ -20,7 +20,7 @@ function SubscribeForm() {
   const handleChange = event => setEmail(event.target.value)
 
   return (
-    <div className="row col-10 g-0">
+    <div className="d-inline-flex g-0">
       <form>
         <div className="input-group mb-3">
           {/* <div className="d-md-inline-flex col-12 pt-3"> */}
@@ -32,15 +32,15 @@ function SubscribeForm() {
             aria-label="| Enter your email"
             style={{ color: "white" }}
           />
-          <div className="input-group mb-3">
-            <Button
-              onClick={handleSubmit}
-              className="btn-black "
-              variant="contained"
-            >
-              Subscribe
-            </Button>
-          </div>
+          {/* <div className="input-group mb-3"> */}
+          <Button
+            onClick={handleSubmit}
+            className="btn-white "
+            variant="contained"
+          >
+            Subscribe
+          </Button>
+          {/* </div> */}
           {/* </div> */}
         </div>
         <div className="d-flex flex-column fw-bold py-3">

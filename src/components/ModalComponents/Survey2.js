@@ -82,7 +82,8 @@ export class Survey2 extends Component {
               <Card
                 className="rounded-0 border-dark"
                 variant="outlined"
-ß                onClick={this.continue}
+                ß
+                onClick={this.continue}
               >
                 <CardContent className="d-flex flex-column card-content justify-content-center">
                   <img src={icon4} height="64" />

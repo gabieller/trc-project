@@ -123,26 +123,12 @@ export default function Footer() {
           <div className="col-4 d-none d-md-block">
             <p>TRC NEWSLETTER</p>
             <Newsletter />
-            {/* <div className="input-group mb-3">
-              <input
-                type="text"
-                className="form-control ps-2"
-                placeholder="| Enter your email"
-                aria-label="| Enter your email"
-                style={{ color: "white" }}
-              />
-              <div className="input-group-append">
-                <Button className="btn-white" variant="contained">
-                  Subscribe
-                </Button>
-              </div>
-            </div> */}
           </div>
         </div>
         <hr className="d-md-none" />
         <div className="d-flex flex-column col-12 g-0 pt-5 text-center">
-          <Link to="/">©2020 The Routing Company</Link>
-          <Link to="/">All Rights Reserved</Link>
+          ©2020 The Routing Company <br />
+          All Rights Reserved
           <Link to="/privacypolicy">Terms and Conditions | Privacy Policy</Link>
         </div>
       </div>

@@ -71,7 +71,7 @@ export class Survey1 extends Component {
               </Card>
             </Button>
           </div>
-          <button type="button" className="btn" >
+          <button type="button" className="btn">
             GO BACK
           </button>
         </div>
