@@ -22,10 +22,12 @@ export default function () {
   }, [])
 
   const sortedPosts = posts.sort((a, b) => (a.pubDate < b.pubDate ? 1 : -1))
+  const showedPosts = sortedPosts.slice(0,4)
+  
   console.log(sortedPosts.map(e => e.thumbnail))
   return (
     <div className="row row-cols-1 row-cols-md-2 g-4">
-      {sortedPosts.map(e => (
+      {showedPosts.map(e => (
         <div key={e.title} className="col">
           <div className="card h-100">
             <img

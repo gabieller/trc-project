@@ -23,7 +23,7 @@
   visibility: visible;
 }
 
-.loading-pingo {
+/* .loading-pingo {
   background-color: #8ec999;
   position: fixed;
   height: 100%;
@@ -33,4 +33,4 @@
   justify-content: center;
   z-index: 1033;
   visibility: hidden;
-}
+} */

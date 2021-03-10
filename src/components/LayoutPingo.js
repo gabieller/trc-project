@@ -3,33 +3,42 @@ import { Helmet } from "react-helmet"
 
 import Footer from "./Footer"
 import ScrollTop from "./ScrollTop"
-import loadingpingo from "../images/loading.gif"
+import CookieConsent from "../components/CookieConsent"
+import loadingtrc from "../images/TRC_logo_motion.gif"
+
 import "../styles/layout.css"
 
 export default function LayoutPingo(props) {
   const [loading, setLoading] = useState(true)
+  const isSSR = typeof window === "undefined"
+
   useEffect(() => {
     setInterval(() => {
       setLoading(false)
-    }, 500)
+    }, 2000)
   }, [])
 
   return (
     <>
       <Helmet>
         <meta charSet="utf-8" />
-        <title>The Routing Company</title>
-        <link rel="canonical" href="https://theroutingcompany.com/" />
+        <title>Pingo</title>
+        <link rel="canonical" href="https://theroutingcompany.com" />
       </Helmet>
 
-      <div className={`loading-pingo ${loading ? "open" : ""}`}>
-        <img src={loadingpingo} alt="Loading Gif" width="150" height="150" />
+      <div className={`loading ${loading ? "open" : ""}`}>
+        <img src={loadingtrc} alt="Loading Gif" width="500" height="500" />
       </div>
-      <>
-        <div className="main-container-pingo">{props.children}</div>
-        <Footer />
-        <ScrollTop />
-      </>
+
+      {!isSSR && (
+        <>
+          <CookieConsent />
+
+          <div className="main-container-pingo">{props.children}</div>
+          <Footer />
+          <ScrollTop />
+        </>
+      )}
     </>
   )
 }
