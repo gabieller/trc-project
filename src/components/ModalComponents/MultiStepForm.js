@@ -6,8 +6,6 @@ import Survey4 from "./Survey4"
 import Confirm from "./Confirm"
 import Submit from "./Submit"
 
-
-
 export class MultiStepForm extends Component {
   state = {
     step: 1,

@@ -83,8 +83,7 @@ export default function Home(props) {
                 isModalVisible={isModalVisible}
                 setIsModalVisible={setIsModalVisible}
               />
-
-              </div>
+            </div>
             <div className="row justify-content-center g-0">
               <div className="col-md-9">
                 <div className="col-12">

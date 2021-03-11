@@ -25,7 +25,7 @@ export class Survey1 extends Component {
 
     return (
       <>
-        <div className="bg-white">
+        <div className="">
           <h2 className="fs-bold fs-1 text-center">You are...</h2>
           <br />
           <div className="d-flex justify-content-center pb-5">
@@ -71,7 +71,6 @@ export class Survey1 extends Component {
               </Card>
             </Button>
           </div>
-       
         </div>
       </>
     )
