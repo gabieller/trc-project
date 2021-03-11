@@ -8,12 +8,7 @@ import arrow from "../../images/modal_arrow.svg"
 export default function Modal({ isModalVisible, setIsModalVisible }) {
   const modalRef = useRef()
 
-  //Colocar essa função no wrapper do modal
-  // const closeModal = e => {
-  //   if (modalRef.current === e.target) {
-  //     setIsModalVisible(false)
-  //   }
-  // }
+
 
   const keyPress = useCallback(
     e => {

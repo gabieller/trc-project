@@ -13,7 +13,7 @@ export default function Blog(props) {
         <div className="container g-0">
           <h1 className="col-8 col-md-12">What we have been up to</h1>
           <Suspense fallback={<div />}>
-            <MediumIntegration />
+            <MediumIntegration numberPosts={4} />
           </Suspense>
         </div>
       </div>

@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react"
 import axios from "axios"
 
-export default function () {
+export default function Medium( {numberPosts}) {
   const [posts, setPosts] = useState([])
 
   useEffect(() => {
@@ -22,9 +22,9 @@ export default function () {
   }, [])
 
   const sortedPosts = posts.sort((a, b) => (a.pubDate < b.pubDate ? 1 : -1))
-  const showedPosts = sortedPosts.slice(0, 4)
+  const showedPosts = sortedPosts.slice(0, numberPosts)
 
-  console.log(sortedPosts.map(e => e.thumbnail))
+
   return (
     <div className="row row-cols-1 row-cols-md-2 g-4">
       {showedPosts.map(e => (
