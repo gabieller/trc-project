@@ -35,7 +35,9 @@ export default function Modal({ isModalVisible, setIsModalVisible }) {
         <div
           className="modal-wrapper pb-5"
           style={{
-            transform: isModalVisible ? "translateY(0vh)" : "translateY(-100vh)",
+            transform: isModalVisible
+              ? "translateY(0vh)"
+              : "translateY(-100vh)",
             opacity: isModalVisible ? "1" : "0",
           }}
         >

@@ -1,6 +1,6 @@
 .modal-wrapper{
 background-color: white;
-
+transition: all 5s ease;
 /* width: 80%; */
 /* max-width: 800px; */
 /* justify-content: center; */

@@ -24,27 +24,6 @@ const MediumIntegration = React.lazy(() =>
 )
 
 export default function Home(props) {
-  // const [dropDown, setDropDown] = useState([])
-  // const modalRef = useRef(null)
-
-  // const toggleDropdown = () => {
-  //   console.log("show")
-  //   //se clicar no botão, modal aparece
-  //   setDropDown("show")
-  //   document.body.addEventListener("click", closeDropdown)
-  // }
-
-  // const closeDropdown = event => {
-  //   event.stopPropagation() //impede de executar listeners dos filhos
-  //   const contain = modalRef.current.contains(event.target)
-  //   if (!contain) {
-  //     //se clicar fora do modal, ele DESaparece
-  //     console.log("hidden")
-  //     setDropDown("")
-  //     document.body.removeEventListener("click", closeDropdown)
-  //   }
-  // }
-
   const [isModalVisible, setIsModalVisible] = useState(false)
 
   const openModal = () => {
@@ -61,21 +40,18 @@ export default function Home(props) {
             </Suspense>
           </div>
 
-          <div className="container title-content g-0">
-            <div className="bg-white d-flex flex-column section-mini">
-              <h1>
-                It’s time <br /> for simple on-demand <br /> transportation
-                <br /> at the right price.
+          <div className="container  title-content g-0">
+            <div className="bg-white d-flex flex-column section-mini ps-5 m-5 shadow-lg">
+              <h1 className="title-green">
+                <span className="text-dark"> It’s time </span> <br /> for simple
+                on-demand <br /> transportation
+                <br /> at the{" "}
+                <span className="text-dark text-decoration-underline">
+                  right price.
+                </span>
               </h1>
-              <div className="action-buttons">
-                {/* <Button
-                  className="btn-black btn-action"
-                  variant="contained"
-                  onClick={toggleDropdown}
-                >
-                  GET STARTED
-                </Button> */}
-                <Button className="mt-5 btn-black" onClick={openModal}>
+              <div className="action-buttons text-center">
+                <Button className="mt-5 btn-black-modal" onClick={openModal}>
                   GET STARTED
                 </Button>
               </div>
@@ -84,11 +60,13 @@ export default function Home(props) {
                 setIsModalVisible={setIsModalVisible}
               />
             </div>
-            <div className="row justify-content-center g-0">
+            <div className="row justify-content-center text-center g-0">
               <div className="col-md-9">
                 <div className="col-12">
                   <h3>
-                    Our breakthrough routing technology has been featured in:
+                    <small>
+                      Our breakthrough routing technology has been featured in:
+                    </small>
                   </h3>
                   <div className="d-flex justify-content-around pt-3">
                     <img src={cnn} alt="CNN Logo" />

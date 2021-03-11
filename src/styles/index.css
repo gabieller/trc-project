@@ -32,6 +32,18 @@
   margin-top: 2rem !important;
 }
 
+#index .title-green {
+  color: #58968A;
+}
+
+#index .btn-black-modal {
+  background-color: #333333 !important;
+  color: #fff !important;
+  border-radius: 0 !important;
+  width: 618px;
+  height: 45px;
+}
+
 #index .card {
   background-color: #ffffff;
 }
