@@ -29,7 +29,7 @@ export default function Footer() {
               </div>
               <div className="col-6 col-md-12 py-3 d-flex align-middle">
                 <Button
-                  className="btn btn-link px-0"
+                  className="btn btn-link px-0 d-dlex justify-content-start"
                   href="https://medium.com/routable-ai"
                   target="_blank"
                   rel="noopener noreferrer"
@@ -68,25 +68,27 @@ export default function Footer() {
               </div>
             </div>
             <hr className="d-md-none" />
-            <div className="row g-0">
+            <div className="row g-0 py-5">
               <div className="col-6 col-md-12 py-3">
                 <Link to="/pingo">
                   <img src={pingologo} alt="Logo PINGO" className="pingologo" />
                 </Link>
               </div>
-              <div className="col-6 col-md-7 d-md-flex">
+              <div className="col-6 col-md-4 d-md-flex justify-content-between">
                 <Button className="btn btn-link px-0">
                   <img
                     src={googleplaybadge}
                     alt="Google Play Download"
-                    className="img-fluid"
+                    width="75"
+                    // className="img-fluid"
                   />
                 </Button>
                 <Button className="btn btn-link px-0">
                   <img
                     src={appstorebadge}
                     alt="App Store Download"
-                    className="img-fluid"
+                    // className="img-fluid"
+                    width="70"
                   />
                 </Button>
               </div>
@@ -113,9 +115,6 @@ export default function Footer() {
                 </Link>
                 <Link to="/">
                   <div>Careers</div>
-                </Link>
-                <Link to="/pingo">
-                  <div>Pingo</div>
                 </Link>
               </div>
             </div>

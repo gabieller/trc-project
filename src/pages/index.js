@@ -23,7 +23,7 @@ const MediumIntegration = React.lazy(() =>
   import("../components/MediumIntegration")
 )
 
-export default function Home( {props, numberPosts} ) {
+export default function Home({ props, numberPosts }) {
   const [isModalVisible, setIsModalVisible] = useState(false)
 
   const openModal = () => {
@@ -102,7 +102,7 @@ export default function Home( {props, numberPosts} ) {
               Read about what TRC has been up to
             </h3>
             <Suspense fallback={<div />}>
-              <MediumIntegration numberPosts={2}  />
+              <MediumIntegration numberPosts={2} />
             </Suspense>
           </div>
         </div>

@@ -8,8 +8,6 @@ import arrow from "../../images/modal_arrow.svg"
 export default function Modal({ isModalVisible, setIsModalVisible }) {
   const modalRef = useRef()
 
-
-
   const keyPress = useCallback(
     e => {
       if (e.key === "Escape" && isModalVisible) {

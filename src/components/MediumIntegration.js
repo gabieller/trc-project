@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react"
 import axios from "axios"
 
-export default function Medium( {numberPosts}) {
+export default function Medium({ numberPosts }) {
   const [posts, setPosts] = useState([])
 
   useEffect(() => {
@@ -23,7 +23,6 @@ export default function Medium( {numberPosts}) {
 
   const sortedPosts = posts.sort((a, b) => (a.pubDate < b.pubDate ? 1 : -1))
   const showedPosts = sortedPosts.slice(0, numberPosts)
-
 
   return (
     <div className="row row-cols-1 row-cols-md-2 g-4">

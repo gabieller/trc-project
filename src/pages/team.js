@@ -13,7 +13,7 @@ export default function Team(props) {
           <div className="section title">
             <div className="container title-content">
               <div className="row">
-                <div className="col-12 col-md-8">
+                <div className="col-12 col-md-8 px-3 ms-3">
                   <h1>
                     A world-class team focused on
                     <p className="green">solving transportation problems</p>

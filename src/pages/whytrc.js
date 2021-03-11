@@ -28,7 +28,7 @@ export default function WhyTRC(props) {
       <div id="solutions-page" className="container-fluid">
         <div className="section why-trc">
           <div className="container">
-            <div className="row pb-5">
+            <div className="pb-5 ps-4 ms-3">
               <Responsive.Desktop>
                 <h1>
                   It’s <br />
@@ -49,8 +49,8 @@ export default function WhyTRC(props) {
                 </h1>
               </Responsive.Mobile>
             </div>
-            <div className="row">
-              <div className="col-md-3 pb-3 pb-md-0 pe-md-3">
+            <div className="row col-md-11">
+              <div className="col-md-3 pb-3 pb-md-0 ps-md-0  pe-md-3">
                 <div className=" card bg-white border border-dark mx-0">
                   <div className="card-body icons d-flex flex-row ">
                     <img src={coverage} alt="Coverage Icon" />
@@ -58,7 +58,7 @@ export default function WhyTRC(props) {
                   </div>
                 </div>
               </div>
-              <div className="col-md-3 pb-3 pb-md-0 pe-md-3">
+              <div className="col-md-3 pb-3 pb-md-0 ps-md-0 pe-md-3">
                 <div className="card bg-white border border-dark mx-0">
                   <div className="card-body icons d-flex flex-row">
                     <img src={efficiency} alt="Efficiency Icon" />
@@ -66,7 +66,7 @@ export default function WhyTRC(props) {
                   </div>
                 </div>
               </div>
-              <div className="col-md-3 pb-3 pb-md-0 pe-md-3">
+              <div className="col-md-3 pb-3 pb-md-0 ps-md-0 pe-md-3">
                 <div className="card bg-white border border-dark mx-0">
                   <div className="card-body icons d-flex flex-row">
                     <img src={equity} alt="equity Icon" />
@@ -74,7 +74,7 @@ export default function WhyTRC(props) {
                   </div>
                 </div>
               </div>
-              <div className="col-md-3 pb-3 pb-md-0 pe-md-3">
+              <div className="col-md-3 pb-3 pb-md-0 ps-md-0 pe-md-3">
                 <div className="card bg-white  border border-dark mx-0">
                   <div className="card-body d-flex flex-row">
                     <img src={convenience} alt="Convenience Icon" />
@@ -87,7 +87,7 @@ export default function WhyTRC(props) {
         </div>
 
         <div className="why-trc py-0">
-          <div className="container justify-content-center">
+          <div className="container justify-content-center ps-5">
             <div className="row">
               <div className="col-md-3 text-center pb-2">
                 All possible routes are considered in real time
