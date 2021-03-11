@@ -24,25 +24,31 @@ const MediumIntegration = React.lazy(() =>
 )
 
 export default function Home(props) {
-  const [dropDown, setDropDown] = useState([])
-  const modalRef = useRef(null)
+  // const [dropDown, setDropDown] = useState([])
+  // const modalRef = useRef(null)
 
-  const toggleDropdown = () => {
-    console.log("show")
-    //se clicar no botão, modal aparece
-    setDropDown("show")
-    document.body.addEventListener("click", closeDropdown)
-  }
+  // const toggleDropdown = () => {
+  //   console.log("show")
+  //   //se clicar no botão, modal aparece
+  //   setDropDown("show")
+  //   document.body.addEventListener("click", closeDropdown)
+  // }
 
-  const closeDropdown = event => {
-    event.stopPropagation() //impede de executar listeners dos filhos
-    const contain = modalRef.current.contains(event.target)
-    if (!contain) {
-      //se clicar fora do modal, ele DESaparece
-      console.log("hidden")
-      setDropDown("")
-      document.body.removeEventListener("click", closeDropdown)
-    }
+  // const closeDropdown = event => {
+  //   event.stopPropagation() //impede de executar listeners dos filhos
+  //   const contain = modalRef.current.contains(event.target)
+  //   if (!contain) {
+  //     //se clicar fora do modal, ele DESaparece
+  //     console.log("hidden")
+  //     setDropDown("")
+  //     document.body.removeEventListener("click", closeDropdown)
+  //   }
+  // }
+
+  const [isModalVisible, setIsModalVisible] = useState(false)
+
+  const openModal = () => {
+    setIsModalVisible(prev => !prev)
   }
 
   return (
@@ -62,16 +68,23 @@ export default function Home(props) {
                 <br /> at the right price.
               </h1>
               <div className="action-buttons">
-                <Button
+                {/* <Button
                   className="btn-black btn-action"
                   variant="contained"
                   onClick={toggleDropdown}
                 >
                   GET STARTED
+                </Button> */}
+                <Button className="mt-5 btn-black" onClick={openModal}>
+                  GET STARTED
                 </Button>
               </div>
-              <Modal className={dropDown} modalRef={modalRef} />
-            </div>
+              <Modal
+                isModalVisible={isModalVisible}
+                setIsModalVisible={setIsModalVisible}
+              />
+
+              </div>
             <div className="row justify-content-center g-0">
               <div className="col-md-9">
                 <div className="col-12">

@@ -1,10 +1,17 @@
 .modal{
-    background-color: white;
+    background-color:#00000080;
     display: none;
-    position: absolute;
-    /* width: 200px; */
-    /* height: 200px; */
-    /* left: 200px; */
-    /* top: 40px; */
-    color: black;
+    position: fixed;
+    align-items: center;
+    justify-content: center;
 }
+
+.arrow {
+    transform: rotate(90deg);
+}
+
+.close-button:hover {
+    background-color: transparent;
+  
+}
+

@@ -93,9 +93,9 @@ export class Survey2 extends Component {
             </Button>
           </div>
 
-          {/* <button type="button" className="btn" onClick={this.back}>
+          <button type="button" className="btn" onClick={this.back}>
             GO BACK
-          </button> */}
+          </button>
         </div>
       </>
     )
