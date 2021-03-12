@@ -176,73 +176,75 @@ export default function Contact(props) {
                     <p className="green">Contact our team.</p>
                   </h1>
                   <div className="d-flex justify-content-center">
-                  <div className="shadow bg-white">
-                    <form onSubmit={handleOnSubmit} className="form px-4">
-                      <div className="row g-3 align-items-center">
-                        <div className="col-4 fw-bold px-0">
-                          <label
-                            htmlFor="inputEmail"
-                            className="col-form-label"
-                          >
-                            Email
-                          </label>
+                    <div className="shadow bg-white">
+                      <form onSubmit={handleOnSubmit} className="form px-4">
+                        <div className="row g-3 align-items-center">
+                          <div className="col-4 fw-bold px-0">
+                            <label
+                              htmlFor="inputEmail"
+                              className="col-form-label"
+                            >
+                              Email
+                            </label>
+                          </div>
+                          <div className="col-11 g-0">
+                            <input
+                              name="Email"
+                              placeholder="| janedoe@example.com"
+                              type="text"
+                              id="inputEmail"
+                              className="form-control rounded-0"
+                              aria-describedby="email"
+                            />
+                          </div>
                         </div>
-                        <div className="col-11 g-0">
-                          <input
-                            name="Email"
-                            placeholder="| janedoe@example.com"
-                            type="text"
-                            id="inputEmail"
-                            className="form-control rounded-0"
-                            aria-describedby="email"
-                          />
-                        </div>
-                      </div>
 
-                      <div className="row g-3 align-items-center">
-                        <div className="col-7 fw-bold px-0">
-                          <label
-                            htmlFor="inputMessage"
-                            className="col-form-label"
-                          >
-                            Problem to solve
-                          </label>
+                        <div className="row g-3 align-items-center">
+                          <div className="col-7 fw-bold px-0">
+                            <label
+                              htmlFor="inputMessage"
+                              className="col-form-label"
+                            >
+                              Problem to solve
+                            </label>
+                          </div>
+                          <div className="col-11 g-0">
+                            <textarea
+                              name="message"
+                              type="textarea"
+                              placeholder="| Insert your message"
+                              rows="5"
+                              id="inputMessage"
+                              className="form-control rounded-0"
+                              aria-describedby="message"
+                            />
+                          </div>
                         </div>
-                        <div className="col-11 g-0">
-                          <textarea
-                            name="message"
-                            type="textarea"
-                            placeholder="| Insert your message"
-                            rows="5"
-                            id="inputMessage"
-                            className="form-control rounded-0"
-                            aria-describedby="message"
-                          />
-                        </div>
-                      </div>
 
-                      <div className="col-11  py-4  ">
-                        <Button
-                          type="submit"
-                          className="btn btn-black btn-block -flex flex-grow-1"
-                          disabled={serverState.submitting}
-                          variant="contained"
-                        >
-                          Get in touch
-                        </Button>
-                      </div>
-
-                      <div className="col-md-6 justify-content-left">
-                        {serverState.status && (
-                          <p
-                            className={!serverState.status.ok ? "errorMsg" : ""}
+                        <div className="col-11  py-4  ">
+                          <Button
+                            type="submit"
+                            className="btn btn-black btn-block -flex flex-grow-1"
+                            disabled={serverState.submitting}
+                            variant="contained"
                           >
-                            {serverState.status.msg}
-                          </p>
-                        )}
-                      </div>
-                    </form>
-                  </div>
+                            Get in touch
+                          </Button>
+                        </div>
+
+                        <div className="col-md-6 justify-content-left">
+                          {serverState.status && (
+                            <p
+                              className={
+                                !serverState.status.ok ? "errorMsg" : ""
+                              }
+                            >
+                              {serverState.status.msg}
+                            </p>
+                          )}
+                        </div>
+                      </form>
+                    </div>
                   </div>
                 </div>
 

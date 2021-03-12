@@ -13,6 +13,7 @@ export default function Header({ uri }) {
     visibilityClass: "",
     isSidebarOpen: false,
   })
+  const pathname = window.location.pathname
 
   const toggleButton = useCallback(() => {
     setState(prevState => ({
@@ -26,7 +27,7 @@ export default function Header({ uri }) {
       setState(prevState => ({
         ...prevState,
         visibilityClass:
-          window.pageYOffset > 50 ? "bg-white navbar-scrolled" : "",
+          window.pageYOffset > 60 ? "bg-white navbar-scrolled" : "",
       }))
     }
     window.addEventListener("scroll", handleScroll)
@@ -47,13 +48,31 @@ export default function Header({ uri }) {
             className="ps-md-3 ps-4 logo-header"
           />
         </Link>
-        <div className="col-md-6 d-none d-md-block d-lg-block">
-          <div className="d-flex flex-row-reverse ">
-            <Button className="btn-black-header btn-action" variant="contained">
-              GET STARTED
-            </Button>
+        {pathname !== "/" ? (
+          <div className="col-md-6 d-none d-md-block d-lg-block">
+            <div className="d-flex flex-row-reverse ">
+              <Button
+                className="btn-black-header btn-action"
+                variant="contained"
+              >
+                GET STARTED
+              </Button>
+            </div>
           </div>
-        </div>
+        ) : null}
+
+        {pathname === "/" && window.pageYOffset > 450 ? (
+          <div className="col-md-6 d-none d-md-block d-lg-block">
+            <div className="d-flex flex-row-reverse ">
+              <Button
+                className="btn-black-header btn-action"
+                variant="contained"
+              >
+                GET STARTED
+              </Button>
+            </div>
+          </div>
+        ) : null}
 
         <HamburgerCollapse
           className="collapse-button pe-md-5 me-md-5"

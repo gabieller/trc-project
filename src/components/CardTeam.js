@@ -275,22 +275,21 @@ export default function CardTeam() {
                   </div>
                   <hr className="my-4" />
                   <div className="col-7">
-                  <div className="d-flex flex-row justify-content-around">
-                    <img
-                      src={uber}
-                      alt="Uber Logo"
-                      className="img-logo-card py-4"
-                      width="48"
-                    />
-                    <img
-                      src={canoo}
-                      alt="Canoo Logo"
-                      className="img-logo-card py-4"
-                      width="146"
-                    />
+                    <div className="d-flex flex-row justify-content-around">
+                      <img
+                        src={uber}
+                        alt="Uber Logo"
+                        className="img-logo-card py-4"
+                        width="48"
+                      />
+                      <img
+                        src={canoo}
+                        alt="Canoo Logo"
+                        className="img-logo-card py-4"
+                        width="146"
+                      />
+                    </div>
                   </div>
-                  </div>
-                  
                 </div>
               </div>
             </div>
