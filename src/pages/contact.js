@@ -1,6 +1,7 @@
 import React, { useState, Suspense } from "react"
 import axios from "axios"
 import Layout from "../components/Layout"
+import Responsive from "../components/Responsive"
 import Button from "@material-ui/core/Button"
 
 import "../styles/contact.css"
@@ -42,85 +43,210 @@ export default function Contact(props) {
 
   return (
     <Layout {...props}>
-      <div id="contact" className="container-fluid">
-        <div className="section title justify-content-left">
-          <div className="animation-container" style={{ opacity: "0.2" }}>
-            <Suspense fallback={<div className="fallback" />}>
-              <CanvasAnimation />
-            </Suspense>
-          </div>
+      <Responsive.Desktop>
+        <div id="contact" className=" container-fluid">
+          <div className=" title justify-content-left">
+            <div className="animation-container" style={{ opacity: "0.2" }}>
+              <Suspense fallback={<div className="fallback" />}>
+                <CanvasAnimation />
+              </Suspense>
+            </div>
 
-          <div className="container title-content g-0">
-            <div className="container">
-              <div className="row ">
-                <div className="col-md-8 shadow bg-white p-md-5">
+            <div className="container title-content g-0">
+              <div className="container">
+                <div className="section row ps-md-5">
+                  <div className="col-md-8 shadow bg-white p-md-5">
+                    <h1>
+                      Lower costs. More coverage. <br />
+                      <p className="green">Contact our team.</p>
+                    </h1>
+                    <form onSubmit={handleOnSubmit} className="form g-0">
+                      <div className="row g-3 align-items-center">
+                        <div className="col-md-3 fw-bold">
+                          <label
+                            htmlFor="inputEmail"
+                            className="col-form-label"
+                          >
+                            Email
+                          </label>
+                        </div>
+                        <div className="col-md-9 g-0">
+                          <input
+                            name="Email"
+                            placeholder="| janedoe@example.com"
+                            type="text"
+                            id="inputEmail"
+                            className="form-control rounded-0"
+                            aria-describedby="email"
+                          />
+                        </div>
+                      </div>
+
+                      <div className="row g-3 align-items-center">
+                        <div className="col-md-3 fw-bold">
+                          <label
+                            htmlFor="inputMessage"
+                            className="col-form-label"
+                          >
+                            Problem to solve
+                          </label>
+                        </div>
+                        <div className="col-md-9 g-0">
+                          <textarea
+                            name="message"
+                            type="textarea"
+                            placeholder="| Insert your message here"
+                            rows="5"
+                            id="inputMessage"
+                            className="form-control rounded-0"
+                            aria-describedby="message"
+                          />
+                        </div>
+                      </div>
+
+                      <div className="d-flex flex-row-reverse pt-md-3 py-4 ">
+                        <Button
+                          type="submit"
+                          className="btn btn-black btn-block"
+                          disabled={serverState.submitting}
+                          variant="contained"
+                        >
+                          Get in touch
+                        </Button>
+                      </div>
+
+                      <div className="col-md-6 justify-content-left">
+                        {serverState.status && (
+                          <p
+                            className={!serverState.status.ok ? "errorMsg" : ""}
+                          >
+                            {serverState.status.msg}
+                          </p>
+                        )}
+                      </div>
+                    </form>
+                  </div>
+
+                  <div className="col-md-4 pt-5 ps-md-5 pe-md-0">
+                    <div className="py-3">
+                      <h5 className="fw-bold">General queries</h5>
+                      <small>
+                        For general queries, please email
+                        info@theroutingcompany.com
+                      </small>
+                    </div>
+                    <div className="py-3">
+                      <h5 className="fw-bold">Technical support</h5>
+
+                      <small>
+                        For general queries, please email
+                        info@theroutingcompany.com
+                      </small>
+                    </div>
+                    <div className="py-3">
+                      <h5 className="fw-bold">Careers</h5>
+                      <small>
+                        For general queries, please email
+                        info@theroutingcompany.com
+                      </small>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </Responsive.Desktop>
+
+      <Responsive.Mobile>
+        <div id="contact" className=" container-fluid">
+          <div className=" title justify-content-left">
+            <div className="animation-container" style={{ opacity: "0.2" }}>
+              <Suspense fallback={<div className="fallback" />}>
+                <CanvasAnimation />
+              </Suspense>
+            </div>
+
+            <div className="container title-content g-0">
+              <div className="container">
+                <div className="section-mini row ps-3">
                   <h1>
-                    Lower costs. More coverage. <br />
+                    Lower costs. <br />
+                    More coverage. <br />
                     <p className="green">Contact our team.</p>
                   </h1>
-                  <form onSubmit={handleOnSubmit} className="form g-0">
-                    <div className="row g-3 align-items-center">
-                      <div className="col-md-3 fw-bold">
-                        <label htmlFor="inputEmail" className="col-form-label">
-                          Email
-                        </label>
+                  <div className="d-flex justify-content-center">
+                  <div className="shadow bg-white">
+                    <form onSubmit={handleOnSubmit} className="form px-4">
+                      <div className="row g-3 align-items-center">
+                        <div className="col-4 fw-bold px-0">
+                          <label
+                            htmlFor="inputEmail"
+                            className="col-form-label"
+                          >
+                            Email
+                          </label>
+                        </div>
+                        <div className="col-11 g-0">
+                          <input
+                            name="Email"
+                            placeholder="| janedoe@example.com"
+                            type="text"
+                            id="inputEmail"
+                            className="form-control rounded-0"
+                            aria-describedby="email"
+                          />
+                        </div>
                       </div>
-                      <div className="col-md-9 g-0">
-                        <input
-                          name="Email"
-                          placeholder="| janedoe@example.com"
-                          type="text"
-                          id="inputEmail"
-                          className="form-control rounded-0"
-                          aria-describedby="email"
-                        />
-                      </div>
-                    </div>
 
-                    <div className="row g-3 align-items-center">
-                      <div className="col-md-3 fw-bold">
-                        <label
-                          htmlFor="inputMessage"
-                          className="col-form-label"
+                      <div className="row g-3 align-items-center">
+                        <div className="col-7 fw-bold px-0">
+                          <label
+                            htmlFor="inputMessage"
+                            className="col-form-label"
+                          >
+                            Problem to solve
+                          </label>
+                        </div>
+                        <div className="col-11 g-0">
+                          <textarea
+                            name="message"
+                            type="textarea"
+                            placeholder="| Insert your message"
+                            rows="5"
+                            id="inputMessage"
+                            className="form-control rounded-0"
+                            aria-describedby="message"
+                          />
+                        </div>
+                      </div>
+
+                      <div className="col-11  py-4  ">
+                        <Button
+                          type="submit"
+                          className="btn btn-black btn-block -flex flex-grow-1"
+                          disabled={serverState.submitting}
+                          variant="contained"
                         >
-                          Problem to solve
-                        </label>
+                          Get in touch
+                        </Button>
                       </div>
-                      <div className="col-md-9 g-0">
-                        <textarea
-                          name="message"
-                          type="textarea"
-                          placeholder="| Insert your message here"
-                          rows="5"
-                          id="inputMessage"
-                          className="form-control rounded-0"
-                          aria-describedby="message"
-                        />
+
+                      <div className="col-md-6 justify-content-left">
+                        {serverState.status && (
+                          <p
+                            className={!serverState.status.ok ? "errorMsg" : ""}
+                          >
+                            {serverState.status.msg}
+                          </p>
+                        )}
                       </div>
-                    </div>
-
-                    <div className="d-flex flex-row-reverse pt-md-3 py-4 ">
-                      <Button
-                        type="submit"
-                        className="btn btn-black btn-block"
-                        disabled={serverState.submitting}
-                        variant="contained"
-                      >
-                        Get in touch
-                      </Button>
-                    </div>
-
-                    <div className="col-md-6 justify-content-left">
-                      {serverState.status && (
-                        <p className={!serverState.status.ok ? "errorMsg" : ""}>
-                          {serverState.status.msg}
-                        </p>
-                      )}
-                    </div>
-                  </form>
+                    </form>
+                  </div>
+                  </div>
                 </div>
 
-                <div className="col-md-4 pt-5 ps-md-5 pe-md-0">
+                <div className="col-9 ps-5">
                   <div className="py-3">
                     <h5 className="fw-bold">General queries</h5>
                     <small>
@@ -148,7 +274,7 @@ export default function Contact(props) {
             </div>
           </div>
         </div>
-      </div>
+      </Responsive.Mobile>
     </Layout>
   )
 }

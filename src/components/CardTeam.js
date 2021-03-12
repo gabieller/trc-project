@@ -244,17 +244,17 @@ export default function CardTeam() {
         <div className="container-fluid">
           {/* <div className="row"> */}
           {/* <div className="col-12  g-0"> */}
-          <div className="card border-dark border-end-0 border-start-0 rounded-0">
+          <div className="card-mobile border-dark border-end-0 border-start-0 rounded-0">
             <div className="d-flex flex-row">
-              <div className="col-4 g-0">
+              <div className="col-5 g-0">
                 <img
-                  className="card-img rounded-0"
+                  className="card-img-mobile rounded-0"
                   src={james}
                   alt="James Cox"
                 />
               </div>
 
-              <div className=" col-8">
+              <div className=" col-7">
                 <div className="card-body">
                   <h5 className="card-title pt-3">
                     <a
@@ -274,18 +274,23 @@ export default function CardTeam() {
                     from inception. Chief Product officer of Canoo.
                   </div>
                   <hr className="my-4" />
+                  <div className="col-7">
                   <div className="d-flex flex-row justify-content-around">
                     <img
                       src={uber}
                       alt="Uber Logo"
                       className="img-logo-card py-4"
+                      width="48"
                     />
                     <img
                       src={canoo}
                       alt="Canoo Logo"
                       className="img-logo-card py-4"
+                      width="146"
                     />
                   </div>
+                  </div>
+                  
                 </div>
               </div>
             </div>

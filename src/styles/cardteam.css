@@ -1,3 +1,27 @@
 .card-text {
     font-size: 0.8rem;
 }
+
+.card {
+    height: 360px;
+}
+
+/* .card-mobile {
+    height: 340px;
+}
+
+
+.card-img-mobile {
+    height: 99%;
+    width: 100%;
+} */
+
+.card-img-top   {
+    height: 100%;
+    width: 100%;
+}
+
+/* .card-img {
+    height: 100%;
+    width: 100%;
+} */
