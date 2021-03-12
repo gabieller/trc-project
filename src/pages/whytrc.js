@@ -1,4 +1,4 @@
-import React from "react"
+import React, { Suspense } from "react"
 import Layout from "../components/Layout"
 import Arrow from "../components/Arrow"
 import Responsive from "../components/Responsive"
@@ -20,74 +20,83 @@ import appstorebadge from "../images/app-store-badge.png"
 
 import "../styles/whytrc.css"
 
+const CanvasAnimation = React.lazy(() =>
+  import("../components/CanvasAnimation")
+)
+
 // TODO: fix ipad mobile
 // TODO: fix responsive border
 export default function WhyTRC(props) {
   return (
     <Layout {...props}>
       <div id="solutions-page" className="container-fluid">
-        <div className="section why-trc">
-          <div className="container">
-            <div className="pb-5 ps-4 ms-3">
-              <Responsive.Desktop>
-                <h1>
-                  It’s <br />
-                  <p className="green">
-                    time to launch the most efficient <br /> on-demand
-                    transportation system in the world
-                  </p>
-                </h1>
-              </Responsive.Desktop>
-              <Responsive.Mobile>
-                <h1>
-                  It’s time
-                  <br />
-                  <p className="green">
-                    to launch the most efficient on-demand transportation system
-                    in the world
-                  </p>
-                </h1>
-              </Responsive.Mobile>
+        <div className="section title why-trc">
+          <div className="animation-container" style={{ opacity: "0.2" }}>
+            <Suspense fallback={<div className="fallback" />}>
+              <CanvasAnimation />
+            </Suspense>
+          </div>
+          <Responsive.Desktop>
+            <div className="container title-content ">
+              <h1 className="pb-3 pt-5 ps-md-4 ms-md-3 ps-3">
+                It’s <br />
+                <p className="green">
+                  time to launch the most efficient <br /> on-demand
+                  transportation system in the world
+                </p>
+              </h1>
             </div>
-            <div className="row col-md-11">
-              <div className="col-md-3 pb-3 pb-md-0 ps-md-0  pe-md-3">
-                <div className=" card bg-white border border-dark mx-0">
-                  <div className="card-body icons d-flex flex-row ">
-                    <img src={coverage} alt="Coverage Icon" />
-                    <h4 className="card-title m-0 ps-3">Coverage</h4>
-                  </div>
-                </div>
+          </Responsive.Desktop>
+          <Responsive.Mobile>
+            <div className="container title-content">
+              <h1 className="pb-3 pt-5 ps-md-4 ms-md-3 ps-3">
+                It’s time
+                <br />
+                <p className="green">
+                  to launch the most efficient on-demand transportation system
+                  in the world
+                </p>
+              </h1>
+            </div>
+          </Responsive.Mobile>
+        </div>
+        <div className="row col-md-11 pb-5 ps-md-5 ms-md-3 ps-3">
+          <div className="col-md-3 pb-3 pb-md-0 ps-md-0  pe-md-3">
+            <div className=" card bg-white border border-dark mx-0">
+              <div className="card-body icons d-flex flex-row ">
+                <img src={coverage} alt="Coverage Icon" />
+                <h4 className="card-title m-0 ps-3">Coverage</h4>
               </div>
-              <div className="col-md-3 pb-3 pb-md-0 ps-md-0 pe-md-3">
-                <div className="card bg-white border border-dark mx-0">
-                  <div className="card-body icons d-flex flex-row">
-                    <img src={efficiency} alt="Efficiency Icon" />
-                    <h4 className="card-title m-0 ps-3">Efficiency</h4>
-                  </div>
-                </div>
+            </div>
+          </div>
+          <div className="col-md-3 pb-3 pb-md-0 ps-md-0 pe-md-3">
+            <div className="card bg-white border border-dark mx-0">
+              <div className="card-body icons d-flex flex-row">
+                <img src={efficiency} alt="Efficiency Icon" />
+                <h4 className="card-title m-0 ps-3">Efficiency</h4>
               </div>
-              <div className="col-md-3 pb-3 pb-md-0 ps-md-0 pe-md-3">
-                <div className="card bg-white border border-dark mx-0">
-                  <div className="card-body icons d-flex flex-row">
-                    <img src={equity} alt="equity Icon" />
-                    <h4 className="card-title m-0 ps-3">Equity</h4>
-                  </div>
-                </div>
+            </div>
+          </div>
+          <div className="col-md-3 pb-3 pb-md-0 ps-md-0 pe-md-3">
+            <div className="card bg-white border border-dark mx-0">
+              <div className="card-body icons d-flex flex-row">
+                <img src={equity} alt="equity Icon" />
+                <h4 className="card-title m-0 ps-3">Equity</h4>
               </div>
-              <div className="col-md-3 pb-3 pb-md-0 ps-md-0 pe-md-3">
-                <div className="card bg-white  border border-dark mx-0">
-                  <div className="card-body d-flex flex-row">
-                    <img src={convenience} alt="Convenience Icon" />
-                    <h4 className="card-title m-0 ps-3">Convenience</h4>
-                  </div>
-                </div>
+            </div>
+          </div>
+          <div className="col-md-3 pb-3 pb-md-0 ps-md-0 pe-md-3">
+            <div className="card bg-white  border border-dark mx-0">
+              <div className="card-body icons d-flex flex-row">
+                <img src={convenience} alt="Convenience Icon" />
+                <h4 className="card-title m-0 ps-3">Convenience</h4>
               </div>
             </div>
           </div>
         </div>
 
-        <div className="why-trc py-0">
-          <div className="container justify-content-center ps-5">
+        <div className="why-trc pt-5 ps-md-5 ms-md-3 ps-3">
+          <div className="container justify-content-center">
             <div className="row">
               <div className="col-md-3 text-center pb-2">
                 All possible routes are considered in real time
@@ -162,7 +171,7 @@ export default function WhyTRC(props) {
 
             <Arrow />
 
-            <div className="col-md-5 bg-white col-right border border-top-0 border-dark pt-5 px-5">
+            <div className="col-md-5 bg-white col-right border border-top-0 border-dark pt-5 px-md-5 px-3">
               <div className="row solutions flex-column">
                 <div className="col-12 col-md-9">
                   <h4 className="pb-3 fw-bold">1.</h4>

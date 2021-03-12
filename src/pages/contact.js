@@ -44,7 +44,7 @@ export default function Contact(props) {
     <Layout {...props}>
       <div id="contact" className="container-fluid">
         <div className="section title justify-content-left">
-          <div className="animation-container">
+          <div className="animation-container" style={{ opacity: "0.2" }}>
             <Suspense fallback={<div className="fallback" />}>
               <CanvasAnimation />
             </Suspense>

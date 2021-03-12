@@ -4,6 +4,7 @@
   width: 100%;
   height: auto;
   min-height: 35rem;
+  background-color: #f5f4f5;
 }
 
 #solutions-page .card {
@@ -14,16 +15,30 @@
   margin: 0px 10px 0 10px;
 }
 
-.why-trc {
-  background-color: #f5f4f5;
+#solutions-page > .title {
+  position: relative;
+  padding-left: 0 !important;
+  padding-top: 0;
+  padding-bottom: 0;
+}
+
+#solutions-page > .title > .title-content {
+  padding-top: 6vw;
+  padding-bottom: 6vw;
+  position: relative;
+}
+
+#solutions-page > .title > .animation-container,
+#solutions-page > .title > .animation-container > .fallback {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  background-color: #e4e1e5;
 }
 
 .icons:hover {
   background-color: #e4e1e5;
-}
-
-.box-shadow {
-  background-color: #f5f4f5;
 }
 
 .wrap-illustration {

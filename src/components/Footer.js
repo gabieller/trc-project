@@ -17,17 +17,17 @@ import appstorebadge from "../images/app-store-badge.png"
 
 export default function Footer() {
   return (
-    <footer id="footer" className="section fw-bold">
+    <footer id="footer" className="section-mini fw-bold">
       <div className="container">
         <div className="row g-0">
-          <div className="col-12 col-md-5">
+          <div className="col-12 col-md-5 px-3 px-md-0">
             <div className="row g-0">
               <div className="col-6 col-md-12">
                 <Link to="/">
                   <img src={trclogo} alt="Logo TRC" className="trclogo" />
                 </Link>
               </div>
-              <div className="col-6 col-md-12 py-3 d-flex align-middle">
+              <div className="col-6 col-md-12 py-md-3 d-flex align-middle">
                 <Button
                   className="btn btn-link px-0 d-dlex justify-content-start"
                   href="https://medium.com/routable-ai"
@@ -68,7 +68,7 @@ export default function Footer() {
               </div>
             </div>
             <hr className="d-md-none" />
-            <div className="row g-0 py-5">
+            <div className="row g-0 py-md-5">
               <div className="col-6 col-md-12 py-3">
                 <Link to="/pingo">
                   <img src={pingologo} alt="Logo PINGO" className="pingologo" />
@@ -79,20 +79,19 @@ export default function Footer() {
                   <img
                     src={googleplaybadge}
                     alt="Google Play Download"
-                    width="75"
-                    // className="img-fluid"
+                    className="app-badge img-fluid"
                   />
                 </Button>
                 <Button className="btn btn-link px-0">
                   <img
                     src={appstorebadge}
                     alt="App Store Download"
-                    // className="img-fluid"
-                    width="70"
+                    className="app-badge img-fluid"
                   />
                 </Button>
               </div>
             </div>
+            <hr className="d-md-none" />
           </div>
           <div className="col-3 d-none d-md-block">
             <div className="row g-0 links-row px-0">
@@ -124,8 +123,7 @@ export default function Footer() {
             <Newsletter />
           </div>
         </div>
-        <hr className="d-md-none" />
-        <div className="d-flex flex-column col-12 g-0 pt-5 text-center">
+        <div className="d-flex flex-column col-12 g-0 pt-5 ps-3 ps-md-0 text-md-center">
           ©2020 The Routing Company <br />
           All Rights Reserved
           <Link to="/privacypolicy">Terms and Conditions | Privacy Policy</Link>

@@ -2,7 +2,6 @@ import React, { useState, useRef } from "react"
 import { useEffectOnlyOnce } from "../utils/hooks"
 import "../styles/arrow.css"
 
-
 export default function Arrow({ className }) {
   const [percentage, setPercentage] = useState(0)
   const [showArrow, setShowArrow] = useState(false)
