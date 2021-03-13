@@ -6,7 +6,6 @@ import Modal from "../components/ModalComponents/Modal"
 import CardTeam from "../components/CardTeam"
 import Demo from "../components/Demo"
 
-// import CookieConsent from "../components/CookieConsent"
 
 import cnn from "../images/cnn_logo.svg"
 import tech from "../images/tech_logo.svg"
@@ -30,9 +29,13 @@ export default function Home({ props, numberPosts }) {
     setIsModalVisible(prev => !prev)
   }
 
+  const closeModalHandler = () => setIsModalVisible(false)
+
   return (
     <Layout {...props}>
-      <div id="index" className="container-fluid">
+      <div id="index" className={`container-fluid ${isModalVisible ? "open" : ""}`}>
+    
+     
         <div className="section title justify-content-left">
           <div className="animation-container">
             <Suspense fallback={<div className="fallback" />}>
@@ -50,15 +53,20 @@ export default function Home({ props, numberPosts }) {
                   right price.
                 </span>
               </h1>
-              <div className="action-buttons text-center">
-                <Button className="mt-5 btn-black-modal" onClick={openModal}>
-                  GET STARTED
-                </Button>
-              </div>
+              <div>
+              {isModalVisible ? (
+                <div onClick={closeModalHandler} className="back-drop"></div>
+              ) : null}
+
+              <Button className="mt-5 btn-black" onClick={openModal}>
+                GET STARTED
+              </Button>
+
               <Modal
                 isModalVisible={isModalVisible}
                 setIsModalVisible={setIsModalVisible}
               />
+              </div>
             </div>
             <div className="row justify-content-center text-center g-0">
               <div className="col-md-9">

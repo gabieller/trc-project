@@ -48,7 +48,7 @@ export default function Header({ uri }) {
             className="ps-md-3 ps-4 logo-header"
           />
         </Link>
-        {pathname !== "/" ? (
+        {pathname !== "/" && (
           <div className="col-md-6 d-none d-md-block d-lg-block">
             <div className="d-flex flex-row-reverse ">
               <Button
@@ -59,7 +59,7 @@ export default function Header({ uri }) {
               </Button>
             </div>
           </div>
-        ) : null}
+        )}
 
         {pathname === "/" && window.pageYOffset > 450 ? (
           <div className="col-md-6 d-none d-md-block d-lg-block">

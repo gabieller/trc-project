@@ -1,25 +1,20 @@
 .modal-wrapper {
-    background: #fff;
-    width: 80%;
-    max-width: 800px;
-    margin: 4rem auto;
-    transition: all .5s ease;
-  }
-
-
-.back-drop {
-  background: rgba(63, 61, 61, 0.692);
-  height: 100%;
   position: fixed;
-  transition: all 1.3s;
-  width: 100%;
+
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  background: #fff;
+  width: 80%;
+  margin: 4rem auto;
+  transition: all 0.5s ease;
 }
+
 .arrow {
-    transform: rotate(90deg);
+  transform: rotate(90deg);
 }
 
 .close-button:hover {
-    background-color: transparent;
-  
+  background-color: transparent;
 }
-

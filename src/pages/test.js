@@ -16,7 +16,7 @@ export default function Test(props) {
 
   return (
     <Layout {...props}>
-      <div className=" section">
+      <div className="pt-5">
         {isModalVisible ? (
           <div onClick={closeModalHandler} className="back-drop"></div>
         ) : null}

@@ -93,7 +93,7 @@ export class Survey3 extends Component {
             </Button>
           </div>
 
-          <button type="button" className="btn" onClick={this.back}>
+          <button type="button" className="btn pt-5" onClick={this.back}>
             GO BACK
           </button>
         </div>

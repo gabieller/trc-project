@@ -1,9 +1,14 @@
 #index {
   position: relative;
-  overflow: hidden;
+  /* overflow: hidden; */
   width: 100%;
   height: auto;
   min-height: 35rem;
+}
+
+
+#index .open {
+  overflow: hidden;
 }
 
 #index > .title {
@@ -19,21 +24,21 @@
   position: relative;
 }
 
-#index > .title > .animation-container, #index > .title > .animation-container > .fallback {
+#index > .title > .animation-container,
+#index > .title > .animation-container > .fallback {
   position: absolute;
   width: 100%;
   height: 100%;
   display: flex;
-  background-color: #E4E1E5;
+  background-color: #e4e1e5;
 }
-
 
 #index > .title > .action-buttons {
   margin-top: 2rem !important;
 }
 
 #index .title-green {
-  color: #58968A;
+  color: #58968a;
 }
 
 #index .btn-black-modal {
@@ -48,6 +53,15 @@
   background-color: #ffffff;
 }
 
-.show{
+.show {
   display: block !important;
+}
+
+#index .back-drop {
+  background: rgba(63, 61, 61, 0.692);
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
 }

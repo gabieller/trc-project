@@ -224,7 +224,7 @@ export default function Contact(props) {
                         <div className="col-11  py-4  ">
                           <Button
                             type="submit"
-                            className="btn btn-black btn-block -flex flex-grow-1"
+                            className="btn btn-black btn-block d-flex flex-grow-1"
                             disabled={serverState.submitting}
                             variant="contained"
                           >

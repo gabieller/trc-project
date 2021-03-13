@@ -42,58 +42,67 @@ export class Survey2 extends Component {
             </div>
           </div>
           <div className="d-flex flex-row justify-content-center">
-            <Button>
-              <Card
-                className="rounded-0 border-dark"
-                variant="outlined"
-                onClick={this.continue}
-              >
-                <CardContent className="d-flex flex-column card-content justify-content-center">
-                  <img src={icon1} height="64" />
-                  <p className="fs-6 pt-3">On-demand transit</p>
-                </CardContent>
-              </Card>
-            </Button>
-            <Button>
-              <Card
-                className="rounded-0 border-dark"
-                variant="outlined"
-                onClick={this.continue}
-              >
-                <CardContent className="d-flex flex-column card-content justify-content-center">
-                  <img src={icon2} height="64" />
-                  <p className="fs-6 pt-3">Paratransit</p>
-                </CardContent>
-              </Card>
-            </Button>
-            <Button>
-              <Card
-                className="rounded-0 border-dark"
-                variant="outlined"
-                onClick={this.continue}
-              >
-                <CardContent className="d-flex flex-column card-content justify-content-center">
-                  <img src={icon3} height="64" />
-                  <p className="fs-6 pt-3">Reporting and tracking</p>
-                </CardContent>
-              </Card>
-            </Button>
-            <Button>
-              <Card
-                className="rounded-0 border-dark"
-                variant="outlined"
-                ß
-                onClick={this.continue}
-              >
-                <CardContent className="d-flex flex-column card-content justify-content-center">
-                  <img src={icon4} height="64" />
-                  <p className="fs-6 pt-3">Fixed route</p>
-                </CardContent>
-              </Card>
-            </Button>
+            <div className="col-3">
+              <Button>
+                <Card
+                  className="rounded-0 border-dark"
+                  variant="outlined"
+                  onClick={this.continue}
+                >
+                  <CardContent className="d-flex flex-column card-content justify-content-center">
+                    <img src={icon1} height="64" />
+                    <p className="fs-6 pt-3">On-demand transit</p>
+                  </CardContent>
+                </Card>
+              </Button>
+            </div>
+
+            <div className="col-3">
+              <Button>
+                <Card
+                  className="rounded-0 border-dark"
+                  variant="outlined"
+                  onClick={this.continue}
+                >
+                  <CardContent className="d-flex flex-column card-content justify-content-center">
+                    <img src={icon2} height="64" />
+                    <p className="fs-6 pt-3">Paratransit</p>
+                  </CardContent>
+                </Card>
+              </Button>
+            </div>
+            <div className="col-3">
+              {" "}
+              <Button>
+                <Card
+                  className="rounded-0 border-dark"
+                  variant="outlined"
+                  onClick={this.continue}
+                >
+                  <CardContent className="d-flex flex-column card-content justify-content-center">
+                    <img src={icon3} height="64" />
+                    <p className="fs-6 pt-3">Reporting and tracking</p>
+                  </CardContent>
+                </Card>
+              </Button>
+            </div>
+            <div className="col-3">
+              <Button>
+                <Card
+                  className="rounded-0 border-dark"
+                  variant="outlined"
+                  onClick={this.continue}
+                >
+                  <CardContent className="d-flex flex-column card-content justify-content-center">
+                    <img src={icon4} height="64" />
+                    <p className="fs-6 pt-3">Fixed route</p>
+                  </CardContent>
+                </Card>
+              </Button>
+            </div>
           </div>
 
-          <button type="button" className="btn" onClick={this.back}>
+          <button type="button" className="btn pt-5" onClick={this.back}>
             GO BACK
           </button>
         </div>
