@@ -1,7 +1,7 @@
 import React, { Component } from "react"
 import Button from "@material-ui/core/Button"
 
-import mockup from "../../images/mockup.png"
+import mockup from "../../images/mockup_cut.png"
 
 // import Dialog from "@material-ui/core/Dialog"
 // import AppBar from "@material-ui/core/AppBar"
@@ -23,11 +23,12 @@ export class Success extends Component {
     return (
       <>
         <div className="bg-white">
-          <div className="container">
-            <div className="d-flex flex-column col-6">
+          <div className="row">
+            <div className="d-flex flex-column col-md-7  text-submit">
               <h3>
-                See how our product can improve <br /> [earlier answer] in your
-                coverage area.
+                See how our product can improve <br />{" "}
+                <span className="green">[earlier answer]</span> in your coverage
+                area.
               </h3>
 
               <div className="input-group mb-3 col-8">
@@ -47,6 +48,11 @@ export class Success extends Component {
             <div className="wrap-mockup col-md-6">
               <img src={mockup} className="mockup img-fluid" />
             </div>
+          </div>
+          <div className="col-md-4 submit">
+            Many companies in this space <br /> talk a big game but can’t
+            deliver <br />
+            results. We’re different.
           </div>
         </div>
       </>

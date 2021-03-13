@@ -6,7 +6,6 @@ import Modal from "../components/ModalComponents/Modal"
 import CardTeam from "../components/CardTeam"
 import Demo from "../components/Demo"
 
-
 import cnn from "../images/cnn_logo.svg"
 import tech from "../images/tech_logo.svg"
 import theverge from "../images/theverge_logo.svg"
@@ -33,9 +32,7 @@ export default function Home({ props, numberPosts }) {
 
   return (
     <Layout {...props}>
-      <div id="index" className={`container-fluid ${isModalVisible ? "open" : ""}`}>
-    
-     
+      <div id="index" className="container-fluid">
         <div className="section title justify-content-left">
           <div className="animation-container">
             <Suspense fallback={<div className="fallback" />}>
@@ -54,18 +51,20 @@ export default function Home({ props, numberPosts }) {
                 </span>
               </h1>
               <div>
-              {isModalVisible ? (
-                <div onClick={closeModalHandler} className="back-drop"></div>
-              ) : null}
+                {isModalVisible ? (
+                  <div onClick={closeModalHandler} className="back-drop"></div>
+                ) : null}
 
-              <Button className="mt-5 btn-black" onClick={openModal}>
-                GET STARTED
-              </Button>
+                <div className="action-buttons text-center">
+                  <Button className="mt-5 btn-black-modal" onClick={openModal}>
+                    GET STARTED
+                  </Button>
+                </div>
 
-              <Modal
-                isModalVisible={isModalVisible}
-                setIsModalVisible={setIsModalVisible}
-              />
+                <Modal
+                  isModalVisible={isModalVisible}
+                  setIsModalVisible={setIsModalVisible}
+                />
               </div>
             </div>
             <div className="row justify-content-center text-center g-0">

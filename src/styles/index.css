@@ -1,15 +1,11 @@
 #index {
   position: relative;
-  /* overflow: hidden; */
+  overflow: hidden;
   width: 100%;
   height: auto;
   min-height: 35rem;
 }
 
-
-#index .open {
-  overflow: hidden;
-}
 
 #index > .title {
   position: relative;
@@ -42,9 +38,9 @@
 }
 
 #index .btn-black-modal {
-  background-color: #333333 !important;
-  color: #fff !important;
-  border-radius: 0 !important;
+  background-color: #333333 ;
+  color: #fff ;
+  border-radius: 0 ;
   width: 618px;
   height: 45px;
 }
@@ -64,4 +60,6 @@
   bottom: 0;
   right: 0;
   left: 0;
+  z-index: 2999;
+
 }

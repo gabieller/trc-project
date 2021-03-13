@@ -18,9 +18,24 @@
 
 .mockup {
   position: absolute;
-  bottom: -50px;
-  right: -700px;
+  bottom: -229px;
+  left: 622px;
+  width: 80%;
 }
+
+
+.text-submit {
+  padding-top: 10rem;
+  padding-left: 5rem;
+ }
+ 
+ .submit {
+   font-family: Helvetica;
+   color: #707070;
+   font-size: 12px;
+  padding-top: 6rem;
+   padding-left: 5rem;
+ }
 
 .btn {
   color:#C3CBCD

@@ -1,14 +1,14 @@
 .modal-wrapper {
   position: fixed;
-
   top: 0;
   bottom: 0;
   right: 0;
   left: 0;
   background: #fff;
-  width: 80%;
+  width: 85%;
   margin: 4rem auto;
   transition: all 0.5s ease;
+  z-index: 3000;
 }
 
 .arrow {
