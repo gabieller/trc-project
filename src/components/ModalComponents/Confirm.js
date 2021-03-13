@@ -14,7 +14,6 @@ export class Confirm extends Component {
   }
 
   render() {
-   
     return (
       <>
         <div className="bg-white container">

@@ -22,7 +22,6 @@ export class Survey2 extends Component {
   }
 
   render() {
- 
     return (
       <>
         <div className="bg-white">
@@ -49,7 +48,7 @@ export class Survey2 extends Component {
                   onClick={this.continue}
                 >
                   <CardContent className="d-flex flex-column card-content justify-content-center">
-                    <img src={icon1} height="64" alt="On-demand"/>
+                    <img src={icon1} height="64" alt="On-demand" />
                     <p className="fs-6 pt-3">On-demand transit</p>
                   </CardContent>
                 </Card>
@@ -93,7 +92,7 @@ export class Survey2 extends Component {
                   onClick={this.continue}
                 >
                   <CardContent className="d-flex flex-column card-content justify-content-center">
-                    <img src={icon4} height="64" alt="Fixed Route"/>
+                    <img src={icon4} height="64" alt="Fixed Route" />
                     <p className="fs-6 pt-3">Fixed route</p>
                   </CardContent>
                 </Card>

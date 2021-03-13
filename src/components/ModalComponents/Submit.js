@@ -46,7 +46,7 @@ export class Success extends Component {
               </div>
             </div>
             <div className="wrap-mockup col-md-6">
-              <img src={mockup} className="mockup img-fluid" alt="Mockup"/>
+              <img src={mockup} className="mockup img-fluid" alt="Mockup" />
             </div>
           </div>
           <div className="col-md-4 submit">

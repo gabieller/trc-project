@@ -25,7 +25,7 @@ export class Survey1 extends Component {
 
     return (
       <>
-        <div >
+        <div>
           <h2 className="fs-bold fs-1 text-center">You are...</h2>
           <br />
           <div className="d-flex justify-content-center pb-5">
@@ -48,7 +48,7 @@ export class Survey1 extends Component {
                 onClick={this.continue}
               >
                 <CardContent className="d-flex flex-column card-content justify-content-center">
-                  <img src={icon1} height="64" alt="Agency"/>
+                  <img src={icon1} height="64" alt="Agency" />
                   <p className="fs-6 pt-3">
                     A transit agency <br /> or operator
                   </p>

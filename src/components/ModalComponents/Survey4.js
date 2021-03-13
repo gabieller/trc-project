@@ -21,7 +21,6 @@ export class Survey4 extends Component {
   }
 
   render() {
-   
     return (
       <>
         <div className="bg-white">
@@ -47,7 +46,7 @@ export class Survey4 extends Component {
                 onClick={this.continue}
               >
                 <CardContent className="d-flex flex-column card-content justify-content-center">
-                  <img src={icon1} height="64" alt="Bus Icon"/>
+                  <img src={icon1} height="64" alt="Bus Icon" />
                   <p className="fs-6 pt-3"> Buses</p>
                 </CardContent>
               </Card>
@@ -59,7 +58,7 @@ export class Survey4 extends Component {
                 onClick={this.continue}
               >
                 <CardContent className="d-flex flex-column card-content justify-content-center">
-                  <img src={icon2} height="64" alt="Busers and Driver Icon"/>
+                  <img src={icon2} height="64" alt="Busers and Driver Icon" />
                   <p className="fs-6 pt-3"> Buses and drivers</p>
                 </CardContent>
               </Card>
@@ -71,7 +70,7 @@ export class Survey4 extends Component {
                 onClick={this.continue}
               >
                 <CardContent className="d-flex flex-column card-content justify-content-center">
-                  <img src={icon3} height="64" alt="No busers Icon"/>
+                  <img src={icon3} height="64" alt="No busers Icon" />
                   <p className="fs-6 pt-3"> No buses</p>
                 </CardContent>
               </Card>
