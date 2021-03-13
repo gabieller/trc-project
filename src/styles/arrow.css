@@ -12,15 +12,15 @@
   width: 1px;
   height: 20px;
   position: absolute;
-  bottom: -6px;
+  bottom: -3px;
 }
 
 .rolling-arrow .line.line-1 {
-  left: 9px;
-  transform: rotate(65deg);
+  left: 7px;
+  transform: rotate(45deg);
 }
 
 .rolling-arrow .line.line-2 {
-  left: -9px;
-  transform: rotate(-65deg);
+  left: -7px;
+  transform: rotate(-45deg);
 }
