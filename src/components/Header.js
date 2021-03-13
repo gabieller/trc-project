@@ -1,10 +1,11 @@
 import React, { useState, useCallback } from "react"
 import { Link } from "gatsby"
 import Button from "@material-ui/core/Button"
-
+import Modal from "../components/ModalComponents/Modal"
 import { HamburgerCollapse } from "react-animated-burgers"
 import SideMenu from "./SideMenu"
 import { useEffectOnlyOnce } from "../utils/hooks"
+
 import "../styles/header.css"
 import trclogo from "../images/trc-logo-black.png"
 
@@ -14,6 +15,7 @@ export default function Header({ uri }) {
     isSidebarOpen: false,
   })
   const pathname = window.location.pathname
+  const [isModalVisible, setIsModalVisible] = useState(false)
 
   const toggleButton = useCallback(() => {
     setState(prevState => ({
@@ -36,6 +38,12 @@ export default function Header({ uri }) {
     }
   })
 
+  const openModal = () => {
+    setIsModalVisible(prev => !prev)
+  }
+
+  const closeModalHandler = () => setIsModalVisible(false)
+
   return (
     <>
       <nav
@@ -51,12 +59,22 @@ export default function Header({ uri }) {
         {pathname !== "/" && (
           <div className="col-md-6 d-none d-md-block d-lg-block">
             <div className="d-flex flex-row-reverse ">
-              <Button
-                className="btn-black-header btn-action"
-                variant="contained"
-              >
-                GET STARTED
-              </Button>
+              <div>
+                {isModalVisible ? (
+                  <div onClick={closeModalHandler} className="back-drop"></div>
+                ) : null}
+
+                <div className="action-buttons text-center">
+                  <Button className="btn-black" onClick={openModal}>
+                    GET STARTED
+                  </Button>
+                </div>
+
+                <Modal
+                  isModalVisible={isModalVisible}
+                  setIsModalVisible={setIsModalVisible}
+                />
+              </div>
             </div>
           </div>
         )}

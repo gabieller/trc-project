@@ -62,7 +62,7 @@ export default function WhyTRC(props) {
         </div>
         <div className="row col-md-11 pb-5 ps-md-5 ms-md-3 ps-3 cards-row">
           <div className="col-md-3 pb-3 pb-md-0 ps-md-0  pe-md-3">
-            <div className=" card bg-white border border-dark mx-0">
+            <div className="card bg-white border border-dark mx-0">
               <div className="card-body icons d-flex flex-row ">
                 <img src={coverage} alt="Coverage Icon" />
                 <h4 className="card-title m-0 ps-3">Coverage</h4>

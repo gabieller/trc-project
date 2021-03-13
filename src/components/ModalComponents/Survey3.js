@@ -22,7 +22,6 @@ export class Survey3 extends Component {
   }
 
   render() {
-    const { values, handleChange } = this.props
     return (
       <>
         <div className="bg-white">
@@ -50,7 +49,7 @@ export class Survey3 extends Component {
                 onClick={this.continue}
               >
                 <CardContent className="d-flex flex-column card-content justify-content-center">
-                  <img src={icon1} height="64" />
+                  <img src={icon1} height="64" alt="Coverage Icon" />
                   <p className="fs-6 pt-3">Coverage</p>
                 </CardContent>
               </Card>
@@ -62,7 +61,7 @@ export class Survey3 extends Component {
                 onClick={this.continue}
               >
                 <CardContent className="d-flex flex-column card-content justify-content-center">
-                  <img src={icon2} height="64" />
+                  <img src={icon2} height="64" alt="Efficiency Icon" />
                   <p className="fs-6 pt-3"> Efficiency</p>
                 </CardContent>
               </Card>
@@ -74,7 +73,7 @@ export class Survey3 extends Component {
                 onClick={this.continue}
               >
                 <CardContent className="d-flex flex-column card-content justify-content-center">
-                  <img src={icon3} height="64" />
+                  <img src={icon3} height="64" alt="Equity Icon" />
                   <p className="fs-6 pt-3"> Equity</p>
                 </CardContent>
               </Card>
@@ -86,7 +85,7 @@ export class Survey3 extends Component {
                 onClick={this.continue}
               >
                 <CardContent className="d-flex flex-column card-content justify-content-center">
-                  <img src={icon4} height="64" />
+                  <img src={icon4} height="64" alt="Convenience Icon" />
                   <p className="fs-6 pt-3"> Convenience</p>
                 </CardContent>
               </Card>

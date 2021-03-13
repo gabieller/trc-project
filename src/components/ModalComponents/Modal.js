@@ -48,21 +48,3 @@ export default function Modal({ isModalVisible, setIsModalVisible }) {
     </>
   )
 }
-
-// export default Modal
-
-// export default function Modal(props) {
-//   const { className, modalRef } = props
-
-//   return (
-//     <div ref={modalRef} className={`${className} modal`}>
-//       <div>
-//         <MultiStepForm />
-//       </div>
-//       <div className="d-flex justify-content-end pe-5">
-//         <img className="arrow" src={arrow}  />
-
-//       </div>
-//     </div>
-//   )
-// }

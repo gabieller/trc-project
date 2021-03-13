@@ -1,4 +1,4 @@
-import React, { useState, useRef, Suspense } from "react"
+import React, { useState, Suspense } from "react"
 import Button from "@material-ui/core/Button"
 
 import Layout from "../components/Layout"

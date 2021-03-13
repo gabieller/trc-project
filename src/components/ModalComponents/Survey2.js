@@ -22,8 +22,7 @@ export class Survey2 extends Component {
   }
 
   render() {
-    const { values, handleChange } = this.props
-
+ 
     return (
       <>
         <div className="bg-white">
@@ -50,7 +49,7 @@ export class Survey2 extends Component {
                   onClick={this.continue}
                 >
                   <CardContent className="d-flex flex-column card-content justify-content-center">
-                    <img src={icon1} height="64" />
+                    <img src={icon1} height="64" alt="On-demand"/>
                     <p className="fs-6 pt-3">On-demand transit</p>
                   </CardContent>
                 </Card>
@@ -65,7 +64,7 @@ export class Survey2 extends Component {
                   onClick={this.continue}
                 >
                   <CardContent className="d-flex flex-column card-content justify-content-center">
-                    <img src={icon2} height="64" />
+                    <img src={icon2} height="64" alt="Paratransit" />
                     <p className="fs-6 pt-3">Paratransit</p>
                   </CardContent>
                 </Card>
@@ -80,7 +79,7 @@ export class Survey2 extends Component {
                   onClick={this.continue}
                 >
                   <CardContent className="d-flex flex-column card-content justify-content-center">
-                    <img src={icon3} height="64" />
+                    <img src={icon3} height="64" alt="Reporting and tracking" />
                     <p className="fs-6 pt-3">Reporting and tracking</p>
                   </CardContent>
                 </Card>
@@ -94,7 +93,7 @@ export class Survey2 extends Component {
                   onClick={this.continue}
                 >
                   <CardContent className="d-flex flex-column card-content justify-content-center">
-                    <img src={icon4} height="64" />
+                    <img src={icon4} height="64" alt="Fixed Route"/>
                     <p className="fs-6 pt-3">Fixed route</p>
                   </CardContent>
                 </Card>

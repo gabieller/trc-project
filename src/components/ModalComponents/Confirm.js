@@ -1,12 +1,10 @@
 import React, { Component } from "react"
-// import { List, ListItem, ListItemText } from "@material-ui/core/"
 import Button from "@material-ui/core/Button"
 import Radio from "@material-ui/core/Radio"
 
 export class Confirm extends Component {
   continue = e => {
     e.preventDefault()
-    // PROCESS FORM //
     this.props.nextStep()
   }
 
@@ -16,9 +14,7 @@ export class Confirm extends Component {
   }
 
   render() {
-    const {
-      values: { coverage, efficiency, equity, convenience },
-    } = this.props
+   
     return (
       <>
         <div className="bg-white container">
@@ -41,9 +37,7 @@ export class Confirm extends Component {
               Would you like to see the impact of our <br /> product on
               increasing [equity] in your area?
             </p>
-            {/* <Button color="secondary" variant="contained" onClick={this.back}>
-            Back
-          </Button> */}
+
             <div className="d-flex justify-content-center">
               <Button
                 className="box-confirm rounded-0 shadow"

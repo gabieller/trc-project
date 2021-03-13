@@ -17,7 +17,7 @@ import "../styles/cardteam.css"
 
 export default function CardTeam() {
   return (
-    <div className="team-card">
+    <div id="team-card">
       <Responsive.Desktop>
         <div className="container-fluid container-xxl">
           <div className="row">
