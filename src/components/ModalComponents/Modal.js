@@ -26,7 +26,7 @@ export default function Modal({ isModalVisible, setIsModalVisible }) {
     <>
       {isModalVisible ? (
         <div
-          className="modal-wrapper pb-5"
+          className="modal-wrapper p-5"
           style={{
             transform: isModalVisible
               ? "translateY(0vh)"
@@ -35,7 +35,7 @@ export default function Modal({ isModalVisible, setIsModalVisible }) {
           }}
         >
           <MultiStepForm setIsModalVisible={setIsModalVisible} ref={modalRef} />
-          <div className="d-flex justify-content-end pe-5">
+          <div className="wrap-close-btn">
             <Button
               className="close-button"
               onClick={() => setIsModalVisible(prev => !prev)}

@@ -1,5 +1,5 @@
-import React, { useState, Suspense } from "react"
-import axios from "axios"
+import React, { Suspense } from "react"
+import { useForm, ValidationError } from "@formspree/react"
 import Layout from "../components/Layout"
 import Responsive from "../components/Responsive"
 import Button from "@material-ui/core/Button"
@@ -11,35 +11,7 @@ const CanvasAnimation = React.lazy(() =>
 )
 
 export default function Contact(props) {
-  const [serverState, setServerState] = useState({
-    submitting: false,
-    status: null,
-  })
-  const handleServerResponse = (ok, msg, form) => {
-    setServerState({
-      submitting: false,
-      status: { ok, msg },
-    })
-    if (ok) {
-      form.reset()
-    }
-  }
-  const handleOnSubmit = e => {
-    e.preventDefault()
-    const form = e.target
-    setServerState({ submitting: true })
-    axios({
-      method: "post",
-      url: "https://formspree.io/f/xoqpknav",
-      data: new FormData(form),
-    })
-      .then(r => {
-        handleServerResponse(true, "Thanks!", form)
-      })
-      .catch(r => {
-        handleServerResponse(false, r.response.data.error, form)
-      })
-  }
+  const [state, handleSubmit] = useForm("xdopqwej")
 
   return (
     <Layout {...props}>
@@ -60,7 +32,8 @@ export default function Contact(props) {
                       Lower costs. More coverage. <br />
                       <p className="green">Contact our team.</p>
                     </h1>
-                    <form onSubmit={handleOnSubmit} className="form g-0">
+
+                    <form onSubmit={handleSubmit} className="form g-0">
                       <div className="row g-3 align-items-center">
                         <div className="col-md-3 fw-bold">
                           <label
@@ -78,6 +51,11 @@ export default function Contact(props) {
                             id="inputEmail"
                             className="form-control rounded-0"
                             aria-describedby="email"
+                          />
+                          <ValidationError
+                            prefix="Email"
+                            field="email"
+                            errors={state.errors}
                           />
                         </div>
                       </div>
@@ -101,6 +79,12 @@ export default function Contact(props) {
                             className="form-control rounded-0"
                             aria-describedby="message"
                           />
+
+                          <ValidationError
+                            prefix="Message"
+                            field="message"
+                            errors={state.errors}
+                          />
                         </div>
                       </div>
 
@@ -108,21 +92,11 @@ export default function Contact(props) {
                         <Button
                           type="submit"
                           className="btn btn-black btn-block"
-                          disabled={serverState.submitting}
+                          disabled={state.submitting}
                           variant="contained"
                         >
                           Get in touch
                         </Button>
-                      </div>
-
-                      <div className="col-md-6 justify-content-left">
-                        {serverState.status && (
-                          <p
-                            className={!serverState.status.ok ? "errorMsg" : ""}
-                          >
-                            {serverState.status.msg}
-                          </p>
-                        )}
                       </div>
                     </form>
                   </div>
@@ -177,7 +151,7 @@ export default function Contact(props) {
                   </h1>
                   <div className="d-flex justify-content-center">
                     <div className="shadow bg-white">
-                      <form onSubmit={handleOnSubmit} className="form px-4">
+                      <form onSubmit={handleSubmit} className="form px-4">
                         <div className="row g-3 align-items-center">
                           <div className="col-4 fw-bold px-0">
                             <label
@@ -225,23 +199,11 @@ export default function Contact(props) {
                           <Button
                             type="submit"
                             className="btn btn-black btn-block d-flex flex-grow-1"
-                            disabled={serverState.submitting}
+                            disabled={state.submitting}
                             variant="contained"
                           >
                             Get in touch
                           </Button>
-                        </div>
-
-                        <div className="col-md-6 justify-content-left">
-                          {serverState.status && (
-                            <p
-                              className={
-                                !serverState.status.ok ? "errorMsg" : ""
-                              }
-                            >
-                              {serverState.status.msg}
-                            </p>
-                          )}
                         </div>
                       </form>
                     </div>

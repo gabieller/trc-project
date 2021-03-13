@@ -12,35 +12,40 @@
   color: #c3cbcd;
 }
 
-.wrap-mockup {
+#submit .wrap-mockup {
   position: relative;
 }
 
-.mockup {
+#submit .mockup {
   position: absolute;
   bottom: -231px;
   left: 618px;
   width: 80%;
 }
 
-
-.text-submit {
+#submit .text-submit {
   padding-top: 10rem;
   padding-left: 5rem;
- }
- 
- .submit {
-   font-family: Helvetica;
-   color: #707070;
-   font-size: 12px;
+}
+
+#submit .submit {
+  font-family: Helvetica;
+  color: #707070;
+  font-size: 12px;
   padding-top: 6rem;
-   padding-left: 5rem;
- }
+  padding-left: 5rem;
+}
 
 .btn {
-  color:#C3CBCD
+  color: #c3cbcd;
 }
 
 .box-confirm {
-  background-color: #E4E1E5;
+  background-color: #e4e1e5;
+}
+
+.goback-btn {
+  position: absolute;
+  bottom: 40px;
+  left: 50px;
 }
