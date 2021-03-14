@@ -30,7 +30,7 @@ export default function CardTeam() {
                     alt="James Cox"
                   />
                 </div>
-                <div className="card-body px-5">
+                <div className="card-body py-0 px-5">
                   <h5 className="card-title pt-3">
                     <a
                       href="https://www.linkedin.com/in/jamescox00/"
@@ -53,7 +53,7 @@ export default function CardTeam() {
                   <img
                     src={canoo}
                     alt="Canoo Logo"
-                    className="img-logo-card pt-4"
+                    className="img-logo-card pt-3"
                   />
                 </div>
               </div>
@@ -62,12 +62,13 @@ export default function CardTeam() {
               <div className="container flex-row card border-0">
                 <div className="col-6">
                   <img
-                    className="card-img-top  rounded-0"
+                    className="card-img-top rounded-0"
                     src={menno}
                     alt="Menno van der Zee"
                   />
                 </div>
-                <div className="card-body  py-0 px-5">
+
+                <div className="card-body py-0 px-5">
                   <h5 className="card-title pt-3">
                     <a
                       href="https://www.linkedin.com/in/mennovanderzee/"
@@ -242,11 +243,9 @@ export default function CardTeam() {
 
       <Responsive.Mobile>
         <div className="container-fluid">
-          {/* <div className="row"> */}
-          {/* <div className="col-12  g-0"> */}
-          <div className="card-mobile border-dark border-end-0 border-start-0 rounded-0">
+          <div className="card-mobile border-top border-bottom border-dark rounded-0">
             <div className="d-flex flex-row">
-              <div className="col-5 g-0">
+              <div className="col-5 g-0 card-pic">
                 <img
                   className="card-img-mobile rounded-0"
                   src={james}
@@ -274,37 +273,35 @@ export default function CardTeam() {
                     from inception. Chief Product officer of Canoo.
                   </div>
                   <hr className="my-4" />
-                  <div className="col-7">
-                    <div className="d-flex flex-row justify-content-around">
-                      <img
-                        src={uber}
-                        alt="Uber Logo"
-                        className="img-logo-card py-4"
-                        width="48"
-                      />
-                      <img
-                        src={canoo}
-                        alt="Canoo Logo"
-                        className="img-logo-card py-4"
-                        width="146"
-                      />
-                    </div>
+                  <div className="d-flex flex-row justify-content-around">
+                    <img
+                      src={uber}
+                      alt="Uber Logo"
+                      className="img-logo-card py-4"
+                      width="48"
+                    />
+                    <img
+                      src={canoo}
+                      alt="Canoo Logo"
+                      className="img-logo-card py-4"
+                      width="146"
+                    />
                   </div>
                 </div>
               </div>
             </div>
           </div>
 
-          <div className="card  rounded-0">
+          <div className="card-mobile rounded-0">
             <div className="row">
-              <div className="col-4 g-0">
+              <div className="col-5 g-0 card-pic">
                 <img
                   className="card-img-top rounded-0"
                   src={alex}
                   alt="Alex Wallar"
                 />
               </div>
-              <div className="card-body col-8">
+              <div className="card-body col-7">
                 <h5 className="card-title pt-3">
                   <a
                     href="https://www.linkedin.com/in/wallarelvo/"
@@ -329,16 +326,16 @@ export default function CardTeam() {
             </div>
           </div>
 
-          <div className="card border-dark border-end-0 border-start-0 rounded-0">
+          <div className="card-mobile border-top border-bottom border-dark rounded-0">
             <div className="row">
-              <div className="col-4 g-0">
+              <div className="col-5 g-0 card-pic">
                 <img
                   className="card-img-top rounded-0"
                   src={menno}
                   alt="Menno van der Zee"
                 />
               </div>
-              <div className="card-body col-8">
+              <div className="card-body col-7">
                 <h5 className="card-title pt-3">
                   <a
                     href="https://www.linkedin.com/in/mennovanderzee/"
@@ -374,16 +371,16 @@ export default function CardTeam() {
             </div>
           </div>
 
-          <div className="card  rounded-0">
+          <div className="card-mobile  rounded-0">
             <div className="row">
-              <div className="col-4 g-0">
+              <div className="col-5 g-0 card-pic">
                 <img
                   className="card-img-top rounded-0"
                   src={bradford}
                   alt="Bradford Church"
                 />
               </div>
-              <div className="card-body col-8">
+              <div className="card-body col-7">
                 <h5 className="card-title pt-3">
                   <a
                     href="https://www.linkedin.com/in/bradford-church/"
@@ -411,16 +408,16 @@ export default function CardTeam() {
             </div>
           </div>
 
-          <div className="card border-dark border-end-0 border-start-0 rounded-0">
+          <div className="card-mobile border-top border-bottom border-dark rounded-0">
             <div className="row">
-              <div className="col-4 g-0">
+              <div className="col-5 g-0 card-pic">
                 <img
                   className="card-img-top rounded-0"
                   src={thuan}
                   alt="Thuan Pham"
                 />
               </div>
-              <div className="card-body col-8">
+              <div className="card-body col-7">
                 <h5 className="card-title pt-3">
                   <a
                     href="https://www.linkedin.com/in/thuanqpham/"
@@ -447,16 +444,16 @@ export default function CardTeam() {
             </div>
           </div>
 
-          <div className="card border-dark border-end-0 border-start-0 border-top-0 rounded-0">
+          <div className="card-mobile  border-bottom border-dark  rounded-0">
             <div className="row">
-              <div className="col-4 g-0">
+              <div className="col-5 g-0 card-pic">
                 <img
                   className="card-img-top rounded-0"
                   src={daniela}
                   alt="Daniela Rus"
                 />
               </div>
-              <div className="card-body col-8">
+              <div className="card-body col-7">
                 <h5 className="card-title pt-3">
                   <a
                     href="https://www.linkedin.com/in/daniela-rus-220b3/"
@@ -480,8 +477,6 @@ export default function CardTeam() {
             </div>
           </div>
         </div>
-        {/* </div> */}
-        {/* </div> */}
       </Responsive.Mobile>
     </div>
   )

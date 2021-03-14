@@ -2,11 +2,24 @@
   font-size: 0.8rem;
 }
 
-#team-card .card {
+/* #team-card .card {
   height: 360px;
-}
+} */
 
-.card-img-top {
+/* .card-img-top {
   height: 100%;
   width: 100%;
+} */
+
+
+.card-pic {
+  position: relative;
+  overflow: hidden;
+}
+
+.card-pic > img {
+  position: absolute;
+  min-height: 100%;
+  min-width: 100%;
+  width: 0;
 }
