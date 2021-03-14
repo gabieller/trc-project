@@ -29,18 +29,18 @@ export default function Survey({ nextStep, prevStep, handleChange, index }) {
             ></div>
           </div>
         </div>
-          <div className="d-flex flex-row justify-content-center">
-            {question.options.map(({ icon, content }) => (
-              <SurveyItem
-                key={content}
-                handleChange={handleChange}
-                nextStep={nextStep}
-                icon={icon}
-                content={content}
-                question={question.name}
-              />
-            ))}
-          </div>
+        <div className="d-flex flex-row justify-content-center">
+          {question.options.map(({ icon, content }) => (
+            <SurveyItem
+              key={content}
+              handleChange={handleChange}
+              nextStep={nextStep}
+              icon={icon}
+              content={content}
+              question={question.name}
+            />
+          ))}
+        </div>
 
         {index > 0 && (
           <button type="button" className="btn pt-5" onClick={handleprev}>

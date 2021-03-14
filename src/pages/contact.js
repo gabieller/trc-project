@@ -18,7 +18,7 @@ export default function Contact(props) {
       <Responsive.Desktop>
         <div id="contact" className=" container-fluid">
           <div className=" title justify-content-left">
-            <div className="animation-container" style={{ opacity: "0.2" }}>
+            <div className="animation-container" style={{ opacity: "0.4" }}>
               <Suspense fallback={<div className="fallback" />}>
                 <CanvasAnimation />
               </Suspense>

@@ -50,18 +50,11 @@ export default function Header({ uri }) {
         className={` navbar fixed-top col-11 col-md-12 ${state.visibilityClass}`}
       >
         <div className="container">
-          <Link
-            to="/"
-            className="navbar-brand py-3 px-md-4 p-xxl-0 ms-md-4 ms-xxl-0"
-          >
-            <img
-              src={trclogo}
-              alt="Main logo"
-              className="ps-4 ps-md-3 ps-xxl-0 logo-header"
-            />
+          <Link to="/" className="navbar-brand py-3 ms-md-4 ms-xxl-0">
+            <img src={trclogo} alt="Main logo" className="logo-header" />
           </Link>
           {pathname !== "/" && (
-            <div className="col-md-6 d-none d-md-block d-lg-block">
+            <div className="col-md-4 d-none d-md-block d-lg-block">
               <div className="d-flex flex-row-reverse ">
                 <div>
                   {isModalVisible ? (
@@ -87,7 +80,7 @@ export default function Header({ uri }) {
           )}
 
           {pathname === "/" && window.pageYOffset > 450 ? (
-            <div className="col-md-6 d-none d-md-block d-lg-block">
+            <div className="col-md-5 d-none d-md-block d-lg-block">
               <div className="d-flex flex-row-reverse ">
                 <Button
                   className="btn-black-header btn-action"
@@ -100,7 +93,7 @@ export default function Header({ uri }) {
           ) : null}
 
           <HamburgerCollapse
-            className="collapse-button"
+            className="collapse-button p-0"
             isActive={state.isSidebarOpen}
             barColor="black"
             onClick={toggleButton}

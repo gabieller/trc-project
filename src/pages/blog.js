@@ -9,14 +9,21 @@ const MediumIntegration = React.lazy(() =>
 export default function Blog(props) {
   return (
     <Layout {...props}>
-      <div className="section-mini" style={{ background: "#F5F4F5" }}>
-        <div className="container g-0">
-          <h1 className="col-8 col-md-12">What we have been up to</h1>
-          <Suspense fallback={<div />}>
-            <MediumIntegration numberPosts={4} />
-          </Suspense>
+      <div
+        id="contact"
+        className="container-fluid"
+        style={{ background: "#F5F4F5" }}
+      >
+        <div className="container">
+          <div className="section">
+            <h1 className="col-8 col-md-12 ps-3">What we have been up to</h1>
+            <Suspense fallback={<div />}>
+              <MediumIntegration numberPosts={4} />
+            </Suspense>
+          </div>
         </div>
       </div>
+
       <Demo />
     </Layout>
   )

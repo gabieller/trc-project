@@ -55,7 +55,7 @@ export default function WhyTRC(props) {
           </Responsive.Desktop>
           <Responsive.Mobile>
             <div className="container title-content">
-              <h1 className="pb-3 pt-5 ps-md-4 ms-md-3 ps-3">
+              <h1 className="section pb-3 ps-4">
                 It’s time
                 <br />
                 <p className="green">
@@ -66,56 +66,66 @@ export default function WhyTRC(props) {
             </div>
           </Responsive.Mobile>
         </div>
-        <div className="row col-md-11 pb-5 ps-md-5 ms-md-3 ps-3 cards-row">
-          <div className="col-md-3 pb-3 pb-md-0 ps-md-0  pe-md-3">
-            <div
-              className="card bg-white border border-dark mx-0"
-              onClick={() =>
-                changeText("A revolution in demand-response transportation")
-              }
-            >
-              <div className="card-body icons d-flex flex-row">
-                <img src={coverage} alt="Coverage Icon" />
-                <h4 className="card-title m-0 ps-3">Coverage</h4>
-              </div>
-            </div>
-          </div>
-          <div className="col-md-3 pb-3 pb-md-0 ps-md-0 pe-md-3">
-            <div
-              className="card bg-white border border-dark mx-0"
-              onClick={() =>
-                changeText(
-                  "Microtransit will no longer be an expensive experiment"
-                )
-              }
-            >
-              <div className="card-body icons d-flex flex-row">
-                <img src={efficiency} alt="Efficiency Icon" />
-                <h4 className="card-title m-0 ps-3">Efficiency</h4>
-              </div>
-            </div>
-          </div>
-          <div className="col-md-3 pb-3 pb-md-0 ps-md-0 pe-md-3">
-            <div
-              className="card bg-white border border-dark mx-0"
-              onClick={() =>
-                changeText("Cost per rider trip is on-par with fixed routes")
-              }
-            >
-              <div className="card-body icons d-flex flex-row">
-                <img src={equity} alt="equity Icon" />
-                <h4 className="card-title m-0 ps-3">Equity</h4>
-              </div>
-            </div>
-          </div>
-          <div className="col-md-3 pb-3 pb-md-0 ps-md-0 pe-md-3">
-            <div className="card bg-white  border border-dark mx-0">
+        <div className="container">
+          <div className="row col-md-12 col-lg-12 pb-5  cards-row">
+            <div className="col-md-3 pb-3 pb-md-0 ps-md-0  pe-md-3">
               <div
-                className="card-body icons d-flex flex-row"
-                onClick={() => changeText("Dial-a-ride in real time")}
+                className="card bg-white border border-dark mx-0"
+                onClick={() =>
+                  changeText("A revolution in demand-response transportation")
+                }
               >
-                <img src={convenience} alt="Convenience Icon" />
-                <h4 className="card-title m-0 ps-3">Convenience</h4>
+                <div className="card-body icons d-flex flex-row ps-md-1 ps-lg-3">
+                  <img src={coverage} alt="Coverage Icon" className="pe-3" />
+                  <h4 className="card-title m-0">Coverage</h4>
+                </div>
+              </div>
+            </div>
+            <div className="col-md-3 pb-3 pb-md-0 ps-md-0 pe-md-3">
+              <div
+                className="card bg-white border border-dark mx-0"
+                onClick={() =>
+                  changeText(
+                    "Microtransit will no longer be an expensive experiment"
+                  )
+                }
+              >
+                <div className="card-body icons d-flex flex-row ps-md-1 ps-lg-3">
+                  <img
+                    src={efficiency}
+                    alt="Efficiency Icon"
+                    className="pe-3"
+                  />
+                  <h4 className="card-title m-0">Efficiency</h4>
+                </div>
+              </div>
+            </div>
+            <div className="col-md-3 pb-3 pb-md-0 ps-md-0 pe-md-3">
+              <div
+                className="card bg-white border border-dark mx-0"
+                onClick={() =>
+                  changeText("Cost per rider trip is on-par with fixed routes")
+                }
+              >
+                <div className="card-body icons d-flex flex-row ps-md-1 ps-lg-3">
+                  <img src={equity} alt="equity Icon" className="pe-3" />
+                  <h4 className="card-title m-0">Equity</h4>
+                </div>
+              </div>
+            </div>
+            <div className="col-md-3 pb-3 pb-md-0 ps-md-0 pe-md-3">
+              <div className="card bg-white  border border-dark mx-0">
+                <div
+                  className="card-body icons d-flex flex-row ps-md-1 ps-lg-3"
+                  onClick={() => changeText("Dial-a-ride in real time")}
+                >
+                  <img
+                    src={convenience}
+                    alt="Convenience Icon"
+                    className="pe-3"
+                  />
+                  <h4 className="card-title m-0">Convenience</h4>
+                </div>
               </div>
             </div>
           </div>
@@ -245,11 +255,11 @@ export default function WhyTRC(props) {
         <Responsive.Desktop>
           <div className="section-mini">
             <div className=" container box-shadow shadow-lg ">
-              <div className="d-flex flex-row align-items-center justify-content-center">
-                <div className="col-4">
+              <div className="d-flex flex-row align-items-center justify-content-center justify-content-md-around">
+                <div className="col-md-5 col-lg-4">
                   <img src={mockup_ridepingo} alt="Ride Pingo"></img>
                 </div>
-                <div className="col-7 px-5">
+                <div className="col-md-5 col-lg-7 ps-md-5">
                   <h2 className="fw-bold text-uppercase">
                     Ride Pingo! <br /> Download our rider app
                   </h2>
