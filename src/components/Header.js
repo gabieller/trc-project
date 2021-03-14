@@ -45,7 +45,7 @@ export default function Header({ uri }) {
   return (
     <>
       <nav
-        className={` navbar fixed-top col-11 col-md-12 ${state.visibilityClass}`}
+        className={` navbar fixed-top col-12  ${state.visibilityClass}`}
       >
         <div className="container">
           <Link to="/" className="navbar-brand py-3 ms-md-4 ms-xxl-0">

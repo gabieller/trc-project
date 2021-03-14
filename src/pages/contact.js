@@ -34,8 +34,8 @@ export default function Contact(props) {
                     </h1>
 
                     <form onSubmit={handleSubmit} className="form g-0">
-                      <div className="row g-3 align-items-center">
-                        <div className="col-md-3 fw-bold">
+                      <div className="row g-3 pb-3 align-items-start">
+                        <div className="col-md-3 mt-0 fw-bold">
                           <label
                             htmlFor="inputEmail"
                             className="col-form-label"
@@ -60,8 +60,8 @@ export default function Contact(props) {
                         </div>
                       </div>
 
-                      <div className="row g-3 align-items-center">
-                        <div className="col-md-3 fw-bold">
+                      <div className="row g-3 align-items-start">
+                        <div className="col-md-3 mt-0 fw-bold">
                           <label
                             htmlFor="inputMessage"
                             className="col-form-label"

@@ -354,17 +354,17 @@ export default function CardTeam() {
                   vehicles.
                 </div>
                 <hr className="my-4" />
-                <div></div>
-                <div className="d-flex flex-row">
+
+                <div className="d-flex flex-row justify-content-between">
                   <img
                     src={smart}
                     alt="Smart Logo"
-                    className="img-logo-card py-4"
+                    className="img-logo-card pt-3"
                   />
                   <img
                     src={tudelft}
                     alt="TU Delft Logo"
-                    className="img-logo-card py-4"
+                    className="img-logo-card"
                   />
                 </div>
               </div>

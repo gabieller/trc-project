@@ -70,26 +70,34 @@ export default function Home({ props, numberPosts }) {
               </div>
             </div>
             <div className="row justify-content-center text-center g-0">
-              <div className="col-md-9">
-                <div className="col-12">
-                  <h3>
-                    <small>
-                      Our breakthrough routing technology has been featured in:
-                    </small>
-                  </h3>
-                  <div className="d-flex justify-content-around pt-3">
-                    <img src={cnn} alt="CNN Logo" />
-                    <img src={tech} alt="Tech Crunch Logo" />
-                    <img src={theverge} alt="The Vergr Logo" />
-                    <img src={bbc} alt="BBC Logo" />
-                  </div>
+              <div className="col-8 col-md-9">
+                {/* <div className="col-12"> */}
+                <h3>
+                  {/* <small> */}
+                  Our breakthrough routing technology has been featured in:
+                  {/* </small> */}
+                </h3>
+                <div className="d-flex col-md-12 pb-5 d-flex justify-content-around pt-3 ">
+                  {/* <div className="pb-5"> */}
+                  <img src={cnn} alt="CNN Logo" />
+                  {/* </div> */}
+                  {/* <div className="pb-5"> */}
+                  <img src={tech} alt="Tech Crunch Logo" />
+                  {/* </div> */}
+                  {/* <div className="pb-5"> */}
+                  <img src={theverge} alt="The Vergr Logo" />
+                  {/* </div> */}
+                  {/* <div > */}
+                  <img src={bbc} alt="BBC Logo" />
+                  {/* </div> */}
+                  {/* </div> */}
                 </div>
               </div>
             </div>
           </div>
         </div>
         <div className="section team">
-          <div className="container pb-5">
+          <div className="container pb-5 ps-5">
             <div className="row g-0 col-md-6">
               <h2>Team</h2>
               <div className="col-md-8">
