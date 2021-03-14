@@ -89,7 +89,7 @@
 
 @media (min-width: 768px) {
   #overlay .menu-logo {
-    width: 40%;
+    width: 30%;
   }
 }
 
@@ -98,6 +98,7 @@
     width: 70%;
   }
 }
+
 
 @media (min-width: 768px) {
   #side-menu {

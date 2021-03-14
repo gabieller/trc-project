@@ -1,5 +1,6 @@
 import React from "react"
 import Button from "@material-ui/core/Button"
+import { Link } from "gatsby"
 
 export default function Demo() {
   return (
@@ -23,12 +24,14 @@ export default function Demo() {
 
           <div className="col-12 col-md-3 col-xxl-2 pb-4 pb-md-0 d-flex justify-content-around">
             <div className="action-buttons">
-              <Button
-                className="btn-white rounded-0 btn-action"
-                variant="contained"
-              >
-                WHY TRC
-              </Button>
+              <Link to="/whytrc" className="text-decoration-none">
+                <Button
+                  className="btn-white rounded-0 btn-action"
+                  variant="contained"
+                >
+                  WHY TRC
+                </Button>
+              </Link>
             </div>
           </div>
         </div>

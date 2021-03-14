@@ -43,11 +43,13 @@ export default function Home({ props, numberPosts }) {
           <div className="container  title-content g-0">
             <div className="bg-white d-flex flex-column section-mini ps-5 m-5 shadow-lg">
               <h1 className="title-green">
-                <span className="text-dark"> It’s time </span> <br /> for simple
-                on-demand <br /> transportation
-                <br /> at the{" "}
-                <span className="text-dark text-decoration-underline">
-                  right price.
+                <span className="wrap-text">
+                  <span className="text-dark"> It’s time </span> <br /> for
+                  simple on-demand <br /> transportation
+                  <br /> at the{" "}
+                  <span className="text-dark text-decoration-underline">
+                    right price.
+                  </span>
                 </span>
               </h1>
               <div>

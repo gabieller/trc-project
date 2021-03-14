@@ -11,7 +11,7 @@ import medium from "../images/medium.png"
 import twitter from "../images/twitter.svg"
 import arrowright from "../images/arrow-right-white.svg"
 
-export default function SideMenu({ onClick, uri, visible }) {
+export default function SideMenu({ uri, visible }) {
   return (
     <>
       <div id="overlay" className={visible ? "open" : ""}>
@@ -22,7 +22,6 @@ export default function SideMenu({ onClick, uri, visible }) {
                 src={trclogowhite}
                 alt="Main logo"
                 className=" img-responsive menu-logo"
-                width="50%"
               />
             </div>
             <div className="row d-flex section-mini">
@@ -89,10 +88,10 @@ export default function SideMenu({ onClick, uri, visible }) {
                   </li>
                 </ul>
               </div>
-              <div className="col-md-4 contact flex-column d-flex align-items-end justify-content-end pt-5 pt-md-0">
+              <div className="col-md-4 contact flex-column d-flex align-items-end justify-content-end pt-5 pt-md-0 ">
                 <div className="d-flex">
                   <Button
-                    className={`btn btn-link p-0`}
+                    className="btn btn-link p-0"
                     href="https://medium.com/routable-ai"
                     target="_blank"
                     rel="noopener noreferrer"
@@ -105,7 +104,7 @@ export default function SideMenu({ onClick, uri, visible }) {
                     />
                   </Button>
                   <Button
-                    className={`btn btn-link p-2`}
+                    className="btn btn-link p-2"
                     href="https://www.linkedin.com/company/theroutingcompany/"
                     target="_blank"
                     rel="noopener noreferrer"
@@ -118,7 +117,7 @@ export default function SideMenu({ onClick, uri, visible }) {
                     />
                   </Button>
                   <Button
-                    className={`btn btn-link p-2`}
+                    className="btn btn-link p-2"
                     href="https://twitter.com/routing_company"
                     target="_blank"
                     rel="noopener noreferrer"

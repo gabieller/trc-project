@@ -1,4 +1,4 @@
-import React, { Suspense } from "react"
+import React, { Suspense, useState } from "react"
 import Layout from "../components/Layout"
 import Arrow from "../components/Arrow"
 import Responsive from "../components/Responsive"
@@ -27,6 +27,12 @@ const CanvasAnimation = React.lazy(() =>
 // TODO: fix ipad mobile
 // TODO: fix responsive border
 export default function WhyTRC(props) {
+  const [buttonText, setButtonText] = useState(
+    "A revolution in demand-response transportation"
+  )
+
+  const changeText = text => setButtonText(text)
+
   return (
     <Layout {...props}>
       <div id="solutions-page" className="container-fluid">
@@ -62,15 +68,27 @@ export default function WhyTRC(props) {
         </div>
         <div className="row col-md-11 pb-5 ps-md-5 ms-md-3 ps-3 cards-row">
           <div className="col-md-3 pb-3 pb-md-0 ps-md-0  pe-md-3">
-            <div className="card bg-white border border-dark mx-0">
-              <div className="card-body icons d-flex flex-row ">
+            <div
+              className="card bg-white border border-dark mx-0"
+              onClick={() =>
+                changeText("A revolution in demand-response transportation")
+              }
+            >
+              <div className="card-body icons d-flex flex-row">
                 <img src={coverage} alt="Coverage Icon" />
                 <h4 className="card-title m-0 ps-3">Coverage</h4>
               </div>
             </div>
           </div>
           <div className="col-md-3 pb-3 pb-md-0 ps-md-0 pe-md-3">
-            <div className="card bg-white border border-dark mx-0">
+            <div
+              className="card bg-white border border-dark mx-0"
+              onClick={() =>
+                changeText(
+                  "Microtransit will no longer be an expensive experiment"
+                )
+              }
+            >
               <div className="card-body icons d-flex flex-row">
                 <img src={efficiency} alt="Efficiency Icon" />
                 <h4 className="card-title m-0 ps-3">Efficiency</h4>
@@ -78,7 +96,12 @@ export default function WhyTRC(props) {
             </div>
           </div>
           <div className="col-md-3 pb-3 pb-md-0 ps-md-0 pe-md-3">
-            <div className="card bg-white border border-dark mx-0">
+            <div
+              className="card bg-white border border-dark mx-0"
+              onClick={() =>
+                changeText("Cost per rider trip is on-par with fixed routes")
+              }
+            >
               <div className="card-body icons d-flex flex-row">
                 <img src={equity} alt="equity Icon" />
                 <h4 className="card-title m-0 ps-3">Equity</h4>
@@ -87,7 +110,10 @@ export default function WhyTRC(props) {
           </div>
           <div className="col-md-3 pb-3 pb-md-0 ps-md-0 pe-md-3">
             <div className="card bg-white  border border-dark mx-0">
-              <div className="card-body icons d-flex flex-row">
+              <div
+                className="card-body icons d-flex flex-row"
+                onClick={() => changeText("Dial-a-ride in real time")}
+              >
                 <img src={convenience} alt="Convenience Icon" />
                 <h4 className="card-title m-0 ps-3">Convenience</h4>
               </div>
@@ -123,9 +149,7 @@ export default function WhyTRC(props) {
             </div>
 
             <div>
-              <h2 className="text-center pt-5 fw-bold">
-                A revolution in demand-response transportation
-              </h2>
+              <h2 className="text-center pt-5 fw-bold">{buttonText}</h2>
             </div>
             <div className="row pt-5 justify-content-center">
               <img src={mockup} alt="Mockup" />

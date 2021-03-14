@@ -27,7 +27,7 @@ export default function LayoutPingo(props) {
       </Helmet>
 
       <div className={`loading ${loading ? "open" : ""}`}>
-        <img src={loadingtrc} alt="Loading Gif" width="500" height="500" />
+        <img src={loadingtrc} alt="Loading Gif" width="1500" />
       </div>
 
       {!isSSR && (

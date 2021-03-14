@@ -100,7 +100,7 @@ export default function Header({ uri }) {
           ) : null}
 
           <HamburgerCollapse
-            className="collapse-button pe-md-5 me-md-5"
+            className="collapse-button"
             isActive={state.isSidebarOpen}
             barColor="black"
             onClick={toggleButton}
