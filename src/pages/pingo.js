@@ -17,6 +17,7 @@ import googleplaybadge from "../images/google-play-badge.png"
 import appstorebadge from "../images/app-store-badge.png"
 import mockup_ridepingo from "../images/mockup-ridepingo.png"
 import ridepingo from "../images/ridepingo.png"
+import ridepingo_mobile from "../images/ridepingo_mobile.png"
 import womanillustration from "../images/woman-illustration.png"
 
 import "../styles/pingo.css"
@@ -311,6 +312,7 @@ export default function Pingo(props) {
                   />
                 </div>
               </Link>
+
               <div className="row justify-content-center pingo-landing-page user-select-none g-0">
                 <div className="row">
                   <img
@@ -327,13 +329,137 @@ export default function Pingo(props) {
                     Transit that moves with you
                   </h1>
                 </div>
+                <div className="col-md-3 wrap-mockup">
+                  <img
+                    src={ridepingo_mobile}
+                    alt="Mockup Pingo"
+                    className="mockup-image-mobile img-fluid"
+                  />
+                </div>
               </div>
             </div>
           </div>
-          <div className="d-flex flex-column bg-white">
+          <div className="bg-white">
             <div className="container">
-              <h2 className="">The whole city in the palm of your hand. </h2>
-              Download Pingo Rider
+              <div className="section-mini d-flex justify-content-center d-flex flex-column">
+                <h2 className="col-10 text-center pb-5">
+                  The{" "}
+                  <span className="text-decoration-underline fw-bold">
+                    whole city
+                  </span>{" "}
+                  in the palm of your hand.{" "}
+                </h2>
+                <h3 className="ps-4">
+                  Download <br />
+                  <span className="fw-bolder">Pingo Rider</span>
+                </h3>
+                <div className="col-10 ps-4">
+                  <div className="d-flex flex-row justify-content-center">
+                    <button className="btn btn-link px-0">
+                      <img
+                        src={googleplaybadge}
+                        alt="Google Play Download"
+                        className="img-fluid"
+                      />
+                    </button>
+                    <button className="btn btn-link px-0">
+                      <img
+                        src={appstorebadge}
+                        alt="App Store Download"
+                        className="img-fluid"
+                      />
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div id="announcements-card-mobile" className="section">
+              <div className="container">
+                <div className="announcements-list">
+                  <div className="announcements-1-mobile p-5 d-flex flex-column ">
+                    <div className="announcements-text fs-6">
+                      <div>
+                        “The most fun <br /> app to use!”
+                      </div>
+                      <div className="pt-3 announcements-name">
+                        George M., <br /> Pingo rider
+                      </div>
+                    </div>
+                  </div>
+
+                  <div className="announcements-2-mobile p-5 d-flex flex-column ">
+                    <div className="announcements-text fs-6">
+                      <div>“Pingo helps me save 20 minutes every day!</div>
+                      <div className="pt-3 announcements-name">
+                        Savannah W., <br /> Pingo rider
+                      </div>
+                    </div>
+                  </div>
+                  <div className="announcements-3-mobile p-5 d-flex flex-column">
+                    <div className="announcements-text fs-6">
+                      <div>
+                        “It’s a huge improvement on my commute. Love it!”
+                      </div>
+                      <div className="pt-3 announcements-name">
+                        Jason O., <br /> Pingo rider
+                      </div>
+                    </div>
+                  </div>
+                  <div className="announcements-4-mobile p-5 d-flex flex-column">
+                    <div className="announcements-text fs-6">
+                      <div>
+                        “I wish I had discovered Pingo before. It’s incredible!”
+                      </div>
+                      <div className="pt-3 announcements-name ">
+                        Maria B., <br /> Pingo rider
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div className="section-mini d-flex justify-content-center">
+              <h2 className="text-center pb-5 px-5">
+                Are you{" "}
+                <span className="text-decoration-underline fw-bold">ready</span>{" "}
+                to have the whole city in the palm of your hand
+              </h2>
+            </div>
+            <div className="row pb-5">
+              <div className="container box-shadow shadow col-9">
+                <div className="d-flex flex-column pt-3 pb-5">
+                  <div>
+                    <img
+                      src={mockup_ridepingo}
+                      alt="Ride Pingo"
+                      className="img-fluid"
+                    />
+                  </div>
+                  <div>
+                    <h3 className="fw-bold text-uppercase pt-5">
+                      Ride Pingo! <br />
+                    </h3>
+                    <h3 className="fw-bold">Download our rider app</h3>
+                    <p className="fs-5">Transit that moves with you</p>
+                    <div className="d-flex flex-row justify-content-center">
+                      <button className="btn btn-link px-0">
+                        <img
+                          src={googleplaybadge}
+                          alt="Google Play Download"
+                          className="img-fluid"
+                        />
+                      </button>
+                      <button className="btn btn-link px-0">
+                        <img
+                          src={appstorebadge}
+                          alt="App Store Download"
+                          className="img-fluid"
+                        />
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
         </Responsive.Mobile>
