@@ -1,44 +1,25 @@
 import React from "react"
-import Button from "@material-ui/core/Button"
+import { useForm, ValidationError } from "@formspree/react"
 
 import mockup from "../../images/mockup_cut.png"
 
-export default function Sucess({ prevStep }) {
+export default function Sucess({ prevStep, values }) {
+  const [state, handleSubmit] = useForm("mleoqpjq", {
+    data: {
+      _subject: "Someone joined the newsletter",
+      description: function () {
+        return JSON.stringify(values)
+      },
+    },
+  })
+
   return (
     <>
-      <div className="bg-white">
-        <div className="row">
-          <div className="d-flex flex-column col-md-7  text-submit">
-            <h3>
-              See how our product can improve <br />{" "}
-              <span className="green">[earlier answer]</span> in your coverage
-              area.
-            </h3>
-
-            <div className="input-group mb-3 col-8">
-              <input
-                type="text"
-                className="form-control ps-2"
-                placeholder="| Enter your email"
-                aria-label="| Enter your email"
-              />
-              <div className="input-group-append">
-                <Button className="btn-black" variant="contained">
-                  SEND
-                </Button>
-              </div>
-            </div>
-          </div>
-          <div className="wrap-mockup col-md-6">
-            <img src={mockup} className="mockup img-fluid" alt="Mockup" />
-          </div>
-        </div>
-        <div className="col-md-4 submit">
-          Many companies in this space <br /> talk a big game but can’t deliver{" "}
-          <br />
-          results. We’re different.
-        </div>
-      </div>
+      <form onSubmit={handleSubmit}>
+        <label htmlFor="email">Email</label>
+        <input id="email" type="email" name="email" />
+        <button type="submit">Sign up</button>
+      </form>
     </>
   )
 }

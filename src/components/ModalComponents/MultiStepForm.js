@@ -1,20 +1,13 @@
 import React, { Component } from "react"
-import Survey1 from "./Survey1"
-import Survey2 from "./Survey2"
-import Survey3 from "./Survey3"
-import Survey4 from "./Survey4"
+import Survey from "./Survey"
 import Confirm from "./Confirm"
 import Submit from "./Submit"
 
+import questions from "./questions"
+
 export class MultiStepForm extends Component {
   state = {
-    step: 1,
-    firstName: "",
-    lastName: "",
-    email: "",
-    occupation: "",
-    city: "",
-    bio: "",
+    step: 0,
   }
 
   // Proceed to next step
@@ -34,66 +27,41 @@ export class MultiStepForm extends Component {
   }
 
   // Handle fields change
-  handleChange = input => e => {
-    this.setState({ [input]: e.target.value })
+  handleChange = (field, value) => {
+    this.setState({ [field]: value })
   }
 
   render() {
     const { step } = this.state
-    const { coverage, efficiency, equity, convenience } = this.state
-    const values = { coverage, efficiency, equity, convenience }
 
-    switch (step) {
-      case 1:
-        return (
-          <Survey1
-            nextStep={this.nextStep}
-            handleChange={this.handleChange}
-            // values={values}
-          />
-        )
-      case 2:
-        return (
-          <Survey2
-            nextStep={this.nextStep}
-            prevStep={this.prevStep}
-            handleChange={this.handleChange}
-            // values={values}
-          />
-        )
-      case 3:
-        return (
-          <Survey3
-            nextStep={this.nextStep}
-            prevStep={this.prevStep}
-            handleChange={this.handleChange}
-            // values={values}
-          />
-        )
-      case 4:
-        return (
-          <Survey4
-            nextStep={this.nextStep}
-            prevStep={this.prevStep}
-            handleChange={this.handleChange}
-            // values={values}
-          />
-        )
-      case 5:
-        return (
-          <Confirm
-            nextStep={this.nextStep}
-            prevStep={this.prevStep}
-            values={values}
-          />
-        )
+    const values = {}
+    questions.forEach(e => {
+      values[e.name] = this.state[e.name]
+    })
 
-      case 6:
-        return <Submit />
-      default:
-        console.log("This is a multi-step form built with React.")
+    if (step === 4) {
+      return (
+        <Confirm
+          nextStep={this.nextStep}
+          prevStep={this.prevStep}
+          handleChange={this.handleChange}
+          values={values}
+        />
+      )
     }
-    // <button type="button" class="btn">GO BACK</button>
+
+    if (step === 5) {
+      return <Submit values={values} />
+    }
+
+    return (
+      <Survey
+        index={step}
+        nextStep={this.nextStep}
+        handleChange={this.handleChange}
+        prevStep={this.prevStep}
+      />
+    )
   }
 }
 
