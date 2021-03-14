@@ -45,9 +45,15 @@ export default function Medium({ numberPosts }) {
             />
             <div className="card-body">
               <h5 className="card-title">{e.title}</h5>
-              <p className="card-text">
-                Some quick example text to build on the card title and make up
-                the bulk of the card's content.
+              <p
+                className="card-text"
+                style={{
+                  textOverflow: "ellipsis",
+                  overflow: "hidden",
+                  whiteSpace: "nowrap",
+                }}
+              >
+                {e.description.replace(/(<([^>]+)>)/gi, "")}
               </p>
             </div>
             <div className="card-footer bg-transparent">
