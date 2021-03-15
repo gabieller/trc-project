@@ -161,8 +161,9 @@ export default function WhyTRC(props) {
             <div>
               <h2 className="text-center pt-5 fw-bold">{buttonText}</h2>
             </div>
-            <div className="row pt-5 justify-content-center">
-              <img src={mockup} alt="Mockup" />
+
+            <div className="pt-5 justify-content-center">
+              <img src={mockup} alt="Mockup" className="img-fluid" />
             </div>
           </div>
         </div>

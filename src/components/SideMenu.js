@@ -21,7 +21,8 @@ export default function SideMenu({ uri, visible }) {
               <img
                 src={trclogowhite}
                 alt="Main logo"
-                className=" img-responsive menu-logo"
+                // className=" img-responsive menu-logo"
+                width="140"
               />
             </div>
             <div className="row d-flex section-mini">
