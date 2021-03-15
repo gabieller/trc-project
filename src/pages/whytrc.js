@@ -54,8 +54,11 @@ export default function WhyTRC(props) {
               <h1 className="pb-3 pt-5 ps-md-4 ms-md-3 ps-3">
                 It’s <br />
                 <p className="green">
-                  time to launch the most efficient <br /> on-demand
-                  transportation system in the world
+                  time to launch the{" "}
+                  <span className="text-decoration-underline text-dark">
+                    most efficient
+                  </span>{" "}
+                  <br /> on-demand transportation system in the world
                 </p>
               </h1>
             </div>
@@ -74,7 +77,7 @@ export default function WhyTRC(props) {
           </Responsive.Mobile>
         </div>
         <div className="container">
-          <div className="row col-md-12 col-lg-12 pb-5  cards-row">
+          <div className="row row-cols-1 row-cols-md-4 pt-3 cards-row">
             <div className="col-md-3 pb-3 pb-md-0 ps-md-0  pe-md-3">
               <div
                 className="card bg-white border border-dark mx-0"
@@ -199,7 +202,7 @@ export default function WhyTRC(props) {
           </div>
         </div>
 
-        <div className="container-fluid container-xxl">
+        <div className="container-fluid container-xxl bg-white">
           <div className="row g-0">
             <div className="col-md-5 p-0 col-left d-none d-md-block">
               <img
@@ -261,7 +264,7 @@ export default function WhyTRC(props) {
         </div>
 
         <Responsive.Desktop>
-          <div className="section-mini">
+          <div className="section-mini bg-white">
             <div className=" container box-shadow shadow-lg ">
               <div className="d-flex flex-row align-items-center justify-content-center justify-content-md-around">
                 <div className="col-md-5 col-lg-4">
@@ -273,20 +276,30 @@ export default function WhyTRC(props) {
                   </h2>
                   <h2>Transit that moves with you</h2>
                   <div className="col-6 col-md-6 d-md-flex">
-                    <button className="btn btn-link px-0">
+                    <a
+                      href="https://play.google.com/store/apps/details?id=com.theroutingcompany.pingo.rider"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="btn btn-link px-0"
+                    >
                       <img
                         src={googleplaybadge}
                         alt="Google Play Download"
                         className="img-fluid"
                       />
-                    </button>
-                    <button className="btn btn-link px-0">
+                    </a>
+                    <a
+                      href="https://apps.apple.com/in/app/pingo-rider/id1536281958"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="btn btn-link px-0"
+                    >
                       <img
                         src={appstorebadge}
                         alt="App Store Download"
                         className="img-fluid"
                       />
-                    </button>
+                    </a>
                   </div>
                 </div>
               </div>
@@ -303,7 +316,7 @@ export default function WhyTRC(props) {
         </Responsive.Desktop>
 
         <Responsive.Mobile>
-          <div className="row pt-5">
+          <div className="row pt-5 bg-white">
             <div className="container box-shadow shadow col-9">
               <div className="d-flex flex-column pt-3 pb-5">
                 <div>
@@ -319,21 +332,31 @@ export default function WhyTRC(props) {
                   </h3>
                   <h3 className="fw-bold">Download our rider app</h3>
                   <p className="fs-5">Transit that moves with you</p>
-                  <div className="d-flex flex-row justify-content-center">
-                    <button className="btn btn-link px-0">
+                  <div className="d-flex flex-column px-5 justify-content-center">
+                    <a
+                      href="https://play.google.com/store/apps/details?id=com.theroutingcompany.pingo.rider"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="btn btn-link px-0"
+                    >
                       <img
                         src={googleplaybadge}
                         alt="Google Play Download"
                         className="img-fluid"
                       />
-                    </button>
-                    <button className="btn btn-link px-0">
+                    </a>
+                    <a
+                      href="https://apps.apple.com/in/app/pingo-rider/id1536281958"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="btn btn-link px-0"
+                    >
                       <img
                         src={appstorebadge}
                         alt="App Store Download"
                         className="img-fluid"
                       />
-                    </button>
+                    </a>
                   </div>
                 </div>
               </div>
@@ -348,7 +371,7 @@ export default function WhyTRC(props) {
           </div>
         </Responsive.Mobile>
 
-        <div className="section-mini">
+        <div className="section-min bg-white">
           <div className="container fs-1 col-8 col-md-12">
             Lower costs. More coverage.
             <div className="d-flex justify-content-start pt-3 pt-md-0">

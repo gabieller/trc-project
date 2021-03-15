@@ -18,6 +18,7 @@
 #pingo-header .trc-logo {
   z-index: 1;
   width: 20%;
+  object-fit: contain;
 }
 
 #pingo-header .pingo-landing-page {
@@ -29,16 +30,24 @@
   padding: min(3vw, 30px) 0;
 }
 
+#pingo-header .trc-logo-mobile {
+  z-index: 1;
+  width: 40%;
+}
 
-#pingo-header .arrow,  .pingo-logo-mobile, .trc-logo-mobile  {
+#pingo-header .arrow {
   z-index: 1;
 }
 
 #pingo-header .pingo-logo {
   z-index: 1;
-  width: 40%;
+  width: 50%;
+  object-fit: contain;
 }
 
+#pingo-header .pingo-logo-mobile {
+  z-index: 1;
+}
 
 #social-icons .btn-link:hover {
   background-color: transparent;
@@ -55,12 +64,6 @@
 }
 
 
-.mockup-image-mobile {
-  position: absolute;
-  top: 0px;
-  right: 0px;
-  width: 30%;
-}
 
 #download-pingo {
   position: relative;
@@ -78,6 +81,14 @@
   color: #58968a80;
 }
 
+.announcements-title {
+  margin-top:-30px;
+}
+
+#Pingo_Rider {
+  margin-top: -20px;
+}
+
 #announcements-card {
   background-color: #f5f4f5;
   position: relative;
@@ -93,10 +104,12 @@
   transform: translate3d(0px, 0px, 0px) rotate(17deg);
   left: -20px;
   top: 170px;
+  transition: transform 330ms ease-in-out
 }
 
 #announcements-card .announcements-1:hover {
   transform: translate3d(0px, 30px, 0px) rotate(-5deg);
+  transition: transform 330ms ease-in-out
 }
 
 .announcements-2 {
@@ -107,10 +120,12 @@
   transform: translate3d(0px, 0px, 0px) rotate(-15deg);
   left: 180px;
   bottom: 0px;
+  transition: transform 330ms ease-in-out
 }
 
 #announcements-card .announcements-2:hover {
   transform: translate3d(50px, 20px, 0px) rotate(-30deg);
+  transition: transform 330ms ease-in-out
 }
 
 .announcements-3 {
@@ -120,10 +135,12 @@
   background-color: #ffffff;
   left: 470px;
   top: 130px;
+  transition: transform 330ms ease-in-out
 }
 
 #announcements-card .announcements-3:hover {
   transform: translate3d(0px, -50px, 0px) rotate(35deg);
+  transition: transform 330ms ease-in-out
 }
 
 .announcements-4 {
@@ -134,10 +151,12 @@
   background-color: #ebe8e6;
   right: 150px;
   top: 20px;
+  transition: transform 330ms ease-in-out
 }
 
 #announcements-card .announcements-4:hover {
   transform: translate3d(0px, 100px, 0px) rotate(20deg);
+  transition: transform 330ms ease-in-out
 }
 
 .announcements-5 {
@@ -148,10 +167,12 @@
   background-color: #f4b96b;
   right: -20px;
   bottom: 50px;
+  transition: transform 330ms ease-in-out
 }
 
 #announcements-card .announcements-5:hover {
   transform: translate3d(0px, 0px, 0px) rotate(-15deg);
+  transition: transform 330ms ease-in-out
 }
 
 .announcements-6 {
@@ -162,61 +183,16 @@
   background-color: #ccccff;
   left: 650px;
   bottom: -20px;
+  transition: transform 330ms ease-in-out
 }
 
 #announcements-card .announcements-6:hover {
   transform: translate3d(-40px, 0px, 0px) rotate(-30deg);
+  transition: transform 330ms ease-in-out
 }
 
 .announcements-name {
   font-size: 12px;
-}
-
-#announcements-card-mobile {
-  background-color: #f5f4f5;
-  position: relative;
-  font-family: "Poppins";
-  height: 600px;
-}
-
-.announcements-1-mobile {
-  position: absolute;
-  width: 280px;
-  height: 180px;
-  background-color: #CCCCFF;
-  transform: translate3d(0px, 0px, 0px) rotate(17deg);
-  left: 0px;
-  top: 200px;
-}
-
-.announcements-2-mobile {
-  position: absolute;
-  width: 280px;
-  height: 180px;
-  background-color: #F4B96B;
-  transform: translate3d(0px, 0px, 0px) rotate(-15deg);
-  left: 200px;
-  top: 180px;
-}
-
-
-.announcements-3-mobile {
-  position: absolute;
-  width: 280px;
-  height: 180px;
-  background-color: #EBE8E6;
-  transform: translate3d(0px, 0px, 0px) rotate(-20deg);
-  left: 30px;
-  bottom: 20px;
-}
-
-.announcements-4-mobile {
-  position: absolute;
-  width: 280px;
-  height: 180px;
-  background-color: #ffffff;
-  left: 0px;
-  top: 30px;
 }
 
 .wrap-illustration-pingo {
@@ -225,8 +201,10 @@
 
 .somewhere-illustration-pingo {
   position: absolute;
-  bottom: -230px;
+  bottom: -220px;
   left: 830px;
 }
 
-
+/* h3:hover > u {
+  color: #58968a;
+} */

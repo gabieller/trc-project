@@ -4,7 +4,7 @@
   width: 100%;
   height: auto;
   min-height: 35rem;
-  /* background-color: #f5f4f5; */
+  background-color: #f5f4f5;
 }
 
 #whytrc .card {
@@ -91,4 +91,9 @@
   right: 0;
   left: 0;
   z-index: 2999;
+}
+
+
+#whytrc .green {
+  color: #58968a;
 }
