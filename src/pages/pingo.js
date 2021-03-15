@@ -319,8 +319,8 @@ export default function Pingo(props) {
                     className="img-fluid pingo-logo-mobile g-0"
                     src={pingologowhite}
                     alt="Pingo Main logo"
-                    width="650"
-                    height="400"
+                    // width="650"
+                    // height="400"
                   />
                 </div>
 

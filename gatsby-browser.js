@@ -21,17 +21,17 @@ const LoadingElement = ({ children }) => {
 
   return (
     <>
-    <Responsive.Desktop>
-      <div className={`loading ${loading ? "open" : ""}`}>
-        <img src={loadingtrc} alt="Loading Gif" width="1500" />
-      </div>
-    </Responsive.Desktop>
+      <Responsive.Desktop>
+        <div className={`loading ${loading ? "open" : ""}`}>
+          <img src={loadingtrc} alt="Loading Gif" width="1500" />
+        </div>
+      </Responsive.Desktop>
 
-    <Responsive.Mobile>
-    <div className={`loading ${loading ? "open" : ""}`}>
-        <img src={loadingtrc} alt="Loading Gif" width="600" />
-      </div>
-    </Responsive.Mobile>
+      <Responsive.Mobile>
+        <div className={`loading ${loading ? "open" : ""}`}>
+          <img src={loadingtrc} alt="Loading Gif" width="580" />
+        </div>
+      </Responsive.Mobile>
 
       {children}
     </>
