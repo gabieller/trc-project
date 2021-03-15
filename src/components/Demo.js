@@ -1,8 +1,18 @@
-import React from "react"
+import React, {useState} from "react"
 import Button from "@material-ui/core/Button"
+
 import { Link } from "gatsby"
 
+import "../styles/demo.css"
+
 export default function Demo() {
+  const [isModalVisible, setIsModalVisible] = useState(false)
+
+  const openModal = () => {
+    setIsModalVisible(prev => !prev)
+  }
+
+  const closeModalHandler = () => setIsModalVisible(false)
   return (
     <div id="demo-component" className=" row section-mini d-flex flex-column">
       <div className="row g-0 text-center">
@@ -16,9 +26,15 @@ export default function Demo() {
         <div className="row col-12 action-buttons g-0 d-flex justify-content-center">
           <div className="col-12 col-md-3 col-xxl-2 pb-4 pb-md-0 d-flex justify-content-around">
             <div className="action-buttons">
-              <Button className="btn-black btn-action" variant="contained">
-                GET STARTED
-              </Button>
+              {isModalVisible ? (
+                <div onClick={closeModalHandler} className="back-drop"></div>
+              ) : null}
+
+              <div className="action-buttons text-center">
+                <Button className="mt-5 btn-black-modal" onClick={openModal}>
+                  GET STARTED
+                </Button>
+              </div>
             </div>
           </div>
 

@@ -160,7 +160,7 @@ export default function CardTeam() {
                   <div className="card-text">
                     Specialized in mathematical optimization for high-capacity
                     shared rides. Author of the seminal research on
-                    high-capacity ride-sharing
+                    high-capacity ride-sharing.
                   </div>
                   <hr className="my-4" />
                   <span className="fs-bold fs-4">MIT</span>

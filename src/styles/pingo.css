@@ -31,7 +31,7 @@
 
 #pingo-header .trc-logo-mobile {
   z-index: 1;
-  width: 40%;
+  /* width: 40%; */
 }
 
 #pingo-header .arrow {
@@ -64,9 +64,9 @@
 
 .mockup-image-mobile {
   position: absolute;
-  top: 5px;
+  top: 16px;
   right: 110px;
-  width: 40%;
+  width: 30%;
 }
 
 #download-pingo {

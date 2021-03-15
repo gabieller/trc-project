@@ -10,7 +10,7 @@ export default function Cookies() {
       style={{ background: "white", color: "black" }}
     >
       We use cookies on our website to see how you interact with it. By
-      accepting, you agree to our use of such cookies.
+      accepting, you agree to our use of such cookies. {" "}
       <Link to="/privacypolicy" style={{ color: "black" }}>
         Privacy Policy
       </Link>

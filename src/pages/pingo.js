@@ -298,13 +298,16 @@ export default function Pingo(props) {
             >
               <Link to="/">
                 <div className="d-flex flex-row-reverse row-trc-logo-mobile user-select-none">
+                  {/* <div className="col-12"> */}
                   <img
                     className="trc-logo-mobile g-0"
                     src={trclogo}
                     alt="TRC Main logo"
-                    // width="650"
+                    width="140"
                     // height="400"
                   />
+                  {/* </div> */}
+
                   <img
                     src={arrowrightmobile}
                     alt="Go to TRC"
@@ -314,17 +317,17 @@ export default function Pingo(props) {
               </Link>
 
               <div className="row justify-content-center pingo-landing-page user-select-none g-0">
-                <div className="col-6">
+                <div className="col-8">
                   <img
                     className="pingo-logo-mobile g-0"
                     src={pingologowhite}
                     alt="Pingo Main logo"
-                    width="100"
+                    width="230"
                     // height="400"
                   />
                 </div>
 
-                <div className="row pt-2">
+                <div className="col-6 pt-3">
                   <h1 className="fw-bold fs-4 text-center">
                     Transit that moves with you
                   </h1>

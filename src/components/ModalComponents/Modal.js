@@ -25,7 +25,7 @@ export default function Modal({ isModalVisible, setIsModalVisible }) {
   return (
     <>
       {isModalVisible ? (
-        <div
+        <div id="modal"
           className="modal-wrapper p-5"
           style={{
             transform: isModalVisible
