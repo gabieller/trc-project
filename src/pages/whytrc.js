@@ -44,7 +44,7 @@ export default function WhyTRC(props) {
     <Layout {...props}>
       <div id="whytrc" className="container-fluid">
         <div className="section title why-trc">
-          <div className="animation-container" style={{ opacity: "0.2" }}>
+          <div className="animation-container">
             <Suspense fallback={<div className="fallback" />}>
               <CanvasAnimation />
             </Suspense>

@@ -43,7 +43,7 @@ export default function Home({ props, numberPosts }) {
 
           <div className="container  title-content g-0">
             <div className="bg-white d-flex flex-column section-mini px-4 px-md-5 m-5 shadow-lg">
-              <h1 className="title-green">
+              <h1 className="title-green ps-5">
                 <span className="wrap-text">
                   <span className="text-dark"> It’s time </span> <br /> for
                   simple on-demand <br /> transportation
@@ -128,9 +128,9 @@ export default function Home({ props, numberPosts }) {
             </div>
           </div>
         </div>
-        <div className="section team">
+        <div className="section-mini team">
           <div className="container pb-5 ps-5">
-            <div className="row g-0 col-md-6">
+            <div className="row g-0 col-md-6 pt-4">
               <h2>Team</h2>
               <div className="col-md-8">
                 We are a team of builders from technology, transportation,

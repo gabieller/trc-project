@@ -112,9 +112,12 @@ export default function Footer() {
                 <Link to="/blog">
                   <div>Blog</div>
                 </Link>
-                <Link to="/">
+                <a
+                  href="https://jobs.lever.co/theroutingcompany"
+                  target="_blank"
+                >
                   <div>Careers</div>
-                </Link>
+                </a>
               </div>
             </div>
           </div>

@@ -17,8 +17,8 @@ export default function Contact(props) {
     <Layout {...props}>
       <Responsive.Desktop>
         <div id="contact" className=" container-fluid">
-          <div className=" title justify-content-left">
-            <div className="animation-container" style={{ opacity: "0.4" }}>
+          <div className="  title justify-content-left">
+            <div className="animation-container">
               <Suspense fallback={<div className="fallback" />}>
                 <CanvasAnimation />
               </Suspense>
@@ -26,14 +26,14 @@ export default function Contact(props) {
 
             <div className="container title-content g-0">
               <div className="container">
-                <div className="section row ps-md-5">
+                <div className="section  row ps-md-5">
                   <div className="col-md-8 shadow bg-white p-md-5">
-                    <h1>
+                    <h1 className="ps-5">
                       Lower costs. More coverage. <br />
                       <p className="green">Contact our team.</p>
                     </h1>
 
-                    <form onSubmit={handleSubmit} className="form g-0">
+                    <form onSubmit={handleSubmit} className="form g-0 ps-5">
                       <div className="row g-3 pb-3 align-items-start">
                         <div className="col-md-3 mt-0 fw-bold">
                           <label
@@ -101,27 +101,33 @@ export default function Contact(props) {
                     </form>
                   </div>
 
-                  <div className="col-md-4 pt-5 ps-md-5 pe-md-0">
-                    <div className="py-3">
+                  <div className="col-md-4 pt-5 ps-md-4 pe-md-0">
+                    <div className="py-3 box">
                       <h5 className="fw-bold">General queries</h5>
                       <small>
-                        For general queries, please email
-                        info@theroutingcompany.com
+                        For general queries, please email <br />
+                        <span className="text-decoration-underline">
+                          hello@theroutingcompany.com
+                        </span>
                       </small>
                     </div>
-                    <div className="py-3">
+                    <div className="py-3 box">
                       <h5 className="fw-bold">Technical support</h5>
 
                       <small>
-                        For general queries, please email
-                        info@theroutingcompany.com
+                        For general queries, please email <br />
+                        <span className="text-decoration-underline">
+                          hello@theroutingcompany.com
+                        </span>
                       </small>
                     </div>
-                    <div className="py-3">
+                    <div className="py-3 box">
                       <h5 className="fw-bold">Careers</h5>
                       <small>
-                        For general queries, please email
-                        info@theroutingcompany.com
+                        For general queries, please email <br />
+                        <span className="text-decoration-underline">
+                          hello@theroutingcompany.com
+                        </span>
                       </small>
                     </div>
                   </div>

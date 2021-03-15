@@ -14,10 +14,10 @@ export default function Blog(props) {
         className="container-fluid"
         style={{ background: "#F5F4F5" }}
       >
-        <div className="container">
+        <div className="container ">
           <div className="section">
             <h1 className="col-8 col-md-12 ps-3">What we have been up to</h1>
-            <Suspense fallback={<div />}>
+            <Suspense fallback={<div  />}>
               <MediumIntegration numberPosts={4} />
             </Suspense>
           </div>

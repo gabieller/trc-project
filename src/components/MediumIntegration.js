@@ -27,7 +27,7 @@ export default function Medium({ numberPosts }) {
   return (
     <div className="row row-cols-1 row-cols-md-2 g-4">
       {showedPosts.map(e => (
-        <div key={e.title} className="col">
+        <div key={e.title} className="col pe-4">
           <div
             className="card h-100"
             onClick={() => window.open(`${e.link}`, "_blank")}
