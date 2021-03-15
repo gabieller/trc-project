@@ -38,9 +38,7 @@
   background-color: #E4E1E5;
 }
 
-.why-trc .cards-row {
-  background-color: #f5f4f5;
-}
+
 
 .icons:hover {
   background-color: #e4e1e5;
@@ -73,7 +71,7 @@
 .equal-icon::before {
   content: "";
   margin: auto;
-  width: 90vw;
+  width: 70vw;
   height: 3px;
   background-color: #505050;
   margin-bottom: 1rem;

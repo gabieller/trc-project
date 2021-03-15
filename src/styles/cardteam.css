@@ -2,7 +2,6 @@
   font-size: 0.8rem;
 }
 
-
 .card-pic {
   position: relative;
   overflow: hidden;
@@ -13,4 +12,12 @@
   min-height: 100%;
   min-width: 100%;
   width: 0;
+}
+
+#team-card .card:hover {
+  background-color: #e4e1e5;
+}
+
+#team-card .card-body {
+  font-size: calc(1.525rem + 3.3vw);
 }
