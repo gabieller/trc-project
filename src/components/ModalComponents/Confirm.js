@@ -39,9 +39,9 @@ export default function Confirm({ nextStep, prevStep, handleChange, values }) {
             {response.toLowerCase()} in your area?
           </p>
 
-          <div className="d-flex justify-content-center">
+          <div className="d-flex justify-content-center pb-5">
             <Button
-              className="box-confirm rounded-0 shadow"
+              className="box-confirm rounded-0 shadow p-3"
               variant="contained"
               onClick={handleNext}
             >
@@ -53,9 +53,9 @@ export default function Confirm({ nextStep, prevStep, handleChange, values }) {
             </Button>
           </div>
         </div>
-        <button type="button" className="btn pt-5" onClick={handleprev}>
-          GO BACK
-        </button>
+        <button type="button" className="btn pt-5 mt-1'" onClick={handleprev}>
+            GO BACK
+          </button>
       </div>
     </>
   )

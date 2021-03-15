@@ -1,5 +1,6 @@
 import React, { useState, Suspense } from "react"
 import Button from "@material-ui/core/Button"
+import Responsive from "../components/Responsive"
 
 import Layout from "../components/Layout"
 import Modal from "../components/ModalComponents/Modal"
@@ -41,7 +42,7 @@ export default function Home({ props, numberPosts }) {
           </div>
 
           <div className="container  title-content g-0">
-            <div className="bg-white d-flex flex-column section-mini ps-5 m-5 shadow-lg">
+            <div className="bg-white d-flex flex-column section-mini px-4 px-md-5 m-5 shadow-lg">
               <h1 className="title-green">
                 <span className="wrap-text">
                   <span className="text-dark"> It’s time </span> <br /> for
@@ -58,9 +59,16 @@ export default function Home({ props, numberPosts }) {
                 ) : null}
 
                 <div className="action-buttons text-center">
+                  <Responsive.Desktop>
                   <Button className="mt-5 btn-black-modal" onClick={openModal}>
                     GET STARTED
                   </Button>
+                  </Responsive.Desktop>
+                  <Responsive.Mobile>
+                  <Button className="mt-5 btn-black-modal-mobile" onClick={openModal}>
+                    GET STARTED
+                  </Button>
+                  </Responsive.Mobile>
                 </div>
 
                 <Modal
@@ -71,27 +79,45 @@ export default function Home({ props, numberPosts }) {
             </div>
             <div className="row justify-content-center text-center g-0">
               <div className="col-8 col-md-9">
-                {/* <div className="col-12"> */}
                 <h3>
-                  {/* <small> */}
                   Our breakthrough routing technology has been featured in:
-                  {/* </small> */}
                 </h3>
-                <div className="d-flex col-md-12 pb-5 d-flex justify-content-around pt-3 ">
-                  {/* <div className="pb-5"> */}
-                  <img src={cnn} alt="CNN Logo" />
-                  {/* </div> */}
-                  {/* <div className="pb-5"> */}
-                  <img src={tech} alt="Tech Crunch Logo" />
-                  {/* </div> */}
-                  {/* <div className="pb-5"> */}
-                  <img src={theverge} alt="The Vergr Logo" />
-                  {/* </div> */}
-                  {/* <div > */}
-                  <img src={bbc} alt="BBC Logo" />
-                  {/* </div> */}
-                  {/* </div> */}
-                </div>
+                <Responsive.Desktop>
+                  <div className="d-flex col-md-12 pb-5 d-flex justify-content-around pt-3 ">
+                    <img src={cnn} alt="CNN Logo" />
+                    <img src={tech} alt="Tech Crunch Logo" />
+                    <img src={theverge} alt="The Vergr Logo" />
+                    <img src={bbc} alt="BBC Logo" />
+                  </div>
+                </Responsive.Desktop>
+                <Responsive.Mobile>
+                  <div className="d-flex flex-column pb-5 logo pt-3 ">
+                    <img
+                      src={cnn}
+                      alt="CNN Logo"
+                      height="70"
+                      className="pb-4"
+                    />
+                    <img
+                      src={tech}
+                      alt="Tech Crunch Logo"
+                      height="80"
+                      className="py-4"
+                    />
+                    <img
+                      src={theverge}
+                      alt="The Verge Logo"
+                      height="80"
+                      className="py-4"
+                    />
+                    <img
+                      src={bbc}
+                      alt="BBC Logo"
+                      height="55"
+                      className="pt-4"
+                    />
+                  </div>
+                </Responsive.Mobile>
               </div>
             </div>
           </div>

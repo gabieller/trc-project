@@ -92,11 +92,11 @@ export default function Pingo(props) {
                   <Link to="/">
                     <div className="d-flex flex-row-reverse row-trc-logo user-select-none">
                       <img
-                        className="img-fluid trc-logo"
+                        className="trc-logo"
                         src={trclogo}
-                        alt="Pingo Main logo"
-                        width="650"
-                        height="400"
+                        alt="TRC logo"
+                        // width="650"
+                        // height="400"
                       />
                       <img src={arrowright} alt="Go to TRC" />
                     </div>
@@ -302,8 +302,8 @@ export default function Pingo(props) {
                     className="img-fluid trc-logo-mobile g-0"
                     src={trclogo}
                     alt="TRC Main logo"
-                    width="650"
-                    height="400"
+                    // width="650"
+                    // height="400"
                   />
                   <img
                     src={arrowrightmobile}
@@ -315,13 +315,13 @@ export default function Pingo(props) {
 
               <div className="row justify-content-center pingo-landing-page user-select-none g-0">
                 {/* <div className="row"> */}
-                  <img
-                    className="img-fluid pingo-logo-mobile g-0"
-                    src={pingologowhite}
-                    alt="Pingo Main logo"
-                    // width="650"
-                    // height="400"
-                  />
+                <img
+                  className="img-fluid pingo-logo-mobile g-0"
+                  src={pingologowhite}
+                  alt="Pingo Main logo"
+                  // width="650"
+                  // height="400"
+                />
                 {/* </div> */}
 
                 <div className="row pt-2">

@@ -1,6 +1,6 @@
 import React, { useRef, useEffect, useCallback } from "react"
 import MultiStepForm from "./MultiStepForm"
-import Button from "@material-ui/core/Button"
+// import Button from "@material-ui/core/Button"
 
 import "../../styles/modal.css"
 import arrow from "../../images/modal_arrow.svg"
@@ -36,12 +36,12 @@ export default function Modal({ isModalVisible, setIsModalVisible }) {
         >
           <MultiStepForm setIsModalVisible={setIsModalVisible} ref={modalRef} />
           <div className="wrap-close-btn">
-            <Button
+            <button
               className="close-button"
               onClick={() => setIsModalVisible(prev => !prev)}
             >
               <img className="arrow" src={arrow} />
-            </Button>
+            </button>
           </div>
         </div>
       ) : null}
