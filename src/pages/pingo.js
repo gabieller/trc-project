@@ -5,7 +5,7 @@ import Button from "@material-ui/core/Button"
 import LayoutPingo from "../components/LayoutPingo"
 import Responsive from "../components/Responsive"
 import CanvasPingo from "../components/CanvasPingo"
-import IphoneAnimation from "../components/IphoneAnimation"
+// import IphoneAnimation from "../components/IphoneAnimation"
 
 import trclogo from "../images/trc-logo-black.png"
 import arrowright from "../images/arrow-right-black.svg"
@@ -132,27 +132,40 @@ export default function Pingo(props) {
                     the palm of your hand.
                   </h2>
                   <h2 className="fs-1">Download</h2>
-                  <h2 id="Pingo_Rider" className="fw-bold fs-1">Pingo Rider</h2>
-                  <div className="col-6 col-md-6 d-md-flex">
-                    <button className="btn btn-link px-0">
+                  <h2 id="Pingo_Rider" className="fw-bold fs-1">
+                    Pingo Rider
+                  </h2>
+                  <div className="d-flex flex-column px-5 justify-content-center">
+                    <a
+                      href="https://play.google.com/store/apps/details?id=com.theroutingcompany.pingo.rider"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="btn btn-link px-0"
+                    >
                       <img
                         src={googleplaybadge}
                         alt="Google Play Download"
-                        className="img-fluid"
+                        // className="img-fluid"
                       />
-                    </button>
-                    <button className="btn btn-link px-0">
+                    </a>
+                    <a
+                      href="https://apps.apple.com/in/app/pingo-rider/id1536281958"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="btn btn-link px-0"
+                    >
                       <img
                         src={appstorebadge}
                         alt="App Store Download"
-                        className="img-fluid"
+                        // className="img-fluid"
                       />
-                    </button>
+                    </a>
                   </div>
                 </div>
 
                 <div className="col-md-3 wrap-mockup">
-                  <img id ="ridepingo"
+                  <img
+                    id="ridepingo"
                     src={ridepingo}
                     alt="Mockup Pingo"
                     className="mockup-image img-fluid"
