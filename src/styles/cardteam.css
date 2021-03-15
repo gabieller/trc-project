@@ -14,3 +14,7 @@
   min-width: 100%;
   width: 0;
 }
+
+#team-card .card:hover {
+    background-color: #e4e1e5
+}

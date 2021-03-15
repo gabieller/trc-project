@@ -4,7 +4,7 @@
   width: 100%;
   height: auto;
   min-height: 35rem;
-  /* background-color: #f5f4f5; */
+  background-color: #F5F4F5;
 }
 
 #whytrc .card {
@@ -42,7 +42,7 @@
   background-color: #f5f4f5;
 }
 
-.icons:hover {
+#whytrc .card-body:hover {
   background-color: #e4e1e5;
 }
 
@@ -73,7 +73,7 @@
 .equal-icon::before {
   content: "";
   margin: auto;
-  width: 90vw;
+  width: 70vw;
   height: 3px;
   background-color: #505050;
   margin-bottom: 1rem;
@@ -91,4 +91,8 @@
   right: 0;
   left: 0;
   z-index: 2999;
+}
+
+#whytrc .green {
+ color:  #58968A;
 }

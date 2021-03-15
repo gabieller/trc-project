@@ -90,10 +90,38 @@ export default function Home({ props, numberPosts }) {
                 </h3>
                 <Responsive.Desktop>
                   <div className="d-flex col-md-12 pb-5 d-flex justify-content-around pt-3 ">
-                    <img src={cnn} alt="CNN Logo" />
-                    <img src={tech} alt="Tech Crunch Logo" />
-                    <img src={theverge} alt="The Vergr Logo" />
-                    <img src={bbc} alt="BBC Logo" />
+                    <a
+                      href="https://edition.cnn.com/"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
+                      {" "}
+                      <img src={cnn} alt="CNN Logo" />{" "}
+                    </a>
+                    <a
+                      href="https://techcrunch.com/"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
+                      {" "}
+                      <img src={tech} alt="Tech Crunch Logo" />
+                    </a>
+                    <a
+                      href="https://www.theverge.com/"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
+                      {" "}
+                      <img src={theverge} alt="The Verge Logo" />
+                    </a>
+                    <a
+                      href="https://www.bbc.com/"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
+                      {" "}
+                      <img src={bbc} alt="BBC Logo" />
+                    </a>
                   </div>
                 </Responsive.Desktop>
                 <Responsive.Mobile>

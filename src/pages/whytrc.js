@@ -73,57 +73,57 @@ export default function WhyTRC(props) {
             </div>
           </Responsive.Mobile>
         </div>
-        <div className="container">
-          <div className="row col-md-12 col-lg-12 pb-5  cards-row">
+        <div className="container px-5 pt-3">
+          <div className="row row-cols-1 row-cols-md-4 cards-row">
             <div className="col-md-3 pb-3 pb-md-0 ps-md-0  pe-md-3">
               <div
-                className="card bg-white border border-dark mx-0"
+                className="card bg-white border border-dark mx-0 h-75"
                 onClick={() =>
                   changeText("A revolution in demand-response transportation")
                 }
               >
-                <div className="card-body icons d-flex flex-row ps-md-1 ps-lg-3">
+                <div className="card-body h-75 icons d-flex flex-row ps-md-1 ps-lg-3">
                   <img src={coverage} alt="Coverage Icon" className="pe-3" />
-                  <h4 className="card-title m-0">Coverage</h4>
+                  <span className="card-title m-0 fs-6">Coverage</span>
                 </div>
               </div>
             </div>
             <div className="col-md-3 pb-3 pb-md-0 ps-md-0 pe-md-3">
               <div
-                className="card bg-white border border-dark mx-0"
+                className="card bg-white border border-dark mx-0 h-75"
                 onClick={() =>
                   changeText(
                     "Microtransit will no longer be an expensive experiment"
                   )
                 }
               >
-                <div className="card-body icons d-flex flex-row ps-md-1 ps-lg-3">
+                <div className="card-body h-75 icons d-flex flex-row ps-md-1 ps-lg-3">
                   <img
                     src={efficiency}
                     alt="Efficiency Icon"
                     className="pe-3"
                   />
-                  <h4 className="card-title m-0">Efficiency</h4>
+                  <span className="card-title m-0 fs-6">Efficiency</span>
                 </div>
               </div>
             </div>
             <div className="col-md-3 pb-3 pb-md-0 ps-md-0 pe-md-3">
               <div
-                className="card bg-white border border-dark mx-0"
+                className="card bg-white border border-dark mx-0 h-75"
                 onClick={() =>
                   changeText("Cost per rider trip is on-par with fixed routes")
                 }
               >
-                <div className="card-body icons d-flex flex-row ps-md-1 ps-lg-3">
+                <div className="card-body h-75 icons d-flex flex-row ps-md-1 ps-lg-3">
                   <img src={equity} alt="equity Icon" className="pe-3" />
-                  <h4 className="card-title m-0">Equity</h4>
+                  <span className="card-title m-0 fs-6">Equity</span>
                 </div>
               </div>
             </div>
             <div className="col-md-3 pb-3 pb-md-0 ps-md-0 pe-md-3">
-              <div className="card bg-white  border border-dark mx-0">
+              <div className="card bg-white  border border-dark mx-0 h-75">
                 <div
-                  className="card-body icons d-flex flex-row ps-md-1 ps-lg-3"
+                  className="card-body h-75 icons d-flex flex-row ps-md-1 ps-lg-3"
                   onClick={() => changeText("Dial-a-ride in real time")}
                 >
                   <img
@@ -131,7 +131,7 @@ export default function WhyTRC(props) {
                     alt="Convenience Icon"
                     className="pe-3"
                   />
-                  <h4 className="card-title m-0">Convenience</h4>
+                  <span className="card-title m-0 fs-6">Convenience</span>
                 </div>
               </div>
             </div>
@@ -139,7 +139,7 @@ export default function WhyTRC(props) {
         </div>
 
         <div className="why-trc pt-5 ps-md-5 ms-md-3 ps-3">
-          <div className="container justify-content-center">
+          <div className="container">
             <div className="row">
               <div className="col-md-3 text-center pb-2">
                 All possible routes are considered in real time
@@ -159,8 +159,8 @@ export default function WhyTRC(props) {
               </div>
             </div>
 
-            <div className="row justify-content-center pt-4 equal-icon">
-              <div className="col-md-1 text-center pb-2">
+            <div className="d-flex flex-column d-flex justify-content-center  pt-4 equal-icon">
+              <div className="d-flex justify-content-center pb-2 pt-5">
                 <img src={equal_circle} alt="Equal Icon" />
               </div>
             </div>
@@ -169,13 +169,13 @@ export default function WhyTRC(props) {
               <h2 className="text-center pt-5 fw-bold">{buttonText}</h2>
             </div>
 
-            <div className="pt-5 justify-content-center">
-              <img src={mockup} alt="Mockup" className="img-fluid" />
+            <div className="pt-5">
+              <img src={mockup} alt="Mockup" className="img-fluid w-75" />
             </div>
           </div>
         </div>
 
-        <div className="container-fluid container-xxl border border-dark bg-white">
+        <div className="container-fluid  border border-dark bg-white">
           <div className="row">
             <div className="col-12 col-md-7 how-it-works d-flex flex-column justify-content-center align-items-center p-5">
               <h2 className="col-12 col-md-9 pb-3">How it works</h2>
@@ -194,12 +194,12 @@ export default function WhyTRC(props) {
             </div>
 
             <div className="col-md-5 g-0">
-              <img src={howitworks} className="map-image img-fluid" alt="Map" />
+              <img src={howitworks} alt="App" width="100%" height="100%" />
             </div>
           </div>
         </div>
 
-        <div className="container-fluid container-xxl">
+        <div className="container-fluid  bg-white">
           <div className="row g-0">
             <div className="col-md-5 p-0 col-left d-none d-md-block">
               <img
@@ -216,41 +216,41 @@ export default function WhyTRC(props) {
             <div className="col-md-5 bg-white col-right border border-top-0 border-dark pt-5 px-md-5 px-3">
               <div className="row solutions flex-column">
                 <div className="col-12 col-md-9">
-                  <h4 className="pb-3 fw-bold">1.</h4>
+                  <h3 className=" fw-bold">1.</h3>
                   <div className="pb-3 pb-md-5">
                     We work with you to build solutions that are tailor-made to
                     your transit needs.
                   </div>
                 </div>
-                <div className="col-12 col-md-9">
-                  <h4 className="pb-3 fw-bold">2.</h4>
+                <div className="col-12 col-md-11">
+                  <h3 className=" fw-bold">2.</h3>
                   <div className="pb-3 pb-md-5">
                     You access TRC fleet management tools to setup a fleet of
                     shuttles and buses in your city to operate on-demand.
                   </div>
                 </div>
                 <div className="col-12 col-md-9">
-                  <h4 className="pb-3 fw-bold">3.</h4>
+                  <h3 className=" fw-bold">3.</h3>
                   <div className="pb-3 pb-md-5">
                     You set the pricing, you are in control.
                   </div>
                 </div>
-                <div className="col-12 col-md-9">
-                  <h4 className="pb-3 fw-bold">4.</h4>
+                <div className="col-12 col-md-11">
+                  <h3 className="fw-bold">4.</h3>
                   <div className="pb-3 pb-md-5">
                     Your riders and drivers get separate apps and your operators
                     get call center booking tools.
                   </div>
                 </div>
                 <div className="col-12 col-md-9">
-                  <h4 className="pb-3 fw-bold">5.</h4>
+                  <h3 className=" fw-bold">5.</h3>
                   <div className="pb-3 pb-md-5">
                     You increase your coverage area and core metrics with less
                     stress and less money spent on operations.
                   </div>
                 </div>
                 <div className="col-12 col-md-9">
-                  <h4 className="pb-3 fw-bold">6.</h4>
+                  <h3 className=" fw-bold">6.</h3>
                   <div className="pb-3 pb-md-5">
                     Riders enjoy lower wait times and more reliable service.
                   </div>
