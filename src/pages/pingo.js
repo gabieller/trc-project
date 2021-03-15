@@ -314,14 +314,14 @@ export default function Pingo(props) {
               </Link>
 
               <div className="row justify-content-center pingo-landing-page user-select-none g-0">
-                <div className="col-8">
-                <img
-                  className="pingo-logo-mobile g-0"
-                  src={pingologowhite}
-                  alt="Pingo Main logo"
-                  // width="650"
-                  // height="400"
-                />
+                <div className="col-6">
+                  <img
+                    className="pingo-logo-mobile g-0"
+                    src={pingologowhite}
+                    alt="Pingo Main logo"
+                    width="100"
+                    // height="400"
+                  />
                 </div>
 
                 <div className="row pt-2">
