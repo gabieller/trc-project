@@ -298,14 +298,14 @@ export default function Pingo(props) {
             >
               <Link to="/">
                 <div className="d-flex flex-row-reverse row-trc-logo-mobile user-select-none">
-                  <div>
-                  <img
-                    className="trc-logo-mobile g-0 img-fluid"
-                    src={trclogo}
-                    alt="TRC Main logo"
-                    width="140"
-                    // height="400"
-                  />
+                  <div className="trc-logo-mobile">
+                    <img
+                      className="g-0 img-fluid"
+                      src={trclogo}
+                      alt="TRC Main logo"
+                      width="140"
+                      // height="400"
+                    />
                   </div>
 
                   <img
