@@ -60,14 +60,20 @@ export default function Home({ props, numberPosts }) {
 
                 <div className="action-buttons text-center">
                   <Responsive.Desktop>
-                  <Button className="mt-5 btn-black-modal" onClick={openModal}>
-                    GET STARTED
-                  </Button>
+                    <Button
+                      className="mt-5 btn-black-modal"
+                      onClick={openModal}
+                    >
+                      GET STARTED
+                    </Button>
                   </Responsive.Desktop>
                   <Responsive.Mobile>
-                  <Button className="mt-5 btn-black-modal-mobile" onClick={openModal}>
-                    GET STARTED
-                  </Button>
+                    <Button
+                      className="mt-5 btn-black-modal-mobile"
+                      onClick={openModal}
+                    >
+                      GET STARTED
+                    </Button>
                   </Responsive.Mobile>
                 </div>
 
