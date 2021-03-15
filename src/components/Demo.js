@@ -1,5 +1,7 @@
 import React, { useState } from "react"
 import Button from "@material-ui/core/Button"
+import Modal from "../components/ModalComponents/Modal"
+
 
 import { Link } from "gatsby"
 
@@ -25,16 +27,21 @@ export default function Demo() {
       <div className="d-inline-flex g-0 text-center  ">
         <div className="row col-12 action-buttons g-0 d-flex justify-content-center">
           <div className="col-12 col-md-3 col-xxl-2 pb-4 pb-md-0 d-flex justify-content-around">
-            <div className="action-buttons">
+            <div>
               {isModalVisible ? (
                 <div onClick={closeModalHandler} className="back-drop"></div>
               ) : null}
 
               <div className="action-buttons text-center">
-                <Button className="mt-5 btn-black-modal" onClick={openModal}>
+                <Button className="btn-black-demo" onClick={openModal}>
                   GET STARTED
                 </Button>
               </div>
+
+              <Modal
+                isModalVisible={isModalVisible}
+                setIsModalVisible={setIsModalVisible}
+              />
             </div>
           </div>
 

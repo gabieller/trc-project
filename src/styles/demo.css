@@ -7,3 +7,11 @@
     left: 0;
     z-index: 2999;
   }
+
+  #demo-component .btn-black-demo {
+      background-color: #333333 !important;
+      color: #fff !important;
+      border-radius: 0 !important;
+      width: 183px;
+      height: 36px;
+  }

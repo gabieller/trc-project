@@ -22,7 +22,7 @@ export default function SideMenu({ uri, visible }) {
                 src={trclogowhite}
                 alt="Main logo"
                 className=" img-fluid"
-                width="140"
+                width="180"
               />
             </div>
             <div className="row d-flex section-mini">

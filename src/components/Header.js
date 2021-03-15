@@ -44,7 +44,10 @@ export default function Header({ uri }) {
 
   return (
     <>
-      <nav className={` navbar fixed-top col-12  ${state.visibilityClass}`}>
+      <nav
+        id="header"
+        className={` navbar fixed-top col-12  ${state.visibilityClass}`}
+      >
         <div className="container">
           <Link to="/" className="navbar-brand py-3 ms-md-4 ms-xxl-0">
             <img src={trclogo} alt="Main logo" className="logo-header" />
@@ -78,12 +81,25 @@ export default function Header({ uri }) {
           {pathname === "/" && window.pageYOffset > 450 ? (
             <div className="col-md-5 d-none d-md-block d-lg-block">
               <div className="d-flex flex-row-reverse ">
-                <Button
-                  className="btn-black-header btn-action"
-                  variant="contained"
-                >
-                  GET STARTED
-                </Button>
+                <div>
+                  {isModalVisible ? (
+                    <div
+                      onClick={closeModalHandler}
+                      className="back-drop"
+                    ></div>
+                  ) : null}
+
+                  <div className="action-buttons text-center">
+                    <Button className="btn-black" onClick={openModal}>
+                      GET STARTED
+                    </Button>
+                  </div>
+
+                  <Modal
+                    isModalVisible={isModalVisible}
+                    setIsModalVisible={setIsModalVisible}
+                  />
+                </div>
               </div>
             </div>
           ) : null}

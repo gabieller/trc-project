@@ -3,6 +3,7 @@ import Layout from "../components/Layout"
 import Arrow from "../components/Arrow"
 import Responsive from "../components/Responsive"
 import Button from "@material-ui/core/Button"
+import Modal from "../components/ModalComponents/Modal"
 
 import coverage from "../images/coverage-icon.svg"
 import efficiency from "../images/efficiency-icon.svg"
@@ -24,8 +25,6 @@ const CanvasAnimation = React.lazy(() =>
   import("../components/CanvasAnimation")
 )
 
-// TODO: fix ipad mobile
-// TODO: fix responsive border
 export default function WhyTRC(props) {
   const [buttonText, setButtonText] = useState(
     "A revolution in demand-response transportation"
@@ -33,9 +32,17 @@ export default function WhyTRC(props) {
 
   const changeText = text => setButtonText(text)
 
+  const [isModalVisible, setIsModalVisible] = useState(false)
+
+  const openModal = () => {
+    setIsModalVisible(prev => !prev)
+  }
+
+  const closeModalHandler = () => setIsModalVisible(false)
+
   return (
     <Layout {...props}>
-      <div id="solutions-page" className="container-fluid">
+      <div id="whytrc" className="container-fluid">
         <div className="section title why-trc">
           <div className="animation-container" style={{ opacity: "0.2" }}>
             <Suspense fallback={<div className="fallback" />}>
@@ -344,11 +351,22 @@ export default function WhyTRC(props) {
         <div className="section-mini">
           <div className="container fs-1 col-8 col-md-12">
             Lower costs. More coverage.
-            <div className="col-12 col-md-6 pt-3 pt-md-0">
-              <div className="action-buttons">
-                <Button className="btn-black btn-action" variant="contained">
-                  GET STARTED
-                </Button>
+            <div className="d-flex justify-content-start pt-3 pt-md-0">
+              <div>
+                {isModalVisible ? (
+                  <div onClick={closeModalHandler} className="back-drop"></div>
+                ) : null}
+
+                <div className="action-buttons text-center">
+                  <Button className="btn-black" onClick={openModal}>
+                    GET STARTED
+                  </Button>
+                </div>
+
+                <Modal
+                  isModalVisible={isModalVisible}
+                  setIsModalVisible={setIsModalVisible}
+                />
               </div>
             </div>
           </div>
