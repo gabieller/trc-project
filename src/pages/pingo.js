@@ -314,7 +314,7 @@ export default function Pingo(props) {
               </Link>
 
               <div className="row justify-content-center pingo-landing-page user-select-none g-0">
-                <div className="row">
+                {/* <div className="row"> */}
                   <img
                     className="img-fluid pingo-logo-mobile g-0"
                     src={pingologowhite}
@@ -322,7 +322,7 @@ export default function Pingo(props) {
                     // width="650"
                     // height="400"
                   />
-                </div>
+                {/* </div> */}
 
                 <div className="row pt-2">
                   <h1 className="fw-bold fs-4 text-center">
