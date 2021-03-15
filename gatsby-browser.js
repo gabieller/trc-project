@@ -1,5 +1,7 @@
 import React, { useState, useEffect } from "react"
 import { Helmet } from "react-helmet"
+import Responsive from "./src/components/Responsive"
+
 import "bootstrap/dist/js/bootstrap.min.js"
 import "bootstrap/dist/css/bootstrap.css"
 import "popper.js/dist/popper.min"
@@ -19,9 +21,17 @@ const LoadingElement = ({ children }) => {
 
   return (
     <>
+    <Responsive.Desktop>
       <div className={`loading ${loading ? "open" : ""}`}>
         <img src={loadingtrc} alt="Loading Gif" width="1500" />
       </div>
+    </Responsive.Desktop>
+
+    <Responsive.Mobile>
+    <div className={`loading ${loading ? "open" : ""}`}>
+        <img src={loadingtrc} alt="Loading Gif" width="600" />
+      </div>
+    </Responsive.Mobile>
 
       {children}
     </>
