@@ -29,21 +29,8 @@
   padding: min(3vw, 30px) 0;
 }
 
-#pingo-header .trc-logo-mobile {
-  z-index: 1;
-  /* width: 40%; */
-}
 
-#pingo-header .arrow {
-  z-index: 1;
-}
-
-#pingo-header .pingo-logo {
-  z-index: 1;
-  width: 50%;
-}
-
-#pingo-header .pingo-logo-mobile {
+#pingo-header .arrow,  .pingo-logo-mobile, .trc-logo-mobile, .pingo-logo  {
   z-index: 1;
 }
 
@@ -64,8 +51,8 @@
 
 .mockup-image-mobile {
   position: absolute;
-  top: 16px;
-  right: 110px;
+  top: 0px;
+  right: 0px;
   width: 30%;
 }
 

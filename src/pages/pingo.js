@@ -288,14 +288,7 @@ export default function Pingo(props) {
               <CanvasPingo ref={canvasRef} />
             </div>
 
-            <div
-              className="container"
-              role="application"
-              onMouseDown={e => {
-                e.stopPropagation()
-                canvasRef.current.triggerAnimation(e)
-              }}
-            >
+            <div className="container" role="application">
               <Link to="/">
                 <div className="d-flex flex-row-reverse row-trc-logo-mobile user-select-none">
                   <div className="trc-logo-mobile">
@@ -315,35 +308,65 @@ export default function Pingo(props) {
                   />
                 </div>
               </Link>
+            </div>
 
-              <div className="row justify-content-center pingo-landing-page user-select-none g-0">
-                <div className="col-8">
-                  <img
-                    className="pingo-logo-mobile g-0"
-                    src={pingologowhite}
-                    alt="Pingo Main logo"
-                    width="230"
-                    // height="400"
-                  />
+            <div
+              className="  d-flex flex-column pingo-landing-page user-select-none text-center"
+              onMouseDown={e => {
+                e.stopPropagation()
+                canvasRef.current.triggerAnimation(e)
+              }}
+            >
+              <div className="d-flex justify-content-center">
+                <img
+                  className="img-fluid pingo-logo pt-5"
+                  src={pingologowhite}
+                  alt="Pingo Main logo"
+                />
+              </div>
+              <h1 className="fs-3 pt-4">Transit that moves with you</h1>
+            </div>
+            <div
+              id="download-pingo"
+              className="col-10 d-flex flex-row section-mini container shadow-lg bg-white container"
+            >
+              <div className="row px-3">
+                <h4 className="text-left">
+                  The whole city in <br />
+                  the palm of your hand.
+                </h4>
+                <h2 className="fs-1 pt-4">Download</h2>
+                <h2 className="fw-bold fs-1">Pingo Rider</h2>
+                <div className="d-flex flex-row justify-content-center">
+                  <button className="btn btn-link px-0">
+                    <img
+                      src={googleplaybadge}
+                      alt="Google Play Download"
+                      className="img-fluid"
+                    />
+                  </button>
+                  <button className="btn btn-link px-0">
+                    <img
+                      src={appstorebadge}
+                      alt="App Store Download"
+                      className="img-fluid"
+                    />
+                  </button>
                 </div>
+              </div>
 
-                <div className="col-6 pt-3">
-                  <h1 className="fw-bold fs-4 text-center">
-                    Transit that moves with you
-                  </h1>
-                </div>
-                <div className="col-md-3 wrap-mockup">
-                  <img
-                    src={ridepingo_mobile}
-                    alt="Mockup Pingo"
-                    className="mockup-image-mobile img-fluid"
-                  />
-                </div>
+              <div className="col-md-3 wrap-mockup-mobile">
+                <img
+                  src={ridepingo_mobile}
+                  alt="Mockup Pingo"
+                  className="mockup-image-mobile img-fluid"
+                />
               </div>
             </div>
           </div>
+          {/* </div> */}
           <div className="bg-white">
-            <div className="container">
+            {/* <div className="container">
               <div className="section-mini d-flex justify-content-center d-flex flex-column">
                 <h2 className="col-10 text-center pb-5">
                   The{" "}
@@ -375,7 +398,7 @@ export default function Pingo(props) {
                   </div>
                 </div>
               </div>
-            </div>
+            </div> */}
             <div id="announcements-card-mobile" className="section">
               <div className="container">
                 <div className="announcements-list">
