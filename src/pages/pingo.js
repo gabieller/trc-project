@@ -354,51 +354,9 @@ export default function Pingo(props) {
                   </button>
                 </div>
               </div>
-
-              <div className="col-md-3 wrap-mockup-mobile">
-                <img
-                  src={ridepingo_mobile}
-                  alt="Mockup Pingo"
-                  className="mockup-image-mobile img-fluid"
-                />
-              </div>
             </div>
           </div>
-          {/* </div> */}
           <div className="bg-white">
-            {/* <div className="container">
-              <div className="section-mini d-flex justify-content-center d-flex flex-column">
-                <h2 className="col-10 text-center pb-5">
-                  The{" "}
-                  <span className="text-decoration-underline fw-bold">
-                    whole city
-                  </span>{" "}
-                  in the palm of your hand.{" "}
-                </h2>
-                <h3 className="ps-4">
-                  Download <br />
-                  <span className="fw-bolder">Pingo Rider</span>
-                </h3>
-                <div className="col-10 ps-4">
-                  <div className="d-flex flex-row justify-content-center">
-                    <button className="btn btn-link px-0">
-                      <img
-                        src={googleplaybadge}
-                        alt="Google Play Download"
-                        className="img-fluid"
-                      />
-                    </button>
-                    <button className="btn btn-link px-0">
-                      <img
-                        src={appstorebadge}
-                        alt="App Store Download"
-                        className="img-fluid"
-                      />
-                    </button>
-                  </div>
-                </div>
-              </div>
-            </div> */}
             <div id="announcements-card-mobile" className="section">
               <div className="container">
                 <div className="announcements-list">
