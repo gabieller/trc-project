@@ -49,12 +49,16 @@ export default function CardTeam() {
                     </div>
                     <hr className="my-4" />
                     <div className="row-cols-1">
-                    <img src={uber} alt="Uber Logo" className="img-logo-card img-fluid" />
-                    <img
-                      src={canoo}
-                      alt="Canoo Logo"
-                      className="img-logo-card pt-3"
-                    />
+                      <img
+                        src={uber}
+                        alt="Uber Logo"
+                        className="img-logo-card img-fluid"
+                      />
+                      <img
+                        src={canoo}
+                        alt="Canoo Logo"
+                        className="img-logo-card pt-3"
+                      />
                     </div>
                   </div>
                 </div>
