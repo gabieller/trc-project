@@ -61,6 +61,7 @@ export default function Medium({ numberPosts }) {
                 {e.author}
                 {" - "}
                 <span className="text-muted">
+                  {/* {e.pubDate} */}
                   {new Date(e.pubDate).toLocaleString("default", {
                     month: "long",
                     year: "numeric",

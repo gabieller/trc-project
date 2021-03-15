@@ -17,11 +17,11 @@ export default function SideMenu({ uri, visible }) {
       <div id="overlay" className={visible ? "open" : ""}>
         <div className={`sidebar ${visible ? "open" : ""}`}>
           <div className="container flex-column">
-            <div className="row pt-5">
+            <div className="pt-5">
               <img
                 src={trclogowhite}
                 alt="Main logo"
-                // className=" img-responsive menu-logo"
+                className=" img-fluid"
                 width="140"
               />
             </div>
