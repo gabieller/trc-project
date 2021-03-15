@@ -30,9 +30,15 @@
 }
 
 
-#pingo-header .arrow,  .pingo-logo-mobile, .trc-logo-mobile, .pingo-logo  {
+#pingo-header .arrow,  .pingo-logo-mobile, .trc-logo-mobile  {
   z-index: 1;
 }
+
+#pingo-header .pingo-logo {
+  z-index: 1;
+  width: 40%;
+}
+
 
 #social-icons .btn-link:hover {
   background-color: transparent;
