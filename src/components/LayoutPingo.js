@@ -26,9 +26,9 @@ export default function LayoutPingo(props) {
         <link rel="canonical" href="https://theroutingcompany.com" />
       </Helmet>
 
-      <div className={`loading ${loading ? "open" : ""}`}>
+      {/* <div className={`loading ${loading ? "open" : ""}`}>
         <img src={loadingtrc} alt="Loading Gif" width="1500" />
-      </div>
+      </div> */}
 
       {!isSSR && (
         <>
