@@ -160,7 +160,7 @@ export default function Pingo(props) {
 
                 <div className="col-md-3 wrap-mockup">
                   <img
-                    id="ridepingo"
+                    id="ridePingo"
                     src={ridepingo}
                     alt="Mockup Pingo"
                     className="mockup-image img-fluid"
@@ -347,11 +347,11 @@ export default function Pingo(props) {
               <h1 className="fs-3 pt-4">Transit that moves with you</h1>
             </div>
             <div className="col-7 wrap-mockup-mobile">
-            <img
-              src={ridepingo_mobile}
-              alt="Mockup Pingo"
-              className="img-fluid phone-mobile"
-            />
+              <img
+                src={ridepingo_mobile}
+                alt="Mockup Pingo"
+                className="img-fluid phone-mobile"
+              />
             </div>
             <div
               id="download-pingo"
