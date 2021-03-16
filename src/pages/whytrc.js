@@ -117,75 +117,69 @@ export default function WhyTRC(props) {
                   changeText("Cost per rider trip is on-par with fixed routes")
                 }
               >
-                <div className="d-flex">
-                  <div className="col-3 card-body px-3">
-                    <img src={equity} alt="Equity Icon" className="" />
-                  </div>
-                  <div className="col-8 card-body">
-                    <h4 className="card-title m-0">Equity</h4>
-                  </div>
+                <div className="card-body icons d-flex flex-row ps-md-1 ps-lg-3">
+                  <img src={equity} alt="Equity Icon" className="pe-3" />
+                  <h4 className="card-title m-0">Equity</h4>
                 </div>
               </div>
             </div>
-            <div className="col-md-3 pb-3 pb-md-0 ps-md-0 pe-md-3">
-              <div className="card bg-white  border border-dark mx-0">
-                <div
-                  className="card-body icons d-flex flex-row ps-md-1 ps-lg-3"
-                  onClick={() => changeText("Dial-a-ride in real time")}
-                >
-                  <div className="d-flex">
-                    <div className="col-3 card-body px-3">
-                      <img
-                        src={convenience}
-                        alt="Convenience Icon"
-                        className=""
-                      />
-                    </div>
-                    <div className="col-8 card-body">
-                      <h4 className="card-title m-0">Convenience</h4>
-                    </div>
-                  </div>
+            <div className="col-md-3 pb-3 pb-md-0 ps-md-0  pe-md-3">
+              <div
+                className="card bg-white border border-dark mx-0"
+                onClick={() =>
+                  changeText("Cost per rider trip is on-par with fixed routes∏")
+                }
+              >
+                <div className="card-body icons d-flex flex-row ps-md-1 ps-lg-3">
+                  <img
+                    src={convenience}
+                    alt="Convenience Icon"
+                    className="pe-3"
+                  />
+                  <h4 className="card-title m-0">Convenience</h4>
                 </div>
               </div>
             </div>
           </div>
         </div>
 
-        <div className="why-trc pt-5 px-md-5 mx-md-3 px-3">
-          <div className="container justify-content-center">
-            <div className="row">
-              <div className="col-md-3 text-center pb-2">
-                All possible routes are considered in real time
-              </div>
-              <div className="col-md-1 text-center pb-2">
-                <img src={add_circle} alt="Add Icon" />
-              </div>
-              <div className="col-md-3 text-center pb-2">
-                Global optimization allows you to optimize for the city not the
-                individual
-              </div>
-              <div className="col-md-1 text-center pb-2">
-                <img src={add_circle} alt="Add Icon" />
-              </div>
-              <div className="col-md-3 text-center pb-2">
-                Real-time rebalancing reduces vehicle miles travelled
-              </div>
+        <div className="container g-5 justify-content-center pt-5">
+          <div className="row">
+            <div className="col-md-3 text-center pb-2">
+              All possible routes are considered in real time
             </div>
-
-            <div className="d-flex flex-column  pt-5 equal-icon">
-              <div className="d-flex justify-content-center pb-2 pt-5">
-                <img src={equal_circle} alt="Equal Icon" />
-              </div>
+            <div className="col-md-1 text-center pb-2">
+              <img src={add_circle} alt="Add Icon" />
             </div>
-
-            <div>
-              <h2 className="text-center pt-5 fw-bold">{buttonText}</h2>
+            <div className="col-md-3 text-center pb-2">
+              Global optimization allows you to optimize for the city not the
+              individual
             </div>
-
-            <div className="pt-5 justify-content-center">
-              <img src={mockup} alt="Mockup" className="img-fluid" />
+            <div className="col-md-1 text-center pb-2">
+              <img src={add_circle} alt="Add Icon" />
+            </div>
+            <div className="col-md-3 text-center pb-2">
+              Real-time rebalancing reduces vehicle miles travelled
             </div>
           </div>
+
+          <div className="d-flex justify-content-center pt-5">
+            <hr className="col-9 line" />
+          </div>
+
+          <div className="d-flex flex-column  pt-5 equal-icon">
+            <div className="d-flex justify-content-center pb-2">
+              <img src={equal_circle} alt="Equal Icon" />
+            </div>
+          </div>
+
+          <div>
+            <h2 className="text-center pt-5 fw-bold">{buttonText}</h2>
+          </div>
+        </div>
+
+        <div className="row col-5 justify-content-center">
+          <img src={mockup} alt="Mockup" className="img-fluid" />
         </div>
 
         <div className="container-fluid container-xxl border border-dark bg-white">
