@@ -178,15 +178,15 @@ export default function WhyTRC(props) {
         <div className="container-fluid  border border-dark bg-white">
           <div className="row">
             <div className="col-12 col-md-7 how-it-works d-flex flex-column justify-content-center align-items-center p-5">
-              <h2 className="col-12 col-md-9 pb-3">How it works</h2>
-              <div className="col-12 col-md-9">
-                <p>
+              <h2 className="col-12 col-md-9 pb-3 fs-1">How it works</h2>
+              <div className="col-12 col-md-9 col-xxl-7 px-0">
+                <p className="fs-5">
                   You’ll get a full product suite to dynamically route shared
                   rides in real-time through a fleet management dashboard, a
                   rider app, and a driver app, all powered by MIT-inspired
                   technology.
                 </p>
-                <p>
+                <p className="fs-5">
                   It’s the first set of tools in microtransit to allow you to
                   match 14+ riders in a vehicle safely at once.
                 </p>

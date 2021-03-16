@@ -37,18 +37,20 @@ export default function CardTeam() {
                     />
                   </div>
                   <div className="card-body py-0 px-5">
-                    <h5 className="card-title pt-3 fw-bold text-decoration-underline">
+                    <h3 className="card-title pt-3 fw-bold text-decoration-underline">
                       James Cox
-                    </h5>
+                    </h3>
                     <h6 className="card-subtitle mb-3 text-dark">
-                      <small>CEO</small>
+                      <span className="fs-4">CEO</span>
                     </h6>
                     <div className="card-text">
-                      Ridesharing industry leader who launched uberPOOL globally
-                      from inception. Chief Product officer of Canoo.
+                      <p className="fs-6">
+                        Ridesharing industry leader who launched uberPOOL
+                        globally from inception. Chief Product officer of Canoo.
+                      </p>
                     </div>
                     <hr className="my-4" />
-                    <div className="row-cols-1">
+                    <div className="row-cols-1 col-8">
                       <img
                         src={uber}
                         alt="Uber Logo"
@@ -80,27 +82,33 @@ export default function CardTeam() {
                   </div>
 
                   <div className="card-body py-0 px-5">
-                    <h5 className="card-title pt-3 text-decoration-underline fw-bold">
+                    <h3 className="card-title pt-3 text-decoration-underline fw-bold">
                       Menno van der Zee
-                    </h5>
+                    </h3>
                     <h6 className="card-subtitle mb-3 text-dark">
-                      <small>Head of Global Business Development</small>
+                      <span className="fs-4">
+                        Head of Global Business Development
+                      </span>
                     </h6>
                     <div className="card-text">
-                      Specialized in mobility-on-demand systems for high
-                      capacity vehicles.
+                      <p className="fs-6">
+                        Specialized in mobility-on-demand systems for high
+                        capacity vehicles.
+                      </p>
                     </div>
                     <hr className="my-4" />
-                    <img
-                      src={smart}
-                      alt="Smart Logo"
-                      className="img-logo-card"
-                    />
-                    <img
-                      src={tudelft}
-                      alt="TU Delft Logo"
-                      className="img-logo-card pt-2"
-                    />
+                    <div className="row-cols-1 col-8">
+                      <img
+                        src={smart}
+                        alt="Smart Logo"
+                        className="img-logo-card img-fluid"
+                      />
+                      <img
+                        src={tudelft}
+                        alt="TU Delft Logo"
+                        className="img-logo-card pt-3"
+                      />
+                    </div>
                   </div>
                 </div>
               </a>
@@ -121,21 +129,25 @@ export default function CardTeam() {
                     />
                   </div>
                   <div className="card-body px-5">
-                    <h5 className="card-title pt-3 text-decoration-underline fw-bold">
+                    <h3 className="card-title pt-3 text-decoration-underline fw-bold">
                       Thuan Pham
-                    </h5>
+                    </h3>
                     <h6 className="card-subtitle mb-3 text-dark">
-                      <small>Technology Advisor</small>
+                      <span className="fs-4">Technology Advisor</span>
                     </h6>
                     <div className="card-text">
-                      Previously the CTO of Uber and now the CTO of Coupang.
+                      <p className="fs-6">
+                        Previously the CTO of Uber and now the CTO of Coupang.
+                      </p>
                     </div>
                     <hr className="my-4" />
-                    <img
-                      src={uber}
-                      alt="Uber Logo"
-                      className="img-logo-card py-4"
-                    />
+                    <div className="row-cols-1 col-8">
+                      <img
+                        src={uber}
+                        alt="Uber Logo"
+                        className="img-logo-card img-fluid"
+                      />
+                    </div>
                   </div>
                 </div>
               </a>
@@ -159,19 +171,23 @@ export default function CardTeam() {
                     />
                   </div>
                   <div className="card-body px-5">
-                    <h5 className="card-title pt-3 text-decoration-underline fw-bold">
+                    <h3 className="card-title pt-3 text-decoration-underline fw-bold">
                       Alex Wallar
-                    </h5>
+                    </h3>
                     <h6 className="card-subtitle mb-3 text-dark">
-                      <small>CTO</small>
+                      <span className="fs-4">CTO</span>
                     </h6>
                     <div className="card-text">
-                      Specialized in mathematical optimization for high-capacity
-                      shared rides. Author of the seminal research on
-                      high-capacity ride-sharing.
+                      <p className="fs-6">
+                        Specialized in mathematical optimization for
+                        high-capacity shared rides. Author of the seminal
+                        research on high-capacity ride-sharing.
+                      </p>
                     </div>
                     <hr className="my-4" />
-                    <span className="fs-bold fs-4">MIT</span>
+                    <div className="row-cols-1 col-8">
+                      <span className="fs-1">MIT</span>
+                    </div>
                   </div>
                 </div>
               </a>
@@ -193,22 +209,26 @@ export default function CardTeam() {
                     />
                   </div>
                   <div className="card-body px-5">
-                    <h5 className="card-title pt-3 text-decoration-underline fw-bold">
+                    <h3 className="card-title pt-3 text-decoration-underline fw-bold">
                       Bradford Church
-                    </h5>
+                    </h3>
                     <h6 className="card-subtitle mb-3 text-dark">
-                      <small>Director of Product</small>
+                      <span className="fs-4">Director of Product</span>
                     </h6>
                     <div className="card-text">
-                      Ridesharing veteran and product expert who launched
-                      uberBUS globally.
+                      <p className="fs-6">
+                        Ridesharing veteran and product expert who launched
+                        uberBUS globally.
+                      </p>
                     </div>
                     <hr className="my-4" />
-                    <img
-                      src={uber}
-                      alt="Uber Logo"
-                      className="img-logo-card py-4"
-                    />
+                    <div className="row-cols-1 col-8">
+                      <img
+                        src={uber}
+                        alt="Uber Logo"
+                        className="img-logo-card img-fluid"
+                      />
+                    </div>
                   </div>
                 </div>
               </a>
@@ -230,18 +250,22 @@ export default function CardTeam() {
                     />
                   </div>
                   <div className="card-body px-5">
-                    <h5 className="card-title pt-3 text-decoration-underline fw-bold">
+                    <h3 className="card-title pt-3 text-decoration-underline fw-bold">
                       Daniela Rus
-                    </h5>
+                    </h3>
                     <h6 className="card-subtitle mb-3 text-dark">
-                      <small>Technology Advisor</small>
+                      <span className="fs-4">Technology Advisor</span>
                     </h6>
                     <div className="card-text">
-                      Deputy Dean of Research, Schwarzman College of Computing
-                      at MIT.
+                      <p className="fs-6">
+                        Deputy Dean of Research, Schwarzman College of Computing
+                        at MIT.
+                      </p>
                     </div>
                     <hr className="my-4" />
-                    <span className="fs-bold fs-4">MIT CSAIL</span>
+                    <div className="row-cols-1 col-8">
+                      <span className="fs-1">MIT CSAIL</span>
+                    </div>
                   </div>
                 </div>
               </a>
