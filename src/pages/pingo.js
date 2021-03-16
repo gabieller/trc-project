@@ -341,7 +341,7 @@ export default function Pingo(props) {
             >
               <div className="d-flex justify-content-center">
                 <img
-                  className="img-fluid pingo-logo pt-5"
+                  className="img-fluid pingo-logo-moible pt-5"
                   src={pingologowhite}
                   alt="Pingo Main logo"
                 />
