@@ -48,9 +48,9 @@
 }
 
 
-#whytrc .green {
+/* #whytrc .green {
   color: #58968a;
-}
+} */
 
 .icons:hover {
   background-color: #e4e1e5;
@@ -80,14 +80,6 @@
   left: 190px;
 }
 
-/* .equal-icon::before {
-  content: "";
-  margin: auto;
-  width: 50vw;
-  height: 3px;
-  background-color: #505050;
-  margin-bottom: 1rem;
-} */ 
 
 #whytrc .line {
   margin: auto;
@@ -95,8 +87,4 @@
   background-color: #505050;
   margin-bottom: 1rem;
 }
-
-/* .btn-action {
-  min-width: 183px;
-} */
 

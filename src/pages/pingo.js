@@ -1,11 +1,11 @@
 import React, { useRef } from "react"
 import { Link } from "gatsby"
 import Button from "@material-ui/core/Button"
+import IphoneAnimation from "../components/IphoneAnimation"
 
 import LayoutPingo from "../components/LayoutPingo"
 import Responsive from "../components/Responsive"
 import CanvasPingo from "../components/CanvasPingo"
-// import IphoneAnimation from "../components/IphoneAnimation"
 
 import trclogo from "../images/trc-logo-black.png"
 import arrowright from "../images/arrow-right-black.svg"
@@ -18,6 +18,7 @@ import googleplaybadge from "../images/google-play-badge.png"
 import appstorebadge from "../images/app-store-badge.png"
 import mockup_ridepingo from "../images/mockup-ridepingo.png"
 import ridepingo from "../images/ridepingo.png"
+// import ridepingo_mobile from "../images/ridepingo_mobile.png"
 import womanillustration from "../images/woman-illustration.png"
 
 import "../styles/pingo.css"
@@ -91,13 +92,7 @@ export default function Pingo(props) {
                 <div className="col-9">
                   <Link to="/">
                     <div className="d-flex flex-row-reverse row-trc-logo user-select-none">
-                      <img
-                        className="img-fluid trc-logo"
-                        src={trclogo}
-                        alt="Pingo Main logo"
-                        width="650"
-                        height="400"
-                      />
+                      <img className="trc-logo" src={trclogo} alt="TRC logo" />
                       <img src={arrowright} alt="Go to TRC" />
                     </div>
                   </Link>
@@ -135,31 +130,33 @@ export default function Pingo(props) {
                   <h2 id="Pingo_Rider" className="fw-bold fs-1">
                     Pingo Rider
                   </h2>
-                  <div className="d-flex flex-column px-5 justify-content-center">
-                    <a
-                      href="https://play.google.com/store/apps/details?id=com.theroutingcompany.pingo.rider"
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="btn btn-link px-0"
-                    >
-                      <img
-                        src={googleplaybadge}
-                        alt="Google Play Download"
-                        // className="img-fluid"
-                      />
-                    </a>
-                    <a
-                      href="https://apps.apple.com/in/app/pingo-rider/id1536281958"
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="btn btn-link px-0"
-                    >
-                      <img
-                        src={appstorebadge}
-                        alt="App Store Download"
-                        // className="img-fluid"
-                      />
-                    </a>
+                  <div className="col-8">
+                    <div className="d-flex flex-row">
+                      <a
+                        href="https://play.google.com/store/apps/details?id=com.theroutingcompany.pingo.rider"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="btn btn-link px-0"
+                      >
+                        <img
+                          src={googleplaybadge}
+                          alt="Google Play Download"
+                          className="img-fluid"
+                        />
+                      </a>
+                      <a
+                        href="https://apps.apple.com/in/app/pingo-rider/id1536281958"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="btn btn-link px-0"
+                      >
+                        <img
+                          src={appstorebadge}
+                          alt="App Store Download"
+                          className="img-fluid"
+                        />
+                      </a>
+                    </div>
                   </div>
                 </div>
 
@@ -257,21 +254,33 @@ export default function Pingo(props) {
                     <h2>
                       Download <br /> <b>Pingo Driver</b>
                     </h2>
-                    <div className="col-6 col-md-6 d-md-flex">
-                      <button className="btn btn-link px-0">
-                        <img
-                          src={googleplaybadge}
-                          alt="Google Play Download"
-                          className="img-fluid"
-                        />
-                      </button>
-                      <button className="btn btn-link px-0">
-                        <img
-                          src={appstorebadge}
-                          alt="App Store Download"
-                          className="img-fluid"
-                        />
-                      </button>
+                    <div className="col-8">
+                      <div className="d-flex flex-row">
+                        <a
+                          href="https://play.google.com/store/apps/details?id=com.theroutingcompany.pingo.driver"
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          className="btn btn-link px-0"
+                        >
+                          <img
+                            src={googleplaybadge}
+                            alt="Google Play Download"
+                            className="img-fluid"
+                          />
+                        </a>
+                        <a
+                          href="https://apps.apple.com/in/app/pingo-driver/id1536219091"
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          className="btn btn-link px-0"
+                        >
+                          <img
+                            src={appstorebadge}
+                            alt="App Store Download"
+                            className="img-fluid"
+                          />
+                        </a>
+                      </div>
                     </div>
                   </div>
                 </div>
@@ -301,23 +310,19 @@ export default function Pingo(props) {
               <CanvasPingo ref={canvasRef} />
             </div>
 
-            <div
-              className="container"
-              role="application"
-              onMouseDown={e => {
-                e.stopPropagation()
-                canvasRef.current.triggerAnimation(e)
-              }}
-            >
+            <div className="container" role="application">
               <Link to="/">
                 <div className="d-flex flex-row-reverse row-trc-logo-mobile user-select-none">
-                  <img
-                    className="img-fluid trc-logo-mobile g-0"
-                    src={trclogo}
-                    alt="TRC Main logo"
-                    width="650"
-                    height="400"
-                  />
+                  <div className="trc-logo-mobile">
+                    <img
+                      className="g-0 img-fluid"
+                      src={trclogo}
+                      alt="TRC Main logo"
+                      width="140"
+                      // height="400"
+                    />
+                  </div>
+
                   <img
                     src={arrowrightmobile}
                     alt="Go to TRC"
@@ -325,29 +330,159 @@ export default function Pingo(props) {
                   />
                 </div>
               </Link>
-              <div className="row justify-content-center pingo-landing-page user-select-none g-0">
-                <div className="row">
-                  <img
-                    className="img-fluid pingo-logo-mobile g-0"
-                    src={pingologowhite}
-                    alt="Pingo Main logo"
-                    width="650"
-                    height="400"
-                  />
-                </div>
+            </div>
 
-                <div className="row pt-2">
-                  <h1 className="fw-bold fs-4 text-center">
-                    Transit that moves with you
-                  </h1>
+            <div
+              className="  d-flex flex-column pingo-landing-page user-select-none text-center"
+              onMouseDown={e => {
+                e.stopPropagation()
+                canvasRef.current.triggerAnimation(e)
+              }}
+            >
+              <div className="d-flex justify-content-center">
+                <img
+                  className="img-fluid pingo-logo pt-5"
+                  src={pingologowhite}
+                  alt="Pingo Main logo"
+                />
+              </div>
+              <h1 className="fs-3 pt-4">Transit that moves with you</h1>
+            </div>
+            <div
+              id="download-pingo"
+              className="col-10 d-flex flex-row section-mini container shadow-lg bg-white container"
+            >
+              <div className="row px-3">
+                <h4 className="text-left">
+                  The whole city in <br />
+                  the palm of your hand.
+                </h4>
+                <h2 className="fs-1 pt-4">Download</h2>
+                <h2 className="fw-bold fs-1">Pingo Rider</h2>
+                <div className="d-flex flex-column px-5 justify-content-center">
+                  <a
+                    href="https://play.google.com/store/apps/details?id=com.theroutingcompany.pingo.rider"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="btn btn-link px-0"
+                  >
+                    <img
+                      src={googleplaybadge}
+                      alt="Google Play Download"
+                      className="img-fluid"
+                    />
+                  </a>
+                  <a
+                    href="https://apps.apple.com/in/app/pingo-rider/id1536281958"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="btn btn-link px-0"
+                  >
+                    <img
+                      src={appstorebadge}
+                      alt="App Store Download"
+                      className="img-fluid"
+                    />
+                  </a>
                 </div>
               </div>
             </div>
           </div>
-          <div className="d-flex flex-column bg-white">
-            <div className="container">
-              <h2 className="">The whole city in the palm of your hand. </h2>
-              Download Pingo Rider
+          <div className="bg-white">
+            <div id="announcements-card-mobile" className="section">
+              <div className="container">
+                <div className="announcements-list">
+                  <div className="announcements-1-mobile p-5 d-flex flex-column ">
+                    <div className="announcements-text fs-6">
+                      <div>
+                        “The most fun <br /> app to use!”
+                      </div>
+                      <div className="pt-3 announcements-name">
+                        George M., <br /> Pingo rider
+                      </div>
+                    </div>
+                  </div>
+
+                  <div className="announcements-2-mobile p-5 d-flex flex-column ">
+                    <div className="announcements-text fs-6">
+                      <div>“Pingo helps me save 20 minutes every day!</div>
+                      <div className="pt-3 announcements-name">
+                        Savannah W., <br /> Pingo rider
+                      </div>
+                    </div>
+                  </div>
+                  <div className="announcements-3-mobile p-5 d-flex flex-column">
+                    <div className="announcements-text fs-6">
+                      <div>
+                        “It’s a huge improvement on my commute. Love it!”
+                      </div>
+                      <div className="pt-3 announcements-name">
+                        Jason O., <br /> Pingo rider
+                      </div>
+                    </div>
+                  </div>
+                  <div className="announcements-4-mobile p-5 d-flex flex-column">
+                    <div className="announcements-text fs-6">
+                      <div>
+                        “I wish I had discovered Pingo before. It’s incredible!”
+                      </div>
+                      <div className="pt-3 announcements-name ">
+                        Maria B., <br /> Pingo rider
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div className="section-mini d-flex justify-content-center">
+              <h2 className="text-center pb-5 px-5">
+                Are you{" "}
+                <span className="text-decoration-underline fw-bold">ready</span>{" "}
+                to have the whole city in the palm of your hand
+              </h2>
+            </div>
+            <div className="row pb-5">
+              <div className="container box-shadow shadow col-9">
+                <div className="d-flex flex-column pt-3 pb-5">
+                  <div>
+                    <img
+                      src={mockup_ridepingo}
+                      alt="Ride Pingo"
+                      className="img-fluid"
+                    />
+                  </div>
+                  <div>
+                    <h3 className="pt-5">Download</h3>
+                    <h3 className="fs-5 fw-bold">Pingo Driver</h3>
+                    <div className="d-flex flex-column px-5 pt-3 justify-content-center">
+                      <a
+                        href="https://play.google.com/store/apps/details?id=com.theroutingcompany.pingo.driver"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="btn btn-link px-0"
+                      >
+                        <img
+                          src={googleplaybadge}
+                          alt="Google Play Download"
+                          className="img-fluid"
+                        />
+                      </a>
+                      <a
+                        href="https://apps.apple.com/in/app/pingo-driver/id1536219091"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="btn btn-link px-0"
+                      >
+                        <img
+                          src={appstorebadge}
+                          alt="App Store Download"
+                          className="img-fluid"
+                        />
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
         </Responsive.Mobile>

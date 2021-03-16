@@ -76,7 +76,7 @@ export default function WhyTRC(props) {
             </div>
           </Responsive.Mobile>
         </div>
-        <div className="container">
+        <div className="container g-5">
           <div className="row row-cols-1 row-cols-md-4 pt-3 cards-row">
             <div className="col-md-3 pb-3 pb-md-0 ps-md-0  pe-md-3">
               <div
@@ -268,7 +268,7 @@ export default function WhyTRC(props) {
         </div>
 
         <Responsive.Desktop>
-          <div className="section-mini bg-white">
+          <div className="section-mini bg-white wrap-illustration">
             <div className=" container box-shadow shadow-lg ">
               <div className="d-flex flex-row align-items-center justify-content-center justify-content-md-around">
                 <div className="col-md-5 col-lg-4">
@@ -307,14 +307,14 @@ export default function WhyTRC(props) {
                   </div>
                 </div>
               </div>
-              <div className="col-md-1 wrap-illustration d-flex justify-content-end">
-                <img
-                  src={womanillustration}
-                  alt="Woman Standing"
-                  className="somewhere-illustration"
-                  width="450px"
-                />
-              </div>
+              {/* <div className="wrap-illustration"> */}
+              <img
+                src={womanillustration}
+                alt="Woman Standing"
+                className="somewhere-illustration"
+                width="450"
+              />
+              {/* </div> */}
             </div>
           </div>
         </Responsive.Desktop>
@@ -375,7 +375,7 @@ export default function WhyTRC(props) {
           </div>
         </Responsive.Mobile>
 
-        <div className="section-min bg-white">
+        <div className="section-mini bg-white">
           <div className="container fs-1 col-8 col-md-12">
             Lower costs. More coverage.
             <div className="d-flex justify-content-start pt-3 pt-md-0">
