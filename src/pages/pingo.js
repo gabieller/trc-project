@@ -1,7 +1,7 @@
 import React, { useRef } from "react"
 import { Link } from "gatsby"
 import Button from "@material-ui/core/Button"
-import IphoneAnimation from "../components/IphoneAnimation"
+// import IphoneAnimation from "../components/IphoneAnimation"
 
 import LayoutPingo from "../components/LayoutPingo"
 import Responsive from "../components/Responsive"
