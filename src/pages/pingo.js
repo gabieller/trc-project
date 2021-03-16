@@ -18,14 +18,12 @@ import googleplaybadge from "../images/google-play-badge.png"
 import appstorebadge from "../images/app-store-badge.png"
 import mockup_ridepingo from "../images/mockup-ridepingo.png"
 import ridepingo from "../images/ridepingo.png"
-// import ridepingo_mobile from "../images/ridepingo_mobile.png"
+import ridepingo_mobile from "../images/ridepingo_mobile.png"
 import womanillustration from "../images/woman-illustration.png"
 
 import "../styles/pingo.css"
 
-//TODO: fix header to mobile and desktop
 //TODO: fix card size large screen
-//TODO: logo TRC BARRA
 export default function Pingo(props) {
   const canvasRef = useRef()
   return (
@@ -348,6 +346,13 @@ export default function Pingo(props) {
               </div>
               <h1 className="fs-3 pt-4">Transit that moves with you</h1>
             </div>
+            <div className="col-7 wrap-mockup-mobile">
+            <img
+              src={ridepingo_mobile}
+              alt="Mockup Pingo"
+              className="img-fluid phone-mobile"
+            />
+            </div>
             <div
               id="download-pingo"
               className="col-10 d-flex flex-row section-mini container shadow-lg bg-white container"
@@ -359,7 +364,7 @@ export default function Pingo(props) {
                 </h4>
                 <h2 className="fs-1 pt-4">Download</h2>
                 <h2 className="fw-bold fs-1">Pingo Rider</h2>
-                <div className="d-flex flex-column px-5 justify-content-center">
+                <div className="d-flex flex-column col-8 ">
                   <a
                     href="https://play.google.com/store/apps/details?id=com.theroutingcompany.pingo.rider"
                     target="_blank"
