@@ -4,7 +4,7 @@
   width: 100%;
   height: auto;
   min-height: 35rem;
-  background-color: #f5f4f5;
+  background-color: #F5F4F5;
 }
 
 #whytrc .card {
@@ -47,12 +47,7 @@
   z-index: 2999;
 }
 
-
-/* #whytrc .green {
-  color: #58968a;
-} */
-
-.icons:hover {
+#whytrc .card-body:hover {
   background-color: #e4e1e5;
 }
 
@@ -83,8 +78,26 @@
 
 #whytrc .line {
   margin: auto;
+  width: 70vw;
   height: 3px;
   background-color: #505050;
   margin-bottom: 1rem;
 }
 
+.btn-action {
+  min-width: 183px;
+}
+
+#whytrc .back-drop {
+  background: rgba(63, 61, 61, 0.692);
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  z-index: 2999;
+}
+
+#whytrc .green {
+ color:  #58968A;
+}
