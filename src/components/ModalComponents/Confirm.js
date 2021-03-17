@@ -2,6 +2,7 @@ import React from "react"
 import Button from "@material-ui/core/Button"
 import Radio from "@material-ui/core/Radio"
 import questions from "./questions"
+import "../../styles/surveyCards.css"
 
 export default function Confirm({ nextStep, prevStep, handleChange, values }) {
   const handleNext = e => {
@@ -34,8 +35,8 @@ export default function Confirm({ nextStep, prevStep, handleChange, values }) {
               ></div>
             </div>
           </div>
-          <p className="fs-3 text-center">
-            Would you like to see the impact of our <br /> product on increasing{" "}
+          <p className="fs-3 text-md-center">
+            Would you like to see the impact of our product on increasing{" "}
             {response.toLowerCase()} in your area?
           </p>
 
@@ -46,14 +47,18 @@ export default function Confirm({ nextStep, prevStep, handleChange, values }) {
               onClick={handleNext}
             >
               <Radio />
-              <span>
-                Yes, I’d love to see if TRC could <br />
-                {response} help me to meet my objectives.
+              <span className="text-confirm text-start text-md-center col-md-7 col-8">
+                Yes, I’d love to see if TRC could {response} help me to meet my
+                objectives.
               </span>
             </Button>
           </div>
         </div>
-        <button type="button" className="btn fs-5 pt-5 mt-1'" onClick={handleprev}>
+        <button
+          type="button"
+          className="btn fs-5 pt-5 mt-1'"
+          onClick={handleprev}
+        >
           GO BACK
         </button>
       </div>

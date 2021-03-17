@@ -14,41 +14,41 @@ const SurveyItem = ({ handleChange, nextStep, icon, content, question }) => {
 
   return (
     <>
-    <Responsive.Desktop>
-      <Button>
-        <Card
-          className="rounded-0 border-dark"
-          variant="outlined"
-          onClick={e => handleNext(e, 0)}
-        >
-          <CardContent className="d-flex flex-column card-content justify-content-center">
-            <img src={icon} height="64" alt="Agency" />
-            <p
-              className="fs-6 pt-3"
-              dangerouslySetInnerHTML={{ __html: content }}
-            />
-          </CardContent>
-        </Card>
-      </Button>
-    </Responsive.Desktop>
-
-    <Responsive.Mobile>
+      <Responsive.Desktop>
         <Button>
-        <Card
-          className="rounded-0 border-dark"
-          variant="outlined"
-          onClick={e => handleNext(e, 0)}
-        >
-          <CardContent className="d-flex flex-column card-content-mobile justify-content-center">
-            <img src={icon} height="36" alt="Agency" />
-            <p
-              className="pt-3"
-              dangerouslySetInnerHTML={{ __html: content }}
-            />
-          </CardContent>
-        </Card>
-      </Button>
-    </Responsive.Mobile>
+          <Card
+            className="rounded-0 border-dark"
+            variant="outlined"
+            onClick={e => handleNext(e, 0)}
+          >
+            <CardContent className="d-flex flex-column card-content justify-content-center">
+              <img src={icon} height="64" alt="Agency" />
+              <p
+                className="fs-6 pt-3"
+                dangerouslySetInnerHTML={{ __html: content }}
+              />
+            </CardContent>
+          </Card>
+        </Button>
+      </Responsive.Desktop>
+
+      <Responsive.Mobile>
+        <Button className="border border-dark rounded-0 card-modal-mobile mx-1 mb-3">
+          <Card
+            className="border-0"
+            variant="outlined"
+            onClick={e => handleNext(e, 0)}
+          >
+            <CardContent className="d-flex flex-column card-content-mobile p-0 mx-2">
+              <img src={icon} height="24" alt="Agency" />
+              <p
+                className="pt-2 mb-0"
+                dangerouslySetInnerHTML={{ __html: content }}
+              />
+            </CardContent>
+          </Card>
+        </Button>
+      </Responsive.Mobile>
     </>
   )
 }

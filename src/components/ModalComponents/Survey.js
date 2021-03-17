@@ -45,7 +45,7 @@ export default function Survey({ nextStep, prevStep, handleChange, index }) {
           </div>
         </Responsive.Desktop>
         <Responsive.Mobile>
-          <div className="d-flex flex-column justify-content-center">
+          <div className="row row-cols-2 d-flex justify-content-center">
             {question.options.map(({ icon, content }) => (
               <SurveyItem
                 key={content}

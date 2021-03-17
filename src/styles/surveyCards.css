@@ -8,6 +8,16 @@
   width: 220px;
 }
 
+.card-content-mobile {
+  text-transform: none;
+}
+
+.card-modal-mobile {
+  height: 140px;
+  width: 115px;
+}
+
+
 .button-modal:hover {
   background-color: #e4e1e5;
 }
@@ -25,10 +35,18 @@
 }
 
 .mockup {
-  width: 0px;
+  width: 390px;
   position: fixed;
-  top: 0%;
-  right: 0%;
+  top: 30%;
+  right: 30%;
+}
+
+
+.mockup-mobile {
+  width: 160px;
+  position: fixed;
+  top: 65%;
+  right: 30%;
 }
 
 .submit {
@@ -36,6 +54,12 @@
   color: #707070;
   font-size: 12px;
   padding-top: 12rem;
+}
+
+.submit-mobile {
+  font-family: Helvetica;
+  color: #707070;
+  font-size: 12px;
 }
 
 .btn {
@@ -50,4 +74,8 @@
   position: absolute;
   bottom: 40px;
   left: 50px;
+}
+
+.text-confirm {
+  text-transform: none;
 }

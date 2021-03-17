@@ -43,7 +43,7 @@ export default function Home({ props, numberPosts }) {
 
           <div className="container  title-content g-0">
             <div className="bg-white d-flex flex-column section-mini px-4 px-md-5 m-5 shadow-lg">
-              <h1 className="title-green ps-5">
+              <h1 className="title-green ps-md-5">
                 <span className="wrap-text">
                   <span className="text-dark"> It’s time </span> <br /> for
                   simple on-demand <br /> transportation
@@ -84,74 +84,48 @@ export default function Home({ props, numberPosts }) {
               </div>
             </div>
             <div className="row justify-content-center text-center g-0">
-              <div className="col-8 col-md-9">
+              <div className="col-9">
                 <h3>
                   Our breakthrough routing technology has been featured in:
                 </h3>
-                <Responsive.Desktop>
-                  <div className="d-flex col-md-12 pb-5 d-flex justify-content-around pt-3 ">
-                    <a
-                      href="https://edition.cnn.com/"
-                      target="_blank"
-                      rel="noopener noreferrer"
-                    >
-                      {" "}
-                      <img src={cnn} alt="CNN Logo" />{" "}
-                    </a>
-                    <a
-                      href="https://techcrunch.com/"
-                      target="_blank"
-                      rel="noopener noreferrer"
-                    >
-                      {" "}
-                      <img src={tech} alt="Tech Crunch Logo" />
-                    </a>
-                    <a
-                      href="https://www.theverge.com/"
-                      target="_blank"
-                      rel="noopener noreferrer"
-                    >
-                      {" "}
-                      <img src={theverge} alt="The Verge Logo" />
-                    </a>
-                    <a
-                      href="https://www.bbc.com/"
-                      target="_blank"
-                      rel="noopener noreferrer"
-                    >
-                      {" "}
-                      <img src={bbc} alt="BBC Logo" />
-                    </a>
-                  </div>
-                </Responsive.Desktop>
-                <Responsive.Mobile>
-                  <div className="d-flex flex-column pb-5 logo pt-3 ">
-                    <img
-                      src={cnn}
-                      alt="CNN Logo"
-                      height="70"
-                      className="pb-4"
-                    />
-                    <img
-                      src={tech}
-                      alt="Tech Crunch Logo"
-                      height="80"
-                      className="py-4"
-                    />
-                    <img
-                      src={theverge}
-                      alt="The Verge Logo"
-                      height="80"
-                      className="py-4"
-                    />
-                    <img
-                      src={bbc}
-                      alt="BBC Logo"
-                      height="55"
-                      className="pt-4"
-                    />
-                  </div>
-                </Responsive.Mobile>
+                <div className="row row-cols-1 row-cols-md-4 pb-5 d-flex justify-content-around pt-3 ">
+                  <a
+                    href="https://edition.cnn.com/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="pb-4"
+                  >
+                    {" "}
+                    <img src={cnn} alt="CNN Logo" />{" "}
+                  </a>
+                  <a
+                    href="https://techcrunch.com/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="pb-4"
+                  >
+                    {" "}
+                    <img src={tech} alt="Tech Crunch Logo" />
+                  </a>
+                  <a
+                    href="https://www.theverge.com/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="pb-4"
+                  >
+                    {" "}
+                    <img src={theverge} alt="The Verge Logo" />
+                  </a>
+                  <a
+                    href="https://www.bbc.com/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="pb-4"
+                  >
+                    {" "}
+                    <img src={bbc} alt="BBC Logo" />
+                  </a>
+                </div>
               </div>
             </div>
           </div>
