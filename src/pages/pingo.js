@@ -25,9 +25,7 @@ import "../styles/pingo.css"
 
 //TODO: fix card size large screen
 export default function Pingo(props) {
-  window.onscroll = function () {
-    scrollRotate()
-  }
+  window.addEventListener("scroll", scrollRotate)
 
   function scrollRotate() {
     let ridepingo = document.getElementById("ridePingo")
