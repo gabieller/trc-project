@@ -19,7 +19,7 @@ export default function Survey({ nextStep, prevStep, handleChange, index }) {
         <h2 className="fs-bold fs-1 text-center">{question.title}</h2>
         <br />
         <div className="d-flex justify-content-center pb-5">
-          <div className="progress col-md-4" style={{ height: "4px" }}>
+          <div className="progress col-8 col-md-4" style={{ height: "4px" }}>
             <div
               className="progress-bar bg-dark"
               role="progressbar"

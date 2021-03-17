@@ -208,7 +208,7 @@ export default function WhyTRC(props) {
           <div className="col-md-5 p-0 col-left d-none d-md-block">
             <img
               src={whytrclines}
-              className="border border-top-0 border-dark"
+              className="border border-top-0 border-dark whytrc-arrow"
               alt="Why TRC"
               width="100%"
               height="100%"

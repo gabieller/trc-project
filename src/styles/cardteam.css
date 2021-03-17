@@ -20,6 +20,10 @@
   width: 100%;
 }
 
+.card-img-mobile {
+  object-fit: cover;
+}
+
 #team-card .card:hover {
   background-color: #e4e1e5;
 }

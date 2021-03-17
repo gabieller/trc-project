@@ -7,7 +7,6 @@
   background: #fff;
   width: 85%;
   height: 550px;
-  /* width: 700px; */
   margin: 4rem auto;
   transition: all 0.5s ease;
   z-index: 3000;
@@ -18,9 +17,9 @@
 }
 
 .wrap-close-btn {
-  position: absolute;
-  bottom: 40px;
-  right: 0px;
+  position: fixed;
+  bottom: 5%;
+  right: 5%;
 }
 
 .close-button {

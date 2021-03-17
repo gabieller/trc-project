@@ -24,7 +24,7 @@ export default function Confirm({ nextStep, prevStep, handleChange, values }) {
           <h2 className="fs-bold fs-1 text-center">Almost there!</h2>
           <br />
           <div className="d-flex justify-content-center pb-5">
-            <div className="progress col-md-4" style={{ height: "4px" }}>
+            <div className="progress col-8 col-md-4" style={{ height: "4px" }}>
               <div
                 className="progress-bar bg-dark"
                 role="progressbar"
@@ -35,10 +35,12 @@ export default function Confirm({ nextStep, prevStep, handleChange, values }) {
               ></div>
             </div>
           </div>
-          <p className="fs-3 text-md-center">
+          <div className="d-flex justify-content-center">
+          <p className="fs-3 col-md-8 text-md-center px-2 px-md-0r">
             Would you like to see the impact of our product on increasing{" "}
             {response.toLowerCase()} in your area?
           </p>
+          </div>
 
           <div className="d-flex justify-content-center pb-5">
             <Button
