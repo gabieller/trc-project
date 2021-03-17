@@ -1,4 +1,4 @@
-import React from "react"
+import React, { useState } from "react"
 import { useForm } from "@formspree/react"
 import Button from "@material-ui/core/Button"
 
@@ -14,15 +14,17 @@ export default function Sucess({ prevStep, values }) {
     },
   })
 
+  const response = values["highestPriority"]
   return (
     <>
       <div id="submit">
-        <div className="d-flex flex-column col-md-7 pt-5">
-          <h3>
-            See how our product can improve <br />
-            <span className="green">[earlier answer]</span> in your coverage
-            area.
-          </h3>
+        <div className="d-flex flex-inline pt-5">
+          <div className="col-md-7">
+            <h3>
+              See how our product can improve <br />
+              <span className="green">{response}</span> in your coverage area.
+            </h3>
+          </div>
         </div>
 
         <div className="col-md-7">
@@ -43,10 +45,9 @@ export default function Sucess({ prevStep, values }) {
             </div>
           </form>
         </div>
-      </div>
-
-      <div className="wrap-mockup col-md-6">
-        <img src={mockup} className="mockup img-fluid" alt="Mockup" />
+        <div className="d-flex flex-row-reverse">
+          <img src={mockup} alt="Mockup" className="mockup img-fluid" />
+        </div>
       </div>
 
       <div className="col-md-4 submit">

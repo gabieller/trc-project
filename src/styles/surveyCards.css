@@ -8,6 +8,10 @@
   width: 220px;
 }
 
+.button-modal:hover {
+  background-color: #e4e1e5;
+}
+
 .card-content:hover {
   background-color: #e4e1e5;
 }
@@ -21,10 +25,10 @@
 }
 
 .mockup {
-  position: absolute;
-  bottom: -231px;
-  left: 618px;
-  width: 80%;
+  width: 0px;
+  position: fixed;
+  top: 0%;
+  right: 0%;
 }
 
 .submit {

@@ -53,7 +53,7 @@ export default function Confirm({ nextStep, prevStep, handleChange, values }) {
             </Button>
           </div>
         </div>
-        <button type="button" className="btn pt-5 mt-1'" onClick={handleprev}>
+        <button type="button" className="btn fs-5 pt-5 mt-1'" onClick={handleprev}>
           GO BACK
         </button>
       </div>

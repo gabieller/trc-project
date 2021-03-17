@@ -41,7 +41,7 @@ export default function Modal({ isModalVisible, setIsModalVisible }) {
               className="close-button"
               onClick={() => setIsModalVisible(prev => !prev)}
             >
-              <img className="arrow" src={arrow} />
+              <img className="arrow" src={arrow} widt />
             </button>
           </div>
         </div>

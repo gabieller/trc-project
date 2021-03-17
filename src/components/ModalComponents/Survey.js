@@ -1,5 +1,6 @@
 import React from "react"
 import SurveyItem from "./SurveyItem"
+import Responsive from "../Responsive"
 import "../../styles/surveyCards.css"
 import questions from "./questions"
 
@@ -29,21 +30,37 @@ export default function Survey({ nextStep, prevStep, handleChange, index }) {
             ></div>
           </div>
         </div>
-        <div className="d-flex flex-row justify-content-center">
-          {question.options.map(({ icon, content }) => (
-            <SurveyItem
-              key={content}
-              handleChange={handleChange}
-              nextStep={nextStep}
-              icon={icon}
-              content={content}
-              question={question.name}
-            />
-          ))}
-        </div>
+        <Responsive.Desktop>
+          <div className="d-flex flex-row justify-content-center">
+            {question.options.map(({ icon, content }) => (
+              <SurveyItem
+                key={content}
+                handleChange={handleChange}
+                nextStep={nextStep}
+                icon={icon}
+                content={content}
+                question={question.name}
+              />
+            ))}
+          </div>
+        </Responsive.Desktop>
+        <Responsive.Mobile>
+          <div className="d-flex flex-column justify-content-center">
+            {question.options.map(({ icon, content }) => (
+              <SurveyItem
+                key={content}
+                handleChange={handleChange}
+                nextStep={nextStep}
+                icon={icon}
+                content={content}
+                question={question.name}
+              />
+            ))}
+          </div>
+        </Responsive.Mobile>
 
         {index > 0 && (
-          <button type="button" className="btn pt-5" onClick={handleprev}>
+          <button type="button" className="btn fs-5 pt-5" onClick={handleprev}>
             GO BACK
           </button>
         )}
