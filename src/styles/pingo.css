@@ -29,8 +29,9 @@
   padding: min(3vw, 30px) 0;
 }
 
-
-#pingo-header .arrow,  .pingo-logo-mobile, .trc-logo-mobile  {
+#pingo-header .arrow,
+.pingo-logo-mobile,
+.trc-logo-mobile {
   z-index: 1;
 }
 
@@ -38,7 +39,6 @@
   z-index: 1;
   width: 40%;
 }
-
 
 #social-icons .btn-link:hover {
   background-color: transparent;
@@ -54,19 +54,11 @@
   right: 160px;
 }
 
-
-.mockup-image-mobile {
-  position: absolute;
-  top: 0px;
-  right: 0px;
-  width: 30%;
-}
-
 #download-pingo {
   position: relative;
   z-index: 1;
   color: black;
-  top: 50px;
+  top: -50px;
 }
 
 .green {
@@ -172,18 +164,11 @@
   font-size: 12px;
 }
 
-#announcements-card-mobile {
-  background-color: #f5f4f5;
-  position: relative;
-  font-family: "Poppins";
-  height: 600px;
-}
-
 .announcements-1-mobile {
   position: absolute;
   width: 280px;
   height: 180px;
-  background-color: #CCCCFF;
+  background-color: #ccccff;
   transform: translate3d(0px, 0px, 0px) rotate(17deg);
   left: 0px;
   top: 200px;
@@ -193,18 +178,17 @@
   position: absolute;
   width: 280px;
   height: 180px;
-  background-color: #F4B96B;
+  background-color: #f4b96b;
   transform: translate3d(0px, 0px, 0px) rotate(-15deg);
   left: 200px;
   top: 180px;
 }
 
-
 .announcements-3-mobile {
   position: absolute;
   width: 280px;
   height: 180px;
-  background-color: #EBE8E6;
+  background-color: #ebe8e6;
   transform: translate3d(0px, 0px, 0px) rotate(-20deg);
   left: 30px;
   bottom: 20px;
@@ -228,5 +212,3 @@
   bottom: -230px;
   left: 830px;
 }
-
-

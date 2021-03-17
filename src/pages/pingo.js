@@ -339,23 +339,28 @@ export default function Pingo(props) {
             >
               <div className="d-flex justify-content-center">
                 <img
-                  className="img-fluid pingo-logo-moible pt-5"
+                  className="img-fluid  pt-5"
                   src={pingologowhite}
                   alt="Pingo Main logo"
                 />
               </div>
-              <h1 className="fs-3 pt-4">Transit that moves with you</h1>
+
+              <h1 className="fs-3 py-4">Transit that moves with you</h1>
+
+              <div className="d-flex justify-content-center wrap-mockup">
+                <div className="col-6">
+                  <img
+                    className="img-fluid phone-mobile"
+                    src={ridepingo_mobile}
+                    alt="Pingo Main logo"
+                  />
+                </div>
+              </div>
             </div>
-            <div className="col-7 wrap-mockup-mobile">
-              <img
-                src={ridepingo_mobile}
-                alt="Mockup Pingo"
-                className="img-fluid phone-mobile"
-              />
-            </div>
+
             <div
               id="download-pingo"
-              className="col-10 d-flex flex-row section-mini container shadow-lg bg-white container"
+              className="col-10 d-flex flex-column section-mini container shadow-lg bg-white container"
             >
               <div className="row px-3">
                 <h4 className="text-left">
@@ -394,7 +399,7 @@ export default function Pingo(props) {
             </div>
           </div>
           <div className="bg-white">
-            <div id="announcements-card-mobile" className="section">
+            <div id="announcements-card" className="section">
               <div className="container">
                 <div className="announcements-list">
                   <div className="announcements-1-mobile p-5 d-flex flex-column ">
