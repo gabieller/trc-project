@@ -25,6 +25,17 @@ import "../styles/pingo.css"
 
 //TODO: fix card size large screen
 export default function Pingo(props) {
+  window.onscroll = function () {
+    scrollRotate()
+  }
+
+  function scrollRotate() {
+    let ridepingo = document.getElementById("ridePingo")
+    if (window.pageYOffset < 300)
+      ridepingo.style.transform =
+        "translateY(" + window.pageYOffset * 0.28 + "px)"
+  }
+
   const canvasRef = useRef()
   return (
     <LayoutPingo {...props}>
@@ -169,7 +180,7 @@ export default function Pingo(props) {
               </div>
             </div>
           </div>
-          <div id="announcements-card" className="section">
+          <div id="announcements-card" className="section-mini">
             <div className="container">
               <div className=" announcements-title">
                 <h3 className="green fs-2">The talk of the town</h3>
