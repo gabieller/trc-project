@@ -1,4 +1,5 @@
 import React, { useRef } from "react"
+import { useEffectOnlyOnce } from "../utils/hooks"
 import { Link } from "gatsby"
 import Button from "@material-ui/core/Button"
 // import IphoneAnimation from "../components/IphoneAnimation"
@@ -25,7 +26,14 @@ import "../styles/pingo.css"
 
 //TODO: fix card size large screen
 export default function Pingo(props) {
-  window.addEventListener("scroll", scrollRotate)
+  useEffectOnlyOnce(() => {
+    window.addEventListener("scroll", scrollRotate)
+    return () => {
+      window.removeEventListener("scroll", scrollRotate)
+    }
+  })
+
+  // window.addEventListener("scroll", scrollRotate)
 
   function scrollRotate() {
     let ridepingo = document.getElementById("ridePingo")
