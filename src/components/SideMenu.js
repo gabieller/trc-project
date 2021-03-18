@@ -18,12 +18,12 @@ export default function SideMenu({ uri, visible }) {
         <div className={`sidebar ${visible ? "open" : ""}`}>
           <div className="container flex-column">
             <Link to="/">
-              <div className="pt-5">
+              <div className="pt-3">
                 <img
                   src={trclogowhite}
                   alt="Main logo"
                   className=" img-fluid"
-                  width="180"
+                  width="230"
                 />
               </div>
             </Link>

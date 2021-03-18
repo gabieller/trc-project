@@ -51,10 +51,7 @@ export default function CardTeam() {
                     </div>
                     <hr className="my-3" />
                     <div className="row-cols-1 col-6 d-flex flex-column align-top">
-                      <img
-                        src={uber}
-                        alt="Uber Logo"
-                      />
+                      <img src={uber} alt="Uber Logo" />
                       <img
                         src={canoo}
                         alt="Canoo Logo"

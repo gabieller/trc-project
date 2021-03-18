@@ -13,6 +13,13 @@
   height: 100%;
   opacity: 1;
 }
+/* 
+#overlay .trc-logo {
+  max-width: 230px;
+  max-height: 50px;
+  width: auto;
+  height: auto;
+} */
 
 #overlay h1 {
   font-family: "Roboto";
@@ -98,7 +105,6 @@
     width: 70%;
   }
 }
-
 
 @media (min-width: 768px) {
   #side-menu {
