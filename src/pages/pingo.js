@@ -356,11 +356,11 @@ export default function Pingo(props) {
             >
               <div className="d-flex justify-content-center">
                 <div className="col-11">
-                <img
-                  className="img-fluid  pt-5"
-                  src={pingologowhite}
-                  alt="Pingo Main logo"
-                />
+                  <img
+                    className="img-fluid  pt-5"
+                    src={pingologowhite}
+                    alt="Pingo Main logo"
+                  />
                 </div>
               </div>
 

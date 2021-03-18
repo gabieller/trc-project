@@ -125,6 +125,7 @@ export default function Footer() {
                 <a
                   href="https://jobs.lever.co/theroutingcompany"
                   target="_blank"
+                  rel="noopener noreferrer"
                 >
                   <div>Careers</div>
                 </a>

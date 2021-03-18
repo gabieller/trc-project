@@ -42,7 +42,7 @@ export const wrapPageElement = ({ element, props }) => {
   return (
     <>
       <Helmet>
-        <meta charSet="utf-8" />
+        <meta name="Transportation that moves with you" charSet="utf-8" />
         <title>The Routing Company</title>
         <link rel="canonical" href="https://theroutingcompany.com/" />
       </Helmet>

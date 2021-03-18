@@ -97,6 +97,10 @@ export default function Contact(props) {
                         >
                           Get in touch
                         </Button>
+
+                        {state.succeeded ? (
+                          <div id="message"> Thank for your Contact!</div>
+                        ) : null}
                       </div>
                     </form>
                   </div>
