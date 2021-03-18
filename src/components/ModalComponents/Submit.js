@@ -6,7 +6,7 @@ import Responsive from "../Responsive"
 import mockup from "../../images/mockup_cut.png"
 
 export default function Sucess({ prevStep, values }) {
-  const [state, handleSubmit] = useForm("mleoqpjq", {
+  const [state, handleSubmit] = useForm("xgepgjyv", {
     data: {
       _subject: "Someone joined the newsletter",
       description: function () {

@@ -23,7 +23,6 @@ function SubscribeForm() {
     <div className="d-inline-flex g-0">
       <form>
         <div className="input-group mb-3">
-          {/* <div className="d-md-inline-flex col-12 pt-3"> */}
           <input
             type="email"
             onChange={handleChange}
@@ -32,7 +31,6 @@ function SubscribeForm() {
             aria-label="| Enter your email"
             style={{ color: "white" }}
           />
-          {/* <div className="input-group mb-3"> */}
           <Button
             onClick={handleSubmit}
             className="btn-white "
@@ -40,8 +38,6 @@ function SubscribeForm() {
           >
             Subscribe
           </Button>
-          {/* </div> */}
-          {/* </div> */}
         </div>
         <div className="d-flex flex-column fw-bold py-3">
           <span status={status}>{message}</span>
