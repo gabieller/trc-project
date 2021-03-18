@@ -142,7 +142,6 @@ export default function SideMenu({ uri, visible }) {
             </div>
           </div>
         </div>
-        
       </div>
     </>
   )
