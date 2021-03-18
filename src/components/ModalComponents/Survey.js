@@ -60,7 +60,11 @@ export default function Survey({ nextStep, prevStep, handleChange, index }) {
         </Responsive.Mobile>
 
         {index > 0 && (
-          <button type="button" className="btn fs-5 pt-3 pt-md-5" onClick={handleprev}>
+          <button
+            type="button"
+            className="btn fs-5 pt-3 pt-md-5"
+            onClick={handleprev}
+          >
             GO BACK
           </button>
         )}

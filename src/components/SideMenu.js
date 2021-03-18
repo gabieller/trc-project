@@ -17,14 +17,16 @@ export default function SideMenu({ uri, visible }) {
       <div id="overlay" className={visible ? "open" : ""}>
         <div className={`sidebar ${visible ? "open" : ""}`}>
           <div className="container flex-column">
-            <div className="pt-5">
-              <img
-                src={trclogowhite}
-                alt="Main logo"
-                className=" img-fluid"
-                width="180"
-              />
-            </div>
+            <Link to="/">
+              <div className="pt-5">
+                <img
+                  src={trclogowhite}
+                  alt="Main logo"
+                  className=" img-fluid"
+                  width="180"
+                />
+              </div>
+            </Link>
             <div className="row d-flex section-mini">
               <div id="side-menu" className="col-md-8 menu">
                 <ul className="navbar-nav ml-auto fw-bold">
@@ -132,14 +134,15 @@ export default function SideMenu({ uri, visible }) {
                   </Button>
                 </div>
                 <div className="d-flex email-link">
-                  <a href="mailto:info@theroutingcompany.com?subject=Informations">
-                    info@theroutingcompany.com
+                  <a href="mailto:hello@theroutingcompany.com?subject=Informations">
+                    hello@theroutingcompany.com
                   </a>
                 </div>
               </div>
             </div>
           </div>
         </div>
+        
       </div>
     </>
   )

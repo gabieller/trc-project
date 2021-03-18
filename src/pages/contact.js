@@ -234,7 +234,7 @@ export default function Contact(props) {
                     <h5 className="fw-bold">General queries</h5>
                     <small>
                       For general queries, please email
-                      info@theroutingcompany.com
+                      hello@theroutingcompany.com
                     </small>
                   </div>
                   <div className="py-3">
@@ -242,14 +242,14 @@ export default function Contact(props) {
 
                     <small>
                       For general queries, please email
-                      info@theroutingcompany.com
+                      hello@theroutingcompany.com
                     </small>
                   </div>
                   <div className="py-3">
                     <h5 className="fw-bold">Careers</h5>
                     <small>
                       For general queries, please email
-                      info@theroutingcompany.com
+                      hello@theroutingcompany.com
                     </small>
                   </div>
                 </div>

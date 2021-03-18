@@ -1,4 +1,4 @@
-import React, { useState, useCallback } from "react"
+import React, { useState, useEffect, useCallback } from "react"
 import { Link } from "gatsby"
 import Button from "@material-ui/core/Button"
 import Modal from "../components/ModalComponents/Modal"
@@ -41,6 +41,20 @@ export default function Header({ uri }) {
   }
 
   const closeModalHandler = () => setIsModalVisible(false)
+
+  const keyPress = useCallback(
+    e => {
+      if (e.key === "Escape" && state.isSidebarOpen) {
+        setState(false)
+      }
+    },
+    [setState, state.isSidebarOpen]
+  )
+
+  useEffect(() => {
+    document.addEventListener("keydown", keyPress)
+    return () => document.removeEventListener("keydown", keyPress)
+  }, [keyPress])
 
   return (
     <>
@@ -119,7 +133,6 @@ export default function Header({ uri }) {
         barColor={state.isSidebarOpen ? "white" : "transparent"}
         onClick={toggleButton}
       />
-
       <SideMenu
         visible={state.isSidebarOpen}
         uri={uri}
