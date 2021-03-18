@@ -175,7 +175,7 @@ export default function WhyTRC(props) {
           </div>
         </div>
 
-        <div className="row col-6 justify-content-center pt-3">
+        <div className="row col-9 justify-content-center pt-3">
           <img src={mockup} alt="Mockup" className="img-fluid" />
         </div>
       </div>

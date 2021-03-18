@@ -36,10 +36,10 @@ export default function CardTeam() {
                       alt="James Cox"
                     />
                   </div>
-                  <div className="card-body py-0 px-5">
-                    <h4 className="card-title pt-3 fw-bold text-decoration-underline">
+                  <div className="card-body px-4">
+                    <h5 className="card-title pt-3 fw-bold text-decoration-underline">
                       James Cox
-                    </h4>
+                    </h5>
                     <h6 className="card-subtitle mb-3 text-dark">
                       <span className="fs-6">CEO</span>
                     </h6>
@@ -54,8 +54,6 @@ export default function CardTeam() {
                       <img
                         src={uber}
                         alt="Uber Logo"
-                        // className="img-logo-card"
-                        // width="100"
                       />
                       <img
                         src={canoo}
@@ -82,10 +80,10 @@ export default function CardTeam() {
                     />
                   </div>
 
-                  <div className="card-body py-0 px-5">
-                    <h4 className="card-title pt-3 text-decoration-underline fw-bold">
+                  <div className="card-body px-4">
+                    <h5 className="card-title pt-3 text-decoration-underline fw-bold">
                       Menno van der Zee
-                    </h4>
+                    </h5>
                     <h6 className="card-subtitle mb-3 text-dark">
                       <span className="fs-6">
                         Head of Global Business Development
@@ -129,10 +127,10 @@ export default function CardTeam() {
                       alt="Thuan Pham"
                     />
                   </div>
-                  <div className="card-body px-5">
-                    <h4 className="card-title pt-3 text-decoration-underline fw-bold">
+                  <div className="card-body px-4">
+                    <h5 className="card-title pt-3 text-decoration-underline fw-bold">
                       Thuan Pham
-                    </h4>
+                    </h5>
                     <h6 className="card-subtitle mb-3 text-dark">
                       <span className="fs-6">Technology Advisor</span>
                     </h6>
@@ -171,10 +169,10 @@ export default function CardTeam() {
                       alt="Alex Wallar"
                     />
                   </div>
-                  <div className="card-body px-5">
-                    <h4 className="card-title pt-3 text-decoration-underline fw-bold">
+                  <div className="card-body px-4">
+                    <h5 className="card-title pt-3 text-decoration-underline fw-bold">
                       Alex Wallar
-                    </h4>
+                    </h5>
                     <h6 className="card-subtitle mb-3 text-dark">
                       <span className="fs-6">CTO</span>
                     </h6>
@@ -209,10 +207,10 @@ export default function CardTeam() {
                       alt="Bradford Church"
                     />
                   </div>
-                  <div className="card-body px-5">
-                    <h4 className="card-title pt-3 text-decoration-underline fw-bold">
+                  <div className="card-body px-4">
+                    <h5 className="card-title pt-3 text-decoration-underline fw-bold">
                       Bradford Church
-                    </h4>
+                    </h5>
                     <h6 className="card-subtitle mb-3 text-dark">
                       <span className="fs-6">Director of Product</span>
                     </h6>
@@ -250,10 +248,10 @@ export default function CardTeam() {
                       alt="Daniela Rus"
                     />
                   </div>
-                  <div className="card-body px-5">
-                    <h4 className="card-title pt-3 text-decoration-underline fw-bold">
+                  <div className="card-body px-4">
+                    <h5 className="card-title pt-3 text-decoration-underline fw-bold">
                       Daniela Rus
-                    </h4>
+                    </h5>
                     <h6 className="card-subtitle mb-3 text-dark">
                       <span className="fs-6">Technology Advisor</span>
                     </h6>

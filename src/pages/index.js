@@ -130,8 +130,8 @@ export default function Home({ props, numberPosts }) {
             </div>
           </div>
         </div>
-        <div className="section-mini team">
-          <div className="container pb-5 ps-5">
+        <div className=" team">
+          <div className="section-mini container pb-5 ps-5">
             <div className="row g-0 col-md-6 pt-4">
               <h2>Team</h2>
               <div className="col-md-8">

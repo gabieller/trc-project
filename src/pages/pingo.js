@@ -37,7 +37,7 @@ export default function Pingo(props) {
 
   function scrollRotate() {
     let ridepingo = document.getElementById("ridePingo")
-    if (window.pageYOffset < 300)
+    if (window.pageYOffset < 350)
       ridepingo.style.transform =
         "translateY(" + window.pageYOffset * 0.28 + "px)"
   }
@@ -134,7 +134,7 @@ export default function Pingo(props) {
               </div>
               <div
                 id="download-pingo"
-                className="col-10 d-flex flex-row section container shadow-lg bg-white container"
+                className="col-10 d-flex flex-row section container shadow-lg bg-white container mt-5"
               >
                 <div className="row col-md-6">
                   <h2 className="fs-5">
