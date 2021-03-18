@@ -99,7 +99,10 @@ export default function Contact(props) {
                         </Button>
 
                         {state.succeeded ? (
-                          <div id="message"> Thank for your Contact!</div>
+                          <div id="message" className="px-5">
+                            {" "}
+                            Thank you for your response!
+                          </div>
                         ) : null}
                       </div>
                     </form>
@@ -214,6 +217,12 @@ export default function Contact(props) {
                           >
                             Get in touch
                           </Button>
+                          {state.succeeded ? (
+                            <div id="message" className="px-5">
+                              {" "}
+                              Thank you for your response!
+                            </div>
+                          ) : null}
                         </div>
                       </form>
                     </div>
