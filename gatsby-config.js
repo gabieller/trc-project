@@ -18,7 +18,6 @@ module.exports = {
       options: {
         endpoint:
           "https://scharfstudio.us1.list-manage.com/subscribe/post?u=059b9a870db61894ec6b391cb&amp;id=23a847257e",
-          
       },
     },
   ],

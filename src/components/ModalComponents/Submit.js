@@ -1,5 +1,5 @@
 import React from "react"
-import { useForm } from "@formspree/react"
+import { useForm, ValidationError } from "@formspree/react"
 import Button from "@material-ui/core/Button"
 import Responsive from "../Responsive"
 
@@ -41,9 +41,14 @@ export default function Sucess({ prevStep, values }) {
                   placeholder="| Enter your email"
                   aria-label="| Enter your email"
                 />
-                <Button type="submit" className="btn-black" variant="contained">
+                <button
+                  type="submit"
+                  // className="btn-black"
+                  // variant="contained"
+                  // onClick={handleSubmit}
+                >
                   SEND
-                </Button>
+                </button>
               </div>
             </form>
           </div>
@@ -83,13 +88,14 @@ export default function Sucess({ prevStep, values }) {
                 />
               </div>
               <div className="col-11 pb-4">
-                <Button
+                <button
                   type="submit"
                   className="btn btn-black col-12"
                   variant="contained"
+                  onClick={handleSubmit}
                 >
                   SEND
-                </Button>
+                </button>
               </div>
             </form>
             <div className="submit-mobile py-3">
