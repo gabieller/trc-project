@@ -41,14 +41,14 @@ export default function Sucess({ prevStep, values }) {
                   placeholder="| Enter your email"
                   aria-label="| Enter your email"
                 />
-                <button
+                <Button
                   type="submit"
-                  // className="btn-black"
-                  // variant="contained"
-                  // onClick={handleSubmit}
+                  className="btn-black"
+                  variant="contained"
+                  disabled={state.submitting}
                 >
                   SEND
-                </button>
+                </Button>
               </div>
             </form>
           </div>
