@@ -43,7 +43,7 @@
   background-color: #333333;
   color: #fff;
   border-radius: 0;
-  width: 30rem;
+  width: 25rem;
   height: 45px;
 }
 
@@ -51,7 +51,7 @@
   background-color: #333333;
   color: #fff;
   border-radius: 0;
-  width: 200px;
+  width: 8rem;
   height: 45px;
 }
 
@@ -77,14 +77,14 @@
 
 
 @media (max-width: 768px) {
-  h1 {
+  .title-green {
     font-size: 1.5rem;
   }
 } 
 
 
 @media (min-width: 769px) {
-  h1 {
+   .title-green{
     font-size: 3.75rem;
   }
 } 

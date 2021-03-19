@@ -251,7 +251,7 @@ export default function WhyTRC(props) {
         <Responsive.Desktop>
           <div className="section-mini bg-white wrap-illustration">
             <div className=" container box-shadow shadow-lg ">
-              <div className="d-flex flex-row align-items-center justify-content-md-around">
+              <div className="d-flex flex-row align-items-center justify-content-md-around mx-0 mx-lg-2">
                 <div className="col-md-5 col-lg-4">
                   <img src={mockup_ridepingo} alt="Ride Pingo"></img>
                 </div>
@@ -292,8 +292,7 @@ export default function WhyTRC(props) {
                 <img
                   src={womanillustration}
                   alt="Woman Standing"
-                  className="somewhere-illustration img-fluid"
-                  // width="450"
+                  className="somewhere-illustration"
                 />
               </div>
             </div>
@@ -303,7 +302,7 @@ export default function WhyTRC(props) {
         <Responsive.Mobile>
           <div className="row pt-5 bg-white">
             <div className="container box-shadow shadow col-9">
-              <div className="d-flex flex-column pt-3 pb-5">
+              <div className="d-flex flex-column pt-3 pb-5 px-4">
                 <div>
                   <img
                     src={mockup_ridepingo}
@@ -357,8 +356,10 @@ export default function WhyTRC(props) {
         </Responsive.Mobile>
 
         <div className="section-mini bg-white">
-          <div className="container fs-1 col-8 col-md-12">
-            Lower costs. More coverage.
+          <div className="container row">
+            <span className="fs-1 col-8 col-md-12">
+              Lower costs. More coverage.
+            </span>
             <div className="d-flex justify-content-start pt-3 pt-md-0">
               <div>
                 {isModalVisible ? (

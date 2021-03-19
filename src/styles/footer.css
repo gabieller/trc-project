@@ -21,23 +21,25 @@
   background-color: #ffffff40;
 }
 
-#footer a{
+#footer a {
   color: #ffffff;
   text-decoration: none;
   line-height: 38px;
 }
+
+/* .google-logo {
+  width: 30%;
+}
+
+.app-logo {
+  width: 30%;
+} */
 
 @media (min-width: 768px) {
   .trclogo {
     width: 10%;
   }
 }
-
-/* @media (min-width: 768px) {
-  .app.badge {
-    width: 10%;
-  }
-} */
 
 @media (min-width: 768px) {
   .pingologo {
@@ -46,7 +48,7 @@
 }
 
 @media (max-width: 767px) {
-  .trclogo {  
+  .trclogo {
     width: 50%;
   }
 }

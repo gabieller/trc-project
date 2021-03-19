@@ -41,7 +41,7 @@ export default function Home({ props, numberPosts }) {
             </Suspense>
           </div>
 
-          <div className="container title-content g-5">
+          <div className="container title-content g-0 g-md-5">
             <div className="bg-white d-flex flex-column section-mini px-4 px-md-5 m-5 shadow-lg">
               <h1 className="title-green ps-md-5">
                 <span className="wrap-text">
