@@ -37,6 +37,10 @@
   background-color: #f5f4f5;
 }
 
+.equal-icon {
+  padding-top: min(2rem, 35px);
+}
+
 .wrap-illustration {
   position: relative;
   height: 100%;
@@ -58,7 +62,7 @@
   left: 190px;
 }
 
-#whytrc .line {
+#whytrc .line-middle {
   margin: auto;
   width: 70vw;
   height: 3px;

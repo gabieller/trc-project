@@ -131,8 +131,8 @@ export default function Home({ props, numberPosts }) {
           </div>
         </div>
         <div className=" team">
-          <div className="section-mini container pb-5 ps-5">
-            <div className="row g-0 col-md-6 pt-4">
+          <div className="section-mini container pb-5 px-5">
+            <div className="row g-0 col-md-6">
               <h2>Team</h2>
               <div className="col-md-8">
                 We are a team of builders from technology, transportation,

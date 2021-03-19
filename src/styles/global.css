@@ -53,11 +53,17 @@
 }
 
 .section {
-  padding: min(30vh, 130px) 0;
+  padding-top: min(8rem, 140px);
+  padding-bottom: min(4rem, 70px);
 }
 
 .section-mini {
-  padding: min(10vh, 70px) 0;
+  padding-top: min(6rem, 60px);
+  padding-bottom: min(3rem, 30px);
+}
+
+.text-margin {
+  padding-top: min(4rem, 70px);
 }
 .main-container {
   padding-top: 100px;
