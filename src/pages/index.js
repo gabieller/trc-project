@@ -131,7 +131,7 @@ export default function Home({ props, numberPosts }) {
           </div>
         </div>
         <div className=" team">
-          <div className="section-mini container pb-5 px-5">
+          <div className="section container pb-5 px-5">
             <div className="row g-0 col-md-6">
               <h2>Team</h2>
               <div className="col-md-8">

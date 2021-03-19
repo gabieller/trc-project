@@ -42,7 +42,7 @@ export default function WhyTRC(props) {
         <div className="container-fluid">
           <div className="section title">
             <div className="container title-content ">
-              <h1 className="ps-md-4 ms-md-3 ps-3">
+              <h1 className="ps-md-3 ms-md-3 ps-3 main-title">
                 It’s <br />
                 <p className="green">
                   time to launch the{" "}

@@ -28,12 +28,12 @@ export default function Contact(props) {
               <div className="container">
                 <div className="section  row ps-md-5">
                   <div className="col-md-8 shadow bg-white p-md-5">
-                    <h1 className="ps-5">
+                    <h1 className="ps-2 main-title">
                       Lower costs. More coverage. <br />
                       <p className="green">Contact our team.</p>
                     </h1>
 
-                    <form onSubmit={handleSubmit} className="form g-0 ps-5">
+                    <form onSubmit={handleSubmit} className="form g-0 ps-2">
                       <div className="row g-3 pb-3 align-items-start">
                         <div className="col-md-3 mt-0 fw-bold">
                           <label
