@@ -1,4 +1,4 @@
-import React, { Suspense, useState } from "react"
+import React, { useState } from "react"
 import Layout from "../components/Layout"
 import Arrow from "../components/Arrow"
 import Responsive from "../components/Responsive"
@@ -21,10 +21,6 @@ import appstorebadge from "../images/app-store-badge.png"
 
 import "../styles/whytrc.css"
 
-const CanvasAnimation = React.lazy(() =>
-  import("../components/CanvasAnimation")
-)
-
 export default function WhyTRC(props) {
   const [buttonText, setButtonText] = useState(
     "A revolution in demand-response transportation"
@@ -43,27 +39,22 @@ export default function WhyTRC(props) {
   return (
     <Layout {...props}>
       <div id="whytrc" className="container-fluid">
-        <div className="section title why-trc">
-          <div className="animation-container">
-            <Suspense fallback={<div className="fallback" />}>
-              <CanvasAnimation />
-            </Suspense>
+        <div className="section title">
+          {/* <Responsive.Desktop> */}
+          <div className="container title-content ">
+            <h1 className="pb-3 pt-5 ps-md-4 ms-md-3 ps-3">
+              It’s <br />
+              <p className="green">
+                time to launch the{" "}
+                <span className="text-decoration-underline text-dark">
+                  most efficient
+                </span>{" "}
+                <br /> on-demand transportation system in the world
+              </p>
+            </h1>
           </div>
-          <Responsive.Desktop>
-            <div className="container title-content ">
-              <h1 className="pb-3 pt-5 ps-md-4 ms-md-3 ps-3">
-                It’s <br />
-                <p className="green">
-                  time to launch the{" "}
-                  <span className="text-decoration-underline text-dark">
-                    most efficient
-                  </span>{" "}
-                  <br /> on-demand transportation system in the world
-                </p>
-              </h1>
-            </div>
-          </Responsive.Desktop>
-          <Responsive.Mobile>
+          {/* </Responsive.Desktop> */}
+          {/* <Responsive.Mobile>
             <div className="container title-content">
               <h1 className="section pb-3 ps-4">
                 It’s time
@@ -74,7 +65,7 @@ export default function WhyTRC(props) {
                 </p>
               </h1>
             </div>
-          </Responsive.Mobile>
+          </Responsive.Mobile> */}
         </div>
         <div className="container px-5 pt-3">
           <div className="row row-cols-1 row-cols-md-4 cards-row">

@@ -9,6 +9,11 @@
   font-family: "Poppins";
 }
 
+#privacy p {
+  font-family: "Roboto";
+
+}
+
 .accordion-button:focus {
   outline-style: none;
   box-shadow: none;

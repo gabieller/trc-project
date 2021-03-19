@@ -1,7 +1,10 @@
 import React from "react"
-import { useForm, ValidationError } from "@formspree/react"
+import { useForm } from "@formspree/react"
 import Button from "@material-ui/core/Button"
 import Responsive from "../Responsive"
+import { Link } from "gatsby"
+import "../../styles/surveyCards.css"
+
 
 import mockup from "../../images/mockup_cut.png"
 
@@ -66,7 +69,7 @@ export default function Sucess({ prevStep, values }) {
         <div className="col-md-4 submit">
           Many companies in this space <br /> talk a big game but can’t deliver{" "}
           <br />
-          results. We’re different.
+          results. <Link to="/whytrc" className="link"> We’re different.</Link>
         </div>
       </Responsive.Desktop>
       <Responsive.Mobile>
@@ -111,7 +114,7 @@ export default function Sucess({ prevStep, values }) {
             </form>
             <div className="submit-mobile py-3">
               Many companies in this space talk a big game but can’t deliver
-              results. We’re different.
+              results.<Link to="/whytrc" className="link"> We’re different.</Link>
             </div>
           </div>
           <div className="">

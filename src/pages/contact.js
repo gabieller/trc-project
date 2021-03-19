@@ -108,7 +108,7 @@ export default function Contact(props) {
                     </form>
                   </div>
 
-                  <div className="col-md-4 pt-5 ps-md-4 pe-md-0">
+                  <div className="col-md-4 pt-5 pe-md-0 technical">
                     <div className="py-3 box">
                       <h5 className="fw-bold">General queries</h5>
                       <small>

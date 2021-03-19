@@ -62,7 +62,7 @@ export default function Survey({ nextStep, prevStep, handleChange, index }) {
         {index > 0 && (
           <button
             type="button"
-            className="btn fs-5 pt-3 pt-md-5"
+            className="btn fs-6 pt-3 pt-md-5"
             onClick={handleprev}
           >
             GO BACK

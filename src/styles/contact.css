@@ -15,6 +15,10 @@
   margin: 0px 0px 0 00px;
 }
 
+#contact .technical{
+  padding-left: 11rem;
+}
+
 #contact .btn {
   min-width: 183px;
 }

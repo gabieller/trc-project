@@ -49,7 +49,7 @@ export default function Confirm({ nextStep, prevStep, handleChange, values }) {
               onClick={handleNext}
             >
               <Radio />
-              <span className="text-confirm text-start text-md-center col-md-7 col-8">
+              <span className="text-confirm text-start px-4 col-md-7 col-8">
                 Yes, I’d love to see if TRC could {response} help me to meet my
                 objectives.
               </span>
@@ -58,7 +58,7 @@ export default function Confirm({ nextStep, prevStep, handleChange, values }) {
         </div>
         <button
           type="button"
-          className="btn fs-5 pt-3 pt-md-5 mt-1'"
+          className="btn fs-6 pt-3 pt-md-5 mt-1'"
           onClick={handleprev}
         >
           GO BACK

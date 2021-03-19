@@ -7,34 +7,16 @@
   background-color: #f5f4f5;
 }
 
+#whytrc .title {
+  background-color: #e4e1e5;
+}
+
 #whytrc .card {
   border-radius: 0;
   font-size: 14px;
   line-height: 20px;
   letter-spacing: 0.14px;
   cursor: pointer;
-}
-
-#whytrc > .title {
-  position: relative;
-  padding-left: 0 !important;
-  padding-top: 0;
-  padding-bottom: 0;
-}
-
-#whytrc > .title > .title-content {
-  padding-top: 6vw;
-  padding-bottom: 6vw;
-  position: relative;
-}
-
-#whytrc > .title > .animation-container,
-#whytrc > .title > .animation-container > .fallback {
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  display: flex;
-  background-color: #e4e1e5;
 }
 
 #whytrc .back-drop {

@@ -67,7 +67,7 @@ export default function Header({ uri }) {
             <img src={trclogo} alt="Main logo" className="logo-header" />
           </Link>
           {pathname !== "/" && (
-            <div className="col-md-5 d-none d-md-block d-lg-block">
+            <div className="col-md-8 d-none d-md-block d-lg-block">
               <div className="d-flex flex-row-reverse ">
                 <div>
                   {isModalVisible ? (

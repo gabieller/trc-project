@@ -1,6 +1,10 @@
-#submit {
+/* #submit {
   position: relative;
-}
+} */
+
+/* #submit .link {
+  text-color 
+} */
 
 .card-content {
   text-transform: none;
@@ -56,6 +60,10 @@
   padding-top: 12rem;
 }
 
+.link {
+  color: #707070;
+}
+
 .submit-mobile {
   font-family: Helvetica;
   color: #707070;
@@ -67,7 +75,7 @@
 }
 
 .box-confirm {
-  background-color: #e4e1e5;
+  background-color: #E4E1E5;
 }
 
 .goback-btn {
