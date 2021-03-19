@@ -35,7 +35,7 @@
 
 #index  .title-green {
   color: #58968a;
-  font-size: 3.75rem;
+  /* font-size: 3.75rem; */
 }
 
 
@@ -43,7 +43,7 @@
   background-color: #333333;
   color: #fff;
   border-radius: 0;
-  width: 618px;
+  width: 30rem;
   height: 45px;
 }
 
@@ -75,3 +75,16 @@
 }
 
 
+
+@media (max-width: 768px) {
+  h1 {
+    font-size: 1.5rem;
+  }
+} 
+
+
+@media (min-width: 769px) {
+  h1 {
+    font-size: 3.75rem;
+  }
+} 

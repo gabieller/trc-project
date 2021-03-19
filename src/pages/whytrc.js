@@ -251,7 +251,7 @@ export default function WhyTRC(props) {
         <Responsive.Desktop>
           <div className="section-mini bg-white wrap-illustration">
             <div className=" container box-shadow shadow-lg ">
-              <div className="d-flex flex-row align-items-center justify-content-center justify-content-md-around">
+              <div className="d-flex flex-row align-items-center justify-content-md-around">
                 <div className="col-md-5 col-lg-4">
                   <img src={mockup_ridepingo} alt="Ride Pingo"></img>
                 </div>
