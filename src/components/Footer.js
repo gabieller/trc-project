@@ -70,9 +70,13 @@ export default function Footer() {
             <hr className="d-md-none" />
             <div className="row g-0 py-md-5">
               <div className="col-6 col-md-12 py-3">
-                <Link to="/pingo">
+                <a
+                  href="https://www.ridepingo.com/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
                   <img src={pingologo} alt="Logo PINGO" className="pingologo" />
-                </Link>
+                </a>
               </div>
               <div className="col-6 col-md-12 py-3">
                 <div className="d-flex flex-column flex-md-row col-md-6">

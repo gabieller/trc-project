@@ -22,9 +22,10 @@ export default function Team(props) {
               </div>
               <div className="row justify-content-left">
                 <div className="col-11 col-md-6 px-3 px-md-5 ms-3 ms-md-2 px-xxl-0 ms-xxl-0">
-                  We are a team of builders from technology, transportation,
-                  academia and public policy with a passion for helping cities
-                  unlock transit’s full potential.
+                  We are a team of builders from technology, transportation,{" "}
+                  <br />
+                  academia and public policy with a passion for helping <br />{" "}
+                  cities unlock transit’s full potential.
                 </div>
               </div>
             </div>

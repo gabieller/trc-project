@@ -72,7 +72,12 @@ export default function SideMenu({ uri, visible }) {
                   <li
                     className={`nav-item ${uri === "/contact" ? "active" : ""}`}
                   >
-                    <Link to="/pingo" className="nav-link d-inline-flex">
+                    <a
+                      href="https://www.ridepingo.com/"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="nav-link d-inline-flex"
+                    >
                       <img
                         src={pingosidemenu}
                         className="pingo-link"
@@ -87,7 +92,7 @@ export default function SideMenu({ uri, visible }) {
                         width="50"
                         height="50"
                       />
-                    </Link>
+                    </a>
                   </li>
                 </ul>
               </div>
