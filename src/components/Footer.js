@@ -75,7 +75,7 @@ export default function Footer() {
                 </Link>
               </div>
               <div className="col-6 col-md-12 py-3">
-                <div className="d-flex col-6">
+                <div className="d-flex flex-column flex-md-row col-md-6">
                   <Button
                     className="btn btn-link px-0"
                     href="https://play.google.com/store/apps/details?id=com.theroutingcompany.pingo.driver"
@@ -89,7 +89,7 @@ export default function Footer() {
                     />
                   </Button>
                   <Button
-                    className="btn btn-link px-4"
+                    className="btn btn-link px-md-4"
                     href="https://apps.apple.com/in/app/pingo-rider/id1536281958"
                     target="_blank"
                     rel="noopener noreferrer"

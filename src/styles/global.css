@@ -69,9 +69,7 @@
   padding-top: 100px;
 }
 
-/* .main-title {
-  font-size: 2.75rem;
-} */
+
 
 body {
   font-family: "Roboto";
@@ -100,18 +98,3 @@ textarea {
   resize: none;
 }
 
-/* Tablets */
-
-/* @media (max-width: 768px) {
-  h1 {
-    font-size: 1.8rem;
-  }
-} */
-
-/* Mobile Devices */
-
-/* @media (max-width: 480px) {
-  h1 {
-    font-size: 1.8rem;
-  }
-} */
