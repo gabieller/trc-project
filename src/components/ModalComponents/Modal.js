@@ -36,6 +36,7 @@ export default function Modal({ isModalVisible, setIsModalVisible }) {
           }}
         >
           <MultiStepForm setIsModalVisible={setIsModalVisible} ref={modalRef} />
+
           <div className="wrap-close-btn">
             <button
               className="close-button"
