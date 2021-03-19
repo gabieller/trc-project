@@ -78,7 +78,7 @@ export default function Header({ uri }) {
                   ) : null}
 
                   <div className="action-buttons text-center">
-                    <Button className="btn-black" onClick={openModal}>
+                    <Button className="btn-black-header" onClick={openModal}>
                       GET STARTED
                     </Button>
                   </div>
@@ -93,7 +93,7 @@ export default function Header({ uri }) {
           )}
 
           {pathname === "/" && window.pageYOffset > 450 ? (
-            <div className="col-md-5 d-none d-md-block d-lg-block">
+            <div className="col-md-8 d-none d-md-block d-lg-block">
               <div className="d-flex flex-row-reverse ">
                 <div>
                   {isModalVisible ? (
@@ -104,7 +104,7 @@ export default function Header({ uri }) {
                   ) : null}
 
                   <div className="action-buttons text-center">
-                    <Button className="btn-black" onClick={openModal}>
+                    <Button className="btn-black-header" onClick={openModal}>
                       GET STARTED
                     </Button>
                   </div>
@@ -128,7 +128,7 @@ export default function Header({ uri }) {
       </nav>
 
       <HamburgerCollapse
-        className="fixed-top collapse-button"
+        className="fixed-top collapse-button p-0"
         isActive={state.isSidebarOpen}
         barColor={state.isSidebarOpen ? "white" : "transparent"}
         onClick={toggleButton}
