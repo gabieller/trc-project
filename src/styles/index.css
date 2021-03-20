@@ -74,6 +74,9 @@
   z-index: 2999;
 }
 
+.text-change::last-word {
+  background-color: aqua;
+}
 
 
 @media (max-width: 768px) {
@@ -85,6 +88,6 @@
 
 @media (min-width: 769px) {
    .title-green{
-    font-size: 3.75rem;
+    font-size: 3rem;
   }
 } 

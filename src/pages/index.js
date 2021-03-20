@@ -1,4 +1,4 @@
-import React, { useState, Suspense } from "react"
+import React, { useState, Suspense, useEffect, useCallback } from "react"
 import Button from "@material-ui/core/Button"
 import Responsive from "../components/Responsive"
 
@@ -13,6 +13,7 @@ import theverge from "../images/theverge_logo.svg"
 import bbc from "../images/bbc_logo.svg"
 
 import "../styles/index.css"
+import { useStep } from "react-hooks-helper"
 
 const CanvasAnimation = React.lazy(() =>
   import("../components/CanvasAnimation")
@@ -22,6 +23,13 @@ const MediumIntegration = React.lazy(() =>
   import("../components/MediumIntegration")
 )
 
+const names = [
+  "for simple on-demand transportation at the right price.",
+  "for launch the most efficient on-demand transportation system in the world.",
+  "for on-demand transit solved, at a scalable cost per rider.",
+]
+
+
 export default function Home({ props, numberPosts }) {
   const [isModalVisible, setIsModalVisible] = useState(false)
 
@@ -30,6 +38,18 @@ export default function Home({ props, numberPosts }) {
   }
 
   const closeModalHandler = () => setIsModalVisible(false)
+
+  const [newName, setnewName] = useState("")
+
+  const shuffle = useCallback(() => {
+    const index = Math.floor(Math.random() * names.length)
+    setnewName(names[index])
+  }, [])
+
+  useEffect(() => {
+    const intervalID = setInterval(shuffle, 3500)
+    return () => clearInterval(intervalID)
+  }, [shuffle])
 
   return (
     <Layout {...props}>
@@ -45,12 +65,11 @@ export default function Home({ props, numberPosts }) {
             <div className="bg-white d-flex flex-column section-mini px-4 px-md-5 m-5 shadow-lg">
               <h1 className="title-green ps-md-5">
                 <span className="wrap-text">
-                  <span className="text-dark"> It’s time </span> <br /> for
-                  simple on-demand <br /> transportation
-                  <br /> at the{" "}
-                  <span className="text-dark text-decoration-underline">
-                    right price.
-                  </span>
+                  <span className="text-dark"> It’s time </span> <br />{" "}
+                  <span className="text-change">{newName}</span>
+                  {/* <span className="text-dark text-decoration-underline">
+                    right price. */}
+                  {/* </span> */}
                 </span>
               </h1>
               <div>
