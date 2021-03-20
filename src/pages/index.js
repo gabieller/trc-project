@@ -24,11 +24,12 @@ const MediumIntegration = React.lazy(() =>
 )
 
 const names = [
+  "for simple on-demand transportation at the",
   "for launch the most efficient on-demand transportation system in",
   "for on-demand transit solved, at a scalable cost",
 ]
 
-const final = ["the world.", "per rider."]
+const final = ["right price.", "the world.", "per rider."]
 
 export default function Home({ props, numberPosts }) {
   const [isModalVisible, setIsModalVisible] = useState(false)
