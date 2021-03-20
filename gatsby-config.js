@@ -1,5 +1,5 @@
 module.exports = {
-  pathPrefix: "/pingo-project", //REMOVE before deploying to production
+  pathPrefix: "/trc-project", //REMOVE before deploying to production
   siteMetadata: {
     title: `The Routing Company`,
     siteUrl: `https://theroutingcompany.com/`,
