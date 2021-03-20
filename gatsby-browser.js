@@ -16,7 +16,7 @@ const LoadingElement = ({ children }) => {
   useEffect(() => {
     setInterval(() => {
       setLoading(false)
-    }, 3500)
+    }, 2500)
   }, [])
 
   return (

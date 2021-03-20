@@ -24,12 +24,11 @@ const MediumIntegration = React.lazy(() =>
 )
 
 const names = [
-  "for simple on-demand transportation at the",
   "for launch the most efficient on-demand transportation system in",
   "for on-demand transit solved, at a scalable cost",
 ]
 
-const final = [" right price.", " the world.", " per rider."]
+const final = ["right price.", "the world.", "per rider."]
 
 export default function Home({ props, numberPosts }) {
   const [isModalVisible, setIsModalVisible] = useState(false)
@@ -40,8 +39,10 @@ export default function Home({ props, numberPosts }) {
 
   const closeModalHandler = () => setIsModalVisible(false)
 
-  const [newName, setnewName] = useState("")
-  const [newFinal, setnewFinal] = useState("")
+  const [newName, setnewName] = useState(
+    "for simple on-demand transportation at the"
+  )
+  const [newFinal, setnewFinal] = useState("right price.")
 
   const shuffle = useCallback(() => {
     const index = Math.floor(Math.random() * names.length)
@@ -49,10 +50,10 @@ export default function Home({ props, numberPosts }) {
     setnewFinal(final[index])
   }, [])
 
-  useEffect(() => {
-    const intervalID = setInterval(shuffle, 3500)
-    return () => clearInterval(intervalID)
-  }, [shuffle])
+  // useEffect(() => {
+  //   const intervalID = setInterval(shuffle, 3500)
+  //   return () => clearInterval(intervalID)
+  // }, [shuffle])
 
   return (
     <Layout {...props}>
@@ -69,8 +70,11 @@ export default function Home({ props, numberPosts }) {
               <h1 className="title-green ps-md-5">
                 <span className="wrap-text">
                   <span className="text-dark"> It’s time </span> <br />{" "}
-                  <span className="text-change">{newName}</span>
-                  <span className="text-dark text-decoration-underline">
+                  <span className="text-change">{newName} </span>{" "}
+                  <span
+                    className="text-dark text-decoration-underline text-end"
+                    onClick={shuffle}
+                  >
                     {newFinal}
                   </span>
                 </span>
