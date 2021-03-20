@@ -46,22 +46,13 @@ export default function Home({ props, numberPosts }) {
   const shuffle = useCallback(() => {
     const index = Math.floor(Math.random() * names.length)
     setnewName(names[index])
-  }, [])
-
-  const shuffleFinal = useCallback(() => {
-    const indexFinal = Math.floor(Math.random() * final.length)
-    setnewFinal(final[indexFinal])
+    setnewFinal(final[index])
   }, [])
 
   useEffect(() => {
     const intervalID = setInterval(shuffle, 3500)
     return () => clearInterval(intervalID)
   }, [shuffle])
-
-  useEffect(() => {
-    const intervalIDFinal = setInterval(shuffleFinal, 3500)
-    return () => clearInterval(intervalIDFinal)
-  }, [shuffleFinal])
 
   return (
     <Layout {...props}>
