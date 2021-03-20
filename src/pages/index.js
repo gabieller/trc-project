@@ -24,11 +24,12 @@ const MediumIntegration = React.lazy(() =>
 )
 
 const names = [
-  "for simple on-demand transportation at the right price.",
-  "for launch the most efficient on-demand transportation system in the world.",
-  "for on-demand transit solved, at a scalable cost per rider.",
+  "for simple on-demand transportation at the",
+  "for launch the most efficient on-demand transportation system in",
+  "for on-demand transit solved, at a scalable cost",
 ]
 
+const final = [" right price.", " the world.", " per rider."]
 
 export default function Home({ props, numberPosts }) {
   const [isModalVisible, setIsModalVisible] = useState(false)
@@ -40,16 +41,27 @@ export default function Home({ props, numberPosts }) {
   const closeModalHandler = () => setIsModalVisible(false)
 
   const [newName, setnewName] = useState("")
+  const [newFinal, setnewFinal] = useState("")
 
   const shuffle = useCallback(() => {
     const index = Math.floor(Math.random() * names.length)
     setnewName(names[index])
   }, [])
 
+  const shuffleFinal = useCallback(() => {
+    const indexFinal = Math.floor(Math.random() * final.length)
+    setnewFinal(final[indexFinal])
+  }, [])
+
   useEffect(() => {
     const intervalID = setInterval(shuffle, 3500)
     return () => clearInterval(intervalID)
   }, [shuffle])
+
+  useEffect(() => {
+    const intervalIDFinal = setInterval(shuffleFinal, 3500)
+    return () => clearInterval(intervalIDFinal)
+  }, [shuffleFinal])
 
   return (
     <Layout {...props}>
@@ -67,9 +79,9 @@ export default function Home({ props, numberPosts }) {
                 <span className="wrap-text">
                   <span className="text-dark"> It’s time </span> <br />{" "}
                   <span className="text-change">{newName}</span>
-                  {/* <span className="text-dark text-decoration-underline">
-                    right price. */}
-                  {/* </span> */}
+                  <span className="text-dark text-decoration-underline">
+                    {newFinal}
+                  </span>
                 </span>
               </h1>
               <div>
