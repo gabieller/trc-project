@@ -28,7 +28,7 @@ const names = [
   "for on-demand transit solved, at a scalable cost",
 ]
 
-const final = ["right price.", "the world.", "per rider."]
+const final = ["the world.", "per rider."]
 
 export default function Home({ props, numberPosts }) {
   const [isModalVisible, setIsModalVisible] = useState(false)
